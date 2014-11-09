@@ -1,0 +1,252 @@
+
+body {
+  background-color: #272a0f;
+  color: #2a1911;
+}
+
+.form-submit {
+  background-color: #dfdb92;
+}
+
+table th {
+  color: #272a0f;
+}
+
+table td {
+  color: #63591b;
+}
+
+table {
+}
+
+.stack-header-inner {
+  background-color: #ffffff;
+}
+
+.wrapper-content {
+  background-color: #ffffff;
+}
+
+.wrapper-footer {
+  background-color: #ffffff;
+}
+
+.stack-content-inner .col-c {
+}
+
+.stack-content-inner .sidebar {
+}
+
+.menu-dropdown .menu .menu {
+  background-color: #646a2c;
+}
+
+.menu-dropdown .menu .menu .last > a {
+  border-bottom-color: #dfdb92;
+}
+
+.stack-navigation .inset-3 {
+  background-color: #646a2c;
+}
+
+.stack-navigation .inset-4 {
+  border-color: #dfdb92;
+}
+
+.stack-navigation .menu li a {
+  color: #dfdb92;
+}
+
+.stack-banner {
+}
+
+.col.last h2 {
+  background-color: transparent;
+}
+
+.col:first-child h2,.sidebar.left h2 {
+  background-color: transparent;
+}
+
+.sidebar.left + .sidebar.left h2 {
+}
+
+.sidebar.right + .sidebar.right h2 {
+}
+
+.breadcrumb {
+  color: #bbab56;
+}
+
+.messages a {
+  color: #63591b;
+}
+
+.node .meta {
+}
+
+#block-feedback-feedback a {
+  background-color: #646a2c;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.sidebar .block-node .delete a {
+  border-color: #2a1911;
+}
+
+.stack-banner .rb-slides {
+}
+
+.wrapper-content .stack-precontent .block h2 {
+  background-color: transparent;
+}
+
+.col + .col h2.customer-header {
+  background-color: transparent;
+}
+
+.messages ul {
+}
+
+.header .inset-1 {
+  background-color: #ffffff;
+}
+
+.sidebar.left + .sidebar.left h2.customer-header {
+  background-color: transparent;
+}
+
+.rb-slides {
+}
+
+#block-feedback-feedback a:hover {
+  background-color: #63591b;
+}
+
+.controls.buttons a.activeSlide {
+  background-color: #646a2c;
+}
+
+.form-submit + input {
+  background-color: #ffffff;
+}
+
+a,blockquote {
+  color: #63591b;
+}
+
+a:hover {
+  color: #bbab56;
+}
+
+li a.active {
+  color: #bbab56;
+}
+
+h1 {
+  color: #2a1911;
+}
+
+.stack-preheader a {
+  color: #ffffff;
+}
+
+.stack-navigation .menu li a:hover {
+  color: #ffffff;
+}
+
+.stack-navigation .menu li a.active {
+  color: #ffffff;
+}
+
+table a {
+  color: #63591b;
+}
+
+.page-forum .title {
+  color: #272a0f;
+}
+
+table th a {
+  color: #272a0f;
+}
+
+.forum a {
+  color: #272a0f;
+}
+
+.forum .created {
+}
+
+.forum .replies {
+}
+
+.forum .last-reply {
+}
+
+.forum .replies a {
+  color: #272a0f;
+}
+
+.rotating-banner {
+  color: #272a0f;
+}
+
+.menu-dropdown .menu .expanded:hover > a {
+  color: #ffffff;
+}
+
+.menu-dropdown .menu .active-trail > a {
+  color: #ffffff;
+}
+
+.menu-dropdown .menu .active-trail:hover > a {
+  color: #ffffff;
+}
+
+.menu-dropdown .menu .menu li:hover > a {
+  color: #ffffff;
+}
+
+.menu-dropdown .menu .menu a.active {
+  color: #bbab56;
+}
+
+.menu-dropdown .menu .menu li:hover > a.active {
+  color: #ffffff;
+}
+
+.menu-dropdown .menu .menu .active-trail > a {
+  color: #bbab56;
+}
+
+.menu-dropdown .menu .menu .active-trail:hover > a {
+  color: #ffffff;
+}
+
+.menu li li {
+}
+
+h3,h4,h5 {
+  border-bottom-color: #dfdb92;
+}
+
+.comment-wrapper .comment + .comment {
+  border-color: #dfdb92;
+}
+
+h2 {
+}
+
+.col:first-child h2 {
+  background-color: transparent;
+}
+
+.messages {
+}
+
+.messages ul li {
+}
+
+
