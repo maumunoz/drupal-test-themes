@@ -1,0 +1,10 @@
+name = 'Atlas'
+description = 'Theme for Cerveza Atlas.'
+version = '1.0'
+core = '7.x'
+engine = 'phptemplate'
+base_theme = 'SABMiller Base'
+
+
+author[uid] = '11'
+author[name] = 'accenture.mauricio'
