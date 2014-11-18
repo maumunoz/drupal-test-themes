@@ -1,9 +1,9 @@
-name = 'SABMiller Base'
+name = 'SABMiller Base Theme'
 description = 'Base layout for all LATAM sites.'
 version = '1.0'
 core = '7.x'
 engine = 'phptemplate'
-base_theme = 'barebones'
+base theme = 'barebones'
 
 stylesheets[all][] = 'bootstrap.css'
 stylesheets[all][] = 'bootstrap-theme.css'
@@ -55,7 +55,7 @@ configurations[fixed][2-col][ca] = 'default'
 configurations[fixed][2-col][cb] = 'default'
 configurations[fixed][1-col][c] = 'default'
 
-layout[<global>] = 'body-layout-fixed-c'
+layout[<global>] = 'body-layout-fixed-acb'
 
 settings[block_everything][site_name] = 'header'
 settings[block_everything][site_slogan] = 'header'

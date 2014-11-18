@@ -1,13 +1,13 @@
-name = 'Example02'
-description = 'Example Theme for Drupal'
-version = '1.4'
+name = 'Atlas Theme'
+description = 'Theme for Cerveza Atlas'
+version = '1.0'
 core = '7.x'
 engine = 'phptemplate'
-base theme = 'barebones'
+base theme = 'sabmiller_base_theme'
 
 stylesheets[all][] = 'custom.css'
 
-scripts[] = 'local.js'
+scripts[] = 'custom.js'
 
 regions[page_top] = 'Above page'
 regions[preheader_first] = 'Preheader first'
