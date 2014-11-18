@@ -60,7 +60,7 @@ layout[<global>] = 'body-layout-fixed-acb'
 settings[block_everything][site_name] = 'header'
 settings[block_everything][site_slogan] = 'header'
 settings[block_everything][logo] = 'header'
-settings[viewport][content] = 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no'
+settings[viewport][content] = 'width=device-width, initial-scale=1.0'
 settings[viewport][enabled] = '1'
 
 author[uid] = '11'
