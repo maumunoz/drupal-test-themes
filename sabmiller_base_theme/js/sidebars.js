@@ -5,20 +5,22 @@
 
         var sidebarB = $('#sidebar-b'),
             main,
+            body,
             minWidth = Drupal.sidebarBreakpoint || 400,
             mobile = false;
 
         if (sidebarB.length > 0) {
             if (minWidth > 0) {
                 main = $('#main');
+                body = $('body');
                 $(window).bind('resize', function () {
-                    var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+                    var width = body.width(); //window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
                     if (width < minWidth && !mobile) {
                         mobile = true;
-                        sidebarB.after(main);
+                        main.after(sidebarB);
                     } else if (width >= minWidth && mobile) {
                         mobile = false;
-                        sidebarB.before(main);
+                        main.before(sidebarB);
                     }
                 });
             }
