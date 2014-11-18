@@ -6,10 +6,10 @@
         var sidebarB = $('#sidebar-b'),
             main,
             body,
-            minWidth = Drupal.sidebarBreakpoint || 400,
+            minWidth = Drupal.sidebarBreakpoint,
             mobile = false;
 
-        if (sidebarB.length > 0) {
+        if (sidebarB.length > 0 && minWidth > 0) {
             if (minWidth > 0) {
                 main = $('#main');
                 body = $('body');
