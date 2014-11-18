@@ -1,9 +1,9 @@
 name = 'Example02'
 description = 'Example Theme for Drupal'
-version = '1.0'
+version = '1.01'
 core = '7.x'
 engine = 'phptemplate'
-base_theme = 'barebones'
+base theme = 'barebones'
 
 stylesheets[all][] = 'custom.css'
 
