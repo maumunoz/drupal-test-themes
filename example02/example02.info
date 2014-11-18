@@ -1,6 +1,6 @@
 name = 'Example02'
 description = 'Example Theme for Drupal'
-version = '1.1'
+version = '1.2'
 core = '7.x'
 engine = 'phptemplate'
 base theme = 'barebones'
@@ -41,7 +41,7 @@ configurations[fixed][2-col][ca] = 'default'
 configurations[fixed][2-col][cb] = 'default'
 configurations[fixed][1-col][c] = 'default'
 
-layout[<global>] = 'body-layout-fixed-abc'
+layout[<global>] = 'body-layout-fixed-acb'
 
 settings[block_everything][site_name] = 'header'
 settings[block_everything][site_slogan] = 'header'
