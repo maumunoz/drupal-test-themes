@@ -1,7 +1,9 @@
 // Avoid problems with empty sidebars and the height equalizer in Site Factory
 (function ($) {
     $(document).ready(function () {
-        $('#sidebar-a:empty, #sidebar-b:empty').remove();
+        $('#sidebar-a, #sidebar-b').filter(function () {
+            return $.trim($(this).text()) === '';
+        }).remove();
 
         var sidebarB = $('#sidebar-b'),
             main,
