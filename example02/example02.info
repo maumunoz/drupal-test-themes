@@ -1,6 +1,6 @@
 name = 'Example02'
 description = 'Example Theme for Drupal'
-version = '1.01'
+version = '1.1'
 core = '7.x'
 engine = 'phptemplate'
 base theme = 'barebones'
