@@ -86,7 +86,7 @@
         // Global Support for Custom Background Images
         var bgFields = $('.field-name-field_bg_image');
         if (bgFields.length > 0) {
-            page.css('backgroundImage', 'url(' + bgFields.attr('src') + ')');
+            page.css('backgroundImage', 'url(' + bgFields.first().find('img').attr('src') + ')');
             bgFields.remove();
         } else {
             page.addClass('bg-default');
