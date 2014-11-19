@@ -1,6 +1,9 @@
 
 (function ($) {
 
+    // Append Viewport Metatag
+    $('head').append('<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">');
+
     // Base Configuration for Responsive Navigation
     Drupal.navigation = {
         elements: [{
@@ -23,7 +26,8 @@
 
 
     $(document).ready(function () {
-        var body = $('body');
+        var body = $('body'),
+            page = $('#page');
 
         // Avoid problems with empty sidebars and the height equalizer in Site Factory
         $('#sidebar-a, #sidebar-b').filter(function () {
@@ -73,7 +77,7 @@
                 clone.addClass(el.css);
                 navSlidebarContainer.append(clone);
             });
-            navSlidebarContainer.insertAfter('#page');
+            navSlidebarContainer.insertAfter(page);
             $.slidebars();
         }
 
@@ -82,10 +86,10 @@
         // Global Support for Custom Background Images
         var bgFields = $('.field-name-field_bg_image');
         if (bgFields.length > 0) {
-            body.css('backgroundImage', 'url(' + bgFields.attr('src') + ')');
+            page.css('backgroundImage', 'url(' + bgFields.attr('src') + ')');
             bgFields.remove();
         } else {
-            body.addClass('bg-default');
+            page.addClass('bg-default');
         }
     });
 })(jQuery2);

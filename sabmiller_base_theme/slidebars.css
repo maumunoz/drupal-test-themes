@@ -73,7 +73,7 @@ html.sb-web-app .sb-slidebar {
  * 002 - Site Container
  */
 
-#sb-site, .sb-site-container {
+#sb-site, .sb-site-container, #page {
     /* You may now use class .sb-site-container instead of #sb-site and use your own id. However please make sure you don't set any of the following styles any differently on your id. */
     width: 100%;
     min-height: 100vh; /* Min-height fallback provided by slidebars.js. */
