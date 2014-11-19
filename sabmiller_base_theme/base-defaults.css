@@ -376,7 +376,7 @@ ul ul ul li.leaf {
 
 .horizontal .menu li,
 .stack-footer-inner .menu li {
-  padding-left: 20px;
+  padding: 15px 10px;
 }
 
 .horizontal .menu li.first,
@@ -417,10 +417,17 @@ ul ul ul li.leaf {
     display: block;
     font-weight: 400;
     line-height: 1.42857;
-    padding: 3px 20px;
+    padding: 5px 0px;
     white-space: nowrap;
 }
 
+.horizontal .menu li .menu > li.first > a {
+  padding-top: 10px;
+}
+
+.horizontal .menu li .menu > li.last > a {
+  padding-bottom: 10px;
+}
 .col-align-last-right .last .menu,
 .col-align-right.horizontal .menu {
   float: right;
@@ -1322,27 +1329,24 @@ body.wire {
 
 
 /* @group Stack header inner */
-.stack-header-inner {
-  background-image: -webkit-linear-gradient(top, #ffffff 0%, #e0e0e0 100%);
-  background-image: -o-linear-gradient(top, #ffffff 0%, #e0e0e0 100%);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#e0e0e0));
-  background-image: linear-gradient(to bottom, #ffffff 0%, #e0e0e0 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe0e0e0', GradientType=0);
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-  background-repeat: repeat-x;
+.stack-header-inner,
+.stack-preheader {
+  background-color: #eee;
 }
 
-.stack-header-inner .site-name {
+.stack-header-inner .site-name,
+.stack-preheader .site-name {
   display: inline-block;
   margin: 0;
 }
 
-.stack-header-inner .site-name a {
-    display: inline-block;
-    width: 100px;
-    height: 100px;
-    text-indent: -9999px;
-    background: url("http://placehold.it/100x100&text=Logo") no-repeat 0 0 transparent;
+.stack-header-inner .site-name a,
+.stack-preheader .site-name a {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  text-indent: -9999px;
+  background: url("http://placehold.it/100x100&text=Logo") no-repeat 0 0 transparent;
 }
 /* @end Stack header inner*/
 
@@ -1383,7 +1387,8 @@ body.wire {
   padding: 0;
 }
 
-.node-media-gallery .action-links .media-gallery-add {
+.node-media-gallery .action-links .media-gallery-add,
+.form-submit {
   display: inline-block;
   margin-bottom: 0;
   font-weight: normal;
@@ -1403,11 +1408,20 @@ body.wire {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #e6e6e6;
-  border-color: #cccccc;
+  background-image: -webkit-linear-gradient(top, #ffffff 0%, #e0e0e0 100%);
+  background-image: -o-linear-gradient(top, #ffffff 0%, #e0e0e0 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#e0e0e0));
+  background-image: linear-gradient(to bottom, #ffffff 0%, #e0e0e0 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe0e0e0', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  background-repeat: repeat-x;
+  border-color: #dbdbdb;
+  text-shadow: 0 1px 0 #fff;
+  border-color: #ccc;
 }
 
-.node-media-gallery .action-links .media-gallery-add:hover {
+.node-media-gallery .action-links .media-gallery-add:hover,
+.form-submit:hover {
   background-color: #eee;
 }
 
@@ -1425,3 +1439,62 @@ body.wire {
 
 }
 /* @end Node media gallery */
+
+
+/* @group Block system main menu */
+#block-system-main-menu ul.menu {
+  float: left;
+  border: 1px solid #e7e7e7;
+  margin-bottom: 0 0 20px;
+  padding: 0 10px;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+}
+
+#block-system-main-menu ul.menu a {
+  display: block;
+}
+
+#block-system-main-menu ul.menu ul.menu {
+  margin: 0;
+}
+/* @end Block system main menu */
+
+
+/* @group Btn menu mobile */
+#preheader-first-region .btn-menu-mobile,
+#preheader-first-region .block-social-media {
+  margin-right: 15px;
+}
+
+#preheader-second-region .btn-menu-mobile,
+#preheader-second-region .block-social-media {
+  margin-left: 15px;
+}
+
+.btn-menu-mobile a {
+  display: block;
+  width: 40px;
+  height: 40px;
+
+  text-indent: -9999px;
+  background: url("https://i-lab.harvard.edu/sites/all/themes/ilab2/images/menu/hamburger60x60") no-repeat -3px -7px transparent;
+  cursor: pointer;
+  color: transparent;
+}
+/* @end Btn menu mobile */
+
+
+/* @group Search form */
+input.form-text {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    color: #555;
+    display: inline-block;
+    font-size: 14px;
+    height: 34px;
+    padding: 6px 12px;
+  }
+  /* @end Search form */
