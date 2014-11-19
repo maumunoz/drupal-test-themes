@@ -63,17 +63,17 @@
             $.transform(nav.linkTarget, {
                 type: nav.linkPosition,
                 process: function () {
-                    return $(nav.linkHTML).addClass('.sb-toggle-' + nav.slidebarPosition); 
+                    return $(nav.linkHTML).addClass('sb-toggle-' + nav.slidebarPosition); 
                 }
             });
             var navSlidebarContainer = $('<div class="sb-slidebar sb-' + nav.slidebarPosition + '">abc</div>');
             $.each(nav.elements, function (el) {
-                var clone = $(el).clone(el.cloneEvents);
+                var clone = $(el.target).clone(el.cloneEvents);
                 clone.removeAttr('id class');
                 clone.addClass(el.css);
                 navSlidebarContainer.append(clone);
             });
-            navSlidebarContainer.after('#page');
+            navSlidebarContainer.insertAfter('#page');
             $.slidebars();
         }
 
