@@ -346,7 +346,8 @@ ul ul ul li.leaf {
   display: none; /* Keep menus with sub menus from blowing up when displayed horizontally */
 }
 
-.horizontal ul {
+.horizontal ul,
+.stack-footer-inner .menu {
   padding-left: 0;
 }
 
@@ -358,11 +359,13 @@ ul ul ul li.leaf {
 .horizontal ul ul li.leaf,
 .horizontal ul ul ul li.expanded,
 .horizontal ul ul ul li.collapsed,
-.horizontal ul ul ul li.leaf { /* Override of a system override */
+.horizontal ul ul ul li.leaf,
+.stack-footer-inner .menu { /* Override of a system override */
   list-style-type: none;
 }
 
-.horizontal .menu li {
+.horizontal .menu li,
+.stack-footer-inner .menu li {
   float: left;
 }
 
@@ -371,12 +374,14 @@ ul ul ul li.leaf {
   margin-top: 0;
 }
 
-.horizontal .menu li {
+.horizontal .menu li,
+.stack-footer-inner .menu li {
   margin-left: 0.6923em;
   padding-left: 0.6923em;
 }
 
-.horizontal .menu li.first {
+.horizontal .menu li.first,
+.stack-footer-inner .menu li.first {
   margin-left: 0;
   padding-left: 0;
 }
@@ -1242,6 +1247,38 @@ body.wire {
   background-color: blue !important;
   height: 10px !important;
   opacity: 0.25 !important;
+}
+
+/* @end */
+
+/* @group Footer */
+
+.stack-footer-inner {
+  background: #eee;
+  padding-top: 2.0769em 0;
+}
+
+.stack-footer-inner ul,
+.stack-footer-inner .menu {
+  margin-top: 0;
+}
+
+.stack-footer-inner li {
+  display: inline-block;
+}
+
+.region-footer-second {
+  text-align: right;
+}
+
+.region-footer-second .block-menu h2 {
+  display: none;
+}
+
+.region-footer-second > .block {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 0;
 }
 
 /* @end */
