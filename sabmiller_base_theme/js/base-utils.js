@@ -70,8 +70,8 @@
                     return $(nav.linkHTML).addClass('sb-toggle-' + nav.slidebarPosition); 
                 }
             });
-            var navSlidebarContainer = $('<div class="sb-slidebar sb-' + nav.slidebarPosition + '">abc</div>');
-            $.each(nav.elements, function (el) {
+            var navSlidebarContainer = $('<div class="sb-slidebar sb-' + nav.slidebarPosition + '"></div>');
+            $.each(nav.elements, function (index, el) {
                 var clone = $(el.target).clone(el.cloneEvents);
                 clone.removeAttr('id class');
                 clone.addClass(el.css);
