@@ -1296,10 +1296,11 @@ body.wire {
 
 /* @end */
 
-/* @group Buttons */
 
+/* @group Buttons */
 .node-media-gallery .action-links .media-gallery-add,
-#block-system-user-menu .menu li {
+#block-system-user-menu .menu li,
+.form-submit {
   display: inline-block;
   margin-bottom: 0;
   font-weight: normal;
@@ -1319,10 +1320,23 @@ body.wire {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #e6e6e6;
-  border-color: #cccccc;
+  background-image: -webkit-linear-gradient(top, #ffffff 0%, #e0e0e0 100%);
+  background-image: -o-linear-gradient(top, #ffffff 0%, #e0e0e0 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#e0e0e0));
+  background-image: linear-gradient(to bottom, #ffffff 0%, #e0e0e0 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe0e0e0', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  background-repeat: repeat-x;
+  border-color: #dbdbdb;
+  text-shadow: 0 1px 0 #fff;
+  border-color: #ccc;
 }
 
+.node-media-gallery .action-links .media-gallery-add:hover,
+#block-system-user-menu .menu li:hover,
+.form-submit:hover {
+  background-color: #eee;
+}
 /* @end */
 
 /* @group Footer */
@@ -1417,44 +1431,6 @@ body.wire {
 .node-media-gallery .action-links {
   list-style: none;
   padding: 0;
-}
-
-.node-media-gallery .action-links .media-gallery-add,
-.form-submit {
-  display: inline-block;
-  margin-bottom: 0;
-  font-weight: normal;
-  text-align: center;
-  vertical-align: middle;
-  -ms-touch-action: manipulation;
-      touch-action: manipulation;
-  cursor: pointer;
-  background-image: none;
-  border: 1px solid transparent;
-  white-space: nowrap;
-  padding: 6px 12px;
-  font-size: 14px;
-  line-height: 1.42857143;
-  border-radius: 4px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-image: -webkit-linear-gradient(top, #ffffff 0%, #e0e0e0 100%);
-  background-image: -o-linear-gradient(top, #ffffff 0%, #e0e0e0 100%);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#e0e0e0));
-  background-image: linear-gradient(to bottom, #ffffff 0%, #e0e0e0 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe0e0e0', GradientType=0);
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-  background-repeat: repeat-x;
-  border-color: #dbdbdb;
-  text-shadow: 0 1px 0 #fff;
-  border-color: #ccc;
-}
-
-.node-media-gallery .action-links .media-gallery-add:hover,
-.form-submit:hover {
-  background-color: #eee;
 }
 
 .node-media-gallery .field-name-media-gallery-media .media-gallery-item {
