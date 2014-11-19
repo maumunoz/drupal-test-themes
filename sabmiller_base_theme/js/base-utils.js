@@ -4,7 +4,7 @@
     // Base Configuration for Responsive Navigation
     Drupal.navigation = {
         elements: [{
-            target: '#block-system-main-menu .content'
+            target: '#block-system-main-menu .content',
             css: 'mobile-main-menu',
             configure: function (node) {
                 node.find('li.expanded > ul.menu').removeAttr('style');
@@ -33,7 +33,6 @@
         // Makes Sidebar B behave in a responsive way
         var sidebarB = $('#sidebar-b'),
             main,
-            body,
             minWidth = Drupal.sidebarBreakpoint,
             mobile = false;
 
