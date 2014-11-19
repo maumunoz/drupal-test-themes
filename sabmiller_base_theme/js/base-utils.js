@@ -67,7 +67,7 @@
             $.transform(nav.linkTarget, {
                 type: nav.linkPosition,
                 process: function () {
-                    return $(nav.linkHTML).addClass('sb-toggle-' + nav.slidebarPosition); 
+                    return $(nav.linkHTML).addClass('sb-toggle-' + nav.slidebarPosition);
                 }
             });
             var navSlidebarContainer = $('<div class="sb-slidebar sb-' + nav.slidebarPosition + '"></div>');
@@ -84,7 +84,7 @@
 
 
         // Global Support for Custom Background Images
-        var bgFields = $('.field-name-field_bg_image');
+        var bgFields = $('.field-name-field-bg-image');
         if (bgFields.length > 0) {
             page.css('backgroundImage', 'url(' + bgFields.first().find('img').attr('src') + ')');
             bgFields.remove();
