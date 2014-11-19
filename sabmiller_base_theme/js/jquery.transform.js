@@ -2,6 +2,7 @@
     $.fn.transform = function (options) {
         var source = $(this),
             targetQuery = options.target,
+            globalTarget = !!options.globalTarget,
             type;
 
         options = options || {};
@@ -11,7 +12,7 @@
             source.each(function () {
                 var node = $(this),
                     result = node,
-                    target = targetQuery ? node.sfind(targetQuery) : node;
+                    target = targetQuery ? (globalTarget ? $(targetQuery) : node.sfind(targetQuery)) : node;
 
                 if (options.beforeEach) {
                     options.beforeEach($, node, options);
