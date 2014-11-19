@@ -347,7 +347,8 @@ ul ul ul li.leaf {
 }
 
 .horizontal ul,
-.stack-footer-inner .menu {
+.stack-footer-inner .menu,
+#block-system-user-menu .menu {
   padding-left: 0;
 }
 
@@ -1295,11 +1296,40 @@ body.wire {
 
 /* @end */
 
+/* @group Buttons */
+
+.node-media-gallery .action-links .media-gallery-add,
+#block-system-user-menu .menu li {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #e6e6e6;
+  border-color: #cccccc;
+}
+
+/* @end */
+
 /* @group Footer */
 
 .stack-footer-inner {
   background: #eee;
-  padding-top: 2.0769em 0;
+  padding: 2.0769em 0;
 }
 
 .stack-footer-inner ul,
@@ -1311,7 +1341,8 @@ body.wire {
   display: inline-block;
 }
 
-.region-footer-second {
+.region-footer-second,
+.region-preheader-second {
   text-align: right;
 }
 
@@ -1319,7 +1350,8 @@ body.wire {
   display: none;
 }
 
-.region-footer-second > .block {
+.region-footer-second > .block,
+.region-preheader-second > .block {
   display: inline-block;
   vertical-align: top;
   margin-top: 0;
