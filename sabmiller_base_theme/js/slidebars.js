@@ -263,6 +263,20 @@
             }
         }
 
+        function closeAndFollowLink(event, selector) {
+            if ( event.type === 'click' ) { // Make sure the user wanted to follow the link.
+                event.preventDefault(); // Stop default behaviour.
+
+                var link = ( selector.is( 'a' ) ? selector : selector.find( 'a' ) ), // Get the link selector.
+                url = link.attr( 'href' ), // Get the link url.
+                target = ( selector.attr( 'target' ) ? selector.attr( 'target' ) : '_self' ); // Set target, default to _self if not provided.
+                
+                close( function() { // Close Slidebar and pass callback to redirect.
+                    window.open( url, target );
+                } );
+            }
+        }
+
         // ---------
         // 007 - API
         
@@ -334,22 +348,23 @@
         });
         
         // Close Slidebar
-        $( 'body' ).on( 'touchend click', '.sb-close', function( event ) {
+        $( 'body' ).on( 'touchend click', '.sb-close', function ( event ) {
             if ( $( this ).is( 'a' ) || $( this ).children().is( 'a' ) ) { // Is a link or contains a link.
-                if ( event.type === 'click' ) { // Make sure the user wanted to follow the link.
-                    event.preventDefault(); // Stop default behaviour.
-
-                    var link = ( $( this ).is( 'a' ) ? $( this ) : $( this ).find( 'a' ) ), // Get the link selector.
-                    url = link.attr( 'href' ), // Get the link url.
-                    target = ( $( this ).attr( 'target' ) ? $( this ).attr( 'target' ) : '_self' ); // Set target, default to _self if not provided.
-                    
-                    close( function() { // Close Slidebar and pass callback to redirect.
-                        window.open( url, target );
-                    } );
-                }
+                closeAndFollowLink(event, $(this));
             } else { // Just a normal control class.
                 eventHandler( event, $( this ) ); // Handle the event.
                 close(); // Close Slidebar.
+            }
+        });
+        
+        // Expand sidebar sub menus
+        $( '.sb-slidebar' ).on( 'touchend click', '.menu a', function ( event ) {
+            var expandible = $(this).parent(".expanded");
+            if (expandible.length) {
+                expandible.toggleClass('open');
+                return false;
+            } else {
+                closeAndFollowLink(event, $(this));
             }
         });
         

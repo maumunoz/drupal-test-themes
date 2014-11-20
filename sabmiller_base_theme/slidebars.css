@@ -152,6 +152,14 @@ html.sb-static .sb-slidebar,
   padding-left: 2em;
 }
 
+.sb-slidebar .expanded .menu {
+  display: none;
+}
+
+.sb-slidebar .expanded.open .menu {
+  display: block;
+}
+
 /* Slidebar widths for browsers/devices that don't support media queries. */
 .sb-slidebar {
     width: 30%;
