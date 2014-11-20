@@ -1299,7 +1299,6 @@ body.wire {
 
 /* @group Buttons */
 .node-media-gallery .action-links .media-gallery-add,
-#block-system-user-menu .menu li,
 .form-submit {
   display: inline-block;
   margin-bottom: 0;
@@ -1333,7 +1332,6 @@ body.wire {
 }
 
 .node-media-gallery .action-links .media-gallery-add:hover,
-#block-system-user-menu .menu li:hover,
 .form-submit:hover {
   background-color: #eee;
 }
