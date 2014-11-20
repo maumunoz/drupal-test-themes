@@ -1532,8 +1532,6 @@ input.form-text {
   border-top: 1px solid #111;
   border-bottom: 1px solid #2b2b2b;
   background: #1b1b1b;
-/*  display: block !important;
-  visibility: visible !important;*/
 }
 
 .sb-slidebar .menu .menu a {
