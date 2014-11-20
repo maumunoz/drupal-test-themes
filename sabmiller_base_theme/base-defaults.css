@@ -348,7 +348,8 @@ ul ul ul li.leaf {
 
 .horizontal ul,
 .stack-footer-inner .menu,
-#block-system-user-menu .menu {
+#block-system-user-menu .menu,
+.sb-slidebar .menu {
   padding-left: 0;
 }
 
@@ -361,7 +362,8 @@ ul ul ul li.leaf {
 .horizontal ul ul ul li.expanded,
 .horizontal ul ul ul li.collapsed,
 .horizontal ul ul ul li.leaf,
-.stack-footer-inner .menu { /* Override of a system override */
+.stack-footer-inner .menu,
+.sb-slidebar .menu  { /* Override of a system override */
   list-style-type: none;
 }
 
@@ -1506,3 +1508,38 @@ input.form-text {
     padding: 6px 12px;
   }
   /* @end Search form */
+
+/* @group Slidebar */
+
+.sb-slidebar a {
+  padding: 0 1em;
+  display: block;
+  line-height: 3;
+  color: #999;
+  text-decoration: none;
+  color: #999;
+}
+
+.sb-slidebar a:hover {
+  background: #7E7E7E;
+  background: rgba(255,255,255,0.2);
+}
+
+.sb-slidebar .active,
+.sb-slidebar a:hover {
+  color: #fff;
+}
+
+.sb-slidebar .menu .menu {
+  border-top: 1px solid #111;
+  border-bottom: 1px solid #2b2b2b;
+  background: #1b1b1b;
+/*  display: block !important;
+  visibility: visible !important;*/
+}
+
+.sb-slidebar .menu .menu a {
+  padding-left: 2em;
+}
+
+/* @end Slidebar */
