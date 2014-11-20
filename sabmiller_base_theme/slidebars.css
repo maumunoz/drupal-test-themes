@@ -122,28 +122,58 @@ html.sb-static .sb-slidebar,
     -webkit-overflow-scrolling: touch; /* Adds native momentum scrolling for iOS & Android devices. */
 }
 
+/* Styles for sidebar content */
+.sb-slidebar a {
+  padding: 0 1em;
+  display: block;
+  line-height: 3;
+  color: #999;
+  text-decoration: none;
+  color: #999;
+}
+
+.sb-slidebar a:hover {
+  background: #7E7E7E;
+  background: rgba(255,255,255,0.2);
+}
+
+.sb-slidebar .active,
+.sb-slidebar a:hover {
+  color: #fff;
+}
+
+.sb-slidebar .menu .menu {
+  border-top: 1px solid #111;
+  border-bottom: 1px solid #2b2b2b;
+  background: #1b1b1b;
+}
+
+.sb-slidebar .menu .menu a {
+  padding-left: 2em;
+}
+
 /* Slidebar widths for browsers/devices that don't support media queries. */
-    .sb-slidebar {
-        width: 30%;
-    }
-    
-    .sb-width-thin {
-        width: 15%;
-    }
-    
-    .sb-width-wide {
-        width: 45%;
-    }
+.sb-slidebar {
+    width: 30%;
+}
+
+.sb-width-thin {
+    width: 15%;
+}
+
+.sb-width-wide {
+    width: 45%;
+}
 
 @media (max-width: 480px) { /* Slidebar widths on extra small screens. */
     .sb-slidebar {
         width: 70%;
     }
-    
+
     .sb-width-thin {
         width: 55%;
     }
-    
+
     .sb-width-wide {
         width: 85%;
     }
@@ -153,11 +183,11 @@ html.sb-static .sb-slidebar,
     .sb-slidebar {
         width: 55%;
     }
-    
+
     .sb-width-thin {
         width: 40%;
     }
-    
+
     .sb-width-wide {
         width: 70%;
     }
@@ -167,11 +197,11 @@ html.sb-static .sb-slidebar,
     .sb-slidebar {
         width: 40%;
     }
-    
+
     .sb-width-thin {
         width: 25%;
     }
-    
+
     .sb-width-wide {
         width: 55%;
     }
@@ -181,11 +211,11 @@ html.sb-static .sb-slidebar,
     .sb-slidebar {
         width: 30%;
     }
-    
+
     .sb-width-thin {
         width: 15%;
     }
-    
+
     .sb-width-wide {
         width: 45%;
     }
@@ -195,11 +225,11 @@ html.sb-static .sb-slidebar,
     .sb-slidebar {
         width: 20%;
     }
-    
+
     .sb-width-thin {
         width: 5%;
     }
-    
+
     .sb-width-wide {
         width: 35%;
     }
@@ -221,7 +251,7 @@ html.sb-static .sb-slidebar,
 /* --------------------
  * 005 - Helper Classes
  */
- 
-.sb-hide { 
+
+.sb-hide {
     display: none; /* Optionally applied to control classes when Slidebars is disabled over a certain width. */
 }
