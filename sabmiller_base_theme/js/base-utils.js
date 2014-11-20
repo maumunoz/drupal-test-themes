@@ -18,10 +18,7 @@
                 });
             }
         }],
-        linkTarget: '#block-system-main-menu',
-        linkPosition: 'after',
-        linkHTML: '<a id="mobile-menu-action"></a>',
-        slidebarPosition: 'left'
+        link: '#mobile-menu-action'
     };
 
 
@@ -63,18 +60,16 @@
 
         // Navigation
         var nav = Drupal.navigation;
-        if (nav) {
-            $.transform(nav.linkTarget, {
-                type: nav.linkPosition,
-                process: function () {
-                    return $(nav.linkHTML).addClass('sb-toggle-' + nav.slidebarPosition);
-                }
-            });
+        if (nav && $(nav.link).length) {
+            nav.slidebarPosition = $(nav.link).hasClass('sb-toggle-right') ? "right" : "left";
             var navSlidebarContainer = $('<div class="sb-slidebar sb-' + nav.slidebarPosition + '"></div>');
             $.each(nav.elements, function (index, el) {
                 var clone = $(el.target).clone(el.cloneEvents);
                 clone.removeAttr('id class');
                 clone.addClass(el.css);
+                if (el.configure) {
+                    el.configure(clone);
+                }
                 navSlidebarContainer.append(clone);
             });
             navSlidebarContainer.insertAfter(page);
