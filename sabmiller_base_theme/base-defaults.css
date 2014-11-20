@@ -1453,7 +1453,6 @@ body.wire {
 
 /* @group Block system main menu */
 #block-system-main-menu ul.menu {
-  float: left;
   border: 1px solid #e7e7e7;
   margin-bottom: 0 0 20px;
   padding: 0 10px;
@@ -1490,7 +1489,6 @@ body.wire {
   border: 1px solid #ddd;
   border-radius: 4px;
   text-indent: -9999px;
-  background: none;
   cursor: pointer;
 }
 
