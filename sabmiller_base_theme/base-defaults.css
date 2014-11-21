@@ -1549,6 +1549,16 @@ input.form-text {
 }
 /* @end Page */
 
+
+/* @group Breadcrumb */
+.breadcrumb {
+  background-color: transparent;
+  border-radius: 0;
+  margin: 0;
+}
+
+/* @end  Breadcrumb */
+
 /* @group Media Query */
 
 /* Custom, iPhone Retina */
