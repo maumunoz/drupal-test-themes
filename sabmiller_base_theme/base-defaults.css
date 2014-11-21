@@ -1340,7 +1340,6 @@ body.wire {
 /* @end */
 
 /* @group Footer */
-
 .stack-footer-inner {
   background: #eee;
   padding: 2.0769em 0;
@@ -1452,9 +1451,13 @@ body.wire {
 
 
 /* @group Block system main menu */
+#block-system-main-menu {
+  display: none;
+}
+
 #block-system-main-menu ul.menu {
   border: 1px solid #e7e7e7;
-  margin-bottom: 0 0 20px;
+  margin-bottom: 20px;
   padding: 0 10px;
   background-color: #f8f8f8;
 }
@@ -1530,4 +1533,43 @@ input.form-text {
   background-size: 100% 100%;
 }
 /* @end Page */
+
+/* @group Media Query */
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+  #footer .col-2 .col {
+    width: 98%;
+    min-height: 0 !important;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+  #block-system-main-menu {
+    display: block;
+  }
+
+  #footer .col-2 .col {
+    width: 49%;
+    min-height: 0 !important;
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+/* */
 
