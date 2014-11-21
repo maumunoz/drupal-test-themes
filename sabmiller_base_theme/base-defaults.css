@@ -1573,3 +1573,13 @@ input.form-text {
 }
 /* */
 
+/*  */
+#edit-submit {
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* */
+
