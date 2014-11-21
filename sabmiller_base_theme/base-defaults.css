@@ -1419,6 +1419,7 @@ body.wire {
 
 /* @group Hide elements */
 #skip-to-content,
+#skip-to-content-target,
 .stack-content-inner #page-title,
 .field-name-field-bg-image,
 .views-field-field-video-url,
@@ -1524,7 +1525,21 @@ input.form-text {
     height: 34px;
     padding: 6px 12px;
   }
-  /* @end Search form */
+
+.search-form .search-advanced {
+  display: none;
+}
+
+.search-results {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.search-results li {
+    margin: 0;
+    padding-bottom: 5px;
+}
+/* @end Search form */
 
 /* @group Page */
 
