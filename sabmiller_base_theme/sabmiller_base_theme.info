@@ -18,6 +18,11 @@ stylesheets[all][] = 'grid.css'
 stylesheets[all][] = 'forms.css'
 stylesheets[all][] = 'slidebars.css'
 
+fonts[] = 'fonts/glyphicons-halflings-regular.eot'
+fonts[] = 'fonts/glyphicons-halflings-regular.svg'
+fonts[] = 'fonts/glyphicons-halflings-regular.ttf'
+fonts[] = 'fonts/glyphicons-halflings-regular.woff'
+
 scripts[] = 'js/jquery-1.11.1.js'
 scripts[] = 'js/jquery.sfind.js'
 scripts[] = 'js/jquery.etarget.js'
