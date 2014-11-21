@@ -263,7 +263,7 @@
             }
         }
 
-        function closeAndFollowLink(event, selector) {
+        function followLink(event, selector, close) {
             if ( event.type === 'click' ) { // Make sure the user wanted to follow the link.
                 event.preventDefault(); // Stop default behaviour.
 
@@ -271,9 +271,13 @@
                 url = link.attr( 'href' ), // Get the link url.
                 target = ( selector.attr( 'target' ) ? selector.attr( 'target' ) : '_self' ); // Set target, default to _self if not provided.
                 
-                close( function() { // Close Slidebar and pass callback to redirect.
+                if (close) {
+                    close( function() { // Close Slidebar and pass callback to redirect.
+                      window.open( url, target );
+                    } );
+                } else {
                     window.open( url, target );
-                } );
+                }
             }
         }
 
@@ -350,7 +354,7 @@
         // Close Slidebar
         $( 'body' ).on( 'touchend click', '.sb-close', function ( event ) {
             if ( $( this ).is( 'a' ) || $( this ).children().is( 'a' ) ) { // Is a link or contains a link.
-                closeAndFollowLink(event, $(this));
+                followLink(event, $(this), true);
             } else { // Just a normal control class.
                 eventHandler( event, $( this ) ); // Handle the event.
                 close(); // Close Slidebar.
@@ -364,7 +368,7 @@
                 expandible.toggleClass('open');
                 return false;
             } else {
-                closeAndFollowLink(event, $(this));
+                followLink(event, $(this));
             }
         });
         
@@ -372,7 +376,9 @@
         $( 'body' ).on( 'touchend click', $site, function( event ) {
             if ( settings.siteClose && ( leftActive || rightActive ) ) { // If settings permit closing by site and left or right Slidebar is open.
                 eventHandler( event, $( this ) ); // Handle the event.
-                close(); // Close it.
+                if($(event.target).parents('.sb-slidebar').length == 0) {
+                  close(); // Close it.
+                }
             }
         });
         
