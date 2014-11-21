@@ -11,11 +11,6 @@
             css: 'mobile-main-menu',
             configure: function (node) {
                 node.find('li.expanded > ul.menu').removeAttr('style');
-                node.on('touchend click', 'li.expanded', function (e) {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    $(e.currentTarget).toggleClass('open');
-                });
             }
         }],
         link: '#mobile-menu-action'
