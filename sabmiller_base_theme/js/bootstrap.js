@@ -5,10 +5,10 @@
  */
 
 /*!
- * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=44877304f54cf6f81e46)
- * Config saved to config.json and https://gist.github.com/44877304f54cf6f81e46
+ * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=60b519795163f13cd656)
+ * Config saved to config.json and https://gist.github.com/60b519795163f13cd656
  */
-if (typeof jQuery2 === 'undefined') {
+if (typeof jQuery === 'undefined') {
   throw new Error('Bootstrap\'s JavaScript requires jQuery')
 }
 +function ($) {
@@ -16,7 +16,7 @@ if (typeof jQuery2 === 'undefined') {
   if ((version[0] < 2 && version[1] < 9) || (version[0] == 1 && version[1] == 9 && version[2] < 1)) {
     throw new Error('Bootstrap\'s JavaScript requires jQuery version 1.9.1 or higher')
   }
-}(jQuery2);
+}(jQuery);
 
 /* ========================================================================
  * Bootstrap: alert.js v3.3.1
@@ -111,7 +111,7 @@ if (typeof jQuery2 === 'undefined') {
 
   $(document).on('click.bs.alert.data-api', dismiss, Alert.prototype.close)
 
-}(jQuery2);
+}(jQuery);
 
 /* ========================================================================
  * Bootstrap: dropdown.js v3.3.1
@@ -273,7 +273,7 @@ if (typeof jQuery2 === 'undefined') {
     .on('keydown.bs.dropdown.data-api', '[role="menu"]', Dropdown.prototype.keydown)
     .on('keydown.bs.dropdown.data-api', '[role="listbox"]', Dropdown.prototype.keydown)
 
-}(jQuery2);
+}(jQuery);
 
 /* ========================================================================
  * Bootstrap: modal.js v3.3.1
@@ -598,7 +598,7 @@ if (typeof jQuery2 === 'undefined') {
     Plugin.call($target, option, this)
   })
 
-}(jQuery2);
+}(jQuery);
 
 /* ========================================================================
  * Bootstrap: tooltip.js v3.3.1
@@ -1077,7 +1077,7 @@ if (typeof jQuery2 === 'undefined') {
     return this
   }
 
-}(jQuery2);
+}(jQuery);
 
 /* ========================================================================
  * Bootstrap: popover.js v3.3.1
@@ -1197,7 +1197,7 @@ if (typeof jQuery2 === 'undefined') {
     return this
   }
 
-}(jQuery2);
+}(jQuery);
 
 /* ========================================================================
  * Bootstrap: tab.js v3.3.1
@@ -1351,4 +1351,4 @@ if (typeof jQuery2 === 'undefined') {
     .on('click.bs.tab.data-api', '[data-toggle="tab"]', clickHandler)
     .on('click.bs.tab.data-api', '[data-toggle="pill"]', clickHandler)
 
-}(jQuery2);
+}(jQuery);
