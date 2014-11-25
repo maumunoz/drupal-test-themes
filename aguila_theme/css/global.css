@@ -43,8 +43,14 @@
     border-left: 1px solid #3381c9;
 }
 
-#block-system-main-menu ul.menu li.first {
+#block-system-main-menu ul.menu li.first,
+#block-system-main-menu ul.menu li.logo-icon,
+#block-system-main-menu ul.menu li.logo-icon + li {
     border: none;
+}
+
+#block-system-main-menu ul.menu li.logo-icon a {
+    margin: 0;
 }
 
 #block-system-main-menu ul.menu a {
