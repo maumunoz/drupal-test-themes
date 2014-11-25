@@ -1,3 +1,41 @@
+/* @group Global */
+
+/* Lists Reset */
+.stack-footer-inner ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-start: 0;
+}
+
+/* Clearfix */
+.web-form-aguila-news .webform-client-form:before,
+.web-form-aguila-news .webform-client-form:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+/* Content wrapper */
+.stack.stack-footer-inner .stack-width {
+    max-width: 1200px;
+}
+
+/* @end Global */
+
+/* @group Fonts */
+
+font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+
+/*@ end Fonts */
+
 /* @group Header */
 .site-name-wrapper {
     display: none;
@@ -70,6 +108,76 @@
 }
 
 /* @end Header */
+
+/* @group Footer */
+
+.wrapper-footer .stack.stack-footer-inner {
+    padding: 37px 0;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    background: #1f527a;
+    color: #a1d5fe;
+}
+
+.stack.stack-footer-inner h2 {
+    margin: 0;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.stack.stack-footer-inner a {
+    color: #a1d5fe;
+    text-decoration: underline;
+}
+
+#footer-first-region .content strong {
+    font-size: 18px;
+}
+
+#footer-first-region ul li {
+    display: inline-block;
+    font-size: 12px;
+}
+
+.web-form-aguila-news label,
+.web-form-aguila-news .mollom-privacy {
+    display: none;
+}
+
+.web-form-aguila-news .form-item,
+.web-form-aguila-news .form-actions {
+    float: left;
+}
+
+.web-form-aguila-news .form-actions input,
+.web-form-aguila-news .form-item input {
+    -webkit-appearance: none;
+    border: none;
+    padding: 0;
+    line-height: 3;
+}
+
+.web-form-aguila-news .form-item input {
+    padding: 0 16px;
+    color: #1f527a;
+}
+
+.web-form-aguila-news .form-actions input {
+    padding: 0 28px;
+    background: #009fd4;
+    color: #fff;
+    font-weight: bold;
+}
+
+.stack-copyright {
+    padding: 15px 0 22px;
+}
+
+.stack-copyright p {
+    text-align: center;
+}
+
+/* @end Footer */
 
 
 /* @group Media Query */
