@@ -1,0 +1,113 @@
+/* @group Header */
+.site-name-wrapper {
+    display: none;
+}
+
+.site-name-wrapper .site-name a {
+  display: inline-block;
+  width: 162px;
+  height: 64px;
+  text-indent: -9999px;
+  background: url(../images/logo.png) no-repeat 0 0 transparent;
+}
+
+.stack-navigation {
+    position: absolute;
+    z-index: 1;
+}
+
+.stack-navigation .block {
+    margin: 0;
+}
+
+#block-system-main-menu {
+    background: #0565be;
+    border-bottom: 4px solid #0fc3ff;
+}
+
+#block-system-main-menu .content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#block-system-main-menu ul.menu {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+#block-system-main-menu ul.menu li {
+    padding: 0;
+    height: 37px;
+    border-left: 1px solid #3381c9;
+}
+
+#block-system-main-menu ul.menu li.first {
+    border: none;
+}
+
+#block-system-main-menu ul.menu a {
+    margin: 10px 40px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFF;
+    font-size: 12px;
+}
+
+.btn-menu-mobile a,
+.btn-menu-mobile a:hover {
+    background: #0565be;
+    border-color: #;
+}
+
+.btn-menu-mobile a .icon-bar {
+    background: #0fc3ff;
+}
+
+.btn-menu-mobile a:hover .icon-bar {
+    background: #FFF;
+}
+
+/* @end Header */
+
+
+/* @group Media Query */
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    /* @group Header */
+    .site-name-wrapper {
+        display: block;
+    }
+
+    .stack-navigation {
+        position: relative;
+    }
+
+    .stack-navigation .box {
+        padding: 0;
+    }
+    /* @end Header */
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+/* @end Media Query */
