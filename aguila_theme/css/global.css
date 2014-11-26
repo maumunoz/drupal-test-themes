@@ -121,23 +121,21 @@
     position:relative;
 }
 
-.socialFooter .socialExtensionLeft {
+.socialFooter .socialExtensionLeft,
+.socialFooter .socialExtensionRight {
     position: absolute;
-    left: -50vw;
-    z-index: 0;
-    width: 50vw;
     height: 68px;
     top: 0;
+    width: 100%;
+}
+
+.socialFooter .socialExtensionLeft {
+    left: -100%;
     background-color: #00a0d4;
 }
 
 .socialFooter .socialExtensionRight {
-    position: absolute;
-    right: -50vw;
-    z-index: 0;
-    width: 50vw;
-    height: 68px;
-    top: 0;
+    right: -100%;
     background-color: #858585;
 }
 
