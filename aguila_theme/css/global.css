@@ -76,12 +76,12 @@
 }
 
 #block-system-main-menu ul.menu li.first,
-#block-system-main-menu ul.menu li.logo-icon,
-#block-system-main-menu ul.menu li.logo-icon + li {
+#block-system-main-menu ul.menu li.item-logo,
+#block-system-main-menu ul.menu li.item-logo + li {
     border: none;
 }
 
-#block-system-main-menu ul.menu li.logo-icon a {
+#block-system-main-menu ul.menu li.item-logo a {
     margin: 0;
 }
 
