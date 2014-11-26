@@ -235,8 +235,9 @@
 }
 
 .web-form-aguila-news label,
-.web-form-aguila-news .mollom-privacy {
-    display: none;
+.web-form-aguila-news .mollom-privacy,
+.web-form-aguila-news .web-form-container-inline label {
+    display: none !important;
 }
 
 .web-form-aguila-news .form-item,
