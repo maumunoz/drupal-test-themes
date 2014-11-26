@@ -74,6 +74,7 @@
     padding: 0;
     border: none;
     background: none;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
 #block-system-main-menu ul.menu li {
@@ -105,6 +106,13 @@
     background: #0565be;
 }
 
+.btn-menu-mobile a {
+    height: 37px;
+    width: 22px;
+    padding: 9px 0;
+    border: none;
+}
+
 .btn-menu-mobile a .icon-bar {
     background: #0fc3ff;
 }
@@ -113,11 +121,38 @@
     background: #FFF;
 }
 
+#block-system-user-menu,
 #block-search-form {
     position: absolute;
-    top: 38px;
+    z-index: 2;
+    top: 41px;
     right: 0;
+    background: #FFF;
 }
+
+#block-search-form {
+    border: 4px solid #e9f0f2;
+}
+
+#block-search-form .form-submit,
+#block-search-form input.form-text {
+    background: #FFF;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    color: #CCC;
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#block-search-form input.form-text {
+    width: 315px;
+}
+
+#block-search-form .form-submit {
+    font-size: 20px;
+}
+
 
 /* @end Header */
 
