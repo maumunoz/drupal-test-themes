@@ -117,73 +117,76 @@
 /* @end Header */
 
 /* @group Social Footer */
-#prefooter-third-region .content {
-	position:relative;
+.socialFooter {
+    position:relative;
 }
-#prefooter-third-region  .socialfoot{
-	float: left;
-	width: 25%;
-	text-align: center;
-	display: inline-block;
-	margin: 0;
-	font-family: 'Glyphicons Halflings';
-}
-#prefooter-third-region  a:link, #prefooter-third-region  a:active, #prefooter-third-region  a:visited, #prefooter-third-region  a:hover {
-	color: #fff;
-	text-decoration: none;
-	height: 40px;
-	display: block;
-	margin: 0;
-	padding: 20px;
-	background-image: url("../images/FooterIconsSocial.png");
-	background-repeat: no-repeat;
-	background-position: 50% 0;
-	border-width: 14px 0;
-	border-style: solid;
-	text-indent: 9999px;
-}
-#prefooter-third-region  .color1{
-	background-color: #00a0d4;
-}
-#prefooter-third-region  .color1 a{
-	border-color:  #00a0d4;
-}
-#prefooter-third-region  .color2{
-	background-color: #39589b;
-}
-#prefooter-third-region  .color2 a{
-	border-color: #39589b;
-	background-position: 50% -40px;
-}
-#prefooter-third-region  .color3{
-	background-color: #f6085d;
-}
-#prefooter-third-region  .color3 a{
-	border-color: #f6085d;
-	background-position: 50% -80px;
-}
-#prefooter-third-region  .color4{
-	background-color: #858585;
-}
-#prefooter-third-region  .color4 a{
-	border-color: #858585;
-	background-position: 50% -120px;
-}
-#prefooter-third-region .socialExtensionLeft {
+
+.socialFooter .socialExtensionLeft {
     position: absolute;
     left: -50vw;
     z-index: 0;
     width: 50vw;
     height: 68px;
     top: 0;
+    background-color: #00a0d4;
 }
-#prefooter-third-region .socialExtensionRight {
+
+.socialFooter .socialExtensionRight {
     position: absolute;
     right: -50vw;
     z-index: 0;
     width: 50vw;
     height: 68px;
     top: 0;
+    background-color: #858585;
+}
+
+.socialFooter ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.socialFooter .socialTab1,
+.socialFooter .socialTab2,
+.socialFooter .socialTab3,
+.socialFooter .socialTab4 {
+    float: left;
+    width: 25%;
+    margin: 0;
+    height: 40px;
+    display: block;
+    margin: 0;
+    padding: 20px;
+    background-image: url("../images/FooterIconsSocial.png");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    border-width: 14px 0;
+    border-style: solid;
+    text-indent: 9999px;
+}
+
+.socialFooter  .socialTab1 {
+    background-color: #00a0d4;
+    border-color:  #00a0d4;
+}
+
+.socialFooter  .socialTab2 {
+    background-color: #39589b;
+    border-color: #39589b;
+    background-position: 50% -40px;
+}
+
+.socialFooter  .socialTab3 {
+    background-color: #f6085d;
+    border-color: #f6085d;
+    background-position: 50% -80px;
+}
+
+.socialFooter  .socialTab4 {
+    background-color: #858585;
+    border-color: #858585;
+    background-position: 50% -120px;
 }
 
 /* @end Social Footer */
