@@ -122,7 +122,7 @@
 }
 
 .socialFooter .socialExtensionLeft,
-.socialFooter .socialExtensionRight, {
+.socialFooter .socialExtensionRight {
     position: absolute;
     height: 68px;
     top: 0;
