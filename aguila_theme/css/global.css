@@ -30,12 +30,6 @@
 
 /* @end Global */
 
-/* @group Fonts */
-
-font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-
-/*@ end Fonts */
-
 /* @group Header */
 .site-name-wrapper {
     display: none;
@@ -81,8 +75,14 @@ font-family: 'Open Sans', Helvetica, Arial, sans-serif;
     border-left: 1px solid #3381c9;
 }
 
-#block-system-main-menu ul.menu li.first {
+#block-system-main-menu ul.menu li.first,
+#block-system-main-menu ul.menu li.logo-icon,
+#block-system-main-menu ul.menu li.logo-icon + li {
     border: none;
+}
+
+#block-system-main-menu ul.menu li.logo-icon a {
+    margin: 0;
 }
 
 #block-system-main-menu ul.menu a {
@@ -108,6 +108,44 @@ font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
 /* @end Header */
+
+/* @group Social Footer */
+
+#prefooter-third-region  p{
+    float: left;
+    width: 25%;
+    text-align: center;
+    display: inline-block;
+    padding: 10px 0;
+    margin: 0px;
+    font-family: 'Glyphicons Halflings';
+}
+
+#prefooter-third-region  a:link,
+#prefooter-third-region  a:active,
+#prefooter-third-region  a:visited,
+#prefooter-third-region  a:hover {
+    color: #fff;
+    text-decoration:none;
+}
+
+#prefooter-third-region  p:nth-child(1){
+    background-color: #00a0d4;
+}
+
+#prefooter-third-region  p:nth-child(2){
+    background-color: #39589b;
+}
+
+#prefooter-third-region  p:nth-child(3){
+    background-color: #f6085d;
+}
+
+#prefooter-third-region  p:nth-child(4){
+    background-color: #858585;
+}
+
+/* @end Social Footer */
 
 /* @group Footer */
 
