@@ -163,11 +163,12 @@
 }
 
 .socialHeader {
-    position: absolute;
+    position: fixed;
     top: 175px;
     list-style-type: none;
     right: 0;
     z-index:1;
+    display: none;
 }
 
 .socialHeader .socialLink1, 
@@ -440,6 +441,7 @@
 @media only screen and (min-width : 768px) {
 
     /* @group Footer */
+    
     #footer .col-2 .col-first {
         width: 59%;
         padding: 0 1%;
@@ -450,7 +452,16 @@
         margin: 0 0 0 1%;
         padding: 0 0 0 1%;
     }
+    
     /* @end Footer */
+    
+    /* @group Social Header */
+
+    .socialHeader {
+        display: block;
+    }
+
+    /* @end Social Header */
 
 }
 
