@@ -126,16 +126,16 @@
     position: absolute;
     height: 68px;
     top: 0;
-    width: 1000px;
+    width: 100%;
 }
 
 .socialFooter .socialExtensionLeft {
-    left: -1000px;
+    left: -100%;
     background-color: #00a0d4;
 }
 
 .socialFooter .socialExtensionRight {
-    right: -1000px;
+    right: -100%;
     background-color: #858585;
 }
 
