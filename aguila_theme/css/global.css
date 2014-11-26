@@ -30,9 +30,14 @@
 
 /* @end Global */
 
+
 /* @group Header */
 .site-name-wrapper {
-    display: none;
+    display: inline-block;
+    left: 50%;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 2;
 }
 
 .site-name-wrapper .site-name a {
@@ -44,8 +49,8 @@
 }
 
 .stack-navigation {
-    position: absolute;
-    z-index: 1;
+    position: relative;
+
 }
 
 .stack-navigation .block {
