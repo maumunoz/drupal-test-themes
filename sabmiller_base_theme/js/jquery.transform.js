@@ -12,8 +12,7 @@
             source.each(function () {
                 var node = $(this),
                     result = node,
-                    target = targetQuery ? (globalTarget ? node.sfind(targetQuery) : $(targetQuery)) : node;
-                    //target = targetQuery ? (globalTarget ? $(targetQuery) : node.sfind(targetQuery)) : node;
+                    target = targetQuery ? (globalTarget ? $(targetQuery) : node.sfind(targetQuery)) : node;
 
                 if (options.beforeEach) {
                     options.beforeEach($, node, options);
