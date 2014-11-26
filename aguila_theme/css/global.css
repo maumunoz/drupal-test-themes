@@ -156,6 +156,59 @@
 
 /* @end Header */
 
+/* @group Social Header */
+
+.region-preheader-second {
+    line-height: 0px;
+}
+
+.socialHeader {
+    position: absolute;
+    top: 175px;
+    list-style-type: none;
+    right: 0;
+    z-index:1;
+}
+
+.socialHeader .socialLink1, 
+.socialHeader .socialLink2, 
+.socialHeader .socialLink3, 
+.socialHeader .socialLink4 {
+    display:block;
+    width: 50px;
+    height: 50px;
+    text-indent: 9999px;
+    background-image: url("../images/sprite.png");
+    background-repeat: no-repeat;
+    border: solid 5px;
+}
+
+.socialHeader .socialLink1 {
+    background-color: #3a579b;
+    border-color: #3a579b;
+    background-position: 0 -240px;
+}
+
+.socialHeader .socialLink2 {
+    background-color: #d03428;
+    border-color: #d03428;
+    background-position: 0 -280px;
+}
+
+.socialHeader .socialLink3 {
+    background-color: #598dc9;
+    border-color: #598dc9;
+    background-position: 0 -320px;
+}
+
+.socialHeader .socialLink4 {
+    background-color: #e1411f;
+    border-color: #e1411f;
+    background-position: 0 -360px;
+}
+
+/* @end Social Header */
+
 /* @group Social Footer */
 .socialFooter {
     position:relative;
