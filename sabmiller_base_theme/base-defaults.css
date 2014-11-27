@@ -1325,8 +1325,6 @@ body.wire {
   background-image: -o-linear-gradient(top, #ffffff 0%, #e0e0e0 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#e0e0e0));
   background-image: linear-gradient(to bottom, #ffffff 0%, #e0e0e0 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe0e0e0', GradientType=0);
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
   background-repeat: repeat-x;
   border-color: #dbdbdb;
   text-shadow: 0 1px 0 #fff;
@@ -1336,6 +1334,14 @@ body.wire {
 .node-media-gallery .action-links .media-gallery-add:hover,
 .form-submit:hover {
   background-color: #eee;
+}
+
+.block-search .form-submit{
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 /* @end */
 
@@ -1595,16 +1601,6 @@ input.form-text {
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
 
-}
-/* */
-
-/*  */
-#edit-submit {
-  font-family: 'Glyphicons Halflings';
-  font-style: normal;
-  font-weight: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 /* */
 

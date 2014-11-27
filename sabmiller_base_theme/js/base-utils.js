@@ -81,8 +81,8 @@
         } else {
             page.addClass('bg-default');
         }
-		
+
 		//Search field button to Magnifying Glass
-		$("#edit-submit").val("").attr("alt","Buscar");
+		$(".block-search .form-submit").val("").attr("alt","Buscar");
     });
 })(jQuery2);
