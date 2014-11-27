@@ -33,8 +33,235 @@
     max-width: 1200px;
 }
 
-/* @end Global */
+/* Text Blow Off */
+/* Remember to display: block || inline-block, if not:
+    line-height: 800%;
+    overflow: hidden;
+*/
+.site-name-wrapper .site-name a,
+.socialHeader li a,
+.socialFooter li a {
+    text-indent: -9999px;
+    text-align: left;
+}
 
+/* @end */
+
+/* @group Layers */
+/* Keep in auto or 0 to 10, no more. */
+
+.socialHeader {
+    z-index:1;
+}
+
+.site-name-wrapper,
+#block-system-user-menu,
+#block-search-form {
+    z-index: 2;
+}
+
+/* @end */
+
+/* @group Colors */
+
+/*
+$white, $light          = #fff    | rgb(255, 255, 255);
+$yellow                 = #fff600 | rgb(255, 246, 0);
+$gold                   = #ffd800 | rgb(255, 216, 0);
+$pink                   = #ff008a | rgb(255, 0, 138);
+$red                    = #ff3030 | rgb(255, 48, 48);
+$sky-blue               = #0fc3ff | rgb(15, 195, 255);
+$medium-blue            = #2ba3ff | rgb(43, 163, 255);
+$blue                   = #0565be | rgb(5, 101, 190);
+$dark-cyan              = #1f527a | rgb(31, 82, 122);
+$gray                   = #969696 | rgb(150, 150, 150);
+$dark-gray              = #484848 | rgb(72, 72, 72);
+$black, $dark           = #000    | rgb(0, 0, 0);
+*/
+
+/* @end */
+
+/* @group Buttons */
+
+.btn {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 1.2;
+    /* To replace with correct default font stack */
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: normal;
+    background-color: #ffd800;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    color: #000;
+}
+
+.btn-full {
+    display: block;
+    width: 100%;
+}
+
+.btn-white {
+    color: #000;
+    border-color: #000;
+    background-color: #fff;
+}
+
+.btn-yellow {
+    color: #000;
+    border-color: transparent;
+    background-color: #fff600;
+}
+
+.btn-gold {
+    color: #000;
+    border-color: transparent;
+    background-color: #ffd800;
+}
+
+.btn-pink,
+.btn-pink:hover {
+    color: #fff;
+    border-color: transparent;
+    background-color: #ff008a;
+}
+
+.btn-red,
+.btn-red:hover {
+    color: #fff;
+    border-color: transparent;
+    background-color: #ff3030;
+}
+
+.btn-sky-blue,
+.btn-sky-blue:hover {
+    color: #fff;
+    border-color: transparent;
+    background-color: #0fc3ff;
+}
+
+.btn-medium-blue,
+.btn-medium-blue:hover {
+    color: #fff;
+    border-color: transparent;
+    background-color: #2ba3ff;
+}
+
+.btn-blue,
+.btn-blue:hover {
+    color: #fff;
+    border-color: transparent;
+    background-color: #0565be;
+}
+
+.btn-dark-cyan,
+.btn-dark-cyan:hover {
+    color: #fff;
+    border-color: transparent;
+    background-color: #1f527a;
+}
+
+.btn-gray {
+    color: #000;
+    border-color: transparent;
+    background-color: #969696;
+}
+
+.btn-dark-gray,
+.btn-dark-gray:hover {
+    color: #fff;
+    border-color: transparent;
+    background-color: #484848;
+}
+
+.btn-black,
+.btn-black:hover {
+    color: #fff;
+    border-color: transparent;
+    background-color: #000;
+}
+
+.btn-light,
+.btn-dark {
+    background-color: transparent;
+    background-image: none;
+}
+
+.btn.btn-light,
+.btn.btn-light:hover {
+    color: #fff;
+    border-color: #fff;
+}
+
+.btn.btn-dark {
+    color: #000;
+    border-color: #000;
+}
+
+.btn-symbol {
+    background-image: url("../images/sprite.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    min-height: 30px;
+    padding-right: 40px;
+}
+
+.btn-symbol.btn-symbol-geo {
+    background-position: 0 -406px;
+    padding-left: 40px;
+    padding-right: 12px;
+}
+
+.btn-symbol.btn-symbol-next {
+    background-position: 100% -446px;
+}
+
+.btn-symbol.btn-symbol-prev {
+    background-position: 0 -486px;
+    padding-left: 40px;
+    padding-right: 12px;
+}
+
+.btn-symbol.btn-symbol-down {
+    background-position: 100% -566px;
+}
+
+.btn-symbol.btn-symbol-up {
+    background-position: 100% -526px;
+}
+
+.btn-symbol.btn-symbol-left {
+    background-position: 100% -606px;
+}
+
+.btn-symbol.btn-symbol-right {
+    background-position: 100% -646px;
+}
+
+.btn-strong {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn-radius-none,
+.radius-none {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+.btn-border-none {
+    border: none !important;
+}
+
+/* @end */
 
 /* @group Header */
 .site-name-wrapper {
@@ -42,15 +269,13 @@
     left: 50%;
     margin-left: -81px;
     position: absolute;
-    z-index: 2;
 }
 
 .site-name-wrapper .site-name a {
-  display: inline-block;
-  width: 162px;
-  height: 64px;
-  text-indent: -9999px;
-  background: url(../images/logo.png) no-repeat 0 0 transparent;
+    display: inline-block;
+    width: 162px;
+    height: 64px;
+    background: url(../images/logo.png) no-repeat 0 0 transparent;
 }
 
 .stack-navigation {
@@ -124,7 +349,6 @@
 #block-system-user-menu,
 #block-search-form {
     position: absolute;
-    z-index: 2;
     top: 41px;
     right: 0;
     background: #FFF;
@@ -153,8 +377,7 @@
     font-size: 20px;
 }
 
-
-/* @end Header */
+/* @end */
 
 /* @group Social Header */
 
@@ -167,17 +390,15 @@
     top: 175px;
     list-style-type: none;
     right: 0;
-    z-index:1;
 }
 
-.socialHeader .socialLink1, 
-.socialHeader .socialLink2, 
-.socialHeader .socialLink3, 
+.socialHeader .socialLink1,
+.socialHeader .socialLink2,
+.socialHeader .socialLink3,
 .socialHeader .socialLink4 {
     display:block;
     width: 50px;
     height: 50px;
-    text-indent: 9999px;
     background-image: url("../images/sprite.png");
     background-repeat: no-repeat;
     border: solid 5px;
@@ -207,7 +428,7 @@
     background-position: 0 -360px;
 }
 
-/* @end Social Header */
+/* @end */
 
 /* @group Social Footer */
 .socialFooter {
@@ -253,7 +474,6 @@
     background-position: 50% 0;
     border-width: 14px 0;
     border-style: solid;
-    text-indent: -9999px;
 }
 
 .socialFooter  .socialTab1 {
@@ -279,7 +499,7 @@
     background-position: 50% -120px;
 }
 
-/* @end Social Footer */
+/* @end */
 
 /* @group Footer */
 
@@ -421,8 +641,19 @@
     margin: 0 auto;
 }
 
-/* @end Footer */
+/* @end */
 
+/* @group Main Banner */
+
+.main-banner .btn {
+    height: 58px;
+    line-height: 58px;
+    min-width: 340px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+/* @end */
 
 /* @group Media Query */
 
@@ -450,7 +681,7 @@
         margin: 0 0 0 1%;
         padding: 0 0 0 1%;
     }
-    /* @end Footer */
+    /* @end */
 
 }
 
@@ -463,4 +694,4 @@
 @media only screen and (min-width : 1200px) {
 
 }
-/* @end Media Query */
+/* @end */
