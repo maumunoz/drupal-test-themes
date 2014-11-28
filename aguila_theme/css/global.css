@@ -113,7 +113,7 @@ $black, $dark           = #000    | rgb(0, 0, 0);
 
 .btn.btn-md {
     min-height: 40px;
-    padding-top: 10px 12px;
+    padding: 10px 12px;
 }
 
 .btn-full {
