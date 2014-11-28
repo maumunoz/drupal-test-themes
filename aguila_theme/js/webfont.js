@@ -1,4 +1,4 @@
-/*global WebFontConfig, jQuery2 */
+/*global WebFontConfig */
 window.WebFontConfig = {
     google: {
         families: ['Open+Sans:300italic,400italic,600italic,700,300,600,400:latin']
