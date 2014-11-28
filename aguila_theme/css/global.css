@@ -41,7 +41,8 @@
 .site-name-wrapper .site-name a,
 .socialHeader li a,
 .socialFooter li a,
-.btn-login-search .btn-icon > a {
+.btn-login-search .btn-icon > a,
+.btn-text-no {
     text-indent: -9999px;
     text-align: left;
 }
@@ -102,6 +103,11 @@ $black, $dark           = #000    | rgb(0, 0, 0);
 
 .btn:hover {
     color: #000;
+}
+
+.btn.btn-md {
+    min-height: 40px;
+    padding-top: 10px 12px;
 }
 
 .btn-full {
@@ -189,6 +195,21 @@ $black, $dark           = #000    | rgb(0, 0, 0);
     background-color: #000;
 }
 
+.btn-black-overlay,
+.btn-black-overlay:hover {
+    color: #fff;
+    border-color: #fff;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.btn-white-overlay {
+    color: #000;
+    border-color: #000;
+    background-color: #000;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
 .btn-light,
 .btn-dark {
     background-color: transparent;
@@ -220,8 +241,16 @@ $black, $dark           = #000    | rgb(0, 0, 0);
     padding-right: 12px;
 }
 
+.btn-md.btn-symbol.btn-symbol-geo {
+    background-position: 0 -400px;
+}
+
 .btn-symbol.btn-symbol-next {
     background-position: 100% -446px;
+}
+
+.btn-md.btn-symbol.btn-symbol-next {
+    background-position: 100% -440px;
 }
 
 .btn-symbol.btn-symbol-prev {
@@ -230,20 +259,90 @@ $black, $dark           = #000    | rgb(0, 0, 0);
     padding-right: 12px;
 }
 
+.btn-md.btn-symbol.btn-symbol-prev {
+    background-position: 0 -480px;
+}
+
 .btn-symbol.btn-symbol-down {
     background-position: 100% -566px;
+}
+
+.btn-md.btn-symbol.btn-symbol-down {
+    background-position: 100% -560px;
 }
 
 .btn-symbol.btn-symbol-up {
     background-position: 100% -526px;
 }
 
+.btn-md.btn-symbol.btn-symbol-up {
+    background-position: 100% -520px;
+}
+
 .btn-symbol.btn-symbol-left {
     background-position: 100% -606px;
 }
 
+.btn-md.btn-symbol.btn-symbol-left {
+    background-position: 100% -600px;
+}
+
 .btn-symbol.btn-symbol-right {
     background-position: 100% -646px;
+}
+
+.btn-md.btn-symbol.btn-symbol-right {
+    background-position: 100% -640px;
+}
+
+.btn-symbol.btn-symbol-heart {
+    background-position: 0 -686px;
+    padding-left: 40px;
+    padding-right: 12px;
+}
+
+.btn-md.btn-symbol.btn-symbol-heart {
+    background-position: 0 -680px;
+}
+
+.btn-symbol.btn-symbol-heart-light {
+    background-position: 0 -726px;
+    padding-left: 40px;
+    padding-right: 12px;
+}
+
+.btn-md.btn-symbol.btn-symbol-heart-light {
+    background-position: 0 -720px;
+}
+
+.btn-symbol.btn-symbol-heart-dark {
+    background-position: 0 -766px;
+    padding-left: 40px;
+    padding-right: 12px;
+}
+
+.btn-md.btn-symbol.btn-symbol-heart-dark {
+    background-position: 0 -760px;
+}
+
+.btn-symbol.btn-symbol-heart-white {
+    background-position: 0 -806px;
+    padding-left: 40px;
+    padding-right: 12px;
+}
+
+.btn-md.btn-symbol.btn-symbol-heart-white {
+    background-position: 0 -800px;
+}
+
+.btn-symbol.btn-symbol-geo-gray {
+    background-position: 0 -846px;
+    padding-left: 40px;
+    padding-right: 12px;
+}
+
+.btn-md.btn-symbol.btn-symbol-geo-gray {
+    background-position: 100% -840px;
 }
 
 .btn-strong {
@@ -260,6 +359,16 @@ $black, $dark           = #000    | rgb(0, 0, 0);
 
 .btn-border-none {
     border: none !important;
+}
+
+.btn.btn-text-no {
+    width: 0;
+    padding: 0 15px;
+    background-position-x: -5px;
+}
+
+.btn-md.btn-text-no {
+    padding: 0 20px;
 }
 
 /* @end */
