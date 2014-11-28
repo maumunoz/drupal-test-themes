@@ -32,7 +32,8 @@
 /* Content wrapper */
 .stack-footer-inner .stack-width,
 .stack-navigation .region-navigation,
-.stack-copyright .content {
+.stack-copyright .content,
+.view-descatados {
     position: relative;
     margin: 0 auto;
     max-width: 1200px;
@@ -763,6 +764,75 @@ $black, $dark           = #000    | rgb(0, 0, 0);
 
 .sb-slidebar a:hover {
     background-color: #0fc3ff;
+}
+
+/* @end */
+
+/* @group Section main title */
+.section-main-title {
+    position: relative;
+    max-width: 670px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-main-title h2 {
+    display: inline-block;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 24px;
+    background-color: #FFF;
+    padding: 0 20px;
+}
+
+.section-main-title h2 em {
+    display: block;
+    font-weight: normal;
+    font-style: italic;
+    text-transform: none;
+    font-size: 28px;
+}
+
+.section-main-title .line {
+    position: absolute;
+    top: 50%;
+    left: 2.5%;
+    display: block;
+    width: 95%;
+    height: 1px;
+    z-index: -1;
+    border-bottom: 1px solid #b1b1b1;
+}
+
+.view-descatados .view-content .views-row {
+    position: relative;
+    list-style: none;
+}
+
+
+
+
+.view-descatados .view-content .views-row {
+    position: relative;
+    list-style: none;
+}
+
+.view-descatados .view-content .views-row-1 {
+
+}
+
+.view-descatados .view-content .views-row-1 .btn {}
+
+.view-descatados .view-content .views-row-2 {
+
+}
+
+.view-descatados .view-content .views-row-3 {
+
+}
+
+.view-descatados .view-content .views-row-4 {
+
 }
 
 /* @end */
