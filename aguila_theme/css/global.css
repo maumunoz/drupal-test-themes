@@ -917,6 +917,10 @@ $black, $dark           = #000    | rgb(0, 0, 0);
 
 /* @group Banner Cervezas */
 
+.stack-prefooter {
+    padding: 0;
+}
+
 .view-banner-cervezas ul {
     list-style-type: none;
 }
