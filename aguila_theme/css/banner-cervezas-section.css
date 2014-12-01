@@ -1,5 +1,10 @@
 /* @group Banner Cervezas */
 
+.view-banner-cervezas {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .wrapper-footer .stack.stack-prefooter {
     padding: 0;
 }
