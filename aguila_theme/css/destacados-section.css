@@ -1,5 +1,175 @@
 /* @group Grid Destacados */
 
+.view-descatados {
+
+}
+
+.view-descatados .item-list {
+
+
+}
+
+.view-descatados .item-list ul {
+    overflow: hidden;
+    list-style: none;
+    max-width: 1200px;
+    margin: 0;
+    padding: 0;
+}
+
+.view-descatados .item-list .views-row {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+}
+
+.view-descatados .item-list .views-field {
+    position: relative;
+    z-index: 1;
+}
+
+.view-descatados .item-list .views-row.blanco {
+    background: #FFF;
+}
+
+.view-descatados .item-list .views-row.celeste {
+    background: #2cd5ff;
+}
+
+.view-descatados .item-list .views-row.amarillo {
+    background: #ffd800;
+}
+
+.view-descatados .item-list .views-row,
+.view-descatados .item-list .views-row a {
+    color: #000;
+}
+
+.view-descatados .item-list .views-row.celeste,
+.view-descatados .item-list .views-row.celeste a {
+    color: #FFF;
+}
+
+.view-descatados .item-list .views-row  img {
+    display: block;
+    width: 100%;
+}
+
+.view-descatados .item-list .views-row-1,
+.view-descatados .item-list .views-row-2,
+.view-descatados .item-list .views-row-3,
+.view-descatados .item-list .views-row-4,
+.view-descatados .item-list .views-row-5 {
+    float: left;
+}
+
+.view-descatados .item-list .views-row-1 {
+    width: 60%;
+}
+
+.view-descatados .item-list .views-row-2,
+.view-descatados .item-list .views-row-3,
+.view-descatados .item-list .views-row-4,
+.view-descatados .item-list .views-row-5,
+.view-descatados .item-list .views-row-6 {
+    width: 40%;
+}
+
+.view-descatados .item-list .views-row-7 {
+    width: 20%;
+}
+
+.view-descatados .item-list .views-row-1,
+.view-descatados .item-list .views-row-6,
+.view-descatados .item-list .views-row-7 {
+   height: 480px;
+}
+
+.view-descatados .item-list .views-row-2,
+.view-descatados .item-list .views-row-3,
+.view-descatados .item-list .views-row-4,
+.view-descatados .item-list .views-row-5 {
+    height: 240px;
+}
+
+.view-descatados .item-list .views-row-5 {
+    clear: left;
+}
+
+.view-descatados .item-list .views-row-7 {
+    float: right;
+    margin-top: -480px;
+}
+
+.view-descatados .item-list .views-row-2 .views-field-field-thumbnail,
+.view-descatados .item-list .views-row-3 .views-field-field-thumbnail,
+.view-descatados .item-list .views-row-4 .views-field-field-thumbnail,
+.view-descatados .item-list .views-row-5 .views-field-field-thumbnail {
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    width: 50%;
+}
+
+/* Item 1 */
+.view-descatados .item-list .views-row-1 > div {
+
+}
+
+.view-descatados .item-list .views-row-1 .views-field-field-thumbnail,
+.view-descatados .item-list .views-row-6 .views-field-field-thumbnail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    margin: 0;
+}
+
+/* Item 2 */
+
+.view-descatados .item-list .views-row-2 > div {
+    width: 50%;
+}
+
+.view-descatados .item-list .views-row-2 .views-field-field-thumbnail {
+    right: 0;
+}
+
+/* Item 3 */
+
+.view-descatados .item-list .views-row-3 > div {
+    width: 50%;
+    margin-left: 50%;
+}
+
+.view-descatados .item-list .views-row-3 .views-field-field-thumbnail {
+    left: 0;
+    margin: 0;
+}
+
+/* Item 4 */
+
+.view-descatados .item-list .views-row-4 > div {
+    width: 50%;
+    margin-left: 50%;
+}
+
+.view-descatados .item-list .views-row-4 .views-field-field-thumbnail {
+    left: 0;
+    margin: 0;
+}
+
+/* Item 5 */
+
+.view-descatados .item-list .views-row-5 > div {
+    width: 50%;
+}
+
+.view-descatados .item-list .views-row-5 .views-field-field-thumbnail {
+    right: 0;
+}
+
 
 
 /* @end */
