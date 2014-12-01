@@ -1,0 +1,97 @@
+/* @group Banner Cervezas */
+
+.view-banner-cervezas ul {
+    list-style-type: none;
+}
+
+.view-banner-cervezas li {
+    display: inline-block;
+    width: 33%;
+    margin:0;
+    float:left;
+    position: relative;
+}
+
+.view-banner-cervezas a:link,
+.view-banner-cervezas a:active,
+.view-banner-cervezas a:visited,
+.view-banner-cervezas a:hover {
+    text-decoration:none;
+    color: #484848;
+}
+
+.view-banner-cervezas .views-field-field-cerveza-descripcion-corta {
+    position: absolute;
+    left: 35%;
+    top: 55px;
+}
+
+.view-banner-cervezas .views-field-field-cerveza-descripcion-corta p:first-child {
+    text-transform: uppercase;
+}
+.view-banner-cervezas .views-field-field-cerveza-descripcion-corta p strong {
+    font-size: 26px;
+}
+
+.view-banner-cervezas .amarillo {
+    background: rgb(220,194,0); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(220,194,0,1) 0%, rgba(255,246,0,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(220,194,0,1)), color-stop(100%,rgba(255,246,0,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(220,194,0,1) 0%,rgba(255,246,0,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(220,194,0,1) 0%,rgba(255,246,0,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(220,194,0,1) 0%,rgba(255,246,0,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(220,194,0,1) 0%,rgba(255,246,0,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dcc200', endColorstr='#fff600',GradientType=0 ); /* IE6-9 */
+}
+
+.view-banner-cervezas .vainilla {
+    background: rgb(207,194,143); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(207,194,143,1) 0%, rgba(255,240,179,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(207,194,143,1)), color-stop(100%,rgba(255,240,179,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(207,194,143,1) 0%,rgba(255,240,179,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(207,194,143,1) 0%,rgba(255,240,179,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(207,194,143,1) 0%,rgba(255,240,179,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(207,194,143,1) 0%,rgba(255,240,179,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfc28f', endColorstr='#fff0b3',GradientType=0 ); /* IE6-9 */
+}
+
+.view-banner-cervezas .celeste {
+    background: rgb(0,112,191); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(0,112,191,1) 0%, rgba(149,211,255,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,112,191,1)), color-stop(100%,rgba(149,211,255,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(0,112,191,1) 0%,rgba(149,211,255,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(0,112,191,1) 0%,rgba(149,211,255,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(0,112,191,1) 0%,rgba(149,211,255,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(0,112,191,1) 0%,rgba(149,211,255,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0070bf', endColorstr='#95d3ff',GradientType=0 ); /* IE6-9 */
+}
+
+/* @end */
+
+/* @group Media Query */
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+/* @end */

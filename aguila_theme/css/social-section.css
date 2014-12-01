@@ -1,0 +1,157 @@
+/* @group Social Header */
+
+.region-preheader-second {
+    line-height: 0px;
+}
+
+.socialHeader {
+    position: fixed;
+    top: 175px;
+    list-style-type: none;
+    right: 0;
+    display: none;
+}
+
+.socialHeader .socialLink1,
+.socialHeader .socialLink2,
+.socialHeader .socialLink3,
+.socialHeader .socialLink4 {
+    display:block;
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/sprite.png);
+    background-repeat: no-repeat;
+    border: solid 5px;
+}
+
+.socialHeader .socialLink1 {
+    background-color: #3a579b;
+    border-color: #3a579b;
+    background-position: 0 -240px;
+}
+
+.socialHeader .socialLink2 {
+    background-color: #d03428;
+    border-color: #d03428;
+    background-position: 0 -280px;
+}
+
+.socialHeader .socialLink3 {
+    background-color: #598dc9;
+    border-color: #598dc9;
+    background-position: 0 -320px;
+}
+
+.socialHeader .socialLink4 {
+    background-color: #e1411f;
+    border-color: #e1411f;
+    background-position: 0 -360px;
+}
+
+/* @end */
+
+/* @group Social Footer */
+.socialFooter {
+    position:relative;
+}
+
+.socialFooter .socialExtensionLeft,
+.socialFooter .socialExtensionRight {
+    position: absolute;
+    height: 68px;
+    top: 0;
+    width: 100%;
+}
+
+.socialFooter .socialExtensionLeft {
+    left: -100%;
+    background-color: #00a0d4;
+}
+
+.socialFooter .socialExtensionRight {
+    right: -100%;
+    background-color: #858585;
+}
+
+.socialFooter ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.socialFooter .socialTab1,
+.socialFooter .socialTab2,
+.socialFooter .socialTab3,
+.socialFooter .socialTab4 {
+    float: left;
+    width: 25%;
+    margin: 0;
+    height: 40px;
+    display: block;
+    padding: 20px;
+    background-image: url(../images/sprite.png);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    border-width: 14px 0;
+    border-style: solid;
+}
+
+.socialFooter  .socialTab1 {
+    background-color: #00a0d4;
+    border-color:  #00a0d4;
+}
+
+.socialFooter  .socialTab2 {
+    background-color: #39589b;
+    border-color: #39589b;
+    background-position: 50% -40px;
+}
+
+.socialFooter  .socialTab3 {
+    background-color: #f6085d;
+    border-color: #f6085d;
+    background-position: 50% -80px;
+}
+
+.socialFooter  .socialTab4 {
+    background-color: #858585;
+    border-color: #858585;
+    background-position: 50% -120px;
+}
+
+/* @end */
+
+/* @group Media Query */
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+    /* @group Social Header */
+
+    .socialHeader {
+        display: block;
+    }
+
+    /* @end */
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+/* @end */

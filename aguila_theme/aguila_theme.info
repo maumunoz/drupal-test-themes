@@ -6,6 +6,13 @@ engine = 'phptemplate'
 base theme = 'sabmiller_base_theme'
 
 stylesheets[all][] = 'css/global.css'
+stylesheets[all][] = 'css/slidebar.css'
+stylesheets[all][] = 'css/header-section.css'
+stylesheets[all][] = 'css/slider.css'
+stylesheets[all][] = 'css/social-section.css'
+stylesheets[all][] = 'css/destacados-section.css'
+stylesheets[all][] = 'css/banner-cervezas-section.css'
+stylesheets[all][] = 'css/footer-section.css'
 
 scripts[] = 'js/global.js'
 
