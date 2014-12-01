@@ -1,6 +1,6 @@
 /* @group Banner Cervezas */
 
-.stack-prefooter {
+.wrapper-footer .stack.stack-prefooter {
     padding: 0;
 }
 
@@ -14,6 +14,7 @@
     margin:0;
     float:left;
     position: relative;
+    height: 240px;
 }
 
 .view-banner-cervezas a:link,
@@ -24,17 +25,31 @@
     color: #484848;
 }
 
+.view-banner-cervezas .celeste a:link,
+.view-banner-cervezas .celeste a:active,
+.view-banner-cervezas .celeste a:visited,
+.view-banner-cervezas .celeste a:hover {
+    color: #fff;
+}
+
+.view-banner-cervezas .views-field-field-imagen-botella {
+    padding: 12px 9.5%;
+}
 .view-banner-cervezas .views-field-field-cerveza-descripcion-corta {
     position: absolute;
     left: 35%;
-    top: 55px;
+    top: 67px;
+    width: 60%;
 }
 
 .view-banner-cervezas .views-field-field-cerveza-descripcion-corta p:first-child {
     text-transform: uppercase;
+    margin-bottom: -1px;
 }
 .view-banner-cervezas .views-field-field-cerveza-descripcion-corta p strong {
-    font-size: 26px;
+    font-size: 25px;
+    line-height: 23px;
+    letter-spacing: -0.5px;
 }
 
 .view-banner-cervezas .amarillo {
@@ -60,6 +75,7 @@
 }
 
 .view-banner-cervezas .celeste {
+    color: #fff;
     background: rgb(0,112,191); /* Old browsers */
     background: -moz-linear-gradient(top,  rgba(0,112,191,1) 0%, rgba(149,211,255,1) 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,112,191,1)), color-stop(100%,rgba(149,211,255,1))); /* Chrome,Safari4+ */
