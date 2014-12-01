@@ -6,15 +6,15 @@
 
 .view-banner-cervezas ul {
     list-style-type: none;
+    padding-left: 0;
 }
 
 .view-banner-cervezas li {
     display: inline-block;
-    width: 33%;
+    width: 100%;
     margin:0;
-    float:left;
     position: relative;
-    height: 240px;
+    height: 165px;
 }
 
 .view-banner-cervezas a:link,
@@ -35,16 +35,25 @@
 .view-banner-cervezas .views-field-field-imagen-botella {
     padding: 12px 9.5%;
 }
+
+.view-banner-cervezas .views-field-field-imagen-botella img {
+    height:140px;
+    width: auto;
+}
+
+
 .view-banner-cervezas .views-field-field-cerveza-descripcion-corta {
     position: absolute;
-    left: 35%;
-    top: 67px;
+    left: 30%;
+    top: 40px;
     width: 60%;
+    font-family: "Open Sans";
 }
 
 .view-banner-cervezas .views-field-field-cerveza-descripcion-corta p:first-child {
     text-transform: uppercase;
     margin-bottom: -1px;
+    /* font-family: "Retina Display"; */
 }
 .view-banner-cervezas .views-field-field-cerveza-descripcion-corta p strong {
     font-size: 25px;
@@ -99,9 +108,26 @@
 @media only screen and (min-width : 480px) {
 
 }
-
+    
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
+    .view-banner-cervezas li {
+        width: 33.3%;
+        float:left;
+    }
+    
+    .view-banner-cervezas .views-field-field-imagen-botella img {
+        height: auto;
+    }
+    
+    .view-banner-cervezas li {
+        height: 240px;
+    }
+    
+    .view-banner-cervezas .views-field-field-cerveza-descripcion-corta {
+        left: 35%;
+        top: 67px;
+    }
 
 }
 
