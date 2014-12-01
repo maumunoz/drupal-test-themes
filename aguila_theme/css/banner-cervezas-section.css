@@ -1,5 +1,10 @@
 /* @group Banner Cervezas */
 
+.view-banner-cervezas {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .wrapper-footer .stack.stack-prefooter {
     padding: 0;
 }
@@ -44,7 +49,7 @@
 
 .view-banner-cervezas .views-field-field-cerveza-descripcion-corta {
     position: absolute;
-    left: 30%;
+    left: 34%;
     top: 40px;
     width: 60%;
     font-family: "Open Sans";
@@ -59,6 +64,10 @@
     font-size: 25px;
     line-height: 23px;
     letter-spacing: -0.5px;
+}
+
+.view-banner-cervezas .views-field-field-cerveza-descripcion-corta p span {
+    letter-spacing: -0.4px;
 }
 
 .view-banner-cervezas .amarillo {

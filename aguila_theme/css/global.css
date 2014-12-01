@@ -485,6 +485,7 @@ $black, $dark           = #000    | rgb(0, 0, 0);
     font-style: italic;
     text-transform: none;
     font-size: 28px;
+    font-family: "Dubiel";
 }
 
 .section-main-title .line {
