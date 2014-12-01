@@ -53,6 +53,8 @@
 /* @group Social Footer */
 .socialFooter {
     position:relative;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .socialFooter .socialExtensionLeft,
