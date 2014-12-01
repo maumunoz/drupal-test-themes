@@ -1,6 +1,26 @@
 /* @group Slider */
 
+.region-banner .views-row {
+    display: none;
+}
 
+.region-banner .views-row.views-row-first {
+    display: block;
+}
+
+.region-banner .views-row-first .slider-background img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.region-banner .btn {
+    height: 58px;
+    line-height: 58px;
+    min-width: 340px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
 
 /* @end */
 

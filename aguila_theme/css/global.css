@@ -462,19 +462,6 @@ $black, $dark           = #000    | rgb(0, 0, 0);
 
 /* @end */
 
-/* @group Main Banner */
-
-.main-banner .btn {
-    height: 58px;
-    line-height: 58px;
-    min-width: 340px;
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
-/* @end */
-
-
 /* @group Section main title */
 .section-main-title {
     position: relative;
