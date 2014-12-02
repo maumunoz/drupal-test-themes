@@ -49,7 +49,8 @@
 .socialHeader li a,
 .socialFooter li a,
 .btn-login-search .btn-icon > a,
-.btn-text-no {
+.btn-text-no,
+.slick-dots li * {
     text-indent: -9999px;
     text-align: left;
 }
@@ -59,7 +60,8 @@
 /* @group Layers */
 /* Keep in auto or 0 to 10, no more. */
 
-.socialHeader {
+.socialHeader,
+.slick-slider:after {
     z-index:1;
 }
 

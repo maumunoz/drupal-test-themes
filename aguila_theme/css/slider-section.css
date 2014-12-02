@@ -106,12 +106,27 @@
     background: url(../images/sprite.png) 3px -915px no-repeat transparent;
 }
 
-.slick-dots li * {
-    text-indent: -9999px;
-}
-
 .slick-dots .slick-active {
     background-position: 1px -878px;
+}
+
+.slick-slider:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -14px;
+    left: 15%;
+    width: 40px;
+    height: 40px;
+    min-height: 40px;
+    padding: 10px 12px;
+    color: #fff;
+    border-color: transparent;
+    background-color: #0fc3ff;
+    background-image: url(../images/sprite.png);
+    background-position: 100% -560px;
+    background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 /* @end */
