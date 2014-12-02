@@ -33,7 +33,8 @@
 .stack-footer-inner .stack-width,
 .stack-navigation .region-navigation,
 .stack-copyright .content,
-.view-descatados {
+.view-descatados,
+.slick-initialized .slide-content {
     position: relative;
     margin: 0 auto;
     max-width: 1200px;
