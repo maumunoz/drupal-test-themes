@@ -15,31 +15,54 @@
     visibility: visible !important;
 }
 
+.region-banner .slick-initialized .views-row-first .slider-background,
+.region-banner .slick-initialized .views-row-first .slider-background img {
+    display: none !important;
+    visibility: hidden !important;
+}
+
 .region-banner .views-row-first .slider-background img {
     display: block;
     width: 100%;
     height: auto;
 }
 
-.region-banner .views-row {
-    border-bottom: 6px solid #0fc3ff;
+.region-banner .views-row,
+.region-banner .views-row.noborder {
+    border-bottom: 6px solid transparent;
     position: relative;
+}
+
+.region-banner .views-row.bordeamarillo {
+    border-color: #ffd800;
+}
+
+.region-banner .views-row.bordeceleste {
+    border-color: #0fc3ff;
+}
+
+.region-banner .slick-initialized .views-row {
+    display: block;
+    min-height: 300px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .slide-content {
     color: #fff;
-    padding: 0 1% 20px;
+    padding: 0 5% 0;
     position: absolute;
     width: 100%;
     top: 0;
 }
 
 .slide-content p {
-    margin: 0;
+    margin: 10px 0 0 0;
 }
 
 .slide-content h3 {
-    font: italic normal 100%/0.8 Dubiel;
+    font: italic normal 165%/0.8 Dubiel;
     margin: 0;
 }
 
@@ -60,12 +83,22 @@
 }
 
 .region-banner .btn {
-    height: 18px;
-    min-width: 15px;
+    height: 38px;
+    min-width: 75px;
     padding-top: 0;
     padding-bottom: 0;
-    font-size: 70%;
-    line-height: 18px;
+    font-size: 80%;
+    line-height: 38px;
+}
+
+.slick-slider {
+    margin: 0;
+}
+
+.slick-slider .slick-dots {
+    bottom: 0;
+    margin: 0;
+    padding: 0 10px 15px;
 }
 
 /* @end */
@@ -79,41 +112,16 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
-    .slide-content {
-        padding: 0 5% 0;
-    }
 
-    .slide-content h3 {
-        font-size: 165%;
-        line-height: 0.8;
-        margin: 0;
-    }
-
-    .slide-content p .btn {
-        margin-top: 10px;
-    }
-
-    .region-banner .btn {
-        height: 28px;
-        line-height: 28px;
-        min-width: 75px;
-    }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-    .slide-content {
-        padding: 30px 10% 10px;
-    }
 
     .slide-content h3 {
-        font-size: 205%;
+        font-size: 200%;
         line-height: 1;
-        margin: 10px 0 5px;
-    }
-
-    .slide-content .transform-like-module {
-        padding: 15px 0 !important;
+        padding: 10px 0 5px;
     }
 
     .region-banner .btn {
@@ -127,29 +135,16 @@
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
     .slide-content {
-        padding: 40px 10% 25px;
+        padding: 80px 3% 50px;
     }
 
-    .slide-content h3 {
-        font-size: 275%;
-        margin: 20px 0 10px;
-    }
-
-    .region-banner .btn {
-        height: 48px;
-        line-height: 48px;
-        min-width: 120px;
-    }
-}
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
-    .slide-content {
-        padding: 80px 15% 50px;
+    .region-banner .slick-initialized .views-row {
+        min-height: 657px;
     }
 
     .slide-content h3 {
         font-size: 300%;
+        margin: 20px 0 10px;
     }
 
     .slide-content h3 b,
@@ -170,7 +165,13 @@
         height: 58px;
         line-height: 58px;
         min-width: 150px;
-        font-size: 100%;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    .slide-content {
+        padding: 80px 20px 50px;
     }
 }
 /* @end */
