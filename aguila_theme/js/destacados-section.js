@@ -36,7 +36,7 @@
             nodeDate.addClass('show');
 
             //Add arrow
-            $(this).append('<div class="views-field views-field-arrow"><span class="arrow"></span></div>');
+            $(this).find(".views-field-field-thumbnail").append('<div class="views-field views-field-arrow"><span class="arrow"></span></div>');
         });
     }
 }(jQuery2));
