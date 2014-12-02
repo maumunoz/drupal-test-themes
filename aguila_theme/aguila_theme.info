@@ -14,6 +14,7 @@ stylesheets[all][] = 'css/destacados-section.css'
 stylesheets[all][] = 'css/banner-cervezas-section.css'
 stylesheets[all][] = 'css/footer-section.css'
 
+scripts[] = 'js/moment.min.js'
 scripts[] = 'js/global.js'
 
 regions[page_top] = 'Above page'

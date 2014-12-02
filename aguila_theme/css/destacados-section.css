@@ -26,6 +26,13 @@
     padding: 0;
 }
 
+.view-descatados .views-row .views-field-title a {
+    display: inline-block;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
 .view-descatados .views-row.blanco {
     background: #FFF;
 }
@@ -43,6 +50,10 @@
     color: #000;
 }
 
+.view-descatados .views-row.blanco {
+    color: #484848;
+}
+
 .view-descatados .views-row.celeste,
 .view-descatados .views-row.celeste a {
     color: #FFF;
@@ -56,6 +67,22 @@
 .view-descatados .views-row .views-field-body,
 .view-descatados .views-row .views-field-nothing {
     display: none;
+}
+
+.view-descatados .views-row .views-field-created,
+.view-descatados .views-row .views-field-ops {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 20px;
+}
+
+.view-descatados .views-row .views-field-created {
+    left: 0;
+}
+
+
+.view-descatados .views-row .views-field-ops {
+    right: 0;
 }
 
 .view-descatados .views-row-1,
@@ -114,17 +141,23 @@
 
 /* Item 1 */
 .view-descatados .views-row-1 .categoria {
-    margin-top: 210px;
+    margin: 210px 0 15px;
 }
 
-.view-descatados .views-row-1 .views-field-title a {
+.view-descatados .views-row-1 .views-field-title a,
+.view-descatados .views-row-6 .views-field-title a {
     font-size: 38px;
-    text-decoration: none;
+    line-height: 38px;
 }
 
 .view-descatados .views-row-1 .views-field-title,
 .view-descatados .views-row-1 .views-field-body {
     max-width: 80%;
+}
+
+.view-descatados .views-row-1 .views-field-body {
+    overflow: hidden;
+    height: 54px;
 }
 
 .view-descatados .views-row-1 .views-field-body p {
@@ -142,35 +175,44 @@
     color: #000;
 }
 
-.view-descatados .views-row-1 .views-field-created,
-.view-descatados .views-row-1 .views-field-ops {
-    float: left;
-    width: 50%;
-}
-
-.view-descatados .views-row-1 .views-field-created {
-    float: left;
-}
-
-.view-descatados .views-row-1 .views-field-ops .flag-wrapper {
-    float: right;
-}
-
 .view-descatados .views-row-1 .views-field-field-thumbnail,
 .view-descatados .views-row-6 .views-field-field-thumbnail {
-    position: absolute;
     top: 0;
     left: 0;
-    z-index: 0;
-    width: 100%;
-    margin: 0;
 }
 
 
 /* Item 2 */
 
-.view-descatados .views-row-2 > div {
+.view-descatados .views-row-2 > div,
+.view-descatados .views-row-3 > div,
+.view-descatados .views-row-4 > div,
+.view-descatados .views-row-5 > div,
+.view-descatados .views-row-5 > div {
     width: 50%;
+}
+
+.view-descatados .views-row-2 .categoria,
+.view-descatados .views-row-3 .categoria,
+.view-descatados .views-row-4 .categoria,
+.view-descatados .views-row-5 .categoria,
+.view-descatados .views-row-7 .categoria {
+    margin: 10px 0 50px;
+}
+
+.view-descatados .views-row-2 .views-field-title a,
+.view-descatados .views-row-3 .views-field-title a,
+.view-descatados .views-row-4 .views-field-title a,
+.view-descatados .views-row-5 .views-field-title a,
+.view-descatados .views-row-7 .views-field-title a {
+    font-size: 22px;
+    line-height: 22px;
+}
+
+.view-descatados .views-row-2 .views-field-ops,
+.view-descatados .views-row-5 .views-field-ops {
+    right: 50%;
+    width: auto;
 }
 
 .view-descatados .views-row-2 .views-field-field-thumbnail {
@@ -179,12 +221,19 @@
 
 /* Item 3 */
 
-.view-descatados .views-row-3 > div {
-    width: 50%;
+.view-descatados .views-row-3 > div,
+.view-descatados .views-row-4 > div {
     margin-left: 50%;
 }
 
-.view-descatados .views-row-3 .views-field-field-thumbnail {
+.view-descatados .views-row-3 .views-field-ops,
+.view-descatados .views-row-4 .views-field-ops {
+    right: 0;
+    width: auto;
+}
+
+.view-descatados .views-row-3 .views-field-field-thumbnail,
+.view-descatados .views-row-4 .views-field-field-thumbnai {
     left: 0;
     margin: 0;
 }
@@ -203,14 +252,25 @@
 
 /* Item 5 */
 
-.view-descatados .views-row-5 > div {
-    width: 50%;
-}
-
 .view-descatados .views-row-5 .views-field-field-thumbnail {
     right: 0;
 }
 
+/* Item 6 */
+.view-descatados .views-row-6 .categoria {
+    margin: 300px 0 15px;
+}
+
+/* Item 7 */
+
+.view-descatados .views-row-7 .views-field-created,
+.view-descatados .views-row-7 .views-field-ops {
+    bottom: 50%;
+}
+
+.view-descatados .views-row-7 .views-field-field-thumbnail {
+    bottom: 0;
+}
 
 
 /* @end */
@@ -230,6 +290,7 @@
     width: 26px;
     display: inline-block;
     text-indent: -9999px;
+    outline: none;
 }
 
 .views-row.celeste .flag {
