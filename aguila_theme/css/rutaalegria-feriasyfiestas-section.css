@@ -1,23 +1,140 @@
 /* @group Global */
 
-.view-fiestas-la-ruta-de-la-alegria {
-    max-width:1200px;
-    margin: 0 auto;
+.view-filtros-la-ruta-de-la-alegria {
+    background-color: #f2f5f8;
 }
-.view-fiestas-la-ruta-de-la-alegria ul {
+
+.view-filtros-la-ruta-de-la-alegria .view-content {
+    max-width:1200px;
+    margin: -2.7692em auto 0;
+}
+
+.view-filtros-la-ruta-de-la-alegria .view-content .label {
+    font-family: "Open Sans";
+    font-size: 12px;
+    color: #0f796b;
+    font-weight: normal;
+}
+ 
+.view-filtros-la-ruta-de-la-alegria .view-content ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.view-filtros-la-ruta-de-la-alegria .view-content li {
+    float: left;
+    font-family: "Open Sans";
+    font-size: 12px;
+    padding: 2px 20px;
+}
+
+.view-filtros-la-ruta-de-la-alegria .view-content a {
+    color: #b4b4b4;
+    
+}
+
+.view-fiestas-la-ruta-de-la-alegria .view-content {
+    max-width:1225px;
+    margin: -2.7692em auto 0;
+}
+
+.view-fiestas-la-ruta-de-la-alegria .view-filters {
+    display: none;
+}
+
+.view-fiestas-la-ruta-de-la-alegria .view-content ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-.view-fiestas-la-ruta-de-la-alegria ul  li {
+.view-fiestas-la-ruta-de-la-alegria .view-content ul  li {
     float: left;
-    margin-left:10px;
-    margin-right:33px;
+    margin-left:22px;
+    margin-right:22px;
+    margin-bottom:34px;
+    position: relative;
 }
 
-.view-fiestas-la-ruta-de-la-alegria ul  li:nth-child(3n) {
-    margin-right:0;
+.view-fiestas-la-ruta-de-la-alegria .view-content li .eventInfo {
+    position: absolute;
+    top: 146px;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+}
+
+.view-fiestas-la-ruta-de-la-alegria .eventInfo hr {
+    width: 52%;
+    margin-bottom: 15px;
+}
+
+.view-fiestas-la-ruta-de-la-alegria .eventTitle {
+    font-size: 40px;
+    width: 72%;
+    margin: 0px auto;
+    line-height: 35px;
+
+}
+
+.view-fiestas-la-ruta-de-la-alegria .eventTitle:first-line {
+    font-style: italic;
+    font-family: "Dubiel";
+    text-transform: lowercase;
+}
+
+.view-fiestas-la-ruta-de-la-alegria .eventDate,
+.view-fiestas-la-ruta-de-la-alegria .eventCity {
+    font-family: "Open Sans";
+    text-transform: uppercase;
+    font-weight: 300;
+    line-height: 27px;
+    letter-spacing: 7.6px;
+    font-size: 14px;
+}
+
+.view-fiestas-la-ruta-de-la-alegria li .eventHoverInfo {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: #f9e82b;
+    text-align: center;
+    width: 100%;
+    display: none;
+}
+
+.view-fiestas-la-ruta-de-la-alegria .view-content li:hover .eventInfo {
+    /* display: none; */
+}
+.view-fiestas-la-ruta-de-la-alegria .view-content li:hover .eventHoverInfo {
+    /* display: block; */
+}
+
+.view-fiestas-la-ruta-de-la-alegria  .item-list {
+    clear: both;
+    padding-top: 34px;
+}
+
+.pager-load-more {
+    border-top: solid 1px #b1b1b1;
+}
+
+.pager-load-more li {
+    position: relative;
+    top: -33px;
+}
+
+.pager-load-more li  a {
+    border-color: #b1b1b1;
+    padding: 18.5px 122.5px;
+    border-radius: 8px;
+    font-family: "Open Sans";
+    font-weight: bold;
+    color: #313131;
+    font-size: 18px;
 }
 
 /* @end */
