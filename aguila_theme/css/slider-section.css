@@ -69,6 +69,7 @@
 .slide-content h3 b,
 .slide-content h3 strong {
     font: normal bold 200%/0.8 'Open Sans';
+    font-family: 'Open Sans', Helvetica, Arial sans-serif;
     letter-spacing: -0.8px;
 }
 
@@ -98,7 +99,19 @@
 .slick-slider .slick-dots {
     bottom: 0;
     margin: 0;
-    padding: 0 10px 15px;
+    padding: 0 10px 31px;
+}
+
+.slick-dots li {
+    background: url(../images/sprite.png) 3px -915px no-repeat transparent;
+}
+
+.slick-dots li * {
+    text-indent: -9999px;
+}
+
+.slick-dots .slick-active {
+    background-position: 1px -878px;
 }
 
 /* @end */

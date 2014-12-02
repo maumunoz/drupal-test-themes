@@ -30,11 +30,7 @@
 .region-footer-first ul li {
     display: inline-block;
     font-size: 85.71%;
-    margin: 0;
-}
-
-.region-footer-first ul li + li {
-    margin: 0 0 0 15px;
+    margin: 0 15px 0 0;
 }
 
 .web-form-aguila-news .webform-client-form {
@@ -70,9 +66,20 @@
     margin-bottom: 25px;
 }
 
+.web-form-aguila-news .form-item {
+    width: 50%;
+}
+
 .web-form-aguila-news .form-item input.form-text {
     padding: 0 16px;
     color: #1f527a;
+    min-width: 100%;
+    width: 100%;
+}
+
+.web-form-aguila-news .form-actions {
+    width: 50%;
+    max-width: 165px;
 }
 
 .web-form-aguila-news .form-actions input {
@@ -80,6 +87,7 @@
     background: #009fd4;
     color: #fff;
     font-weight: bold;
+    width: 100%;
 }
 
 #footer .col-2 .col {
@@ -150,6 +158,15 @@
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
 
+    .web-form-aguila-news .form-item {
+        width: 55%;
+    }
+
+    .web-form-aguila-news .form-actions {
+        width: 25%;
+        min-width: 165px;
+    }
+
 }
 
 /* Small Devices, Tablets */
@@ -158,12 +175,12 @@
     /* @group Footer */
 
     #footer .col-2 .col-first {
-        width: 59%;
+        width: 58%;
         padding: 0 1%;
     }
 
     #footer .col-2 .col-second {
-        width: 39%;
+        width: 40%;
         margin: 0 0 0 1%;
         padding: 0 0 0 1%;
     }
