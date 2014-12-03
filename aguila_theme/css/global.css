@@ -288,6 +288,25 @@ Retina Display Condensed Black:    font-style: normal | font-weight: 900
     padding: 0;
 }
 
+.wrapper-content .stack {
+    padding: 0;
+}
+
+.wrapper-content .block + .block,
+.block + .block {
+    margin: 0;
+}
+
+.tabs {
+    margin: 0;
+}
+
+.tabs ul.tabs  {
+    margin-bottom: 1.3846em;
+    margin-top: 1.3846em;
+}
+
+
 /* Lists Reset */
 .stack-footer-inner ul,
 .stack-footer-inner ol {
@@ -675,11 +694,13 @@ $black, $dark           = #000    | rgb(0, 0, 0);
 
 .section-main-title h2 {
     display: inline-block;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 24px;
     background-color: #FFF;
     padding: 0 20px;
+    margin: 0;
+    font-family: 'Retina Display', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
 }
 
 .section-main-title h2 em {
@@ -687,7 +708,7 @@ $black, $dark           = #000    | rgb(0, 0, 0);
     font-weight: normal;
     font-style: italic;
     text-transform: none;
-    font-size: 28px;
+    font-size: 18px;
     font-family: Dubiel, Georgia, Times, serif;
 }
 
@@ -719,7 +740,15 @@ $black, $dark           = #000    | rgb(0, 0, 0);
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
+    .section-main-title h2 {
+        font-family: 'Retina Display', Helvetica, Arial, sans-serif;
+        font-size: 24px;
+    }
 
+    .section-main-title h2 em {
+        font-family: Dubiel, Georgia, Times, serif;
+        font-size: 28px;
+    }
 }
 
 /* Medium Devices, Desktops */

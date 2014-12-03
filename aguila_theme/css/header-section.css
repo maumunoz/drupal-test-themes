@@ -37,7 +37,8 @@
     padding: 0;
     border: none;
     background: none;
-    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-family: 'Retina Display Condensed', Helvetica, Arial, sans-serif;
+    font-weight: 600;
 }
 
 #block-system-main-menu ul.menu li {
@@ -140,6 +141,7 @@
     color: #CCC;
     -webkit-appearance: none;
     margin: 0;
+
 }
 
 #block-search-form {
@@ -151,7 +153,11 @@
     width: 220px;
     outline-style:none;
     box-shadow:none;
-    border-color:transparent;
+    border-color: transparent;
+    font-family: 'Retina Display Condensed', Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    color: #adadad;
+    outline: none;
 }
 
 #block-search-form .form-submit {
@@ -162,7 +168,8 @@
     min-width: 120px;
     border-radius: 0 0 5px 5px;
     background: #0565be;
-    font-family: "Open Sans",Helvetica,Arial,sans-serif;
+    font-family: 'Retina Display Condensed', Helvetica,Arial,sans-serif;
+    font-weight: 600;
 }
 
 #block-system-user-menu .menu li {
@@ -185,6 +192,7 @@
     padding: 5px 15px;
     color: #FFF;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 .btn-login-search .btn-icon-login:hover #block-system-user-menu,
@@ -200,16 +208,6 @@
 
 
 /* @group Media Query */
-
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px) {
-
-}
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px) {
-
-}
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
@@ -232,7 +230,6 @@
     }
 
     /* @end */
-
 }
 
 /* Medium Devices, Desktops */
@@ -259,6 +256,5 @@
     }
 
     /* @end */
-
 }
 /* @end */
