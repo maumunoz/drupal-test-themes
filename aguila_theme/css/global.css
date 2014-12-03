@@ -1,81 +1,12 @@
-/* @group Global */
-
-/* Stack box */
-.stack .box {
-    padding: 0;
-}
-
-/* Lists Reset */
-.stack-footer-inner ul,
-.stack-footer-inner ol {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    -webkit-margin-before: 0;
-    -webkit-margin-after: 0;
-    -webkit-margin-start: 0;
-    -webkit-margin-end: 0;
-    -webkit-padding-start: 0;
-}
-
-/* Clearfix */
-.web-form-aguila-news .webform-client-form:before,
-.web-form-aguila-news .webform-client-form:after {
-    clear: both;
-    content: ".";
-    display: block;
-    height: 0;
-    overflow: hidden;
-    visibility: hidden;
-}
-
-/* Content wrapper */
-.stack-footer-inner .stack-width,
-.stack-navigation .region-navigation,
-.stack-copyright .content,
-.view-descatados,
-.slick-initialized .slide-content {
-    position: relative;
-    margin: 0 auto;
-    max-width: 1200px;
-}
-
-/* Text Blow Off */
-/* Remember to display: block || inline-block, if not:
-    line-height: 800%;
-    overflow: hidden;
-*/
-.site-name-wrapper .site-name a,
-.socialHeader li a,
-.socialFooter li a,
-.btn-login-search .btn-icon > a,
-.btn-text-no,
-.slick-dots li * {
-    text-indent: -9999px;
-    text-align: left;
-}
-
-/* @end */
-
-/* @group Layers */
-/* Keep in auto or 0 to 10, no more. */
-
-.socialHeader,
-.slick-slider:after {
-    z-index:1;
-}
-
-.site-name-wrapper,
-#block-system-user-menu,
-#block-search-form {
-    z-index: 2;
-}
-
-/* @end */
-
 /* @group Fonts */
 
 /* AkzidenzGroteskBQ */
+/*
+AkzidenzGroteskBQ Light:   font-style: normal | font-weight: 300
+AkzidenzGroteskBQ Regular: font-style: normal | font-weight: normal
+AkzidenzGroteskBQ Italic:  font-style: italic | font-weight: normal
+AkzidenzGroteskBQ Super:   font-style: italic | font-weight: 900
+*/
 @font-face {
     font-family: 'AkzidenzGroteskBQ';
     src: url('../fonts/akzidenzgroteskbq/akzidenzgroteskbq-light-webfont.eot');
@@ -125,6 +56,9 @@
 }
 
 /* Antipasto */
+/*
+Antipasto Regular: font-style: normal | font-weight: normal
+*/
 @font-face {
     font-family: 'Antipasto';
     src: url('../fonts/antipasto/antipasto-webfont.eot');
@@ -138,6 +72,10 @@
 }
 
 /* Dubiel */
+/*
+Dubiel Regular: font-style: normal | font-weight: normal
+Dubiel Italic:  font-style: italic | font-weight: normal
+*/
 @font-face {
     font-family: 'Dubiel';
     src: url('../fonts/dubiel/dubiel_regular/Dubiel-webfont.eot');
@@ -161,6 +99,11 @@
 }
 
 /* ITCAvantGardePro */
+/*
+ITCAvantGardePro Book:    font-style: normal | font-weight: 300
+ITCAvantGardePro Regular: font-style: normal | font-weight: normal
+ITCAvantGardePro Bold:    font-style: normal | font-weight: 700
+*/
 @font-face {
     font-family: 'ITCAvantGardePro';
     src: url('../fonts/itcavantgardepro/itcavantgardepro-bk.eot');
@@ -198,6 +141,9 @@
 }
 
 /* Lavanderia */
+/*
+Lavanderia Regular: font-style: normal | font-weight: normal
+*/
 @font-face {
     font-family: 'Lavanderia';
     src: url('../fonts/lavanderia/lavanderia-webfont.eot');
@@ -211,6 +157,14 @@
 }
 
 /* Retina Display */
+/*
+Retina Display Thin:     font-style: normal | font-weight: 200
+Retina Display Light:    font-style: normal | font-weight: 300
+Retina Display Regular:  font-style: normal | font-weight: normal
+Retina Display Semibold: font-style: normal | font-weight: 600
+Retina Display Bold:     font-style: normal | font-weight: 700
+Retina Display Black:    font-style: normal | font-weight: 900
+*/
 @font-face {
     font-family: 'Retina Display';
     src: url('../fonts/retina_display/retina_display-thin-webfont.eot');
@@ -284,6 +238,11 @@
 }
 
 /* Retina Display Condensed */
+/*
+Retina Display Condensed Semibold: font-style: normal | font-weight: 600
+Retina Display Condensed Bold:     font-style: normal | font-weight: 700
+Retina Display Condensed Black:    font-style: normal | font-weight: 900
+*/
 @font-face {
     font-family: 'Retina Display Condensed';
     src: url('../fonts/retina_display_condensed/retina_display_cond-semibd-webfont.eot');
@@ -318,6 +277,81 @@
          url('../fonts/retina_display_condensed/retina_display_cond-black-webfont.svg#retina_display_condensedblack') format('svg');
     font-weight: 900;
     font-style: normal;
+}
+
+/* @end */
+
+/* @group Global */
+
+/* Stack box */
+.stack .box {
+    padding: 0;
+}
+
+/* Lists Reset */
+.stack-footer-inner ul,
+.stack-footer-inner ol {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-start: 0;
+}
+
+/* Clearfix */
+.web-form-aguila-news .webform-client-form:before,
+.web-form-aguila-news .webform-client-form:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+/* Content wrapper */
+.stack-footer-inner .stack-width,
+.stack-navigation .region-navigation,
+.stack-copyright .content,
+.view-descatados,
+.slick-initialized .slide-content {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Text Blow Off */
+/* Remember to display: block || inline-block, if not:
+    line-height: 800%;
+    overflow: hidden;
+*/
+.site-name-wrapper .site-name a,
+.socialHeader li a,
+.socialFooter li a,
+.btn-login-search .btn-icon > a,
+.btn-text-no,
+.slick-dots li * {
+    text-indent: -9999px;
+    text-align: left;
+}
+
+/* @end */
+
+/* @group Layers */
+/* Keep in auto or 0 to 10, no more. */
+
+.socialHeader,
+.slick-slider:after {
+    z-index:1;
+}
+
+.site-name-wrapper,
+#block-system-user-menu,
+#block-search-form {
+    z-index: 2;
 }
 
 /* @end */
