@@ -8,6 +8,8 @@
                 select = widgets.find('select'),
                 submit = widgets.find('input[type=submit]'),
                 text = $this.hasClass('all') ? null : $(this).text();
+                $this.siblings().removeClass('current');
+                $this.addClass('current');
 
             e.preventDefault();
             if (!text) {
