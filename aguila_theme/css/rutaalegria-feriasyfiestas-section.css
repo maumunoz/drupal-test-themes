@@ -69,22 +69,30 @@
 
 .view-fiestas-la-ruta-de-la-alegria .eventInfo hr {
     width: 52%;
-    margin-bottom: 15px;
+    margin-bottom: 6px;
+    margin-top: 18px;
 }
 
 .view-fiestas-la-ruta-de-la-alegria .eventTitle {
-    font-size: 40px;
-    width: 72%;
+    width: 100%;
     margin: 0px auto;
     line-height: 35px;
-
+    text-align: center;
+    font-size: 36px;
 }
 
-.view-fiestas-la-ruta-de-la-alegria .eventTitle:first-line {
+.view-fiestas-la-ruta-de-la-alegria .eventTitle em {
     font-style: italic;
-    font-family: Dubiel, Georgia, Times, serif;;
-    text-transform: lowercase;
+    font-family: Dubiel, Georgia, Times, serif;
 }
+
+.view-fiestas-la-ruta-de-la-alegria .eventTitle  strong{
+    font-family: 'ITCAvantGardePro', Arial, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+}
+
 
 .view-fiestas-la-ruta-de-la-alegria .eventDate,
 .view-fiestas-la-ruta-de-la-alegria .eventCity {
@@ -106,11 +114,32 @@
     display: none;
 }
 
+.view-fiestas-la-ruta-de-la-alegria li .eventHoverInfo .field-content {
+    position: absolute;
+    width: 100%;
+    top: 106px;
+    left: 0;
+}
+
+.view-fiestas-la-ruta-de-la-alegria li .eventHoverInfo .field-content p {
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 55px;
+    font-size: 16px;
+}
+
+.view-fiestas-la-ruta-de-la-alegria li .eventHoverInfo .field-content a {
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    padding: 17px 49px 15px 25px;
+    background-position: 100% -436px;
+    font-size: 14px;
+}
+
 .view-fiestas-la-ruta-de-la-alegria .view-content li:hover .eventInfo {
-    /* display: none; */
+    display: none;
 }
 .view-fiestas-la-ruta-de-la-alegria .view-content li:hover .eventHoverInfo {
-    /* display: block; */
+    display: block;
 }
 
 .view-fiestas-la-ruta-de-la-alegria  .item-list {
@@ -131,7 +160,7 @@
     border-color: #b1b1b1;
     padding: 18.5px 122.5px;
     border-radius: 8px;
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     font-weight: bold;
     color: #313131;
     font-size: 18px;
