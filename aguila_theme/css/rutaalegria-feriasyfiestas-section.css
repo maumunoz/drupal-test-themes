@@ -15,7 +15,7 @@
     color: #0f796b;
     font-weight: normal;
 }
- 
+
 .view-filtros-la-ruta-de-la-alegria .view-content ul {
     list-style-type: none;
     margin: 0;
@@ -33,7 +33,7 @@
 
 .view-filtros-la-ruta-de-la-alegria .view-content a {
     color: #b4b4b4;
-    
+
 }
 
 .view-fiestas-la-ruta-de-la-alegria .view-content {
@@ -82,7 +82,7 @@
 
 .view-fiestas-la-ruta-de-la-alegria .eventTitle:first-line {
     font-style: italic;
-    font-family: "Dubiel";
+    font-family: Dubiel, Georgia, Times, serif;;
     text-transform: lowercase;
 }
 
