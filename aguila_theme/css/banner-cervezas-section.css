@@ -12,6 +12,7 @@
 .view-banner-cervezas ul {
     list-style-type: none;
     padding-left: 0;
+    margin-top: 27px;
 }
 
 .view-banner-cervezas li {
@@ -117,22 +118,22 @@
 @media only screen and (min-width : 480px) {
 
 }
-    
+
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
     .view-banner-cervezas li {
         width: 33.3%;
         float:left;
     }
-    
+
     .view-banner-cervezas .views-field-field-imagen-botella img {
         height: auto;
     }
-    
+
     .view-banner-cervezas li {
         height: 240px;
     }
-    
+
     .view-banner-cervezas .views-field-field-cerveza-descripcion-corta {
         left: 35%;
         top: 67px;
