@@ -13,7 +13,7 @@ stylesheets[all][] = 'css/slider-section.css'
 stylesheets[all][] = 'css/social-section.css'
 stylesheets[all][] = 'css/destacados-section.css'
 stylesheets[all][] = 'css/banner-cervezas-section.css'
-stylesheets[all][] = 'css/rutaalegria-feriasyfiestas-section.css'
+stylesheets[all][] = 'css/lista-ruta-fiestas.css'
 stylesheets[all][] = 'css/footer-section.css'
 
 scripts[] = 'js/moment.min.js'

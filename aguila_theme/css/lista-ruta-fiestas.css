@@ -1,0 +1,198 @@
+/* @group Global */
+
+.view-filtros-la-ruta-de-la-alegria {
+    background-color: #f2f5f8;
+}
+
+.view-filtros-la-ruta-de-la-alegria .view-content {
+    max-width:1200px;
+    margin: -2.7692em auto 0;
+}
+
+.view-filtros-la-ruta-de-la-alegria .view-content .label {
+    font-family: "Open Sans";
+    font-size: 12px;
+    color: #0f796b;
+    font-weight: normal;
+}
+
+.view-filtros-la-ruta-de-la-alegria .view-content ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.view-filtros-la-ruta-de-la-alegria .view-content li {
+    float: left;
+    font-family: "Open Sans";
+    font-size: 12px;
+    padding: 2px 20px;
+}
+
+.view-filtros-la-ruta-de-la-alegria .view-content a {
+    color: #b4b4b4;
+
+}
+
+.view-fiestas-la-ruta-de-la-alegria .view-content {
+    max-width:1222px;
+    margin: -2.7692em auto 0;
+}
+
+.view-fiestas-la-ruta-de-la-alegria .view-filters {
+    display: none;
+}
+
+.view-fiestas-la-ruta-de-la-alegria ul.pager,
+.view-fiestas-la-ruta-de-la-alegria .view-content ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.view-fiestas-la-ruta-de-la-alegria .view-content ul  li {
+    float: left;
+    margin-left:22px;
+    margin-right:22px;
+    margin-bottom:34px;
+    position: relative;
+}
+
+.view-fiestas-la-ruta-de-la-alegria .view-content li .eventInfo {
+    position: absolute;
+    top: 146px;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+}
+
+.view-fiestas-la-ruta-de-la-alegria .eventInfo hr {
+    width: 52%;
+    margin-bottom: 6px;
+    margin-top: 18px;
+}
+
+.view-fiestas-la-ruta-de-la-alegria .eventTitle {
+    width: 100%;
+    margin: 0px auto;
+    line-height: 35px;
+    text-align: center;
+    font-size: 36px;
+}
+
+.view-fiestas-la-ruta-de-la-alegria .eventTitle em {
+    font-style: italic;
+    font-family: Dubiel, Georgia, Times, serif;
+}
+
+.view-fiestas-la-ruta-de-la-alegria .eventTitle  strong{
+    font-family: 'ITCAvantGardePro', Arial, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+}
+
+
+.view-fiestas-la-ruta-de-la-alegria .eventDate,
+.view-fiestas-la-ruta-de-la-alegria .eventCity {
+    font-family: "Open Sans";
+    text-transform: uppercase;
+    font-weight: 300;
+    line-height: 27px;
+    letter-spacing: 7.6px;
+    font-size: 14px;
+}
+
+.view-fiestas-la-ruta-de-la-alegria li .eventHoverInfo {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: #f9e82b;
+    text-align: center;
+    width: 100%;
+    display: none;
+}
+
+.view-fiestas-la-ruta-de-la-alegria li .eventHoverInfo .field-content {
+    position: absolute;
+    width: 100%;
+    top: 106px;
+    left: 0;
+}
+
+.view-fiestas-la-ruta-de-la-alegria li .eventHoverInfo .field-content p {
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 55px;
+    font-size: 16px;
+}
+
+.view-fiestas-la-ruta-de-la-alegria li .eventHoverInfo .field-content a {
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    padding: 17px 49px 15px 25px;
+    background-position: 100% -436px;
+    font-size: 14px;
+}
+
+.view-fiestas-la-ruta-de-la-alegria .view-content li:hover .eventInfo {
+    display: none;
+}
+.view-fiestas-la-ruta-de-la-alegria .view-content li:hover .eventHoverInfo {
+    display: block;
+}
+
+.view-fiestas-la-ruta-de-la-alegria  .item-list {
+    clear: both;
+    padding-top: 34px;
+}
+
+.pager-load-more {
+    border-top: solid 1px #b1b1b1;
+}
+
+.pager-load-more li {
+    position: relative;
+    top: -33px;
+}
+
+.pager-load-more li  a {
+    border-color: #b1b1b1;
+    padding: 18.5px 122.5px;
+    border-radius: 8px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    color: #313131;
+    font-size: 18px;
+}
+
+/* @end */
+
+/* @group Media Query */
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+/* @end */
