@@ -347,8 +347,8 @@ $black, $dark           = #000    | rgb(0, 0, 0);
     display: inline-block;
     font-size: 14px;
     line-height: 1.2;
-    /* To replace with correct default font stack */
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-family: "Retina Display Condensed", Helvetica, Arial, sans-serif;
+    font-weight: 900;
     color: #000;
     text-align: center;
     text-decoration: none;

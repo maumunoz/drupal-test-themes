@@ -104,7 +104,7 @@
 .region-footer-second {
     text-align: left;
     margin: 5px 0 0 0;
-    padding: 0 10px;
+    padding: 0;
 }
 
 .region-footer-second p {
@@ -183,6 +183,10 @@
         width: 40%;
         margin: 0 0 0 1%;
         padding: 0 0 0 1%;
+    }
+
+    .region-footer-second {
+        padding: 0 10px;
     }
 
     /* @end */
