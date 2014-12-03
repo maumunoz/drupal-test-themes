@@ -66,6 +66,8 @@
 
 .slide-content p {
     margin: 5px 0 0;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-size: 90%;
 }
 
 .slide-content em {
@@ -89,6 +91,32 @@
     background-color: transparent !important;
     border: none !important;
     padding: 5px 0 !important;
+}
+
+.slide-content .media-thumbnail-frame:before,
+.slide-content .media-thumbnail-frame:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.slide-content .media-thumbnail-frame {
+    text-align: center;
+}
+
+.slide-content .media-thumbnail-frame img {
+    display: inline-block;
+    width: auto;
+    max-width: 175px;
+}
+
+.slide-content hr {
+    border-top: 3px solid #fff;
+    margin: 20px auto;
+    max-width: 155px;
 }
 
 .region-banner .btn {
@@ -119,7 +147,7 @@
     background-position: 1px -878px;
 }
 
-.slick-slider:after {
+.front.slick-slider:after {
     content: '';
     display: block;
     position: absolute;
@@ -150,6 +178,10 @@
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
 
+    .slide-content .media-thumbnail-frame img {
+        max-width: 225px;
+    }
+
 }
 
 /* Small Devices, Tablets */
@@ -167,6 +199,11 @@
         min-width: 100px;
         font-size: 128%;
     }
+
+    .slide-content p {
+        font-size: 100%;
+    }
+
 }
 
 /* Medium Devices, Desktops */
@@ -175,12 +212,17 @@
         padding: 54px 2% 50px;
     }
 
-    .region-banner .views-row {
+    .front .region-banner .views-row {
         min-height: 664px;
+    }
+
+    .region-banner .views-row {
+        min-height: 465px;
     }
 
     .slide-content p {
         margin: 10px 0 0;
+        font-size: 128%;
     }
 
     .slide-content em {
@@ -192,6 +234,15 @@
         margin: 6px 0;
         font-size: 690%;
         letter-spacing: -4px;
+    }
+
+    .slide-content .media-thumbnail-frame img {
+        max-width: none;
+    }
+
+    .slide-content hr {
+        border-top: 5px solid #fff;
+        margin: 45px auto 30px;
     }
 
     .slide-content .transform-like-module {
