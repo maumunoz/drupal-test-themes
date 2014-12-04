@@ -14,6 +14,7 @@ stylesheets[all][] = 'css/social-section.css'
 stylesheets[all][] = 'css/destacados-section.css'
 stylesheets[all][] = 'css/banner-cervezas-section.css'
 stylesheets[all][] = 'css/lista-ruta-fiestas.css'
+stylesheets[all][] = 'css/lista-lugares-fiesta.css'
 stylesheets[all][] = 'css/footer-section.css'
 stylesheets[all][] = 'css/view-dynamic-filter.css'
 
