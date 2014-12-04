@@ -1,0 +1,157 @@
+/* @group View Dynamic Filter */
+
+.view-dynamic-filter {
+    background-color: #f2f5f8;
+    font-size: 80%;
+}
+
+.view-dynamic-filter,
+.view-dynamic-filter .view-content ul {
+    min-height: 55px;
+}
+
+.view-dynamic-filter,
+.view-dynamic-filter p,
+.view-dynamic-filter ul + p {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    color: #0f796b;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+}
+
+.view-dynamic-filter .view-content ul:before,
+.view-dynamic-filter .view-content ul:after,
+.view-dynamic-filter .views-row > div:before,
+.view-dynamic-filter .views-row > div:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.view-dynamic-filter .views-row > div > p {
+    font-size: 112.5%;
+    float: none;
+    padding: 10px 10px 0;
+    width: 100%;
+    color: #0f796b;
+    text-align: left;
+    font-weight: 600;
+}
+
+.view-dynamic-filter .view-content ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 5px 8px 10px 8px;
+    float: none;
+    width: 100%;
+}
+
+.view-dynamic-filter .views-row > div > ul + p {
+    float: right;
+    width: 25%;
+    font-size: 87.5%;
+    color: #868686;
+    padding: 10px 50px 0 0;
+}
+
+.view-dynamic-filter .view-content li {
+    float: left;
+    padding: 0;
+    margin: 0 2px;
+}
+
+.view-dynamic-filter .view-content a {
+    color: #b4b4b4;
+    display: inline-block;
+    padding: 6px 11px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* @end */
+
+/* @group Media Query */
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+    .view-dynamic-filter {
+        font-size: 90%;
+    }
+
+    .view-dynamic-filter .view-content li {
+        margin: 5px 2px;
+    }
+
+    .view-dynamic-filter .view-content ul {
+        padding: 5px 18px 10px 18px;
+    }
+
+    .view-dynamic-filter .views-row > div > p {
+        padding: 10px 20px 0;
+    }
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+    .view-dynamic-filter {
+        font-size: 114%;
+    }
+
+    .view-dynamic-filter,
+    .view-dynamic-filter .view-content ul {
+        min-height: 75px;
+    }
+
+    .view-dynamic-filter .views-row > div > p {
+        padding: 15px 33px 0 18px;
+    }
+
+    .view-dynamic-filter .view-content ul {
+        padding: 14px 0 20px 18px;
+    }
+
+    .view-dynamic-filter .view-content a {
+        padding: 6px 20px;
+    }
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+    .view-dynamic-filter .views-row > div > p {
+        float: left;
+        padding: 25px 33px 0 18px;
+        width: 20%;
+    }
+
+    .view-dynamic-filter .view-content ul {
+        padding: 14px 0 20px 0;
+        float: left;
+        width: 75%;
+    }
+
+}
+/* @end */
