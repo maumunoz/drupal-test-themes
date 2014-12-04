@@ -77,6 +77,11 @@
     font-weight: 600;
 }
 
+.view-dynamic-filter .view-content .active {
+    background: #0fc3ff;
+    color: #fff;
+}
+
 /* @end */
 
 /* @group Media Query */
