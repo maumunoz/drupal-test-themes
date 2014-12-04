@@ -336,7 +336,8 @@ Retina Display Condensed Black:    font-style: normal | font-weight: 900
 .stack-navigation .region-navigation,
 .stack-copyright .content,
 .view-descatados,
-.slick-initialized .slide-content {
+.slick-initialized .slide-content,
+.view-dynamic-filter .view-content {
     position: relative;
     margin: 0 auto;
     max-width: 1200px;
@@ -355,6 +356,10 @@ Retina Display Condensed Black:    font-style: normal | font-weight: 900
 .slick-dots li * {
     text-indent: -9999px;
     text-align: left;
+}
+
+#breadcrumb {
+    display: none;
 }
 
 /* @end */

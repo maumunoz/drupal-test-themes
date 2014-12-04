@@ -13,22 +13,22 @@
     }
 
     $.initModule(node, function ($, filters) {
-        filters.find('a.filter').on('click', function (e) {
+        filters.find('.filter.all').addClass('active');
+        filters.on('click', '.filter', function(e) {
             var $this = $(this),
                 widgets = jq('.views-exposed-widgets'),
                 select = widgets.find('select'),
                 submit = widgets.find('input[type=submit]'),
                 text = $this.hasClass('all') ? null : $(this).text();
-                $this.siblings().removeClass('active');
+                $(e.delegateTarget).find('.filter').removeClass('active');
                 $this.addClass('active');
-
-            e.preventDefault();
             if (!text) {
                 select.val(select.find('option:first').val());
             } else {
                 select.val(select.find('option:contains("' + $(this).text() + '")').val());
             }
             submit.click();
+            e.preventDefault();
         });
         transform(filters);
     });
