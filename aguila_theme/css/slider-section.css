@@ -54,7 +54,7 @@
 
 .slide-content {
     color: #fff;
-    padding: 0 5% 0;
+    padding: 30px 5% 0;
     display: none;
     width: 100%;
     top: 0;
@@ -166,6 +166,20 @@
     cursor: pointer;
 }
 
+.favoritos-content-type {
+    width: 50px;
+    height: 50px;
+    padding: 0 12px;
+    margin: 20px auto 0;
+    background: #FFF;
+    border-radius: 50%;
+}
+
+.favoritos-content-type .flag-wrapper {
+    display: block;
+    margin-top: -4px;
+}
+
 /* @end */
 
 /* @group Media Query */
@@ -186,7 +200,6 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-
     .slide-content h3 {
         font-size: 375%;
         line-height: 0.8;
@@ -209,7 +222,7 @@
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
     .slide-content {
-        padding: 54px 2% 50px;
+        padding: 90px 2% 50px;
     }
 
     .front .region-banner .views-row {
@@ -270,7 +283,7 @@
     }
 
     .slide-content {
-        padding: 54px 0 50px;
+        padding: 90px 0 50px;
     }
 
 }
