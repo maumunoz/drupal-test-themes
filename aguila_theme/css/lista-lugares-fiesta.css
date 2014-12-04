@@ -1,0 +1,183 @@
+/* @group Lista Lugares */
+
+.lista-lugares-fiesta .view-filters {
+    display: none;
+}
+
+.lista-lugares-fiesta .view-content ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.lista-lugares-fiesta .view-content ul  li {
+    margin: 0 5px 15px;
+    position: relative;
+    display: inline-block;
+}
+
+.lista-lugares-fiesta  .view-content ul  li {
+    width: 270px;
+    margin: 0 14px 50px;
+}
+
+
+.lista-lugares-fiesta  .view-content ul li .views-field-count {
+    position: absolute;
+    top: 242px;
+    color: #fff;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 14px;
+    left: 6px;
+}
+
+.lista-lugares-fiesta  .view-content ul li .views-field-count .flag {
+    background-position: -7px -811px;
+    text-indent: 30px;
+}
+
+.lista-lugares-fiesta  .view-content ul li .views-field-nothing {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+    background-color: #f9e82b;
+    height: 270px;
+    display: none;
+}
+
+.lista-lugares-fiesta  .view-content ul li:hover .views-field-nothing {
+    display: block;
+}
+
+.lista-lugares-fiesta  .view-content ul li .views-field-nothing .shortDescription {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    position: absolute;
+    width: 86%;
+    left: 7%;
+    height: 164px;
+    top: 72px;
+}
+
+.lista-lugares-fiesta  .view-content ul li .views-field-nothing .lugar-info {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    position: absolute;
+    top: 213px;
+    left: 22px;
+    padding: 9px 20px 10px 18px;
+    letter-spacing: -0.3px;
+}
+
+.lista-lugares-fiesta  .view-content ul li .views-field-nothing .lugar-flag {
+    position: absolute;
+    top: 212px;
+    left: 161px;
+    width: 42px;
+    height: 41px;
+    text-indent: 0;
+    padding:0;
+}
+
+.lista-lugares-fiesta  .view-content ul li .views-field-nothing .lugar-flag a.flag {
+    min-height: 40px;
+    width: 40px;
+    background-position: 0px -760px;
+}
+
+.lista-lugares-fiesta  .view-content ul li .views-field-nothing .lugar-flag a.flag.unflag-action {
+    background-position: 0px -680px;
+}
+
+.lista-lugares-fiesta  .view-content ul li .views-field-nothing .lugar-map {
+    position: absolute;
+    top: 212px;
+    left: 210px;
+    background-image: url(../images/sprite.png);
+    background-position: 1px -839px;
+    width: 42px;
+    height: 41px;
+}
+
+.lista-lugares-fiesta  .view-content ul li .party-icon {
+    background-image: url(../images/sprite.png);
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 276px;
+}
+
+.lista-lugares-fiesta  .view-content ul li .party-icon-Hotel {
+    background-position: 0 -960px;
+}
+
+.lista-lugares-fiesta  .view-content ul li .party-icon-Evento {
+    background-position: 0 -1000px;
+}
+
+.lista-lugares-fiesta  .view-content ul li .party-icon-Restaurante {
+    background-position: 0 -1040px;
+}
+
+.lista-lugares-fiesta  .view-content ul li .party-icon-2x1 {
+    background-position: 0 -1080px;
+}
+
+.lista-lugares-fiesta  .view-content ul li .party-icon-Bar {
+    background-position: 0 -1120px;
+}
+
+.lista-lugares-fiesta  .view-content ul li .views-field-title,
+.lista-lugares-fiesta  .view-content ul li .views-field-field-rating {
+    text-align: left;
+    margin-left: 40px;
+    font-family: "Open Sans", Arial, sans-serif;
+}
+
+.lista-lugares-fiesta  .view-content ul li .views-field-title {
+    margin-top: 14px;
+}
+
+.lista-lugares-fiesta  .view-content ul li .views-field-title a {
+    font-weight: bold;
+    color: #282528;
+}
+
+.lista-lugares-fiesta  .view-content ul li .views-field-field-rating {
+    font-size: 13px;
+}
+
+/* @end */
+
+
+/* @group Media Query */
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+/* @end */
