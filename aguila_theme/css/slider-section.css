@@ -170,7 +170,7 @@
     width: 50px;
     height: 50px;
     padding: 0 12px;
-    margin: 20px auto 0;
+    margin: 30px auto 20px;
     background: #FFF;
     border-radius: 50%;
 }
@@ -196,6 +196,8 @@
         max-width: 225px;
     }
 
+
+
 }
 
 /* Small Devices, Tablets */
@@ -217,6 +219,9 @@
         font-size: 100%;
     }
 
+    .favoritos-content-type {
+        margin: 40px auto 0;
+    }
 }
 
 /* Medium Devices, Desktops */
@@ -273,6 +278,9 @@
         padding: 0 10px 37px;
     }
 
+    .favoritos-content-type {
+        margin: 40px auto 0;
+    }
 }
 
 /* Large Devices, Wide Screens */
