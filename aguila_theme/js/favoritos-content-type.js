@@ -1,4 +1,4 @@
-/*global jQuery2 */
+/*global jQuery, jQuery2 */
 (function ($, jq) {
 
     $.transform('.favoritos-content-type', {
@@ -9,9 +9,9 @@
                 node;
 
             if (anchor.length > 0) {
-                node = anchor.clone(true);
+                node = $('<span class="flag-wrapper" />').append(anchor.clone(true));
             } else {
-                node = $('<a href="/user/login" class="flag flag-action flag-link-toggle"></a>').text(fav.find('.counter-summary').text());
+                node = $('<span class="flag-wrapper"><a href="/user/login" class="flag flag-action flag-link-toggle"></a></span>').text(fav.find('.counter-summary').text());
             }
 
             return node;
