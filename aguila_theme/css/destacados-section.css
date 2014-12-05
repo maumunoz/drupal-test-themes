@@ -203,6 +203,7 @@
 /* @group Favorite heart flag */
 .flag-wrapper {
     display: inline-block;
+    text-align: center;
 }
 
 .flag-wrapper .flag-throbber {
