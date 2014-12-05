@@ -339,7 +339,8 @@ Retina Display Condensed Black:    font-style: normal | font-weight: 900
 .lista-lugares-fiesta,
 .slick-initialized .slide-content,
 .mapa-lugar-detalle,
-.view-dynamic-filter .view-content {
+.view-dynamic-filter .view-content,
+.banner-lugar-fiesta {
     position: relative;
     margin: 0 auto;
     max-width: 1200px;

@@ -1,4 +1,8 @@
 /* @group Banner Lugar */
+.banner-lugar-fiesta {
+    background-size: cover;
+    background-repeat: none;
+}
 
 .banner-lugar-fiesta .views-row {
     padding: 30px 20px 0;
@@ -16,15 +20,14 @@
 .banner-lugar-fiesta .volver a {
     display: inline-block;
     height: 30px;
+    padding-left: 30px;
     text-decoration: underline;
-    background-image: url(../images/sprite.png);
-    background-position: 0 -440px;
+    background: url(../images/sprite.png) no-repeat -10px -490px transparent;
 }
 
 .banner-lugar-fiesta .titulo,
 .banner-lugar-fiesta .tipo,
 .banner-lugar-fiesta .ver-fotos,
-.banner-lugar-fiesta .volver a,
 .banner-lugar-fiesta .favoritos-content-type,
 .banner-lugar-fiesta .compartir {
     margin-left: 30px;
@@ -35,12 +38,12 @@
 }
 
 .banner-lugar-fiesta .tipo span {
-   margin-left: 45px;
+    padding-left: 45px;
     font-family: Dubiel, Georgia, Times, serif;
     font-style: italic;
     font-size: 36px;
     color: #ffd800;
-    background-image: url(../images/sprite.png);
+    background: url(../images/sprite.png) no-repeat -40px -80px transparent;
 }
 
 .banner-lugar-fiesta .tipo span.bar {
