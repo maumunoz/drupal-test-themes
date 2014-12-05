@@ -23,6 +23,7 @@
                     infowindow = new google.maps.InfoWindow({
                         content: '<div class="lugar-info-window map-info-window"><h1>' + $('.banner-lugar-fiesta h1').text() + '</h1></div>'
                     });
+                    $('.mapa-lugar-detalle').removeClass("hidden");
 
                 google.maps.event.addListener(marker, 'click', function () {
                     infowindow.open(map, marker);
