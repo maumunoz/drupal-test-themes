@@ -1,9 +1,6 @@
 /*global jQuery2 */
 (function ($) {
 
-    // dummy test
-    $('.mapa-lugar-detalle').css('minHeight', '100px');
-
     function validGeolocation(value) {
         return value !== undefined && value !== null && value !== '';
     }
