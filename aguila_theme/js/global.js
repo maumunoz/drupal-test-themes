@@ -61,3 +61,11 @@ moment.locale('es', {
 
 //Set spanish locale
 moment.locale('es');
+
+// Google Maps Promise
+(function ($) {
+    $.mapsLoaded = $.Deferred();
+    window.initMaps = function () {
+        $.mapsLoaded.resolve();
+    };
+}(jQuery2));
