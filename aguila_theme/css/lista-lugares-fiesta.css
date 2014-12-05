@@ -1,9 +1,5 @@
 /* @group Lista Lugares */
 
-.mapa-lugar-detalle {
-    min-height: 500px;
-}
-
 .lista-lugares-fiesta .view-filters {
     display: none;
 }
