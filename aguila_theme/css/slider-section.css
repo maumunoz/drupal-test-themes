@@ -169,7 +169,7 @@
 .favoritos-content-type {
     width: 50px;
     height: 50px;
-    padding: 0 12px;
+    padding: 14px 12px 0;
     margin: 30px auto 20px;
     background: #FFF;
     border-radius: 50%;
@@ -177,7 +177,6 @@
 
 .favoritos-content-type .flag-wrapper {
     display: block;
-    margin-top: -4px;
 }
 
 /* @end */

@@ -1,3 +1,4 @@
+/*global jQuery, jQuery2 */
 (function ($) {
     $.fn.transform = function (options) {
         var source = $(this),
@@ -40,7 +41,7 @@
             options.hide = true;
         } else if (type === 'replace') {
             processNodes(function (result, target) {
-                target.replace(result);
+                target.html(result);
             });
         } else if (type === 'after') {
             processNodes(function (result, target) {
@@ -87,4 +88,4 @@
             nodes.transform(options);
         }
     };
-})(jQuery2);
+}(jQuery2));
