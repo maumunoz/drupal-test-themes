@@ -81,7 +81,8 @@
                 draggable: ($(document).width() > 480),
                 scrollwheel: false,
             },
-            map = new google.maps.Map($('.mapa-lugar-detalle')[0], mapOptions)
+            map = new google.maps.Map($('.mapa-lugar-detalle')[0], mapOptions);
+            $('.mapa-lugar-detalle').removeClass("hidden");
         }
         $(markers).each(function(i,data) {
             data.marker.setMap(map);
