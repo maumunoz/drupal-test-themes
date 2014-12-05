@@ -543,7 +543,9 @@ $black, $dark           = #000    | rgb(0, 0, 0);
     border-color: #000;
 }
 
-.btn-symbol {
+.btn-symbol,
+.btn-symbol.active,
+.btn-symbol.active:active {
     background-image: url(../images/sprite.png);
     background-position: 0 0;
     background-repeat: no-repeat;
@@ -659,6 +661,96 @@ $black, $dark           = #000    | rgb(0, 0, 0);
 
 .btn-md.btn-symbol.btn-symbol-geo-gray {
     background-position: 100% -840px;
+}
+
+.btn-symbol.btn-symbol-hotel {
+    background-position: 0 -1166px;
+    padding-left: 40px;
+    padding-right: 12px;
+}
+
+.btn-md.btn-symbol.btn-symbol-hotel {
+    background-position: 0 -1160px;
+}
+
+.btn-symbol.btn-symbol-hotel.active {
+    background-position: 0 -1366px;
+}
+
+.btn-md.btn-symbol.btn-symbol-hotel.active {
+    background-position: 0 -1360px;
+}
+
+.btn-symbol.btn-symbol-evento {
+    background-position: 0 -1206px;
+    padding-left: 40px;
+    padding-right: 12px;
+}
+
+.btn-md.btn-symbol.btn-symbol-evento {
+    background-position: 0 -1200px;
+}
+
+.btn-symbol.btn-symbol-evento.active {
+    background-position: 0 -1406px;
+}
+
+.btn-md.btn-symbol.btn-symbol-evento.active {
+    background-position: 0 -1400px;
+}
+
+.btn-symbol.btn-symbol-restaurante {
+    background-position: 0 -1246px;
+    padding-left: 40px;
+    padding-right: 12px;
+}
+
+.btn-md.btn-symbol.btn-symbol-restaurante {
+    background-position: 0 -1240px;
+}
+
+.btn-symbol.btn-symbol-restaurante.active {
+    background-position: 0 -1446px;
+}
+
+.btn-md.btn-symbol.btn-symbol-restaurante.active {
+    background-position: 0 -1440px;
+}
+
+.btn-symbol.btn-symbol-2x1 {
+    background-position: 0 -1286px;
+    padding-left: 40px;
+    padding-right: 12px;
+}
+
+.btn-md.btn-symbol.btn-symbol-2x1 {
+    background-position: 0 -1280px;
+}
+
+.btn-symbol.btn-symbol-2x1.active {
+    background-position: 0 -1486px;
+}
+
+.btn-md.btn-symbol.btn-symbol-2x1.active {
+    background-position: 0 -1480px;
+}
+
+.btn-symbol.btn-symbol-bar {
+    background-position: 0 -1326px;
+    padding-left: 40px;
+    padding-right: 12px;
+}
+
+.btn-md.btn-symbol.btn-symbol-bar {
+    background-position: 0 -1320px;
+}
+
+.btn-symbol.btn-symbol-bar.active {
+    background-position: 0 -1526px;
+}
+
+.btn-md.btn-symbol.btn-symbol-bar.active {
+    background-position: 0 -1520px;
 }
 
 .btn-strong {
