@@ -1,5 +1,9 @@
 /* @group Lista Lugares */
 
+.lista-lugares-fiesta .flag-wrapper {
+    text-indent: 0;
+}
+
 .lista-lugares-fiesta .view-filters {
     display: none;
 }

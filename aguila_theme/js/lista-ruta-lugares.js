@@ -46,18 +46,25 @@
                 centerLat += parseFloat(node.data('latitude'));
                 centerLong += parseFloat(node.data('longitude'));
                 counter++;
+                var position = new google.maps.LatLng(parseFloat(node.data('latitude')),parseFloat(node.data('longitude')));
                 var marker = new google.maps.Marker({
-                    position: new google.maps.LatLng(parseFloat(node.data('latitude')),parseFloat(node.data('longitude'))),
+                    position: position,
                     title: node.data('placename')
                 });
                 infowindow = new google.maps.InfoWindow({
                     content: '<div class="lugar-info-window map-info-window"><h1>' + node.data('placename') + '</h1></div>'
                 });
+                node.data("marker",marker);
+                node.data("position",position);
+                node.data("infowindow",infowindow);
                 markers.push({marker:marker, infowindow: infowindow});
                 node.bind("click", function(event ) {
-                    var position = new google.maps.LatLng(parseFloat($(this).data('latitude')),parseFloat($(this).data('longitude')))
+                    $(markers).each(function(j,alldata) { alldata.infowindow.close(); });
+                    var position = $(this).data("position");
+                    var marker = $(this).data("marker");
                     map.panTo(position);
                     map.setZoom(16);
+                    $(this).data("infowindow").open(map, marker);
                 });
             }else{
                 node.addClass("hidden");
@@ -70,18 +77,22 @@
             mapOptions = {
                 zoom: 6,
                 center: centerLatlng,
-                styles: $.mapStyles.grayscale
+                styles: $.mapStyles.grayscale,
+                draggable: ($(document).width() > 480),
+                scrollwheel: false,
             },
             map = new google.maps.Map($('.mapa-lugar-detalle')[0], mapOptions)
         }
         $(markers).each(function(i,data) {
             data.marker.setMap(map);
             google.maps.event.addListener(data.marker, 'click', function () {
+                $(markers).each(function(j,alldata) { alldata.infowindow.close(); });
                 data.infowindow.open(map, data.marker);
             });
         });
         $('.view-map-all').bind("click",function(){
             map.setZoom(6);
+            $(markers).each(function(j,alldata) { alldata.infowindow.close(); });
             map.panTo(centerLatlng);
         });
     }

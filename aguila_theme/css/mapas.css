@@ -2,12 +2,22 @@
 
 .mapa-lugar-detalle {
     min-height: 200px;
+    max-width: 1280px;
+}
+
+.map-info-window  {
+    line-height:1.35;
+    overflow:hidden;
+    white-space:nowrap;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: 12px;
 }
 
 .map-info-window h1 {
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-size: 18px;
 }
+
+/* @end */
 
 /* @group Media Query */
 
