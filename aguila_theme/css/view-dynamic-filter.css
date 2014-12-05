@@ -169,9 +169,6 @@
         background-position: -2px -403px;
     }
 
-    .view-dynamic-filter .views-row > div > ul + p .btn {
-        margin-right: 24px;
-    }
 }
 
 /* Medium Devices, Desktops */
@@ -197,7 +194,6 @@
 
     .view-dynamic-filter .views-row > div > ul + p {
         padding: 16px 20px 0 0;
-        width: 22%;
     }
 
     .view-dynamic-filter .view-content .filter {
@@ -206,6 +202,10 @@
 
     .view-dynamic-filter .view-content .btn-symbol.filter {
         padding: 6px 20px 6px 40px;
+    }
+
+    .view-dynamic-filter .views-row > div > ul + p .btn {
+        margin-right: 24px;
     }
 
 }
@@ -227,6 +227,10 @@
 
     .view-dynamic-filter .view-content div > p + ul {
         padding: 14px 0 10px 0;
+    }
+
+    .view-dynamic-filter .views-row > div > ul + p {
+        width: 22%;
     }
 
 }
