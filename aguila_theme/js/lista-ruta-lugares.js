@@ -63,9 +63,6 @@
                 node.addClass("hidden");
             }
         });
-        console.log("Map");
-        console.log(google);
-        console.log(counter);
         if (counter>0) {
             centerLat /= counter;
             centerLong /= counter;
