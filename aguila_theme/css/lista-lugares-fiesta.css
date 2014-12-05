@@ -6,7 +6,7 @@
 
 .lista-lugares-fiesta .view-content ul {
     list-style-type: none;
-    margin: 0;
+    margin: 0 -10px;
     padding: 0;
     text-align: center;
 }
