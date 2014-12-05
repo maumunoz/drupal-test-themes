@@ -13,8 +13,9 @@
             $.mapsLoaded.promise().then(function () {
                 var position = new google.maps.LatLng(parseFloat(node.data('latitude')), parseFloat(node.data('longitude'))),
                     mapOptions = {
-                        zoom: 8,
-                        center: position
+                        zoom: 17,
+                        center: position,
+                        styles: $.mapStyles.grayscale
                     },
                     map = new google.maps.Map($('.mapa-lugar-detalle')[0], mapOptions),
                     marker = new google.maps.Marker({
