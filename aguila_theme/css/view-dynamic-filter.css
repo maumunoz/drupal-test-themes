@@ -3,6 +3,7 @@
 .view-dynamic-filter {
     background-color: #f2f5f8;
     font-size: 80%;
+    margin: 0 0 20px 0 !important;
 }
 
 .view-dynamic-filter,
@@ -53,11 +54,18 @@
 }
 
 .view-dynamic-filter .views-row > div > ul + p {
-    float: right;
-    width: 25%;
     font-size: 87.5%;
     color: #868686;
-    padding: 10px 50px 0 0;
+    float: none;
+    width: 100%;
+    padding: 0 10px 10px;
+}
+
+.view-dynamic-filter .views-row > div > ul + p * {
+    color: #868686;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .view-dynamic-filter .view-content li {
@@ -66,7 +74,7 @@
     margin: 0 2px;
 }
 
-.view-dynamic-filter .view-content a {
+.view-dynamic-filter .view-content .filter {
     color: #b4b4b4;
     display: inline-block;
     padding: 6px 11px;
@@ -110,11 +118,24 @@
         padding: 10px 20px 0;
     }
 
+    .view-dynamic-filter .views-row > div > ul + p {
+        padding: 0 18px 10px 18px;
+    }
+
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
+    .filtros-la-ruta-fiesta .views-row > div > ul {
+        float: left;
+        width: 75%;
+    }
 
+    .filtros-la-ruta-fiesta .views-row > div > ul + p {
+        float: right;
+        width: 25%;
+        padding: 10px 50px 0 0;
+    }
 }
 
 /* Medium Devices, Desktops */
@@ -122,6 +143,7 @@
 
     .view-dynamic-filter {
         font-size: 114%;
+        margin: 0 0 40px 0 !important;
     }
 
     .view-dynamic-filter,
