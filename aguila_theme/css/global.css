@@ -336,7 +336,9 @@ Retina Display Condensed Black:    font-style: normal | font-weight: 900
 .stack-navigation .region-navigation,
 .stack-copyright .content,
 .view-descatados,
+.lista-lugares-fiesta,
 .slick-initialized .slide-content,
+.mapa-lugar-detalle,
 .view-dynamic-filter .view-content {
     position: relative;
     margin: 0 auto;

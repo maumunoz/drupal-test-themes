@@ -2,7 +2,7 @@
 (function ($, jq) {
 
     $.transform('.favoritos-content-type', {
-        type: 'append',
+        type: 'replace',
         process: function ($, container) {
             var fav = jq('.node-flag-counter'),
                 anchor = fav.find('a'),
