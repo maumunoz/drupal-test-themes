@@ -29,18 +29,27 @@
         // Makes Sidebar B behave in a responsive way
         var sidebarB = $('#sidebar-b'),
             main,
+            target,
+            targetPosition,
             minWidth = Drupal.sidebarBreakpoint,
             mobile = false;
 
         if (sidebarB.length > 0 && minWidth > 0) {
             if (minWidth > 0) {
                 main = $('#main');
+                target = Drupal.sidebarTarget || main;
+                targetPosition = Drupal.sidebarTargetPosition || 'after';
 
                 function sidebarResize() {
                     var width = body.width(); //window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
                     if (width < minWidth && !mobile) {
                         mobile = true;
-                        main.after(sidebarB);
+                        if (targetPosition === 'after') {
+                            target.after(sidebarB);
+                        } else {
+                            target.before(sidebarB);
+                        }
+                        sidebarB.css('minHeight', '');
                     } else if (width >= minWidth && mobile) {
                         mobile = false;
                         main.before(sidebarB);

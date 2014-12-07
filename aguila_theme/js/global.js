@@ -64,6 +64,10 @@ moment.locale('es');
 
 // Google Maps Promise
 (function ($) {
+    Drupal.sidebarBreakpoint = 768;
+    Drupal.sidebarTarget = $('#block-views-banner-cervezas-block');
+    Drupal.sidebarTargetPosition = 'before';
+
     $.mapsLoaded = $.Deferred();
     window.initMaps = function () {
         $.mapsLoaded.resolve();
