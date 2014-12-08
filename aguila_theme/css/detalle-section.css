@@ -1,0 +1,133 @@
+/* @group Contenido Detalle */
+
+.content-area {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: 100%;
+    line-height: 1.71;
+    color: #999;
+    padding: 17px 0 0 10px;
+}
+
+.content-area h1,
+.content-area h2,
+.content-area h3,
+.content-area h1 + p strong,
+.content-area h2 + p strong,
+.content-area address,
+.content-area .field-label {
+    color: #000;
+}
+
+.content-area h1,
+.content-area h2 {
+    font-family: "ITCAvantGardePro", Helvetica, Arial, sans-serif;
+    font-size: 428%;
+    line-height: 1 !important;
+}
+
+.content-area p {
+    margin: 0 0 25px 0;
+    line-height: 1.71 !important;
+}
+
+.content-area h1 + p strong,
+.content-area h2 + p strong,
+.content-area address strong,
+.content-area h3 {
+    font-weight: 600;
+}
+
+.content-area h3 {
+    font-weight: 700;
+    font-size: 164%;
+}
+
+.content-area address strong {
+    font-size: 131%;
+}
+
+.content-area address {
+    font-weight: 300;
+    font-size: 128%;
+    line-height: 1.4;
+}
+
+.content-area .field-name-body {
+    padding: 10px 0 0 0;
+    margin: 0 0 60px 0 !important;
+}
+
+.content-area .view-ver-lugar-fiesta-en-mapa a {
+    display: inline-block;
+    font-size: 100%;
+    padding: 0 0 0 8px;
+    text-decoration: none;
+    color: #868686;
+}
+
+.content-area .view-ver-lugar-fiesta-en-mapa .btn.btn-symbol-geo-gray {
+    padding: 0 18px;
+    margin: 0 0 0 8px;
+    min-height: 36px;
+    border-color: #9d9d9d;
+    background-position: -3px -842px;
+}
+
+.fivestar-static-item .form-item {
+    margin: 10px 0;
+}
+
+.galeria-empotrada {
+    background: transparent !important;
+    border: 0 !important;
+    padding: 0 !important;
+}
+
+.galeria-empotrada .media-gallery-media,
+.galeria-empotrada h3 {
+    margin: 0 0 25px 0;
+}
+
+.galeria-empotrada .field-items > .field-item {
+    width: 24.35% !important;
+    max-width: 188px;
+}
+
+.galeria-empotrada .media-gallery-media .media-gallery-item-wrapper {
+    margin: 0;
+    padding: 0 1px 4px 0;
+}
+
+.galeria-empotrada .media-gallery-media .meta-wrapper {
+    display: none;
+}
+
+/* @end */
+
+/* @group Media Query */
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+/* @end */
