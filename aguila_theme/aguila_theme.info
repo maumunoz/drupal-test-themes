@@ -21,6 +21,7 @@ stylesheets[all][] = 'css/footer-section.css'
 stylesheets[all][] = 'css/mapas.css'
 stylesheets[all][] = 'css/view-dynamic-filter.css'
 stylesheets[all][] = 'css/detalle-section.css'
+stylesheets[all][] = 'css/pagina-estatica.css'
 
 scripts[] = 'js/moment.min.js'
 scripts[] = 'js/global.js'

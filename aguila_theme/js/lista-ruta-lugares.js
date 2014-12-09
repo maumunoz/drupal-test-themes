@@ -87,26 +87,26 @@
                     infowindow.open(map, marker);
                 });
                 
-                $('.view-map-all').bind("click",function(){
-                    map.setZoom(6);
-                    $(markers).each(function(j,alldata) { alldata.infowindow.close(); });
-                    map.panTo(centerLatlng);
-                });
             }else{
                 node.addClass("hidden");
             }
         });
         if (markers.length>0) {
-        }
-        google.maps.event.addListener(map, 'click', function () {
-            map.setOptions({
-                scrollwheel: true,
+            $('.view-map-all').bind("click",function(){
+                map.setZoom(6);
+                $(markers).each(function(j,alldata) { alldata.infowindow.close(); });
+                map.panTo(centerLatlng);
             });
-        });
-        google.maps.event.addDomListener(window, "resize", function() {
+            google.maps.event.addListener(map, 'click', function () {
+                map.setOptions({
+                    scrollwheel: true,
+                });
+            });
+            google.maps.event.addDomListener(window, "resize", function() {
+                centerMap();
+            });
             centerMap();
-        });
-        centerMap();
+        }
     }
 
     $.initModule('.lista-lugares-fiesta', function () {
