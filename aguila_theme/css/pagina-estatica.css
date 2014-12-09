@@ -1,0 +1,98 @@
+/* @group Static pages */
+
+.node-type-page .stack-content-inner {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1058px;
+}
+
+/* @end */
+
+/* @group Aguila en Vivo */
+
+.aguila-en-vivo {
+    position: relative;
+    font-size: 18px;
+    font-family: "Open Sans";
+    line-height: 30px;
+}
+
+.aguila-en-vivo h2 {
+    font-family: Dubiel, Georgia, Times, serif;
+    font-size: 35px;
+    margin-bottom: 5px;
+}
+
+.aguila-en-vivo .mainText {
+    width: 56%;
+}
+
+.aguila-en-vivo .mainText h1 {
+    font-family: 'ITCAvantGardePro', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 71px;
+    margin-top: 9px;
+    line-height: 72px;
+    letter-spacing: -3.2px;
+    margin-bottom: 40px;
+}
+
+.aguila-en-vivo .mainText p {
+    margin-bottom: 40px;
+}
+
+.aguila-en-vivo .mainText h3 {
+    font-family: 'ITCAvantGardePro', Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    float: left;
+    display: block;
+    width: 54%;
+}
+
+.aguila-en-vivo .mainText .mostrarMapa {
+    font-size: 13.8px;
+    padding-top: 3px;
+    height: 38px;
+}
+
+.aguila-en-vivo .calendarBox {
+    position: absolute;
+    width: 38%;
+    top: 0;
+    right: 0;
+    min-height: 200px;
+}
+
+.eventos-aguila-en-vivo .view-content {
+    display: none;
+}
+
+/* @end */
+
+/* @group Media Query */
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+/* @end */
