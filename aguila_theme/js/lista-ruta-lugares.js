@@ -1,6 +1,9 @@
 /*global jQuery2, jQuery, document */
 (function ($, jq) {
 
+    var map;
+    var markers = [];
+    var centerLatlng;
 
     function transformar() {
         // no se puede utilizar la referencia a la lista porque el nodo en el DOM cambia
@@ -30,22 +33,33 @@
     function validGeolocation(value) {
         return value !== undefined && value !== null && value !== '';
     }
+    function centerMap() {
+        var latlngbounds = new google.maps.LatLngBounds();
+        $(markers).each(function(i,data) {
+           latlngbounds.extend(data.marker.getPosition());
+        });
+        centerLatlng = latlngbounds.getCenter();
+        map.setCenter(centerLatlng);
+        map.fitBounds(latlngbounds); 
+    }
     
     function updateMapMarkers() {
         
-        var centerLat = 0;
-        var centerLong = 0;
-        var counter = 0;
+        
+        mapOptions = {
+            zoom: 6,
+            styles: $.mapStyles.grayscale,
+            center: new google.maps.LatLng(4.6194477,-74.110567),
+            draggable: ($(document).width() > 480),
+            scrollwheel: false,
+        },
+        map = new google.maps.Map($('.mapa-lugar-detalle')[0], mapOptions);
+        $('.mapa-lugar-detalle').removeClass("hidden");
+        
         var linksWithCoords = $('.lista-lugares-fiesta').find('.view-map');
-        var markers = [];
-        var map;
-        var centerLatlng;
         linksWithCoords.each(function(i, node) {
             node = $(node);
             if (validGeolocation(node.data('latitude')) && validGeolocation(node.data('longitude'))) {
-                centerLat += parseFloat(node.data('latitude'));
-                centerLong += parseFloat(node.data('longitude'));
-                counter++;
                 var position = new google.maps.LatLng(parseFloat(node.data('latitude')),parseFloat(node.data('longitude')));
                 var marker = new google.maps.Marker({
                     position: position,
@@ -66,36 +80,33 @@
                     map.setZoom(16);
                     $(this).data("infowindow").open(map, marker);
                 });
+                
+                marker.setMap(map);
+                google.maps.event.addListener(marker, 'click', function () {
+                    $(markers).each(function(j,alldata) { alldata.infowindow.close(); });
+                    infowindow.open(map, marker);
+                });
+                
+                $('.view-map-all').bind("click",function(){
+                    map.setZoom(6);
+                    $(markers).each(function(j,alldata) { alldata.infowindow.close(); });
+                    map.panTo(centerLatlng);
+                });
             }else{
                 node.addClass("hidden");
             }
         });
-        if (counter>0) {
-            centerLat /= counter;
-            centerLong /= counter;
-            centerLatlng = new google.maps.LatLng(centerLat,centerLong);
-            mapOptions = {
-                zoom: 6,
-                center: centerLatlng,
-                styles: $.mapStyles.grayscale,
-                draggable: ($(document).width() > 480),
-                scrollwheel: false,
-            },
-            map = new google.maps.Map($('.mapa-lugar-detalle')[0], mapOptions);
-            $('.mapa-lugar-detalle').removeClass("hidden");
+        if (markers.length>0) {
         }
-        $(markers).each(function(i,data) {
-            data.marker.setMap(map);
-            google.maps.event.addListener(data.marker, 'click', function () {
-                $(markers).each(function(j,alldata) { alldata.infowindow.close(); });
-                data.infowindow.open(map, data.marker);
+        google.maps.event.addListener(map, 'click', function () {
+            map.setOptions({
+                scrollwheel: true,
             });
         });
-        $('.view-map-all').bind("click",function(){
-            map.setZoom(6);
-            $(markers).each(function(j,alldata) { alldata.infowindow.close(); });
-            map.panTo(centerLatlng);
+        google.maps.event.addDomListener(window, "resize", function() {
+            centerMap();
         });
+        centerMap();
     }
 
     $.initModule('.lista-lugares-fiesta', function () {

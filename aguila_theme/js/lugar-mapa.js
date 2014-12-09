@@ -12,7 +12,9 @@
                     mapOptions = {
                         zoom: 17,
                         center: position,
-                        styles: $.mapStyles.grayscale
+                        styles: $.mapStyles.grayscale,
+                        draggable: ($(document).width() > 480),
+                        scrollwheel: false,
                     },
                     map = new google.maps.Map($('.mapa-lugar-detalle')[0], mapOptions),
                     marker = new google.maps.Marker({
@@ -24,7 +26,11 @@
                         content: '<div class="lugar-info-window map-info-window"><h1>' + $('.banner-lugar-fiesta h1').text() + '</h1></div>'
                     });
                     $('.mapa-lugar-detalle').removeClass("hidden");
-
+                google.maps.event.addListener(map, 'click', function () {
+                    map.setOptions({
+                        scrollwheel: true,
+                    });
+                });
                 google.maps.event.addListener(marker, 'click', function () {
                     infowindow.open(map, marker);
                 });
