@@ -57,6 +57,7 @@
                 }
 
                 $(window).on('resize', sidebarResize);
+                sidebarResize();
             }
         }
 
