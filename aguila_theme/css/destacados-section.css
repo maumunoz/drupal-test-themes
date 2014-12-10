@@ -160,13 +160,13 @@
 .destacados-principal .views-row-1 .categoria {
     margin-bottom: 30px;
 }
-
 .destacados-principal .views-row-1 .views-field-title a {
     font-size: 20px;
     line-height: 25px;
     font-family: 'AkzidenzGroteskBQ', Helvetica, Arial, sans-serif;
     font-weight: 300;
 }
+
 
 .destacados-principal .views-row-1 .views-field-body,
 .destacados-principal .views-row-1 .views-field-nothing {
@@ -333,6 +333,7 @@
 
     .destacados-principal .views-row-1 .views-field-title a,
     .destacados-principal .views-row-6 .views-field-title a {
+        max-width: 90%;
         font-size: 38px;
         line-height: 38px;
         font-weight: 300;
