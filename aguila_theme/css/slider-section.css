@@ -58,14 +58,15 @@
 
 .slide-content {
     color: #fff;
-    padding: 30px 5% 0;
     display: none;
     width: 100%;
     top: 0;
+    padding: 30px 5% 0;
 }
 
 .slick-initialized .slide-content {
     display: block;
+    padding: 30px 5% 0;
 }
 
 .slide-content p {

@@ -14,9 +14,47 @@
     font-size: 12px;
 }
 
+.mapa-eventos .map-info-window  {
+    min-height: 122px;
+    min-width: 300px;
+    padding-top: 21px;
+}
+
 .map-info-window h1 {
     font-size: 18px;
 }
+
+.map-info-window .event-date {
+    color: #28c8fe;
+    font-family: 'ITCAvantGardePro', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    float: left;
+    font-size: 27px;
+    text-transform: lowercase;
+    text-align: left;
+    line-height: 38px;
+    letter-spacing: 0px;
+    width: 108px;
+    margin-left: 11px;
+}   
+
+.map-info-window .event-day {
+    font-size: 72px;
+    line-height: 58px;
+}
+
+.map-info-window .event-title {
+    font-size: 18px;
+    font-weight: normal;
+    color: #4a4a4a;
+    white-space: normal;
+}
+
+.map-info-window .event-subtitle {
+    font-size: 12px;
+    color: #979696;
+}
+
 
 /* @end */
 
