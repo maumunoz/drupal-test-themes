@@ -1,9 +1,7 @@
-/*global jQuery2, moment*/
+/*global jQuery2, formatDate*/
 (function ($) {
-    var node = ".encabezado-media .fecha";
 
-    $.initModule(node, function ($, dateNode) {
-        dateNode.text(moment($.trim(dateNode.text()), "YYYY-MM-DD").format('D MMMM YYYY'));
-    });
+    //Set format to publish date.
+    formatDate($, '.encabezado-media .fecha', 'D MMMM YYYY');
 
 }(jQuery2));
