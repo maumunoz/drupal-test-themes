@@ -19,7 +19,7 @@
     display:block;
     width: 50px;
     height: 50px;
-    background-image: url(../images/sprite.png);
+    background-image: url(../images/sprite-social.png);
     background-repeat: no-repeat;
     border: solid 5px;
 }
@@ -27,25 +27,25 @@
 .socialHeader .socialLink1 {
     background-color: #3a579b;
     border-color: #3a579b;
-    background-position: 0 -240px;
+    background-position: -40px 0;
 }
 
 .socialHeader .socialLink2 {
     background-color: #d03428;
     border-color: #d03428;
-    background-position: 0 -280px;
+    background-position: -40px -40px;
 }
 
 .socialHeader .socialLink3 {
     background-color: #598dc9;
     border-color: #598dc9;
-    background-position: 0 -320px;
+    background-position: -40px -80px;
 }
 
 .socialHeader .socialLink4 {
     background-color: #e1411f;
     border-color: #e1411f;
-    background-position: 0 -360px;
+    background-position: -40px -120px;
 }
 
 /* @end */
@@ -87,38 +87,51 @@
 .socialFooter .socialTab4 {
     float: left;
     width: 25%;
-    margin: 0;
-    height: 40px;
+    height: 67px;
     display: block;
-    padding: 20px;
-    background-image: url(../images/sprite.png);
+    border-width: 0;
+}
+
+.socialFooter .socialTab1:before,
+.socialFooter .socialTab2:before,
+.socialFooter .socialTab3:before,
+.socialFooter .socialTab4:before {
+    content: '';
+    display: block;
+    width: 40px;
+    margin: 14px auto;
+    height: 40px;
+    background-image: url(../images/sprite-social.png);
     background-repeat: no-repeat;
-    background-position: 50% 0;
-    border-width: 14px 0;
-    border-style: solid;
+    background-position: 0 0;
 }
 
 .socialFooter  .socialTab1 {
     background-color: #00a0d4;
-    border-color:  #00a0d4;
 }
 
 .socialFooter  .socialTab2 {
     background-color: #39589b;
-    border-color: #39589b;
-    background-position: 50% -40px;
+}
+
+.socialFooter  .socialTab2:before {
+    background-position: 0 -40px;
 }
 
 .socialFooter  .socialTab3 {
     background-color: #f6085d;
-    border-color: #f6085d;
-    background-position: 50% -80px;
+}
+
+.socialFooter  .socialTab3:before {
+    background-position: 0 -80px;
 }
 
 .socialFooter  .socialTab4 {
     background-color: #858585;
-    border-color: #858585;
-    background-position: 50% -120px;
+}
+
+.socialFooter  .socialTab4:before {
+    background-position: 0 -120px;
 }
 
 /* @end */

@@ -144,11 +144,11 @@
 }
 
 .slick-dots li {
-    background: url(../images/sprite.png) 3px -915px no-repeat transparent;
+    background: url(../images/sprite.png) 3px -595px no-repeat transparent;
 }
 
 .slick-dots .slick-active {
-    background-position: 1px -878px;
+    background-position: 1px -558px;
 }
 
 .front .slick-slider:before {
@@ -165,7 +165,7 @@
     border-color: transparent;
     background-color: #0fc3ff;
     background-image: url(../images/sprite.png);
-    background-position: 100% -560px;
+    background-position: 0 -240px;
     background-repeat: no-repeat;
     cursor: pointer;
 }

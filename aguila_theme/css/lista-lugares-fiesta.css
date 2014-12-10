@@ -36,8 +36,8 @@
     left: 6px;
 }
 
-.lista-lugares-fiesta  .view-content ul li .views-field-count .flag {
-    background-position: -7px -811px;
+.lista-lugares-fiesta .view-content ul li .views-field-count .flag {
+    background-position: -7px -491px;
     text-indent: 30px;
 }
 
@@ -90,11 +90,11 @@
 .lista-lugares-fiesta  .view-content ul li .views-field-nothing .lugar-flag a.flag {
     min-height: 40px;
     width: 40px;
-    background-position: 0px -760px;
+    background-position: 0px -440px;
 }
 
 .lista-lugares-fiesta  .view-content ul li .views-field-nothing .lugar-flag a.flag.unflag-action {
-    background-position: 0px -680px;
+    background-position: 0px -360px;
 }
 
 .lista-lugares-fiesta  .view-content ul li .views-field-nothing .lugar-map {
@@ -102,13 +102,13 @@
     top: 212px;
     left: 210px;
     background-image: url(../images/sprite.png);
-    background-position: 1px -839px;
+    background-position: 1px -519px;
     width: 42px;
     height: 41px;
 }
 
 .lista-lugares-fiesta  .view-content ul li .party-icon {
-    background-image: url(../images/sprite.png);
+    background-image: url(../images/sprite-categories.png);
     width: 40px;
     height: 40px;
     position: absolute;
@@ -116,23 +116,23 @@
 }
 
 .lista-lugares-fiesta  .view-content ul li .party-icon-Hotel {
-    background-position: 0 -960px;
+    background-position: -80px 0;
 }
 
 .lista-lugares-fiesta  .view-content ul li .party-icon-Evento {
-    background-position: 0 -1000px;
+    background-position: -80px -40px;
 }
 
 .lista-lugares-fiesta  .view-content ul li .party-icon-Restaurante {
-    background-position: 0 -1040px;
+    background-position: -80px -80px;
 }
 
 .lista-lugares-fiesta  .view-content ul li .party-icon-2x1 {
-    background-position: 0 -1080px;
+    background-position: -80px -120px;
 }
 
 .lista-lugares-fiesta  .view-content ul li .party-icon-Bar {
-    background-position: 0 -1120px;
+    background-position: -80px -160px;
 }
 
 .lista-lugares-fiesta  .view-content ul li .views-field-title,

@@ -115,11 +115,11 @@
 }
 
 .btn-login-search .btn-icon-login > a {
-    background-position: -5px -160px;
+    background-position: -5px 0;
 }
 
 .btn-login-search .btn-icon-search > a {
-    background-position: -5px -200px;
+    background-position: -5px -40px;
 }
 
 #block-system-user-menu,
@@ -222,11 +222,11 @@
     }
 
     .btn-login-search .btn-icon-login > a {
-        background-position: 10px -160px;
+        background-position: 10px 0;
     }
 
     .btn-login-search .btn-icon-search > a {
-        background-position: 10px -200px;
+        background-position: 10px -40px;
     }
 
     /* @end */

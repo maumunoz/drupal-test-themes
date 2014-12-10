@@ -87,7 +87,7 @@
 .view-dynamic-filter .view-content .filter {
     color: #b4b4b4;
     display: inline-block;
-    padding: 6px 11px;
+    padding: 8px 11px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
@@ -101,7 +101,7 @@
 }
 
 .view-dynamic-filter .view-content .btn-symbol.filter {
-    padding: 6px 11px 6px 40px;
+    padding: 8px 11px 8px 40px;
 }
 
 .view-dynamic-filter .btn:active,
@@ -166,7 +166,7 @@
     .view-dynamic-filter .btn-symbol-geo {
         padding: 0 18px;
         min-height: 37px;
-        background-position: -2px -403px;
+        background-position: -2px -83px;
     }
 
 }
@@ -197,11 +197,11 @@
     }
 
     .view-dynamic-filter .view-content .filter {
-        padding: 6px 20px;
+        padding: 8px 20px;
     }
 
     .view-dynamic-filter .view-content .btn-symbol.filter {
-        padding: 6px 20px 6px 40px;
+        padding: 8px 20px 8px 40px;
     }
 
     .view-dynamic-filter .views-row > div > ul + p .btn {
