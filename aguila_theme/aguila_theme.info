@@ -22,6 +22,8 @@ stylesheets[all][] = 'css/mapas.css'
 stylesheets[all][] = 'css/view-dynamic-filter.css'
 stylesheets[all][] = 'css/detalle-section.css'
 stylesheets[all][] = 'css/pagina-estatica.css'
+stylesheets[all][] = 'css/encabezado-media-section.css'
+stylesheets[all][] = 'css/galeria-empotrada-section.css'
 
 scripts[] = 'js/moment.min.js'
 scripts[] = 'js/global.js'
