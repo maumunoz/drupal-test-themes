@@ -219,7 +219,7 @@
 
 .flag-wrapper .flag {
     background-image: url(../images/sprite.png);
-    background-position: -7px -769px;
+    background-position: -7px -369px;
     background-repeat: no-repeat;
     min-height: 22px;
     width: 26px;
@@ -228,12 +228,16 @@
     outline: none;
 }
 
-.views-row.celeste .flag {
-    background-position: -7px -729px;
+.flag-wrapper .flag.unflag-action {
+    background-position: -7px -449px;
 }
 
-.flag-wrapper .flag.unflag-action {
-    background-position: -7px -689px;
+.views-row.celeste .flag {
+    background-position: -7px -490px;
+}
+
+.views-row.celeste .flag.unflag-action {
+    background-position: -7px -410px;
 }
 
 /* @end */
