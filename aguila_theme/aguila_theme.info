@@ -23,8 +23,6 @@ stylesheets[all][] = 'css/view-dynamic-filter.css'
 stylesheets[all][] = 'css/detalle-section.css'
 stylesheets[all][] = 'css/pagina-estatica.css'
 
-scripts[] = 'js/moment.min.js'
-scripts[] = 'js/global.js'
 
 regions[page_top] = 'Above page'
 regions[preheader_first] = 'Preheader first'

@@ -1,11 +1,11 @@
-/*global jQuery2, moment */
+/*global jQuery2, moment, Drupal */
 
 /*
  Setup moment.js
  locale : spanish (es)
 */
 moment.locale('es', {
-    months : 'enero_febrero_marzo_abril_mayo_junio_julio_agosto_septiembre_octubre_noviembre_diciembre'.split('_'),
+    months : 'Enero_Febrero_Marzo_abril_Mayo_Junio_Julio_Agosto_Septiembre_Ectubre_Noviembre_Diciembre'.split('_'),
     monthsShort : 'ene_feb_mar_abr_may_jun_jul_ago_sep_oct_nov_dic'.split('_'),
     weekdays : 'domingo_lunes_martes_miércoles_jueves_viernes_sábado'.split('_'),
     weekdaysShort : 'dom._lun._mar._mié._jue._vie._sáb.'.split('_'),
@@ -64,6 +64,8 @@ moment.locale('es');
 
 // Google Maps Promise
 (function ($) {
+    var itemList = $(".item-list");
+
     Drupal.sidebarBreakpoint = 768;
     Drupal.sidebarTarget = $('#block-views-banner-cervezas-block');
     Drupal.sidebarTargetPosition = 'before';
@@ -72,4 +74,41 @@ moment.locale('es');
     window.initMaps = function () {
         $.mapsLoaded.resolve();
     };
+
+    //Set the background color for each categoria element.
+    if (itemList.length) {
+        itemList.find('span.btn.categoria').each(function () {
+            var nodeCategoria = $(this),
+                cssClass;
+
+            switch ($.trim(nodeCategoria.text()).toUpperCase()) {
+            case "LAS CHICAS AGUILA":
+                cssClass = 'btn-pink';
+                break;
+            case "LA RUTA":
+                cssClass = ($(this).hasClass('amarillo') ? 'btn-yellow' : 'btn-gold');
+                break;
+            case "AGUILA EN VIVO":
+                cssClass = 'btn-medium-blue';
+                break;
+            case "FUTBOL":
+                cssClass = 'btn-red';
+                break;
+            default:
+                cssClass = 'btn-gold';
+            }
+
+            nodeCategoria.addClass(cssClass);
+        });
+    }
 }(jQuery2));
+
+function formatDate($, selector, formatResult) {
+    $(selector).each(function () {
+        var nodeDate = $(this),
+            publishDate = moment($.trim(nodeDate.text()), "YYYY-MM-DD").format(formatResult);
+
+        //Set date in days.
+        nodeDate.text(publishDate);
+    });
+}
