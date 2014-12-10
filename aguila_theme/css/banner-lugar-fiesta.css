@@ -115,7 +115,12 @@
 }
 
 .banner-lugar-fiesta .favoritos-content-type {
-    margin-top: -5px;
+    margin-top: -7px;
+}
+
+.banner-lugar-fiesta .favoritos-content-type .flag-counter {
+    display: inline-block;
+    margin-left: 10px;
 }
 
 .banner-lugar-fiesta .compartir {
@@ -144,6 +149,7 @@
 .banner-lugar-fiesta .compartir .facebook {
     background-position: -90px -48px;
 }
+
 /* @end */
 
 

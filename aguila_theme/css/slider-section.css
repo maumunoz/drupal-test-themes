@@ -171,21 +171,42 @@
 }
 
 .favoritos-content-type {
-    width: 50px;
-    height: 50px;
-    padding: 14px 12px 0;
-    margin: 30px auto 20px;
-    background: #FFF;
-    border-radius: 50%;
+    text-align: center;
+    margin: 30px auto;
+    color: #FFF;
 }
 
 .favoritos-content-type .flag-wrapper {
-    display: block;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
 }
 
-.front .slick-slider .favoritos-content-type {
-    padding: 14px 12px 0 !important;
-    margin: 15px auto 0;
+.favoritos-content-type .flag-wrapper .flag {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 14px 12px 0;
+    vertical-align: top;
+    background-color: #FFF;
+    background-position: 5px -753px;
+    border-radius: 50%;
+}
+
+
+.favoritos-content-type .flag-wrapper .flag.unflag-action {
+    background-position: 5px -673px;
+}
+
+
+.favoritos-content-type .flag-counter {
+    display: block;
+    height: 50px;
+    vertical-align: top;
+    font-family: Dubiel, Georgia, Times, serif;
+    font-size: 25px;
+    font-style: italic;
+    line-height: 50px;
 }
 
 .front .slick-slider .favoritos-content-type p {
@@ -230,7 +251,7 @@
     }
 
     .favoritos-content-type {
-        margin: 40px auto 0;
+        margin: 40px auto 20px;
     }
 }
 
@@ -289,7 +310,7 @@
     }
 
     .favoritos-content-type {
-        margin: 40px auto 0;
+        margin: 20px auto 0;
     }
 
     .front .slick-slider .favoritos-content-type {

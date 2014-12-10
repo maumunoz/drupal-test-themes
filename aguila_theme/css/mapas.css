@@ -40,7 +40,6 @@
 @media only screen and (min-width : 768px) {
     .mapa-lugar-detalle {
         min-height: 500px;
-        margin: 0 auto;
     }
 }
 
@@ -51,6 +50,8 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
-
+    .mapa-lugar-detalle {
+        margin: 0 auto;
+    }
 }
 /* @end */
