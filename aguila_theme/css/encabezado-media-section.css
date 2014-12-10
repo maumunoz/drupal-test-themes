@@ -1,5 +1,9 @@
 /* @group Encabezado Media */
 
+.encabezado-media {
+    font-size: 80%;
+}
+
 .encabezado-media .imagen-destacada img {
     display: inline-block;
     width: 100% !important;
@@ -7,23 +11,46 @@
 }
 
 .encabezado-media .imagen-destacada {
-    padding: 0 0 27px 0;
+    margin: 0 0 5px 0;
+}
+
+.encabezado-media .categoria {
+    font-family: 'Retina Display', Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 80%;
+    padding: 9px 6px;
+}
+
+.encabezado-media .fecha {
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-size: 100%;
+    font-weight: 400;
+    margin-left: 15px;
 }
 
 .encabezado-media .views-row > div {
     display: inline-block;
 }
 
+.encabezado-media .title {
+    display: block;
+    width: 100%;
+}
+
 .encabezado-media h1 {
-    margin: 17px 0 0 0;
+    margin: 7px 0 0 0;
     border-top: 1px solid gray;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 .encabezado-media .views-row .descripcion {
     display: block;
     font-weight: 600;
     font-size: 128%;
+}
+
+.encabezado-media .views-row .descripcion p {
+    line-height: 1.4;
 }
 
 .encabezado-media .compartir,
@@ -54,7 +81,7 @@
 }
 
 .encabezado-media .compartir {
-    padding: 10px 0 0 15px;
+    padding: 8px 0 0 30px;
 }
 
 .encabezado-media .compartir span {
@@ -67,7 +94,7 @@
     text-indent: -9999px;
     width: 20px;
     height: 20px;
-    margin: 10px 0;
+    margin: 10px 7px;
     background: url(../images/sprite-social.png) 0 0 no-repeat;
 }
 
@@ -86,7 +113,7 @@
 .encabezado-media .flag-wrapper .flag {
     border: 3px solid #a7a7a7;
     padding: 12px 10px 0;
-    background-position: 2px -637px;
+    background-position: 2px -797px;
 }
 
 .encabezado-media .flag-counter {
@@ -94,7 +121,7 @@
 }
 
 .encabezado-media .flag-wrapper .flag.unflag-action {
-    background-position: 2px -797px;
+    background-position: 2px -637px;
 }
 
 .encabezado-media .flag-counter {
@@ -112,7 +139,22 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
+    .encabezado-media {
+        font-size: 90%;
+    }
 
+    .encabezado-media .fecha {
+        font-size: 85%;
+    }
+
+    .encabezado-media .categoria {
+        font-size: 71%;
+    }
+
+    .encabezado-media .imagen-destacada {
+        max-height: 350px;
+        overflow: hidden;
+    }
 }
 
 /* Small Devices, Tablets */
@@ -122,7 +164,23 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
+    .encabezado-media {
+        font-size: 100%;
+    }
 
+    .encabezado-media .imagen-destacada {
+        margin: 0 0 25px 0;
+    }
+
+    .encabezado-media h1 {
+        margin: 17px 0 0 0;
+        padding: 20px 0;
+    }
+
+    .encabezado-media .imagen-destacada {
+        max-height: none;
+        overflow: visible;
+    }
 }
 
 /* Large Devices, Wide Screens */

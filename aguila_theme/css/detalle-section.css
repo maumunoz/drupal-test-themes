@@ -28,14 +28,15 @@
 .node-type-article .content-area h1,
 .node-type-article .content-area h2 {
     font-family: "ITCAvantGardePro", Helvetica, Arial, sans-serif;
-    font-size: 428%;
-    line-height: 1 !important;
+    font-size: 300%;
+    line-height: 1;
 }
 
 .node-type-lugar-de-fiesta .content-area p,
 .node-type-article .content-area p {
-    margin: 0 0 25px 0;
-    line-height: 1.71 !important;
+    margin: 0 0 15px 0;
+    line-height: 1.8;
+    font-size: 90%;
 }
 
 .node-type-lugar-de-fiesta .content-area h1 + p strong,
@@ -64,7 +65,7 @@
 .node-type-lugar-de-fiesta .content-area address,
 .node-type-article .content-area address {
     font-weight: 300;
-    font-size: 128%;
+    font-size: 100%;
     line-height: 1.4;
 }
 
@@ -94,6 +95,11 @@
     margin: 10px 0;
 }
 
+.node-type-lugar-de-fiesta .contenedor-video-responsive iframe,
+.node-type-article .contenedor-video-responsive iframe {
+    width: 100%;
+}
+
 /* @end */
 
 /* @group Media Query */
@@ -105,7 +111,18 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
+    .node-type-lugar-de-fiesta .content-area h1,
+    .node-type-lugar-de-fiesta .content-area h2,
+    .node-type-article .content-area h1,
+    .node-type-article .content-area h2 {
+        font-size: 428%;
+    }
 
+    .node-type-lugar-de-fiesta .content-area p,
+    .node-type-article .content-area p {
+        margin: 0 0 25px 0;
+        font-size: 100%;
+    }
 }
 
 /* Small Devices, Tablets */
@@ -116,12 +133,22 @@
         margin: 0 0 60px 0 !important;
     }
 
+    .node-type-lugar-de-fiesta .content-area address,
+    .node-type-article .content-area address {
+        font-size: 128%;
+    }
+
     .node-type-lugar-de-fiesta .content-area {
         padding: 17px 0 0 10px;
     }
 
     .node-type-article .content-area {
         padding: 0 0 0 10px;
+    }
+
+    .node-type-lugar-de-fiesta .contenedor-video-responsive iframe,
+    .node-type-article .contenedor-video-responsive iframe {
+        width: 97%;
     }
 }
 
