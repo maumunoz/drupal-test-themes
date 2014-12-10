@@ -1,6 +1,6 @@
 /* @group Static pages */
 
-.node-type-page .stack-content-inner {
+.page-node-281 .stack-content-inner {
     position: relative;
     margin: 0 auto;
     max-width: 1058px;
@@ -47,6 +47,7 @@
     float: left;
     display: block;
     width: 54%;
+    margin-top: 2px;
 }
 
 .aguila-en-vivo .mainText .mostrarMapa {
