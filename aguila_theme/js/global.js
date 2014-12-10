@@ -64,7 +64,7 @@ moment.locale('es');
 
 // Google Maps Promise
 (function ($) {
-    var itemList = $(".item-list");
+    var btnCategories = $("span.btn.categoria");
 
     Drupal.sidebarBreakpoint = 768;
     Drupal.sidebarTarget = $('#block-views-banner-cervezas-block');
@@ -76,8 +76,8 @@ moment.locale('es');
     };
 
     //Set the background color for each categoria element.
-    if (itemList.length) {
-        itemList.find('span.btn.categoria').each(function () {
+    if (btnCategories.length) {
+        btnCategories.each(function () {
             var nodeCategoria = $(this),
                 cssClass;
 

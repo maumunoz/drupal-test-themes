@@ -100,7 +100,7 @@
     font-family: "Open Sans", sans-serif;
     font-weight: bold;
     padding: 14px 39px 12px 20px;
-    background-position: 100% -439px;
+    background-position: 100% -119px;
     font-size: 12px;
 }
 
@@ -204,7 +204,7 @@
 
     .lista-ruta-fiestas li .eventHoverInfo .field-content a {
         padding: 17px 49px 15px 25px;
-        background-position: 100% -436px;
+        background-position: 100% -116px;
         font-size: 14px;
     }
 }

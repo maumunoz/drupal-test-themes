@@ -211,14 +211,15 @@
     text-align: center;
 }
 
-.flag-wrapper .flag-throbber {
+.flag-wrapper .flag-throbber,
+.ajax-progress-throbber {
     display: none !important;
     visibility: hidden;
 }
 
 .flag-wrapper .flag {
     background-image: url(../images/sprite.png);
-    background-position: -7px -769px;
+    background-position: -7px -450px;
     background-repeat: no-repeat;
     min-height: 22px;
     width: 26px;
@@ -230,11 +231,14 @@
 .destacados-principal .views-row.views-row-1 .flag,
 .destacados-principal .views-row.views-row-6 .flag,
 .destacados-principal .views-row.celeste .flag {
-    background-position: -7px -729px;
+    background-position: -7px -410px;
 }
 
-.flag-wrapper .flag.unflag-action {
-    background-position: -7px -689px;
+.views-row .flag.unflag-action,
+.destacados-principal .views-row.views-row-1 .flag.unflag-action,
+.destacados-principal .views-row.views-row-6 .flag.unflag-action,
+.destacados-principal .views-row.celeste .flag.unflag-action {
+    background-position: -7px -370px;
 }
 
 /* @end */

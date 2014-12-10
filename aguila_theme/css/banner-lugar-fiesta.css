@@ -22,7 +22,7 @@
     height: 30px;
     padding-left: 30px;
     text-decoration: underline;
-    background: url(../images/sprite.png) no-repeat -10px -490px transparent;
+    background: url(../images/sprite.png) no-repeat -10px -170px transparent;
 }
 
 .banner-lugar-fiesta .volver,
@@ -49,28 +49,32 @@
     font-style: italic;
     font-size: 27px;
     color: #ffd800;
-    background-image: url(../images/sprite.png);
+    background-image: url(../images/sprite-categories.png);
     background-repeat: no-repeat;
+    background-position: -120px -123px;
 }
 
-.banner-lugar-fiesta .tipo span.Bar {
-    background-position: -4px -1640px;
+.banner-lugar-fiesta .tipo span.hotel,
+.banner-lugar-fiesta .tipo span.Hotel {
+    background-position: -120px -3px;
 }
 
-.banner-lugar-fiesta .tipo span.hotel {
-    background-position: 0 0;
+.banner-lugar-fiesta .tipo span.evento,
+.banner-lugar-fiesta .tipo span.Evento {
+    background-position: -120px -43px;
 }
 
-.banner-lugar-fiesta .tipo span.evento {
-    background-position: 0 0;
-}
-
-.banner-lugar-fiesta .tipo span.restaurante {
-    background-position: 0 0;
+.banner-lugar-fiesta .tipo span.restaurante,
+.banner-lugar-fiesta .tipo span.Restaurante {
+    background-position: -120px -83px;
 }
 
 .banner-lugar-fiesta .tipo span.2x1 {
-    background-position: 0 0;
+    background-position: -120px -123px;
+}
+
+.banner-lugar-fiesta .tipo span.Bar {
+    background-position: -120px -163px;
 }
 
 .banner-lugar-fiesta .titulo {
@@ -135,15 +139,15 @@
     width: 20px;
     height: 20px;
     margin: 10px 0;
-    background: url(../images/sprite.png) 0 0 no-repeat;
+    background: url(../images/sprite-social.png) 0 0 no-repeat;
 }
 
 .banner-lugar-fiesta .compartir .twitter {
-    background-position: -10px -1610px;
+    background-position: -90px -10px;
 }
 
 .banner-lugar-fiesta .compartir .facebook {
-    background-position: -10px -1571px;
+    background-position: -90px -48px;
 }
 
 /* @end */
