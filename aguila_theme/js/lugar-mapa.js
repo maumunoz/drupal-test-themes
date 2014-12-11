@@ -13,7 +13,6 @@
                         zoom: 17,
                         center: position,
                         styles: $.mapStyles.grayscale,
-                        draggable: ($(document).width() > 480),
                         scrollwheel: false,
                     },
                     map = new google.maps.Map($('.mapa-lugar-detalle')[0], mapOptions),
