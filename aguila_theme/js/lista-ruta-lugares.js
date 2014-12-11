@@ -83,8 +83,13 @@
                 
                 marker.setMap(map);
                 google.maps.event.addListener(marker, 'click', function () {
-                    $(markers).each(function(j,alldata) { alldata.infowindow.close(); });
-                    infowindow.open(map, marker);
+                    $(markers).each(function(j,alldata) { 
+                        if(alldata.marker == marker) {
+                            alldata.infowindow.open(map, marker);
+                        }else{
+                            alldata.infowindow.close(); 
+                        }
+                    });
                 });
                 
             }else{

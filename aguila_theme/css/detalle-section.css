@@ -1,4 +1,4 @@
-/* @group Contenido Detalle */
+/* @group Contenido detalle */
 
 .node-type-lugar-de-fiesta .content-area,
 .node-type-article .content-area {
@@ -28,14 +28,15 @@
 .node-type-article .content-area h1,
 .node-type-article .content-area h2 {
     font-family: "ITCAvantGardePro", Helvetica, Arial, sans-serif;
-    font-size: 428%;
-    line-height: 1 !important;
+    font-size: 300%;
+    line-height: 1;
 }
 
 .node-type-lugar-de-fiesta .content-area p,
 .node-type-article .content-area p {
-    margin: 0 0 25px 0;
-    line-height: 1.71 !important;
+    margin: 0 0 15px 0;
+    line-height: 1.8;
+    font-size: 90%;
 }
 
 .node-type-lugar-de-fiesta .content-area h1 + p strong,
@@ -64,7 +65,7 @@
 .node-type-lugar-de-fiesta .content-area address,
 .node-type-article .content-area address {
     font-weight: 300;
-    font-size: 128%;
+    font-size: 100%;
     line-height: 1.4;
 }
 
@@ -94,108 +95,9 @@
     margin: 10px 0;
 }
 
-.galeria-empotrada {
-    background: transparent !important;
-    border: 0 !important;
-    padding: 0 !important;
-}
-
-.galeria-empotrada .media-gallery-media,
-.galeria-empotrada h3 {
-    margin: 0 0 25px 0;
-}
-
-.galeria-empotrada .field-items > .field-item {
-    width: 24.35% !important;
-    max-width: 188px;
-}
-
-.galeria-empotrada .media-gallery-media .media-gallery-item-wrapper {
-    margin: 0;
-    padding: 0 1px 4px 0;
-}
-
-.galeria-empotrada .media-gallery-media .meta-wrapper {
-    display: none;
-}
-
-.encabezado-media .imagen-destacada img {
-    display: inline-block;
-    width: 100% !important;
-    height: auto !important;
-}
-
-.encabezado-media .imagen-destacada {
-    padding: 0 0 27px 0;
-}
-
-.encabezado-media .views-row > div {
-    display: inline-block;
-}
-
-.encabezado-media h1 {
-    margin: 17px 0 0 0;
-    border-top: 1px solid gray;
-    padding: 20px 0;
-}
-
-.encabezado-media .views-row .descripcion {
-    display: block;
-    font-weight: 600;
-    font-size: 128%;
-}
-
-.encabezado-media .compartir,
-.encabezado-media .fecha,
-.encabezado-media .views-row .descripcion {
-    color: #000;
-}
-
-.encabezado-media .favoritos-content-type,
-.encabezado-media .compartir {
-    display: block;
-    margin: 0;
-    float: left;
-}
-
-.encabezado-media .social {
-    margin: 0;
-}
-
-.encabezado-media .social:before,
-.encabezado-media .social:after {
-    clear: both;
-    content: ".";
-    display: block;
-    height: 0;
-    overflow: hidden;
-    visibility: hidden;
-}
-
-.encabezado-media .compartir {
-    padding: 10px 0 0 0;
-}
-
-.encabezado-media .compartir span {
-    text-decoration: underline;
-}
-
-.encabezado-media .compartir .facebook,
-.encabezado-media .compartir .twitter {
-    display: inline-block;
-    text-indent: -9999px;
-    width: 20px;
-    height: 20px;
-    margin: 10px 0;
-    background: url(../images/sprite-social.png) 0 0 no-repeat;
-}
-
-.encabezado-media .compartir .twitter {
-    background-position: -90px -90px;
-}
-
-.encabezado-media .compartir .facebook {
-    background-position: -90px -128px;
+.node-type-lugar-de-fiesta .contenedor-video-responsive iframe,
+.node-type-article .contenedor-video-responsive iframe {
+    width: 100%;
 }
 
 /* @end */
@@ -209,7 +111,18 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
+    .node-type-lugar-de-fiesta .content-area h1,
+    .node-type-lugar-de-fiesta .content-area h2,
+    .node-type-article .content-area h1,
+    .node-type-article .content-area h2 {
+        font-size: 428%;
+    }
 
+    .node-type-lugar-de-fiesta .content-area p,
+    .node-type-article .content-area p {
+        margin: 0 0 25px 0;
+        font-size: 100%;
+    }
 }
 
 /* Small Devices, Tablets */
@@ -220,12 +133,22 @@
         margin: 0 0 60px 0 !important;
     }
 
+    .node-type-lugar-de-fiesta .content-area address,
+    .node-type-article .content-area address {
+        font-size: 128%;
+    }
+
     .node-type-lugar-de-fiesta .content-area {
         padding: 17px 0 0 10px;
     }
 
     .node-type-article .content-area {
         padding: 0 0 0 10px;
+    }
+
+    .node-type-lugar-de-fiesta .contenedor-video-responsive iframe,
+    .node-type-article .contenedor-video-responsive iframe {
+        width: 97%;
     }
 }
 

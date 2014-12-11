@@ -51,12 +51,12 @@
     color: #ffd800;
     background-image: url(../images/sprite-categories.png);
     background-repeat: no-repeat;
-    background-position: -120px -123px;
+    background-position: -124px -123px;
 }
 
 .banner-lugar-fiesta .tipo span.hotel,
 .banner-lugar-fiesta .tipo span.Hotel {
-    background-position: -120px -3px;
+    background-position: -127px -3px;
 }
 
 .banner-lugar-fiesta .tipo span.evento,
@@ -66,19 +66,20 @@
 
 .banner-lugar-fiesta .tipo span.restaurante,
 .banner-lugar-fiesta .tipo span.Restaurante {
-    background-position: -120px -83px;
+    background-position: -130px -83px;
 }
 
 .banner-lugar-fiesta .tipo span.2x1 {
-    background-position: -120px -123px;
+    background-position: -124px -123px;
 }
 
-.banner-lugar-fiesta .tipo span.Bar {
-    background-position: -120px -163px;
+.banner-lugar-fiesta .tipo span.Bar,
+.banner-lugar-fiesta .tipo span.bar {
+    background-position: -129px -163px;
 }
 
 .banner-lugar-fiesta .titulo {
-    margin: 10px 10px 40px;
+    margin: 10px 10px 40px 8px;
     font-family: 'ITCAvantGardePro', Helvetica, Arial sans-serif;
     font-weight: 900;
     font-size: 40px;
@@ -110,7 +111,7 @@
 
 .banner-lugar-fiesta .ver-fotos a,
 .banner-lugar-fiesta .ver-fotos span {
-    display: inline-block;
+    display: block;
     line-height: 40px;
 }
 
@@ -182,7 +183,7 @@
     }
 
     .banner-lugar-fiesta .titulo {
-        margin: 10px 0 40px 30px;
+        margin: 10px 0 40px 25px;
         max-width: 80%;
         font-size: 60px;
         line-height: 50px;

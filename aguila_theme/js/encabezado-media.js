@@ -2,6 +2,6 @@
 (function ($) {
 
     //Set format to publish date.
-    formatDate($, '.sidebar-noticias .views-field-created span.field-content', 'D MMMM YYYY');
+    formatDate($, '.encabezado-media .fecha', 'D MMMM YYYY');
 
 }(jQuery2));
