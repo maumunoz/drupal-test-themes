@@ -50,7 +50,6 @@
             zoom: 6,
             styles: $.mapStyles.grayscale,
             center: new google.maps.LatLng(4.6194477,-74.110567),
-            draggable: ($(document).width() > 480),
             scrollwheel: false,
         },
         map = new google.maps.Map($('.mapa-lugar-detalle')[0], mapOptions);
