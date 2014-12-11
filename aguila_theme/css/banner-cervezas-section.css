@@ -23,18 +23,18 @@
     height: 165px;
 }
 
-.view-banner-cervezas a:link,
-.view-banner-cervezas a:active,
-.view-banner-cervezas a:visited,
-.view-banner-cervezas a:hover {
+.view-banner-cervezas .views-field-field-cerveza-descripcion-corta a:link,
+.view-banner-cervezas .views-field-field-cerveza-descripcion-corta a:active,
+.view-banner-cervezas .views-field-field-cerveza-descripcion-corta a:visited,
+.view-banner-cervezas .views-field-field-cerveza-descripcion-corta a:hover {
     text-decoration:none;
     color: #484848;
 }
 
-.view-banner-cervezas .celeste a:link,
-.view-banner-cervezas .celeste a:active,
-.view-banner-cervezas .celeste a:visited,
-.view-banner-cervezas .celeste a:hover {
+.view-banner-cervezas .views-field-field-cerveza-descripcion-corta .celeste a:link,
+.view-banner-cervezas .views-field-field-cerveza-descripcion-corta .celeste a:active,
+.view-banner-cervezas .views-field-field-cerveza-descripcion-corta .celeste a:visited,
+.view-banner-cervezas .views-field-field-cerveza-descripcion-corta .celeste a:hover {
     color: #fff;
 }
 
@@ -51,7 +51,7 @@
 .view-banner-cervezas .views-field-field-cerveza-descripcion-corta {
     position: absolute;
     left: 34%;
-    top: 40px;
+    top: 15px;
     width: 60%;
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 13px;
@@ -110,6 +110,25 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0070bf', endColorstr='#95d3ff',GradientType=0 ); /* IE6-9 */
 }
 
+.view-banner-cervezas .views-field-title {
+    position: absolute;
+    top: 115px;
+    left: 33%;
+    display: none;
+}
+
+.view-banner-cervezas li:hover .views-field-title {
+    display: block;
+}
+
+.view-banner-cervezas .views-field-title a {
+    color: #fff;
+    font-family: "Open Sans";
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+}
+
 /* @end */
 
 /* @group Media Query */
@@ -136,7 +155,7 @@
     }
 
     .view-banner-cervezas li {
-        height: 240px;
+        height: 290px;
     }
 
     .view-banner-cervezas .views-field-field-cerveza-descripcion-corta {
@@ -144,14 +163,33 @@
         width: 50%;
         top: 67px;
     }
+    
+    .view-banner-cervezas .views-field-title {
+        top: 238px;
+        left: 15%;
+    }
+
+    .view-banner-cervezas .views-field-title .cerveza {
+        display: block;
+    }
 
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
+
+    .view-banner-cervezas li {
+        height: 240px;
+    }
+    
     .view-banner-cervezas .views-field-field-cerveza-descripcion-corta {
         left: 35%;
         width: 60%;
+    }
+
+    .view-banner-cervezas .views-field-title {
+        top: 170px;
+        left: 33%;
     }
 
 }
