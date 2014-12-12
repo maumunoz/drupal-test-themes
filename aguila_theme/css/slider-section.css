@@ -91,7 +91,6 @@
     margin: 0 0 10px;
     font: normal 250%/28px 'ITCAvantGardePro';
     font-family: 'ITCAvantGardePro', Helvetica, Arial sans-serif;
-    letter-spacing: -2px;
 }
 
 .slide-content .transform-like-module {
@@ -131,7 +130,7 @@
     min-width: 75px;
     padding-top: 0;
     padding-bottom: 0;
-    margin: 5px 0 0 0;
+    margin: 10px 0 0 0;
     font-size: 100%;
     line-height: 38px;
 }
@@ -252,10 +251,12 @@
         font-size: 375%;
         letter-spacing: -2px;
         line-height: 45px;
+        letter-spacing: -2px;
     }
 
     .slide-content em {
         line-height: 35px;
+        font-size: 210%;
     }
 
     .region-banner .btn {
@@ -263,6 +264,7 @@
         line-height: 38px;
         min-width: 100px;
         font-size: 128%;
+        margin: 20px 0 0;
     }
 
     .slide-content p {
