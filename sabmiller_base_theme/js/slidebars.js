@@ -264,7 +264,7 @@
         }
 
         function followLink(event, selector, close) {
-            if ( event.type === 'click' ) { // Make sure the user wanted to follow the link.
+            if ( event.type === 'click' || event.type === 'touchend' ) { // Make sure the user wanted to follow the link.
                 event.preventDefault(); // Stop default behaviour.
 
                 var link = ( selector.is( 'a' ) ? selector : selector.find( 'a' ) ), // Get the link selector.
