@@ -22,8 +22,11 @@ stylesheets[all][] = 'css/mapas.css'
 stylesheets[all][] = 'css/view-dynamic-filter.css'
 stylesheets[all][] = 'css/detalle-section.css'
 stylesheets[all][] = 'css/pagina-estatica.css'
+stylesheets[all][] = 'css/lista-de-galerias.css'
 stylesheets[all][] = 'css/encabezado-media-section.css'
 stylesheets[all][] = 'css/galeria-empotrada-section.css'
+stylesheets[all][] = 'css/dzscalendar/dzscalendar.css'
+stylesheets[all][] = 'css/dzscalendar/dzstooltip.css'
 
 
 regions[page_top] = 'Above page'
