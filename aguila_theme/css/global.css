@@ -311,6 +311,10 @@ Retina Display Condensed Black:    font-style: normal | font-weight: 900
     min-height: 0;
 }
 
+#navigation {
+    -webkit-backface-visibility: hidden;
+}
+
 /* Lists Reset */
 .stack-footer-inner ul,
 .stack-footer-inner ol {
