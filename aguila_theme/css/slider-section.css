@@ -76,7 +76,7 @@
 }
 
 .slide-content em {
-    font: italic normal 165%/17px Dubiel;
+    font: italic normal 165%/25px Dubiel;
     font-family: Dubiel, Georgia, Times, serif;
     margin: 0 0 0 5px;
     font-style: italic;
@@ -246,7 +246,7 @@
     }
 
     .slide-content em {
-        line-height: 20px;
+        line-height: 35px;
     }
 
     .region-banner .btn {
@@ -286,7 +286,7 @@
 
     .slide-content em {
         font-size: 300%;
-        line-height: 45px;
+        line-height: 55px;
     }
 
     .slide-content h3 {
