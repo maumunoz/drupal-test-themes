@@ -76,7 +76,7 @@
 }
 
 .slide-content em {
-    font: italic normal 165%/0.8 Dubiel;
+    font: italic normal 165%/17px Dubiel;
     font-family: Dubiel, Georgia, Times, serif;
     margin: 0 0 0 5px;
     font-style: italic;
@@ -87,7 +87,7 @@
 .slide-content h3 {
     padding: 0;
     margin: 0;
-    font: normal 250%/1 'ITCAvantGardePro';
+    font: normal 250%/28px 'ITCAvantGardePro';
     font-family: 'ITCAvantGardePro', Helvetica, Arial sans-serif;
     letter-spacing: -2px;
 }
@@ -242,6 +242,11 @@
         font-size: 375%;
         line-height: 0.8;
         letter-spacing: -2px;
+        line-height: 45px;
+    }
+
+    .slide-content em {
+        line-height: 20px;
     }
 
     .region-banner .btn {
@@ -281,6 +286,7 @@
 
     .slide-content em {
         font-size: 300%;
+        line-height: 45px;
     }
 
     .slide-content h3 {
@@ -288,6 +294,7 @@
         margin: 6px 0;
         font-size: 690%;
         letter-spacing: -4px;
+        line-height: 80px;
     }
 
     .slide-content .media-thumbnail-frame img {
