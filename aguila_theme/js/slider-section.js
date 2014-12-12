@@ -18,7 +18,15 @@
             infinite: true,
             speed: 300,
             slidesToShow: 1,
-            adaptiveHeight: true
+            adaptiveHeight: true,
+            onSetPosition: function (slickSlider) {
+                var slideContent = slider.find('.slide-content');
+
+                if (slideContent.length) {
+                    //Set size for slide-content.
+                    slider.find('.slide-content').width(slickSlider.$slider.width());
+                }
+            }
         });
     });
 }(jQuery2));

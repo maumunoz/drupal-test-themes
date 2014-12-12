@@ -42,35 +42,36 @@
 }
 
 .region-banner .views-row {
-    min-height: 300px;
+    height: 350px;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.region-banner .views-row {
-    min-height: 350px;
-}
-
 .region-banner .slick-initialized .views-row {
-    display: block;
+    display: table;
 }
 
 .slide-content {
     color: #fff;
     display: none;
-    width: 100%;
     top: 0;
-    padding: 30px 5% 0;
 }
 
 .slick-initialized .slide-content {
-    display: block;
-    padding: 30px 5% 0;
+    height: 344px;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 30px 10px;
+}
+
+.slide-main-content {
+    overflow: hidden;
+    vertical-align: middle;
 }
 
 .slide-content p {
-    margin: 5px 0 0;
+    margin: 0 0 10px;
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
     font-size: 90%;
 }
@@ -82,11 +83,12 @@
     font-style: italic;
     display: inline-block;
     letter-spacing: 1.2px;
+    line-height: 0.9;
 }
 
 .slide-content h3 {
     padding: 0;
-    margin: 0;
+    margin: 0 0 10px;
     font: normal 250%/1 'ITCAvantGardePro';
     font-family: 'ITCAvantGardePro', Helvetica, Arial sans-serif;
     letter-spacing: -2px;
@@ -184,7 +186,6 @@
     display: inline-block;
     height: 50px;
     line-height: 50px;
-    margin: 0 10px 0 0;
 }
 
 .favoritos-content-type .flag-wrapper .flag {
@@ -198,14 +199,12 @@
     border-radius: 50%;
 }
 
-
 .favoritos-content-type .flag-wrapper .flag.unflag-action {
     background-position: 4px -634px;
 }
 
-
 .favoritos-content-type .flag-counter {
-    display: inline-block;
+    display: block;
     height: 50px;
     vertical-align: top;
     font-family: Dubiel, Georgia, Times, serif;
@@ -238,10 +237,25 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
+    .region-banner .views-row {
+        height: 450px;
+    }
+
+    .slick-initialized .slide-content {
+        height: 444px;
+        display: table-cell;
+        vertical-align: middle;
+        padding: 30px 20px;
+    }
+
     .slide-content h3 {
         font-size: 375%;
-        line-height: 0.8;
         letter-spacing: -2px;
+        margin: 0 0 20px;
+    }
+
+    .slide-content em {
+        font-size: 200%;
     }
 
     .region-banner .btn {
@@ -267,15 +281,25 @@
     }
 
     .front .region-banner .views-row {
-        min-height: 662px;
+        height: 662px;
+    }
+
+    .front .slick-initialized .slide-content {
+        height: 656px;
+        padding: 30px 30px;
     }
 
     .region-banner .views-row {
-        min-height: 465px;
+        height: 465px;
+    }
+
+    .slick-initialized .slide-content {
+        height: 459px;
+        padding: 30px 30px;
     }
 
     .slide-content p {
-        margin: 10px 0 0;
+        margin: 0 0 10px;
         font-size: 128%;
     }
 
@@ -287,7 +311,6 @@
         padding: 0;
         margin: 6px 0;
         font-size: 690%;
-        letter-spacing: -4px;
     }
 
     .slide-content .media-thumbnail-frame img {
@@ -329,20 +352,10 @@
     .favoritos-content-type .flag-wrapper {
         margin: 0;
     }
-
-    .favoritos-content-type {
-        margin: 30px auto;
-    }
-
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
-
-    .region-banner .views-row {
-        padding: 0 30px;
-    }
-
     .slide-content {
         padding: 90px 0 50px;
     }

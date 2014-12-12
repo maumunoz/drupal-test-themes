@@ -13,8 +13,10 @@
     font-family: 'Retina Display Condensed', Helvetica, Arial, sans-serif;
     font-weight: 600;
     text-transform: uppercase;
+    padding: 0 1em !important;
 }
 
 .sb-slidebar a:hover {
     background-color: #0fc3ff;
 }
+
