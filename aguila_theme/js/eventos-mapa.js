@@ -30,7 +30,7 @@
             },
             map = new google.maps.Map($('.mapa-eventos')[0], mapOptions);
     
-            var linksWithCoords = $('.eventos-aguila-en-vivo').find('.evento');
+            var linksWithCoords = $('.evento');
             linksWithCoords.each(function(i, node) {
                 node = $(node);
                 if (validGeolocation(node.data('latitude')) && validGeolocation(node.data('longitude'))) {
