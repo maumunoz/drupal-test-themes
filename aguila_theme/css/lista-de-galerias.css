@@ -7,12 +7,13 @@
 
 #block-views-lista-de-galerias-block h2 {
     margin: 46px auto;
-    max-width: 1058px;
     color: #3e3e3e;
     font-family: 'ITCAvantGardePro', Helvetica, Arial, sans-serif;
     font-weight: 300;
     font-size: 35px;
     letter-spacing: -1.2px;
+    max-width: 1118px;
+    padding: 0 30px;
 }
 
 #block-views-lista-de-galerias-block h2 b,

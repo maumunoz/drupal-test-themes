@@ -11,7 +11,8 @@
     line-height: 30px;
     position: relative;
     margin: 0 auto;
-    max-width: 1058px;
+    max-width: 1118px;
+    padding: 0 30px;
 }
 
 .aguila-en-vivo h2 {
@@ -68,7 +69,8 @@
     top: 0;
     right: 0;
     min-height: 200px;
-    margin-top: 30px;
+    margin: 30px auto 0;
+    max-width: 400px;
 }
 .aguila-en-vivo .calendarBox .media-thumbnail-frame img {
     width: 100%;
@@ -90,10 +92,11 @@
 .calendarContainer.dzscalendar {
     border: none !important;
     font-family: 'ITCAvantGardePro', Helvetica, Arial, sans-serif;
+    font-weight: 200;
 }
 
 .calendarContainer.dzscalendar .calendar-controls  .curr-date {
-    font-family: "ITCAvantGardePro";
+    font-weight: 900;
     font-size: 14px;
     text-transform: uppercase;
     text-align: left;
@@ -135,6 +138,11 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
+    
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
     .aguila-en-vivo .mainText {
         width: 56%;
     }
@@ -144,12 +152,6 @@
         width: 38%;
         margin-top: 0;
     }
-    
-}
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
-
 }
 
 /* Medium Devices, Desktops */
