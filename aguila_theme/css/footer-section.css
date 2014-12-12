@@ -121,6 +121,11 @@
     margin: 0 0 9px 0;
 }
 
+.stack.stack-footer-inner .region-footer-second ol a,
+.stack.stack-footer-inner .region-footer-second ul a {
+    text-decoration: none;
+}
+
 .region-footer-second li {
     display: block;
 }

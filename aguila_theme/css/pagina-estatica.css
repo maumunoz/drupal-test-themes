@@ -11,7 +11,8 @@
     line-height: 30px;
     position: relative;
     margin: 0 auto;
-    max-width: 1058px;
+    max-width: 1118px;
+    padding: 0 30px;
 }
 
 .aguila-en-vivo h2 {
@@ -68,7 +69,8 @@
     top: 0;
     right: 0;
     min-height: 200px;
-    margin-top: 30px;
+    margin: 30px auto 0;
+    max-width: 400px;
 }
 .aguila-en-vivo .calendarBox .media-thumbnail-frame img {
     width: 100%;
@@ -82,66 +84,48 @@
     margin-bottom: 40px;
 }
 
-
-#block-views-lista-de-galerias-block {
-    border-top: solid 1px #b1b1b1;
-    margin: 62px 0;
-}
-
-#block-views-lista-de-galerias-block h2 {
-    margin: 46px auto;
-    max-width: 1058px;
-    color: #3e3e3e;
-    font-family: 'ITCAvantGardePro', Helvetica, Arial, sans-serif;
-    font-weight: 300;
-    font-size: 35px;
-    letter-spacing: -1.2px;
-}
-
-#block-views-lista-de-galerias-block h2 b,
-#block-views-lista-de-galerias-block h2 strong {
-    color: #29c7fc;
-    font-weight: 700;
-}
-
-#block-views-lista-de-galerias-block .view-content {
-    position: relative;
-    margin: 0 auto;
-    max-width: 1200px;
-    text-align: center;
-}
-
-#block-views-lista-de-galerias-block  .views-row {
-    display: inline-block;
-    width: 280px;
-    font-family: "Open Sans";
-    font-size: 14px;
-    text-align: center;
-    color: #555555;
-    margin: 0 7px;
-    letter-spacing: 0.5px;
-}
-
-#block-views-lista-de-galerias-block  .views-row .yellowOverlay {
-    background-color: #f0cd0a;
-    position: absolute;
-    width: 280px;
-    height: 280px;
-    top: 0;
-    opacity: 0.9;
+.media-thumbnail-frame + br,
+.calendarContainer > p{
     display: none;
 }
 
-#block-views-lista-de-galerias-block  .views-row:hover .yellowOverlay {
-    display: block;
+.calendarContainer.dzscalendar {
+    border: none !important;
+    font-family: 'ITCAvantGardePro', Helvetica, Arial, sans-serif;
+    font-weight: 200;
 }
 
-#block-views-lista-de-galerias-block  .views-row .views-field-title {
-    font-size: 18px;
-    color: #222222;
-    margin-top: 15px;
+.calendarContainer.dzscalendar .calendar-controls  .curr-date {
+    font-weight: 900;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: left;
+    padding-left: 5%;
+    color: #000000;
 }
   
+.calendarContainer.dzscalendar .calendar-controls .arrow-right {
+    right: 26px;
+    top: 5px;
+}
+
+.calendarContainer.dzscalendar .calendar-controls .arrow-left {
+    right: 60px;
+    left: auto; 
+    top: 5px;
+}
+
+.calendarContainer.dzscalendar .calendar-controls .curr-year {
+    color: #000000;
+}
+
+.calendarContainer.dzscalendar .week-day-header {
+    font-weight: 900;
+}
+
+.calendarContainer.dzscalendar.skin-default .mon-row .week-day {
+    font-style: normal;
+}
 
 /* @end */
 
@@ -154,6 +138,11 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
+    
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
     .aguila-en-vivo .mainText {
         width: 56%;
     }
@@ -163,12 +152,6 @@
         width: 38%;
         margin-top: 0;
     }
-    
-}
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
-
 }
 
 /* Medium Devices, Desktops */

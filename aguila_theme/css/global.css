@@ -306,6 +306,14 @@ Retina Display Condensed Black:    font-style: normal | font-weight: 900
     margin-top: 1.3846em;
 }
 
+/* Override slidebars default style */
+#page {
+    min-height: 0;
+}
+
+#navigation {
+    -webkit-backface-visibility: hidden;
+}
 
 /* Lists Reset */
 .stack-footer-inner ul,
