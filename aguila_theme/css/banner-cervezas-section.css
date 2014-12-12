@@ -15,7 +15,7 @@
     margin-top: 27px;
 }
 
-.view-banner-cervezas li {
+.view-banner-cervezas ul li {
     display: inline-block;
     width: 100%;
     margin:0;
