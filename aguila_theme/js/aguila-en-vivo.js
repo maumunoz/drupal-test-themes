@@ -10,6 +10,13 @@ window.arr_monthnames = [ "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
     });
     
     $.initModule("#tr1", function ($, node) {
+        $(".evento").each(function(i, node) {
+            node = $(node).clone();
+            node.attr("data-date", node.data("date").replace(/\//g,"-") );
+            node.appendTo( $(".aguila-en-vivo .events") );
+        });
+        
+        
         jQuery("#tr1").dzscalendar({});
     });
     

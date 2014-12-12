@@ -1,0 +1,46 @@
+/* @group Calendario Aguila */
+
+.media-thumbnail-frame + br,
+.calendarContainer > p{
+    display: none;
+}
+
+.calendarContainer.dzscalendar {
+    border: none !important;
+    font-family: 'ITCAvantGardePro', Helvetica, Arial, sans-serif;
+    font-weight: 200;
+}
+
+.calendarContainer.dzscalendar .calendar-controls  .curr-date {
+    font-weight: 900;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: left;
+    padding-left: 5%;
+    color: #000000;
+}
+  
+.calendarContainer.dzscalendar .calendar-controls .arrow-right {
+    right: 26px;
+    top: 5px;
+}
+
+.calendarContainer.dzscalendar .calendar-controls .arrow-left {
+    right: 60px;
+    left: auto; 
+    top: 5px;
+}
+
+.calendarContainer.dzscalendar .calendar-controls .curr-year {
+    color: #000000;
+}
+
+.calendarContainer.dzscalendar .week-day-header {
+    font-weight: 900;
+}
+
+.calendarContainer.dzscalendar .mon-row .week-day {
+    font-style: normal;
+}
+
+/* @end */
