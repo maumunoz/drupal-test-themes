@@ -30,7 +30,7 @@
 }
 
 #block-views-lista-de-galerias-block  .views-row {
-    display: inline-block;
+    display: inline-block !important;  /* IE overrides the display when loading new elements with "Cargar Mas" */
     width: 280px;
     font-family: "Open Sans";
     font-size: 14px;
