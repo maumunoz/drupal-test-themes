@@ -36,6 +36,10 @@
     letter-spacing: 0px;
     width: 58px;
     margin-left: 11px;
+}
+
+.dzstooltip .map-info-window .event-date {
+    margin-left: 0px;
 }   
 
 .map-info-window .event-day {
@@ -83,7 +87,6 @@
         font-size: 27px;
         line-height: 38px;
         width: 108px;
-        margin-left: 11px;
     }
     
     .map-info-window .event-day {
