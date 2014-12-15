@@ -342,7 +342,8 @@ Retina Display Condensed Black:    font-style: normal | font-weight: 900
 .view-dynamic-filter .view-content,
 .banner-lugar-fiesta,
 .node-type-lugar-de-fiesta .stack-content-inner,
-.node-type-article .stack-content-inner {
+.node-type-article .stack-content-inner,
+#node-301 .content .field-type-text-with-summary {
     position: relative;
     margin: 0 auto;
     padding: 0;
