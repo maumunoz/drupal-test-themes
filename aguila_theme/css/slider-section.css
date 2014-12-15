@@ -5,50 +5,50 @@
     padding-top: 0;
 }
 
-.region-banner .views-row {
+.banner-principal .views-row {
     display: none;
 }
 
-.region-banner .views-row.views-row-first,
-.region-banner .views-row-first .slider-background {
+.banner-principal .views-row.views-row-first,
+.banner-principal .views-row-first .slider-background {
     display: block !important;
     visibility: visible !important;
 }
 
-.region-banner .slick-initialized .views-row .slider-background,
-.region-banner .slick-initialized .views-row .slider-background img {
+.banner-principal .slick-initialized .views-row .slider-background,
+.banner-principal .slick-initialized .views-row .slider-background img {
     display: none !important;
     visibility: hidden !important;
 }
 
-.region-banner .views-row-first .slider-background img {
+.banner-principal .views-row-first .slider-background img {
     display: block;
     width: 100%;
     height: auto;
 }
 
-.region-banner .views-row,
-.region-banner .views-row.noborder {
+.banner-principal .views-row,
+.banner-principal .views-row.noborder {
     border-bottom: 6px solid transparent;
     position: relative;
 }
 
-.region-banner .views-row.bordeamarillo {
+.banner-principal .views-row.bordeamarillo {
     border-color: #ffd800;
 }
 
-.region-banner .views-row.bordeceleste {
+.banner-principal .views-row.bordeceleste {
     border-color: #0fc3ff;
 }
 
-.region-banner .views-row {
+.banner-principal .views-row {
     height: 350px;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.region-banner .slick-initialized .views-row {
+.banner-principal .slick-initialized .views-row {
     display: table;
 }
 
@@ -125,7 +125,7 @@
     max-width: 155px;
 }
 
-.region-banner .btn {
+.banner-principal .btn {
     height: 38px;
     min-width: 75px;
     padding-top: 0;
@@ -236,7 +236,7 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-    .region-banner .views-row {
+    .banner-principal .views-row {
         height: 450px;
     }
 
@@ -259,7 +259,7 @@
         font-size: 210%;
     }
 
-    .region-banner .btn {
+    .banner-principal .btn {
         height: 38px;
         line-height: 38px;
         min-width: 100px;
@@ -282,7 +282,7 @@
         padding: 90px 2% 50px;
     }
 
-    .front .region-banner .views-row {
+    .front .banner-principal .views-row {
         height: 662px;
     }
 
@@ -295,7 +295,7 @@
         padding: 30px 30px;
     }
 
-    .region-banner .views-row {
+    .banner-principal .views-row {
         height: 465px;
     }
 
@@ -334,7 +334,7 @@
         padding: 30px 0 !important;
     }
 
-    .region-banner .btn {
+    .banner-principal .btn {
         height: 58px;
         line-height: 58px;
         min-width: 150px;
