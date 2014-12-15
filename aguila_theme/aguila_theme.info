@@ -28,6 +28,7 @@ stylesheets[all][] = 'css/galeria-empotrada-section.css'
 stylesheets[all][] = 'css/dzscalendar/dzscalendar.css'
 stylesheets[all][] = 'css/dzscalendar/dzstooltip.css'
 stylesheets[all][] = 'css/calendario-aguila.css'
+stylesheets[all][] = 'css/age-gate.css'
 stylesheets[all][] = 'css/descripcion-chicas-section.css'
 
 

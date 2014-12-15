@@ -18,7 +18,7 @@
 .lista-lugares-fiesta .view-content ul  li {
     margin: 0 5px 15px;
     position: relative;
-    display: inline-block;
+    display: inline-block !important; /* IE overrides the display when loading new elements with "Cargar Mas" */
 }
 
 .lista-lugares-fiesta  .view-content ul  li {

@@ -20,7 +20,7 @@
 .lista-ruta-fiestas .view-content ul  li {
     margin: 0 5px 15px;
     position: relative;
-    display: inline-block;
+    display: inline-block !important; /* IE overrides the display when loading new elements with "Cargar Mas" */
 }
 
 .lista-ruta-fiestas .views-field-field-imagen-fiesta img {
@@ -40,6 +40,10 @@
     width: 52%;
     margin-bottom: 5px;
     margin-top: 14px;
+    border-top: 1px solid #eeeeee;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
 }
 
 .lista-ruta-fiestas .eventTitle {
@@ -100,8 +104,9 @@
     font-family: "Open Sans", sans-serif;
     font-weight: bold;
     padding: 14px 39px 12px 20px;
-    background-position: 100% -119px;
+    background-position: 100% -120px;
     font-size: 12px;
+    min-height: 0;
 }
 
 .lista-ruta-fiestas .view-content li:hover .eventInfo {
