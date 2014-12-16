@@ -855,6 +855,7 @@ $black, $dark           = #000    | rgb(0, 0, 0);
     max-width: 670px;
     margin: 0 auto;
     text-align: center;
+    padding: 15px 0;
 }
 
 .section-main-title h2 {

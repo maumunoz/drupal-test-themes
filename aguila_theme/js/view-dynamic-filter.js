@@ -2,16 +2,6 @@
 (function ($, jq) {
     var node = '.view-dynamic-filter';
 
-    // Transform filters to content region
-    function transform (el) {
-        node = el.parents('.block-views')[0] || el;
-        $.transform(node, {
-            target: "#content-inner",
-            type: 'prepend',
-            globalTarget: true
-        });
-    }
-
     $.initModule(node, function ($, filters) {
         filters.find('.filter.all').addClass('active');
         filters.on('click', '.filter', function(e) {
@@ -30,6 +20,5 @@
             submit.click();
             e.preventDefault();
         });
-        transform(filters);
     });
 }(jQuery2, jQuery));
