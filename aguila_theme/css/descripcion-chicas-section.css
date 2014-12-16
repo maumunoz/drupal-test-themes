@@ -1,5 +1,46 @@
 /* @group Descripcion Chicas Aguila */
 
+.descripcion-chicas-aguila {
+    color: #fff;
+    background-color: #0fc3ff;
+    background-position: 52% bottom;
+    background-repeat: no-repeat;
+    background-size: auto 215px;
+    padding: 0 20px 220px 20px;
+    min-height: 330px;
+}
+
+.descripcion-chicas-aguila .col-left,
+.descripcion-chicas-aguila .col-right {
+    background-color: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+}
+
+.descripcion-chicas-aguila .col-left {
+    padding: 0 !important;
+}
+
+.descripcion-chicas-aguila .views-field-field-imagen-fondo {
+    display: none;
+}
+
+.descripcion-chicas-aguila h2,
+.descripcion-chicas-aguila h3,
+.descripcion-chicas-aguila h4 {
+    font-family: 'ITCAvantGardePro', Helvetica, Arial sans-serif;
+}
+
+.descripcion-chicas-aguila h2 em,
+.descripcion-chicas-aguila h2 strong,
+.descripcion-chicas-aguila h3 em,
+.descripcion-chicas-aguila h3 strong,
+.descripcion-chicas-aguila h4 em,
+.descripcion-chicas-aguila h4 strong {
+    font-family: Dubiel, Georgia, Times, serif;
+}
+
+
 /* @end */
 
 /* @group Media Query */
@@ -17,10 +58,30 @@
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
 
+    .descripcion-chicas-aguila .col-left {
+        float: left;
+        width: 40%;
+        padding: 0 0 0 5% !important;
+    }
+
+    .descripcion-chicas-aguila .col-right {
+        float: right;
+        width: 35%;
+    }
+
+    .descripcion-chicas-aguila {
+        padding: 0;
+    }
+
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
+
+    .descripcion-chicas-aguila {
+        background-size: initial;
+        min-height: 470px;
+    }
 
 }
 
@@ -28,4 +89,5 @@
 @media only screen and (min-width : 1200px) {
 
 }
+
 /* @end */
