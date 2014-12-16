@@ -41,7 +41,8 @@
     border-color: #0fc3ff;
 }
 
-.banner-principal .views-row {
+.banner-principal .views-row,
+.banner-lugar-fiesta .views-row {
     height: 350px;
     background-position: center center;
     background-size: cover;
@@ -236,7 +237,8 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-    .banner-principal .views-row {
+    .banner-principal .views-row,
+    .banner-lugar-fiesta .views-row {
         height: 450px;
     }
 
@@ -295,7 +297,8 @@
         padding: 30px 30px;
     }
 
-    .banner-principal .views-row {
+    .banner-principal .views-row,
+    .banner-lugar-fiesta .views-row {
         height: 465px;
     }
 

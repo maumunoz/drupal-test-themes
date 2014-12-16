@@ -12,7 +12,7 @@
 .view-banner-cervezas ul {
     list-style-type: none;
     padding-left: 0;
-    margin-top: 27px;
+    margin-top: 12px;
 }
 
 .view-banner-cervezas ul li {
@@ -55,7 +55,7 @@
     width: 60%;
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 13px;
-    
+
 }
 
 .view-banner-cervezas .views-field-field-cerveza-descripcion-corta p:first-child {
@@ -160,16 +160,16 @@
         width: 50%;
         top: 67px;
     }
-    
+
     .view-banner-cervezas .views-field-title {
         top: 238px;
         left: 15%;
     }
-    
+
     .view-banner-cervezas .views-field-title a {
         font-size: 14px;
     }
-    
+
     .view-banner-cervezas .views-field-title .cerveza {
         display: block;
     }
@@ -182,7 +182,7 @@
     .view-banner-cervezas ul li {
         height: 240px;
     }
-    
+
     .view-banner-cervezas .views-field-field-cerveza-descripcion-corta {
         left: 35%;
         width: 60%;

@@ -1,3 +1,107 @@
 #age_checker_verification_popup {
     background-color: #1b8ec4;
+    border: none;
+    width: 515px;
+    height: 489px;
+    padding-top: 51px;
+    top: 39% !important;
 }
+
+#age_checker_widget .dateselect #age_checker_month, 
+#age_checker_day, 
+#age_checker_year {
+    background-color: #1b8ec4;
+    font-size: 60px;
+    color: #fff;
+    height: 112px;
+    border: solid 2px #fff;
+    font-family: "Retina Display Condensed", Helvetica, Arial, sans-serif;
+    font-weight: 900;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin: 17px 4px 16px;
+    text-align: center;
+}
+
+#age_checker_widget .dateselect #age_checker_month, 
+#age_checker_day {
+    width: 114px;
+}
+
+#age_checker_year {
+    width: 182px;
+}
+
+#age_checker_message {
+    padding: 0;
+}
+
+#age_checker_widget .agegate_country_select select {
+    text-align: center;
+    background: none;
+    height: 54px;
+    border: solid 2px #fff;
+    border-radius: 6px;
+    margin: 8px auto 11px;
+    width: 305px;
+}
+
+#age_checker_widget .dateselect .form-submit {
+    background: #f8e514;
+    height: 50px;
+    margin-top: 14px;
+    width: 305px;
+    font-family: "Open Sans";
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 8px;
+    text-shadow: none;
+}
+
+.form-item, .form-actions {
+    margin: 0;
+}
+
+#age_checker_verification_popup p,
+.agegate_footer_disclaimer,
+.agegate_footer_links  {
+    font-family: "Open Sans";
+    text-align: center;
+    line-height: 1.25;
+    letter-spacing: 0.3px;
+    padding: 0;
+    margin: 0;
+}
+
+#age_checker_verification_popup p {
+    color: #fff;
+}
+
+#age_checker_widget {
+    padding: 0;
+    margin: 0;
+}
+
+.agegate_footer_disclaimer {
+    position: absolute;
+    font-weight: bold;
+    background: white;
+    padding: 14px;
+    height: 48px;
+    width: 100%;
+    bottom: 0;
+}
+
+.agegate_footer_links {
+    background-color: #f8e514;
+    border: solid 2px white;
+    position: absolute;
+    font-weight: 600;
+    font-size: 13px;
+    bottom: 47px;
+    height: 38px;
+    padding: 6px;
+    width: 100%;
+}
+
