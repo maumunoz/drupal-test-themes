@@ -16,7 +16,7 @@
     $.initModule('.lista-ruta-fiestas', function () {
         transformar();
         jq(document).ajaxComplete(function () {
-            setTimeout(transformar, 50)
+            setTimeout(transformar, 50);
         });
     });
 

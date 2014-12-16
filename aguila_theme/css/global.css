@@ -342,7 +342,8 @@ Retina Display Condensed Black:    font-style: normal | font-weight: 900
 .view-dynamic-filter .view-content,
 .banner-lugar-fiesta,
 .node-type-lugar-de-fiesta .stack-content-inner,
-.node-type-article .stack-content-inner {
+.node-type-article .stack-content-inner,
+.view-futbol-destacados {
     position: relative;
     margin: 0 auto;
     padding: 0;
@@ -838,6 +839,7 @@ $black, $dark           = #000    | rgb(0, 0, 0);
 }
 
 .btn.categoria {
+    cursor: default;
     font-family: "Retina Display", Helvetica, Arial, sans-serif;
     font-weight: 600;
     font-size: 10px;
