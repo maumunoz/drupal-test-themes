@@ -2,10 +2,47 @@
 
 /* @end */
 
+.node-page[about="/chicas-aguila"] .field-items {
+	margin: 0 auto 20px;
+	overflow: hidden;
+}
+
+.item-lista-chicas-aguila {
+	background-color: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    float: left;
+    text-align: center;
+    margin: 0 10px 10px;
+}
+
+.item-lista-chicas-aguila h4 {
+	font: 700 140% "ITCAvantGardePro", Helvetica, Arial sans-serif;
+	color: #000;
+	text-transform: uppercase;
+	margin: 0 0 25px;
+}
+
+.item-lista-chicas-aguila .media-thumbnail-frame {
+	margin: 0 0 30px;
+}
+
+.item-lista-chicas-aguila p {
+	font: 300 100% "Open Sans", Helvetica, Arial, sans-serif;
+	color: #747474;
+}
+
+.item-lista-chicas-aguila .media-image {
+	border-radius: 50%;
+	max-width: 50%;
+}
+
 /* @group Media Query */
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
+
+
 
 }
 
@@ -17,15 +54,59 @@
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
 
+	.node-page[about="/chicas-aguila"] .field-items {
+		max-width: 600px;
+	}
+
+	.item-lista-chicas-aguila {
+    	margin: 0 26px 20px;
+    	width:  248px;
+    	min-height: 450px;
+	}
+
+	.item-lista-chicas-aguila h4 {
+		font-size: 170%;
+	}
+
+	.item-lista-chicas-aguila p {
+		font-size: 130%;
+	}
+
+	.item-lista-chicas-aguila .media-image {
+		max-width: 100%;
+	}
+
+	.item-lista-chicas-aguila .media-thumbnail-frame {
+		margin: 0 0 50px;
+	}
+
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
 
+	.node-page[about="/chicas-aguila"] .field-items {
+		max-width: 992px;
+	}
+
+	.item-lista-chicas-aguila {
+    	margin: 0 15px 20px;
+    	width: 218px;
+	}
+
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
+
+	.node-page[about="/chicas-aguila"] .field-items {
+		max-width: 1200px;
+	}
+
+	.item-lista-chicas-aguila {
+    	margin: 0 26px;
+    	width:  247px;
+	}
 
 }
 /* @end */
