@@ -69,7 +69,7 @@
 
 .lista-ruta-fiestas .eventDate,
 .lista-ruta-fiestas .eventCity {
-    font-family: "Open Sans";
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 300;
     line-height: 22px;
@@ -95,13 +95,13 @@
 }
 
 .lista-ruta-fiestas li .eventHoverInfo .field-content p {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
     margin-bottom: 44px;
     font-size: 13px;
 }
 
 .lista-ruta-fiestas li .eventHoverInfo .field-content a {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-weight: bold;
     padding: 14px 39px 12px 20px;
     background-position: 100% -120px;
