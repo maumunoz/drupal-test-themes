@@ -4,7 +4,7 @@
 
 /* @group Aguila en Vivo */
 
-.aguila-en-vivo {
+.aguila-en-vivo-contenido {
     position: relative;
     font-size: 18px;
     font-family: "Open Sans";
@@ -15,17 +15,17 @@
     padding: 0 30px;
 }
 
-.aguila-en-vivo h2 {
+.aguila-en-vivo-contenido h2 {
     font-family: Dubiel, Georgia, Times, serif;
     font-size: 35px;
     margin-bottom: 5px;
 }
 
-.aguila-en-vivo .mainText {
+.aguila-en-vivo-contenido .mainText {
     width: 100%;
 }
 
-.aguila-en-vivo .mainText h1 {
+.aguila-en-vivo-contenido .mainText h1 {
     font-family: 'ITCAvantGardePro', Helvetica, Arial, sans-serif;
     font-weight: 700;
     font-size: 71px;
@@ -35,11 +35,11 @@
     margin-bottom: 40px;
 }
 
-.aguila-en-vivo .mainText p {
+.aguila-en-vivo-contenido .mainText p {
     margin-bottom: 40px;
 }
 
-.aguila-en-vivo .mainText h3 {
+.aguila-en-vivo-contenido .mainText h3 {
     font-family: 'ITCAvantGardePro', Helvetica, Arial, sans-serif;
     font-size: 24px;
     display: block;
@@ -49,7 +49,7 @@
     width: 100%;
 }
 
-.aguila-en-vivo .mainText .mostrarMapa {
+.aguila-en-vivo-contenido .mainText .mostrarMapa {
     font-size: 13.8px;
     padding-top: 3px;
     height: 38px;
@@ -58,12 +58,12 @@
     background-repeat: no-repeat;
 }
 
-.aguila-en-vivo .mainText .mostrarMapa a {
+.aguila-en-vivo-contenido .mainText .mostrarMapa a {
     color: #868686;
     text-decoration: underline;    
 }
 
-.aguila-en-vivo .calendarBox {
+.aguila-en-vivo-contenido .calendarBox {
     position: relative;
     width: 100%;
     top: 0;
@@ -74,7 +74,7 @@
     max-width: 400px;
 }
 
-.aguila-en-vivo .calendarBox .media-thumbnail-frame img {
+.aguila-en-vivo-contenido .calendarBox .media-thumbnail-frame img {
     width: 100%;
 }
 
@@ -86,7 +86,7 @@
     margin-bottom: 40px;
 }
 
-#node-281 .float-overflow {
+.aguila-en-vivo .float-overflow {
     overflow: visible !important;
 }
 
@@ -108,11 +108,11 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-    .aguila-en-vivo .mainText {
+    .aguila-en-vivo-contenido .mainText {
         width: 56%;
     }
  
-    .aguila-en-vivo .calendarBox {
+    .aguila-en-vivo-contenido .calendarBox {
         position: absolute;
         width: 38%;
         margin-top: 0;
@@ -121,12 +121,12 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-    .aguila-en-vivo .mainText h3 {
+    .aguila-en-vivo-contenido .mainText h3 {
         float: left;
         width: 54%;
     }
 
-    .aguila-en-vivo .mainText .mostrarMapa {
+    .aguila-en-vivo-contenido .mainText .mostrarMapa {
         background-position: 77.8% -882px;
     }    
 

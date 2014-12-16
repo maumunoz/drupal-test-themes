@@ -34,6 +34,7 @@
     border-radius: 10px;
     margin: 17px 4px 16px;
     text-align: center;
+    line-height: 1;
 }
 
 #age_checker_widget .dateselect #age_checker_month, 
@@ -49,18 +50,32 @@
     padding: 0;
 }
 
-#age_checker_widget .agegate_country_select select {
+#age_checker_verification_popup .agegate_country_select {
     height: 40px;
     width: 240px;
     text-align: center;
-    background: none;
     border: solid 2px #fff;
     border-radius: 6px;
     margin: 8px auto 11px;
-    color: #fff;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: 212px 12px;
+    background-image: url(../images/agegate_select.png);
 }
-#age_checker_widget .agegate_country_select option {
-    background: #1b8ec4;
+
+#age_checker_verification_popup .agegate_country_select select {
+    background: transparent;
+    width: 270px;
+    padding: 5px;
+    line-height: 1;
+    border: 0;
+    border-radius: 0;
+    height: 34px;
+    -webkit-appearance: none;
+    padding: 5px;
+    font-size: 16px;
+}
+#age_checker_verification_popup .agegate_country_select option {
 }
 
 #age_checker_verification_popup input[type=checkbox].agegate_checkbox {
@@ -145,26 +160,31 @@
     margin: 0;
 }
 
-.agegate_footer_disclaimer {
+.agegate_footer {
     position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.agegate_footer_disclaimer {
     font-weight: bold;
     background: white;
     padding: 14px;
-    height: 48px;
     width: 100%;
-    bottom: 0;
 }
 
 .agegate_footer_links {
     background-color: #f8e514;
     border: solid 2px white;
-    position: absolute;
     font-weight: 600;
-    font-size: 13px;
-    bottom: 47px;
-    height: 38px;
-    padding: 6px;
+    padding: 10px;
     width: 100%;
+}
+
+.agegate_footer_links  a{
+    color: #000;
+    font-size: 14px;
+    text-decoration: underline;
 }
 
 /* @end */
@@ -192,8 +212,13 @@
         width: 120px;
     }
     
-    #age_checker_widget .agegate_country_select select {
+    #age_checker_verification_popup .agegate_country_select {
         width: 280px;
+        background-position: 252px 12px;
+    }
+
+    aa#age_checker_verification_popup .agegate_country_select select {
+        width: 310px;
     }
     
 }
@@ -231,9 +256,16 @@
         position: absolute;
     }
     
-    #age_checker_widget .agegate_country_select select {
+    #age_checker_verification_popup .agegate_country_select {
         height: 54px;
         width: 305px;
+        background-position: 277px 21px;
+    }
+    
+    #age_checker_verification_popup .agegate_country_select select {
+        height: 54px;
+        width: 335px;
+        padding: 12px;
     }
     
     #age_checker_verification_popup p,

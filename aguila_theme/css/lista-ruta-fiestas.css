@@ -9,7 +9,7 @@
     display: none;
 }
 
-.lista-ruta-fiestas ul.pager,
+.item-list ul.pager,
 .lista-ruta-fiestas .view-content ul {
     list-style-type: none;
     margin: 0;
