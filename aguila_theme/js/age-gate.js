@@ -4,10 +4,12 @@
         original(context, settings);
         setTimeout(function () {
             var popup = $('#age_checker_verification_popup');
-            if (popup.is(':visible')) {
-                console.log('age gate is shown');
-                console.log(popup);
+            if (popup.is(':visible')) {                
+                var overlay = $('#age_checker_overlay');
+                overlay.append($(".agegate_footer"));
+                
+                $("#age_checker_verification_popup input[type='submit']").before( $(".agegate_pre_submit") );
             }
-        }, 15);
+        }, 150);
       };
 })(jQuery);

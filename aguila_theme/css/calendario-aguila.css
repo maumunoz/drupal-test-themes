@@ -9,6 +9,8 @@
     border: none !important;
     font-family: 'ITCAvantGardePro', Helvetica, Arial, sans-serif;
     font-weight: 200;
+    overflow: visible;
+    padding: 12px 0px;
 }
 
 .calendarContainer.dzscalendar .calendar-controls  .curr-date {
@@ -42,5 +44,19 @@
 .calendarContainer.dzscalendar .mon-row .week-day {
     font-style: normal;
 }
+
+.calendarContainer.dzscalendar .hasEvent, 
+.calendarContainer.dzscalendar .hasEventForHover {
+    color: #000;
+}
+
+.calendarContainer.dzscalendar .hasEvent .the-number {
+    background-color: #ffd800;
+    padding: 10px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+
 
 /* @end */
