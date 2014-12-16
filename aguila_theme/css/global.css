@@ -345,6 +345,7 @@ Retina Display Condensed Black:    font-style: normal | font-weight: 900
 .banner-lugar-fiesta,
 .node-type-lugar-de-fiesta .stack-content-inner,
 .node-type-article .stack-content-inner,
+#node-301 .content .field-type-text-with-summary,
 .descripcion-chicas-aguila .views-field-body {
     position: relative;
     margin: 0 auto;
