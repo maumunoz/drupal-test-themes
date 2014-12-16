@@ -24,7 +24,7 @@
 }
 
 .item-lista-chicas-aguila .media-thumbnail-frame {
-	margin: 0 0 50px;
+	margin: 0 0 30px;
 }
 
 .item-lista-chicas-aguila p {
@@ -34,6 +34,7 @@
 
 .item-lista-chicas-aguila .media-image {
 	border-radius: 50%;
+	width: 50%;
 }
 
 /* @group Media Query */
@@ -69,6 +70,14 @@
 
 	.item-lista-chicas-aguila p {
 		font-size: 130%;
+	}
+
+	.item-lista-chicas-aguila .media-image {
+		width: 100%;
+	}
+
+	.item-lista-chicas-aguila .media-thumbnail-frame {
+		margin: 0 0 50px;
 	}
 
 }
