@@ -1,0 +1,35 @@
+/* @group Header */
+
+#block-system-main-menu ul.menu,
+.stack-header-inner,
+.stack-preheader,
+.wrapper-header {
+    background: #004a98;
+}
+
+/* @end */
+
+
+/* @group Media Query */
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    /* @group Header */
+
+    /* @end */
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    /* @group Header */
+
+    /* @end */
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    /* @group Header */
+
+    /* @end */
+}
+/* @end */
