@@ -31,7 +31,7 @@ stylesheets[all][] = 'css/calendario-aguila.css'
 stylesheets[all][] = 'css/age-gate.css'
 stylesheets[all][] = 'css/descripcion-chicas-section.css'
 stylesheets[all][] = 'css/chicas-aguila-list-view.css'
-
+stylesheets[all][] = 'css/destacados-futbol-section.css'
 
 regions[page_top] = 'Above page'
 regions[preheader_first] = 'Preheader first'
