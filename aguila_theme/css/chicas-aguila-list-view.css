@@ -3,7 +3,7 @@
 /* @end */
 
 .node-page[about="/chicas-aguila"] .field-items {
-	margin: 0 auto 20px;
+	margin: 20px auto;
 	overflow: hidden;
 }
 
@@ -56,6 +56,7 @@
 
 	.node-page[about="/chicas-aguila"] .field-items {
 		max-width: 600px;
+		margin: 116px auto 130px;
 	}
 
 	.item-lista-chicas-aguila {
@@ -77,7 +78,7 @@
 	}
 
 	.item-lista-chicas-aguila .media-thumbnail-frame {
-		margin: 0 0 50px;
+		margin: 0 0 45px;
 	}
 
 }
