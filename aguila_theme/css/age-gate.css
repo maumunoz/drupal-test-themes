@@ -74,6 +74,7 @@
     -webkit-appearance: none;
     padding: 5px;
     font-size: 16px;
+    color: #fff;
 }
 #age_checker_verification_popup.aguila .agegate_country_select option {
     color: #fff;
