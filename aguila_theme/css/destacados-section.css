@@ -18,6 +18,8 @@
     position: relative;
     list-style: none;
     overflow: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 .destacados-principal .views-row > div {
