@@ -6,10 +6,7 @@ engine = 'phptemplate'
 base theme = 'sabmiller_base_theme'
 
 stylesheets[all][] = 'css/global.css'
-
-scripts[] = 'js/global.js'
-scripts[] = 'js/section-videos.js'
-scripts[] = 'js/section-gallery.js'
+stylesheets[all][] = 'css/header-section.css'
 
 regions[page_top] = 'Above page'
 regions[preheader_first] = 'Preheader first'
