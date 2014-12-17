@@ -5,6 +5,7 @@
         setTimeout(function () {
             var popup = $('#age_checker_verification_popup');
             if (popup.is(':visible')) {                
+                popup.addClass("aguila");
                 var overlay = $('#age_checker_overlay');
                 overlay.append($(".agegate_footer"));
                 
