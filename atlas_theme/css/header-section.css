@@ -7,6 +7,20 @@
     background: #004a98;
 }
 
+.stack-preheader .col-2 .col-first {
+    width: 12%;
+}
+
+.stack-preheader .col-2 .col-second {
+    width: 20%;
+}
+
+.stack-navigation {
+    float: left;
+    width: 50%;
+    clear: none;
+}
+
 /* @end */
 
 

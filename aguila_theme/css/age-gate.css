@@ -1,6 +1,6 @@
 /* @group Age Gate */
 
-#age_checker_verification_popup {
+#age_checker_verification_popup.aguila {
     background-color: #1b8ec4;
     border: none;
     width: 515px;
@@ -9,7 +9,7 @@
 }
 
 
-#age_checker_verification_popup  .media-thumbnail-frame {
+#age_checker_verification_popup.aguila .media-thumbnail-frame {
     width: 100%;
     text-align: center;
 }
@@ -19,9 +19,9 @@
     font-weight: bold;
 }
 
-#age_checker_widget .dateselect #age_checker_month, 
-#age_checker_day, 
-#age_checker_year {
+#age_checker_verification_popup.aguila #age_checker_widget .dateselect #age_checker_month, 
+#age_checker_verification_popup.aguila #age_checker_day, 
+#age_checker_verification_popup.aguila #age_checker_year {
     font-size: 25px;
     height: 40px;
     background-color: #1b8ec4;
@@ -37,20 +37,20 @@
     line-height: 1;
 }
 
-#age_checker_widget .dateselect #age_checker_month, 
-#age_checker_day {
+#age_checker_verification_popup.aguila #age_checker_widget .dateselect #age_checker_month, 
+#age_checker_verification_popup.aguila #age_checker_day {
     width: 65px;
 }
 
-#age_checker_year {
+#age_checker_verification_popup.aguila #age_checker_year {
     width: 100px;
 }
 
-#age_checker_message {
+#age_checker_verification_popup.aguila #age_checker_message {
     padding: 0;
 }
 
-#age_checker_verification_popup .agegate_country_select {
+#age_checker_verification_popup.aguila .agegate_country_select {
     height: 40px;
     width: 240px;
     text-align: center;
@@ -63,7 +63,7 @@
     background-image: url(../images/agegate_select.png);
 }
 
-#age_checker_verification_popup .agegate_country_select select {
+#age_checker_verification_popup.aguila .agegate_country_select select {
     background: transparent;
     width: 270px;
     padding: 5px;
@@ -74,11 +74,14 @@
     -webkit-appearance: none;
     padding: 5px;
     font-size: 16px;
+    color: #fff;
 }
-#age_checker_verification_popup .agegate_country_select option {
+#age_checker_verification_popup.aguila .agegate_country_select option {
+    color: #fff;
+    background-color: #1b8ec4;
 }
 
-#age_checker_verification_popup input[type=checkbox].agegate_checkbox {
+#age_checker_verification_popup.aguila input[type=checkbox].agegate_checkbox {
     position:absolute; 
     z-index:-1000; 
     left:-1000px; 
@@ -91,7 +94,7 @@
     border:0;
 }
 
-#age_checker_verification_popup input[type=checkbox].agegate_checkbox + label {
+#age_checker_verification_popup.aguila input[type=checkbox].agegate_checkbox + label {
     padding-left: 31px;
     display: inline-block;
     background-repeat: no-repeat;
@@ -106,11 +109,11 @@
     text-align: left;
 }
 
-#age_checker_verification_popup input[type=checkbox].agegate_checkbox:checked + label {
+#age_checker_verification_popup.aguila input[type=checkbox].agegate_checkbox:checked + label {
     background-position: 0 -22px;
 }
 
-#age_checker_widget .dateselect .form-submit {
+#age_checker_verification_popup.aguila #age_checker_widget .dateselect .form-submit {
     background: #f8e514;
     height: 50px;
     margin-top: 12px;
@@ -123,7 +126,7 @@
     border: none;
 }
 
-#age_checker_verification_popup .agegate-disclaimer {
+#age_checker_verification_popup.aguila .agegate-disclaimer {
     font-size: 11px;
     width: 100%;
     display: block;
@@ -134,12 +137,12 @@
     max-width: 100vw;
 }
 
-#age_checker_verification_popup .form-item, 
-#age_checker_verification_popup .form-actions {
+#age_checker_verification_popup.aguila .form-item, 
+#age_checker_verification_popup.aguila .form-actions {
     margin: 0;
 }
 
-#age_checker_verification_popup p,
+#age_checker_verification_popup.aguila p,
 .agegate_footer_disclaimer,
 .agegate_footer_links  {
     font-size: 13px;
@@ -151,11 +154,11 @@
     margin: 0;
 }
 
-#age_checker_verification_popup p {
+#age_checker_verification_popup.aguila p {
     color: #fff;
 }
 
-#age_checker_widget {
+#age_checker_verification_popup.aguila #age_checker_widget {
     padding: 0;
     margin: 0;
 }
@@ -196,28 +199,28 @@
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
-    #age_checker_widget .dateselect #age_checker_month, 
-    #age_checker_day, 
-    #age_checker_year {
+    #age_checker_verification_popup.aguila #age_checker_widget .dateselect #age_checker_month, 
+    #age_checker_verification_popup.aguila #age_checker_day, 
+    #age_checker_verification_popup.aguila #age_checker_year {
         font-size: 40px;
         height: 70px;
     }
     
-    #age_checker_widget .dateselect #age_checker_month, 
-    #age_checker_day {
+    #age_checker_verification_popup.aguila #age_checker_widget .dateselect #age_checker_month, 
+    #age_checker_verification_popup.aguila #age_checker_day {
         width: 80px;
     }
 
-    #age_checker_year {
+    #age_checker_verification_popup.aguila #age_checker_year {
         width: 120px;
     }
     
-    #age_checker_verification_popup .agegate_country_select {
+    #age_checker_verification_popup.aguila .agegate_country_select {
         width: 280px;
         background-position: 252px 12px;
     }
 
-    aa#age_checker_verification_popup .agegate_country_select select {
+    #age_checker_verification_popup.aguila .agegate_country_select select {
         width: 310px;
     }
     
@@ -226,49 +229,49 @@
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
 
-    #age_checker_verification_popup {
+    #age_checker_verification_popup.aguila {
         top: 36% !important;
         padding-top: 51px;
     }
     
-    #age_checker_verification_popup  .media-thumbnail-frame {
+    #age_checker_verification_popup.aguila  .media-thumbnail-frame {
         position: absolute;
         top: -64px;
     }
 
-    #age_checker_widget .dateselect #age_checker_month, 
-    #age_checker_day, 
-    #age_checker_year {
+    #age_checker_verification_popup.aguila #age_checker_widget .dateselect #age_checker_month, 
+    #age_checker_verification_popup.aguila #age_checker_day, 
+    #age_checker_verification_popup.aguila #age_checker_year {
         font-size: 60px;
         height: 112px;
     }
     
-    #age_checker_widget .dateselect #age_checker_month, 
-    #age_checker_day {
+    #age_checker_verification_popup.aguila #age_checker_widget .dateselect #age_checker_month, 
+    #age_checker_verification_popup.aguila #age_checker_day {
         width: 114px;
     }
     
-    #age_checker_year {
+    #age_checker_verification_popup.aguila #age_checker_year {
         width: 182px;
     }
     
-    #age_checker_verification_popup .agegate-disclaimer {
+    #age_checker_verification_popup.aguila .agegate-disclaimer {
         position: absolute;
     }
     
-    #age_checker_verification_popup .agegate_country_select {
+    #age_checker_verification_popup.aguila .agegate_country_select {
         height: 54px;
         width: 305px;
         background-position: 277px 21px;
     }
     
-    #age_checker_verification_popup .agegate_country_select select {
+    #age_checker_verification_popup.aguila .agegate_country_select select {
         height: 54px;
         width: 335px;
         padding: 12px;
     }
     
-    #age_checker_verification_popup p,
+    #age_checker_verification_popup.aguila p,
     .agegate_footer_disclaimer,
     .agegate_footer_links  {
         font-size: 14px;

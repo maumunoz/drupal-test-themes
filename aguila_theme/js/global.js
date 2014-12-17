@@ -75,15 +75,19 @@ moment.locale('es');
         $.mapsLoaded.resolve();
     };
 
-    //Add css class to page based on URL
-    $.initModule(".page-node", function ($, page) {
-        var pageAttr = $(".node-page").attr("about"),
+    //Initialize Page content
+    $.initModule(".region-content", function ($, pageContent) {
+        //Add css class to page based on URL
+        var contentAttr = pageContent.find("*[typeof*='foaf:Document']"),
             classList;
-        if(typeof pageAttr !== typeof undefined && pageAttr !== false) {
-            classList = pageAttr.split( '/' );
-            $.each(classList, function(i, val) {
-                page.addClass(val);
-            });
+        if(contentAttr.length) {
+            contentAttr = contentAttr.attr('about');
+            if(typeof contentAttr !== typeof undefined && contentAttr !== false) {
+                classList = contentAttr.split( '/' );
+                $.each(classList, function(i, val) {
+                    $('body').addClass(val);
+                });
+            }
         }
     });
 

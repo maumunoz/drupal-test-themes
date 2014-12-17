@@ -1,5 +1,5 @@
 .destacados-futbol {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .destacados-futbol .item-list {
@@ -8,35 +8,28 @@
     margin-top: 20px;
 }
 
-
-/* @group Media Query */
-
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px) {
-
+.destacados-futbol  .view-content .item-list {
+    padding: 26px 0 0;
 }
 
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px) {
-
+.destacados-futbol .pager-load-more li a {
+    padding: 15px 35px;
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
     .destacados-futbol {
-        margin-bottom: 80px;
+        margin-bottom: 40px;
+    }
+
+    .destacados-futbol .pager-load-more li a {
+        padding: 18.5px 78px;
     }
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
     .destacados-futbol {
-        margin-bottom: 100px;
+        margin-bottom: 55px;
     }
 }
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
-
-}
-/* @end */
