@@ -75,6 +75,18 @@ moment.locale('es');
         $.mapsLoaded.resolve();
     };
 
+    //Add css class to page based on URL
+    $.initModule(".page-node", function ($, page) {
+        var pageAttr = $(".node-page").attr("about"),
+            classList;
+        if(typeof pageAttr !== typeof undefined && pageAttr !== false) {
+            classList = pageAttr.split( '/' );
+            $.each(classList, function(i, val) {
+                page.addClass(val);
+            });
+        }
+    });
+
     //Set the background color for each categoria element.
     if (btnCategories.length) {
         btnCategories.each(function () {

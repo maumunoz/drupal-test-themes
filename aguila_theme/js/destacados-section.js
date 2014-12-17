@@ -1,6 +1,6 @@
 /*global jQuery2, moment*/
 (function ($) {
-    var viewDestacados = $(".view-descatados");
+    var viewDestacados = $(".front .destacados-principal");
 
     if (viewDestacados.length) {
         viewDestacados.find('.views-row').each(function () {

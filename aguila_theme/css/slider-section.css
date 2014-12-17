@@ -5,6 +5,10 @@
     padding-top: 0;
 }
 
+.banner-principal {
+    position: relative;
+}
+
 .banner-principal .views-row {
     display: none;
 }
@@ -87,6 +91,10 @@
     line-height: 0.9;
 }
 
+.chicas-aguila .slide-content em {
+    font-size: 210%;
+}
+
 .slide-content h3 {
     padding: 0;
     margin: 0 0 10px;
@@ -94,10 +102,30 @@
     font-family: 'ITCAvantGardePro', Helvetica, Arial sans-serif;
 }
 
-.slide-content .transform-like-module {
+.slide-content .transform-like-module,
+.slide-content .video-link {
     background-color: transparent !important;
     border: none !important;
     padding: 5px 0 !important;
+}
+
+.slide-content .video-link {
+    text-align: center;
+    font-size: 130%;
+}
+
+.slide-content .video-link ul {
+    margin: 0;
+    padding: 0;
+}
+
+.slide-content .video-link li,
+.slide-content .video-link div
+.slide-content .video-link img {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-weight: 300;
 }
 
 .slide-content .media-thumbnail-frame:before,
@@ -126,7 +154,7 @@
     max-width: 155px;
 }
 
-.banner-principal .btn {
+.banner-principal .view-content .btn {
     height: 38px;
     min-width: 75px;
     padding-top: 0;
@@ -154,23 +182,21 @@
     background-position: 1px -558px;
 }
 
-.front .slick-slider:before {
-    content: '';
-    display: block;
+.banner-principal .btn.to-scroll {
     position: absolute;
-    top: 335px;
     left: 13%;
-    width: 40px;
-    height: 40px;
-    min-height: 40px;
-    padding: 10px 12px;
-    color: #fff;
-    border-color: transparent;
-    background-color: #0fc3ff;
-    background-image: url(../images/sprite.png);
-    background-position: 0 -240px;
-    background-repeat: no-repeat;
-    cursor: pointer;
+    bottom: -15px;
+}
+
+.front .banner-principal .btn.to-scroll,
+.futbol .banner-principal .btn.to-scroll,
+.chicas-aguila .banner-principal .btn.to-scroll {
+    display: block !important;
+    visibility: visible !important;
+}
+
+.chicas-aguila .banner-principal .btn.to-scroll {
+    background-color: #0565be;
 }
 
 .favoritos-content-type {
@@ -233,6 +259,10 @@
         max-width: 225px;
     }
 
+    .slide-content .video-link {
+        font-size: 170%;
+    }
+
 }
 
 /* Small Devices, Tablets */
@@ -261,7 +291,11 @@
         font-size: 210%;
     }
 
-    .banner-principal .btn {
+    .chicas-aguila .slide-content em {
+        font-size: 228%;
+    }
+
+    .banner-principal .view-content .btn {
         height: 38px;
         line-height: 38px;
         min-width: 100px;
@@ -288,18 +322,23 @@
         height: 662px;
     }
 
-    .front .slick-slider:before {
-        top: 640px;
-    }
-
     .front .slick-initialized .slide-content {
         height: 656px;
         padding: 30px 30px;
     }
 
+    .chicas-aguila .slick-initialized .slide-content,
+    .chicas-aguila .banner-principal .views-row {
+        height: 662px;
+    }
+
     .banner-principal .views-row,
     .banner-lugar-fiesta .views-row {
         height: 465px;
+    }
+
+    .slide-content .video-link {
+        font-size: 228  %;
     }
 
     .slick-initialized .slide-content {
@@ -312,7 +351,8 @@
         font-size: 128%;
     }
 
-    .slide-content em {
+    .slide-content em,
+    .chicas-aguila .slide-content em {
         font-size: 300%;
         line-height: 55px;
     }
@@ -322,6 +362,10 @@
         margin: 6px 0;
         font-size: 690%;
         line-height: 80px;
+    }
+
+    .chicas-aguila .slide-content h3 {
+        font-size: 570%;
     }
 
     .slide-content .media-thumbnail-frame img {
@@ -337,7 +381,7 @@
         padding: 30px 0 !important;
     }
 
-    .banner-principal .btn {
+    .banner-principal .view-content .btn {
         height: 58px;
         line-height: 58px;
         min-width: 150px;
