@@ -1,7 +1,8 @@
 /* @group Banner Lugar */
 .banner-lugar-fiesta {
+    background-position: center center;
     background-size: cover;
-    background-repeat: none;
+    background-repeat: no-repeat;
 }
 
 .banner-lugar-fiesta .views-row {
