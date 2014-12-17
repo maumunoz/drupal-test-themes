@@ -107,7 +107,7 @@ ITCAvantGardePro Bold:    font-style: normal | font-weight: 700
 @font-face {
     font-family: 'ITCAvantGardePro';
     src: url('../fonts/itcavantgardepro/itcavantgardepro-bk.eot');
-    src: url('../fonts/itcavantgardepro/itcavantgardepro-bk.eot') format('embedded-opentype'),
+    src: url('../fonts/itcavantgardepro/itcavantgardepro-bk.eot?#iefix') format('embedded-opentype'),
          url('../fonts/itcavantgardepro/itcavantgardepro-bk.woff2') format('woff2'),
          url('../fonts/itcavantgardepro/itcavantgardepro-bk.woff') format('woff'),
          url('../fonts/itcavantgardepro/itcavantgardepro-bk.ttf') format('truetype'),
@@ -119,7 +119,7 @@ ITCAvantGardePro Bold:    font-style: normal | font-weight: 700
 @font-face {
     font-family: 'ITCAvantGardePro';
     src: url('../fonts/itcavantgardepro/itcavantgardepro.eot');
-    src: url('../fonts/itcavantgardepro/itcavantgardepro.eot') format('embedded-opentype'),
+    src: url('../fonts/itcavantgardepro/itcavantgardepro.eot?#iefix') format('embedded-opentype'),
          url('../fonts/itcavantgardepro/itcavantgardepro.woff2') format('woff2'),
          url('../fonts/itcavantgardepro/itcavantgardepro.woff') format('woff'),
          url('../fonts/itcavantgardepro/itcavantgardepro.ttf') format('truetype'),
@@ -131,7 +131,7 @@ ITCAvantGardePro Bold:    font-style: normal | font-weight: 700
 @font-face {
     font-family: 'ITCAvantGardePro';
     src: url('../fonts/itcavantgardepro/itcavantgardepro-bold.eot');
-    src: url('../fonts/itcavantgardepro/itcavantgardepro-bold.eot') format('embedded-opentype'),
+    src: url('../fonts/itcavantgardepro/itcavantgardepro-bold.eot?#iefix') format('embedded-opentype'),
          url('../fonts/itcavantgardepro/itcavantgardepro-bold.woff2') format('woff2'),
          url('../fonts/itcavantgardepro/itcavantgardepro-bold.woff') format('woff'),
          url('../fonts/itcavantgardepro/itcavantgardepro-bold.ttf') format('truetype'),
