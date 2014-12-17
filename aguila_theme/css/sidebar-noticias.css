@@ -36,6 +36,10 @@
     border-bottom: 1px solid #cbcbcb;
 }
 
+.sidebar-noticias .item-list .views-row-last {
+    border-bottom: none;
+}
+
 .sidebar-noticias div:first-child,
 .sidebar-noticias .views-field-created {
     display: inline;
