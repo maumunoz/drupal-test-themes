@@ -338,7 +338,7 @@ Retina Display Condensed Black:    font-style: normal | font-weight: 900
 .stack-navigation .region-navigation,
 .stack-copyright .content,
 .view-descatados,
-.lista-lugares-fiesta,
+.lista-lugares-fiesta .view-content,
 .slick-initialized .slide-main-content,
 .mapa-lugar-detalle,
 .view-dynamic-filter .view-content,
@@ -552,7 +552,7 @@ $black, $dark           = #000    | rgb(0, 0, 0);
 .btn-white-overlay {
     color: #000;
     border-color: #000;
-    background-color: #000;
+    background-color: #fff;
     background-color: rgba(255, 255, 255, 0.5);
 }
 
