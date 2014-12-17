@@ -45,8 +45,10 @@
     padding: 0;
     height: 37px;
     border-right: 1px solid #3381c9;
+    list-style: none;
 }
 
+#block-system-main-menu ul.menu li.active-trail,
 #block-system-main-menu ul.menu li:hover,
 #block-system-main-menu ul.menu li:focus,
 #block-system-main-menu ul.menu li:active {

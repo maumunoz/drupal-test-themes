@@ -31,9 +31,13 @@
 
 .sidebar-noticias .item-list .views-row {
     padding: 18px 36px 18px 15px;
-    margin-bottom: 18px;
+    margin: 0 0 18px;
     border-left: 9px solid #FFF;
     border-bottom: 1px solid #cbcbcb;
+}
+
+.sidebar-noticias .item-list .views-row-last {
+    border-bottom: none;
 }
 
 .sidebar-noticias div:first-child,
