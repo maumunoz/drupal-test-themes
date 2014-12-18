@@ -1,0 +1,41 @@
+/* @group Calendario Chicas Aguila */
+
+#block-views-calendario-chicas-aguila-block {
+    background: -moz-linear-gradient(top,  rgba(70,206,252,1) 0%, rgba(70,206,252,0) 35%, rgba(70,206,252,0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(70,206,252,1)), color-stop(35%,rgba(70,206,252,0)), color-stop(100%,rgba(70,206,252,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(70,206,252,1) 0%,rgba(70,206,252,0) 35%,rgba(70,206,252,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(70,206,252,1) 0%,rgba(70,206,252,0) 35%,rgba(70,206,252,0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(70,206,252,1) 0%,rgba(70,206,252,0) 35%,rgba(70,206,252,0) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(70,206,252,1) 0%,rgba(70,206,252,0) 35%,rgba(70,206,252,0) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#46cefc', endColorstr='#0046cefc',GradientType=0 ); /* IE6-9 */
+}
+
+/* @end */
+
+/* @group Media Query */
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+/* @end */
