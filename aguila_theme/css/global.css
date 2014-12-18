@@ -288,6 +288,11 @@ Retina Display Condensed Black:    font-style: normal | font-weight: 900
     padding: 0;
 }
 
+#main.col-c,
+.stack-prefooter .col-third {
+    min-height: 0 !important;
+}
+
 .wrapper-content .stack {
     padding: 0;
 }

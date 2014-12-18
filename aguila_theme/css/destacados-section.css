@@ -6,6 +6,10 @@
     padding: 20px 0 0;
 }
 
+.front .destacados-principal {
+    padding-bottom: 30px;
+}
+
 .destacados-principal .view-content .item-list ul {
     overflow: hidden;
     list-style: none;
@@ -246,6 +250,10 @@
 @media only screen and (min-width : 768px) {
     .destacados-principal {
         max-width: 720px;
+    }
+
+    .front .destacados-principal {
+        padding-bottom: 80px;
     }
 
     .destacados-principal .views-row.views-row-1,

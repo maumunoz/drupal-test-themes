@@ -6,11 +6,11 @@
     font-size: 100%;
     line-height: 1.71;
     color: #999;
-    padding: 17px 10px 0 10px;
+    padding: 17px 10px;
 }
 
 .node-type-article .content-area {
-    padding: 0 10px 0 10px;
+    padding: 0 10px;
 }
 
 .content-area h1,
@@ -72,7 +72,7 @@
 .node-type-lugar-de-fiesta .content-area .field-name-body,
 .node-type-article .content-area .field-name-body {
     padding: 10px 0 0 0;
-    margin: 0 !important;
+    margin: 0 0 30px !important;
 }
 
 .content-area .view-ver-lugar-fiesta-en-mapa a {
@@ -129,8 +129,8 @@
 @media only screen and (min-width : 768px) {
     .node-type-lugar-de-fiesta .content-area .field-name-body,
     .node-type-article .content-area .field-name-body {
-        padding: 10px 0 0 0;
-        margin: 0 0 60px 0 !important;
+        padding: 10px 0 0;
+        margin: 0 0 60px !important;
     }
 
     .node-type-lugar-de-fiesta .content-area address,
