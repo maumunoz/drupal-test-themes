@@ -272,8 +272,6 @@
         width: 33.4%;
     }
 
-
-
     .destacados-principal .views-row-1,
     .destacados-principal .views-row-2,
     .destacados-principal .views-row-3,
@@ -335,6 +333,22 @@
 
     .destacados-principal .views-row-1 .categoria {
         margin: 210px 0 15px;
+    }
+
+    .destacados-principal .views-row-1 > div,
+    .destacados-principal .views-row-6 > div {
+        bottom: 25px;
+        overflow: hidden;
+    }
+
+    .destacados-principal .views-row-1 .views-field-title {
+        max-height: 75px;
+        margin-bottom: 10px;
+    }
+
+    .destacados-principal .views-row-6 .views-field-title {
+        max-height: 115px;
+        margin-bottom: 10px;
     }
 
     .destacados-principal .views-row-1 .views-field-title a,
