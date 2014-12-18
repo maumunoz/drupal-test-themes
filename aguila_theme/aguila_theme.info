@@ -33,6 +33,7 @@ stylesheets[all][] = 'css/descripcion-chicas-section.css'
 stylesheets[all][] = 'css/chicas-aguila-list-view.css'
 stylesheets[all][] = 'css/destacados-futbol-section.css'
 stylesheets[all][] = 'css/galeria-chicas-aguila-section.css'
+stylesheets[all][] = 'css/calendario-chicas-aguila-section.css'
 
 regions[page_top] = 'Above page'
 regions[preheader_first] = 'Preheader first'
