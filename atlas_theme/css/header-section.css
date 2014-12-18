@@ -34,6 +34,7 @@
 
 .stack-preheader .col-second {
     right: 0;
+    margin-left: 76px;
 }
 
 .stack-preheader .col-second .block-social-media {
@@ -42,17 +43,19 @@
 
 .stack-preheader .col-second #search-block-form {
     position: relative;
-   /*display: none;*/
+    margin-top: 0;
+    margin-bottom: 5px;
 }
 
 .stack-preheader .col-second .form-text {
     height: 30px;
+    padding-left: 24px;
+    padding-right: 30px;
+    margin: 0;
     outline: none;
     border: none;
     border-radius: 6px;
     background: #fff url(../images/sprite-search.png) no-repeat top left;
-    /*
-    padding: 6px 29px;;*/
 }
 
 .stack-preheader .col-second .form-submit {
@@ -64,11 +67,8 @@
     border-radius: 0 6px 6px 0;
     background: url(../images/sprite-search.png)  no-repeat bottom center transparent;
     position: absolute;
-    top: 4px;
+    top: 0;
     right: 0;
-    /*padding: 5px 10px;
-    background: url(../images/sprite-search.png)  no-repeat bottom right transparent;
-    color: #27aede;*/
 }
 
 #preheader-second-region .btn-menu-mobile a{
@@ -132,6 +132,18 @@
     font-family: "Oswald";
     font-size: 17px;
     color: #fff;
+}
+
+.stack.stack-precontent {
+    padding: 0;
+    position: fixed;
+    z-index: 210;
+    top: 80px;
+    right: 0;
+}
+
+.stack-precontent .col-1 {
+    padding: 0;
 }
 
 /* @end */
