@@ -198,6 +198,7 @@
 
 .chicas-aguila .banner-principal .btn.to-scroll {
     background-color: #0565be;
+    cursor: default;
 }
 
 .favoritos-content-type {
