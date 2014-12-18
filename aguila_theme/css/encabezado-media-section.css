@@ -108,7 +108,7 @@
 }
 
 .encabezado-media .flag-wrapper {
-    margin: 0 10px 0 0;
+    margin: 0;
 }
 
 .encabezado-media .flag-wrapper .flag {
@@ -125,8 +125,9 @@
     background-position: 2px -637px;
 }
 
-.encabezado-media .flag-counter {
+.encabezado-media .favoritos-content-type .flag-counter {
     display: inline-block;
+    margin-left: 10px;
 }
 
 /* @end */

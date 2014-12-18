@@ -1,28 +1,27 @@
 /* @group Header */
 
 #block-system-main-menu ul.menu,
-.stack-header-inner,
 .stack-preheader,
-.wrapper-header {
+.stack-navigation {
     background: #004a98;
 }
 
 .stack-preheader {
     position: fixed;
     width: 100%;
-    /*padding: 13px 73px 50px 0;*/
-    /*top: 0;*/
-    z-index: 100;
+    height: 15px;
+    z-index: 200;
 }
 
 .stack-preheader .col-2 {
-    padding-left: 0;
-    padding-right: 0;
+    padding: 10px 0 0 10px;
 }
 
-.stack-preheader .col-2 .col-first {
+.stack-preheader .col-first,
+.stack-preheader .col-second {
     width: auto;
-    padding-top: 2px;
+    position: fixed;
+    z-index: 150;
 }
 
 .stack-preheader .site-name a {
@@ -33,15 +32,64 @@
     background-size: cover;
 }
 
-.stack-preheader .col-2 .col-second {
-    float: right;
-    width: auto;
+.stack-preheader .col-second {
+    right: 0;
+    margin-left: 76px;
+}
+
+.stack-preheader .col-second .block-social-media {
+    margin-bottom: 5px;
+}
+
+.stack-preheader .col-second #search-block-form {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.stack-preheader .col-second .form-text {
+    height: 30px;
+    padding-left: 24px;
+    padding-right: 30px;
+    margin: 0;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    background: #fff url(../images/sprite-search.png) no-repeat top left;
+}
+
+.stack-preheader .col-second .form-submit {
+    height: 30px;
+    width: 30px;
+    outline: none;
+    font-size: 0;
+    border: none;
+    border-radius: 0 6px 6px 0;
+    background: url(../images/sprite-search.png)  no-repeat bottom center transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#preheader-second-region .btn-menu-mobile a{
+    width: 29px;
+    height: 29px;
+    padding: 3px 5px;
+    background-color: #fff;
+}
+
+#preheader-second-region .btn-menu-mobile .icon-bar {
+    width: 17px;
 }
 
 .stack-navigation {
-    float: left;
-    width: auto;
-    clear: none;
+    position: fixed;
+    width: 100%;
+    /*min-height: 80px;*/
+    top: 0;
+    z-index: 100;
+    box-sizing: border-box;
+    padding: 0 325px 0 130px;
 }
 
 .stack-navigation #navigation-region {
@@ -58,6 +106,11 @@
     border-radius: 0;
 }
 
+.stack-navigation .menu .level-1,
+.stack-navigation .menu .level-1.first {
+    padding: 27px 10px 0 10px;
+}
+
 .stack-navigation .menu .level-2 {
     border-bottom: 1px solid #fff;
 }
@@ -66,34 +119,31 @@
     border-bottom: none;
 }
 
+.stack-navigation .menu .level-2 a:hover {
+    text-decoration: none;
+    color: #ccc;
+    -webkit-transition: color .3s;
+    -moz-transition: color .3s;
+    -o-transition: color .3s;
+    transition: color .3s;
+}
+
 .stack-navigation .menu a {
     font-family: "Oswald";
     font-size: 17px;
     color: #fff;
 }
 
-.stack-preheader .col-second form#search-block-form {
-    position: relative;
+.stack.stack-precontent {
+    padding: 0;
+    position: fixed;
+    z-index: 210;
+    top: 80px;
+    right: 0;
 }
 
-.stack-preheader .col-second .form-text {
-    height: 30px;
-    padding: 6px 29px;
-    outline: none;
-    border-radius: 6px;
-    border: none;
-    background: #fff url(../images/sprite-search.png)  no-repeat bottom right;
-}
-
-.stack-preheader .col-second .form-submit {
-    position: absolute;
-    top: 4px;
-    left: 0;
-    padding: 5px 10px;
-    outline: none;
-    background: transparent;
-    color: #27aede;
-    border: none;
+.stack-precontent .col-1 {
+    padding: 0;
 }
 
 /* @end */
@@ -110,12 +160,24 @@
         height: 136px;
     }
 
+    .stack-navigation {
+        padding: 0 325px 0 130px;
+    }
+
     /* @end */
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
     /* @group Header */
+    .stack-preheader {
+        background: transparent;
+        position: static;
+    }
+
+    .stack-navigation {
+        min-height: 80px;
+    }
 
     /* @end */
 }
