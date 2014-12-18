@@ -149,7 +149,7 @@
 }
 
 .slide-content hr {
-    border-top: solid #fff;
+    border: solid #fff;
     border-width: 3px 0 0;
     margin: 20px auto;
     max-width: 155px;
