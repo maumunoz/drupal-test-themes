@@ -1,0 +1,69 @@
+/* @group Galeria empotrada */
+
+.galeria-chicas-aguila {
+    padding: 0 20px;
+    max-width: 1250px;
+}
+
+.galeria-chicas-aguila .view-header h3 {
+    font-family: ITCAvantGardePro, Helvetica, Arial, sans-serif;
+    font-size: 157%;
+    font-weight: 300;
+    color: #3e3e3e;
+}
+
+.galeria-chicas-aguila .view-header strong {
+    font-weight: 700;
+    color: #29c7fc;
+}
+
+.galeria-chicas-aguila .media_gallery-header,
+.galeria-chicas-aguila .meta-wrapper {
+    display: none;
+}
+
+.galeria-chicas-aguila .media-gallery-media .media-gallery-item-wrapper {
+    margin: 0;
+    max-height: 295px;
+    overflow: hidden;
+}
+
+/* @end */
+
+/* @group Media Query */
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+    .galeria-chicas-aguila {
+        padding: 0 30px
+    }
+
+    .galeria-chicas-aguila .view-header h3 {
+        font-size: 200%;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    .galeria-chicas-aguila .view-header h3 {
+        font-size: 257%;
+        padding-left: 55px;
+        padding-bottom: 20px;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+/* @end */

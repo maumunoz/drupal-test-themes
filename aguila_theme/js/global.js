@@ -70,6 +70,9 @@ moment.locale('es');
     Drupal.sidebarTarget = $('#block-views-banner-cervezas-block');
     Drupal.sidebarTargetPosition = 'before';
 
+    //Disable login for ajax.
+    Drupal.settings.gardensFeatures.dialogUserEnabled = false;
+
     $.mapsLoaded = $.Deferred();
     window.initMaps = function () {
         $.mapsLoaded.resolve();
