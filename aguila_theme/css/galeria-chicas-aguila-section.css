@@ -1,8 +1,8 @@
 /* @group Galeria empotrada */
 
 .galeria-chicas-aguila {
-    padding: 0 20px;
-    max-width: 1250px;
+    padding: 0 20px 20px;
+    max-width: 1180px;
 }
 
 .galeria-chicas-aguila .view-header h3 {
@@ -28,6 +28,10 @@
     overflow: hidden;
 }
 
+.galeria-chicas-aguila .mg-col {
+    margin: 0;
+}
+
 /* @end */
 
 /* @group Media Query */
@@ -40,7 +44,7 @@
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
     .galeria-chicas-aguila {
-        padding: 0 30px
+        padding: 0 30px 40px 30px;
     }
 
     .galeria-chicas-aguila .view-header h3 {
@@ -64,6 +68,8 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
-
+    .galeria-chicas-aguila {
+        padding: 0 0 80px 0;
+    }
 }
 /* @end */
