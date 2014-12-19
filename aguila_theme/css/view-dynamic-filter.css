@@ -9,6 +9,8 @@
 .view-dynamic-filter,
 .view-dynamic-filter .view-content ul {
     min-height: 55px;
+    height:auto !important; /* IE8 Fix */
+    height: 55px; /* IE8 Fix */
 }
 
 .view-dynamic-filter,
@@ -110,6 +112,10 @@
     box-shadow: none;
 }
 
+.view-dynamic-filter .btn-symbol-geo {
+    background-position: -5px -86px;
+}
+
 /* @end */
 
 /* @group Media Query */
@@ -131,7 +137,7 @@
     }
 
     .view-dynamic-filter .view-content ul {
-        padding: 5px 18px 10px 18px;
+        padding: 5px 15px 10px 15px;
     }
 
     .view-dynamic-filter .views-row > div > p {
@@ -160,15 +166,16 @@
     .view-dynamic-filter .views-row > div > ul + p {
         float: right;
         width: 25%;
-        padding: 9px 20px 0 0;
+        padding: 9px 18px 0 0;
     }
 
     .view-dynamic-filter .btn-symbol-geo {
         padding: 0 18px;
         min-height: 37px;
+        height:auto !important; /* IE8 Fix */
+        height: 37px; /* IE8 Fix */
         background-position: -2px -83px;
     }
-
 }
 
 /* Medium Devices, Desktops */
@@ -176,12 +183,14 @@
 
     .view-dynamic-filter {
         font-size: 114%;
-        margin: 0 0 40px 0 !important;
+        margin: 0 0 40px !important;
     }
 
     .view-dynamic-filter,
     .view-dynamic-filter .view-content ul {
         min-height: 71px;
+        height:auto !important; /* IE8 Fix */
+        height: 71px; /* IE8 Fix */
     }
 
     .view-dynamic-filter .views-row > div > p {
@@ -193,21 +202,20 @@
     }
 
     .view-dynamic-filter .views-row > div > ul + p {
-        padding: 16px 20px 0 0;
+        padding: 16px 18px 0 0;
     }
 
     .view-dynamic-filter .view-content .filter {
-        padding: 8px 20px;
+        padding: 8px 18px;
     }
 
     .view-dynamic-filter .view-content .btn-symbol.filter {
-        padding: 8px 20px 8px 40px;
+        padding: 8px 18px 8px 40px;
     }
 
     .view-dynamic-filter .views-row > div > ul + p .btn {
         margin-right: 24px;
     }
-
 }
 
 /* Large Devices, Wide Screens */
@@ -215,23 +223,22 @@
 
     .view-dynamic-filter .views-row > div > p {
         float: left;
-        padding: 25px 18px 0 18px;
+        padding: 25px 18px 0;
         width: 17%;
     }
 
     .view-dynamic-filter .view-content ul {
         padding: 14px 0 10px 28px;
         float: left;
-        width: 75%;
+        width: 80%;
     }
 
     .view-dynamic-filter .view-content div > p + ul {
-        padding: 14px 0 10px 0;
+        padding: 14px 0 10px;
     }
 
     .view-dynamic-filter .views-row > div > ul + p {
-        width: 22%;
+        width: 20%;
     }
-
 }
 /* @end */
