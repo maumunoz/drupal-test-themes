@@ -90,8 +90,7 @@ Dubiel Italic:  font-style: italic | font-weight: normal
 @font-face {
     font-family: 'Dubiel';
     src: url('../fonts/dubiel/dubiel_italic/DubielItalic-webfont.eot');
-    src: url('../fonts/dubiel/dubiel_italic/DubielItalic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/dubiel/dubiel_italic/DubielItalic-webfont.woff') format('woff'),
+    src: url('../fonts/dubiel/dubiel_italic/DubielItalic-webfont.woff') format('woff'),
          url('../fonts/dubiel/dubiel_italic/DubielItalic-webfont.ttf') format('truetype'),
          url('../fonts/dubiel/dubiel_italic/DubielItalic-webfont.svg#dubielitalic') format('svg');
     font-weight: normal;
@@ -106,36 +105,33 @@ ITCAvantGardePro Bold:    font-style: normal | font-weight: 700
 */
 @font-face {
     font-family: 'ITCAvantGardePro';
-    src: url('../fonts/itcavantgardepro/itcavantgardepro-bk.eot');
-    src: url('../fonts/itcavantgardepro/itcavantgardepro-bk.eot?#iefix') format('embedded-opentype'),
+    src: url('../fonts/itcavantgardepro/itcavantgardepro-bk.eot') format('embedded-opentype');
+    src: url('../fonts/itcavantgardepro/itcavantgardepro-bk.woff') format('woff'),
          url('../fonts/itcavantgardepro/itcavantgardepro-bk.woff2') format('woff2'),
-         url('../fonts/itcavantgardepro/itcavantgardepro-bk.woff') format('woff'),
          url('../fonts/itcavantgardepro/itcavantgardepro-bk.ttf') format('truetype'),
-         url('../fonts/itcavantgardepro/itcavantgardepro-bk.svg#ITCAvantGardeGothicProBook') format('svg');
+         url('../fonts/itcavantgardepro/itcavantgardepro-bk.svg') format('svg');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'ITCAvantGardePro';
-    src: url('../fonts/itcavantgardepro/itcavantgardepro.eot');
-    src: url('../fonts/itcavantgardepro/itcavantgardepro.eot?#iefix') format('embedded-opentype'),
+    src: url('../fonts/itcavantgardepro/itcavantgardepro.eot') format('embedded-opentype');
+    src: url('../fonts/itcavantgardepro/itcavantgardepro.woff') format('woff'),
          url('../fonts/itcavantgardepro/itcavantgardepro.woff2') format('woff2'),
-         url('../fonts/itcavantgardepro/itcavantgardepro.woff') format('woff'),
          url('../fonts/itcavantgardepro/itcavantgardepro.ttf') format('truetype'),
-         url('../fonts/itcavantgardepro/itcavantgardepro.svg#ITCAvantGardeGothicProDemi') format('svg');
+         url('../fonts/itcavantgardepro/itcavantgardepro.svg') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'ITCAvantGardePro';
-    src: url('../fonts/itcavantgardepro/itcavantgardepro-bold.eot');
-    src: url('../fonts/itcavantgardepro/itcavantgardepro-bold.eot?#iefix') format('embedded-opentype'),
+    src: url('../fonts/itcavantgardepro/itcavantgardepro-bold.eot') format('embedded-opentype');
+    src: url('../fonts/itcavantgardepro/itcavantgardepro-bold.woff') format('woff'),
          url('../fonts/itcavantgardepro/itcavantgardepro-bold.woff2') format('woff2'),
-         url('../fonts/itcavantgardepro/itcavantgardepro-bold.woff') format('woff'),
          url('../fonts/itcavantgardepro/itcavantgardepro-bold.ttf') format('truetype'),
-         url('../fonts/itcavantgardepro/itcavantgardepro-bold.svg#ITCAvantGardeGothicProBold') format('svg');
+         url('../fonts/itcavantgardepro/itcavantgardepro-bold.svg') format('svg');
     font-weight: 700;
     font-style: normal;
 }
