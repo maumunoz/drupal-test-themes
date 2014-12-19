@@ -1,0 +1,54 @@
+/* @group Footer */
+
+.wrapper-footer .stack.stack-footer-inner {
+    height: 70px;
+    padding: 0;
+    background-color: #004a98;
+}
+
+/* Font has to be updated to Proxima Nova */
+.stack-footer-inner .col-second .menu {
+    font-family: 'proxima-nova', 'Helvetica', sans-serif;
+    font-weight: bold;
+    color: #fff;
+}
+
+.stack-footer-inner .col-second a {
+    color: #fff;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.stack-footer-inner .col-second a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+
+/* @end */
+
+
+/* @group Media Query */
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    /* @group Footer */
+
+    /* @end */
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    /* @group Footer */
+
+    /* @end */
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    /* @group Footer */
+
+    /* @end */
+}
+
+/* @end */

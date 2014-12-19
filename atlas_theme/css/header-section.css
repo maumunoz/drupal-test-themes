@@ -19,8 +19,6 @@
     z-index: 150;
 }
 
-
-
 .stack-preheader .site-name a {
     display: inline-block;
     width: 56px;
@@ -44,11 +42,16 @@
     margin-left: 9px;
 }
 
+#preheader-second-region .block-social-media li:first-child {
+    margin-left: 0;
+}
+
 .stack-preheader .col-second #search-block-form {
     display: none;
     position: relative;
     margin-top: 0;
     margin-bottom: 5px;
+    margin-right: 5px
 }
 
 .stack-preheader .col-second .form-text {
@@ -116,7 +119,8 @@
     text-transform: uppercase;
 }
 
-.stack-navigation .menu.pulldown .menu {
+.stack-navigation #block-system-main-menu ul.menu ul{
+    background-color: #004a98;
     text-transform: none;
     border-radius: 0;
 }
@@ -124,7 +128,20 @@
 .stack-navigation .menu .level-1,
 .stack-navigation .menu .level-1.first {
     padding: 0;
-    padding: 0 20px 0 0;
+    padding: 0 20px 5px 0;
+}
+
+.stack-navigation .menu .level-1 > a {
+    border-bottom: 1px solid transparent;
+    -webkit-transition: border-bottom-color 0.3s;
+    -moz-transition: border-bottom-color 0.3s;
+    -o-transition: border-bottom-color 0.3s;
+    transition: border-bottom-color 0.3s;
+}
+
+.stack-navigation .menu .level-1 > a:hover {
+    text-decoration: none;
+    border-bottom-color: #e0e1e2;
 }
 
 .stack-navigation .menu .level-2 {
@@ -138,14 +155,14 @@
 .stack-navigation .menu .level-2 a:hover {
     text-decoration: none;
     color: #ccc;
-    -webkit-transition: color .3s;
-    -moz-transition: color .3s;
-    -o-transition: color .3s;
-    transition: color .3s;
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    -o-transition: color 0.3s;
+    transition: color 0.3s;
 }
 
 .stack-navigation .menu a {
-    font-family: "Oswald";
+    font-family: 'Oswald', sans-serif;
     font-size: 17px;
     color: #fff;
 }
@@ -170,7 +187,7 @@
 }
 
 .toolbar .stack.stack-precontent {
-    top: 
+    top: 125px;
 }
 
 /* @end */
@@ -222,9 +239,17 @@
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
     /* @group Header */
-    stack-navigation #block-system-main-menu ul.menu.pulldown {
+
+    /* @end */
+}
+
+/* Special size for navigation */
+@media only screen and (min-width : 1240px) {
+    /* @group Header */
+    .stack-navigation #block-system-main-menu ul.menu.pulldown {
         padding: 27px 0 0 0;
     }
     /* @end */
 }
+
 /* @end */
