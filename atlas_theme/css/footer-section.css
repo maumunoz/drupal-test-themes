@@ -1,0 +1,33 @@
+/* @group Footer */
+
+.stack-footer-inner {
+    background-color: #004a98;
+}
+
+/* @end */
+
+
+/* @group Media Query */
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    /* @group Footer */
+
+    /* @end */
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    /* @group Footer */
+
+    /* @end */
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    /* @group Footer */
+
+    /* @end */
+}
+
+/* @end */
