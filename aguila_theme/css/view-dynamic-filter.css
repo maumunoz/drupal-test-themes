@@ -9,6 +9,8 @@
 .view-dynamic-filter,
 .view-dynamic-filter .view-content ul {
     min-height: 55px;
+    height:auto !important; /* IE8 Fix */
+    height: 55px; /* IE8 Fix */
 }
 
 .view-dynamic-filter,
@@ -170,6 +172,8 @@
     .view-dynamic-filter .btn-symbol-geo {
         padding: 0 18px;
         min-height: 37px;
+        height:auto !important; /* IE8 Fix */
+        height: 37px; /* IE8 Fix */
         background-position: -2px -83px;
     }
 }
@@ -185,6 +189,8 @@
     .view-dynamic-filter,
     .view-dynamic-filter .view-content ul {
         min-height: 71px;
+        height:auto !important; /* IE8 Fix */
+        height: 71px; /* IE8 Fix */
     }
 
     .view-dynamic-filter .views-row > div > p {
