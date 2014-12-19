@@ -367,7 +367,8 @@ Retina Display Condensed Black:    font-style: normal | font-weight: 900
 .view-futbol-destacados,
 .node-page[about="/chicas-aguila"] .field-items,
 .descripcion-chicas-aguila .views-field-body,
-.galeria-chicas-aguila {
+.galeria-chicas-aguila,
+.calendario-chicas-aguila {
     position: relative;
     margin: 0 auto;
     padding: 0;
