@@ -105,51 +105,37 @@ ITCAvantGardePro Bold:    font-style: normal | font-weight: 700
 */
 @font-face {
     font-family: 'ITCAvantGardePro';
-    src: url('../fonts/itcavantgardepro/ITCAvantGardePro-Bk.eot') format('embedded-opentype');
-    src: url('../fonts/itcavantgardepro/ITCAvantGardePro-Bk.woff') format('woff'),
-         url('../fonts/itcavantgardepro/ITCAvantGardePro-Bk.woff2') format('woff2'),
-         url('../fonts/itcavantgardepro/ITCAvantGardePro-Bk.ttf') format('truetype'),
-         url('../fonts/itcavantgardepro/ITCAvantGardePro-Bk.svg') format('svg');
+    src: url('../fonts/itcavantgardepro/itcavantgardepro-bk.eot') format('embedded-opentype');
+    src: url('../fonts/itcavantgardepro/itcavantgardepro-bk.woff') format('woff'),
+         url('../fonts/itcavantgardepro/itcavantgardepro-bk.woff2') format('woff2'),
+         url('../fonts/itcavantgardepro/itcavantgardepro-bk.ttf') format('truetype'),
+         url('../fonts/itcavantgardepro/itcavantgardepro-bk.svg') format('svg');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'ITCAvantGardePro';
-    src: url('../fonts/itcavantgardepro/ITCAvantGardePro.eot') format('embedded-opentype');
-    src: url('../fonts/itcavantgardepro/ITCAvantGardePro.woff') format('woff'),
-         url('../fonts/itcavantgardepro/ITCAvantGardePro.woff2') format('woff2'),
-         url('../fonts/itcavantgardepro/ITCAvantGardePro.ttf') format('truetype'),
-         url('../fonts/itcavantgardepro/ITCAvantGardePro.svg') format('svg');
+    src: url('../fonts/itcavantgardepro/itcavantgardepro.eot') format('embedded-opentype');
+    src: url('../fonts/itcavantgardepro/itcavantgardepro.woff') format('woff'),
+         url('../fonts/itcavantgardepro/itcavantgardepro.woff2') format('woff2'),
+         url('../fonts/itcavantgardepro/itcavantgardepro.ttf') format('truetype'),
+         url('../fonts/itcavantgardepro/itcavantgardepro.svg') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'ITCAvantGardePro';
-    src: url('../fonts/itcavantgardepro/ITCAvantGardePro-Bold.eot') format('embedded-opentype');
-    src: url('../fonts/itcavantgardepro/ITCAvantGardePro-Bold.woff') format('woff'),
-         url('../fonts/itcavantgardepro/ITCAvantGardePro-Bold.woff2') format('woff2'),
-         url('../fonts/itcavantgardepro/ITCAvantGardePro-Bold.ttf') format('truetype'),
-         url('../fonts/itcavantgardepro/ITCAvantGardePro-Bold.svg') format('svg');
-    font-weight: 700;
-    font-style: normal;
-}
-
-
-/*
-@font-face {
-    font-family: 'ITCAvantGardePro';
-    src: url('../fonts/itcavantgardepro/itcavantgardepro-bold.eot');
-    src: url('../fonts/itcavantgardepro/itcavantgardepro-bold.eot?#iefix') format('embedded-opentype'),
+    src: url('../fonts/itcavantgardepro/itcavantgardepro-bold.eot') format('embedded-opentype');
+    src: url('../fonts/itcavantgardepro/itcavantgardepro-bold.woff') format('woff'),
          url('../fonts/itcavantgardepro/itcavantgardepro-bold.woff2') format('woff2'),
-         url('../fonts/itcavantgardepro/itcavantgardepro-bold.woff') format('woff'),
          url('../fonts/itcavantgardepro/itcavantgardepro-bold.ttf') format('truetype'),
-         url('../fonts/itcavantgardepro/itcavantgardepro-bold.svg#ITCAvantGardeGothicProBold') format('svg');
+         url('../fonts/itcavantgardepro/itcavantgardepro-bold.svg') format('svg');
     font-weight: 700;
     font-style: normal;
 }
-*/
+
 /* Lavanderia */
 /*
 Lavanderia Regular: font-style: normal | font-weight: normal
