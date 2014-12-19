@@ -35,6 +35,7 @@ stylesheets[all][] = 'css/destacados-futbol-section.css'
 stylesheets[all][] = 'css/galeria-chicas-aguila-section.css'
 stylesheets[all][] = 'css/calendario-chicas-aguila-section.css'
 stylesheets[all][] = 'css/banner-cerveza-aguila.css'
+stylesheets[all][] = 'css/user-pages.css'
 
 regions[page_top] = 'Above page'
 regions[preheader_first] = 'Preheader first'
