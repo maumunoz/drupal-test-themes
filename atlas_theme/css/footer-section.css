@@ -10,6 +10,21 @@
     padding: 0;
 }
 
+#footer .col-2 .col.col-first,
+#footer .col-2 .col.col-second {
+    width: 100%;
+    text-align: center;
+}
+
+#footer .col-2 .col.col-first {
+    margin: 14px 0 0 0;
+    min-height: 0 !important; /*to override javascript*/
+}
+
+.stack-footer-inner .col-first .block ul {
+    padding-left: 0;
+}
+
 /* Font has to be updated to Proxima Nova */
 .stack-footer-inner .col-second .menu {
     font-family: 'proxima-nova', 'Helvetica', sans-serif;
@@ -17,16 +32,24 @@
     color: #fff;
 }
 
-.stack-footer-inner .col-2 .col-first {
-    padding: 14px 0 0 40px;
-}
-
 .stack-footer-inner .col-second {
-    padding: 5px 17px 0 0;
+    margin: 5px 0 0 0;
 }
 
 .stack-footer-inner .col-second .block-menu {
-    padding: 7px 21px 0 0;
+    padding: 7px 0 0 0;
+}
+
+.stack-footer-inner .col-second .block-menu .content {
+    text-align: center;
+}
+
+.stack-footer-inner .col-second .block-menu .menu {
+    display: inline-block;
+}
+
+.stack-footer-inner .col-second .media-thumbnail-frame {
+    text-align: center;
 }
 
 .stack-footer-inner .col-second a {
@@ -38,6 +61,10 @@
 .stack-footer-inner .col-second a:hover {
     color: #000;
     text-decoration: none;
+}
+
+.stack-footer-inner .col-second .region-footer-second div {
+    display: block;
 }
 
 /* @end */
@@ -60,13 +87,61 @@
         width: 100%;
         bottom: 0;
     }
+
+    #footer .col-2 .col.col-first,
+    #footer .col-2 .col.col-second {
+        width: 49%;
+        text-align: left;
+    }
+
+    .stack-footer-inner .col-first .block ul {
+        padding-left: 59px;
+    }
+
+    .stack-footer-inner .col-second {
+        margin-right: 17px;
+    }
+
+    .stack-footer-inner .col-second .region-footer-second div {
+        display: inline-block;
+    }
+
+    .stack-footer-inner .col-second .block-menu .content {
+        text-align: left;
+    }
+
+    .stack-footer-inner .col-second .block-menu .menu {
+        display: block;
+    }
+
+    .stack-footer-inner .col-second .block-menu li:last-child {
+        padding-right: 0;
+    }
+
+    .stack-footer-inner .col-second .media-thumbnail-frame {
+        text-align: right;
+    }
     /* @end */
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
     /* @group Footer */
+    #footer .col-2 .col.col-first {
+        width: 39%;
+    }
 
+    #footer .col-2 .col.col-second {
+        width: 59%;
+    }
+
+    .stack-footer-inner .col-second .block-menu {
+        padding: 7px 21px 0 0;
+    }
+
+    .stack-footer-inner .col-second .block-menu li:last-child {
+        padding-right: 10px;
+    }
     /* @end */
 }
 
