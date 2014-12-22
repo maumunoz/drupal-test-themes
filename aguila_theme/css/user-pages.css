@@ -4,13 +4,115 @@
     margin: 30px auto;
 }
 
+.page-user .content-area .login-top,
+.page-user .content-area form,
+.page-user .content-area .login-bottom {
+    position: relative;
+    padding: 5px 10px;
+}
+
+.page-user .content-area .login-top p {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #5c5c5c;
+    text-align: center;
+}
+
+.page-user .content-area form .form-item,
+.page-user .content-area form .form-action {
+    margin: 0;
+    padding: 5px 0;
+}
+
 .page-user .content-area form label {
     display: block;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    color: #5c5c5c;
 }
 
 .page-user .content-area form input.form-text {
-    background-color: #F3F4F9;
+    display: block;
+    height: 46px;
+    width: 100% !important;
     padding: 12px;
+    border: 1px solid #e7e7e7;
+    background-color: #F3F4F9;
+    box-shadow: none;
+}
+
+.page-user .content-area form .submit-button-wrapper {
+    border: none;
+    box-shadow: none;
+}
+
+.page-user .content-area form .form-navigation-wrapper,
+.page-user .content-area form#user-login h3 {
+    display: none;
+}
+
+.form-submit {
+
+}
+
+.page-user .content-area .login-bottom p,
+.page-user .content-area .login-bottom a {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    color: #5c5c5c;
+    text-align: center;
+}
+
+.page-user .content-area .login-bottom a {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.page-user .content-area form .form-submit,
+.page-user .content-area .login-bottom .btn {
+    background: #ffd800;
+    color: #000;
+    display: inline-block;
+    font-family: "Retina Display Condensed",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: normal;
+    line-height: 1.2;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 0;
+    text-shadow: none;
+}
+
+.page-user .content-area .divider-section {
+    position: relative;
+    text-align: center;
+}
+
+.page-user .content-area .divider-section p {
+    display: inline-block;
+    padding: 0 20px;
+    font-family: "Retina Display Condensed", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #a6a6a6;
+    background-color: #fff;
+}
+
+.page-user .content-area .divider-section .line {
+    border-bottom: 1px solid #c3c3c3;
+    display: block;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    z-index: -1;
 }
 
 /* @end */
@@ -31,6 +133,7 @@
 @media only screen and (min-width : 768px) {
     .page-user .content-area {
         margin: 50px auto;
+        max-width: 630px;
     }
 }
 
