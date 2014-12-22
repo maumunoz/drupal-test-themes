@@ -3,7 +3,7 @@
 .stack-preheader {
     position: fixed;
     width: 100%;
-    height: 15px;
+    height: 0;
     z-index: 200;
     background-color: transparent;
 }
@@ -116,7 +116,7 @@
     margin: 0;
     border: 0;
     background-color: transparent;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
 
 .stack-navigation #block-system-main-menu ul.menu ul{
@@ -161,10 +161,16 @@
     transition: color 0.3s;
 }
 
-.stack-navigation .menu a {
+.stack-navigation .menu a,
+.sb-slidebar a {
     font-family: 'Oswald', sans-serif;
     font-size: 17px;
+    text-transform: uppercase;
     color: #fff;
+}
+
+.sb-slidebar {
+    background-color: #004a98;
 }
 
 .stack.stack-precontent {
@@ -182,12 +188,32 @@
     padding: 0;
 }
 
-.toolbar .stack-navigation {
-    top: auto;
+.toolbar .stack-navigation,
+.toolbar .stack-preheader .col-first,
+.toolbar .stack-preheader .col-second {
+    top: 120px;
+}
+
+.toolbar.toolbar-drawer .stack-navigation,
+.toolbar.toolbar-drawer .stack-preheader .col-first,
+.toolbar.toolbar-drawer .stack-preheader .col-second {
+    top: 154px;
 }
 
 .toolbar .stack.stack-precontent {
-    top: 125px;
+    top: 200px;
+}
+
+.toolbar.toolbar-drawer .stack.stack-precontent {
+    top: 244px;
+}
+
+.toolbar .sb-slidebar {
+    padding-top: 120px;
+}
+
+.toolbar.toolbar-drawer .sb-slidebar {
+    padding-top: 154px;
 }
 
 /* @end */
@@ -213,6 +239,26 @@
         padding: 16px 71px 0 0;
     }
 
+    .toolbar .stack-navigation,
+    .toolbar .stack-preheader .col-first,
+    .toolbar .stack-preheader .col-second {
+        top: 90px;
+    }
+
+    .toolbar.toolbar-drawer .stack-navigation,
+    .toolbar.toolbar-drawer .stack-preheader .col-first,
+    .toolbar.toolbar-drawer .stack-preheader .col-second {
+        top: 124px;
+    }
+
+    .toolbar .stack.stack-precontent {
+        top: 170px;
+    }
+
+    .toolbar.toolbar-drawer .stack.stack-precontent {
+        top: 214px;
+    }
+
     /* @end */
 }
 
@@ -232,6 +278,25 @@
         display: block;
     }
 
+    .toolbar .stack-navigation,
+    .toolbar .stack-preheader .col-first,
+    .toolbar .stack-preheader .col-second {
+        top: 30px;
+    }
+
+    .toolbar.toolbar-drawer .stack-navigation,
+    .toolbar.toolbar-drawer .stack-preheader .col-first,
+    .toolbar.toolbar-drawer .stack-preheader .col-second {
+        top: 64px;
+    }
+
+    .toolbar .stack.stack-precontent {
+        top: 110px;
+    }
+
+    .toolbar.toolbar-drawer .stack.stack-precontent {
+        top: 144px;
+    }
 
     /* @end */
 }
