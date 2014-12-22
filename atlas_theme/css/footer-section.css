@@ -2,7 +2,7 @@
 
 .wrapper-footer .stack.stack-footer-inner {
     min-height: 70px;
-    padding: 0;
+    padding: 0 0 23px 0;
     background-color: #004a98;
 }
 
@@ -17,12 +17,16 @@
 }
 
 #footer .col-2 .col.col-first {
-    margin: 14px 0 0 0;
+    margin: 22px 0 0 0;
     min-height: 0 !important; /*to override javascript*/
 }
 
 .stack-footer-inner .col-first .block ul {
     padding-left: 0;
+}
+
+.stack-footer-inner .col-first li:first-child {
+    padding-right: 32px;
 }
 
 /* Font has to be updated to Proxima Nova */
@@ -33,7 +37,7 @@
 }
 
 .stack-footer-inner .col-second {
-    margin: 5px 0 0 0;
+    margin: 0;
 }
 
 .stack-footer-inner .col-second .block-menu {
@@ -88,18 +92,25 @@
         bottom: 0;
     }
 
-    #footer .col-2 .col.col-first,
+   /* #footer .col-2 .col.col-first,
     #footer .col-2 .col.col-second {
         width: 49%;
         text-align: left;
+    }*/
+
+    #footer .col-2 .col.col-first {
+        width: 54%;
+        text-align: left;
+    }
+
+    #footer .col-2 .col.col-second {
+        width: 44%;
+        text-align: right;
+        padding: 14px 39px 0 0;
     }
 
     .stack-footer-inner .col-first .block ul {
-        padding-left: 59px;
-    }
-
-    .stack-footer-inner .col-second {
-        margin-right: 17px;
+        padding-left: 82px;
     }
 
     .stack-footer-inner .col-second .region-footer-second div {
@@ -128,15 +139,15 @@
 @media only screen and (min-width : 1200px) {
     /* @group Footer */
     #footer .col-2 .col.col-first {
-        width: 39%;
+        width: 44%;
     }
 
     #footer .col-2 .col.col-second {
-        width: 59%;
+        width: 54%;
     }
 
     .stack-footer-inner .col-second .block-menu {
-        padding: 7px 21px 0 0;
+        padding: 5px 12px 0 0;
     }
 
     .stack-footer-inner .col-second .block-menu li:last-child {
