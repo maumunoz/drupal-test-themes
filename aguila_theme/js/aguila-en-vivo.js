@@ -17,7 +17,7 @@ window.arr_monthnames = [ "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
         });
         
         
-        jQuery("#tr1").dzscalendar({});
+        jQuery("#tr1").dzscalendar({ settings_alwaysinclude6rows: "on" });
     });
     
     
