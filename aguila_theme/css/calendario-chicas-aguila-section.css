@@ -487,10 +487,7 @@
         border-left-color: #ffd800 !important;
     }
 
-    .calendar-calendar .single-day .view-item .cutoff {
-        display: none !important;
-    }
-
+    .calendar-calendar .single-day .view-item .cutoff,
     .calendar-calendar td.evento-selected.single-day .view-item .cutoff {
         display: block !important;
     }
