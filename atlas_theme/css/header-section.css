@@ -3,7 +3,7 @@
 .stack-preheader {
     position: fixed;
     width: 100%;
-    height: 15px;
+    height: 0;
     z-index: 200;
     background-color: transparent;
 }
@@ -18,8 +18,6 @@
     width: auto;
     z-index: 150;
 }
-
-
 
 .stack-preheader .site-name a {
     display: inline-block;
@@ -44,11 +42,16 @@
     margin-left: 9px;
 }
 
+#preheader-second-region .block-social-media li:first-child {
+    margin-left: 0;
+}
+
 .stack-preheader .col-second #search-block-form {
     display: none;
     position: relative;
     margin-top: 0;
     margin-bottom: 5px;
+    margin-right: 5px
 }
 
 .stack-preheader .col-second .form-text {
@@ -113,10 +116,11 @@
     margin: 0;
     border: 0;
     background-color: transparent;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
 
-.stack-navigation .menu.pulldown .menu {
+.stack-navigation #block-system-main-menu ul.menu ul{
+    background-color: #004a98;
     text-transform: none;
     border-radius: 0;
 }
@@ -124,7 +128,20 @@
 .stack-navigation .menu .level-1,
 .stack-navigation .menu .level-1.first {
     padding: 0;
-    padding: 0 20px 0 0;
+    padding: 0 20px 5px 0;
+}
+
+.stack-navigation .menu .level-1 > a {
+    border-bottom: 1px solid transparent;
+    -webkit-transition: border-bottom-color 0.3s;
+    -moz-transition: border-bottom-color 0.3s;
+    -o-transition: border-bottom-color 0.3s;
+    transition: border-bottom-color 0.3s;
+}
+
+.stack-navigation .menu .level-1 > a:hover {
+    text-decoration: none;
+    border-bottom-color: #e0e1e2;
 }
 
 .stack-navigation .menu .level-2 {
@@ -138,16 +155,22 @@
 .stack-navigation .menu .level-2 a:hover {
     text-decoration: none;
     color: #ccc;
-    -webkit-transition: color .3s;
-    -moz-transition: color .3s;
-    -o-transition: color .3s;
-    transition: color .3s;
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    -o-transition: color 0.3s;
+    transition: color 0.3s;
 }
 
-.stack-navigation .menu a {
-    font-family: "Oswald";
+.stack-navigation .menu a,
+.sb-slidebar a {
+    font-family: 'Oswald', sans-serif;
     font-size: 17px;
+    text-transform: uppercase;
     color: #fff;
+}
+
+.sb-slidebar {
+    background-color: #004a98;
 }
 
 .stack.stack-precontent {
@@ -165,12 +188,32 @@
     padding: 0;
 }
 
-.toolbar .stack-navigation {
-    top: auto;
+.toolbar .stack-navigation,
+.toolbar .stack-preheader .col-first,
+.toolbar .stack-preheader .col-second {
+    top: 120px;
+}
+
+.toolbar.toolbar-drawer .stack-navigation,
+.toolbar.toolbar-drawer .stack-preheader .col-first,
+.toolbar.toolbar-drawer .stack-preheader .col-second {
+    top: 154px;
 }
 
 .toolbar .stack.stack-precontent {
-    top: 
+    top: 200px;
+}
+
+.toolbar.toolbar-drawer .stack.stack-precontent {
+    top: 244px;
+}
+
+.toolbar .sb-slidebar {
+    padding-top: 120px;
+}
+
+.toolbar.toolbar-drawer .sb-slidebar {
+    padding-top: 154px;
 }
 
 /* @end */
@@ -196,6 +239,26 @@
         padding: 16px 71px 0 0;
     }
 
+    .toolbar .stack-navigation,
+    .toolbar .stack-preheader .col-first,
+    .toolbar .stack-preheader .col-second {
+        top: 90px;
+    }
+
+    .toolbar.toolbar-drawer .stack-navigation,
+    .toolbar.toolbar-drawer .stack-preheader .col-first,
+    .toolbar.toolbar-drawer .stack-preheader .col-second {
+        top: 124px;
+    }
+
+    .toolbar .stack.stack-precontent {
+        top: 170px;
+    }
+
+    .toolbar.toolbar-drawer .stack.stack-precontent {
+        top: 214px;
+    }
+
     /* @end */
 }
 
@@ -215,6 +278,25 @@
         display: block;
     }
 
+    .toolbar .stack-navigation,
+    .toolbar .stack-preheader .col-first,
+    .toolbar .stack-preheader .col-second {
+        top: 30px;
+    }
+
+    .toolbar.toolbar-drawer .stack-navigation,
+    .toolbar.toolbar-drawer .stack-preheader .col-first,
+    .toolbar.toolbar-drawer .stack-preheader .col-second {
+        top: 64px;
+    }
+
+    .toolbar .stack.stack-precontent {
+        top: 110px;
+    }
+
+    .toolbar.toolbar-drawer .stack.stack-precontent {
+        top: 144px;
+    }
 
     /* @end */
 }
@@ -222,9 +304,17 @@
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
     /* @group Header */
-    stack-navigation #block-system-main-menu ul.menu.pulldown {
+
+    /* @end */
+}
+
+/* Special size for navigation */
+@media only screen and (min-width : 1240px) {
+    /* @group Header */
+    .stack-navigation #block-system-main-menu ul.menu.pulldown {
         padding: 27px 0 0 0;
     }
     /* @end */
 }
+
 /* @end */
