@@ -4,8 +4,70 @@
 
 .aguila .view-banner-cerveza {
 	background-size: cover;
-	background-position: center;
 	background-repeat: no-repeat;
+	background-position: 30%;
+	height: 350px;
+	
+}
+
+.aguila .views-field-field-texto-banner,
+.aguila .favoritos-content-type,
+.aguila .views-field-nothing span {
+	float: right;
+	clear: both;
+	width: 40%;
+}
+
+.aguila .favoritos-content-type-wrapper,
+.aguila .views-field-nothing span {
+	font-style: italic;
+	font-family: Dubiel, Georgia, Times, serif;
+	color: #000;
+}
+
+.aguila .views-field-nothing span {
+	font-size: 25px;
+	line-height: 1.5em;
+	padding: 0 0 0 20px;
+	margin: 23px 0 0;
+	background: url('../images/sprite-categories.png') -174px -205px no-repeat;
+}
+
+.aguila .views-field-field-texto-banner {
+	font: 700 27px/1em 'ITCAvantGardePro', Helvetica, Arial sans-serif;
+	color: #5f2d00;
+}
+
+.aguila .favoritos-content-type-wrapper {
+	font-size: 14px;
+}
+
+.aguila .favoritos-content-type-wrappe .flag-wrapper {
+	text-align: center;
+}
+
+.aguila .compartir {
+	width: 36%;
+	float: right;
+	clear: both;
+}
+
+.aguila .compartir span {
+	font: 600 14px 'Open Sans', Arial, sans-serif;
+}
+
+.aguila .compartir a {
+	padding: 0 0 0 16px;
+	text-indent: -1500px;
+	display: inline-block;
+}
+
+.aguila .compartir .twitter {
+	background: url('../images/sprite-social.png') -89px -92px no-repeat;
+}
+
+.aguila .compartir .facebook {
+	background: url('../images/sprite-social.png') -92px -130px no-repeat;
 }
 
 /* @group Media Query */
@@ -31,7 +93,7 @@
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
 
-	
+	background-position: center;
 
 }
 
