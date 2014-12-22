@@ -133,20 +133,31 @@
     width: 14.2% !important;
 }
 
-.calendar-calendar tr.date-box td,
-.calendar-calendar .month-view .full tr.date-box,
-.calendar-calendar .month-view .full tr.date-box td,
-.calendar-calendar .month-view .full tr.multi-day,
-.calendar-calendar .month-view .full tr.multi-day td {
+.calendar-calendar tr.date-box td .inner,
+.calendar-calendar .month-view .full tr.date-box .inner,
+.calendar-calendar .month-view .full tr.date-box td .inner {
     height: 35px !important;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+.calendar-calendar .month-view .full tr.date-box td {
+    height: 1px !important;
+    max-height: 1px !important;
+    padding: 0;
+    margin: 0;
+}
+
+.calendar-calendar tr.date-box td .inner {
     padding: 10px 14px 0;
 }
 
-.calendar-calendar tr.single-day td,
+.calendar-calendar tr.single-day td .inner,
 .calendar-calendar .month-view .full tr.single-day .no-entry,
 .calendar-calendar .month-view .full tr.single-day .no-entry .inner {
-    height: 95px !important;
-    overflow: hidden;
+    height: 121px !important;
 }
 
 .calendar-calendar .views-field-field-imagen img {
@@ -186,18 +197,228 @@
 }
 
 .calendar-calendar .month-view .full td,
-.calendar-calendar .week-view .full td,
-.calendar-calendar .day-view td,
-.calendar-calendar .month-view .full td.single-day div.monthview,
-.calendar-calendar .week-view .full td.single-day div.weekview,
-.calendar-calendar .day-view .full td.single-day div.dayview {
+.calendar-calendar .month-view .full td.single-day div.monthview {
     padding: 0;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
     background: none;
+    overflow: visible;
 }
 
+.calendar-calendar .month-view .full .amarillo {
+    background: #ffd800;
+}
+
+.calendar-calendar .evento-calendario-overlay {
+    background: #ffd800 !important;
+}
+
+.calendar-calendar .month-view .full .celeste {
+    background: #2cd5ff;
+}
+
+.calendar-calendar .month-view .full .blanco {
+
+}
+
+.calendar-calendar td.date-box.evento-selected {
+    background: #fff !important;
+    color: #fff !important;
+}
+
+.calendar-calendar td.evento-selected .selected-overlay {
+    display: none;
+    background: #fff !important;
+    position: absolute;
+    width: 100%;
+    height: 127px;
+    top: -5px;
+    left: 0;
+    z-index: 2;
+}
+
+.calendar-calendar td.evento-selected .selected-overlay {
+    display: block;
+}
+
+.calendar-calendar .evento-calendario {
+    text-align: center;
+}
+
+.amarillo .evento-calendario,
+.celeste .evento-calendario,
+.calendar-calendar .celeste .month.day {
+    color: #fff;
+}
+
+.blanco .evento-calendario {
+    color: #000;
+}
+
+.calendar-calendar .evento-calendario td.single-day,
+.calendar-calendar .month-view .full tr td.date-box {
+    position: relative;
+}
+
+.calendar-calendar .evento-calendario {
+    padding: 0 15px;
+}
+
+.calendar-calendar .evento-calendario td.single-day .div.monthview {
+    overflow: visible;
+}
+
+.evento-calendario .title em {
+    font-family: Dubiel, Georgia, Times, serif;
+    font-style: italic;
+}
+
+.evento-calendario .title strong {
+    font-family: 'ITCAvantGardePro', Helvetica, Arial sans-serif;
+    font-weight: 700;
+}
+
+.calendar-calendar .single-day .view-item .cutoff {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: -2px;
+    top: 35px;
+    background-image: url(../images/sprite.png) !important;
+    background-position: 100% -920px !important;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.calendar-calendar td.evento-selected.single-day .view-item .cutoff {
+    display: block !important;
+    left: 50%;
+    margin-left: -20px;
+    background-position: 0 -960px !important;
+    z-index: 3;
+}
+
+.calendar-calendar .evento-calendario-overlay {
+    overflow: visible;
+    position: absolute;
+    width: 200px;
+    bottom: 120%;
+    left: 50%;
+    z-index: 4;
+    margin-left: -100px !important;
+}
+
+.calendar-calendar .evento-calendario-overlay .box-arrow {
+    left: 50%;
+    bottom: -20px;
+    border: solid transparent !important;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(255, 216, 0, 0) !important;
+    border-top-color: #ffd800 !important;
+    border-left-color: transparent !important;
+    border-width: 10px !important;
+    margin-top: -10px;
+    margin-left: -10px;
+}
+
+.calendar-calendar .month-view .full td .inner div.calendar.monthview div.banner {
+    background-size: cover;
+    padding: 12px 20px;
+}
+
+.calendar-calendar td .inner div.calendar div.content {
+    padding: 15px 20px;
+}
+
+.calendar-calendar .evento-calendario-overlay .banner {
+    color: #fff;
+    font-family: 'ITCAvantGardePro', Helvetica, Arial sans-serif;
+}
+
+.calendar-calendar .evento-calendario-overlay .date {
+    font-size: 240%;
+    font-weight: 300;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid #8cdaf5;
+}
+
+.calendar-calendar .evento-calendario-overlay .title,
+.calendar-calendar .evento-calendario-overlay .title p {
+    margin: 0;
+    padding: 0;
+}
+
+.calendar-calendar .evento-calendario-overlay .title {
+    padding-top: 15px;
+}
+
+.calendar-calendar .evento-calendario-overlay em {
+    font-weight: 300;
+    font-size: 60%;
+    font-style: normal;
+}
+
+.calendar-calendar .evento-calendario-overlay strong {
+    font-weight: 700;
+    font-size: 83%;
+}
+
+.calendar-calendar .evento-calendario-overlay .content {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    color: #000;
+}
+
+.calendar-calendar .evento-calendario-overlay .description,
+.calendar-calendar .evento-calendario-overlay .place {
+    font-weight: 700;
+}
+
+.calendar-calendar .evento-calendario-overlay .description {
+    font-size: 140%;
+    line-height: 1.2;
+    padding: 0 0 6px 0 !important;
+    border-bottom: 1px solid #ccad00 !important;
+}
+
+.calendar-calendar .evento-calendario-overlay .description p {
+    padding: 0 0 13px 0;
+}
+
+.calendar-calendar .evento-calendario-overlay .place,
+.calendar-calendar .evento-calendario-overlay .time {
+    font-size: 120%;
+    padding: 15px 0 0 25px !important;
+    position: relative;
+}
+
+.chicas-aguila #main {
+    overflow: visible;
+}
+
+.calendar-calendar .evento-calendario-overlay .time:before,
+.calendar-calendar .evento-calendario-overlay .place:before {
+    content: ' ';
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background-image: url(../images/sprite.png);
+    background-position: 0 1000px;
+    top: 0;
+    left: -11px;
+}
+
+.calendar-calendar .evento-calendario-overlay .time:before {
+    background-position: 0 -1000px;
+}
+
+.calendar-calendar .evento-calendario-overlay .place:before {
+    background-position: 0 -1040px;
+}
 
 /* @end */
 
@@ -249,6 +470,26 @@
 
     .banner-calendario-chicas-aguila {
         min-height: 200px;
+    }
+
+    .calendar-calendar .evento-calendario-overlay {
+        top: -75px;
+        bottom: initial;
+        left: -160px;
+        margin-left: 0 !important
+    }
+
+    .calendar-calendar .evento-calendario-overlay .box-arrow {
+        left: 210px;
+        bottom: 50%;
+        border-color: rgba(255, 216, 0, 0) !important;
+        border-top-color: transparent !important;
+        border-left-color: #ffd800 !important;
+    }
+
+    .calendar-calendar .single-day .view-item .cutoff,
+    .calendar-calendar td.evento-selected.single-day .view-item .cutoff {
+        display: block !important;
     }
 
 }

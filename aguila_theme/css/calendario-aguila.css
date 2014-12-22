@@ -58,5 +58,8 @@
     border-radius: 20px;
 }
 
+.calendarContainer.dzscalendar .dzstooltip .map-info-window .event-date {
+    float: none;
+}
 
 /* @end */

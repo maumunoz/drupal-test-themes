@@ -107,6 +107,7 @@ projects where this is used - dzs calendar, dzs zoomsounds
   top: 100%; }
 
 /*====arrows position=*/
+/*
 .with-tooltip > .dzstooltip:before, .dzstooltip:before {
   border-color: rgba(194, 225, 245, 0);
   border-width: 6px; }
@@ -124,6 +125,7 @@ projects where this is used - dzs calendar, dzs zoomsounds
   border-top-color: #fafafa;
   left: 12.5px;
   margin-left: -2.5px; }
+*/
 
 .with-tooltip.arrow-left > span:first-child {
   box-shadow: 0 0 0 0; }

@@ -4,7 +4,6 @@
     background-color: #1b8ec4;
     border: none;
     width: 515px;
-    min-height: 489px;
     top: 20% !important;
 }
 
@@ -12,6 +11,10 @@
 #age_checker_verification_popup.aguila .media-thumbnail-frame {
     width: 100%;
     text-align: center;
+}
+
+#age_checker_verification_popup.aguila .media-thumbnail-frame img {
+    width: 30%;
 }
 
 #age_checker_error_message {
@@ -22,8 +25,8 @@
 #age_checker_verification_popup.aguila #age_checker_widget .dateselect #age_checker_month, 
 #age_checker_verification_popup.aguila #age_checker_day, 
 #age_checker_verification_popup.aguila #age_checker_year {
-    font-size: 25px;
-    height: 40px;
+    font-size: 20px;
+    height: 30px;
     background-color: #1b8ec4;
     color: #fff;
     border: solid 2px #fff;
@@ -33,6 +36,7 @@
     -moz-border-radius: 10px;
     border-radius: 10px;
     margin: 17px 4px 16px;
+    padding: 0;
     text-align: center;
     line-height: 1;
 }
@@ -70,7 +74,7 @@
     line-height: 1;
     border: 0;
     border-radius: 0;
-    height: 34px;
+    height: 38px;
     -webkit-appearance: none;
     padding: 5px;
     font-size: 16px;
@@ -114,25 +118,25 @@
 }
 
 #age_checker_verification_popup.aguila #age_checker_widget .dateselect .form-submit {
+    height: 34px;
+    margin-top: 6px;
+    padding-top: 8px;
+    width: 200px;
     background: #f8e514;
-    height: 50px;
-    margin-top: 12px;
-    width: 305px;
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-weight: bold;
     text-transform: uppercase;
-    padding-top: 8px;
     text-shadow: none;
     border: none;
 }
 
 #age_checker_verification_popup.aguila .agegate-disclaimer {
-    font-size: 11px;
+    font-size: 9px;
     width: 100%;
     display: block;
     letter-spacing: 0px;
     padding: 0 7%;
-    margin: 24px auto 22px;
+    margin: 12px auto 22px;
     max-width: 100vw;
 }
 
@@ -141,10 +145,13 @@
     margin: 0;
 }
 
+#age_checker_verification_popup.aguila p {
+    font-size: 13px;
+}
+
 #age_checker_verification_popup.aguila p,
 .agegate_footer_disclaimer,
 .agegate_footer_links  {
-    font-size: 13px;
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
     text-align: center;
     line-height: 1.25;
@@ -162,10 +169,16 @@
     margin: 0;
 }
 
+.agegate_footer,
+.agegate_footer_links  a{
+    font-size: 10px;
+}
+
 .agegate_footer {
     position: absolute;
     width: 100%;
     bottom: 0;
+    z-index: 10000;  /* The age gate module comes with z-index values of 9998 and 9999 */
 }
 
 .agegate_footer_disclaimer {
@@ -177,7 +190,7 @@
 
 .agegate_footer_links {
     background-color: #f8e514;
-    border: solid 2px white;
+    border-top: solid 2px white;
     font-weight: 600;
     padding: 10px;
     width: 100%;
@@ -185,19 +198,61 @@
 
 .agegate_footer_links  a{
     color: #000;
-    font-size: 14px;
     text-decoration: underline;
 }
 
 /* @end */
 
 
-/* @end */
-
 /* @group Media Query */
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
+    
+
+    
+}
+
+@media only screen and (max-width : 480px) {
+    #age_checker_verification_popup.aguila {
+        margin-top: -100px !important;
+    }
+    
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+    #age_checker_verification_popup.aguila #age_checker_widget .dateselect .form-submit {
+        height: 50px;
+        margin-top: 12px;
+        padding-top: 8px;
+        width: 305px;
+    }
+
+    #age_checker_verification_popup.aguila {
+        top: 36% !important;
+        padding-top: 51px;
+    }
+    
+    #age_checker_verification_popup.aguila  .media-thumbnail-frame {
+        position: absolute;
+        top: -64px;
+    }
+    
+    #age_checker_verification_popup.aguila .media-thumbnail-frame img {
+        width: auto;
+    }
+    
+    #age_checker_verification_popup.aguila p {
+        font-size: 13px;
+    }
+    
+    .agegate_footer,
+    .agegate_footer_links  a{
+        font-size: 11px;
+    }
+
     #age_checker_verification_popup.aguila #age_checker_widget .dateselect #age_checker_month, 
     #age_checker_verification_popup.aguila #age_checker_day, 
     #age_checker_verification_popup.aguila #age_checker_year {
@@ -223,20 +278,40 @@
         width: 310px;
     }
     
+    #age_checker_verification_popup.aguila .agegate-disclaimer {
+        margin: 24px auto 22px;
+        font-size: 11px;
+    }
 }
 
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px) {
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
 
-    #age_checker_verification_popup.aguila {
-        top: 36% !important;
-        padding-top: 51px;
+    #age_checker_verification_popup.aguila #age_checker_widget .dateselect #age_checker_month, 
+    #age_checker_verification_popup.aguila #age_checker_day, 
+    #age_checker_verification_popup.aguila #age_checker_year {
+        font-size: 50px;
+        height: 90px;
     }
     
-    #age_checker_verification_popup.aguila  .media-thumbnail-frame {
-        position: absolute;
-        top: -64px;
+    #age_checker_verification_popup.aguila #age_checker_widget .dateselect #age_checker_month, 
+    #age_checker_verification_popup.aguila #age_checker_day {
+        width: 90px;
     }
+    
+    #age_checker_verification_popup.aguila #age_checker_year {
+        width: 150px;
+    }
+    
+    .agegate_footer,
+    .agegate_footer_links  a{
+        font-size: 12px;
+    }
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
 
     #age_checker_verification_popup.aguila #age_checker_widget .dateselect #age_checker_month, 
     #age_checker_verification_popup.aguila #age_checker_day, 
@@ -261,33 +336,28 @@
     }
     
     #age_checker_verification_popup.aguila .agegate_country_select select {
-        height: 54px;
+        height: 52px;
         width: 335px;
         padding: 12px;
     }
     
-    #age_checker_verification_popup.aguila p,
-    .agegate_footer_disclaimer,
-    .agegate_footer_links  {
+    .agegate_footer,
+    .agegate_footer_links  a{
+        font-size: 13px;
+    }
+
+    #age_checker_verification_popup.aguila p {
         font-size: 14px;
     }
     
-
-
-}
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
-
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
-
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
+    .agegate_footer,
+    .agegate_footer_links  a{
+        font-size: 14px;
+    }
 
 }
 /* @end */

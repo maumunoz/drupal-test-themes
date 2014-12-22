@@ -350,7 +350,8 @@ Retina Display Condensed Black:    font-style: normal | font-weight: 900
 .node-page[about="/chicas-aguila"] .field-items,
 .descripcion-chicas-aguila .views-field-body,
 .galeria-chicas-aguila,
-.calendario-chicas-aguila {
+.calendario-chicas-aguila,
+.page-user .content-area {
     position: relative;
     margin: 0 auto;
     padding: 0;
@@ -372,7 +373,8 @@ Retina Display Condensed Black:    font-style: normal | font-weight: 900
     text-align: left;
 }
 
-#breadcrumb {
+#breadcrumb,
+.page-user #main .tabs {
     display: none;
 }
 
