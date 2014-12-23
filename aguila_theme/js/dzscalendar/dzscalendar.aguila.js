@@ -389,6 +389,7 @@ function is_ie8(){
 
                 $(window).bind('click', click_window);
                 $(window).bind('resize', handle_resize);
+                $(window).bind('orientationchange', handle_resize);
                 handle_resize();
 
                 /*
@@ -712,7 +713,7 @@ function is_ie8(){
 
                     })
                 }
-
+                hide_tooltips();
 
                 //console.info(_currTable, _argTable);
                 if(o.settings_autoHeight=='on' && _argTable){
