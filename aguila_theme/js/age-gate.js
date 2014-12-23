@@ -6,6 +6,10 @@
             var popup = $('#age_checker_verification_popup');
             if (popup.is(':visible')) {                
                 popup.addClass("aguila");
+                var cont = $("<div id='age_checker_content' class='agegate_content'></div>");
+                cont.append(popup.children());
+                popup.append( cont.find(".media-thumbnail-frame") );
+                popup.append( cont );
                 var overlay = $('#age_checker_overlay');
                 overlay.append($(".agegate_footer"));
                 

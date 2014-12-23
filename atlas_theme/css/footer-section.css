@@ -34,6 +34,12 @@
     font-family: 'proxima-nova', 'Helvetica', sans-serif;
     font-weight: bold;
     color: #fff;
+
+    text-align: center;
+}
+
+.stack-footer-inner .col-second li {
+    float: none;
 }
 
 .stack-footer-inner .col-second {
@@ -50,6 +56,11 @@
 
 .stack-footer-inner .col-second .block-menu .menu {
     display: inline-block;
+}
+
+.stack-footer-inner .col-second .block-menu li {
+    float: none;
+    padding: 15px 10px 0 10px;
 }
 
 .stack-footer-inner .col-second .media-thumbnail-frame {
@@ -123,6 +134,11 @@
 
     .stack-footer-inner .col-second .block-menu .menu {
         display: block;
+    }
+
+    .stack-footer-inner .col-second .block-menu li {
+        float: left;
+        padding: 15px 10px;
     }
 
     .stack-footer-inner .col-second .block-menu li:last-child {

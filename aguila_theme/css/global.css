@@ -97,6 +97,11 @@ Dubiel Italic:  font-style: italic | font-weight: normal
     font-style: italic;
 }
 
+/* Dubiel accented characters (á,é,í,ó,ú,ñ) are displayed bigger than the rest, use <span class='tilde'>ñ</span> to reduce them to 90% */
+.tilde { 
+    font-size: 90%;
+}
+
 /* ITCAvantGardePro */
 /*
 ITCAvantGardePro Book:    font-style: normal | font-weight: 300

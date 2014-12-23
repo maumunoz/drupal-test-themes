@@ -389,6 +389,7 @@ function is_ie8(){
 
                 $(window).bind('click', click_window);
                 $(window).bind('resize', handle_resize);
+                $(window).bind('orientationchange', handle_resize);
                 handle_resize();
 
                 /*
@@ -712,7 +713,7 @@ function is_ie8(){
 
                     })
                 }
-
+                hide_tooltips();
 
                 //console.info(_currTable, _argTable);
                 if(o.settings_autoHeight=='on' && _argTable){
@@ -862,22 +863,22 @@ function is_ie8(){
                 })
                 _t.addClass('openTooltip');
 
-                var tt_w = 200;
+                var tt_w = 500;
                 var dir='arrow-left';
 
-                posX = _t.offset().left - _par.offset().left-100;
-                if(posX<-10) posX = -10;
+                posX = _t.offset().left - _par.offset().left - 75;
+                if(posX<0) posX = 0;
                 posY = _t.offset().top - _par.offset().top + _t.outerHeight();
 
                 if(o.settings_skin=='skin-responsive-galileo'){
                     posY+=9;
                 }
 
-
                 //===if the position left is to far to the right then let the tooltip come from the left
                 if(o.settings_tooltipalwaysleft=='on' || posX + tt_w > $(window).width()){
                     dir='arrow-right';
-                    posX = _t.offset().left - _par.offset().left - _t.outerWidth() - tt_w - 100;
+                    posX = _t.offset().left - _par.offset().left - 100;
+                    if(posX<0) posX = 0;
                 }
 
                 //console.log(_t, _t.);
