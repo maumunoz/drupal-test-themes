@@ -112,7 +112,7 @@
 }
 
 .stack-navigation #block-system-main-menu ul.menu.pulldown {
-    padding: 14px 0 0 0;
+    padding: 14px 10px 0 84px;
     margin: 0;
     border: 0;
     background-color: transparent;
@@ -177,7 +177,7 @@
     padding: 0;
     position: fixed;
     z-index: 210;
-    top: 80px;
+    top: 102px;
     right: 0;
 }
 
@@ -231,12 +231,12 @@
     }
 
     .stack-preheader .col-first.col.left:first-child {
-        padding: 5px 0 0 40px
+        padding: 25px 0 0 82px;
     }
 
     .stack-preheader .col-second {
         margin-left: 0;
-        padding: 16px 71px 0 0;
+        padding: 25px 113px 0 0;
     }
 
     .toolbar .stack-navigation,
@@ -271,7 +271,7 @@
     }
 
     .stack-navigation {
-        height: 80px;
+        height: 102px;
     }
 
     .stack-preheader .col-second #search-block-form {
@@ -309,10 +309,10 @@
 }
 
 /* Special size for navigation */
-@media only screen and (min-width : 1240px) {
+@media only screen and (min-width : 1270px) {
     /* @group Header */
     .stack-navigation #block-system-main-menu ul.menu.pulldown {
-        padding: 27px 0 0 0;
+        padding-top: 36px;
     }
     /* @end */
 }
