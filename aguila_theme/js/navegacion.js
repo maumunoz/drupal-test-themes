@@ -48,6 +48,8 @@
     }
 
     adjust();
+    $(document).ready(adjust);
+    $(window).on('load', adjust);
     $(window).on('resize', adjust);
 
 }(jQuery2));
