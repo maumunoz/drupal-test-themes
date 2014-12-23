@@ -84,9 +84,18 @@
 
 
         // Global Support for Custom Background Images
-        var bgFields = $('.field-name-field-bg-image');
+        var bgFields = $('.field-name-field-bg-image'),
+            bgFieldElement;
         if (bgFields.length > 0) {
-            page.css('backgroundImage', 'url(' + bgFields.first().find('img').attr('src') + ')');
+            bgFieldElement = bgFields.first().find('img');
+            if (bgFieldElement.length > 0) {
+                page.css('backgroundImage', 'url(' + bgFieldElement.attr('src') + ')');
+            } else {
+                bgFieldElement = bgFields.first().find('a');
+                if (bgFieldElement.length > 0) {
+                    page.css('backgroundImage', 'url(' + bgFieldElement.attr('href') + ')');
+                }
+            }
             bgFields.remove();
         } else {
             page.addClass('bg-default');
