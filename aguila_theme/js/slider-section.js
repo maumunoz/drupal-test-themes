@@ -4,7 +4,11 @@
         var slider = $('.view-banner-principal .view-content'),
             sliderNode = $('.view-banner-principal'),
             borderClass,
-            imagePath;
+            imagePath,
+            win,
+            scrollBtn,
+            scrollBtnVisible = true;
+
         //Set slider images as css background images
         slider.find(".views-row").each(function(index, el) {
             borderClass = $.trim($(this).find('.slider-border').text());
@@ -31,7 +35,19 @@
         });
         //Add down arrow below the banner
         if(sliderNode.length) {
-            sliderNode.append('<div class="btn to-scroll btn-md btn-sky-blue btn-radius-none btn-text-no btn-symbol btn-symbol-down hidden"></div>');
+            scrollBtn = $('<div class="btn to-scroll btn-md btn-sky-blue btn-radius-none btn-text-no btn-symbol btn-symbol-down hidden"></div>');
+            sliderNode.append(scrollBtn);
+            win = $(window);
+            win.on('scroll', function () {
+                var position = win.scrollTop();
+                if (position <= 150 && !scrollBtnVisible) {
+                    scrollBtn.animate({ opacity: 1 });
+                    scrollBtnVisible = true;
+                } else if (position > 150 && scrollBtnVisible) {
+                    scrollBtn.animate({ opacity: 0 });
+                    scrollBtnVisible = false;
+                }
+            });
         }
     });
 }(jQuery2));
