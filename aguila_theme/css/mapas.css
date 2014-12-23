@@ -44,6 +44,7 @@
 
 .map-info-window .event-day {
     font-size: 40px;
+    line-height: 1;
 }
 
 .map-info-window .event-title {
@@ -90,7 +91,6 @@
     
     .map-info-window .event-day {
         font-size: 72px;
-        line-height: 58px;
     }
     
     .map-info-window .event-title {
