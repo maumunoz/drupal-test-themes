@@ -230,15 +230,6 @@
         height: 136px;
     }
 
-    .stack-preheader .col-first.col.left:first-child {
-        padding: 5px 0 0 40px
-    }
-
-    .stack-preheader .col-second {
-        margin-left: 0;
-        padding: 16px 71px 0 0;
-    }
-
     .toolbar .stack-navigation,
     .toolbar .stack-preheader .col-first,
     .toolbar .stack-preheader .col-second {
@@ -270,8 +261,22 @@
         position: static;
     }
 
+    .stack-preheader .site-name a {
+        width: 118px;
+        height: 136px;
+    }
+
     .stack-navigation {
         height: 80px;
+    }
+
+    .stack-preheader .col-first.col.left:first-child {
+        padding: 5px 0 0 40px
+    }
+
+    .stack-preheader .col-second {
+        margin-left: 0;
+        padding: 16px 71px 0 0;
     }
 
     .stack-preheader .col-second #search-block-form {
