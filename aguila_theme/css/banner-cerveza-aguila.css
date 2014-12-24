@@ -76,9 +76,153 @@
 
 /* @group Banner Cerveza Aguila Light */
 
+.aguila-light .view-banner-cerveza {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 30%;
+	height: 350px;
+	border-bottom: 6px solid #fff;
+}
+
+.aguila-light .views-field-field-texto-banner,
+.aguila-light .favoritos-content-type,
+.aguila-light .views-field-nothing span {
+	float: right;
+	clear: both;
+	width: 40%;
+}
+
+.aguila-light .favoritos-content-type-wrapper,
+.aguila-light .views-field-nothing span {
+	font-style: italic;
+	font-family: Dubiel, Georgia, Times, serif;
+	color: #000;
+}
+
+.aguila-light .views-field-nothing span {/*cambia margin top*/
+	font-size: 25px;
+	line-height: 1.5em;
+	padding: 0 0 0 20px;
+	margin: 87px 0 0;
+	background: url('../images/sprite-categories.png') -174px -205px no-repeat;
+}
+
+.aguila-light .views-field-field-texto-banner { /*cambia color*/
+	font: 700 27px/1em 'ITCAvantGardePro', Helvetica, Arial sans-serif;
+	color: #006290;
+}
+
+.aguila-light .favoritos-content-type-wrapper {
+	font-size: 14px;
+}
+
+.aguila-light .favoritos-content-type-wrappe .flag-wrapper {
+	text-align: center;
+}
+
+.aguila-light .compartir {
+	width: 36%;
+	float: right;
+	clear: both;
+}
+
+.aguila-light .compartir span {
+	font: 600 14px 'Open Sans', Arial, sans-serif;
+}
+
+.aguila-light .compartir a {
+	padding: 0 0 0 16px;
+	text-indent: -9999px;
+	display: inline-block;
+}
+
+.aguila-light .compartir .twitter {
+	background: url('../images/sprite-social.png') -89px -92px no-repeat;
+}
+
+.aguila-light .compartir .facebook {
+	background: url('../images/sprite-social.png') -92px -130px no-repeat;
+}
+
+
+
 /* @end */
 
 /* @group Banner Cerveza Aguila Cero */
+
+	.aguila-cero .view-banner-cerveza {
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 30%;
+		height: 350px;
+		border-bottom: 6px solid #fff;
+		color: #fff;
+	}
+
+	.aguila-cero .views-field-field-texto-banner,
+	.aguila-cero .favoritos-content-type,
+	.aguila-cero .views-field-nothing span {/*cambia width*/
+		float: right;
+		clear: both;
+		width: 35%;
+	}
+
+	.aguila-cero .favoritos-content-type-wrapper,
+	.aguila-cero .views-field-nothing span {/*cambia color*/
+		font-style: italic;
+		font-family: Dubiel, Georgia, Times, serif;
+	}
+
+	.aguila-cero .views-field-nothing span {/*background se traslada a pseudo elemento*/
+		font-size: 25px;
+		line-height: 1.5em;
+		margin: 23px 0 0;
+		
+	}
+
+	.aguila-cero .views-field-nothing span:before {
+		content: "";
+		display: inline-block;
+		width: 20px;
+		height: 1em;
+		background: url('../images/sprite-categories.png') -54px -205px no-repeat;
+	}
+
+	.aguila-cero .views-field-field-texto-banner {
+		font: 700 27px/1em 'ITCAvantGardePro', Helvetica, Arial sans-serif;
+	}
+
+	.aguila-cero .favoritos-content-type-wrapper {
+		font-size: 14px;
+	}
+
+	.aguila-cero .favoritos-content-type-wrappe .flag-wrapper {
+		text-align: center;
+	}
+
+	.aguila-cero .compartir {
+		width: 36%;
+		float: right;
+		clear: both;
+	}
+
+	.aguila-cero .compartir span {
+		font: 600 14px 'Open Sans', Arial, sans-serif;
+	}
+
+	.aguila-cero .compartir a {
+		padding: 0 0 0 16px;
+		text-indent: -9999px;
+		display: inline-block;
+	}
+
+	.aguila-cero .compartir .twitter {/*cambia background position*/
+		background: url('../images/sprite-social.png') -90px -12px no-repeat;
+	}
+
+	.aguila-cero .compartir .facebook {/*cambia background position*/
+		background: url('../images/sprite-social.png') -92px -50px no-repeat;
+	}
 
 /* @end */
 
@@ -119,6 +263,55 @@
 		margin: 0 0 0 5px;
 	}
 
+	/*Aguila Light*/
+
+	.aguila-light .views-field-nothing span {
+		margin: 105px 0 0;
+	}
+
+	.aguila-light .favoritos-content-type-wrapper span {
+		float: left;
+	}
+
+	.aguila-light .favoritos-content-type-wrapper .flag-counter {
+		padding: 0 0 0 10px;
+		line-height: 50px;
+	}
+
+	.aguila-cero .views-field-field-texto-banner,
+	.aguila-cero .favoritos-content-type,
+	.aguila-cero .views-field-nothing span,
+	.aguila-light .compartir {
+		width: 40%;
+	}
+
+	.aguila-light .compartir a {
+		margin: 0 0 0 5px;
+	}
+
+	/*Aguila Cero*/
+
+	.aguila-cero .views-field-nothing span {
+		margin: 105px 0 0;
+	}
+
+	.aguila-cero .favoritos-content-type-wrapper span {
+		float: left;
+	}
+
+	.aguila-cero .favoritos-content-type-wrapper .flag-counter {
+		padding: 0 0 0 10px;
+		line-height: 50px;
+	}
+
+	.aguila-cero .compartir {
+		width: 40%;
+	}
+
+	.aguila-cero .compartir a {
+		margin: 0 0 0 5px;
+	}
+
 }
 
 /* Small Devices, Tablets */
@@ -128,6 +321,24 @@
 	.aguila .favoritos-content-type,
 	.aguila .compartir,
 	.aguila .views-field-nothing span {
+		width: 52%;
+	}
+
+	/*Aguila Light*/
+
+	.aguila-light .views-field-field-texto-banner,
+	.aguila-light .favoritos-content-type,
+	.aguila-light .compartir,
+	.aguila-light .views-field-nothing span {
+		width: 52%;
+	}
+
+	/*Aguila Cero*/
+
+	.aguila-cero .views-field-field-texto-banner,
+	.aguila-cero .favoritos-content-type,
+	.aguila-cero .compartir,
+	.aguila-cero .views-field-nothing span {
 		width: 52%;
 	}
 
@@ -161,6 +372,64 @@
 		margin: 8px 0 10px;
 	}
 
+	/*Aguila Light*/
+
+	.aguila-light .view-banner-cerveza {
+		background-position: center;
+	}
+
+	.aguila-light .views-field-nothing span {
+		margin: 96px 0 0;
+		font-size: 32px;
+		line-height: 1em;
+	}
+	
+	.aguila-light .views-field-field-texto-banner,
+	.aguila-light .favoritos-content-type,
+	.aguila-light .compartir,
+	.aguila-light .views-field-nothing span {
+		width: 58%;
+	}
+
+	.aguila-light .views-field-field-texto-banner {
+		font-size: 48px;
+	}
+
+	.aguila-light .favoritos-content-type {
+		margin: 8px 0 10px;
+	}
+
+	/*Aguila Cero*/
+
+	.aguila-cero .view-banner-cerveza {
+		background-position: center;
+	}
+
+	.aguila-cero .views-field-nothing span {
+		margin: 96px 0 0;
+		font-size: 32px;
+		line-height: 1em;
+	}
+	
+	.aguila-cero .views-field-field-texto-banner,
+	.aguila-cero .favoritos-content-type,
+	.aguila-cero .compartir,
+	.aguila-cero .views-field-nothing span {
+		width: 58%;
+	}
+
+	.aguila-cero .views-field-nothing span:before {
+		background-position: -54px -200px;
+	}
+
+	.aguila-cero .views-field-field-texto-banner {
+		font-size: 48px;
+	}
+
+	.aguila-cero .favoritos-content-type {
+		margin: 8px 0 10px;
+	}
+
 }
 
 /* Large Devices, Wide Screens */
@@ -188,6 +457,59 @@
 
 	.aguila .favoritos-content-type {
 		margin: 6px 0 18px;
+	}
+
+	/*Aguila Light*/
+
+	.aguila-light .view-banner-cerveza {
+		height: 466px;
+	}
+
+	.aguila-light .views-field-field-texto-banner, 
+	.aguila-light .favoritos-content-type, 
+	.aguila-light .compartir, 
+	.aguila-light .views-field-nothing span {
+		width: 58%;
+	}
+
+	.aguila-light .views-field-nothing span {/*cambia margin top*/
+		font-size: 36px;
+		margin: 170px 0 0;
+	}
+
+	.aguila-light .views-field-field-texto-banner {
+		font-size: 77px;
+	}
+
+	.aguila-light .favoritos-content-type {/*cambia margin top y bottom*/
+		margin: 6px 0 18px;
+	}
+
+	/*Aguila Cero*/
+
+	.aguila-cero .view-banner-cerveza {
+		height: 466px;
+	}
+
+	.aguila-cero .views-field-nothing span {/*cambia margin top*/
+		font-size: 36px;
+		margin: 100px 0 0;
+	}
+
+	.aguila-cero .views-field-nothing span:before {
+		background-position: -54px -196px;
+	}
+
+	.aguila-cero .views-field-field-texto-banner {
+		font-size: 77px;
+	}
+
+	.aguila-cero .views-field-field-texto-banner p {
+		margin: 0;
+	}
+
+	.aguila-cero .favoritos-content-type {
+		margin: 6px 0 9px;
 	}
 
 }
