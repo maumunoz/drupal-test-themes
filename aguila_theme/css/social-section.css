@@ -57,6 +57,10 @@
     margin: 0 auto;
 }
 
+.socialFooterContainer {
+    overflow: hidden;
+}
+
 .socialFooter .socialExtensionLeft,
 .socialFooter .socialExtensionRight {
     position: absolute;

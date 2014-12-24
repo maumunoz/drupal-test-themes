@@ -7,9 +7,9 @@
     text-align: center;
     font-weight: 300;
     letter-spacing: 0.2px;
-    height: 220px;
+    height: 150px;
     vertical-align: middle;
-    padding-top: 65px;
+    padding: 35px 10px 0;
     line-height: 1;
     color: #3e3e3e;
 }
@@ -36,19 +36,19 @@
 }
 
 .presentaciones .view-header  h3{
+    font-size: 17px;
+    width: 220px;
+    padding: 8px 0 10px;
+    top: -23px;
     position: relative;
-    top: -33px;
     font-family: "ITCAvantGardePro", Helvetica, Arial sans-serif;
     font-weight: 700;
     border: solid 1px #b1b1b1;
     border-radius: 8px;
     color: #313131;
-    font-size: 34px;
-    width: 363px;
     text-align: center;
     margin: 0 auto;
     text-transform: uppercase;
-    padding: 10px 0 15px;
     background: #fff;
 }
 
@@ -59,10 +59,10 @@
 }
 
 .presentaciones .views-row {
+    font-size: 13px;
     display: inline-block;
     text-align: center;
     font-family: "ITCAvantGardePro", Helvetica, Arial sans-serif;
-    font-size: 26px;
     font-weight: 300;
     vertical-align: top;
     margin-right: 18px;
@@ -70,13 +70,14 @@
 }
 
 .presentaciones .views-row  img {
-    max-width: 100%;
+    max-width: 60%;
     height: auto;
 }
+
 .presentaciones .views-field-field-titulo {
+    font-size: 15px;
     font-weight: 700;
     color: #29c7fc;
-    font-size: 29px;
     margin: 27px 0 0;
     line-height: 1;
 }
@@ -139,12 +140,30 @@
         font-size: 16px;
     }
 
+    .presentaciones .view-header  h3{
+        font-size: 25px;
+        width: 310px;
+        padding: 10px 0 12px;
+        top: -27px;
+    }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
     .node-cerveza .field-name-field-subcontenido {
         font-size: 20px;
+    }
+    
+    .presentaciones .views-row {
+        font-size: 26px;
+    }
+    .presentaciones .views-field-field-titulo {
+        font-size: 29px;
+    }
+    
+    .node-cerveza .field-name-field-subcontenido {
+        height: 220px;
+        padding: 65px 20px 0;
     }
 
 }
@@ -153,6 +172,13 @@
 @media only screen and (min-width : 992px) {
     .node-cerveza .field-name-field-subcontenido {
         font-size: 24px;
+    }
+
+    .presentaciones .view-header  h3{
+        font-size: 34px;
+        width: 363px;
+        padding: 10px 0 15px;
+        top: -33px;
     }
 }
 
