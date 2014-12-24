@@ -7,8 +7,25 @@
     font-size: 24px;
 }
 
+.node-type-p-gina-html .block ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .node-type-p-gina-html h3 {
-    font-size: 16px;
+    font-size: 17px;
+}
+
+.node-type-p-gina-html h4 {
+    font-size: 15px;
+}
+
+.node-type-p-gina-html li {
+    margin-bottom: 10px;
+}
+
+.node-type-p-gina-html li p {
+    margin-bottom: 0;
 }
 
 .node-type-p-gina-html .content {
