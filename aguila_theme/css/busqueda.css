@@ -1,0 +1,49 @@
+/* @group Busqueda */
+
+.page-search .stack-content-inner {
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.page-search .stack-content-inner #page-title {
+    display: block;
+}
+
+.page-search .stack-content-inner .search-info {
+    display: none;
+}
+
+.page-search .stack-content-inner h1,
+.page-search .stack-content-inner h2,
+.page-search .stack-content-inner h3 {
+    font-family: 'ITCAvantGardePro', Helvetica, Arial sans-serif;
+}
+
+/* @end */
+
+/* @group Media Query */
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+/* @end */

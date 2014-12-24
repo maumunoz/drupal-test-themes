@@ -37,6 +37,7 @@ stylesheets[all][] = 'css/calendario-chicas-aguila-section.css'
 stylesheets[all][] = 'css/banner-cerveza-aguila.css'
 stylesheets[all][] = 'css/user-pages.css'
 stylesheets[all][] = 'css/contenido-cervezas.css'
+stylesheets[all][] = 'css/busqueda.css'
 
 regions[page_top] = 'Above page'
 regions[preheader_first] = 'Preheader first'
