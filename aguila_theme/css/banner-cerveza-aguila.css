@@ -1,7 +1,5 @@
 /* @group Banner Cerveza Aguila */
 
-/* @end */
-
 .aguila .view-banner-cerveza {
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -73,6 +71,16 @@
 .aguila .compartir .facebook {
 	background: url('../images/sprite-social.png') -92px -130px no-repeat;
 }
+
+/* @end */
+
+/* @group Banner Cerveza Aguila Light */
+
+/* @end */
+
+/* @group Banner Cerveza Aguila Cero */
+
+/* @end */
 
 /* @group Media Query */
 
