@@ -10,3 +10,47 @@ Oswald Bold:    font-style: normal | font-weight: 700
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
 
 /* @end */
+
+/* @group Content */
+.toolbar .wrapper-content {
+    padding-bottom: 25px;
+}
+
+.toolbar .wrapper-content {
+    margin-top: 100px;
+}
+
+/* @end */
+
+/* @group Media Query */
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    /* @group Content */
+    .toolbar .wrapper-content {
+        margin-top: 150px;
+    }
+    /* @end */
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    /* @group Content */
+    .wrapper-content {
+        margin-top: 100px;
+    }
+
+    .toolbar .wrapper-content {
+        margin-bottom: 100px;
+    }
+
+
+    /* @end */
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
+/* @end */

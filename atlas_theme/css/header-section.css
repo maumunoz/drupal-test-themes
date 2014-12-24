@@ -112,7 +112,7 @@
 }
 
 .stack-navigation #block-system-main-menu ul.menu.pulldown {
-    padding: 14px 10px 0 84px;
+    padding: 14px 0 0 0;
     margin: 0;
     border: 0;
     background-color: transparent;
@@ -177,7 +177,7 @@
     padding: 0;
     position: fixed;
     z-index: 210;
-    top: 102px;
+    top: 80px;
     right: 0;
 }
 
@@ -230,15 +230,6 @@
         height: 136px;
     }
 
-    .stack-preheader .col-first.col.left:first-child {
-        padding: 25px 0 0 82px;
-    }
-
-    .stack-preheader .col-second {
-        margin-left: 0;
-        padding: 25px 113px 0 0;
-    }
-
     .toolbar .stack-navigation,
     .toolbar .stack-preheader .col-first,
     .toolbar .stack-preheader .col-second {
@@ -270,8 +261,22 @@
         position: static;
     }
 
+    .stack-preheader .site-name a {
+        width: 118px;
+        height: 136px;
+    }
+
     .stack-navigation {
-        height: 102px;
+        height: 80px;
+    }
+
+    .stack-preheader .col-first.col.left:first-child {
+        padding: 5px 0 0 40px
+    }
+
+    .stack-preheader .col-second {
+        margin-left: 0;
+        padding: 16px 71px 0 0;
     }
 
     .stack-preheader .col-second #search-block-form {
@@ -291,11 +296,11 @@
     }
 
     .toolbar .stack.stack-precontent {
-        top: 132px;
+        top: 110px;
     }
 
     .toolbar.toolbar-drawer .stack.stack-precontent {
-        top: 166px;
+        top: 144px;
     }
 
     /* @end */
@@ -309,10 +314,10 @@
 }
 
 /* Special size for navigation */
-@media only screen and (min-width : 1270px) {
+@media only screen and (min-width : 1240px) {
     /* @group Header */
     .stack-navigation #block-system-main-menu ul.menu.pulldown {
-        padding-top: 36px;
+        padding: 27px 0 0 0;
     }
     /* @end */
 }

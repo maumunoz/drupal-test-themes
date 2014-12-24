@@ -1,5 +1,25 @@
 /* @group Static pages */
 
+.node-type-p-gina-html .stack-content-inner #page-title {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    display: block;
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.node-type-p-gina-html h3 {
+    font-size: 16px;
+}
+
+.node-type-p-gina-html .content {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+
+.node-type-p-gina-html .stack-content-inner {
+    padding: 0 20px;
+}
+
 /* @end */
 
 /* @group Aguila en Vivo */
@@ -7,7 +27,7 @@
 .aguila-en-vivo-contenido {
     position: relative;
     font-size: 18px;
-    font-family: "Open Sans";
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
     line-height: 30px;
     position: relative;
     margin: 0 auto;
