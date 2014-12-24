@@ -85,6 +85,8 @@
 
 /* @end */
 
+/* @group Aguila */
+
 .aguila .field-name-body {
 	background: #42abda;
 	background: -webkit-linear-gradient(top, #a1e2f9, #42abda);
@@ -126,6 +128,16 @@
 	width: 100%;
 	max-width: 314px;
 }
+
+/* @end */
+
+/* @group Aguila Light */
+
+/* @end */
+
+/* @group Aguila Cero */
+
+/* @end */
 
 /* @group Media Query */
 
