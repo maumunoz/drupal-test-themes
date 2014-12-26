@@ -9,6 +9,14 @@
     display: block;
 }
 
+.page-search .form-type-textfield, .form-item-languageCode {
+    margin: 0;
+}
+
+.page-search .search-results .search-snippet-info {
+    margin: 0 !important;
+}
+
 .page-search .stack-content-inner .search-info {
     display: none;
 }
@@ -20,9 +28,11 @@
     -webkit-appearance: none;
     border: none;
     padding: 0;
-    margin: 0;
+    margin: 0 0 10px;
     line-height: 3;
     border: solid 1px #ccc;
+    max-width: 90%;
+    
 }
 
 .page-search .search-form #edit-submit {
