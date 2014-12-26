@@ -1,6 +1,6 @@
 /* @group Banner Cerveza Aguila */
 
-.aguila .view-banner-cerveza {
+.cerveza .view-banner-cerveza {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: 30%;
@@ -8,22 +8,26 @@
 	border-bottom: 6px solid #fff;
 }
 
-.aguila .views-field-field-texto-banner,
-.aguila .favoritos-content-type,
-.aguila .views-field-nothing span {
+.cerveza .btn.to-scroll {
+	z-index: 10;
+}
+
+.cerveza .views-field-field-texto-banner,
+.cerveza .favoritos-content-type,
+.cerveza .views-field-nothing span {
 	float: right;
 	clear: both;
 	width: 40%;
 }
 
-.aguila .favoritos-content-type-wrapper,
-.aguila .views-field-nothing span {
+.cerveza .favoritos-content-type-wrapper,
+.cerveza .views-field-nothing span {
 	font-style: italic;
 	font-family: Dubiel, Georgia, Times, serif;
 	color: #000;
 }
 
-.aguila .views-field-nothing span {
+.cerveza .views-field-nothing span {
 	font-size: 25px;
 	line-height: 1.5em;
 	padding: 0 0 0 20px;
@@ -31,7 +35,7 @@
 	background: url('../images/sprite-categories.png') -174px -205px no-repeat;
 }
 
-.aguila .views-field-field-texto-banner {
+.cerveza .views-field-field-texto-banner {
 	font: 700 27px/1em 'ITCAvantGardePro', Helvetica, Arial sans-serif;
 	color: #5f2d00;
 }
@@ -40,35 +44,35 @@
 	color: #3c1c00;
 }
 
-.aguila .favoritos-content-type-wrapper {
+.cerveza .favoritos-content-type-wrapper {
 	font-size: 14px;
 }
 
-.aguila .favoritos-content-type-wrappe .flag-wrapper {
+.cerveza .favoritos-content-type-wrappe .flag-wrapper {
 	text-align: center;
 }
 
-.aguila .compartir {
+.cerveza .compartir {
 	width: 36%;
 	float: right;
 	clear: both;
 }
 
-.aguila .compartir span {
+.cerveza .compartir span {
 	font: 600 14px 'Open Sans', Arial, sans-serif;
 }
 
-.aguila .compartir a {
+.cerveza .compartir a {
 	padding: 0 0 0 16px;
 	text-indent: -9999px;
 	display: inline-block;
 }
 
-.aguila .compartir .twitter {
+.cerveza .compartir .twitter {
 	background: url('../images/sprite-social.png') -89px -92px no-repeat;
 }
 
-.aguila .compartir .facebook {
+.cerveza .compartir .facebook {
 	background: url('../images/sprite-social.png') -92px -130px no-repeat;
 }
 
@@ -76,72 +80,12 @@
 
 /* @group Banner Cerveza Aguila Light */
 
-.aguila-light .view-banner-cerveza {
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: 30%;
-	height: 350px;
-	border-bottom: 6px solid #fff;
-}
-
-.aguila-light .views-field-field-texto-banner,
-.aguila-light .favoritos-content-type,
-.aguila-light .views-field-nothing span {
-	float: right;
-	clear: both;
-	width: 40%;
-}
-
-.aguila-light .favoritos-content-type-wrapper,
-.aguila-light .views-field-nothing span {
-	font-style: italic;
-	font-family: Dubiel, Georgia, Times, serif;
-	color: #000;
-}
-
-.aguila-light .views-field-nothing span {/*cambia margin top*/
-	font-size: 25px;
-	line-height: 1.5em;
-	padding: 0 0 0 20px;
+.cerveza.aguila-light .views-field-nothing span {/*cambia margin top*/
 	margin: 87px 0 0;
-	background: url('../images/sprite-categories.png') -174px -205px no-repeat;
 }
 
-.aguila-light .views-field-field-texto-banner { /*cambia color*/
-	font: 700 27px/1em 'ITCAvantGardePro', Helvetica, Arial sans-serif;
+.cerveza.aguila-light .views-field-field-texto-banner { /*cambia color*/
 	color: #006290;
-}
-
-.aguila-light .favoritos-content-type-wrapper {
-	font-size: 14px;
-}
-
-.aguila-light .favoritos-content-type-wrappe .flag-wrapper {
-	text-align: center;
-}
-
-.aguila-light .compartir {
-	width: 36%;
-	float: right;
-	clear: both;
-}
-
-.aguila-light .compartir span {
-	font: 600 14px 'Open Sans', Arial, sans-serif;
-}
-
-.aguila-light .compartir a {
-	padding: 0 0 0 16px;
-	text-indent: -9999px;
-	display: inline-block;
-}
-
-.aguila-light .compartir .twitter {
-	background: url('../images/sprite-social.png') -89px -92px no-repeat;
-}
-
-.aguila-light .compartir .facebook {
-	background: url('../images/sprite-social.png') -92px -130px no-repeat;
 }
 
 
@@ -150,37 +94,23 @@
 
 /* @group Banner Cerveza Aguila Cero */
 
-	.aguila-cero .view-banner-cerveza {
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: 30%;
-		height: 350px;
-		border-bottom: 6px solid #fff;
+	.cerveza.aguila-cero .view-banner-cerveza {/*cambia color*/
 		color: #fff;
 	}
 
-	.aguila-cero .views-field-field-texto-banner,
-	.aguila-cero .favoritos-content-type,
-	.aguila-cero .views-field-nothing span {/*cambia width*/
-		float: right;
-		clear: both;
+	.cerveza.aguila-cero .views-field-field-texto-banner,
+	.cerveza.aguila-cero .favoritos-content-type,
+	.cerveza.aguila-cero .views-field-nothing span {/*cambia width*/
 		width: 35%;
+		color: #fff;
 	}
 
-	.aguila-cero .favoritos-content-type-wrapper,
-	.aguila-cero .views-field-nothing span {/*cambia color*/
-		font-style: italic;
-		font-family: Dubiel, Georgia, Times, serif;
+	.cerveza.aguila-cero .views-field-nothing span {/*background se traslada a pseudo elemento*/
+		background: transparent;
+		padding: 0;
 	}
 
-	.aguila-cero .views-field-nothing span {/*background se traslada a pseudo elemento*/
-		font-size: 25px;
-		line-height: 1.5em;
-		margin: 23px 0 0;
-		
-	}
-
-	.aguila-cero .views-field-nothing span:before {
+	.cerveza.aguila-cero .views-field-nothing span:before {
 		content: "";
 		display: inline-block;
 		width: 20px;
@@ -188,39 +118,15 @@
 		background: url('../images/sprite-categories.png') -54px -205px no-repeat;
 	}
 
-	.aguila-cero .views-field-field-texto-banner {
-		font: 700 27px/1em 'ITCAvantGardePro', Helvetica, Arial sans-serif;
+	.cerveza.aguila-cero .favoritos-content-type .flag-counter {
+		color: #fff;
 	}
 
-	.aguila-cero .favoritos-content-type-wrapper {
-		font-size: 14px;
-	}
-
-	.aguila-cero .favoritos-content-type-wrappe .flag-wrapper {
-		text-align: center;
-	}
-
-	.aguila-cero .compartir {
-		width: 36%;
-		float: right;
-		clear: both;
-	}
-
-	.aguila-cero .compartir span {
-		font: 600 14px 'Open Sans', Arial, sans-serif;
-	}
-
-	.aguila-cero .compartir a {
-		padding: 0 0 0 16px;
-		text-indent: -9999px;
-		display: inline-block;
-	}
-
-	.aguila-cero .compartir .twitter {/*cambia background position*/
+	.cerveza.aguila-cero .compartir .twitter {/*cambia background position*/
 		background: url('../images/sprite-social.png') -90px -12px no-repeat;
 	}
 
-	.aguila-cero .compartir .facebook {/*cambia background position*/
+	.cerveza.aguila-cero .compartir .facebook {/*cambia background position*/
 		background: url('../images/sprite-social.png') -92px -50px no-repeat;
 	}
 
@@ -231,7 +137,7 @@
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
 
-	.favoritos-content-type .flag-counter {
+	.cerveza .favoritos-content-type .flag-counter {
 		padding: 0 10px 0 0;
 		word-wrap: break-word;
 		line-height: 1.2em;
@@ -242,74 +148,34 @@
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
 
-	.aguila .views-field-nothing span {
+	.cerveza .views-field-nothing span {
 		margin: 105px 0 0;
 	}
 
-	.aguila .favoritos-content-type-wrapper span {
+	.cerveza .favoritos-content-type-wrapper span {
 		float: left;
 	}
 
-	.aguila .favoritos-content-type-wrapper .flag-counter {
+	.cerveza .favoritos-content-type-wrapper .flag-counter {
 		padding: 0 0 0 10px;
 		line-height: 50px;
 	}
 
-	.aguila .compartir {
+	.cerveza .compartir {
 		width: 40%;
 	}
 
-	.aguila .compartir a {
-		margin: 0 0 0 5px;
-	}
-
-	/*Aguila Light*/
-
-	.aguila-light .views-field-nothing span {
-		margin: 105px 0 0;
-	}
-
-	.aguila-light .favoritos-content-type-wrapper span {
-		float: left;
-	}
-
-	.aguila-light .favoritos-content-type-wrapper .flag-counter {
-		padding: 0 0 0 10px;
-		line-height: 50px;
-	}
-
-	.aguila-cero .views-field-field-texto-banner,
-	.aguila-cero .favoritos-content-type,
-	.aguila-cero .views-field-nothing span,
-	.aguila-light .compartir {
-		width: 40%;
-	}
-
-	.aguila-light .compartir a {
+	.cerveza .compartir a {
 		margin: 0 0 0 5px;
 	}
 
 	/*Aguila Cero*/
 
-	.aguila-cero .views-field-nothing span {
-		margin: 105px 0 0;
-	}
-
-	.aguila-cero .favoritos-content-type-wrapper span {
-		float: left;
-	}
-
-	.aguila-cero .favoritos-content-type-wrapper .flag-counter {
-		padding: 0 0 0 10px;
-		line-height: 50px;
-	}
-
-	.aguila-cero .compartir {
+	.cerveza.aguila-cero .views-field-field-texto-banner,
+	.cerveza.aguila-cero .favoritos-content-type,
+	.cerveza.aguila-cero .compartir,
+	.cerveza.aguila-cero .views-field-nothing span {
 		width: 40%;
-	}
-
-	.aguila-cero .compartir a {
-		margin: 0 0 0 5px;
 	}
 
 }
@@ -317,29 +183,20 @@
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
 
-	.aguila .views-field-field-texto-banner,
-	.aguila .favoritos-content-type,
-	.aguila .compartir,
-	.aguila .views-field-nothing span {
-		width: 52%;
-	}
-
-	/*Aguila Light*/
-
-	.aguila-light .views-field-field-texto-banner,
-	.aguila-light .favoritos-content-type,
-	.aguila-light .compartir,
-	.aguila-light .views-field-nothing span {
+	.cerveza .views-field-field-texto-banner,
+	.cerveza .favoritos-content-type,
+	.cerveza .compartir,
+	.cerveza .views-field-nothing span {
 		width: 52%;
 	}
 
 	/*Aguila Cero*/
 
-	.aguila-cero .views-field-field-texto-banner,
-	.aguila-cero .favoritos-content-type,
-	.aguila-cero .compartir,
-	.aguila-cero .views-field-nothing span {
-		width: 52%;
+	.cerveza.aguila-cero .views-field-field-texto-banner,
+	.cerveza.aguila-cero .favoritos-content-type,
+	.cerveza.aguila-cero .compartir,
+	.cerveza.aguila-cero .views-field-nothing span {
+		width: 50%;
 	}
 
 }
@@ -347,87 +204,42 @@
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
 
-	.aguila .view-banner-cerveza {
+	.cerveza .view-banner-cerveza {
 		background-position: center;
 	}
 
-	.aguila .views-field-nothing span {
+	.cerveza .views-field-nothing span {
 		margin: 96px 0 0;
 		font-size: 32px;
 		line-height: 1em;
 	}
 	
-	.aguila .views-field-field-texto-banner,
-	.aguila .favoritos-content-type,
-	.aguila .compartir,
-	.aguila .views-field-nothing span {
+	.cerveza .views-field-field-texto-banner,
+	.cerveza .favoritos-content-type,
+	.cerveza .compartir,
+	.cerveza .views-field-nothing span {
 		width: 58%;
 	}
 
-	.aguila .views-field-field-texto-banner {
+	.cerveza .views-field-field-texto-banner {
 		font-size: 48px;
 	}
 
-	.aguila .favoritos-content-type {
-		margin: 8px 0 10px;
-	}
-
-	/*Aguila Light*/
-
-	.aguila-light .view-banner-cerveza {
-		background-position: center;
-	}
-
-	.aguila-light .views-field-nothing span {
-		margin: 96px 0 0;
-		font-size: 32px;
-		line-height: 1em;
-	}
-	
-	.aguila-light .views-field-field-texto-banner,
-	.aguila-light .favoritos-content-type,
-	.aguila-light .compartir,
-	.aguila-light .views-field-nothing span {
-		width: 58%;
-	}
-
-	.aguila-light .views-field-field-texto-banner {
-		font-size: 48px;
-	}
-
-	.aguila-light .favoritos-content-type {
+	.cerveza .favoritos-content-type {
 		margin: 8px 0 10px;
 	}
 
 	/*Aguila Cero*/
 
-	.aguila-cero .view-banner-cerveza {
-		background-position: center;
+	.cerveza.aguila-cero .views-field-field-texto-banner,
+	.cerveza.aguila-cero .favoritos-content-type,
+	.cerveza.aguila-cero .compartir,
+	.cerveza.aguila-cero .views-field-nothing span {
+		width: 57%;
 	}
 
-	.aguila-cero .views-field-nothing span {
-		margin: 96px 0 0;
-		font-size: 32px;
-		line-height: 1em;
-	}
-	
-	.aguila-cero .views-field-field-texto-banner,
-	.aguila-cero .favoritos-content-type,
-	.aguila-cero .compartir,
-	.aguila-cero .views-field-nothing span {
-		width: 58%;
-	}
-
-	.aguila-cero .views-field-nothing span:before {
+	.cerveza.aguila-cero .views-field-nothing span:before {
 		background-position: -54px -200px;
-	}
-
-	.aguila-cero .views-field-field-texto-banner {
-		font-size: 48px;
-	}
-
-	.aguila-cero .favoritos-content-type {
-		margin: 8px 0 10px;
 	}
 
 }
@@ -435,80 +247,65 @@
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
 	
-	.aguila .view-banner-cerveza {
+	.cerveza .view-banner-cerveza {
 		height: 466px;
 	}
 
-	.aguila .views-field-field-texto-banner, 
-	.aguila .favoritos-content-type, 
-	.aguila .compartir, 
-	.aguila .views-field-nothing span {
+	.cerveza .views-field-field-texto-banner, 
+	.cerveza .favoritos-content-type, 
+	.cerveza .compartir, 
+	.cerveza .views-field-nothing span {
 		width: 60%;
 	}
 
-	.aguila .views-field-nothing span {
+	.cerveza .views-field-nothing span {
 		font-size: 36px;
 		margin: 123px 0 0;
 	}
 
-	.aguila .views-field-field-texto-banner {
+	.cerveza .views-field-field-texto-banner {
 		font-size: 77px;
 	}
 
-	.aguila .favoritos-content-type {
+	.cerveza .favoritos-content-type {
 		margin: 6px 0 18px;
 	}
 
 	/*Aguila Light*/
 
-	.aguila-light .view-banner-cerveza {
-		height: 466px;
-	}
-
-	.aguila-light .views-field-field-texto-banner, 
-	.aguila-light .favoritos-content-type, 
-	.aguila-light .compartir, 
-	.aguila-light .views-field-nothing span {
+	.cerveza.aguila-light .views-field-field-texto-banner, 
+	.cerveza.aguila-light .favoritos-content-type, 
+	.cerveza.aguila-light .compartir, 
+	.cerveza.aguila-light .views-field-nothing span {
 		width: 58%;
 	}
 
-	.aguila-light .views-field-nothing span {/*cambia margin top*/
-		font-size: 36px;
+	.cerveza.aguila-light .views-field-nothing span {/*cambia margin top*/
 		margin: 170px 0 0;
-	}
-
-	.aguila-light .views-field-field-texto-banner {
-		font-size: 77px;
-	}
-
-	.aguila-light .favoritos-content-type {/*cambia margin top y bottom*/
-		margin: 6px 0 18px;
 	}
 
 	/*Aguila Cero*/
 
-	.aguila-cero .view-banner-cerveza {
-		height: 466px;
+	.cerveza.aguila-cero .views-field-field-texto-banner, 
+	.cerveza.aguila-cero .favoritos-content-type, 
+	.cerveza.aguila-cero .compartir, 
+	.cerveza.aguila-cero .views-field-nothing span {
+		width: 58%;
 	}
 
-	.aguila-cero .views-field-nothing span {/*cambia margin top*/
-		font-size: 36px;
+	.cerveza.aguila-cero .views-field-nothing span {/*cambia margin top*/
 		margin: 100px 0 0;
 	}
 
-	.aguila-cero .views-field-nothing span:before {
+	.cerveza.aguila-cero .views-field-nothing span:before {
 		background-position: -54px -196px;
 	}
 
-	.aguila-cero .views-field-field-texto-banner {
-		font-size: 77px;
-	}
-
-	.aguila-cero .views-field-field-texto-banner p {
+	.cerveza.aguila-cero .views-field-field-texto-banner p {
 		margin: 0;
 	}
 
-	.aguila-cero .favoritos-content-type {
+	.cerveza.aguila-cero .favoritos-content-type {
 		margin: 6px 0 9px;
 	}
 

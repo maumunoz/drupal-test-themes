@@ -192,8 +192,7 @@
 .front .banner-principal .btn.to-scroll,
 .futbol .banner-principal .btn.to-scroll,
 .chicas-aguila .banner-principal .btn.to-scroll,
-.aguila .banner-principal .btn.to-scroll,
-.aguila-light .banner-principal .btn.to-scroll {
+.cerveza .banner-principal .btn.to-scroll {
     display: block !important;
     visibility: visible !important;
 }
