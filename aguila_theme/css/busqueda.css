@@ -15,7 +15,8 @@
 }
 
 .page-search .search-results .search-snippet-info {
-    margin: 0 !important;
+    margin: 0;
+    padding-left: 0;
 }
 
 .page-search .stack-content-inner .search-info {
