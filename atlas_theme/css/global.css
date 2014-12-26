@@ -53,8 +53,8 @@ body {
 }
 
 #page {
-    background-repeat: repeat-y;
-    background-size: contain;
+    background-size: cover;
+    background-attachment: fixed;
 }
 /* @end */
 
