@@ -7,7 +7,7 @@
     font-size: 24px;
 }
 
-.node-type-p-gina-html .block ul {
+.node-type-p-gina-html .content-area .field-items ul {
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -20,11 +20,11 @@
     font-size: 15px;
 }
 
-.node-type-p-gina-html li {
+.node-type-p-gina-html .content-area .field-items li {
     margin-bottom: 10px;
 }
 
-.node-type-p-gina-html li p {
+.node-type-p-gina-html .content-area .field-items li p {
     margin-bottom: 0;
 }
 
