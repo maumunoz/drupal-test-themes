@@ -7,6 +7,7 @@
 
 .page-search .stack-content-inner #page-title {
     display: block;
+    margin-top: 30px;
 }
 
 .page-search .form-type-textfield, .form-item-languageCode {

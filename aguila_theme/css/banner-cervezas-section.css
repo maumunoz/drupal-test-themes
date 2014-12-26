@@ -23,11 +23,13 @@
     height: 165px;
 }
 
+.view-banner-cervezas .views-field-field-cerveza-descripcion-corta a {
+    text-decoration:none;
+}
 .view-banner-cervezas .views-field-field-cerveza-descripcion-corta a:link,
 .view-banner-cervezas .views-field-field-cerveza-descripcion-corta a:active,
 .view-banner-cervezas .views-field-field-cerveza-descripcion-corta a:visited,
 .view-banner-cervezas .views-field-field-cerveza-descripcion-corta a:hover {
-    text-decoration:none;
     color: #484848;
 }
 
