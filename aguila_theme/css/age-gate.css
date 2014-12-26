@@ -5,7 +5,7 @@
     border: none;
     width: 515px;
     height: 85%;
-    max-height: 393px;
+    max-height: 480px;
     top: 20% !important;
 }
 
@@ -85,7 +85,7 @@
     line-height: 1;
     border: 0;
     border-radius: 0;
-    height: 38px;
+    height: 33px;
     -webkit-appearance: none;
     padding: 5px;
     font-size: 16px;
@@ -219,6 +219,11 @@
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
+
+    #age_checker_verification_popup.aguila {
+        max-height: 393px;
+    }
+    
     #age_checker_verification_popup.aguila #age_checker_widget .dateselect #age_checker_month, 
     #age_checker_verification_popup.aguila #age_checker_day, 
     #age_checker_verification_popup.aguila #age_checker_year {
@@ -239,7 +244,9 @@
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
     
-
+    #age_checker_verification_popup.aguila .agegate_country_select select {
+        height: 38px;
+    }
     
 }
 

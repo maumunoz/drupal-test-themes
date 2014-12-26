@@ -707,24 +707,26 @@ $black, $dark           = #000    | rgb(0, 0, 0);
 
 .btn-symbol.btn-symbol-hotel,
 .btn-symbol.btn-symbol-hotel.active,
-.btn-symbol.btn-symbol-hotel.active:active,
 .btn-symbol.btn-symbol-evento,
 .btn-symbol.btn-symbol-evento.active,
-.btn-symbol.btn-symbol-evento.active:active,
 .btn-symbol.btn-symbol-2x1,
 .btn-symbol.btn-symbol-2x1.active,
-.btn-symbol.btn-symbol-2x1.active:active,
 .btn-symbol.btn-symbol-bar,
 .btn-symbol.btn-symbol-bar.active,
-.btn-symbol.btn-symbol-bar.active:active,
 .btn-symbol.btn-symbol-restaurante,
-.btn-symbol.btn-symbol-restaurante.active,
-.btn-symbol.btn-symbol-restaurante.active:active {
+.btn-symbol.btn-symbol-restaurante.active {
     overflow: hidden;
     background: none;
     position: relative;
     padding-left: 40px;
     padding-right: 12px;
+}
+
+.btn-symbol.btn-symbol-hotel.active:active,
+.btn-symbol.btn-symbol-evento.active:active,
+.btn-symbol.btn-symbol-2x1.active:active,
+.btn-symbol.btn-symbol-bar.active:active,
+.btn-symbol.btn-symbol-restaurante.active:active {
 }
 
 .btn-symbol.btn-symbol-hotel:before,
