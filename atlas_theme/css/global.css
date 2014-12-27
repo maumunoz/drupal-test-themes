@@ -1,4 +1,4 @@
-/* @group Fonts */
+ /* @group Fonts */
 
 /* Oswald */
 /*
@@ -11,15 +11,51 @@ Oswald Bold:    font-style: normal | font-weight: 700
 
 /* @end */
 
+/* @group Colors */
+
+/*
+$white, $light          = #fff    | rgb(255, 255, 255);
+$blue                   = #004a98 | rgb(0, 74, 152);
+$green                  = #afd25a | rgb(175, 210, 90);
+$red                    = #f30621 | rgb(243, 6, 33);
+$black, $dark           = #000    | rgb(0, 0, 0);
+*/
+
+/* @end */
+
 /* @group Content */
-.toolbar .wrapper-content {
-    padding-bottom: 25px;
-}
-
-.toolbar .wrapper-content {
+.wrapper-content {
     margin-top: 100px;
+    margin-bottom: 25px;
 }
 
+.toolbar .wrapper-content {
+    margin-top: 150px;
+}
+
+.wrapper-content .stack-content-inner,
+.wrapper-content .stack-content-inner .tabs,
+.wrapper-content .stack-content-inner .content-area .block.block-views {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.stack-copyright {
+    padding-bottom: 0;
+}
+/* @end */
+
+/* @group Page Background */
+body {
+    background-color: #004a98;
+}
+
+#page {
+    background-size: cover;
+    background-attachment: fixed;
+}
 /* @end */
 
 /* @group Media Query */
@@ -37,14 +73,9 @@ Oswald Bold:    font-style: normal | font-weight: 700
 @media only screen and (min-width : 992px) {
     /* @group Content */
     .wrapper-content {
-        margin-top: 100px;
-    }
-
-    .toolbar .wrapper-content {
+        margin-top: 150px;
         margin-bottom: 100px;
     }
-
-
     /* @end */
 }
 
@@ -52,5 +83,4 @@ Oswald Bold:    font-style: normal | font-weight: 700
 @media only screen and (min-width : 1200px) {
 
 }
-
 /* @end */
