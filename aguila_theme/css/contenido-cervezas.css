@@ -20,7 +20,7 @@
 }
 
 .cerveza.aguila-light .node-cerveza .field-name-field-subcontenido {
-    padding-top: 57px;
+    padding-top: 25px;
 }
 
 .node-cerveza .field-name-field-subcontenido strong {
@@ -80,13 +80,6 @@
     margin: 27px 0 0;
     line-height: 1;
 }
-
-/*Aguila Light*/
-
-.aguila-light .presentaciones .view-header  h3 {
-	top: -15px;
-}
-
 
 /* @end */
 
@@ -205,6 +198,10 @@
         height: 220px;
         padding: 65px 20px 0;
     }
+
+    .cerveza.aguila-light .node-cerveza .field-name-field-subcontenido {
+    	padding-top: 57px;
+	}
 
 }
 
