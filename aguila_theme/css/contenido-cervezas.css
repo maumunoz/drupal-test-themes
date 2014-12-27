@@ -82,6 +82,12 @@
     line-height: 1;
 }
 
+/*Aguila Light*/
+
+.aguila-light .presentaciones .view-header  h3 {
+	top: -15px;
+}
+
 
 /* @end */
 
