@@ -70,6 +70,8 @@
 }
 
 .presentaciones .views-row  img {
+	width: 100%;
+	max-width: 568px;
     height: auto;
 }
 
