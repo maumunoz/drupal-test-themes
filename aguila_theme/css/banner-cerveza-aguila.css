@@ -31,7 +31,7 @@
 	font-size: 25px;
 	line-height: 1.5em;
 	padding: 0 0 0 20px;
-	margin: 23px 0 0;
+	margin: 70px 0 0;
 	background: url('../images/sprite-categories.png') -174px -205px no-repeat;
 }
 
@@ -48,8 +48,14 @@
 	font-size: 14px;
 }
 
-.cerveza .favoritos-content-type-wrappe .flag-wrapper {
-	text-align: center;
+.cerveza .favoritos-content-type-wrapper span {
+	float: left;
+}
+
+.cerveza .favoritos-content-type-wrapper .flag-counter {
+	padding: 0 0 0 10px;
+	line-height: 50px;
+	word-wrap: break-word;
 }
 
 .cerveza .compartir {
@@ -137,12 +143,6 @@
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
 
-	.cerveza .favoritos-content-type .flag-counter {
-		padding: 0 10px 0 0;
-		word-wrap: break-word;
-		line-height: 1.2em;
-	}
-
 }
 
 /* Extra Small Devices, Phones */
@@ -150,15 +150,6 @@
 
 	.cerveza .views-field-nothing span {
 		margin: 105px 0 0;
-	}
-
-	.cerveza .favoritos-content-type-wrapper span {
-		float: left;
-	}
-
-	.cerveza .favoritos-content-type-wrapper .flag-counter {
-		padding: 0 0 0 10px;
-		line-height: 50px;
 	}
 
 	.cerveza .compartir {
