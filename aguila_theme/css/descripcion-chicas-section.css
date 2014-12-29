@@ -58,13 +58,16 @@
 
 
 .descripcion-chicas-aguila .col-left {
+    float: left;
+    width: 40%;
     padding: 15px 0 0 5%;
 }
 
 .descripcion-chicas-aguila .col-right {
+    float: right;
+    width: 33%;
     padding: 32px 0 0 0;
 }
-
 
     .descripcion-chicas-aguila h3 {
         line-height: 65px;
@@ -115,6 +118,8 @@
     .descripcion-chicas-aguila .col-left,
     .descripcion-chicas-aguila .col-right {
         padding: 0 !important;
+        float: none;
+        width: 100%;
     }
 
 }
