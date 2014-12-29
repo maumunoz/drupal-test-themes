@@ -1,0 +1,128 @@
+/* @group lightbox */
+
+/*Gallery arrows*/
+.mfp-gallery .mfp-arrow {
+    width: 70px;
+}
+
+.mfp-gallery .mfp-arrow:before,
+.mfp-gallery .mfp-arrow:after {
+    border: 0;
+    margin: 0;
+    background: #fff;
+    content: "";
+    display: block;
+    height: 5px;
+    width: 37px;
+    opacity: 1;
+}
+
+.mfp-gallery .mfp-arrow:before {
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+
+    /* IE8+ - must be on one line, unfortunately */
+       -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.7071067811865474, M12=-0.7071067811865477, M21=0.7071067811865477, M22=0.7071067811865474, SizingMethod='auto expand')";
+
+       /* IE6 and 7 */
+       filter: progid:DXImageTransform.Microsoft.Matrix(
+                M11=0.7071067811865474,
+                M12=-0.7071067811865477,
+                M21=0.7071067811865477,
+                M22=0.7071067811865474,
+                SizingMethod='auto expand');
+
+
+       /*
+        * To make the transform-origin be the middle of
+        * the object.    Note: These numbers
+        * are approximations.  For more accurate results,
+        * use Internet Explorer with this tool.
+        */
+       /*margin-left: 1px;
+       margin-top: -15px;*/
+}
+
+.mfp-gallery .mfp-arrow:after {
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+
+    /* IE8+ - must be on one line, unfortunately */
+   -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.7071067811865474, M12=-0.7071067811865477, M21=0.7071067811865477, M22=0.7071067811865474, SizingMethod='auto expand')";
+
+    /* IE6 and 7 */
+    filter: progid:DXImageTransform.Microsoft.Matrix(
+        M11=0.7071067811865474,
+        M12=-0.7071067811865477,
+        M21=0.7071067811865477,
+        M22=0.7071067811865474,
+        SizingMethod='auto expand');
+
+    /*
+        * To make the transform-origin be the middle of
+        * the object.    Note: These numbers
+        * are approximations.  For more accurate results,
+        * use Internet Explorer with this tool.
+    */
+    /* margin-left: 1px;
+    margin-top: -15px;*/
+}
+
+.mfp-gallery .mfp-arrow.mfp-arrow-left:before,
+.mfp-gallery .mfp-arrow.mfp-arrow-left:after {
+    right: 0;
+    left: auto;
+}
+
+.mfp-gallery .mfp-arrow.mfp-arrow-left:after {
+    margin-top: -15px;
+}
+
+.mfp-gallery .mfp-arrow.mfp-arrow-left:before {
+    margin-top: 16px;
+}
+
+.mfp-gallery .mfp-arrow.mfp-arrow-right:before {
+    margin-top: -15px;
+}
+
+.mfp-gallery .mfp-arrow.mfp-arrow-right:before {
+    margin-top: -15px;
+}
+
+/* @end */
+
+
+/* @group Media Query */
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    /* @group lightbox */
+
+    /* @end */
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    /* @group lightbox */
+    /*Gallery arrows*/
+    .mfp-gallery .mfp-arrow {
+        width: 90px;
+    }
+    /* @end */
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    /* @group lightbox */
+
+    /* @end */
+}
+
+/* @end */
