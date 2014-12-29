@@ -11,12 +11,19 @@
         },
         after: function ($, node) {
             // start the lightbox
-            node.find('.media-gallery-item').each(function () {
-                var anchor = $(this).find('.media-gallery-thumb');
-
-                anchor.magnificPopup({
-                    type: 'image'
-                });
+            node.find('.media-gallery-item .media-gallery-thumb').magnificPopup({
+                type: 'image',
+                tClose: 'Cerrar (Esc)', // Alt text on close button
+                tLoading: 'Cargando...',
+                image: {
+                    tError: 'No se pudo cargar <a href="%url%">la imagen</a>.' // Error message when image could not be loaded
+                },
+                gallery: {
+                    enabled: true,
+                    tPrev: 'Anterior (Tecla de flecha izquierda)',
+                    tNext: 'Siguiente (Tecla de flecha derecha)',
+                    tCounter: '%curr% de %total%'
+                }
             });
         }
     });

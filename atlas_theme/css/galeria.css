@@ -1,17 +1,58 @@
 /* @group lightbox */
 
-/* Content loading is in progress */
-.mfp-s-loading { }
+/*Gallery arrows*/
+.mfp-gallery .mfp-arrow {
+    width: 70px;
+}
 
-/* Content successfully loaded */
-.mfp-s-ready { }
+.mfp-gallery .mfp-arrow:before,
+.mfp-gallery .mfp-arrow:after {
+    border: 0;
+    margin: 0;
+    background: #fff;
+    content: "";
+    display: block;
+    height: 5px;
+    width: 37px;
+    opacity: 1;
+}
 
-/* Error during loading  */
-.mfp-s-error { }
+.mfp-gallery .mfp-arrow:before {
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
 
-/*Error message*/
-.mfp-s-error .mfp-preloader {
-  color: #f30621;
+.mfp-gallery .mfp-arrow:after {
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.mfp-gallery .mfp-arrow.mfp-arrow-left:before,
+.mfp-gallery .mfp-arrow.mfp-arrow-left:after {
+    right: 0;
+    left: auto;
+}
+
+.mfp-gallery .mfp-arrow.mfp-arrow-left:after {
+    margin-top: -15px;
+}
+
+.mfp-gallery .mfp-arrow.mfp-arrow-left:before {
+    margin-top: 16px;
+}
+
+.mfp-gallery .mfp-arrow.mfp-arrow-right:before {
+    margin-top: -15px;
+}
+
+.mfp-gallery .mfp-arrow.mfp-arrow-right:before {
+    margin-top: -15px;
 }
 
 /* @end */
@@ -29,7 +70,10 @@
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
     /* @group lightbox */
-
+    /*Gallery arrows*/
+    .mfp-gallery .mfp-arrow {
+        width: 90px;
+    }
     /* @end */
 }
 
