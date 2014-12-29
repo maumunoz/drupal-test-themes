@@ -82,7 +82,7 @@
 }
 
 .banner-calendario-chicas-aguila .media-thumbnail-frame {
-    position: relative;
+    position: absolute;
     top: 15px;
     right: 0;
     max-width: 40%;
@@ -90,7 +90,7 @@
 }
 
 .banner-calendario-chicas-aguila .content p {
-    width: 100%;
+    width: 55%;
     max-width: 370px;
     line-height: 1.5 !important;
 }
@@ -104,7 +104,7 @@
 .banner-calendario-chicas-aguila h4 {
     font-family: 'ITCAvantGardePro', Helvetica, Arial sans-serif;
     color: #fff;
-    font-size: 40px;
+    font-size: 55px;
     line-height: 1 !important;
     margin-top: 0;
     margin-bottom: 23px;
@@ -121,7 +121,7 @@
 
 .calendario-chicas-aguila {
     max-width: 1065px;
-    padding: 25px 20px 20px;
+    padding: 25px 30px 30px;
 }
 
 .calendar-calendar table {
@@ -158,6 +158,7 @@
 .calendar-calendar .month-view .full tr.single-day .no-entry,
 .calendar-calendar .month-view .full tr.single-day .no-entry .inner {
     height: 121px !important;
+    min-height: 121px;
 }
 
 .calendar-calendar .views-field-field-imagen img {
@@ -423,6 +424,25 @@
 /* @end */
 
 /* @group Media Query */
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+    .banner-calendario-chicas-aguila h3,
+    .banner-calendario-chicas-aguila h4 {
+        font-size: 40px;
+    }
+    .banner-calendario-chicas-aguila .content p {
+        width: 100%;
+    }
+    
+    .banner-calendario-chicas-aguila .media-thumbnail-frame {
+        position: relative;
+    }
+    
+    .calendario-chicas-aguila {
+        padding: 25px 20px 20px;
+    }
+}
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {

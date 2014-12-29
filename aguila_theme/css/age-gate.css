@@ -37,7 +37,7 @@
 #age_checker_verification_popup.aguila #age_checker_day, 
 #age_checker_verification_popup.aguila #age_checker_year {
     font-size: 50px;
-    height: 55px;
+    height: 52px;
     background-color: #1b8ec4;
     color: #fff;
     border: solid 2px #fff;
@@ -247,6 +247,7 @@
     
     #age_checker_verification_popup.aguila .agegate_country_select select {
         height: 38px;
+        font-size: 40px;
     }
     
 }
