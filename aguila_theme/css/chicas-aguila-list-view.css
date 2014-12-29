@@ -2,6 +2,10 @@
 
 /* @end */
 
+.chicas-aguila .view-banner-principal {
+    background-color: #feda00;
+}
+
 .node-page[about="/chicas-aguila"] .field-items {
 	margin: 20px auto;
 	overflow: hidden;
