@@ -289,5 +289,42 @@
 		width: 314px;
 	}
 
+	.presentaciones .view-content {
+		padding: 0 0 20px;
+	}
+
+	.aguila-light .presentaciones .view-content {
+		padding: 0 78px 20px 38px;
+	}
+
+	.aguila-cero .presentaciones .view-content {
+		padding: 60px 76px 20px 207px;
+	}
+
+	.presentaciones .views-row {
+		padding-bottom: 54px;
+	}
+
+	.presentaciones .views-row-1,
+	.presentaciones .views-row-2 {
+		float: left;
+	}
+
+	.presentaciones .views-row-last {
+		float: right;
+	}
+
+	.aguila .presentaciones .views-row-2 {
+		padding: 0 0 0 99px;
+	}
+
+	.aguila-cero .presentaciones .views-row-2 {
+		padding: 0 0 0 230px;
+	}
+
+	.aguila-light .presentaciones .views-row-2 {
+		padding: 0 0 0 160px;
+	}
+
 }
 /* @end */
