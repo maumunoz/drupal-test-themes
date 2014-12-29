@@ -73,6 +73,7 @@
 	width: 100%;
 	max-width: 568px;
     height: auto;
+    vertical-align: bottom;
 }
 
 .presentaciones .views-field-field-titulo {
@@ -167,6 +168,22 @@
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
 
+	.presentaciones .views-row-3 .views-field-field-presentacion-imagen .field-content {
+		line-height: 240px;
+	}
+
+	.presentaciones .views-row-2 .views-field-field-presentacion-imagen .field-content {
+		line-height: 386px;
+	}
+
+}
+
+@media only screen and (min-width : 360px) {
+	
+	.presentaciones .views-row-3 .views-field-field-presentacion-imagen .field-content {
+		line-height: 386px;
+	}
+
 }
 
 /* Extra Small Devices, Phones */
@@ -181,6 +198,11 @@
         padding: 10px 0 12px;
         top: -27px;
     }
+
+    .aguila-cero .presentaciones .views-row-2 .views-field-field-presentacion-imagen .field-content {
+		line-height: 336px;
+	}
+
 }
 
 /* Small Devices, Tablets */
@@ -201,6 +223,16 @@
         padding: 65px 20px 0;
     }
 
+    .aguila-light .presentaciones .views-row-2 .views-field-field-presentacion-imagen .field-content {
+		line-height: 421px;
+	}
+
+	.aguila-cero .presentaciones .views-row-1 .views-field-field-presentacion-imagen .field-content,
+	.aguila-cero .presentaciones .views-row-2 .views-field-field-presentacion-imagen .field-content,
+	.aguila-cero .presentaciones .views-row-3 .views-field-field-presentacion-imagen .field-content {
+		line-height: 346px;
+	}
+
     .cerveza.aguila-light .node-cerveza .field-name-field-subcontenido {
     	padding-top: 57px;
 	}
@@ -219,6 +251,10 @@
         padding: 10px 0 15px;
         top: -33px;
     }
+
+    .aguila-light .presentaciones .views-row-3 .views-field-field-presentacion-imagen .field-content {
+		line-height: 421px;
+	}
 }
 
 /* Large Devices, Wide Screens */
