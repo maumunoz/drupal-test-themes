@@ -230,6 +230,7 @@
         font-size: 20px;
         height: 30px;
         line-height: 30px;
+        vertical-align: middle;
     }
     
     #age_checker_verification_popup.aguila #age_checker_widget .dateselect #age_checker_month, 
@@ -247,6 +248,7 @@
     
     #age_checker_verification_popup.aguila .agegate_country_select select {
         height: 38px;
+        vertical-align: middle;
     }
     
 }
