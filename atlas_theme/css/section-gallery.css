@@ -23,6 +23,27 @@
     -o-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
+
+    /* IE8+ - must be on one line, unfortunately */
+       -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.7071067811865474, M12=-0.7071067811865477, M21=0.7071067811865477, M22=0.7071067811865474, SizingMethod='auto expand')";
+
+       /* IE6 and 7 */
+       filter: progid:DXImageTransform.Microsoft.Matrix(
+                M11=0.7071067811865474,
+                M12=-0.7071067811865477,
+                M21=0.7071067811865477,
+                M22=0.7071067811865474,
+                SizingMethod='auto expand');
+
+
+       /*
+        * To make the transform-origin be the middle of
+        * the object.    Note: These numbers
+        * are approximations.  For more accurate results,
+        * use Internet Explorer with this tool.
+        */
+       /*margin-left: 1px;
+       margin-top: -15px;*/
 }
 
 .mfp-gallery .mfp-arrow:after {
@@ -31,6 +52,26 @@
     -o-transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
+
+    /* IE8+ - must be on one line, unfortunately */
+   -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.7071067811865474, M12=-0.7071067811865477, M21=0.7071067811865477, M22=0.7071067811865474, SizingMethod='auto expand')";
+
+    /* IE6 and 7 */
+    filter: progid:DXImageTransform.Microsoft.Matrix(
+        M11=0.7071067811865474,
+        M12=-0.7071067811865477,
+        M21=0.7071067811865477,
+        M22=0.7071067811865474,
+        SizingMethod='auto expand');
+
+    /*
+        * To make the transform-origin be the middle of
+        * the object.    Note: These numbers
+        * are approximations.  For more accurate results,
+        * use Internet Explorer with this tool.
+    */
+    /* margin-left: 1px;
+    margin-top: -15px;*/
 }
 
 .mfp-gallery .mfp-arrow.mfp-arrow-left:before,
