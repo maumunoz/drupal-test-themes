@@ -9,6 +9,8 @@ stylesheets[all][] = 'css/global.css'
 stylesheets[all][] = 'css/header-section.css'
 stylesheets[all][] = 'css/footer-section.css'
 stylesheets[all][] = 'css/articulo-section.css'
+stylesheets[all][] = 'css/magnific-popup.css'
+stylesheets[all][] = 'css/galeria.css'
 
 regions[page_top] = 'Above page'
 regions[preheader_first] = 'Preheader first'

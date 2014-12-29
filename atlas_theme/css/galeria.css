@@ -1,0 +1,43 @@
+/* @group lightbox */
+
+/* Content loading is in progress */
+.mfp-s-loading { }
+
+/* Content successfully loaded */
+.mfp-s-ready { }
+
+/* Error during loading  */
+.mfp-s-error { }
+
+/*Error message*/
+.mfp-s-error .mfp-preloader {
+  color: #f30621;
+}
+
+/* @end */
+
+
+/* @group Media Query */
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    /* @group lightbox */
+
+    /* @end */
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    /* @group lightbox */
+
+    /* @end */
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    /* @group lightbox */
+
+    /* @end */
+}
+
+/* @end */

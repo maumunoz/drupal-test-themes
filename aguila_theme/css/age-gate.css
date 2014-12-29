@@ -37,7 +37,7 @@
 #age_checker_verification_popup.aguila #age_checker_day, 
 #age_checker_verification_popup.aguila #age_checker_year {
     font-size: 50px;
-    height: 55px;
+    height: 52px;
     background-color: #1b8ec4;
     color: #fff;
     border: solid 2px #fff;
@@ -49,7 +49,7 @@
     margin: 17px 4px 16px;
     padding: 0;
     text-align: center;
-    line-height: 1;
+    line-height: 55px;
 }
 
 #age_checker_verification_popup.aguila #age_checker_widget .dateselect #age_checker_month, 
@@ -229,6 +229,8 @@
     #age_checker_verification_popup.aguila #age_checker_year {
         font-size: 20px;
         height: 30px;
+        line-height: 30px;
+        vertical-align: middle;
     }
     
     #age_checker_verification_popup.aguila #age_checker_widget .dateselect #age_checker_month, 
@@ -246,6 +248,7 @@
     
     #age_checker_verification_popup.aguila .agegate_country_select select {
         height: 38px;
+        vertical-align: middle;
     }
     
 }
@@ -299,6 +302,7 @@
     #age_checker_verification_popup.aguila #age_checker_year {
         font-size: 40px;
         height: 70px;
+        line-height: 70px;
     }
     
     #age_checker_verification_popup.aguila #age_checker_widget .dateselect #age_checker_month, 
@@ -343,6 +347,7 @@
     #age_checker_verification_popup.aguila #age_checker_year {
         font-size: 50px;
         height: 90px;
+        line-height: 90px;
     }
     
     #age_checker_verification_popup.aguila #age_checker_widget .dateselect #age_checker_month, 
@@ -373,6 +378,7 @@
     #age_checker_verification_popup.aguila #age_checker_year {
         font-size: 60px;
         height: 112px;
+        line-height: 112px;
     }
     
     #age_checker_verification_popup.aguila #age_checker_widget .dateselect #age_checker_month, 
