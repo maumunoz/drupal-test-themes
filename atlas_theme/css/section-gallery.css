@@ -51,11 +51,15 @@
 .mfp-gallery .mfp-arrow.mfp-arrow-left {
     margin-top: -27px;
     margin-left: 35px;
+    background-position: 0 0;
 }
 
-.mfp-gallery .mfp-arrow.mfp-arrow-right:hover,
 .mfp-gallery .mfp-arrow.mfp-arrow-left:hover {
-    background-position-y: -52px;
+    background-position: 0 -52px;
+}
+
+.mfp-gallery .mfp-arrow.mfp-arrow-right:hover {
+    background-position: -39px -52px;
 }
 
 .mfp-gallery .mfp-arrow:after,
