@@ -58,6 +58,12 @@ body {
 }
 /* @end */
 
+/* @group Messages */
+.stack-messages {
+    padding-bottom: 2.0769em;
+}
+/* @end */
+
 /* @group Media Query */
 
 /* Small Devices, Tablets */

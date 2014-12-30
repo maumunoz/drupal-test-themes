@@ -24,6 +24,7 @@
     font-family: "Open Sans";
     font-weight: 900;
     font-size: 28px;
+    text-align: right;
 }
 
 #block-views-calendario-chicas-aguila-block .calendario-chicas-aguila .date-nav-wrapper .date-prev {
@@ -174,9 +175,13 @@
 .calendar-calendar .month-view .full td.single-day .calendar-empty,
 .calendar-calendar .month-view .full td.single-day.empty,
 .calendar-calendar .month-view .full td.date-box.empty,
-.calendar-calendar th.days,
-.calendar-calendar tr {
+.calendar-calendar th.days {
     background-color: transparent;
+}
+
+.calendar-calendar tr.single-day,
+.calendar-calendar tr.date-box {
+    background-color: #fff;
 }
 
 .calendar-calendar th.days {
@@ -199,24 +204,25 @@
 
 .calendar-calendar .month-view .full td,
 .calendar-calendar .month-view .full td.single-day div.monthview {
-    padding: 0;
+    padding: 0 !important;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
-    background: none;
+    background-color: none;
     overflow: visible;
 }
 
-.calendar-calendar .month-view .full .amarillo {
-    background: #ffd800;
+.calendar-calendar .month-view .full td.single-day div.monthview {
+    background-color: transparent;
+    border: none;
 }
 
-.calendar-calendar .evento-calendario-overlay {
-    background: #ffd800 !important;
+.calendar-calendar .month-view .full .amarillo {
+    background-color: #ffd800;
 }
 
 .calendar-calendar .month-view .full .celeste {
-    background: #2cd5ff;
+    background-color: #2cd5ff;
 }
 
 .calendar-calendar .month-view .full .blanco {
@@ -301,6 +307,7 @@
 }
 
 .calendar-calendar .evento-calendario-overlay {
+    background-color: #ffd800 !important;
     overflow: visible;
     position: absolute;
     width: 200px;
@@ -308,6 +315,7 @@
     left: 50%;
     z-index: 4;
     margin-left: -100px !important;
+    min-height: 250px;
 }
 
 .calendar-calendar .evento-calendario-overlay .box-arrow {
@@ -491,6 +499,7 @@
         min-height: 200px;
     }
 
+    .calendar-calendar .evento-calendario-overlay.forceup, 
     .calendar-calendar .evento-calendario-overlay {
         top: -75px;
         bottom: initial;
@@ -498,9 +507,10 @@
         margin-left: 0 !important
     }
 
+    .calendar-calendar .evento-calendario-overlay.forceup .box-arrow,
     .calendar-calendar .evento-calendario-overlay .box-arrow {
         left: 210px;
-        bottom: 50%;
+        bottom: 46%;
         border-color: rgba(255, 216, 0, 0) !important;
         border-top-color: transparent !important;
         border-left-color: #ffd800 !important;

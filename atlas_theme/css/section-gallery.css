@@ -1,101 +1,96 @@
+/* @group gallery page */
+
+/*Title below image*/
+.node-media-gallery .media-gallery-item-wrapper {
+    position: relative;
+    color: #fff;
+}
+
+.node-media-gallery .media-gallery-item-wrapper a {
+    color: #fff;
+}
+
+.node-media-gallery .media-gallery-item-wrapper .meta-wrapper {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 0;
+}
+
+.node-media-gallery .media-gallery-item-wrapper .meta-wrapper .meta-outer {
+    padding: 10px;
+    display: block;
+    line-height: 1.5em;
+    min-height: 3em;
+    height: auto;
+    background-color: rgba(0, 99, 169, 0.9);
+}
+
+.node-media-gallery .media-gallery-item-wrapper .media-title {
+    color: #fff;
+    height: auto;
+    white-space: normal;
+/*    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;*/
+}
+
+/*Title on hover*/
+.node-media-gallery .media-gallery-item-wrapper .meta-wrapper.hover {
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.node-media-gallery .media-gallery-item-wrapper .meta-wrapper.hover .meta-outer  {
+    background-color: rgba(0, 99, 169, 0.9);
+}
+
+.node-media-gallery .media-gallery-item-wrapper .meta-wrapper.hover .slider {
+    background-image: none;
+    height: 0;
+}
+
+/* @end */
+
 /* @group lightbox */
 
 /*Gallery arrows*/
-.mfp-gallery .mfp-arrow {
-    width: 70px;
-}
-
-.mfp-gallery .mfp-arrow:before,
-.mfp-gallery .mfp-arrow:after {
-    border: 0;
-    margin: 0;
-    background: #fff;
-    content: "";
-    display: block;
-    height: 5px;
-    width: 37px;
+.mfp-gallery .mfp-arrow.mfp-arrow-right,
+.mfp-gallery .mfp-arrow.mfp-arrow-left {
+    width: 30px;
+    height: 53px;
+    background-image: url(../images/gallery-arrows.png);
+    background-repeat: no-repeat;
     opacity: 1;
 }
 
+.mfp-gallery .mfp-arrow.mfp-arrow-right {
+    margin-top: -27px;
+    margin-right: 35px;
+    background-position: -39px 0;
+}
+
+.mfp-gallery .mfp-arrow.mfp-arrow-left {
+    margin-top: -27px;
+    margin-left: 35px;
+    background-position: 0 0;
+}
+
+.mfp-gallery .mfp-arrow.mfp-arrow-left:hover {
+    background-position: 0 -52px;
+}
+
+.mfp-gallery .mfp-arrow.mfp-arrow-right:hover {
+    background-position: -39px -52px;
+}
+
+.mfp-gallery .mfp-arrow:after,
 .mfp-gallery .mfp-arrow:before {
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-
-    /* IE8+ - must be on one line, unfortunately */
-       -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.7071067811865474, M12=-0.7071067811865477, M21=0.7071067811865477, M22=0.7071067811865474, SizingMethod='auto expand')";
-
-       /* IE6 and 7 */
-       filter: progid:DXImageTransform.Microsoft.Matrix(
-                M11=0.7071067811865474,
-                M12=-0.7071067811865477,
-                M21=0.7071067811865477,
-                M22=0.7071067811865474,
-                SizingMethod='auto expand');
-
-
-       /*
-        * To make the transform-origin be the middle of
-        * the object.    Note: These numbers
-        * are approximations.  For more accurate results,
-        * use Internet Explorer with this tool.
-        */
-       /*margin-left: 1px;
-       margin-top: -15px;*/
+    border: 0;
+    border-width: 0;
 }
-
-.mfp-gallery .mfp-arrow:after {
-    -moz-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-
-    /* IE8+ - must be on one line, unfortunately */
-   -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.7071067811865474, M12=-0.7071067811865477, M21=0.7071067811865477, M22=0.7071067811865474, SizingMethod='auto expand')";
-
-    /* IE6 and 7 */
-    filter: progid:DXImageTransform.Microsoft.Matrix(
-        M11=0.7071067811865474,
-        M12=-0.7071067811865477,
-        M21=0.7071067811865477,
-        M22=0.7071067811865474,
-        SizingMethod='auto expand');
-
-    /*
-        * To make the transform-origin be the middle of
-        * the object.    Note: These numbers
-        * are approximations.  For more accurate results,
-        * use Internet Explorer with this tool.
-    */
-    /* margin-left: 1px;
-    margin-top: -15px;*/
-}
-
-.mfp-gallery .mfp-arrow.mfp-arrow-left:before,
-.mfp-gallery .mfp-arrow.mfp-arrow-left:after {
-    right: 0;
-    left: auto;
-}
-
-.mfp-gallery .mfp-arrow.mfp-arrow-left:after {
-    margin-top: -15px;
-}
-
-.mfp-gallery .mfp-arrow.mfp-arrow-left:before {
-    margin-top: 16px;
-}
-
-.mfp-gallery .mfp-arrow.mfp-arrow-right:before {
-    margin-top: -15px;
-}
-
-.mfp-gallery .mfp-arrow.mfp-arrow-right:before {
-    margin-top: -15px;
-}
-
 /* @end */
 
 
@@ -112,9 +107,7 @@
 @media only screen and (min-width : 992px) {
     /* @group lightbox */
     /*Gallery arrows*/
-    .mfp-gallery .mfp-arrow {
-        width: 90px;
-    }
+
     /* @end */
 }
 

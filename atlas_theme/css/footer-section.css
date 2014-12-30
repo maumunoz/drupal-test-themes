@@ -101,6 +101,7 @@
         position: fixed;
         width: 100%;
         bottom: 0;
+        z-index: 10;
     }
 
     #footer .col-2 .col.col-first {
