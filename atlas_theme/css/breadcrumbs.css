@@ -1,0 +1,35 @@
+/* @group Breadcrumbs*/
+.stack-breadcrumb a {
+    font-family: 'Oswald', sans-serif;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+/* @end */
+
+
+/* @group Media Query */
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    /* @group Breadcrumbs*/
+
+    /* @end */
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    /* @group Breadcrumbs*/
+
+    /* @end */
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    /* @group Breadcrumbs*/
+
+    /* @end */
+}
+
+/* @end */

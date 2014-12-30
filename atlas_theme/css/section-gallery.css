@@ -18,18 +18,21 @@
 }
 
 .node-media-gallery .media-gallery-item-wrapper .meta-wrapper .meta-outer {
-    padding: 10px 10px 0 10px;
+    padding: 10px;
     display: block;
     line-height: 1.5em;
     min-height: 3em;
+    height: auto;
     background-color: rgba(0, 99, 169, 0.9);
 }
 
 .node-media-gallery .media-gallery-item-wrapper .media-title {
     color: #fff;
-    white-space: nowrap;
+    height: auto;
+    white-space: normal;
+/*    white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
+    text-overflow: ellipsis;*/
 }
 
 /*Title on hover*/
