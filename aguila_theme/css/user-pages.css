@@ -11,12 +11,24 @@
     padding: 5px 10px;
 }
 
-.page-user .content-area .login-top p {
+.page-user #page-title {
+    display: block;
+    padding: 65px 0 0;
+}
+
+.page-user #page-title,
+.page-user .content-area .login-top p,
+.page-user #user-pass-reset {
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-weight: 300;
     font-size: 18px;
     color: #5c5c5c;
     text-align: center;
+}
+
+.page-user #user-pass-reset {
+    font: 14px/20px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #333333;
 }
 
 .page-user .content-area form .form-item,
