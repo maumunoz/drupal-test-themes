@@ -1,6 +1,13 @@
 /* @group gallery page */
+
+/*Title below image*/
 .node-media-gallery .media-gallery-item-wrapper {
     position: relative;
+    color: #fff;
+}
+
+.node-media-gallery .media-gallery-item-wrapper a {
+    color: #fff;
 }
 
 .node-media-gallery .media-gallery-item-wrapper .meta-wrapper {
@@ -8,9 +15,6 @@
     bottom: 0;
     width: 100%;
     padding: 0;
-    /*background-color: rgba(0, 99, 169, 0.9);*/
-    /*background-color: rgba(0, 74, 152, 0.9);*/
-    color: #fff;
 }
 
 .node-media-gallery .media-gallery-item-wrapper .meta-wrapper .meta-outer {
@@ -22,10 +26,27 @@
 }
 
 .node-media-gallery .media-gallery-item-wrapper .media-title {
-    /*width: auto;*/
+    color: #fff;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+/*Title on hover*/
+.node-media-gallery .media-gallery-item-wrapper .meta-wrapper.hover {
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.node-media-gallery .media-gallery-item-wrapper .meta-wrapper.hover .meta-outer  {
+    background-color: rgba(0, 99, 169, 0.9);
+}
+
+.node-media-gallery .media-gallery-item-wrapper .meta-wrapper.hover .slider {
+    background-image: none;
+    height: 0;
 }
 
 /* @end */
