@@ -129,6 +129,66 @@
 
 /* @end */
 
+/* Group Login */
+
+.page-user-login .content .form-item {
+    width: 100%;
+    margin: 0 0 20px;
+}
+
+.page-user-login #edit-pass {
+    margin: 0 0 10px;
+}
+
+.page-user-login .login-bottom p:first-child {
+    display: none;
+}
+
+.page-user-login .login-bottom .divider-section {
+    margin: 0 0 10px;
+}
+
+.page-user-login .login-bottom .btn[href="/user/register"] {
+    width: 100%;
+    height: 60px;
+    line-height: 3.5em;
+}
+
+.page-user-login .login-top .hybridauth-widget {
+    margin-bottom: 20px;
+}
+
+.page-user-login .hybridauth-widget li {
+    width: 100%;
+}
+
+.page-user-login .hybridauth-widget a[title]:after {
+    display: inline-block;
+    width: 100%;
+    max-width: 268px;
+    height: 32px;
+    border-left: #fff solid 1px;
+    color: #fff;
+    text-align: center;
+    line-height: 2.4em;
+}
+
+.page-user-login .hybridauth-widget a[title="Facebook"]:after {
+    content: "INICIA SESIÓN CON FACEBOOK";
+    background: #5F79AF;
+}
+
+.page-user-login .hybridauth-widget a[title="Twitter"]:after {
+    content: "INICIA SESIÓN CON TWITTER";
+    background: #2690BA;
+}
+
+.page-user-login .hybridauth-widget span {
+    opacity: 1;
+}
+
+/* @end */
+
 /* @group Media Query */
 
 /* Custom, iPhone Retina */
@@ -138,6 +198,9 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
+    .page-user-login .hybridauth-widget a[title]:after {
+        max-width: 428px;
+    }
 
 }
 
@@ -146,6 +209,10 @@
     .page-user .content-area {
         margin: 50px auto;
         max-width: 630px;
+    }
+
+    .page-user-login .hybridauth-widget a[title]:after {
+        max-width: 578px;
     }
 }
 
