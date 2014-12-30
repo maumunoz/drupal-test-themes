@@ -4,14 +4,16 @@
         eventos, fechas, dias, colorEvento,
         fechaEvento, overlays, dia, evento, banner;
         
-    function checkOverlayPosition() {
-        jQuery(".evento-calendario-overlay").each(function(i,overlay){
-            overlay = jQuery(overlay);
+    function checkOverlayPosition($) {
+        $(".evento-calendario-overlay").each(function(i,overlay){
+            overlay = $(overlay);
             if(overlay.offset().left<0) {
                 if (overlay.css("left").indexOf("px")>-1) {
                     overlay.css("left", parseInt(overlay.css("left")) - overlay.offset().left )
                 }
             }
+            var dif = overlay.find(".box-arrow").offset().left - overlay.closest(".monthview").find(".cutoff").offset().left - 10;
+            if(dif>0)     overlay.find(".box-arrow").css("left",100-dif);
             
         });
     }
@@ -51,7 +53,7 @@
             // Hide all overlays and show the correct overlay
             overlays.addClass("hidden");
             evento.find(".evento-calendario-overlay").removeClass("hidden");
-            checkOverlayPosition();
+            checkOverlayPosition($);
             // Deactivate selected state in Dias and Eventos and activate only for the correct
             fechas.find('td').removeClass('evento-selected');
             dias.find('td').removeClass('evento-selected');
@@ -65,7 +67,7 @@
             // Hide all overlays and show the correct overlay
             overlays.addClass("hidden");
             $(this).find(".evento-calendario-overlay").removeClass("hidden");
-            checkOverlayPosition();
+            checkOverlayPosition($);
             // Deactivate selected state in Dias and Eventos and activate only for the correct
             fechas.find('td').removeClass('evento-selected');
             dias.find('td').removeClass('evento-selected');
