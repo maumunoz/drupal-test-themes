@@ -499,6 +499,7 @@
         min-height: 200px;
     }
 
+    .calendar-calendar .evento-calendario-overlay.forceup, 
     .calendar-calendar .evento-calendario-overlay {
         top: -75px;
         bottom: initial;
@@ -506,6 +507,7 @@
         margin-left: 0 !important
     }
 
+    .calendar-calendar .evento-calendario-overlay.forceup .box-arrow,
     .calendar-calendar .evento-calendario-overlay .box-arrow {
         left: 210px;
         bottom: 46%;

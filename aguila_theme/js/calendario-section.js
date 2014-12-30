@@ -9,12 +9,12 @@
             overlay = $(overlay);
             overlay.attr("style","");
             if(overlay.offset().left<0) {
+                overlay.addClass("forceup");
                 if (overlay.css("left").indexOf("px")>-1) {
                     overlay.css("left", parseInt(overlay.css("left")) - overlay.offset().left )
+                    overlay.find(".box-arrow").css("left","75px");
                 }
             }
-            var dif = overlay.find(".box-arrow").offset().left - overlay.closest(".monthview").find(".cutoff").offset().left - 10;
-            if(dif>0)     overlay.find(".box-arrow").css("left",100-dif);
             
         });
     }
