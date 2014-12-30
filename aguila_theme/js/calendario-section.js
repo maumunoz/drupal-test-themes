@@ -7,6 +7,7 @@
     function checkOverlayPosition($) {
         $(".evento-calendario-overlay").each(function(i,overlay){
             overlay = $(overlay);
+            overlay.attr("style","");
             if(overlay.offset().left<0) {
                 if (overlay.css("left").indexOf("px")>-1) {
                     overlay.css("left", parseInt(overlay.css("left")) - overlay.offset().left )
