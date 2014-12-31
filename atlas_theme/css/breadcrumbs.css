@@ -1,9 +1,30 @@
 /* @group Breadcrumbs*/
+
+.stack-breadcrumb,
+.stack-breadcrumb .active,
 .stack-breadcrumb a {
     font-family: 'Oswald', sans-serif;
     font-size: 17px;
     text-transform: uppercase;
     color: #fff;
+}
+
+.wrapper-content .stack-breadcrumb.stack {
+    padding-top: 0;
+}
+
+.stack-breadcrumb a {
+    padding: 0 4px;
+    vertical-align: middle;
+}
+
+.stack-breadcrumb a:first-child {
+    padding-left: 0;
+}
+
+.stack-breadcrumb .active {
+    padding-right: 4px;
+    vertical-align: middle;
 }
 
 /* @end */
@@ -14,14 +35,26 @@
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
     /* @group Breadcrumbs*/
+    .wrapper-content .stack-breadcrumb.stack {
+        padding-top: 45px;
+    }
 
+    .toolbar .wrapper-content .stack-breadcrumb.stack {
+        padding-top: 30px;
+    }
     /* @end */
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
     /* @group Breadcrumbs*/
+    .wrapper-content .stack-breadcrumb.stack {
+        padding-top: 15px;
+    }
 
+    .toolbar .wrapper-content .stack-breadcrumb.stack {
+        padding-top: 0;
+    }
     /* @end */
 }
 
@@ -31,5 +64,4 @@
 
     /* @end */
 }
-
 /* @end */

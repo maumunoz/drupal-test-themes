@@ -29,10 +29,9 @@
 .node-media-gallery .media-gallery-item-wrapper .media-title {
     color: #fff;
     height: auto;
-    white-space: normal;
-/*    white-space: nowrap;
+    white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;*/
+    text-overflow: ellipsis;
 }
 
 /*Title on hover*/
@@ -93,28 +92,88 @@
 }
 /* @end */
 
+/* @group item page */
+.media-gallery-detail-wrapper {
+    max-width: 95%;
+    margin: 1em auto 0;
+}
+
+.media-gallery-detail-wrapper .media-gallery-detail {
+    float: none;
+    max-width: none;
+    margin: 0;
+}
+
+.media-gallery-detail-wrapper,
+.media-gallery-detail-wrapper a {
+    color: #fff;
+}
+
+.media-gallery-detail-wrapper .field-name-media-description .field-label {
+    display: none;
+}
+
+.media-gallery-detail-wrapper .media-gallery-detail-info .media-gallery-back-link,
+.media-gallery-detail-wrapper .media-gallery-detail-info .media-gallery-detail-image-info-wrapper {
+    display: block;
+    float: none;
+}
+
+.media-gallery-detail-wrapper .media-gallery-detail-info .media-gallery-detail-image-info-wrapper {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+/* @end */
+
 
 /* @group Media Query */
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-    /* @group lightbox */
+    /* @group gallery page */
+    .node-media-gallery .media-gallery-item-wrapper .media-title {
+        white-space: normal;
+    }
 
+    .node-media-gallery .media-gallery-item-wrapper .meta-wrapper.hover .slider {
+        height: auto;
+    }
+    /* @end */
+
+    /* @group item page */
+    .media-gallery-detail-wrapper {
+        max-width: 70%;
+        margin: 1em auto 0;
+    }
+
+    .media-gallery-detail-wrapper .media-gallery-detail-info .media-gallery-back-link,
+    .media-gallery-detail-wrapper .media-gallery-detail-info .media-gallery-detail-image-info-wrapper {
+        display: inline;
+    }
+
+    .media-gallery-detail-wrapper .media-gallery-detail-info .media-gallery-back-link {
+        float: left;
+    }
+
+    .media-gallery-detail-wrapper .media-gallery-detail-info .media-gallery-detail-image-info-wrapper {
+        margin-top: 0;
+        margin-bottom: 0;
+        float: right;
+    }
     /* @end */
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-    /* @group lightbox */
-    /*Gallery arrows*/
 
-    /* @end */
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
-    /* @group lightbox */
-
+    /* @group item page */
+    .media-gallery-detail-wrapper {
+        max-width: 50%;
+    }
     /* @end */
 }
 
