@@ -37,7 +37,8 @@
 #age_checker_verification_popup.aguila #age_checker_day, 
 #age_checker_verification_popup.aguila #age_checker_year {
     font-size: 40px;
-    height: 52px;
+    height: 90px;
+    line-height: 90px;
     background-color: #1b8ec4;
     color: #fff;
     border: solid 2px #fff;
@@ -49,7 +50,6 @@
     margin: 17px 4px 16px;
     padding: 0;
     text-align: center;
-    line-height: 55px;
 }
 
 #age_checker_verification_popup.aguila #age_checker_widget .dateselect #age_checker_month, 
