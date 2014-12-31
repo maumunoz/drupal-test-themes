@@ -12,11 +12,9 @@
 }
 
 .page-user #page-title {
-    display: block;
-    padding: 65px 0 0;
+    display: none;
 }
 
-.page-user #page-title,
 .page-user .content-area .login-top p,
 .page-user #user-pass-reset {
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
@@ -74,10 +72,6 @@
 .page-user .content-area form .form-navigation-wrapper,
 .page-user .content-area form#user-login h3 {
     display: none;
-}
-
-.form-submit {
-
 }
 
 .page-user .content-area .login-bottom p,
