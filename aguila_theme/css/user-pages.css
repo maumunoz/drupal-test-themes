@@ -45,14 +45,25 @@
     color: #5c5c5c;
 }
 
-.page-user .content-area form input.form-text {
+.page-user .content-area form input.form-text,
+.page-user .content-area form .form-select {
     display: block;
     height: 46px;
     width: 100% !important;
     padding: 12px;
     border: 1px solid #e7e7e7;
-    background-color: #F3F4F9;
     box-shadow: none;
+}
+
+.page-user .content-area form input.form-text {
+    background-color: #F3F4F9;
+}
+
+.page-user .content-area form .form-select {
+    background: #0FC3FF url("../images/sprite.png") right -237px no-repeat;
+    color: #FFF;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
 .page-user .content-area form .submit-button-wrapper {
@@ -127,9 +138,38 @@
     z-index: -1;
 }
 
+.page-user .hybridauth-widget li {
+    width: 100%;
+}
+
+.page-user .hybridauth-widget a[title]:after {
+    display: inline-block;
+    width: 100%;
+    max-width: 268px;
+    height: 32px;
+    border-left: #fff solid 1px;
+    color: #fff;
+    text-align: center;
+    line-height: 2.4em;
+}
+
+.page-user .hybridauth-widget a[title="Facebook"]:after {
+    content: "INICIA SESI\00D3N CON FACEBOOK";
+    background: #5F79AF;
+}
+
+.page-user .hybridauth-widget a[title="Twitter"]:after {
+    content: "INICIA SESI\00D3N CON TWITTER";
+    background: #2690BA;
+}
+
+.page-user .hybridauth-widget span {
+    opacity: 1;
+}
+
 /* @end */
 
-/* Group Login */
+/* @group Login */
 
 .page-user-login .content .form-item {
     width: 100%;
@@ -158,33 +198,18 @@
     margin-bottom: 20px;
 }
 
-.page-user-login .hybridauth-widget li {
+/* @end */
+
+/* @group Register */
+
+.page-user-register #block-views-registro-previo-block,
+.page-user-register #block-views-registro-posterior-block {
+    display: none;
+}
+
+.page-user-register .content-area form .form-item {
     width: 100%;
-}
-
-.page-user-login .hybridauth-widget a[title]:after {
-    display: inline-block;
-    width: 100%;
-    max-width: 268px;
-    height: 32px;
-    border-left: #fff solid 1px;
-    color: #fff;
-    text-align: center;
-    line-height: 2.4em;
-}
-
-.page-user-login .hybridauth-widget a[title="Facebook"]:after {
-    content: "INICIA SESIÓN CON FACEBOOK";
-    background: #5F79AF;
-}
-
-.page-user-login .hybridauth-widget a[title="Twitter"]:after {
-    content: "INICIA SESIÓN CON TWITTER";
-    background: #2690BA;
-}
-
-.page-user-login .hybridauth-widget span {
-    opacity: 1;
+    margin: 0 0 20px;
 }
 
 /* @end */
@@ -198,7 +223,7 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
-    .page-user-login .hybridauth-widget a[title]:after {
+    .page-user .hybridauth-widget a[title]:after {
         max-width: 428px;
     }
 
@@ -211,7 +236,7 @@
         max-width: 630px;
     }
 
-    .page-user-login .hybridauth-widget a[title]:after {
+    .page-user .hybridauth-widget a[title]:after {
         max-width: 578px;
     }
 }
