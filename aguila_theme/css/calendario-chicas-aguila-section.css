@@ -129,6 +129,10 @@
     width: 100% !important;
 }
 
+.calendar-calendar tr {
+    background: none;
+}
+
 .calendar-calendar table tr td,
 .calendar-calendar table tr th {
     width: 14.2% !important;
@@ -179,11 +183,6 @@
     background-color: transparent;
 }
 
-.calendar-calendar tr.single-day,
-.calendar-calendar tr.date-box {
-    background-color: #fff;
-}
-
 .calendar-calendar th.days {
     font-weight: 600;
     font-size: 128%;
@@ -213,20 +212,20 @@
 }
 
 .calendar-calendar .month-view .full td.single-day div.monthview {
-    background-color: transparent;
+    background-color: transparent !important;
     border: none;
 }
 
-.calendar-calendar .month-view .full .amarillo {
+.calendar-calendar .month-view .full tr td.amarillo {
     background-color: #ffd800;
 }
 
-.calendar-calendar .month-view .full .celeste {
+.calendar-calendar .month-view .full tr td.celeste {
     background-color: #2cd5ff;
 }
 
-.calendar-calendar .month-view .full .blanco {
-
+.calendar-calendar .month-view .full tr td.blanco {
+    background-color: #ffffff;
 }
 
 .calendar-calendar td.date-box.evento-selected {
@@ -311,11 +310,26 @@
     overflow: visible;
     position: absolute;
     width: 200px;
-    bottom: 120%;
+    top: -235px;
     left: 50%;
     z-index: 4;
     margin-left: -100px !important;
-    min-height: 250px;
+    min-height: 255px;
+}
+
+.calendar-calendar div.evento-calendario-overlay.forceup {
+    top: -235px;
+    left: 50%;
+    margin-left: -100px !important;
+}
+
+.calendar-calendar div.evento-calendario-overlay.forceup .box-arrow {
+    left: 50%;
+    bottom: -20px;
+    border-color: rgba(255, 216, 0, 0) !important;
+    border-top-color: #ffd800 !important;
+    border-left-color: transparent !important;
+
 }
 
 .calendar-calendar .evento-calendario-overlay .box-arrow {
@@ -491,23 +505,21 @@
     }
 
 }
-
+    
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
+
+    .calendar-calendar .evento-calendario-overlay {
+        top: -75px;
+        left: -160px;
+        margin-left: 0 !important
+    }
+
 
     .banner-calendario-chicas-aguila {
         min-height: 200px;
     }
 
-    .calendar-calendar .evento-calendario-overlay.forceup, 
-    .calendar-calendar .evento-calendario-overlay {
-        top: -75px;
-        bottom: initial;
-        left: -160px;
-        margin-left: 0 !important
-    }
-
-    .calendar-calendar .evento-calendario-overlay.forceup .box-arrow,
     .calendar-calendar .evento-calendario-overlay .box-arrow {
         left: 210px;
         bottom: 46%;

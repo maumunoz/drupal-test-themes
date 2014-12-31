@@ -7,13 +7,22 @@
     function checkOverlayPosition($) {
         $(".evento-calendario-overlay").each(function(i,overlay){
             overlay = $(overlay);
+            monthview = overlay.closest(".monthview");
+            //reset
+            overlay.removeClass("forceup");
             overlay.attr("style","");
-            if(overlay.offset().left<0) {
+            overlay.find(".box-arrow").attr("style","");
+            //test
+            if(monthview.offset().left+monthview.width()/2<220) {
                 overlay.addClass("forceup");
-                if (overlay.css("left").indexOf("px")>-1) {
-                    overlay.css("left", parseInt(overlay.css("left")) - overlay.offset().left )
-                    overlay.find(".box-arrow").css("left","75px");
+                if(overlay.offset().left<0) {
+                    if (overlay.css("left").indexOf("px")>-1) {
+                        overlay.css("left", parseInt(overlay.css("left")) - overlay.offset().left )
+                    }
                 }
+                var arrowx = monthview.width()/2 - parseInt(overlay.css("margin-left")) - overlay.position().left;
+                overlay.find(".box-arrow").css("left",arrowx);
+
             }
             
         });
