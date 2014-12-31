@@ -15,6 +15,10 @@
     display: none;
 }
 
+.page-user .form-control {
+    padding: 0;
+}
+
 .page-user .content-area .login-top p,
 .page-user #user-pass-reset {
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
