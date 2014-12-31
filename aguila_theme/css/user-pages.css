@@ -144,7 +144,7 @@
 
 .page-user .hybridauth-widget a[title]:after {
     display: inline-block;
-    width: 268px;
+    width: calc(100% - 32px);
     height: 32px;
     border-left: #fff solid 1px;
     color: #fff;
@@ -223,9 +223,6 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
-    .page-user .hybridauth-widget a[title]:after {
-        width: 428px;
-    }
 
 }
 
