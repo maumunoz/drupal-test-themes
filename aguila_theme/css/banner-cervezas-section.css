@@ -57,6 +57,7 @@
     width: 60%;
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 13px;
+    font-weight: 600;
 
 }
 
@@ -163,6 +164,10 @@
         top: 67px;
     }
 
+    .view-banner-cervezas li:hover .views-field-field-cerveza-descripcion-corta {
+        top: 44px;
+    }
+
     .view-banner-cervezas .views-field-title {
         top: 238px;
         left: 15%;
@@ -191,7 +196,7 @@
     }
 
     .view-banner-cervezas .views-field-title {
-        top: 170px;
+        top: 152px;
         left: 33%;
     }
 

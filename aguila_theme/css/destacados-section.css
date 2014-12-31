@@ -64,6 +64,10 @@
     background-color: #ffd800;
 }
 
+.destacados-principal .views-row.amarillo  .btn-gold{
+    background-color: #FDF800;
+}
+
 .destacados-principal .views-row.blanco,
 .destacados-principal .views-row.blanco a {
     color: #484848;
@@ -192,6 +196,15 @@
     font-size: 15px;
     line-height: 20px;
     font-family: 'AkzidenzGroteskBQ', Helvetica, Arial, sans-serif;
+    font-weight: 900;
+}
+
+.destacados-principal .views-row-2 .views-field-title a::first-line,
+.destacados-principal .views-row-3 .views-field-title a::first-line,
+.destacados-principal .views-row-4 .views-field-title a::first-line,
+.destacados-principal .views-row-5 .views-field-title a::first-line,
+.destacados-principal .views-row-6 .views-field-title a::first-line,
+.destacados-principal .views-row-7 .views-field-title a::first-line {
     font-weight: 300;
 }
 
@@ -417,7 +430,6 @@
     .destacados-principal .views-row-7 .views-field-title a {
         font-size: 21px;
         line-height: 23px;
-        font-weight: 300;
     }
 
     .destacados-principal .views-row-2 .views-field-field-thumbnail {
