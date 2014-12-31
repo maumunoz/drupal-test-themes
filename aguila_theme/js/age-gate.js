@@ -14,7 +14,16 @@
                     var overlay = $('#age_checker_overlay');
                     overlay.append($(".agegate_footer"));
                     
-                    $("#age_checker_verification_popup input[type='submit']").before( $(".agegate_pre_submit") );
+                    var submit = popup.find("input[type='submit']");
+                    submit.before( $(".agegate_pre_submit") );
+                    submit.bind('click', function () {
+                        var recordarDetalles = popup.find('#rememberme').is(':checked');
+                        setTimeout(function () {
+                            if (jQuery.cookie('age_checker') === '1') {
+                                jQuery.cookie('age_checker', '1', { path: '/', expires: (recordarDetalles ? parseInt(Drupal.settings.age_checker.cookie_expiration, 10) : undefined) });
+                            }
+                        }, 150);
+                    });
                 }
             }, 150);
         };
