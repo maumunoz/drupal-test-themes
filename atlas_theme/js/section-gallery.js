@@ -1,5 +1,6 @@
-/*global jQuery2, jQuery */
+/*global jQuery2 */
 (function ($) {
+    'use strict';
     $.transform('.node-media-gallery', {
         process: function ($, node) {
             node.find('.media-gallery-item').each(function () {
