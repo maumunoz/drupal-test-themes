@@ -1,6 +1,34 @@
 /*global jQuery2 */
 (function ($) {
 
+    function setActive() {
+        var menuItems = $('#block-system-main-menu ul.menu > li > a'),
+            active = menuItems.filter('.active'),
+            seccion;
+
+        if (active.length === 0) {
+            seccion = $('.view-seccion-navegacion .global-seccion').text();
+
+            if (seccion && seccion !== '') {
+                seccion = seccion.toLowerCase();
+
+                if (seccion.indexOf('ruta') >= 0) {
+                    active = menuItems.filter('[href="/ferias-y-fiestas"]');
+                } else if (seccion.indexOf('en vivo') >= 0) {
+                    active = menuItems.filter('[href="/aguila-en-vivo"]');
+                } else if ((seccion.indexOf('futbol') >= 0) || (seccion.indexOf('fútbol') >= 0)) {
+                    active = menuItems.filter('[href="/fubtol"]');
+                } else if (seccion.indexOf('chicas') >= 0) {
+                    active = menuItems.filter('[href="/chicas-aguila"]');
+                } else if (seccion.indexOf('cerveza') >= 0) {
+                    active = menuItems.filter('[href^="/cerveza/"]');
+                }
+
+                active.first().addClass('active').parent().addClass('active-trail');
+            }
+        }
+    }
+
     function adjust() {
         var header = $('.site-name-wrapper'),
             headerOffset = header.offset().left,
@@ -48,6 +76,7 @@
     }
 
     adjust();
+    setActive();
     $(document).ready(adjust);
     $(window).on('load', adjust);
     $(window).on('resize', adjust);
