@@ -2,6 +2,37 @@
 .vista-lista-videos .large {
     display: none;
 }
+
+.vista-lista-videos .item-list ul {
+    width: 90%;
+    margin: 0 auto;
+    list-style: none;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.vista-lista-videos .item-list li {
+    display: inline-block;
+}
+
+.vista-lista-videos .video-area {
+    position: relative;
+    text-align: center;
+}
+
+.vista-lista-videos .video-area .play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    margin-left: -50px;
+}
+
+.vista-lista-videos .video-area {
+    color: #fff;
+}
 /* @end */
 
 
