@@ -144,7 +144,7 @@
 
 .page-user .hybridauth-widget a[title]:after {
     display: inline-block;
-    width: 268px;
+    width: calc(100% - 32px);
     height: 32px;
     border-left: #fff solid 1px;
     color: #fff;
@@ -178,10 +178,6 @@
 
 .page-user-login #edit-pass {
     margin: 0 0 10px;
-}
-
-.page-user-login .login-bottom p:first-child {
-    display: none;
 }
 
 .page-user-login .login-bottom .divider-section {
@@ -223,9 +219,6 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
-    .page-user .hybridauth-widget a[title]:after {
-        width: 428px;
-    }
 
 }
 
