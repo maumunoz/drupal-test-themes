@@ -68,6 +68,7 @@
 .node-type-lugar-de-fiesta .stack-content-inner,
 .node-type-article .stack-content-inner,
 .node-type-p-gina-html .stack-content-inner,
+.contenido-no-encontrado .stack-content-inner,
 .page-search .stack-content-inner,
 .view-futbol-destacados,
 .node-page[about="/chicas-aguila"] .field-items,
@@ -99,6 +100,17 @@
 #breadcrumb,
 .page-user #main .tabs {
     display: none;
+}
+
+.contenido-no-encontrado .stack-content-inner .content {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    text-align: center;
+    
+}
+
+.contenido-no-encontrado .stack-content-inner  h2{
+    font-family: 'ITCAvantGardePro', Helvetica, Arial sans-serif;
+    font-size: 6em;
 }
 
 .contenedor-video-responsive,
