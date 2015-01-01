@@ -197,13 +197,23 @@
 /* @group Register */
 
 .page-user-register #block-views-registro-previo-block,
-.page-user-register #block-views-registro-posterior-block {
+.page-user-register #block-views-registro-posterior-block,
+.page-user-register .form-item-name .description {
     display: none;
 }
 
 .page-user-register .content-area form .form-item {
     width: 100%;
     margin: 0 0 20px;
+}
+
+.page-user-register .content-area .submit-button-wrapper {
+    padding: 0 0 60px;
+}
+
+.page-user-register #edit-submit {
+    width: 100%;
+    height: 46px;
 }
 
 /* @end */
@@ -234,6 +244,22 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
+
+    .page-user-register .content-area form .form-item {
+        width: 45%;
+        margin: 0 2.5% 0;
+        float: left;
+    }
+
+    .page-user-register .content-area .submit-button-wrapper {
+        clear: both;
+        margin: 0 0 0 2.5%;
+        padding: 25px 0 60px;
+    }
+
+    .page-user-register #edit-submit {
+        width: 45%;
+    }
 
 }
 
