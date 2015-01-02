@@ -17,17 +17,38 @@
 
 .vista-lista-videos .video-area {
     position: relative;
-    text-align: center;
+    max-width: 854px;
+    margin: 0 auto;
 }
 
 .vista-lista-videos .video-area .play-btn {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 100px;
-    height: 100px;
-    margin-top: -50px;
-    margin-left: -50px;
+    width: 64px;
+    height: 42px;
+    margin-top: -21px;
+    margin-left: -32px;
+    background-image: url(../images/sprite-video.png);
+    background-repeat: no-repeat;
+}
+
+.vista-lista-videos .video-area .wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* proportion value to aspect ratio 16:9 (9 / 16 = 0.5625 or 56.25%) */
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.vista-lista-videos .video-area .large-thumb,
+.vista-lista-videos .video-area iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
 
 .vista-lista-videos .video-area {

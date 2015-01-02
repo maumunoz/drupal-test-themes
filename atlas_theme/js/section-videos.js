@@ -4,49 +4,53 @@
     $.transform('.vista-lista-videos', {
         process: function ($, node) {
             var videoArea = node.find('.video-area'),
-                videoIframe = $('<iframe />'),
+                videoWrapper = $('<div class="wrapper"></div>'),
+                videoIframe = $('<iframe class="hidden" />'),
                 videoTitle = $('<div class="title"></div>'),
-                playBtn = $('<a href="#" class="play-btn"></div>'),
+                playBtn = $('<a href="#" class="play-btn"></a>'),
                 videoList = node.find('.item-list li a'),
                 currentVideo;
 
-            node.on('click', node.find('.play-btn'), function (e) {
-                //var el = e.currentTarget;
-                e.preventDefault();
-                //videoIframe.attr('src', currentVideo.attr('href'));
-                //videoIframe.appendTo(videoArea);
-                //videoIframe.insertAfter(videoArea.find('.large-thumb'));
-            });
-
-            node.on('click', videoList, function (e) {
-                e.preventDefault();
-                var el = e.currentTarget;
-                currentVideo = el;
-                setVideoArea();
-            });
-
             function setVideoArea() {
                 //clean video area
-                videoArea.html('');
-
-                //set iframe values
-                //videoIframe.attr('src', currentVideo.attr('href'));
-                //videoIframe.appendTo(videoArea);
+                videoArea.empty();
+                videoWrapper.empty();
 
                 //add large image
-                currentVideo.find('.large img').clone().appendTo(videoArea).addClass('large-thumb');
+                currentVideo.find('.large img').clone().appendTo(videoWrapper).addClass('large-thumb');
 
                 //Add play button
-                playBtn.appendTo(videoArea);
+                playBtn.appendTo(videoWrapper);
+
+                //Add wrapper to video area
+                videoWrapper.appendTo(videoArea);
 
                 //set video title and add
                 videoTitle.text(currentVideo.data('title')).appendTo(videoArea);
             }
 
             function init() {
-                currentVideo = videoList.first()
+                currentVideo = videoList.first();
                 setVideoArea();
             }
+
+            //events
+            videoList.on('click', function (e) {
+                e.preventDefault();
+                var el = $(e.currentTarget);
+                currentVideo = el;
+                setVideoArea();
+            });
+
+            videoArea.on('click', '.play-btn', function (e) {
+                e.preventDefault();
+                videoIframe.attr('src', currentVideo.attr('href'));
+                videoIframe.insertAfter(videoArea.find('.large-thumb'));
+
+                videoIframe.removeClass('hidden');
+                videoArea.find('.large-thumb').remove();
+                videoArea.find('.play-btn').remove();
+            });
 
             init();
         }

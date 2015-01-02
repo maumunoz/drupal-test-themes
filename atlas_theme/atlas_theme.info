@@ -11,7 +11,7 @@ stylesheets[all][] = 'css/footer-section.css'
 stylesheets[all][] = 'css/articulo-section.css'
 stylesheets[all][] = 'css/magnific-popup.css'
 stylesheets[all][] = 'css/section-gallery.css'
-stylesheets[all][] = 'css/videos-section.css'
+stylesheets[all][] = 'css/section-videos.css'
 stylesheets[all][] = 'css/breadcrumbs.css'
 
 regions[page_top] = 'Above page'
