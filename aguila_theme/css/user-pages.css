@@ -197,7 +197,6 @@
 /* @group Register */
 
 .page-user-register #block-views-registro-previo-block,
-.page-user-register #block-views-registro-posterior-block,
 .page-user-register .form-item-name .description,
 .page-user-register .tos-and-disclaimer {
     display: none;
