@@ -169,7 +169,7 @@
     font-size: 20px;
     line-height: 25px;
     font-family: 'AkzidenzGroteskBQ', Helvetica, Arial, sans-serif;
-    font-weight: 300;
+    font-weight: 900;
 }
 
 
@@ -199,6 +199,7 @@
     font-weight: 900;
 }
 
+.destacados-principal .views-row-1 .views-field-title a::first-line,
 .destacados-principal .views-row-2 .views-field-title a::first-line,
 .destacados-principal .views-row-3 .views-field-title a::first-line,
 .destacados-principal .views-row-4 .views-field-title a::first-line,
@@ -377,7 +378,6 @@
         max-width: 90%;
         font-size: 38px;
         line-height: 38px;
-        font-weight: 300;
     }
 
     .destacados-principal .views-row-1 .views-field-title,

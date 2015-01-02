@@ -77,11 +77,20 @@
     width: 100%;
 }
 
-.web-form-aguila-news .form-item input::-webkit-input-placeholder,
-.web-form-aguila-news .form-item input:-moz-placeholder,
-.web-form-aguila-news .form-item input::-moz-placeholder,
+.web-form-aguila-news .form-item input::-webkit-input-placeholder {  
+   color: #1f527a;  
+}
+
+.web-form-aguila-news .form-item input:-moz-placeholder {  
+   color: #1f527a;  
+}
+
+.web-form-aguila-news .form-item input::-moz-placeholder {  
+   color: #1f527a;  
+}
+
 .web-form-aguila-news .form-item input:-ms-input-placeholder {  
-   color: #24567E;  
+   color: #1f527a;  
 }
 
 
