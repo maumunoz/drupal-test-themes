@@ -67,7 +67,7 @@
 }
 
 .web-form-aguila-news .form-item {
-    width: 50%;
+    width: 50.5%;
 }
 
 .web-form-aguila-news .form-item input.form-text {
@@ -154,7 +154,7 @@
 
 .stack-copyright p {
     text-align: center;
-    font-size: 150%;
+    font-size: 153%;
     letter-spacing: -0.2px;
     font-family: 'Retina Display Condensed', 'Open Sans', Helvetica, Arial, sans-serif;
 }
@@ -181,8 +181,8 @@
 @media only screen and (min-width : 480px) {
 
     .web-form-aguila-news .form-actions {
-        width: 25%;
-        min-width: 165px;
+        width: 22%;
+        min-width: 149px;
     }
 
 }
