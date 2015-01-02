@@ -1,11 +1,15 @@
 /* @group Age Gate */
 
+#age_checker_overlay {
+    background-size: cover;
+}
+
 #age_checker_verification_popup.aguila {
     background-color: #1b8ec4;
     border: none;
     width: 515px;
     height: 85%;
-    max-height: 480px;
+    max-height: 485px;
     top: 20% !important;
 }
 
@@ -221,7 +225,7 @@
 @media only screen and (max-width : 320px) {
 
     #age_checker_verification_popup.aguila {
-        max-height: 393px;
+        max-height: 398px;
     }
     
     #age_checker_verification_popup.aguila #age_checker_widget .dateselect #age_checker_month, 
@@ -280,7 +284,7 @@
 
     #age_checker_verification_popup.aguila {
         top: 36% !important;
-        max-height: 460px;
+        max-height: 465px;
     }
         
     #age_checker_verification_popup.aguila .agegate_content {
@@ -347,7 +351,7 @@
 @media only screen and (min-width : 768px) {
 
     #age_checker_verification_popup.aguila {
-        max-height: 480px;
+        max-height: 485px;
     }
 
     #age_checker_verification_popup.aguila #age_checker_widget .dateselect #age_checker_month, 
@@ -378,7 +382,7 @@
 @media only screen and (min-width : 992px) {
 
     #age_checker_verification_popup.aguila {
-        max-height: 522px;
+        max-height: 527px;
     }
 
     #age_checker_verification_popup.aguila #age_checker_widget .dateselect #age_checker_month, 

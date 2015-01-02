@@ -33,10 +33,10 @@
     color: #484848;
 }
 
-.view-banner-cervezas .views-field-field-cerveza-descripcion-corta .celeste a:link,
-.view-banner-cervezas .views-field-field-cerveza-descripcion-corta .celeste a:active,
-.view-banner-cervezas .views-field-field-cerveza-descripcion-corta .celeste a:visited,
-.view-banner-cervezas .views-field-field-cerveza-descripcion-corta .celeste a:hover {
+.view-banner-cervezas .celeste .views-field-field-cerveza-descripcion-corta a:link,
+.view-banner-cervezas .celeste .views-field-field-cerveza-descripcion-corta a:active,
+.view-banner-cervezas .celeste .views-field-field-cerveza-descripcion-corta a:visited,
+.view-banner-cervezas .celeste .views-field-field-cerveza-descripcion-corta a:hover {
     color: #fff;
 }
 
