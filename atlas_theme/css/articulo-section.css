@@ -1,7 +1,7 @@
 /* @group Contenido Articulo */
-.contenido-articulo .texto-articulo {
+.contenido-articulo,
+.contenido-articulo a {
     color: #fff;
-    font-size: 13px;
     font-family: 'proxima-nova', 'Helvetica Neue', sans-serif;
 }
 
