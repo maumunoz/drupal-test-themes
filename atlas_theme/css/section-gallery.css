@@ -1,5 +1,13 @@
 /* @group gallery page */
 
+.node-media-gallery,
+.node-media-gallery a,
+.media-gallery-detail-wrapper,
+.media-gallery-detail-wrapper a {
+    font-family: 'proxima-nova', 'Helvetica Neue', sans-serif;
+    color: #fff;
+}
+
 /*Title below image*/
 .node-media-gallery .media-gallery-item-wrapper {
     position: relative;

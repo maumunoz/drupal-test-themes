@@ -1,4 +1,11 @@
 /* @group Video Collection */
+
+.vista-lista-videos,
+.vista-lista-videos a {
+    font-family: 'proxima-nova', 'Helvetica Neue', sans-serif;
+    color: #fff;
+}
+
 .vista-lista-videos .large {
     display: none;
 }
