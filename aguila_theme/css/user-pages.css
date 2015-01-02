@@ -240,6 +240,10 @@
     .page-user .hybridauth-widget a[title]:after {
         width: 578px;
     }
+
+    .page-user-register .hybridauth-widget a[title]:after {
+        width: 598px;
+    }
 }
 
 /* Medium Devices, Desktops */
