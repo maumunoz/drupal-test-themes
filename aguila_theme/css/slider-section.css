@@ -187,6 +187,7 @@
     position: absolute;
     left: 13%;
     bottom: -15px;
+    cursor: default;
 }
 
 .front .banner-principal .btn.to-scroll,
