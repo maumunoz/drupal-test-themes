@@ -125,22 +125,22 @@
     padding: 25px 30px 30px;
 }
 
-.calendar-calendar table {
+.chicas-aguila .calendar-calendar table {
     width: 100% !important;
 }
 
-.calendar-calendar tr {
+.chicas-aguila .calendar-calendar tr {
     background: none;
 }
 
-.calendar-calendar table tr td,
-.calendar-calendar table tr th {
+.chicas-aguila .calendar-calendar table tr td,
+.chicas-aguila .calendar-calendar table tr th {
     width: 14.2% !important;
 }
 
-.calendar-calendar tr.date-box td .inner,
-.calendar-calendar .month-view .full tr.date-box .inner,
-.calendar-calendar .month-view .full tr.date-box td .inner {
+.chicas-aguila .calendar-calendar tr.date-box td .inner,
+.chicas-aguila .calendar-calendar .month-view .full tr.date-box .inner,
+.chicas-aguila .calendar-calendar .month-view .full tr.date-box td .inner {
     height: 35px !important;
     position: absolute;
     width: 100%;
@@ -148,61 +148,62 @@
     z-index: 1;
 }
 
-.calendar-calendar .month-view .full tr.date-box td {
+.chicas-aguila .calendar-calendar .month-view .full tr.date-box td {
     height: 1px !important;
     max-height: 1px !important;
     padding: 0;
     margin: 0;
 }
 
-.calendar-calendar tr.date-box td .inner {
+.chicas-aguila .calendar-calendar tr.date-box td .inner {
     padding: 10px 14px 0;
 }
 
-.calendar-calendar tr.single-day td .inner,
-.calendar-calendar .month-view .full tr.single-day .no-entry,
-.calendar-calendar .month-view .full tr.single-day .no-entry .inner {
+.chicas-aguila .calendar-calendar tr.single-day td .inner,
+.chicas-aguila .calendar-calendar .month-view .full tr.single-day .no-entry,
+.chicas-aguila .calendar-calendar .month-view .full tr.single-day .no-entry .inner {
     height: 121px !important;
     min-height: 121px;
 }
 
-.calendar-calendar .views-field-field-imagen img {
+.chicas-aguila .calendar-calendar .views-field-field-imagen img {
     width: 100%;
 }
 
-.calendar-calendar table,
-.calendar-calendar th.days {
+.chicas-aguila .calendar-calendar table,
+.chicas-aguila .calendar-calendar th.days {
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
     color: #000;
 }
 
-.calendar-calendar .month-view .full td.single-day .calendar-empty,
-.calendar-calendar .month-view .full td.single-day.empty,
-.calendar-calendar .month-view .full td.date-box.empty,
-.calendar-calendar th.days {
+.chicas-aguila .calendar-calendar .month-view .full td.single-day .calendar-empty,
+.chicas-aguila .calendar-calendar .month-view .full td.single-day.empty,
+.chicas-aguila .calendar-calendar .month-view .full td.date-box.empty,
+.chicas-aguila .calendar-calendar th.days {
     background-color: transparent;
 }
 
-.calendar-calendar th.days {
+.chicas-aguila .calendar-calendar th.days {
     font-weight: 600;
     font-size: 128%;
     text-transform: uppercase;
     border: none;
     padding: 0 0 12px 0;
+    background-color: transparent;
 }
 
-.calendar-calendar .month.day {
+.chicas-aguila .calendar-calendar .month.day {
     font-weight: 700;
     font-size: 128%;
     color: #000;
 }
 
-.calendar-calendar td.date-box.empty .day {
+.chicas-aguila .calendar-calendar td.date-box.empty .day {
     color: #b8b8b8;
 }
 
-.calendar-calendar .month-view .full td,
-.calendar-calendar .month-view .full td.single-day div.monthview {
+.chicas-aguila .calendar-calendar .month-view .full td,
+.chicas-aguila .calendar-calendar .month-view .full td.single-day div.monthview {
     padding: 0 !important;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
@@ -211,29 +212,29 @@
     overflow: visible;
 }
 
-.calendar-calendar .month-view .full td.single-day div.monthview {
+.chicas-aguila .calendar-calendar .month-view .full td.single-day div.monthview {
     background-color: transparent !important;
     border: none;
 }
 
-.calendar-calendar .month-view .full tr td.amarillo {
+.chicas-aguila .calendar-calendar .month-view .full tr td.amarillo {
     background-color: #ffd800;
 }
 
-.calendar-calendar .month-view .full tr td.celeste {
+.chicas-aguila .calendar-calendar .month-view .full tr td.celeste {
     background-color: #2cd5ff;
 }
 
-.calendar-calendar .month-view .full tr td.blanco {
+.chicas-aguila .calendar-calendar .month-view .full tr td.blanco {
     background-color: #ffffff;
 }
 
-.calendar-calendar td.date-box.evento-selected {
+.chicas-aguila .calendar-calendar td.date-box.evento-selected {
     background: #fff !important;
     color: #fff !important;
 }
 
-.calendar-calendar td.evento-selected .selected-overlay {
+.chicas-aguila .calendar-calendar td.evento-selected .selected-overlay {
     display: none;
     background: #fff !important;
     position: absolute;
@@ -244,17 +245,17 @@
     z-index: 2;
 }
 
-.calendar-calendar td.evento-selected .selected-overlay {
+.chicas-aguila .calendar-calendar td.evento-selected .selected-overlay {
     display: block;
 }
 
-.calendar-calendar .evento-calendario {
+.chicas-aguila .calendar-calendar .evento-calendario {
     text-align: center;
 }
 
 .amarillo .evento-calendario,
 .celeste .evento-calendario,
-.calendar-calendar .celeste .month.day {
+.chicas-aguila .calendar-calendar .celeste .month.day {
     color: #fff;
 }
 
@@ -262,16 +263,16 @@
     color: #000;
 }
 
-.calendar-calendar .evento-calendario td.single-day,
-.calendar-calendar .month-view .full tr td.date-box {
+.chicas-aguila .calendar-calendar .evento-calendario td.single-day,
+.chicas-aguila .calendar-calendar .month-view .full tr td.date-box {
     position: relative;
 }
 
-.calendar-calendar .evento-calendario {
+.chicas-aguila .calendar-calendar .evento-calendario {
     padding: 0 15px;
 }
 
-.calendar-calendar .evento-calendario td.single-day .div.monthview {
+.chicas-aguila .calendar-calendar .evento-calendario td.single-day .div.monthview {
     overflow: visible;
 }
 
@@ -285,7 +286,7 @@
     font-weight: 700;
 }
 
-.calendar-calendar .single-day .view-item .cutoff {
+.chicas-aguila .calendar-calendar .single-day .view-item .cutoff {
     position: absolute;
     width: 40px;
     height: 40px;
@@ -297,7 +298,7 @@
     z-index: 1;
 }
 
-.calendar-calendar td.evento-selected.single-day .view-item .cutoff {
+.chicas-aguila .calendar-calendar td.evento-selected.single-day .view-item .cutoff {
     display: block !important;
     left: 50%;
     margin-left: -20px;
@@ -305,7 +306,7 @@
     z-index: 3;
 }
 
-.calendar-calendar .evento-calendario-overlay {
+.chicas-aguila .calendar-calendar .evento-calendario-overlay {
     background-color: #ffd800 !important;
     overflow: visible;
     position: absolute;
@@ -317,13 +318,13 @@
     min-height: 255px;
 }
 
-.calendar-calendar div.evento-calendario-overlay.forceup {
+.chicas-aguila .calendar-calendar div.evento-calendario-overlay.forceup {
     top: -235px;
     left: 50%;
     margin-left: -100px !important;
 }
 
-.calendar-calendar div.evento-calendario-overlay.forceup .box-arrow {
+.chicas-aguila .calendar-calendar div.evento-calendario-overlay.forceup .box-arrow {
     left: 50%;
     bottom: -20px;
     border-color: rgba(255, 216, 0, 0) !important;
@@ -332,7 +333,7 @@
 
 }
 
-.calendar-calendar .evento-calendario-overlay .box-arrow {
+.chicas-aguila .calendar-calendar .evento-calendario-overlay .box-arrow {
     left: 50%;
     bottom: -20px;
     border: solid transparent !important;
@@ -349,71 +350,71 @@
     margin-left: -10px;
 }
 
-.calendar-calendar .month-view .full td .inner div.calendar.monthview div.banner {
+.chicas-aguila .calendar-calendar .month-view .full td .inner div.calendar.monthview div.banner {
     background-size: cover;
     padding: 12px 20px;
 }
 
-.calendar-calendar td .inner div.calendar div.content {
+.chicas-aguila .calendar-calendar td .inner div.calendar div.content {
     padding: 15px 20px;
 }
 
-.calendar-calendar .evento-calendario-overlay .banner {
+.chicas-aguila .calendar-calendar .evento-calendario-overlay .banner {
     color: #fff;
     font-family: 'ITCAvantGardePro', Helvetica, Arial sans-serif;
 }
 
-.calendar-calendar .evento-calendario-overlay .date {
+.chicas-aguila .calendar-calendar .evento-calendario-overlay .date {
     font-size: 240%;
     font-weight: 300;
     padding: 0 0 10px 0;
     border-bottom: 1px solid #8cdaf5;
 }
 
-.calendar-calendar .evento-calendario-overlay .title,
-.calendar-calendar .evento-calendario-overlay .title p {
+.chicas-aguila .calendar-calendar .evento-calendario-overlay .title,
+.chicas-aguila .calendar-calendar .evento-calendario-overlay .title p {
     margin: 0;
     padding: 0;
 }
 
-.calendar-calendar .evento-calendario-overlay .title {
+.chicas-aguila .calendar-calendar .evento-calendario-overlay .title {
     padding-top: 15px;
 }
 
-.calendar-calendar .evento-calendario-overlay em {
+.chicas-aguila .calendar-calendar .evento-calendario-overlay em {
     font-weight: 300;
     font-size: 60%;
     font-style: normal;
 }
 
-.calendar-calendar .evento-calendario-overlay strong {
+.chicas-aguila .calendar-calendar .evento-calendario-overlay strong {
     font-weight: 700;
     font-size: 83%;
 }
 
-.calendar-calendar .evento-calendario-overlay .content {
+.chicas-aguila .calendar-calendar .evento-calendario-overlay .content {
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
     color: #000;
 }
 
-.calendar-calendar .evento-calendario-overlay .description,
-.calendar-calendar .evento-calendario-overlay .place {
+.chicas-aguila .calendar-calendar .evento-calendario-overlay .description,
+.chicas-aguila .calendar-calendar .evento-calendario-overlay .place {
     font-weight: 700;
 }
 
-.calendar-calendar .evento-calendario-overlay .description {
+.chicas-aguila .calendar-calendar .evento-calendario-overlay .description {
     font-size: 140%;
     line-height: 1.2;
     padding: 0 0 6px 0 !important;
     border-bottom: 1px solid #ccad00 !important;
 }
 
-.calendar-calendar .evento-calendario-overlay .description p {
+.chicas-aguila .calendar-calendar .evento-calendario-overlay .description p {
     padding: 0 0 13px 0;
 }
 
-.calendar-calendar .evento-calendario-overlay .place,
-.calendar-calendar .evento-calendario-overlay .time {
+.chicas-aguila .calendar-calendar .evento-calendario-overlay .place,
+.chicas-aguila .calendar-calendar .evento-calendario-overlay .time {
     font-size: 120%;
     padding: 15px 0 0 25px !important;
     position: relative;
@@ -423,8 +424,8 @@
     overflow: visible;
 }
 
-.calendar-calendar .evento-calendario-overlay .time:before,
-.calendar-calendar .evento-calendario-overlay .place:before {
+.chicas-aguila .calendar-calendar .evento-calendario-overlay .time:before,
+.chicas-aguila .calendar-calendar .evento-calendario-overlay .place:before {
     content: ' ';
     width: 40px;
     height: 40px;
@@ -435,11 +436,11 @@
     left: -11px;
 }
 
-.calendar-calendar .evento-calendario-overlay .time:before {
+.chicas-aguila .calendar-calendar .evento-calendario-overlay .time:before {
     background-position: 0 -1000px;
 }
 
-.calendar-calendar .evento-calendario-overlay .place:before {
+.chicas-aguila .calendar-calendar .evento-calendario-overlay .place:before {
     background-position: 0 -1040px;
 }
 
@@ -509,7 +510,7 @@
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
 
-    .calendar-calendar .evento-calendario-overlay {
+    .chicas-aguila .calendar-calendar .evento-calendario-overlay {
         top: -75px;
         left: -160px;
         margin-left: 0 !important
@@ -520,7 +521,7 @@
         min-height: 200px;
     }
 
-    .calendar-calendar .evento-calendario-overlay .box-arrow {
+    .chicas-aguila .calendar-calendar .evento-calendario-overlay .box-arrow {
         left: 210px;
         bottom: 46%;
         border-color: rgba(255, 216, 0, 0) !important;
@@ -528,8 +529,8 @@
         border-left-color: #ffd800 !important;
     }
 
-    .calendar-calendar .single-day .view-item .cutoff,
-    .calendar-calendar td.evento-selected.single-day .view-item .cutoff {
+    .chicas-aguila .calendar-calendar .single-day .view-item .cutoff,
+    .chicas-aguila .calendar-calendar td.evento-selected.single-day .view-item .cutoff {
         display: block !important;
     }
 
