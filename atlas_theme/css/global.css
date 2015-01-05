@@ -83,6 +83,13 @@ body {
         margin-bottom: 100px;
     }
     /* @end */
+
+    /* @group Contacto */
+    .stack-prefooter {
+        position: fixed;
+        bottom: 108px;
+    }
+    /* @end */
 }
 
 /* Large Devices, Wide Screens */
