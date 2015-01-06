@@ -5,6 +5,15 @@
     margin: -2.7692em auto 0;
 }
 
+.lista-ruta-fiestas .view-empty {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5px;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
 .lista-ruta-fiestas .view-filters {
     display: none;
 }

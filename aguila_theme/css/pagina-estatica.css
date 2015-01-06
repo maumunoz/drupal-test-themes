@@ -5,6 +5,7 @@
     display: block;
     margin-top: 20px;
     font-size: 24px;
+    font-weight: bold;
 }
 
 .node-type-p-gina-html .content-area .field-items ul {
@@ -14,6 +15,7 @@
 
 .node-type-p-gina-html h3 {
     font-size: 17px;
+    font-weight: bold;
 }
 
 .node-type-p-gina-html h4 {

@@ -142,7 +142,12 @@
 		background: linear-gradient(to bottom, #fef4d2, #edd58e);
 		filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#fef4d2, endColorstr=#edd58e);
 		-ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#fef4d2, endColorstr=#edd58e)";
+        color: #9D6B14;
 	}
+    
+    .cerveza.aguila-light .field-name-body h3 {
+            color: #9D6B14;
+    }
 
 /* @end */
 
