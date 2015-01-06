@@ -1,4 +1,12 @@
 /* @group Carousel*/
+.front:not(.toolbar) .wrapper-content {
+    margin-top: 80px;
+}
+
+.front:not(.toolbar) .wrapper-content .stack .box {
+    padding: 0;
+}
+
 .vista-carrusel-fotos .item-list ul {
     padding: 0;
     margin: 0;
@@ -6,13 +14,14 @@
 
 .vista-carrusel-fotos .slick-prev {
     left: 0;
-    margin-left: 38px;
+    margin-left: 18px;
 }
 
 .vista-carrusel-fotos .slick-next {
     right: 0;
-    margin-right: 65px;
+    margin-right: 18px;
 }
+
 .vista-carrusel-fotos .slick-prev,
 .vista-carrusel-fotos .slick-next {
     width: 30px;
@@ -22,10 +31,10 @@
 .vista-carrusel-fotos .slick-prev:before,
 .vista-carrusel-fotos .slick-next:before {
     display: inline-block;
-    width: 30px;
-    height: 53px;
+    width: 21px;
+    height: 36px;
     font-size: 0;
-    background-image: url(../images/gallery-arrows.png);
+    background-image: url(../images/sprite-carousel-arrows.png);
     background-repeat: no-repeat;
     opacity: 1;
 }
@@ -36,7 +45,7 @@
 }
 
 .vista-carrusel-fotos .slick-next:before {
-    background-position: -39px 0;
+    background-position: -21px 0;
 }
 
 .vista-carrusel-fotos .img-wrapper img {
@@ -52,14 +61,27 @@
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
     /* @group Carousel*/
-
+    .front:not(.toolbar) .wrapper-content{
+        margin-top: 150px;
+    }
     /* @end */
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
     /* @group Carousel*/
+    .front:not(.toolbar) .wrapper-content{
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
 
+    .vista-carrusel-fotos .slick-prev {
+        margin-left: 38px;
+    }
+
+    .vista-carrusel-fotos .slick-next {
+        margin-right: 38px;
+    }
     /* @end */
 }
 
