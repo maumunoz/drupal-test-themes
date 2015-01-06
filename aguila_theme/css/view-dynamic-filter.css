@@ -90,11 +90,7 @@
     font-weight: 600;
 }
 
-.view-dynamic-filter .view-content .filter:hover {
-    color: #000;
-    background-color: #fff;
-}
-
+.view-dynamic-filter .view-content .filter:hover, 
 .view-dynamic-filter .view-content .active {
     background-color: #0fc3ff;
     color: #fff;
