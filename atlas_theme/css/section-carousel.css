@@ -1,4 +1,48 @@
 /* @group Carousel*/
+.vista-carrusel-fotos .item-list ul {
+    padding: 0;
+    margin: 0;
+}
+
+.vista-carrusel-fotos .slick-prev {
+    left: 0;
+    margin-left: 38px;
+}
+
+.vista-carrusel-fotos .slick-next {
+    right: 0;
+    margin-right: 65px;
+}
+.vista-carrusel-fotos .slick-prev,
+.vista-carrusel-fotos .slick-next {
+    width: 30px;
+    height: 53px;
+}
+
+.vista-carrusel-fotos .slick-prev:before,
+.vista-carrusel-fotos .slick-next:before {
+    display: inline-block;
+    width: 30px;
+    height: 53px;
+    font-size: 0;
+    background-image: url(../images/gallery-arrows.png);
+    background-repeat: no-repeat;
+    opacity: 1;
+}
+
+.vista-carrusel-fotos .slick-prev:before {
+    background-position: 0 0;
+
+}
+
+.vista-carrusel-fotos .slick-next:before {
+    background-position: -39px 0;
+}
+
+.vista-carrusel-fotos .img-wrapper img {
+    width: 100%;
+    height: auto;
+}
 
 /* @end */
 
