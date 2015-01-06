@@ -8,7 +8,9 @@
                 speed: 500,
                 fade: true,
                 slide: 'li',
-                cssEase: 'linear'
+                cssEase: 'linear',
+                autoplay: true,
+                autoplaySpeed: 3000
             });
         }
     });
