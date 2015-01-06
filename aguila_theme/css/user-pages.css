@@ -265,7 +265,7 @@
 
 .page-user-register .header-form p,
 .page-user-edit-profile .header-form p {
-    font: 300 18px "Open Sans", Helvetica, Arial, sans-serif;
+    font: bold 18px "Open Sans", Helvetica, Arial, sans-serif;
     margin: 0;
     text-align: center;
 }
@@ -352,7 +352,7 @@
     .page-user-register .header-form p,
     .page-user-edit-profile .header-form p {
         text-align: left;    
-        width: 70%;
+        width: 75%;
         clear: both;
         float: right;
         font-size: 24px;
