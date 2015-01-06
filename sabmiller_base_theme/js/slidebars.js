@@ -362,16 +362,11 @@
         });
 
         // Expand sidebar sub menus
-        $( '.sb-slidebar' ).on( 'touchend click', '.menu a', function ( event ) {
-            var expandible = $(event.currentTarget).parents('.expanded');
-            if (expandible && expandible.length > 0) {
-                expandible.toggleClass('open');
-                event.preventDefault();
-                event.stopPropagation();
-                return false;
-            } else {
-                followLink(event, $(this));
-            }
+        $( '.sb-slidebar' ).on( 'touchend click', '.expanded > a', function ( event ) {
+            $(event.currentTarget).parent().toggleClass('open');
+            event.preventDefault();
+            event.stopPropagation();
+            return false;
         });
 
         // Close Slidebar via site
