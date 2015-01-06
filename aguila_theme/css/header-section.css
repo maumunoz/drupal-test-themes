@@ -1,5 +1,9 @@
 /* @group Header */
 
+#header {
+    margin-bottom: 40px;
+}
+
 .site-name-wrapper {
     display: inline-block;
     left: 50%;
