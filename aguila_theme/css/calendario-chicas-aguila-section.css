@@ -157,8 +157,8 @@
 .chicas-aguila .calendar-calendar tr.single-day td .inner,
 .chicas-aguila .calendar-calendar .month-view .full tr.single-day .no-entry,
 .chicas-aguila .calendar-calendar .month-view .full tr.single-day .no-entry .inner {
-    height: 141px !important;
-    min-height: 141px;
+    height: 142px !important;
+    min-height: 142px;
 }
 
 
@@ -216,6 +216,7 @@
     border-radius: 0;
     background-color: none;
     overflow: visible;
+    margin: 0 !important;
 }
 
 .chicas-aguila .calendar-calendar .month-view .full td.single-day div.monthview {
@@ -235,7 +236,7 @@
     background-color: #ffffff;
 }
 
-.chicas-aguila .calendar-calendar td.evento-selected .selected-overlay {
+.chicas-aguila .calendar-calendar td .selected-overlay {
     background: #fff !important;
     position: absolute;
     width: 100%;
@@ -243,6 +244,9 @@
     top: 0px;
     left: 0;
     z-index: 2;
+    display: none;
+}
+.chicas-aguila .calendar-calendar td.evento-selected .selected-overlay {
     display: block;
 }
 .chicas-aguila .calendar-calendar td.evento-selected .selected-overlay {
