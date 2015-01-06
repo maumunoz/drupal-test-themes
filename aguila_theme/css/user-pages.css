@@ -213,7 +213,12 @@
 .page-user-register .form-item-name .description,
 .page-user-register .form-item-field-thumbnail-und-0 .description,
 .page-user-edit-profile .form-item-field-thumbnail-und-0 .description,
-.page-user-register .tos-and-disclaimer {
+.page-user-register .tos-and-disclaimer,
+.page-user-edit #edit-account .form-item-mail,
+.page-user-edit .description,
+.page-user-edit #edit-picture,
+.page-user-edit #edit-locale legend,
+.page-user-edit #edit-timezone legend {
     display: none;
 }
 
@@ -288,6 +293,20 @@
     background: #F3F4F9 url('../images/sprite.png') 52px -1070px no-repeat;
     color: #979797;
     line-height: 4.5em;
+}
+
+.page-user-edit #edit-account {
+    margin: 32px 0 0;
+}
+
+.page-user-edit .form-type-password .password-strength,
+.page-user-edit .form-type-password .password-confirm,
+.page-user-edit .form-type-password label {
+    margin: 0;
+}
+
+.page-user-edit .form-item-timezone #edit-timezone--2 {
+    padding-right: 25px;
 }
 
 /* @end */
