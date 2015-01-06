@@ -4,7 +4,7 @@
     display: inline-block;
     left: 50%;
     margin-left: -81px;
-    position: absolute;
+    position: fixed;
     z-index: 3;
 }
 
@@ -17,10 +17,12 @@
 }
 
 .stack-navigation {
-    position: relative;
+    position: fixed;
     height: 41px;
     background: #0565be;
     border-bottom: 4px solid #0fc3ff;
+    width: 100%;
+    z-index: 1;
 }
 
 .stack-navigation .block {
