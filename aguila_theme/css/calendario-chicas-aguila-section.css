@@ -224,15 +224,15 @@
     border: none;
 }
 
-.chicas-aguila .calendar-calendar .month-view .full tr td.amarillo {
+.chicas-aguila .calendar-calendar .month-view .full tr.single-day td.amarillo {
     background-color: #ffd800;
 }
 
-.chicas-aguila .calendar-calendar .month-view .full tr td.celeste {
+.chicas-aguila .calendar-calendar .month-view .full tr.single-day td.celeste {
     background-color: #2cd5ff;
 }
 
-.chicas-aguila .calendar-calendar .month-view .full tr td.blanco {
+.chicas-aguila .calendar-calendar .month-view .full tr.single-day td.blanco {
     background-color: #ffffff;
 }
 
