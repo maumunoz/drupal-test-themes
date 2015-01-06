@@ -111,7 +111,7 @@
     width: 100%;
 }
 
-.stack-navigation #block-system-main-menu ul.menu.pulldown {
+.stack-navigation #block-system-main-menu .content > ul.menu {
     padding: 14px 0 0 0;
     margin: 0;
     border: 0;
@@ -119,10 +119,11 @@
     /*text-transform: uppercase;*/
 }
 
-.stack-navigation #block-system-main-menu ul.menu ul{
+.stack-navigation #block-system-main-menu ul.menu ul {
     background-color: #004a98;
     text-transform: none;
     border-radius: 0;
+    border: 1px solid #fff;
 }
 
 .stack-navigation .menu .level-1,
@@ -317,7 +318,7 @@
 /* Special size for navigation */
 @media only screen and (min-width : 1240px) {
     /* @group Header */
-    .stack-navigation #block-system-main-menu ul.menu.pulldown {
+    .stack-navigation #block-system-main-menu .content > ul.menu {
         padding: 27px 0 0 0;
     }
     /* @end */

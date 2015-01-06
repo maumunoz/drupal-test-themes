@@ -131,3 +131,21 @@ function formatDate($, selector, formatResult) {
         nodeDate.text(publishDate);
     });
 }
+
+var lastScrollTop=0;
+jQuery(window).scroll(function() {
+    var _scrollTop = jQuery(window).scrollTop();
+    if(_scrollTop<50) {
+        jQuery("#header-inner").removeClass("hiddenHeader");
+        jQuery("#navigation").removeClass("hiddenHeader");
+    }else{
+        if(_scrollTop>lastScrollTop) {
+            jQuery("#header-inner").addClass("hiddenHeader");
+            jQuery("#navigation").addClass("hiddenHeader");
+        }else{
+            jQuery("#header-inner").removeClass("hiddenHeader");
+            jQuery("#navigation").removeClass("hiddenHeader");
+        }
+    }
+    lastScrollTop = _scrollTop;
+});
