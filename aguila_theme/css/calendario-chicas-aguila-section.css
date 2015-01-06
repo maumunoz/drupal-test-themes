@@ -234,6 +234,10 @@
     z-index: 2;
     display: block;
 }
+.chicas-aguila .calendar-calendar td.evento-selected .selected-overlay {
+    top:-22px \ ; /* IE6, IE7, IE8, IE9 */
+    top:-22px\9; /* IE6, IE7, IE8, IE9 */
+}
 
 .chicas-aguila .calendar-calendar .evento-calendario {
     text-align: center;
