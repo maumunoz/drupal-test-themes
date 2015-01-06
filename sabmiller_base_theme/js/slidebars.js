@@ -363,9 +363,11 @@
 
         // Expand sidebar sub menus
         $( '.sb-slidebar' ).on( 'touchend click', '.menu a', function ( event ) {
-            var expandible = $(this).parents(".expanded")[0] || [];
-            if (expandible.length) {
+            var expandible = $(event.currentTarget).parents('.expanded');
+            if (expandible && expandible.length > 0) {
                 expandible.toggleClass('open');
+                event.preventDefault();
+                event.stopPropagation();
                 return false;
             } else {
                 followLink(event, $(this));
