@@ -6,4 +6,8 @@
         el.appendTo( $(".share-section").empty() );
     });
 
+    $.initModule(".form-wrapper", function ($, el) {
+        el.find("option[value='_none']").attr("label","Seleccione ");
+    });
+
 }(jQuery2));

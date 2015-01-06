@@ -68,6 +68,16 @@
     -moz-appearance: none;
 }
 
+@-moz-document url-prefix() {
+    .page-user .content-area .form-type-select {
+        overflow: hidden;
+    }
+
+    .page-user .content-area form .form-select {
+        width: 110%;
+    }
+}
+
 .page-user .content-area form .submit-button-wrapper {
     border: none;
     box-shadow: none;
@@ -93,7 +103,8 @@
 }
 
 .page-user .content-area form .form-submit,
-.page-user .content-area .login-bottom .btn {
+.page-user .content-area .login-bottom .btn,
+.page-user-edit-profile [href='/user/logout'] {
     background: #ffd800;
     color: #000;
     display: inline-block;
@@ -169,7 +180,7 @@
 
 /* @group Login */
 
-.page-user-login .content .form-item {
+.page-user .content .form-item {
     width: 100%;
     margin: 0 0 20px;
 }
@@ -182,7 +193,9 @@
     margin: 0 0 10px;
 }
 
-.page-user-login .login-bottom .btn[href="/user/register"] {
+.page-user-login .login-bottom .btn[href="/user/register"],
+.page-user-edit-profile #edit-submit,
+.page-user-edit-profile [href='/user/logout'] {
     width: 100%;
     height: 60px;
     line-height: 3.5em;
@@ -198,13 +211,63 @@
 
 .page-user-register #block-views-registro-previo-block,
 .page-user-register .form-item-name .description,
+.page-user-register .form-item-field-thumbnail-und-0 .description,
+.page-user-edit-profile .form-item-field-thumbnail-und-0 .description,
 .page-user-register .tos-and-disclaimer {
     display: none;
 }
 
-.page-user-register .content-area form .form-item {
-    width: 100%;
-    margin: 0 0 20px;
+.page-user-register #user-register-form .header-form,
+.page-user-edit-profile #edit-profile-user-profile-form .header-form {
+    height: 222px;
+    background: url("../images/header_perfil.jpg") 0 0 / cover no-repeat;
+    padding: 28px 30px 0;
+    margin: 0 0 10px;
+}
+
+.page-user-register .content-area .form-item.form-item-field-thumbnail-und-0,
+.page-user-edit-profile .content-area .form-item.form-item-field-thumbnail-und-0 {
+    margin: 1em 0 0;
+}
+
+.page-user-register .form-item-field-thumbnail-und-0 label,
+.page-user-edit-profile .form-item-field-thumbnail-und-0 label {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: url("../images/profile.png");
+    text-indent: -9999px;
+    border-radius: 50%;
+    margin-left: calc(50% - 50px);
+}
+
+.page-user-register .form-item-field-thumbnail-und-0 .image-widget-data,
+.page-user-edit-profile .form-item-field-thumbnail-und-0 .image-widget-data {
+    position: relative;
+}
+
+.page-user-register .form-item-field-thumbnail-und-0 [type="file"],
+.page-user-edit-profile .form-item-field-thumbnail-und-0 [type="file"] {
+    opacity: 0;
+    cursor: pointer;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    top: -105px;
+}
+
+.page-user-register .image-widget-data [type="submit"],
+.page-user-edit-profile .image-widget-data [type="submit"] {
+    visibility: hidden;
+}
+
+.page-user-register .header-form p,
+.page-user-edit-profile .header-form p {
+    font: 300 18px "Open Sans", Helvetica, Arial, sans-serif;
+    margin: 0;
+    text-align: center;
 }
 
 .page-user-register .content-area .submit-button-wrapper {
@@ -214,6 +277,17 @@
 .page-user-register #edit-submit {
     width: 100%;
     height: 46px;
+}
+
+/* @end */
+
+/* @group Profile */
+
+.page-user-edit-profile [href='/user/logout'] {
+    margin: 15px 0 0;
+    background: #F3F4F9 url('../images/sprite.png') 52px -1070px no-repeat;
+    color: #979797;
+    line-height: 4.5em;
 }
 
 /* @end */
@@ -249,10 +323,39 @@
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
 
-    .page-user-register .content-area form .form-item {
+    .page-user-register .content-area form .form-item,
+    .page-user-edit-profile .content-area form .form-item {
         width: 45%;
         margin: 0 2.5% 0;
         float: left;
+    }
+
+    .page-user-register #user-register-form .header-form,
+    .page-user-edit-profile #edit-profile-user-profile-form .header-form {
+        padding-top: 48px;
+    }
+
+    .page-user-register .content-area .header-form .form-item-field-thumbnail-und-0,
+    .page-user-edit-profile .content-area .header-form .form-item-field-thumbnail-und-0 {
+        width: 20%;
+    }
+
+    .page-user-edit-profile .content-area .header-form .form-item-field-thumbnail-und-0 {
+        margin-top: -36px;
+    }
+
+    .page-user-register .content-area .header-form .form-item-field-thumbnail-und-0 {
+        margin-top: -12px;
+    }
+
+
+    .page-user-register .header-form p,
+    .page-user-edit-profile .header-form p {
+        text-align: left;    
+        width: 70%;
+        clear: both;
+        float: right;
+        font-size: 24px;
     }
 
     .page-user-register .content-area .submit-button-wrapper {
@@ -261,8 +364,20 @@
         padding: 25px 0 60px;
     }
 
-    .page-user-register #edit-submit {
+    .page-user-edit-profile #edit-actions--2 {
+        clear: both;
+        padding: 25px 0 0;
+    }
+
+    .page-user-register #edit-submit,
+    .page-user-edit-profile #edit-submit,
+    .page-user-edit-profile [href='/user/logout'] {
         width: 45%;
+    }
+
+    .page-user-edit-profile #edit-submit,
+    .page-user-edit-profile [href='/user/logout'] {
+        margin: 0 2.5% 0;
     }
 
 }
