@@ -1,11 +1,23 @@
 /* @group Header */
 
+#header {
+    margin-bottom: 40px;
+}
+
+.hiddenHeader {
+    margin-top: -40px;
+    display: none !important;
+    visibility: hidden !important;
+}
+
 .site-name-wrapper {
     display: inline-block;
     left: 50%;
     margin-left: -81px;
     position: fixed;
-    z-index: 3;
+    z-index: 9;
+    margin-top: 0px;
+    transition: margin-top 1s;
 }
 
 .site-name-wrapper .site-name a {
@@ -22,7 +34,9 @@
     background: #0565be;
     border-bottom: 4px solid #0fc3ff;
     width: 100%;
-    z-index: 1;
+    z-index: 8;
+    margin-top: 0px;
+    transition: margin-top 1s;
 }
 
 .stack-navigation .block {
