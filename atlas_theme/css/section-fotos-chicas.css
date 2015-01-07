@@ -1,0 +1,30 @@
+/* @group Fotos Chicas */
+.section-fotos-chicas {
+
+}
+/* @end */
+
+
+/* @group Media Query */
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    /* @group Fotos Chicas */
+
+    /* @end */
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    /* @group Fotos Chicas */
+
+    /* @end */
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    /* @group Fotos Chicas */
+
+    /* @end */
+}
+/* @end */
