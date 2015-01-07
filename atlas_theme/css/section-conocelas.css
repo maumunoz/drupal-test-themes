@@ -1,0 +1,28 @@
+/* @group Conocelas*/
+
+/* @end */
+
+
+/* @group Media Query */
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    /* @group Conocelas*/
+
+    /* @end */
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    /* @group Conocelas*/
+
+    /* @end */
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    /* @group Conocelas*/
+
+    /* @end */
+}
+/* @end */
