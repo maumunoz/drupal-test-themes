@@ -171,8 +171,14 @@
     color: #fff;
 }
 
-.sb-slidebar {
+.sb-slidebar,
+.sb-slidebar .menu .menu {
     background-color: #004a98;
+}
+
+.sb-slidebar .menu .menu {
+    border-top: 1px solid #004a98;
+    border-bottom: 1px solid #004a98;
 }
 
 .stack.stack-precontent {
