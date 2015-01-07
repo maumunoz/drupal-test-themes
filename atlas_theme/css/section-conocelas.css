@@ -1,0 +1,59 @@
+/* @group Conocelas*/
+.section-conocelas ul {
+    width: 100%;
+}
+
+.section-conocelas .media-thumbnail-frame {
+    display: inline;
+}
+
+.section-conocelas li {
+    /*float: left;*/
+    width: 60%;
+    margin: 20px auto;
+    /*margin-bottom: 20px;*/
+    list-style: none;
+    -webkit-box-shadow: 7px 12px 13px 0px rgba(96, 61, 27, 0.54);
+    -moz-box-shadow: 7px 12px 13px 0px rgba(96, 61, 27, 0.54);
+    box-shadow: 7px 12px 13px 0px rgba(96, 61, 27, 0.54);
+}
+
+.section-conocelas li img {
+    width: 100%;
+    height: auto;
+}
+/* @end */
+
+
+/* @group Media Query */
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    /* @group Conocelas*/
+
+    /* @end */
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    /* @group Conocelas*/
+    .section-conocelas li {
+        float: left;
+        width: 17%;
+        margin-left: 2%;
+        margin-bottom: 20px;
+        list-style: none;
+        -webkit-box-shadow: 7px 12px 13px 0px rgba(96, 61, 27, 0.54);
+        -moz-box-shadow: 7px 12px 13px 0px rgba(96, 61, 27, 0.54);
+        box-shadow: 7px 12px 13px 0px rgba(96, 61, 27, 0.54);
+    }
+    /* @end */
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    /* @group Conocelas*/
+
+    /* @end */
+}
+/* @end */

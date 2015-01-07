@@ -15,6 +15,7 @@ stylesheets[all][] = 'css/section-gallery.css'
 stylesheets[all][] = 'css/section-videos.css'
 stylesheets[all][] = 'css/breadcrumbs.css'
 stylesheets[all][] = 'css/section-carousel.css'
+stylesheets[all][] = 'css/section-conocelas.css'
 
 regions[page_top] = 'Above page'
 regions[preheader_first] = 'Preheader first'

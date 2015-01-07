@@ -144,8 +144,8 @@
 }
 
 .chicas-aguila .calendar-calendar .month-view .full tr.date-box td {
-    height: 1px !important;
-    max-height: 1px !important;
+    height: 0px !important;
+    max-height: 0px !important;
     padding: 0;
     margin: 0;
 }
@@ -278,6 +278,14 @@
 
 .chicas-aguila .calendar-calendar .evento-calendario td.single-day .div.monthview {
     overflow: visible;
+}
+
+.evento-calendario .icon {
+    display: none;
+}
+
+.evento-calendario .title {
+    font-size: 14px;
 }
 
 .evento-calendario .title em {
@@ -495,6 +503,15 @@
     .calendario-chicas-aguila {
         padding: 25px 30px 30px;
     }
+    
+    .evento-calendario .icon {
+        display: block;
+    }
+    
+    .evento-calendario .title {
+        font-size: 18px;
+    }
+
 }
 
 /* Small Devices, Tablets */
