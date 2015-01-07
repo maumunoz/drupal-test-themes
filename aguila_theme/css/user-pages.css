@@ -6,7 +6,8 @@
 
 .page-user .content-area .login-top,
 .page-user .content-area form,
-.page-user .content-area .login-bottom {
+.page-user .content-area .login-bottom,
+.page-user .profile {
     position: relative;
     padding: 5px 10px;
 }
@@ -33,13 +34,8 @@
     color: #333333;
 }
 
-.page-user .content-area form .form-item,
-.page-user .content-area form .form-action {
-    margin: 0;
-    padding: 5px 0;
-}
-
-.page-user .content-area form label {
+.page-user .content-area form label,
+.page-user .field-type-text .field-label {
     display: block;
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-weight: 300;
@@ -48,7 +44,8 @@
 }
 
 .page-user .content-area form input.form-text,
-.page-user .content-area form .form-select {
+.page-user .content-area form .form-select,
+.page-user .profile .field-type-text .field-item {
     display: block;
     height: 46px;
     width: 100% !important;
@@ -57,7 +54,8 @@
     box-shadow: none;
 }
 
-.page-user .content-area form input.form-text {
+.page-user .content-area form input.form-text,
+.page-user .profile .field-type-text .field-item {
     background-color: #F3F4F9;
 }
 
@@ -104,7 +102,9 @@
 
 .page-user .content-area form .form-submit,
 .page-user .content-area .login-bottom .btn,
-.page-user-edit-profile [href='/user/logout'] {
+.page-user #content [href='/user/logout'],
+.page-user #content [href$='edit-profile'],
+.page-user #content [href$='edit'] {
     background: #ffd800;
     color: #000;
     display: inline-block;
@@ -180,7 +180,8 @@
 
 /* @group Login */
 
-.page-user .content .form-item {
+.page-user .content .form-item,
+.page-user .profile .field-type-text {
     width: 100%;
     margin: 0 0 20px;
 }
@@ -195,14 +196,12 @@
 
 .page-user-login .login-bottom .btn[href="/user/register"],
 .page-user-edit-profile #edit-submit,
-.page-user-edit-profile [href='/user/logout'] {
+.page-user #content [href='/user/logout'],
+.page-user #content [href$='edit-profile'],
+.page-user #content [href$='edit'] {
     width: 100%;
     height: 60px;
     line-height: 3.5em;
-}
-
-.page-user-login .login-top .hybridauth-widget {
-    margin-bottom: 20px;
 }
 
 /* @end */
@@ -222,28 +221,31 @@
     display: none;
 }
 
-.page-user-register #user-register-form .header-form,
-.page-user-edit-profile #edit-profile-user-profile-form .header-form {
+.page-user .header-form {
     height: 222px;
     background: url("../images/header_perfil.jpg") 0 0 / cover no-repeat;
     padding: 28px 30px 0;
     margin: 0 0 10px;
 }
 
-.page-user-register .content-area .form-item.form-item-field-thumbnail-und-0,
-.page-user-edit-profile .content-area .form-item.form-item-field-thumbnail-und-0 {
+.page-user .content-area .form-item.form-item-field-thumbnail-und-0,
+.profile .header-form .user-picture {
     margin: 1em 0 0;
 }
 
-.page-user-register .form-item-field-thumbnail-und-0 label,
-.page-user-edit-profile .form-item-field-thumbnail-und-0 label {
+.page-user .form-item-field-thumbnail-und-0 label,
+.profile .header-form .user-picture {
     display: inline-block;
     width: 100px;
     height: 100px;
+    border-radius: 50%;
+    margin-left: calc(50% - 50px);
+}
+
+.page-user .form-item-field-thumbnail-und-0 label {
     background: url("../images/profile.png");
     text-indent: -9999px;
     border-radius: 50%;
-    margin-left: calc(50% - 50px);
 }
 
 .page-user-register .form-item-field-thumbnail-und-0 .image-widget-data,
@@ -268,11 +270,15 @@
     visibility: hidden;
 }
 
-.page-user-register .header-form p,
-.page-user-edit-profile .header-form p {
+.page-user .header-form p,
+.profile h2 {
     font: bold 18px "Open Sans", Helvetica, Arial, sans-serif;
     margin: 0;
     text-align: center;
+}
+
+.profile h2 {
+    margin: 0 0 20px;
 }
 
 .page-user-register .content-area .submit-button-wrapper {
@@ -288,11 +294,26 @@
 
 /* @group Profile */
 
-.page-user-edit-profile [href='/user/logout'] {
+.profile .header-form .user-picture {
+    float: left;
+    overflow: hidden;
+}
+
+.profile .header-form .user-picture img {
+    border-radius: 50%;
+    transform: scale(1.2);
+}
+
+.page-user #content [href='/user/logout'],
+.page-user #content [href$='edit-profile'],
+.page-user #content [href$='edit'] {
     margin: 15px 0 0;
-    background: #F3F4F9 url('../images/sprite.png') 52px -1070px no-repeat;
-    color: #979797;
     line-height: 4.5em;
+}
+
+.page-user #content [href='/user/logout'] {
+    background: #F3F4F9 url('../images/sprite.png') 25% -1070px no-repeat;
+    color: #979797;
 }
 
 .page-user-edit #edit-account {
@@ -342,34 +363,51 @@
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
 
-    .page-user-register .content-area form .form-item,
-    .page-user-edit-profile .content-area form .form-item {
+    .page-user-register #content-area .form-item,
+    .page-user-edit-profile #content-area .form-item,
+    .page-user .profile .field-type-text,
+    .page-user #content-area [href$='edit-profile'],
+    .page-user #content-area [href$='edit'] {
         width: 45%;
         margin: 0 2.5% 0;
         float: left;
     }
 
-    .page-user-register #user-register-form .header-form,
-    .page-user-edit-profile #edit-profile-user-profile-form .header-form {
+    .page-user-register #content-area .form-item,
+    .page-user-edit-profile #content-area .form-item,
+    .page-user .profile .field-type-text {
+        padding: 5px 0;
+    }
+
+    .profile #edit-actions--2 [href='/user/logout'] {
+        width: 95%;
+        margin-left: 2.5%;
+        background-position-x: 38%;
+    }
+
+    .page-user .header-form {
         padding-top: 48px;
     }
 
-    .page-user-register .content-area .header-form .form-item-field-thumbnail-und-0,
-    .page-user-edit-profile .content-area .header-form .form-item-field-thumbnail-und-0 {
+    .page-user #content-area .header-form .form-item-field-thumbnail-und-0 {
         width: 20%;
     }
 
-    .page-user-edit-profile .content-area .header-form .form-item-field-thumbnail-und-0 {
+    .page-user-edit-profile #content-area .header-form .form-item-field-thumbnail-und-0,
+    .profile .header-form .user-picture {
         margin-top: -36px;
     }
 
-    .page-user-register .content-area .header-form .form-item-field-thumbnail-und-0 {
+    .page-user-register #content-area .header-form .form-item-field-thumbnail-und-0 {
         margin-top: -12px;
     }
 
+    .profile .header-form .user-picture {
+        margin-left: 0;
+    }
 
-    .page-user-register .header-form p,
-    .page-user-edit-profile .header-form p {
+
+    .page-user .header-form p {
         text-align: left;    
         width: 75%;
         clear: both;
@@ -377,25 +415,30 @@
         font-size: 24px;
     }
 
-    .page-user-register .content-area .submit-button-wrapper {
+    .profile h2 {
+        margin: 20px 0;
+    }
+
+    .page-user-register #content-area .submit-button-wrapper {
         clear: both;
         margin: 0 0 0 2.5%;
         padding: 25px 0 60px;
     }
 
-    .page-user-edit-profile #edit-actions--2 {
+    .page-user-edit-profile #edit-actions--2,
+    .profile #edit-actions--2 {
         clear: both;
         padding: 25px 0 0;
     }
 
     .page-user-register #edit-submit,
     .page-user-edit-profile #edit-submit,
-    .page-user-edit-profile [href='/user/logout'] {
+    .page-user-edit-profile #content [href='/user/logout'] {
         width: 45%;
     }
 
     .page-user-edit-profile #edit-submit,
-    .page-user-edit-profile [href='/user/logout'] {
+    .page-user-edit-profile #content [href='/user/logout'] {
         margin: 0 2.5% 0;
     }
 
