@@ -362,9 +362,14 @@
         });
 
         // Expand sidebar sub menus
-        $( '.sb-slidebar' ).on( 'touchend click', '.menu > .expanded > a', function ( event ) {
-            $(event.currentTarget).parent().toggleClass('open');
-            return false;
+        $( '.sb-slidebar' ).on( 'touchend click', '.menu a', function ( event ) {
+            var parent = $(event.currentTarget).parent();
+            if (parent.hasClass('expanded')) {
+                parent.toggleClass('open');
+                return false;
+            } else {
+                followLink(event, $(this));
+            }
         });
 
         // Close Slidebar via site
