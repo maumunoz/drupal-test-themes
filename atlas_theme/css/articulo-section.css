@@ -32,6 +32,10 @@
 .contenido-articulo .principal {
     padding: 0 20px 0 10px;
 }
+
+.layout-2-columnas .principal p {
+    margin-bottom: 20px;
+}
 /* @end */
 
 /* @group Contenido Articulo Secundario */
