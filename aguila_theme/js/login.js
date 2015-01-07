@@ -8,6 +8,7 @@
 
     $.initModule(".form-wrapper", function ($, el) {
         el.find("option[value='_none']").attr("label","Seleccione ");
+        $("select").find("option[value='_none']").html("Seleccione ");
     });
 
 }(jQuery2));
