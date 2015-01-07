@@ -16,7 +16,10 @@ window.arr_monthnames = [ "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
             node.appendTo( $(".aguila-en-vivo .events") );
         });
         
-        
+        jQuery(".mostrarMapa a").click(function(event) {
+            event.preventDefault();
+            jQuery("body").scrollTo('.mapa-lugar-detalle',600);
+        });
         jQuery("#tr1").dzscalendar({ settings_alwaysinclude6rows: "on" });
     });
     

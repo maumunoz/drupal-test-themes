@@ -7,8 +7,8 @@
 #age_checker_verification_popup.aguila {
     background-color: #1b8ec4;
     border: none;
-    width: 515px;
-    height: 85%;
+    width: 530px;
+    height: 80%;
     max-height: 485px;
     top: 20% !important;
 }
@@ -336,9 +336,9 @@
     }
     
     #age_checker_verification_popup.aguila .agegate-disclaimer {
-        margin: 24px auto 22px;
+        margin: 12px auto 11px;
         font-size: 11px;
-        padding: 14px;
+        padding: 4px 14px;
     }
     
     #age_checker_verification_popup.aguila .agegate_footer_links {

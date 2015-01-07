@@ -9,13 +9,14 @@
 .node-page[about="/chicas-aguila"] .field-items {
 	margin: 20px auto;
 	overflow: hidden;
+    text-align: center;
 }
 
 .item-lista-chicas-aguila {
 	background-color: transparent !important;
     border: none !important;
     padding: 0 !important;
-    float: left;
+    display: inline-block;
     text-align: center;
     margin: 0 10px 10px;
     width:  248px;
@@ -60,7 +61,7 @@
 @media only screen and (min-width : 768px) {
 
 	.node-page[about="/chicas-aguila"] .field-items {
-		max-width: 600px;
+		max-width: 760px;
 		margin: 116px auto 130px;
 	}
 

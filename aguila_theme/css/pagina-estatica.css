@@ -88,18 +88,17 @@
     width: 100%;
 }
 
-.aguila-en-vivo-contenido .mainText .mostrarMapa {
+.aguila-en-vivo-contenido .mainText .mostrarMapa a {
     font-size: 13.8px;
-    padding-top: 3px;
+    color: #868686;
+    text-decoration: underline;    
+    width: 155px;
+    display: inline-block;
     height: 38px;
+    padding-top: 3px;
     background-image: url(../images/sprite.png);
     background-position: 115px -882px;
     background-repeat: no-repeat;
-}
-
-.aguila-en-vivo-contenido .mainText .mostrarMapa a {
-    color: #868686;
-    text-decoration: underline;    
 }
 
 .aguila-en-vivo-contenido .calendarBox {

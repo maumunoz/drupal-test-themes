@@ -155,17 +155,19 @@
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
 
-    /* @group Social Header */
-
-    .socialHeader {
-        display: block;
-    }
-
-    /* @end */
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 1024px) {
+
+    .socialHeader {
+        display: block;
+    }
 
 }
 

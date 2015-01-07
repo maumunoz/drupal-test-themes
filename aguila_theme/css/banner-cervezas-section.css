@@ -174,13 +174,10 @@
     }
 
     .view-banner-cervezas .views-field-title a {
-        font-size: 14px;
+        font-size: 12px;
     }
 
-    .view-banner-cervezas .views-field-title .cerveza {
-        display: block;
-    }
-
+ 
 }
 
 /* Medium Devices, Desktops */
