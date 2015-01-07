@@ -6,8 +6,19 @@ function IsEmail(email) {
 function onSubscriptionSubmit(event) {
     var _form = jQuery(event.target);
     var _inputEmail = _form.find('.form-text').val();
-    console.log(_inputEmail);
-    if (IsEmail(_inputEmail)) {
+    var message;
+    if(_form.find("div.errormsg").length>0) {
+        message = _form.find("div.errormsg")[0];
+    }else{
+        message = jQuery('<div class="errormsg"/>');
+        _form.append(message);
+    }
+    message.html("");
+    
+    if (_inputEmail=="") {
+        _form.find('.form-text').addClass("error");
+        message.html("Es necesario escribir una dirección de correo.");
+    } else if (IsEmail(_inputEmail)) {
         jQuery.ajax({
             type:'post',
             url:_form.attr("action"),
@@ -23,6 +34,7 @@ function onSubscriptionSubmit(event) {
     }else{
         //alert("Error");
         _form.find('.form-text').addClass("error");
+        message.html("Correo incorrecto, por favor digite un correo válido.");
     }
     event.preventDefault();
 }
