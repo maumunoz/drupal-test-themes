@@ -171,6 +171,15 @@
     color: #fff;
 }
 
+.stack-navigation .menu .menu a,
+.sb-slidebar .menu .menu a {
+    text-transform: none;
+}
+
+.stack-navigation .menu .level-2 a.active-trail {
+    color: #47a0d7;
+}
+
 .sb-slidebar,
 .sb-slidebar .menu .menu {
     background-color: #004a98;
