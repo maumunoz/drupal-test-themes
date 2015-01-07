@@ -362,10 +362,8 @@
         });
 
         // Expand sidebar sub menus
-        $( '.sb-slidebar' ).on( 'touchend click', '.expanded > a', function ( event ) {
+        $( '.sb-slidebar' ).on( 'touchend click', '.menu > .expanded > a', function ( event ) {
             $(event.currentTarget).parent().toggleClass('open');
-            event.preventDefault();
-            event.stopPropagation();
             return false;
         });
 
