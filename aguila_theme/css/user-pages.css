@@ -238,8 +238,7 @@
     margin: 1em 0 0;
 }
 
-.page-user .form-item-field-thumbnail-und-0 label,
-.profile .field-name-field-thumbnail img {
+.page-user .field-name-field-thumbnail img {
     display: inline-block;
     width: 100px;
     height: 100px;
@@ -284,6 +283,10 @@
 
 .profile h2 {
     margin: 0 0 20px;
+}
+
+.page-user .form-item-field-tel-fono-und-0-value .description {
+    margin: 5px 0 0;
 }
 
 .page-user-register .content-area .submit-button-wrapper {
