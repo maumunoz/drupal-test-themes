@@ -1,6 +1,7 @@
 /* @group Fotos Chicas */
-.section-fotos-chicas {
-
+.section-fotos-chicas li {
+    list-style-type: none;
+    float: left;
 }
 /* @end */
 

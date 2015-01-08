@@ -116,7 +116,6 @@
     margin: 0;
     border: 0;
     background-color: transparent;
-    /*text-transform: uppercase;*/
 }
 
 .stack-navigation #block-system-main-menu ul.menu ul {
@@ -124,6 +123,10 @@
     text-transform: none;
     border-radius: 0;
     border: 1px solid #fff;
+}
+
+.stack-navigation .menu li {
+    list-style-image: none;
 }
 
 .stack-navigation .menu .level-1,
