@@ -2,6 +2,33 @@
 .section-fotos-chicas {
 
 }
+
+.section-fotos-chicas ul,
+.section-fotos-chicas > div {
+    max-width: 865px;
+    margin: 0 auto;
+}
+
+.section-fotos-chicas li {
+    list-style-type: none;
+    max-width: 270px;
+    margin: 0 auto;
+}
+
+.section-fotos-chicas li:nth-child(2) {
+    margin-top: 20px;
+}
+
+.section-fotos-chicas > div {
+    clear: both;
+    margin-top: 5px;
+}
+
+.section-fotos-chicas > div img {
+    width: 100%;
+    height: auto;
+}
+
 /* @end */
 
 
@@ -17,7 +44,17 @@
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
     /* @group Fotos Chicas */
+    .section-fotos-chicas li {
+        float: left;
+        margin-left: 11.5%;
+    }
 
+    .section-fotos-chicas li:nth-child(2) {
+        float: right;
+        margin-left: 0;
+        margin-right: 9.5%;
+        margin-top: 0;
+    }
     /* @end */
 }
 
