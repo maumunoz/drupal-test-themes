@@ -30,8 +30,10 @@
 }
 
 .page-user #user-pass-reset {
-    font: 14px/20px 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    color: #333333;
+    font: 24px/20px "Open Sans", Helvetica, Arial, sans-serif;;
+    color: #000;
+    text-align: left;
+    padding: 40px 0 0;
 }
 
 .page-user .content-area form label,
