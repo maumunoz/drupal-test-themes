@@ -35,7 +35,8 @@
 }
 
 .page-user .content-area form label,
-.page-user .field-type-text .field-label {
+.page-user .field-type-text .field-label,
+.page-user .field-type-taxonomy-term-reference .field-label {
     display: block;
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-weight: 300;
@@ -45,7 +46,8 @@
 
 .page-user .content-area form input.form-text,
 .page-user .content-area form .form-select,
-.page-user .profile .field-type-text .field-item {
+.page-user .profile .field-type-text .field-item,
+.page-user .profile .field-type-taxonomy-term-reference .field-item {
     display: block;
     height: 46px;
     width: 100% !important;
@@ -55,7 +57,8 @@
 }
 
 .page-user .content-area form input.form-text,
-.page-user .profile .field-type-text .field-item {
+.page-user .profile .field-type-text .field-item,
+.page-user .profile .field-type-taxonomy-term-reference .field-item {
     background-color: #F3F4F9;
 }
 
@@ -181,7 +184,8 @@
 /* @group Login */
 
 .page-user .content .form-item,
-.page-user .profile .field-type-text {
+.page-user .profile .field-type-text,
+.page-user .profile .field-type-taxonomy-term-reference {
     width: 100%;
     margin: 0 0 20px;
 }
@@ -223,7 +227,8 @@
 
 .page-user .header-form {
     height: 222px;
-    background: url("../images/header_perfil.jpg") 0 0 / cover no-repeat;
+    background: url("../images/header_perfil.jpg") 0 0 no-repeat;
+    background-size: cover;
     padding: 28px 30px 0;
     margin: 0 0 10px;
 }
@@ -306,6 +311,11 @@
             transform: scale(1.2);
 }
 
+.page-user .field-type-text .field-label,
+.page-user .field-type-taxonomy-term-reference .field-label {
+    font-weight: bold;
+}
+
 .page-user #content [href='/user/logout'],
 .page-user #content [href$='edit-profile'],
 .page-user #content [href$='edit'] {
@@ -324,7 +334,8 @@
 
 .page-user-edit .form-type-password .password-strength,
 .page-user-edit .form-type-password .password-confirm,
-.page-user-edit .form-type-password label {
+.page-user-edit .form-type-password label,
+.page-user .profile .field-type-taxonomy-term-reference .field-item {
     margin: 0;
 }
 
@@ -368,6 +379,7 @@
     .page-user-register #content-area .form-item,
     .page-user-edit-profile #content-area .form-item,
     .page-user .profile .field-type-text,
+    .page-user .profile .field-type-taxonomy-term-reference,
     .page-user #content-area [href$='edit-profile'],
     .page-user #content-area [href$='edit'] {
         width: 45%;
@@ -377,7 +389,8 @@
 
     .page-user-register #content-area .form-item,
     .page-user-edit-profile #content-area .form-item,
-    .page-user .profile .field-type-text {
+    .page-user .profile .field-type-text,
+    .page-user .profile .field-type-taxonomy-term-reference {
         padding: 5px 0;
     }
 
