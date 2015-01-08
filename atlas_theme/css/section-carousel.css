@@ -7,6 +7,10 @@
     padding: 0;
 }
 
+.vista-carrusel-fotos .slick-track {
+    z-index: 2;
+}
+
 .vista-carrusel-fotos .item-list ul {
     padding: 0;
     margin: 0;
@@ -26,6 +30,7 @@
 .vista-carrusel-fotos .slick-next {
     width: 30px;
     height: 53px;
+    z-index: 3;
 }
 
 .vista-carrusel-fotos .slick-prev:before,

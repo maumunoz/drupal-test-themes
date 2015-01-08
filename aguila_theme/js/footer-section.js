@@ -8,7 +8,7 @@ function onSubscriptionSubmit(event) {
     var _inputEmail = _form.find('.form-text').val();
     var message;
     if(_form.find("div.errormsg").length>0) {
-        message = _form.find("div.errormsg")[0];
+        message = jQuery(_form.find("div.errormsg")[0]);
     }else{
         message = jQuery('<div class="errormsg"/>');
         _form.append(message);
