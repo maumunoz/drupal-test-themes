@@ -17,7 +17,7 @@
                     
                     var submit = popup.find("input[type='submit']");
                     submit.before( $(".agegate_pre_submit") );
-                    $(".agegate_pre_submit").before( $('.age_checker_error_message') );
+                    $(".agegate_pre_submit").before( $('#age_checker_error_message') );
                     submit.bind('click', function () {
                         var recordarDetalles = popup.find('#rememberme').is(':checked');
                         setTimeout(function () {

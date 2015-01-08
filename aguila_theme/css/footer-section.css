@@ -31,10 +31,18 @@
     display: inline-block;
     font-size: 85.71%;
     margin: 0 15px 0 0;
+
+}
+
+.web-form-aguila-news .errormsg {
+    display: block;
+    clear: both;
+    color: yellow;
 }
 
 .web-form-aguila-news .webform-client-form {
     overflow: hidden;
+    margin-bottom: 25px;
 }
 
 .web-form-aguila-news label,
@@ -62,8 +70,7 @@
 
 .web-form-aguila-news .form-item,
 .web-form-aguila-news .form-actions {
-    margin-top: 0;
-    margin-bottom: 25px;
+    margin: 0;
 }
 
 .web-form-aguila-news .form-item {

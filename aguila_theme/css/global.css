@@ -591,6 +591,12 @@ $black, $dark           = #000    | rgb(0, 0, 0);
     font-size: 10px;
 }
 
+.error input,
+input.error {
+    border: solid 2px red !important;
+    background-color: #FFECEC !important;
+}
+
 /* @end */
 
 /* @group Section main title */
