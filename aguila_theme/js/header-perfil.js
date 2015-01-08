@@ -19,7 +19,7 @@
         el.prepend("<div class='header-form'></div>");
         $(".header-form").after("<h2>Datos ingresados</h2>");
          $("<p>¡Hola " + $(".field-name-field-first-name").find(".field-item").text() + "!</p><p>Bienvenido a la tierra de la alegr&iacute;a</p>").appendTo(".header-form");
-        el.find(".user-picture").appendTo(".header-form");
+        el.find(".field-name-field-thumbnail").appendTo(".header-form");
 
         el.append($("#edit-actions--2"));
         el.find("[type='submit']").hide();

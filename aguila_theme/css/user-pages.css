@@ -234,12 +234,12 @@
 }
 
 .page-user .content-area .form-item.form-item-field-thumbnail-und-0,
-.profile .header-form .user-picture {
+.profile .field-name-field-thumbnail img {
     margin: 1em 0 0;
 }
 
 .page-user .form-item-field-thumbnail-und-0 label,
-.profile .header-form .user-picture {
+.profile .field-name-field-thumbnail img {
     display: inline-block;
     width: 100px;
     height: 100px;
@@ -417,8 +417,8 @@
         margin-top: -12px;
     }
 
-    .profile .header-form .user-picture {
-        margin-left: 0;
+    .profile .field-name-field-thumbnail img {
+        margin: 0;
     }
 
 
