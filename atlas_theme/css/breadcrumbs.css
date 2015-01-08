@@ -50,6 +50,8 @@
     /* @group Breadcrumbs*/
     .wrapper-content .stack-breadcrumb.stack {
         padding-top: 15px;
+        padding-left: 159px;
+        padding-bottom: 30px;
     }
 
     .toolbar .wrapper-content .stack-breadcrumb.stack {
