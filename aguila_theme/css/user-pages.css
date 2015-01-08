@@ -332,11 +332,14 @@
     margin: 32px 0 0;
 }
 
-.page-user-edit .form-type-password .password-strength,
 .page-user-edit .form-type-password .password-confirm,
 .page-user-edit .form-type-password label,
 .page-user .profile .field-type-taxonomy-term-reference .field-item {
     margin: 0;
+}
+
+.page-user-edit .password-strength {
+    margin: 0 0 10px;
 }
 
 .page-user-edit #edit-locale,
@@ -359,6 +362,10 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
+
+    .page-user-edit .password-strength {
+        margin: 0;
+    }
 
 }
 
