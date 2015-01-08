@@ -339,6 +339,11 @@
     margin: 0;
 }
 
+.page-user-edit #edit-locale,
+.page-user-edit #edit-timezone {
+    padding-left: 0;
+}
+
 .page-user-edit .form-item-timezone #edit-timezone--2 {
     padding-right: 25px;
 }
