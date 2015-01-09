@@ -69,6 +69,7 @@
 
                 items.css('paddingLeft', newItemPadding).css('paddingRight', newItemPadding);
                 beforeAfterPadding = (headerOffset + headerWidth / 2) - (beforeNode.offset().left + beforeNode.outerWidth() - newItemPadding);
+                beforeAfterPadding*=0.91;
                 beforeNode.css('paddingRight', beforeAfterPadding);
                 items.eq(after).css('paddingLeft', beforeAfterPadding);
             }

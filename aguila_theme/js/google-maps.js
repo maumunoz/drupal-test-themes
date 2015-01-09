@@ -21,6 +21,12 @@
                             lightness: 70
                         }
                     ]
+                },
+                {
+                    featureType: "poi",
+                    stylers: [
+                      { visibility: "off" }
+                    ]
                 }
             ]
         };

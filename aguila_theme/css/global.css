@@ -152,6 +152,23 @@
 
 /* @end */
 
+/* @group Messages */
+
+#messages {
+    margin: 0 auto;
+    max-width: 50%;
+    top: 39px;
+}
+
+#messages .messages-region > div.messages {
+    -webkit-box-shadow: 2px 4px 5px 0px rgba(0,0,0,0.46);
+    -moz-box-shadow: 2px 4px 5px 0px rgba(0,0,0,0.46);
+    box-shadow: 2px 4px 5px 0px rgba(0,0,0,0.46);
+    border-width: 2px;
+}
+
+/* @end */
+
 /* @group Colors */
 
 /*

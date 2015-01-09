@@ -58,6 +58,7 @@
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 13px;
     font-weight: 600;
+    transition: top 0.3s;
 
 }
 
