@@ -5,8 +5,10 @@
         process: function ($, node) {
             var videoArea = node.find('.video-area'),
                 videoWrapper = $('<div class="wrapper"></div>'),
+                textWrapper = $('<div class="text-wrapper"></div>'),
                 videoIframe = $('<iframe class="hidden" />'),
                 videoTitle = $('<div class="title"></div>'),
+                videoDescription = $('<div class="description"></div>'),
                 playBtn = $('<a href="#" class="play-btn"></a>'),
                 videoList = node.find('.item-list li a'),
                 currentVideo;
@@ -26,7 +28,15 @@
                 videoWrapper.appendTo(videoArea);
 
                 //set video title and add
-                videoTitle.text(currentVideo.data('title')).appendTo(videoArea);
+                videoTitle.text(currentVideo.data('title')).appendTo(textWrapper);
+
+                //set video description and add
+                if (currentVideo.data('description') !== '') {
+                    videoDescription.text(currentVideo.data('description')).appendTo(textWrapper);
+                }
+
+                //Add text wrapper to video area
+                textWrapper.appendTo(videoArea);
             }
 
             function init() {
@@ -50,6 +60,8 @@
                 videoIframe.removeClass('hidden');
                 videoArea.find('.large-thumb').remove();
                 videoArea.find('.play-btn').remove();
+                videoArea.find('.title').remove();
+                videoArea.find('.description').remove();
             });
 
             init();
