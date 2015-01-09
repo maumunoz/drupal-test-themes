@@ -6,6 +6,10 @@
     color: #fff;
 }
 
+.vista-lista-videos .selected {
+    opacity: 0.5;
+}
+
 .vista-lista-videos .large {
     display: none;
 }
@@ -31,9 +35,10 @@
 .vista-lista-videos .item-list li {
     display: inline-block;
     position: relative;
-    padding: 5px;
+    margin: 5px;
     width: 171px;
     max-width: 33%;
+    background-color: #fff;
 }
 
 .vista-lista-videos .item-list a img {

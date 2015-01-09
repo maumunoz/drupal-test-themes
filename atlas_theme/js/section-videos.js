@@ -21,6 +21,9 @@
                 //add large image
                 currentVideo.find('.large img').clone().appendTo(videoWrapper).addClass('large-thumb');
 
+                node.find('.item-list li a.selected').removeClass('selected');
+                currentVideo.addClass('selected');
+
                 //Add play button
                 playBtn.appendTo(videoWrapper);
 
