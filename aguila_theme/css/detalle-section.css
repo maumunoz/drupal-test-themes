@@ -34,6 +34,12 @@
     line-height: 1;
 }
 
+.content-area .no-access {
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    padding: 40px 0;
+}
 .node-type-lugar-de-fiesta .content-area p,
 .node-type-article .content-area p {
     margin: 0 0 15px 0;

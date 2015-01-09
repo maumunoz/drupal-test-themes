@@ -14,6 +14,11 @@ function removeColorBox() {
                 type: 'image',
                 tClose: 'Cerrar (Esc)',
                 tLoading: 'Cargando...',
+                    callbacks: {
+                        open: function() {
+                            jQuery(".mfp-prevent-close").insertBefore(".mfp-close");
+                        }
+                    },
                 image: {
                     titleSrc: function(item) {
                         var parts =  item.el.attr('href').split("/");
