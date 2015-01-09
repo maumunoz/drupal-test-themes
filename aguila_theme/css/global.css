@@ -67,9 +67,11 @@
 .banner-lugar-fiesta,
 .node-type-lugar-de-fiesta .stack-content-inner,
 .node-type-article .stack-content-inner,
+.node-type-media-gallery .stack-content-inner,
 .node-type-p-gina-html .stack-content-inner,
-.contenido-no-encontrado .stack-content-inner,
+.page-media-gallery-detail .stack-content-inner,
 .page-search .stack-content-inner,
+.contenido-no-encontrado .stack-content-inner,
 .view-futbol-destacados,
 .node-page[about="/chicas-aguila"] .field-items,
 .descripcion-chicas-aguila .views-field-body,
@@ -641,6 +643,102 @@ input.error {
 
 /* @end */
 
+/* @group lightbox */
+
+/*Gallery arrows*/
+.mfp-gallery .mfp-arrow.mfp-arrow-right,
+.mfp-gallery .mfp-arrow.mfp-arrow-left {
+    width: 30px;
+    height: 53px;
+    background-image: url(../images/gallery-arrows.png);
+    background-repeat: no-repeat;
+    opacity: 1;
+}
+
+.mfp-gallery .mfp-arrow.mfp-arrow-right {
+    margin-top: -27px;
+    margin-right: 35px;
+    background-position: -39px 0;
+}
+
+.mfp-gallery .mfp-arrow.mfp-arrow-left {
+    margin-top: -27px;
+    margin-left: 35px;
+    background-position: 0 0;
+}
+
+.mfp-gallery .mfp-arrow.mfp-arrow-left:hover {
+    background-position: 0 -52px;
+}
+
+.mfp-gallery .mfp-arrow.mfp-arrow-right:hover {
+    background-position: -39px -52px;
+}
+
+.mfp-gallery .mfp-arrow:after,
+.mfp-gallery .mfp-arrow:before {
+    border: 0;
+    border-width: 0;
+}
+
+.mfp-image-holder .mfp-close, 
+.mfp-iframe-holder .mfp-close {
+    font-size: 60px;
+    font-family: "Open Sans";
+    font-weight: lighter;
+    text-shadow: 0px 0px 5px #000;
+    top: 40px;
+    opacity: 1;
+    right: 2px;
+    cursor: inherit;
+}
+
+.mfp-bottom-bar {
+    margin-top: -65px;
+}
+
+.mfp-bottom-bar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.mfp-bottom-bar a:hover {
+    text-decoration: underline;
+}
+
+.mfp-counter {
+    color: #fff;
+}
+
+.galeryCounter {
+    text-transform: uppercase;
+    position: absolute;
+    top: 16px;
+    right: 50px;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 16px;
+}
+
+.media-gallery-detail-info {
+    font-family: "Open Sans";
+    font-size: 16px;
+}
+
+..media-gallery-detail {
+    float: none;
+    margin: 0 auto;
+}
+
+.media-gallery-collection a.media-gallery-thumb, 
+.media-gallery-media a.media-gallery-thumb {
+    background-color: yellow;
+}
+
+.media-gallery-thumb:hover img {
+    opacity: 0.5;
+}
+
+/* @end */
 
 /* @group Media Query */
 
