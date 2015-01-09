@@ -20,7 +20,8 @@
     z-index: 2;
 }
 
-.vista-carrusel-fotos .item-list ul {
+.vista-carrusel-fotos .item-list ul,
+.vista-carrusel-fotos .item-list ul li {
     padding: 0;
     margin: 0;
 }
