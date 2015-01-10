@@ -1,17 +1,27 @@
 /* @group Carousel*/
-.front:not(.toolbar) .wrapper-content {
+.front .wrapper-content {
     margin-top: 80px;
 }
 
-.front:not(.toolbar) .wrapper-content .stack .box {
+.front.toolbar .wrapper-content {
+    margin-top: 150px;
+}
+
+.front .wrapper-content .stack .box {
     padding: 0;
+}
+
+.front.toolbar .wrapper-content .stack .box {
+    padding-right: 1em;
+    padding-left: 1em;
 }
 
 .vista-carrusel-fotos .slick-track {
     z-index: 2;
 }
 
-.vista-carrusel-fotos .item-list ul {
+.vista-carrusel-fotos .item-list ul,
+.vista-carrusel-fotos .item-list ul li {
     padding: 0;
     margin: 0;
 }
@@ -66,8 +76,12 @@
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
     /* @group Carousel*/
-    .front:not(.toolbar) .wrapper-content{
+    .front .wrapper-content{
         margin-top: 150px;
+    }
+
+    .front.toolbar .wrapper-content {
+        margin-top: 200px;
     }
     /* @end */
 }
@@ -75,9 +89,13 @@
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
     /* @group Carousel*/
-    .front:not(.toolbar) .wrapper-content{
+    .front .wrapper-content{
         margin-top: 80px;
         margin-bottom: 80px;
+    }
+
+    .front.toolbar .wrapper-content{
+        margin-top: 150px;
     }
 
     .vista-carrusel-fotos .slick-prev {

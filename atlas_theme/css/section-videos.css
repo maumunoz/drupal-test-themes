@@ -6,6 +6,10 @@
     color: #fff;
 }
 
+.vista-lista-videos .selected {
+    opacity: 0.5;
+}
+
 .vista-lista-videos .large {
     display: none;
 }
@@ -31,9 +35,10 @@
 .vista-lista-videos .item-list li {
     display: inline-block;
     position: relative;
-    padding: 5px;
+    margin: 5px;
     width: 171px;
     max-width: 33%;
+    background-color: #fff;
 }
 
 .vista-lista-videos .item-list a img {
@@ -82,8 +87,21 @@
     margin-left: -32px;
 }
 
+.vista-lista-videos .video-area .text-wrapper {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    padding-right: 20px;
+}
+
 .vista-lista-videos .video-area .title {
-    padding-top: 15px;
+    font-size: 18px;
+}
+
+.vista-lista-videos .video-area .description {
+    padding-top: 12px;
+    font-size: 14px;
+    line-height: 21px;
 }
 /* @end */
 

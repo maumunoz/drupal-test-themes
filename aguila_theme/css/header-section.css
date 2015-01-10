@@ -18,6 +18,7 @@
     z-index: 9;
     margin-top: 0px;
     transition: margin-top 1s;
+    top: 0;
 }
 
 .site-name-wrapper .site-name a {
@@ -37,6 +38,12 @@
     z-index: 8;
     margin-top: 0px;
     transition: margin-top 1s;
+    top: 0;
+}
+
+.toolbar  .site-name-wrapper,
+.toolbar  .stack-navigation {
+    top: 63px;
 }
 
 .stack-navigation .block {
@@ -62,21 +69,48 @@
     height: 37px;
     border-right: 1px solid #3381c9;
     list-style: none;
+    
+    background-size: 100% 200%;
+    background-image: linear-gradient(to top, #0fc3ff 50%, #0565BE 50%);
+    -webkit-transition: background-position 0.3s;
+    -moz-transition: background-position 0.3s;
+    transition: background-position 0.3s;
+
+}
+
+#block-system-main-menu ul.menu li ul.menu li {
+    float: none;
+    background-color: #0565BE;
+    border-left: 1px solid #0fc3ff; 
+    border-right: 1px solid #0fc3ff; 
+}
+
+
+.horizontal li.expanded:hover .menu {
+    display: block !important;
 }
 
 #block-system-main-menu ul.menu li.active-trail,
 #block-system-main-menu ul.menu li:hover,
 #block-system-main-menu ul.menu li:focus,
-#block-system-main-menu ul.menu li:active {
-    background-color: #0fc3ff;
+#block-system-main-menu ul.menu li:active,
+#block-system-main-menu ul.menu li ul.menu li.active-trail,
+#block-system-main-menu ul.menu li ul.menu li:hover,
+#block-system-main-menu ul.menu li ul.menu li:focus,
+#block-system-main-menu ul.menu li ul.menu li:active {
+    background-position: 0 100%;
 }
 
 #block-system-main-menu ul.menu li.item-logo a {
     margin: 0;
 }
 
+.block-comment .item-list li + li, .menu ul li + li, .menu ul li + li.collapsed, .menu ul li + li.expanded {
+    margin: 0;
+}
+
 #block-system-main-menu ul.menu a {
-    padding: 10px 30px;
+    padding: 12px 30px;
     text-decoration: none;
     text-transform: uppercase;
     color: #FFF;
@@ -137,7 +171,7 @@
 }
 
 .btn-login-search .btn-icon-search > a {
-    background-position: -5px -40px;
+    background-position: -9px -42px;
 }
 
 #block-system-user-menu,
@@ -240,7 +274,7 @@
     }
 
     .btn-login-search .btn-icon > a {
-        width: 60px;
+        width: 55px;
     }
 
     .btn-login-search .btn-icon-login > a {
@@ -274,7 +308,7 @@
     /* @group Header */
 
     #block-system-main-menu ul.menu a {
-        padding: 10px 40px;
+        padding: 12px 40px;
     }
 
     /* @end */
