@@ -138,6 +138,21 @@
 /* @group Media Query */
 
 /* Custom, iPhone Retina */
+@media only screen and (max-width : 360px) {
+
+    .view-banner-cervezas .views-field-field-imagen-botella {
+        padding: 12px 5%;
+    }
+
+    .view-banner-cervezas .views-field-field-cerveza-descripcion-corta {
+        left: 23%;
+    }
+
+    .view-banner-cervezas .views-field-title {
+        left: 22%;
+    }
+}
+
 @media only screen and (min-width : 320px) {
 
 }

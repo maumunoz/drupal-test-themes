@@ -16,7 +16,9 @@
     padding: 0 1em !important;
 }
 
+.sb-slidebar li.active-trail,
 .sb-slidebar a:hover {
     background-color: #0fc3ff;
 }
+
 

@@ -278,11 +278,11 @@
     }
 
     .btn-login-search .btn-icon-login > a {
-        background-position: 10px 0;
+        background-position: 10px -2px;
     }
 
     .btn-login-search .btn-icon-search > a {
-        background-position: 10px -40px;
+        background-position: 8px -43px;
     }
 
     /* @end */

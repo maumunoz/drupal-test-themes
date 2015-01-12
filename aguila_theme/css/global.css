@@ -169,6 +169,41 @@
 
 /* @end */
 
+/* @group Radio */
+
+input[type=radio].form-radio {
+    position:absolute; z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
+}
+
+input[type=radio].form-radio + label.option {
+    padding-left:23px;
+    height:18px; 
+    display:inline-block;
+    line-height:18px;
+    background-repeat:no-repeat;
+    background-position: 0 0;
+    font-size:18px;
+    vertical-align:middle;
+    cursor:pointer;
+
+}
+
+input[type=radio].form-radio:checked + label.option {
+    background-position: 0 -18px;
+}
+
+input[type=radio].form-radio + label.option {
+    background-image:url(../images/csscheckbox.png);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* @end */
+
 /* @group Colors */
 
 /*
@@ -712,6 +747,7 @@ input.error {
 
 .mfp-bottom-bar {
     margin-top: -65px;
+    left: 15px;
 }
 
 .mfp-bottom-bar a {
@@ -725,6 +761,7 @@ input.error {
 
 .mfp-counter {
     color: #fff;
+    right: 30px;
 }
 
 .galeryCounter {
@@ -746,13 +783,24 @@ input.error {
     margin: 0 auto;
 }
 
-.media-gallery-collection a.media-gallery-thumb, 
-.media-gallery-media a.media-gallery-thumb {
-    background-color: yellow;
+.media-gallery-thumb span.overlay {
+    color: white;
+    background-color: rgba(244, 222, 7, 0.7);
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    vertical-align: middle;
+    text-align: center;
+    padding: 32% 0px;
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 17px;
 }
 
-.media-gallery-thumb:hover img {
-    opacity: 0.5;
+.media-gallery-thumb:hover span.overlay {
+    display: block;
 }
 
 /* @end */
