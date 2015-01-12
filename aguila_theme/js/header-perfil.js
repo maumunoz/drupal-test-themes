@@ -9,6 +9,10 @@
             $uploadBtn.addClass("wrapped");
 
             $el.before('<div class="image-preview"><image typeof="foaf:Image" src="http://aguila.sabmiller.acsitefactory.com/sites/g/files/ogq351/f/styles/thumbnail/public/default_images/profile.png?itok=-5ePDBQb" width="100" height="100"</div>');
+
+            $uploadBtn.change(function(){
+                jQuery("#edit-field-thumbnail-und-0-upload-button").addClass("visible");
+            });
         }
     };
 
@@ -17,6 +21,12 @@
         el.find("div:first").prepend("<div class='header-form'></div>");
         $("<p>Bienvenido a la tierra de la alegr&iacute;a</p>").appendTo(".header-form");
         el.find("#edit-field-thumbnail").appendTo(".header-form");
+
+        addImageProfile();
+
+        jQuery(document).ajaxComplete(function () {
+            addImageProfile();
+        });
     });
 
     $.initModule("#edit-profile-user-profile-form", function ($, el) {
