@@ -36,6 +36,18 @@
 .layout-2-columnas .principal p {
     margin-bottom: 20px;
 }
+
+.contenido-articulo .no-padding .texto-articulo {
+    padding: 0;
+    margin: 0;
+}
+
+.contenido-articulo .no-padding .texto-articulo.principal img {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
 /* @end */
 
 /* @group Contenido Articulo Secundario */
