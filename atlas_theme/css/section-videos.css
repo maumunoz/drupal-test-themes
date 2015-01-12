@@ -7,6 +7,10 @@
 }
 
 .vista-lista-videos .selected {
+    opacity: 1;
+}
+
+.vista-lista-videos li a {
     opacity: 0.5;
 }
 
