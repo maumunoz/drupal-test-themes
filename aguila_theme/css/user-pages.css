@@ -312,7 +312,7 @@
 
 .page-user-register .form-item-field-thumbnail-und-0 #edit-field-thumbnail-und-0-remove-button,
 .page-user-edit-profile .form-item-field-thumbnail-und-0 #edit-field-thumbnail-und-0-remove-button {
-    margin: 0 0 0 12px;
+    margin: 33px 0 0 12px;
 }
 
 .page-user .header-form p,
@@ -495,6 +495,11 @@
     .page-user-register .form-item-field-thumbnail-und-0 #edit-field-thumbnail-und-0-upload-button,
     .page-user-edit-profile .form-item-field-thumbnail-und-0 #edit-field-thumbnail-und-0-upload-button {
         font-size: 14px;
+        margin-top: 0;
+    }
+
+    .page-user-register .form-item-field-thumbnail-und-0 #edit-field-thumbnail-und-0-remove-button,
+    .page-user-edit-profile .form-item-field-thumbnail-und-0 #edit-field-thumbnail-und-0-remove-button {
         margin-top: 0;
     }
 
