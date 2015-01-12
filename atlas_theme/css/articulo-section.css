@@ -37,6 +37,11 @@
     margin-bottom: 20px;
 }
 
+#content-inner.no-padding .box {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .contenido-articulo .no-padding .texto-articulo {
     padding: 0;
     margin: 0;
