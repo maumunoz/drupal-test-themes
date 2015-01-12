@@ -22,4 +22,8 @@
         });
     });
 
+    $.initModule("#user-profile-form", function ($, el) {
+        el.find("#edit-mail").attr("disabled", "disabled");
+    });
+
 }(jQuery2));
