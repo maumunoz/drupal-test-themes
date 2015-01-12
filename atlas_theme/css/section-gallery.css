@@ -44,11 +44,12 @@
 }
 
 .node-media-gallery .media-gallery-item-wrapper .meta-wrapper .meta-outer {
-    padding: 10px;
-    display: block;
-    line-height: 1.5em;
     min-height: 3em;
     height: auto;
+    padding: 10px;
+    margin: 0 8px 8px;
+    display: block;
+    line-height: 1.5em;
     background-color: rgba(0, 99, 169, 0.9);
 }
 
