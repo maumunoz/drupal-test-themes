@@ -157,12 +157,14 @@
 
 .page-user .hybridauth-widget a[title]:after {
     display: inline-block;
-    width: calc(100% - 32px);
     height: 32px;
     border-left: #fff solid 1px;
     color: #fff;
     text-align: center;
     line-height: 2.4em;
+    position: absolute;
+    left: 42px;
+    right: 10px;
 }
 
 .page-user .hybridauth-widget a[title="Facebook"]:after {
@@ -420,13 +422,13 @@
         max-width: 630px;
     }
 
-    .page-user .hybridauth-widget a[title]:after {
+    /*.page-user .hybridauth-widget a[title]:after {
         width: 578px;
     }
 
     .page-user-register .hybridauth-widget a[title]:after {
         width: 598px;
-    }
+    }*/
 }
 
 /* Medium Devices, Desktops */
