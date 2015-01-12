@@ -3,6 +3,10 @@ function IsEmail(email) {
     return regex.test(email);
 }
 
+function closeThisParent() {
+    jQuery(this).parent().remove();
+}
+
 function onSubscriptionSubmit(event) {
     var _form = jQuery(event.target);
     var _inputEmail = _form.find('.form-text').val();
@@ -26,7 +30,7 @@ function onSubscriptionSubmit(event) {
             success: function() {
               //alert("Success");
               message = jQuery('<div class="alert alert-success"/>');
-              message.html("Gracias por registrarse!");
+              message.html('<button type="button" class="close" aria-label="Close" onclick="closeThisParent()"><span aria-hidden="true">&times;</span></button> Gracias por registrarse!');
               message.insertBefore(_form);
               _form.remove();
             },

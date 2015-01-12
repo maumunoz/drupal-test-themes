@@ -192,9 +192,17 @@
 @media only screen and (min-width : 992px) {
     /* @group gallery page */
     /* Two columns layout */
-    .node-media-gallery .mg-col-2 .field-item {
-        padding-left: 40px;
+    .node-media-gallery .mg-col-2 .field-item.even {
         padding-right: 40px;
+    }
+
+    .node-media-gallery .mg-col-2 .field-item.odd {
+        padding-left: 40px;
+    }
+
+    .node-media-gallery .mg-col {
+        padding-left: 13.25%;
+        padding-right: 13.25%;
     }
     /* @end */
 }
@@ -207,9 +215,12 @@
     }
 
     /* Two columns layout */
-    .node-media-gallery .mg-col-2 .field-item {
-        padding-left: 80px;
+    .node-media-gallery .mg-col-2 .field-item.even {
         padding-right: 80px;
+    }
+
+    .node-media-gallery .mg-col-2 .field-item.odd {
+        padding-left: 80px;
     }
     /* @end */
 }
