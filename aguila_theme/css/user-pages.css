@@ -185,7 +185,9 @@
 
 /* @group Login */
 
-.page-user .content .form-item,
+.page-user #user-login .form-item,
+.page-user #edit-profile-user-profile-form .form-item,
+.page-user #user-profile-form .form-item,
 .page-user .profile .field-type-text,
 .page-user .profile .field-type-taxonomy-term-reference {
     width: 100%;
