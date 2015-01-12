@@ -223,7 +223,8 @@
 .page-user .form-item-field-thumbnail-und-0 .file,
 .page-user .form-item-field-thumbnail-und-0 .file-size,
 .page-user-register .tos-and-disclaimer,
-.page-user-edit .form-item-mail .description {
+.page-user-edit .form-item-mail .description,
+.page-user-edit #edit-picture {
     display: none;
 }
 
