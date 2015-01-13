@@ -17,6 +17,7 @@ stylesheets[all ][] = 'css/section-videos.css'
 stylesheets[all ][] = 'css/breadcrumbs.css'
 stylesheets[all ][] = 'css/section-carousel.css'
 stylesheets[all ][] = 'css/section-chicas-atlas.css'
+stylesheets[all ][] = 'css/section-perfil.css'
 
 regions[page_top] = 'Above page'
 regions[preheader_first] = 'Preheader first'
