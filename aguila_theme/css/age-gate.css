@@ -56,6 +56,22 @@
     text-align: center;
 }
 
+input.whiteplaceholder::-webkit-input-placeholder {  
+   color: #fff;  
+}
+
+input.whiteplaceholder:-moz-placeholder {  
+   color: #fff;  
+}
+
+input.whiteplaceholder::-moz-placeholder {  
+   color: #fff;  
+}
+
+input.whiteplaceholder:-ms-input-placeholder {  
+   color: #fff;  
+}
+
 #age_checker_verification_popup.aguila #age_checker_widget .dateselect #age_checker_month, 
 #age_checker_verification_popup.aguila #age_checker_day {
     width: 90px;

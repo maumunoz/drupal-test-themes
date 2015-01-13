@@ -1,3 +1,8 @@
+function isMobile() {
+  try{ document.createEvent("TouchEvent"); return true; }
+  catch(e){ return false; }
+}
+
 (function ($) {
     if(typeof Drupal.behaviors.age_checker != "undefined") {
         var original = Drupal.behaviors.age_checker.attach;
@@ -14,6 +19,13 @@
                     var overlay = $('#age_checker_overlay');
                     overlay.append($(".agegate_footer"));
                     
+                    
+                    if( isMobile() )
+                    {
+                        popup.find("input.form-text").each(function(i, el) {
+                           $("<input type='number' />").attr({ name: this.name, placeholder: this.value, id: this.id, size: this.size, maxlength: this.maxlength, class: this.class }).addClass("whiteplaceholder").insertBefore(this);
+                        }).remove();
+                    }
                     
                     var submit = popup.find("input[type='submit']");
                     submit.before( $(".agegate_pre_submit") );
