@@ -1,4 +1,79 @@
-/* @group Perfil*/
+/* @group Perfil */
+.vista-perfil-chica,
+.vista-perfil-chica a {
+    color: #fff;
+    font-family: 'proxima-nova', 'Helvetica Neue', sans-serif;
+}
+
+.vista-perfil-chica .contenido-perfil-chica {
+    background: url(../images/fondo-perfil-chica.jpg);
+    background-size: cover;
+}
+
+.vista-perfil-chica .video-perfil-chica {
+    background: url(../images/fondo-perfil-video.jpg);
+    background-size: cover;
+    clear: both;
+}
+
+.vista-perfil-chica .foto-chica {
+    width: 80%;
+    padding-top: 20px;
+    margin: 0 auto;
+}
+
+.vista-perfil-chica .foto-chica img {
+    width: 100%;
+    height: auto;
+}
+
+.vista-perfil-chica .info-chica {
+    background-color: rgba(5, 46, 90, 0.7);
+    padding: 8%;
+}
+
+.vista-perfil-chica .perfil-btns {
+    padding-bottom: 20px;
+}
+
+.vista-perfil-chica .perfil-btns a {
+    display: inline-block;
+    min-width: 90px;
+    padding: 4px 27px;
+    background-color: #f30621;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Helvetica Neue Condensed', 'Oswald', sans-serif;
+    font-size: 16px;
+}
+
+.vista-perfil-chica .perfil-btns a:hover,
+.vista-perfil-chica .ver-video-btn {
+    text-decoration: none;
+}
+
+.vista-perfil-chica .texto-perfil-chica img {
+    width: auto;
+    height: auto;
+    max-height: 80px;
+    max-width: 100%;
+}
+
+.vista-perfil-chica .siguiente {
+    float: right;
+}
+
+.vista-perfil-chica .ver-video-btn {
+    position: absolute;
+    bottom: 26px;
+    right: 22px;
+    padding-left: 21px;
+    font-family: 'futura' , 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: url(../images/red-arrow.png) no-repeat left center transparent;
+}
 
 /* @end */
 
@@ -7,21 +82,64 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-    /* @group Perfil*/
-
+    /* @group Perfil */
+    .vista-perfil-chica .foto-chica {
+        width: 40%;
+    }
     /* @end */
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-    /* @group Perfil*/
+    /* @group Perfil */
+    .vista-perfil-chica .contenido-perfil-chica {
+        position: relative;
+        overflow: hidden;
+    }
 
+    .vista-perfil-chica .video-perfil-chica {
+        clear: both;
+    }
+
+    .vista-perfil-chica .foto-chica {
+        float: left;
+        width: 20%;
+        position: absolute;
+        bottom: 0;
+        padding-left: 10%;
+    }
+
+    .vista-perfil-chica .foto-chica img {
+        width: auto;
+        height: auto;
+        max-height: 1200px;
+        max-width: 100%;
+        min-width: 250px;
+    }
+
+    .vista-perfil-chica .info-chica {
+        position: relative;
+        margin: 0 3% 0 38%;
+        padding: 62px 22px 62px 72px;
+        min-height: 610px;
+        background-color: rgba(5, 46, 90, 0.7);
+    }
+
+    .vista-perfil-chica .perfil-btns {
+        position: absolute;
+        top: 0;
+        right: 22px;
+    }
+
+    .vista-perfil-chica .siguiente {
+        margin-left: 17px;
+    }
     /* @end */
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
-    /* @group Perfil*/
+    /* @group Perfil */
 
     /* @end */
 }
