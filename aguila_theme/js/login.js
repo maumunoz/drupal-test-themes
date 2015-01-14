@@ -32,6 +32,11 @@
                                             '<input type="text" id="edit-mail-validation" name="mail" value="" size="60" maxlength="254" class="form-text required">' +
                                         '</div>');
 
+        $("#user-register-form").submit(function(){
+            if(el.find("#edit-mail").val() !== el.find("#edit-mail-validation").val()) {
+                return false;
+            }
+        });
 
     });
 

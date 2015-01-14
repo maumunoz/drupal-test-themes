@@ -341,7 +341,8 @@
 
 .page-user-register .field-type-datetime legend {
     border: none;
-    margin-bottom: 0;
+    padding-top: 5px;
+    margin-bottom: -5px;
 }
 
 .page-user-register .field-type-datetime .date-no-float {
@@ -479,6 +480,10 @@
     .page-user .profile .field-type-text,
     .page-user .profile .field-type-taxonomy-term-reference {
         padding: 5px 0;
+    }
+
+    .page-user-register .field-type-datetime .form-wrapper {
+        padding: 7px 0;
     }
 
     .page-user-register #content-area .form-item-field-edad-und-0-value-date,
