@@ -97,5 +97,6 @@
         jq(document).ajaxComplete(function () {
             setTimeout(transformarCal, 50);
         });
+        jQuery("#mobile-calendar").dzscalendar({ settings_alwaysinclude6rows: "on" });
     });
 }(jQuery2, jQuery));
