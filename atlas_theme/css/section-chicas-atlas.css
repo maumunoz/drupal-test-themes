@@ -52,6 +52,7 @@
     margin-top: 5px;
 }
 
+.section-fotos-chicas li img,
 .section-fotos-chicas > div img {
     width: 100%;
     height: auto;
