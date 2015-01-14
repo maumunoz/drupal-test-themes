@@ -23,7 +23,7 @@ function isMobile() {
                     if( isMobile() )
                     {
                         popup.find("input.form-text").each(function(i, el) {
-                           $("<input type='number' />").attr({ name: this.name, placeholder: this.value, id: this.id, size: this.size, maxlength: this.maxlength, class: this.class }).addClass("whiteplaceholder").insertBefore(this);
+                           $("<input type='number' />").attr({ name: this.name, placeholder: this.value, id: this.id, size: this.size, maxlength: this.maxlength, "class": this["class"] }).data("i",i+1).keyup(function(){ age_checker.nextbox(this, jQuery(this).data("i") ); }).addClass("whiteplaceholder").insertBefore(this);
                         }).remove();
                     }
                     

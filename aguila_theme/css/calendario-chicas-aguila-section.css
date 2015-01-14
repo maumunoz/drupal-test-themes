@@ -456,6 +456,16 @@
     background-position: 0 -1040px;
 }
 
+#mobile-calendar {
+    display: block;
+    line-height: 30px;
+}
+
+.date-nav-wrapper,
+.calendar-calendar {
+    display: none;
+}
+
 /* @end */
 
 /* @group Media Query */
@@ -503,14 +513,21 @@
     .calendario-chicas-aguila {
         padding: 25px 30px 30px;
     }
+        
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 600px) {
+    #mobile-calendar {
+        display: none;
+    }
     
-    .evento-calendario .icon {
+    .date-nav-wrapper,
+    .calendar-calendar {
         display: block;
     }
-    
-    .evento-calendario .title {
-        font-size: 18px;
-    }
+
 
 }
 
@@ -525,6 +542,15 @@
     .banner-calendario-chicas-aguila {
         width: 652px;
     }
+    
+    .evento-calendario .icon {
+        display: block;
+    }
+
+    .evento-calendario .title {
+        font-size: 18px;
+    }
+    
 
 }
     
