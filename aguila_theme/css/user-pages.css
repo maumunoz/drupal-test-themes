@@ -38,7 +38,8 @@
 .page-user .content-area form label,
 .page-user .field-type-text .field-label,
 .page-user .field-type-taxonomy-term-reference .field-label,
-.page-user-register .field-type-datetime .fieldset-legend {
+.page-user .field-type-datetime .field-label,
+.page-user .field-type-datetime .fieldset-legend {
     display: block;
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-weight: 300;
@@ -49,7 +50,8 @@
 .page-user .content-area form input.form-text,
 .page-user .content-area form .form-select,
 .page-user .profile .field-type-text .field-item,
-.page-user .profile .field-type-taxonomy-term-reference .field-item {
+.page-user .profile .field-type-taxonomy-term-reference .field-item,
+.page-user .profile .field-type-datetime .field-item {
     display: block;
     height: 46px;
     width: 100% !important;
@@ -60,7 +62,8 @@
 
 .page-user .content-area form input.form-text,
 .page-user .profile .field-type-text .field-item,
-.page-user .profile .field-type-taxonomy-term-reference .field-item {
+.page-user .profile .field-type-taxonomy-term-reference .field-item,
+.page-user .profile .field-type-datetime .field-item {
     background-color: #F3F4F9;
 }
 
@@ -195,8 +198,10 @@
 .page-user #user-login .form-item,
 .page-user #edit-profile-user-profile-form .form-item,
 .page-user #user-profile-form .form-item,
+.page-user #user-profile-form .field-type-datetime,
 .page-user .profile .field-type-text,
-.page-user .profile .field-type-taxonomy-term-reference {
+.page-user .profile .field-type-taxonomy-term-reference,
+.page-user .profile .field-type-datetime {
     width: 100%;
     margin: 0 0 20px;
 }
@@ -227,7 +232,7 @@
 .page-user-register .form-item-name .description,
 .page-user-register .form-item-field-thumbnail-und-0 .description,
 .page-user-register .tos-and-disclaimer,
-.page-user-register .field-type-datetime .description,
+.page-user .field-type-datetime .description,
 .page-user-edit-profile .form-item-field-thumbnail-und-0 .description,
 .page-user .field-name-field-thumbnail .form-item-field-thumbnail-und-0 label,
 .page-user .form-item-field-thumbnail-und-0 .file,
@@ -339,19 +344,23 @@
     margin: 5px 0 0;
 }
 
-.page-user-register .field-type-datetime legend {
+.page-user-register .field-type-datetime legend,
+.page-user-edit-profile .field-type-datetime legend,
+#user-register-form .field-type-datetime .form-type-date-popup,
+#edit-profile-user-profile-form .field-type-datetime .form-type-date-popup {
     border: none;
-    padding-top: 5px;
-    margin-bottom: -5px;
+    margin: 0;
 }
 
-.page-user-register .field-type-datetime .date-no-float {
+.page-user-register .field-type-datetime .date-no-float,
+.page-user-edit-profile .field-type-datetime .date-no-float {
     clear: none;
     float: left;
     width: 100%;
 }
 
-.page-user-register .field-type-datetime .date-padding {
+.page-user-register .field-type-datetime .date-padding,
+.page-user-edit-profile .field-type-datetime .date-padding {
     padding: 0;
     width: 100%;
 }
@@ -382,7 +391,8 @@
 }
 
 .page-user .field-type-text .field-label,
-.page-user .field-type-taxonomy-term-reference .field-label {
+.page-user .field-type-taxonomy-term-reference .field-label,
+.page-user .field-name-field-edad .field-label {
     font-weight: bold;
 }
 
@@ -461,8 +471,10 @@
     .page-user-register #content-area .form-item,
     .page-user-edit-profile #content-area .form-item,
     .page-user-register .field-type-datetime .form-wrapper,
+    .page-user-edit-profile .field-type-datetime .form-wrapper,
     .page-user .profile .field-type-text,
     .page-user .profile .field-type-taxonomy-term-reference,
+    .page-user .profile .field-type-datetime,
     .page-user #content-area [href$='edit-profile'],
     .page-user #content-area [href$='edit'] {
         width: 45%;
@@ -470,7 +482,7 @@
         float: left;
     }
 
-    .page-user-register #content-area .field-type-datetime .form-item {
+    .page-user #content-area .field-type-datetime .form-item {
         width: 100%;
         margin: 0;
     }
@@ -478,7 +490,8 @@
     .page-user-register #content-area .form-item,
     .page-user-edit-profile #content-area .form-item,
     .page-user .profile .field-type-text,
-    .page-user .profile .field-type-taxonomy-term-reference {
+    .page-user .profile .field-type-taxonomy-term-reference,
+    .page-user .profile .field-type-datetime {
         padding: 5px 0;
     }
 
@@ -486,9 +499,18 @@
         padding: 7px 0;
     }
 
-    .page-user-register #content-area .form-item-field-edad-und-0-value-date,
-    .page-user-register #content-area .form-type-date-popup {
+    .page-user-edit-profile .field-type-datetime .form-wrapper {
+        padding: 6px 0;
+    }
+
+    .page-user #content-area .form-item-field-edad-und-0-value-date,
+    .page-user #content-area .form-type-date-popup {
         padding: 0;
+    }
+
+    .page-user .field-type-datetime legend {
+        padding-top: 5px;
+        margin-bottom: -5px;
     }
 
     .profile #edit-actions--2 [href='/user/logout'] {

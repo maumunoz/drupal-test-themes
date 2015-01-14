@@ -26,6 +26,10 @@
         el.find("#edit-mail").attr("disabled", "disabled");
     });
 
+    $.initModule("#edit-profile-user-profile-form", function ($, el) {
+        el.find("#edit-field-edad-und-0-value-datepicker-popup-0").attr("disabled", "disabled");
+    });
+
     $.initModule("#user-register-form", function ($, el) {
         el.find(".form-item-mail").after('<div class="form-item form-type-textfield form-item-mail-validation">' +
                                             '<label for="edit-mail-validation">Confirmar correo electr&oacute;nico <span class="form-required" title="Este campo es obligatorio.">*</span></label>' +
