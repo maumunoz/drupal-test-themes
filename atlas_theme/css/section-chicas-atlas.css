@@ -54,8 +54,8 @@
 
 .section-fotos-chicas li img,
 .section-fotos-chicas > div img {
-    width: 100%;
-    height: auto;
+    width: 100% !important;
+    height: auto !important;
 }
 /* @end */
 
