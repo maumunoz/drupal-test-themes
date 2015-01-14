@@ -26,4 +26,13 @@
         el.find("#edit-mail").attr("disabled", "disabled");
     });
 
+    $.initModule("#user-register-form", function ($, el) {
+        el.find(".form-item-mail").after('<div class="form-item form-type-textfield form-item-mail-validation">' +
+                                            '<label for="edit-mail-validation">Confirmar correo electr&oacute;nico <span class="form-required" title="Este campo es obligatorio.">*</span></label>' +
+                                            '<input type="text" id="edit-mail-validation" name="mail" value="" size="60" maxlength="254" class="form-text required">' +
+                                        '</div>');
+
+
+    });
+
 }(jQuery2));

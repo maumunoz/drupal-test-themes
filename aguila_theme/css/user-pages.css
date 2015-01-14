@@ -37,7 +37,8 @@
 
 .page-user .content-area form label,
 .page-user .field-type-text .field-label,
-.page-user .field-type-taxonomy-term-reference .field-label {
+.page-user .field-type-taxonomy-term-reference .field-label,
+.page-user-register .field-type-datetime .fieldset-legend {
     display: block;
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-weight: 300;
@@ -151,6 +152,10 @@
     z-index: -1;
 }
 
+.page-user-register ul.hybridauth-widget {
+    padding-left: 10px;
+} 
+
 .page-user .hybridauth-widget li {
     width: 100%;
 }
@@ -186,6 +191,7 @@
 
 /* @group Login */
 
+.page-user #user-register-form .form-item,
 .page-user #user-login .form-item,
 .page-user #edit-profile-user-profile-form .form-item,
 .page-user #user-profile-form .form-item,
@@ -220,11 +226,12 @@
 .page-user-register #block-views-registro-previo-block,
 .page-user-register .form-item-name .description,
 .page-user-register .form-item-field-thumbnail-und-0 .description,
+.page-user-register .tos-and-disclaimer,
+.page-user-register .field-type-datetime .description,
 .page-user-edit-profile .form-item-field-thumbnail-und-0 .description,
 .page-user .field-name-field-thumbnail .form-item-field-thumbnail-und-0 label,
 .page-user .form-item-field-thumbnail-und-0 .file,
 .page-user .form-item-field-thumbnail-und-0 .file-size,
-.page-user-register .tos-and-disclaimer,
 .page-user-edit .form-item-mail .description,
 .page-user-edit #edit-picture {
     display: none;
@@ -238,7 +245,7 @@
     margin: 0 0 10px;
 }
 
-.page-user .content-area .form-item.form-item-field-thumbnail-und-0,
+.page-user #content-area .form-item.form-item-field-thumbnail-und-0,
 .profile .field-name-field-thumbnail img {
     margin: 1em 0 0;
 }
@@ -330,6 +337,22 @@
 
 .page-user .form-item-field-tel-fono-und-0-value .description {
     margin: 5px 0 0;
+}
+
+.page-user-register .field-type-datetime legend {
+    border: none;
+    margin-bottom: 0;
+}
+
+.page-user-register .field-type-datetime .date-no-float {
+    clear: none;
+    float: left;
+    width: 100%;
+}
+
+.page-user-register .field-type-datetime .date-padding {
+    padding: 0;
+    width: 100%;
 }
 
 .page-user-register .content-area .submit-button-wrapper {
@@ -436,6 +459,7 @@
 
     .page-user-register #content-area .form-item,
     .page-user-edit-profile #content-area .form-item,
+    .page-user-register .field-type-datetime .form-wrapper,
     .page-user .profile .field-type-text,
     .page-user .profile .field-type-taxonomy-term-reference,
     .page-user #content-area [href$='edit-profile'],
@@ -445,11 +469,21 @@
         float: left;
     }
 
+    .page-user-register #content-area .field-type-datetime .form-item {
+        width: 100%;
+        margin: 0;
+    }
+
     .page-user-register #content-area .form-item,
     .page-user-edit-profile #content-area .form-item,
     .page-user .profile .field-type-text,
     .page-user .profile .field-type-taxonomy-term-reference {
         padding: 5px 0;
+    }
+
+    .page-user-register #content-area .form-item-field-edad-und-0-value-date,
+    .page-user-register #content-area .form-type-date-popup {
+        padding: 0;
     }
 
     .profile #edit-actions--2 [href='/user/logout'] {
