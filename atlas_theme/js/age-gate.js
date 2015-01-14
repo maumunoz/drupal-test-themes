@@ -10,26 +10,23 @@ function isMobile() {
             original(context, settings);
             setTimeout(function () {
                 var popup = $('#age_checker_verification_popup');
+                var overlay = $('#age_checker_overlay');
                 if (popup.is(':visible')) {                
-                    popup.addClass("aguila");
-                    var cont = $("<div id='age_checker_content' class='agegate_content'></div>");
-                    cont.append(popup.children());
-                    popup.append( cont.find(".media-thumbnail-frame") );
-                    popup.append( cont );
-                    var overlay = $('#age_checker_overlay');
-                    overlay.append($(".agegate_footer"));
+                    popup.addClass("atlas");
+                    popup.prepend($("#agegate_logo").parent());
+                    popup.append($("#agegate_beer"));
+                    $("div[id='age_checker_message']").each(function(i,el){
+                        $(el).attr("id","age_checker_message"+i);
+                        $(el).addClass("agegate_message");
+                    });
                     
-                    
-                    if( isMobile() )
-                    {
-                        popup.find("input.form-text").each(function(i, el) {
-                           $("<input type='number' />").attr({ name: this.name, placeholder: this.value, id: this.id, size: this.size, maxlength: this.maxlength, class: this.class }).addClass("whiteplaceholder").insertBefore(this);
+                    if( isMobile() ) {
+                        popup.find("input.form-text").each(function() {
+                           $("<input type='number' />").attr({ name: this.name, value: this.value, onblur: this.onblur, onfocus: this.onfocus, onkeyup: this.onkeyup, id: this.id, size: this.size, maxlength: this.maxlength, class: this.class }).insertBefore(this);
                         }).remove();
                     }
                     
                     var submit = popup.find("input[type='submit']");
-                    submit.before( $(".agegate_pre_submit") );
-                    $(".agegate_pre_submit").before( $('#age_checker_error_message') );
                     submit.bind('click', function () {
                         var recordarDetalles = popup.find('#rememberme').is(':checked');
                         setTimeout(function () {
