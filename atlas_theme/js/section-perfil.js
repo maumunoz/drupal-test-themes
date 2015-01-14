@@ -9,6 +9,14 @@
 
             //Add no-padding class to display the background image properly
             $('#content-inner').addClass('no-padding');
+
+            node.find('.ver-video-btn').on('click', function (e) {
+                e.preventDefault();
+                var target = node.find('.video-perfil-chica');
+                $('html,body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+            });
         }
     });
 }(jQuery2));

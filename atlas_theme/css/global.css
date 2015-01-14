@@ -26,7 +26,7 @@ $black, $dark           = #000    | rgb(0, 0, 0);
 /* @group Content */
 .wrapper-content {
     margin-top: 100px;
-    margin-bottom: 25px;
+    margin-bottom: 0;
 }
 
 .toolbar .wrapper-content {

@@ -6,6 +6,10 @@
     color: #fff;
 }
 
+.vista-lista-videos {
+    padding-bottom: 25px;
+}
+
 .vista-lista-videos .selected {
     opacity: 1;
 }
