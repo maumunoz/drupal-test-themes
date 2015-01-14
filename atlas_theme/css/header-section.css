@@ -29,6 +29,7 @@
 
 .stack-preheader .col-second {
     right: 0;
+    min-height: 0;
     margin-left: 76px;
     padding-right: 17px;
 }
