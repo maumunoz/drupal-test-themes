@@ -36,12 +36,98 @@
                                             '<input type="text" id="edit-mail-validation" name="mail" value="" size="60" maxlength="254" class="form-text required">' +
                                         '</div>');
 
-        $("#user-register-form").submit(function(){
+        /*$("#user-register-form").submit(function(){
             if(el.find("#edit-mail").val() !== el.find("#edit-mail-validation").val()) {
                 return false;
             }
+        });*/
+
+        $("#user-register-form").validate();
+
+        $("#edit-mail-validation").rules("add", {
+            equalTo: "#edit-mail",
+            messages: {
+                equalTo: "Los correos electr&oacute;nicos no coinciden"
+            }
         });
+
+        jQuery("#edit-field-edad-und-0-value-datepicker-popup-0").addClass("checkAge").change(function(event){
+            event.preventDefault();
+            jQuery2(this).valid(); 
+        });
+
+        $.validator.addMethod("checkAge", function(value, element){
+            var monthList = {
+                "01": "Jan",
+                "02": "Feb",
+                "03": "Mar",
+                "04": "Apr",
+                "05": "May",
+                "06": "Jun",
+                "07": "Jul",
+                "08": "Aug",
+                "09": "Sep",
+                "10": "Oct",
+                "11": "Nov",
+                "12": "Dec"
+            };
+            var ageUserList = ($(element).val()).split("/");
+            var dateToday = new Date();
+            var dateBirthUser = new Date(monthList[ageUserList[1]] + " " + ageUserList[0] + ", " + ageUserList[2]);
+
+            if((dateToday.getFullYear() - dateBirthUser.getFullYear()) > 18) {
+
+                return true;
+
+            } else if((dateToday.getFullYear() - dateBirthUser.getFullYear()) === 18) {
+
+                if(dateToday.getMonth() <= dateBirthUser.getMonth()) {
+
+                   return true;
+
+                } else if(dateToday.getMonth() === dateBirthUser.getMonth()) {
+
+                    if(dateToday.getDate() <= dateBirthUser.getDate()) {
+                    
+                        return true;
+
+                    } else {
+
+                        return false;
+
+                    }
+
+                }
+            } else {
+
+                return false;
+            }
+        }, "Tienes que ser mayor de edad"); 
+
+        $.validator.classRuleSettings.checkAge = { checkAge: true };
 
     });
 
 }(jQuery2));
+
+(function($){
+    var originalVal = $.fn.val;
+    $.fn.val = function(){
+        var ogValue = this[0].value;
+        var result =originalVal.apply(this,arguments);
+        if(arguments.length>0 && ogValue!=arguments[0])
+            $(this).change();
+        return result;
+    };
+})(jQuery);
+
+(function($){
+    var originalVal = $.fn.val;
+    $.fn.val = function(){
+        var ogValue = this[0].value;
+        var result =originalVal.apply(this,arguments);
+        if(arguments.length>0 && ogValue!=arguments[0])
+            $(this).change();
+        return result;
+    };
+})(jQuery2);
