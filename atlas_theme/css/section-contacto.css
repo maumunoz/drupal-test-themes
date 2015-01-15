@@ -124,18 +124,19 @@
     margin-top: 71px;
     width: 100%;
     border-radius: 7px;
-    height: 122px;
+    min-height: 122px;
     color: #fff;
     text-align: center;
     line-height: 21px;
+    padding-bottom: 5px;
 }
 
 .cntcmsg_cyan {
     background-color: #1EA0D4;
     font-size: 19.6px;
-    padding-top: 20px;
+    padding: 20px 15px 8px;
     border-radius: 7px;
-    height: 78px;
+    min-height: 78px;
 }
 
 .cntcmsg_blue a {
@@ -147,6 +148,7 @@
     display: block;
     margin: -4px auto 0;
     text-shadow: none;
+    
 }
 
 .cntcmsg_social {
