@@ -7,21 +7,32 @@
 }
 
 .contacto #block-system-main,
-.contacto #block-system-main  + div {
+.contacto #block-system-main  + div,
+.contacto #block-system-main  + div + div {
     float: none;
     width: 100%;
     clear: none;
+}
+
+#block-block-41 {
+    display: none;
 }
 
 .contacto #block-system-main+div .media-thumbnail-frame {
     text-align: center;
 }
 
-.contacto .webform-client-form #block-system-main  + div {
-    
+.contacto  .webform-client-form label.error  {
+    background-color: #CC3D35;
+    display: inline-block;
+    padding: 7px 24px;
 }
 
-.contacto label {
+.contacto  .webform-client-form label.error +label {
+    color: #CC3D35;
+}
+
+.contacto .webform-client-form label {
     display: block;
     color: white;
     margin-top: 13px;
@@ -117,13 +128,14 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-    .contacto #block-system-main {
+    .contacto #block-system-main,
+    .contacto #block-system-main + div {
         float: left;
         width: 45.8%;
         clear: none;
     }
 
-    .contacto #block-system-main  + div {
+    .contacto #block-system-main +div+div {
         float: right;
         width: 45%;
         clear: none;
