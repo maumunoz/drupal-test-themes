@@ -75,6 +75,7 @@ body {
 
 .page-search .stack-content-inner #page-title {
     display: block;
+    padding-top: 30px;
 }
 
 .page-search .stack-content-inner .form-type-textfield {
