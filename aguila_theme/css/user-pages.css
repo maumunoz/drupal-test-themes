@@ -365,7 +365,7 @@
     width: 100%;
 }
 
-.page-user-register .form-item .error {
+.page-user-register .form-item label.error {
     text-align: right;
     color: red;
 }
