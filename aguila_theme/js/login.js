@@ -36,13 +36,16 @@
                                             '<input type="text" id="edit-mail-validation" name="mail" value="" size="60" maxlength="254" class="form-text required">' +
                                         '</div>');
 
-        /*$("#user-register-form").submit(function(){
-            if(el.find("#edit-mail").val() !== el.find("#edit-mail-validation").val()) {
-                return false;
-            }
-        });*/
+        
 
         $("#user-register-form").validate();
+
+        $("#edit-mail-validation").attr("autocomplete", "off");
+        $("#edit-mail-validation").on("paste", function(e){
+            e.preventDefault();
+        });
+
+        $("#edit-mail-validation")
 
         $("#edit-mail-validation").rules("add", {
             equalTo: "#edit-mail",
