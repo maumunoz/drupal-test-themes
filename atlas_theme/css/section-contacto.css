@@ -7,21 +7,33 @@
 }
 
 .contacto #block-system-main,
-.contacto #block-system-main  + div {
+.contacto #block-system-main  + div,
+.contacto #block-system-main  + div + div {
     float: none;
     width: 100%;
     clear: none;
 }
 
-.contacto #block-system-main+div .media-thumbnail-frame {
+#block-block-41 {
+    display: none;
+}
+
+#block-block-36,
+.contacto #block-system-main+div+div .media-thumbnail-frame {
     text-align: center;
 }
 
-.contacto .webform-client-form #block-system-main  + div {
-    
+.contacto  .webform-client-form label.error  {
+    background-color: #CC3D35;
+    display: inline-block;
+    padding: 7px 24px;
 }
 
-.contacto label {
+.contacto  .webform-client-form label.error +label {
+    color: #CC3D35;
+}
+
+.contacto .webform-client-form label {
     display: block;
     color: white;
     margin-top: 13px;
@@ -38,7 +50,11 @@
     font-weight: bold;
     letter-spacing: 1.7px;
     padding-left: 35px;
-    margin-bottom: 28px;
+    margin-bottom: 19px;
+    background-image: url('../images/contact_bubble.png');
+    background-repeat: no-repeat;
+    background-position: 0px 0;
+    height: 26px;
 } 
 
 .contacto .webform-client-form textarea {
@@ -102,6 +118,77 @@
     font-weight: bold;
 }
 
+
+.cntcmsg_blue {
+    background-color: #00499E;
+    margin-top: 71px;
+    width: 100%;
+    border-radius: 7px;
+    height: 122px;
+    color: #fff;
+    text-align: center;
+    line-height: 21px;
+}
+
+.cntcmsg_cyan {
+    background-color: #1EA0D4;
+    font-size: 19.6px;
+    padding-top: 20px;
+    border-radius: 7px;
+    height: 78px;
+}
+
+.cntcmsg_blue a {
+    color: #fff;
+    background-color: #14DE6E;
+    padding: 11px;
+    border-radius: 25px;
+    width: 130px;
+    display: block;
+    margin: -4px auto 0;
+    text-shadow: none;
+}
+
+.cntcmsg_social {
+    background-color: #e4e4e4;
+    margin-top: 20px;
+    border-radius: 7px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #004A98;
+    padding: 8px 0px 6px 18px;
+    background-image: url('../images/socialmsg_background.png');
+    background-repeat: repeat-x;
+}
+
+.cntcmsg_social ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cntcmsg_social ul li {
+    display: inline-block;
+    margin: 0;
+    padding: 8px 16px 8px 40px;
+    letter-spacing: 1.8px;
+    background-image: url('../images/socialmsg_logos.png');
+    background-repeat: no-repeat;
+}
+
+.cntcmsg_social ul li.scl_twitter {
+    background-position:0 0;
+}
+.cntcmsg_social ul li.scl_facebook {
+    background-position:0 -40px;
+}
+.cntcmsg_social ul li.scl_instagram {
+    background-position:0 -80px;
+}
+.cntcmsg_social ul li.scl_youtube {
+    background-position:0 -120px;
+}
 /* @end */
 
 
@@ -117,13 +204,17 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-    .contacto #block-system-main {
+    .contacto #block-system-main,
+    .contacto #block-system-main + div {
         float: left;
         width: 45.8%;
         clear: none;
     }
+    .contacto #block-system-main + div {
+        width: 50%;
+    }
 
-    .contacto #block-system-main  + div {
+    .contacto #block-system-main +div+div {
         float: right;
         width: 45%;
         clear: none;

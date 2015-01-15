@@ -48,10 +48,14 @@
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
     /* @group Breadcrumbs*/
+    .toolbar .wrapper-content .stack-breadcrumb.stack {
+        padding-bottom: 30px;
+    }
+
     .wrapper-content .stack-breadcrumb.stack {
         padding-top: 15px;
         padding-left: 159px;
-        padding-bottom: 30px;
+
     }
 
     .toolbar .wrapper-content .stack-breadcrumb.stack {

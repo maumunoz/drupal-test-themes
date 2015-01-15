@@ -17,6 +17,12 @@
     text-align: center;
 }
 
+.node-media-gallery .field-name-media-gallery-description img {
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+}
+
 /*Title below image*/
 .node-media-gallery .media-gallery-item-wrapper {
     position: relative;
