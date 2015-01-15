@@ -1,11 +1,105 @@
 /* @group Groupname */
 
-label {
+.contacto #content-area {
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.contacto #block-system-main,
+.contacto #block-system-main  + div {
+    float: none;
+    width: 100%;
+    clear: none;
+}
+
+.contacto #block-system-main+div .media-thumbnail-frame {
+    text-align: center;
+}
+
+.contacto .webform-client-form #block-system-main  + div {
+    
+}
+
+.contacto label {
     display: block;
     color: white;
-    margin-top: 10px;
+    margin-top: 13px;
     margin-bottom: 0px;
     font-weight: normal;
+    font-size: 13px;
+}
+
+.contacto .webform-client-form h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #004A98;
+    font-weight: bold;
+    letter-spacing: 1.7px;
+    padding-left: 35px;
+    margin-bottom: 28px;
+} 
+
+.contacto .webform-client-form textarea {
+    resize: none; 
+    height: 100px;
+    max-height: 100px;
+    min-height: 100px;
+
+}
+
+.contacto .webform-client-form .description {
+    color: #fff;
+}
+
+.contacto .webform-client-form textarea, 
+.contacto .webform-client-form input.form-text {
+    background-color: #004a98 !important;
+    border-radius: 0;
+    width: 100%;
+    max-width: none;
+    margin-top: 6px;
+    color: #fff;
+}
+
+.contacto .webform-client-form input.form-text {
+    height: 26px;
+}
+
+
+.contacto .webform-client-form  div#webform-component-new-1420834059538 span.field-prefix {
+    position: absolute;
+    color: #fff;
+    top: 26px;
+    left: 8px;
+}
+
+.contacto .webform-client-form  input#edit-submitted-new-1420834059538 {
+    padding-left: 28px;
+}
+
+.contacto .webform-client-form .form-item {
+    position: relative;
+}
+
+
+.contacto .webform-client-form button,
+.contacto .webform-client-form input[type="button"], 
+.contacto .webform-client-form input[type="reset"], 
+.contacto .webform-client-form input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+    background-image: none;
+    background-color: rgb(0, 74, 152);
+    text-shadow: none;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 5px;
+    width: 116px;
+    height: 43px;
+    font-weight: bold;
 }
 
 /* @end */
@@ -23,6 +117,18 @@ label {
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
+    .contacto #block-system-main {
+        float: left;
+        width: 45.8%;
+        clear: none;
+    }
+
+    .contacto #block-system-main  + div {
+        float: right;
+        width: 45%;
+        clear: none;
+        margin-top: 7px;
+    }
 }
 
 /* Medium Devices, Desktops */
