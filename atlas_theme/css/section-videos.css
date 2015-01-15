@@ -15,6 +15,8 @@
 }
 
 .vista-lista-videos li a {
+    /* IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
     opacity: 0.5;
 }
 
