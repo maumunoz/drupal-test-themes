@@ -68,6 +68,20 @@ body {
 }
 /* @end */
 
+/* @group Search page */
+.page-search .stack-content-inner {
+    padding: 0 20px
+}
+
+.page-search .stack-content-inner #page-title {
+    display: block;
+}
+
+.page-search .stack-content-inner .form-type-textfield {
+    padding-left: 0;
+}
+/* @end */
+
 /* @group Media Query */
 
 /* Small Devices, Tablets */
