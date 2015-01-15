@@ -365,6 +365,11 @@
     width: 100%;
 }
 
+.page-user-register .form-item .error {
+    text-align: right;
+    color: red;
+}
+
 .page-user-register .content-area .submit-button-wrapper {
     padding: 0 0 60px;
 }
@@ -493,6 +498,7 @@
     .page-user .profile .field-type-taxonomy-term-reference,
     .page-user .profile .field-type-datetime {
         padding: 5px 0;
+        max-height: 78px;
     }
 
     .page-user-register .field-type-datetime .form-wrapper {
