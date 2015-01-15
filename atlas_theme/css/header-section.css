@@ -171,6 +171,7 @@
 .sb-slidebar a {
     font-family: 'Oswald', sans-serif;
     font-size: 17px;
+    font-weight: 700;
     text-transform: uppercase;
     color: #fff;
 }
