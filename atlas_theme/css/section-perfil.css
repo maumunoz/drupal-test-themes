@@ -1,4 +1,12 @@
 /* @group Perfil Info */
+.node-type-perfil-de-chica #breadcrumb {
+    display: none;
+}
+
+.node-type-perfil-de-chica.toolbar .wrapper-content {
+    margin-top: 110px;
+}
+
 .vista-perfil-chica,
 .vista-perfil-chica a {
     color: #fff;
@@ -123,6 +131,10 @@
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
     /* @group Perfil Info */
+    .node-type-perfil-de-chica.toolbar .wrapper-content {
+        margin-top: 180px;
+    }
+
     .vista-perfil-chica .foto-chica {
         width: 40%;
         height: auto;
@@ -133,6 +145,10 @@
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
     /* @group Perfil Info */
+    .node-type-perfil-de-chica.toolbar .wrapper-content {
+        margin-top: 145px;
+    }
+
     .vista-perfil-chica .contenido-perfil-chica {
         position: relative;
         overflow: hidden;
