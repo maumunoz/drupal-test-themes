@@ -5,12 +5,6 @@
     font-family: 'proxima-nova', 'Helvetica Neue', sans-serif;
 }
 
-.contenido-articulo .texto-articulo a {
-    color: #fff;
-    font-weight: 700;
-    font-style: italic;
-}
-
 .layout-1-columna.contenido-articulo .texto-articulo {
     font-size: 16px;
 }

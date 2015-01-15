@@ -10,13 +10,21 @@
     padding-bottom: 25px;
 }
 
-.vista-lista-videos .selected {
+.vista-lista-videos .selected img,
+.vista-lista-videos .selected .play-btn {
+    /* IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    /* IE 5-7 */
+    filter: alpha(opacity=100);
     opacity: 1;
 }
 
-.vista-lista-videos li a {
+.vista-lista-videos li img,
+.vista-lista-videos li .play-btn {
     /* IE 8 */
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    /* IE 5-7 */
+    filter: alpha(opacity=50);
     opacity: 0.5;
 }
 
