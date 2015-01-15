@@ -158,6 +158,7 @@
     margin: 0 auto;
     max-width: 50%;
     top: 39px;
+    z-index: 99;
 }
 
 #messages .messages-region > div.messages {

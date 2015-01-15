@@ -118,10 +118,6 @@
     width: 100%;
 }
 
-#content-area .stack-messages {
-    z-index: 99;
-}
-
 /* @end */
 
 /* @group Media Query */
