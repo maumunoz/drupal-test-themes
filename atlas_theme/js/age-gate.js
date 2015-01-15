@@ -26,9 +26,10 @@ function isMobile() {
                         el=jQuery(el);
                         if(el.html()=="") el.remove();
                     });
-                    if( isMobile() ) {
-                        popup.find("input.form-text").each(function() {
-                           $("<input type='number' />").attr({ name: this.name, value: this.value, onblur: this.onblur, onfocus: this.onfocus, onkeyup: this.onkeyup, id: this.id, size: this.size, maxlength: this.maxlength, class: this.class }).insertBefore(this);
+                    if( isMobile() )
+                    {
+                        popup.find("input.form-text").each(function(i, el) {
+                           $("<input type='number' />").attr({ name: this.name, placeholder: this.value, id: this.id, size: this.size, maxlength: this.maxlength, "class": this["class"] }).attr("maxlength",$(this).attr("maxlength")).data("i",i+1).keyup(function(){ age_checker.nextbox(this, jQuery(this).data("i") ); }).addClass("whiteplaceholder").insertBefore(this);
                         }).remove();
                     }
                     
