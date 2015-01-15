@@ -171,6 +171,7 @@
 .sb-slidebar a {
     font-family: 'Oswald', sans-serif;
     font-size: 17px;
+    font-weight: 700;
     text-transform: uppercase;
     color: #fff;
 }
@@ -335,7 +336,7 @@
 }
 
 /* Special size for navigation */
-@media only screen and (min-width : 1240px) {
+@media only screen and (min-width : 1340px) {
     /* @group Header */
     .stack-navigation #block-system-main-menu .content > ul.menu {
         padding: 27px 0 0 0;
