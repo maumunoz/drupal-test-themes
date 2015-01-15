@@ -5,6 +5,7 @@
         //Add css class to page based on URL
             $("#webform-client-form-86").validate({
                 submitHandler: function(_form) {
+                    _form = jQuery2(_form);
                     jQuery2.ajax({
                         type:'post',
                         url:_form.attr("action"),

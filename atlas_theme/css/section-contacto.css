@@ -18,7 +18,8 @@
     display: none;
 }
 
-.contacto #block-system-main+div .media-thumbnail-frame {
+#block-block-38,
+.contacto #block-system-main+div+div .media-thumbnail-frame {
     text-align: center;
 }
 
@@ -49,7 +50,11 @@
     font-weight: bold;
     letter-spacing: 1.7px;
     padding-left: 35px;
-    margin-bottom: 28px;
+    margin-bottom: 19px;
+    background-image: url('../images/contact_bubble.png');
+    background-repeat: no-repeat;
+    background-position: 0px 0;
+    height: 26px;
 } 
 
 .contacto .webform-client-form textarea {
