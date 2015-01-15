@@ -118,7 +118,7 @@
     width: 100%;
 }
 
-.content-area .stack-messages {
+#content-area .stack-messages {
     z-index: 99;
 }
 
