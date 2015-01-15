@@ -501,6 +501,10 @@
         max-height: 78px;
     }
 
+    .page-user-register #content-area .form-item-field-tel-fono-und-0-value {
+        max-height: initial;
+    }
+
     .page-user-register .field-type-datetime .form-wrapper {
         padding: 7px 0;
     }
