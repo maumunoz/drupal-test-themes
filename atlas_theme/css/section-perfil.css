@@ -161,18 +161,17 @@
 
     .vista-perfil-chica .foto-chica {
         float: left;
-        width: 20%;
+        width: 29%;
         position: absolute;
         bottom: 0;
         padding-left: 10%;
     }
 
     .vista-perfil-chica .foto-chica img {
-        width: auto;
+        width: 100%;
         height: auto;
         max-height: 1200px;
-        max-width: 100%;
-        min-width: 250px;
+        max-width: 290px;
     }
 
     .vista-perfil-chica .info-chica {
