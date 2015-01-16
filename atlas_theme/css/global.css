@@ -59,7 +59,8 @@ body {
 
 #page {
     background-size: cover;
-    max-height: 100vh;
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
 /* @end */
 
