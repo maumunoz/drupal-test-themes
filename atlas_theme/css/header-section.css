@@ -144,8 +144,11 @@
     transition: border-bottom-color 0.3s;
 }
 
-.stack-navigation .menu .level-1 > a:hover,
 .stack-navigation .menu .level-1 > a:focus {
+    text-decoration: none;
+}
+
+.stack-navigation .menu .level-1 > a:hover {
     text-decoration: none;
     border-bottom-color: #e0e1e2;
 }
@@ -181,8 +184,9 @@
     text-transform: none;
 }
 
-.stack-navigation .menu .level-2 a.active-trail {
+.stack-navigation .menu .level-2 a.active {
     color: #47a0d7;
+    cursor: pointer !important;
 }
 
 .sb-slidebar,
