@@ -1,4 +1,9 @@
 /* @group Conocelas*/
+
+.conocelas-2015 #content {
+    max-height: 487px;
+}
+
 .section-conocelas ul {
     width: 100%;
 }
