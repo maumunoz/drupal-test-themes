@@ -58,7 +58,8 @@ body {
 }
 
 #page {
-    background-attachment: scroll;
+    background-size: cover;
+    max-height: 100vh;
 }
 /* @end */
 
