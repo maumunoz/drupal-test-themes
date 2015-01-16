@@ -179,6 +179,8 @@
         padding: 62px 22px 62px 72px;
         min-height: 610px;
         background-color: rgba(5, 46, 90, 0.7);
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#B3339546,endColorstr=#B3339546); 
+        zoom: 1;
     }
 
     .vista-perfil-chica .texto-perfil-chica {
