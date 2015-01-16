@@ -1,5 +1,9 @@
 /* @group Breadcrumbs*/
 
+.breadcrumb {
+    vertical-align: bottom;
+}
+
 .toolbar .stack-breadcrumb {
     top: 185px;
 }
