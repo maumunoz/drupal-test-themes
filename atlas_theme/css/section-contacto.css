@@ -119,6 +119,18 @@
     font-weight: bold;
 }
 
+.contacto .webform-client-form .form-required {
+    color: #fff;
+}
+
+.contacto  .webform-client-form  .resizable-textarea .grippie,
+.contacto  .webform-client-form  .mollom-privacy {
+    display: none;
+}
+
+.contacto  .webform-client-form  .webform-component-textarea {
+margin-bottom: 16px;
+}
 
 .cntcmsg_blue {
     background-color: #00499E;
