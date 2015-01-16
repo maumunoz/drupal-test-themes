@@ -1,5 +1,19 @@
 /* @group Breadcrumbs*/
 
+.toolbar .stack-breadcrumb {
+    top: 185px;
+}
+
+.toolbar-drawer .stack-breadcrumb {
+    top: 215px;
+}
+
+.stack-breadcrumb {
+    position: fixed;
+    top: 75px;
+    z-index: 100;
+}
+
 .stack-breadcrumb,
 .stack-breadcrumb .active,
 .stack-breadcrumb a {
@@ -11,6 +25,10 @@
 
 .wrapper-content .stack-breadcrumb.stack {
     padding-top: 0;
+}
+
+.wrapper-content .stack-breadcrumb.stack .box {
+    padding-left: 0;
 }
 
 .stack-breadcrumb a {
@@ -35,12 +53,29 @@
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
     /* @group Breadcrumbs*/
+    .stack-breadcrumb {
+        top: 70px;
+    }
+
+    .toolbar .stack-breadcrumb {
+        top: 125px;
+    }
+
+    .toolbar-drawer .stack-breadcrumb {
+        top: 155px;
+    }
+
     .wrapper-content .stack-breadcrumb.stack {
-        padding-top: 45px;
+        padding-top: 0;
+        padding-left: 110px;
     }
 
     .toolbar .wrapper-content .stack-breadcrumb.stack {
         padding-top: 30px;
+    }
+
+    .wrapper-content .stack-breadcrumb.stack .box {
+        padding-left: 1em;
     }
     /* @end */
 }
@@ -48,6 +83,10 @@
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
     /* @group Breadcrumbs*/
+    .stack-breadcrumb {
+        position: static;
+    }
+
     .toolbar .wrapper-content .stack-breadcrumb.stack {
         padding-bottom: 30px;
     }
@@ -55,7 +94,6 @@
     .wrapper-content .stack-breadcrumb.stack {
         padding-top: 15px;
         padding-left: 159px;
-
     }
 
     .toolbar .wrapper-content .stack-breadcrumb.stack {
