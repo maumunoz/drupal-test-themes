@@ -61,6 +61,13 @@
 }
 /* @end */
 
+/* @group página Notas de Prensa */
+.notas-de-prensa .contenido-articulo {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+/* @end */
+
 
 /* @group Media Query */
 

@@ -1,4 +1,7 @@
 /* @group Footer */
+.wrapper-footer {
+    height: 148px;
+}
 
 .wrapper-footer .stack.stack-footer-inner {
     min-height: 70px;
@@ -97,6 +100,10 @@
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
     /* @group Footer */
+    .wrapper-footer {
+        height: auto;
+    }
+
     .stack-footer-inner {
         position: fixed;
         width: 100%;

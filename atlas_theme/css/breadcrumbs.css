@@ -1,5 +1,9 @@
 /* @group Breadcrumbs*/
 
+.breadcrumb {
+    vertical-align: bottom;
+}
+
 .toolbar .stack-breadcrumb {
     top: 185px;
 }
@@ -34,6 +38,14 @@
 .stack-breadcrumb a {
     padding: 0 4px;
     vertical-align: middle;
+}
+
+.stack-breadcrumb a:focus {
+    text-decoration: none !important;
+}
+
+.stack-breadcrumb a:hover {
+    text-decoration: underline !important;;
 }
 
 .stack-breadcrumb a:first-child {
