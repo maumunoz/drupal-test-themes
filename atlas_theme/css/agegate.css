@@ -80,11 +80,20 @@
     border: none;
     color: #fff;
     font-weight: bold;
+    text-align: center;
+}
+
+#age_checker_year {
+    width: 65px;
+}
+
+#age_checker_widget .form-type-textfield {
+margin: 0px 5px 0px 5px;
 }
 
 #age_checker_widget .dateselect .form-submit {
-    width: 100%;
-    margin: 7px 6px 23px 0;
+    width: 238px;
+    margin: 7px auto 23px;
     padding: 0;
     min-width: 50px;
     border-radius: 30px;
