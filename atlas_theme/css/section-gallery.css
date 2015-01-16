@@ -169,8 +169,30 @@
 
 /* @group Media Query */
 
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+    .node-media-gallery .mg-col-4 > .field-items > .field-item, 
+    .node-media-gallery .mg-col-4 .mg-gallery {
+        width: 49.96% !important;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+    .node-media-gallery .mg-col-4 > .field-items > .field-item, 
+    .node-media-gallery .mg-col-4 .mg-gallery {
+        width: 32.96% !important;
+    }
+}
+
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
+
+    .node-media-gallery .mg-col-4 > .field-items > .field-item, 
+    .node-media-gallery .mg-col-4 .mg-gallery {
+        width: 24.96% !important;
+    }
+
     /* @group gallery page */
     .node-media-gallery .media-gallery-item-wrapper .media-title {
         white-space: normal;
