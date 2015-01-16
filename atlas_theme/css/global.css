@@ -24,9 +24,25 @@ $black, $dark           = #000    | rgb(0, 0, 0);
 /* @end */
 
 /* @group Content */
+
+html,
+body,
+#page,
+#page .page-width,
+#page .page-width .lining {
+    height: 100%;
+}
+
 .wrapper-content {
-    margin-top: 150px;
+    margin-top: 100px;
     margin-bottom: 0;
+
+    min-height: 70%;
+    /*margin-bottom: -148px;*/
+}
+
+.not-front.toolbar .wrapper-content {
+    margin-top: 150px;
 }
 
 .toolbar .wrapper-content {
@@ -95,8 +111,8 @@ body {
         margin-top: 150px;
     }
 
-    .toolbar.not-front .wrapper-content {
-        margin-top: 180px;
+    .wrapper-content {
+        min-height: 87%;
     }
     /* @end */
 }
@@ -105,14 +121,18 @@ body {
 @media only screen and (min-width : 992px) {
     /* @group Content */
 
+    html,
+    body,
+    #page,
+    #page .page-width,
+    #page .page-width .lining {
+        height: auto;
+    }
+
     .toolbar .wrapper-content,
     .wrapper-content {
         margin-top: 80px;
         margin-bottom: 100px;
-    }
-
-    .toolbar.not-front .wrapper-content {
-        margin-top: 80px;
     }
     /* @end */
 
