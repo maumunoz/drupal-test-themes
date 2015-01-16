@@ -30,7 +30,8 @@
     padding: 7px 24px;
 }
 
-.contacto  .webform-client-form label.error +label {
+.contacto  .webform-client-form label.error +label, 
+.contacto  .webform-client-form label.error +label .form-required{
     color: #CC3D35;
 }
 
@@ -128,7 +129,8 @@
     display: none;
 }
 
-.contacto  .webform-client-form  .webform-component-textarea {
+.contacto  .webform-client-form  .webform-component-textarea,
+.contacto  .webform-client-form  .form-actions.form-wrapper {
 margin-bottom: 16px;
 }
 
