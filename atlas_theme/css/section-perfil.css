@@ -16,6 +16,7 @@
 .vista-perfil-chica .contenido-perfil-chica {
     background: url(../images/fondo-perfil-chica.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .vista-perfil-chica .video-perfil-chica {
@@ -179,7 +180,7 @@
         padding: 62px 22px 62px 72px;
         min-height: 610px;
         background-color: rgba(5, 46, 90, 0.7);
-        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#B3339546,endColorstr=#B3339546); 
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#B3052e5a,endColorstr=#B3052e5a); 
         zoom: 1;
     }
 
