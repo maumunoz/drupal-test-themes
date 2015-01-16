@@ -58,8 +58,10 @@ body {
 }
 
 #page {
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
+    background-position: center center;
+    background-size: initial;
+    
 }
 /* @end */
 

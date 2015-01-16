@@ -21,6 +21,7 @@
 #block-block-36,
 .contacto #block-system-main+div+div .media-thumbnail-frame {
     text-align: center;
+    line-height: 9px;
 }
 
 .contacto  .webform-client-form label.error  {
@@ -84,14 +85,14 @@
 }
 
 
-.contacto .webform-client-form  div#webform-component-new-1420834059538 span.field-prefix {
+.contacto .webform-client-form  div#webform-component-new-1421430430817 span.field-prefix {
     position: absolute;
     color: #fff;
     top: 26px;
     left: 8px;
 }
 
-.contacto .webform-client-form  input#edit-submitted-new-1420834059538 {
+.contacto .webform-client-form  input#edit-submitted-new-1421430430817 {
     padding-left: 28px;
 }
 
