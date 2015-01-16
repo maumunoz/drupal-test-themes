@@ -29,12 +29,12 @@
                 },
 
             });
-            $("#edit-submitted-new-1420833971714").rules( "add", {
-              rangelength: [5, 8],
+            $("#edit-submitted-new-1421430362193").rules( "add", {
+              rangelength: [7, 10],
               digits: true,
               messages: {
-                digits: "Debe ser un nümero de teléfono",
-                email: "Requiere de 5 a 8 digitos",
+                digits: "Debe ser un número de teléfono",
+                email: "Requiere de 7 a 10 digitos",
               }
             });
             $("#edit-submitted-new-1420479095779").rules( "add", {
@@ -43,14 +43,17 @@
                 email: "Email inválido",
               }
             });
-            $("#edit-submitted-new-1421337358404").rules( "add", {
+            $("#edit-submitted-new-1421430402850").rules( "add", {
               equalTo: "#edit-submitted-new-1420479095779",
               messages: {
                 email: "No coincide con el email",
               }
             });
-            jQuery2.extend(jQuery2.validator.messages, {
+            $.extend($.validator.messages, {
               required: 'El siguiente campo es obligatorio.',
+            });
+            $("#edit-submitted-new-1421430402850").attr('autocomplete','off').bind("cut copy paste",function(e) {
+                e.preventDefault();
             });
     });
 }(jQuery2));
