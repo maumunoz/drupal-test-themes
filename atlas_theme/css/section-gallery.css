@@ -154,6 +154,16 @@
     margin-top: 1em;
     margin-bottom: 1em;
 }
+
+/*Fix for responsive grid*/
+.node-media-gallery .mg-col-3 > .field-items > .field-item,
+.node-media-gallery .mg-col-3 .mg-gallery,
+.node-media-gallery .mg-col-4 > .field-items > .field-item,
+.node-media-gallery .mg-col-4 .mg-gallery,
+.node-media-gallery .mg-col-5 > .field-items > .field-item,
+.node-media-gallery .mg-col-5 .mg-gallery {
+    width: 49.96% !important;
+}
 /* @end */
 
 
@@ -191,6 +201,19 @@
         margin-bottom: 0;
         float: right;
     }
+
+    /*Fix for responsive grid*/
+    .node-media-gallery .mg-col-3 > .field-items > .field-item,
+    .node-media-gallery .mg-col-3 .mg-gallery {
+        width: 33.3% !important;
+    }
+
+    .node-media-gallery .mg-col-4 > .field-items > .field-item,
+    .node-media-gallery .mg-col-4 .mg-gallery,
+    .node-media-gallery .mg-col-5 > .field-items > .field-item,
+    .node-media-gallery .mg-col-5 .mg-gallery {
+        width: 32.96% !important;
+    }
     /* @end */
 }
 
@@ -209,6 +232,17 @@
     .node-media-gallery .mg-col {
         padding-left: 13.25%;
         padding-right: 13.25%;
+    }
+
+    /*Fix for responsive grid*/
+    .node-media-gallery .mg-col-4 > .field-items > .field-item,
+    .node-media-gallery .mg-col-4 .mg-gallery {
+        width: 24.96% !important;
+    }
+
+    .node-media-gallery .mg-col-5 > .field-items > .field-item,
+    .node-media-gallery .mg-col-5 .mg-gallery {
+        width: 20% !important;
     }
     /* @end */
 }
