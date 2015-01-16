@@ -1,9 +1,5 @@
 /* @group Conocelas*/
 
-.conocelas-2015 #content {
-    max-height: 487px;
-}
-
 .section-conocelas ul {
     width: 100%;
 }
@@ -83,6 +79,11 @@
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
     /* @group Conocelas*/
+
+    .conocelas-2015 #content {
+        max-height: 477px;
+    }
+
     .section-conocelas li {
         float: left;
         width: 17%;
