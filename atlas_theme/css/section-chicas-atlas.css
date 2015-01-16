@@ -1,5 +1,10 @@
 /* @group Conocelas*/
 
+.conocelas-2015 #page {
+    background-size: cover;
+    background-attachment: scroll;
+}
+
 .section-conocelas ul {
     width: 100%;
 }
