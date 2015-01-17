@@ -86,6 +86,14 @@
     background: #fff url(../images/sprite-search.png) no-repeat top left;
 }
 
+.sb-slidebar #search-block-form .form-submit {
+    top: 17px;
+}
+
+.stack-preheader .col-second .form-submit {
+    top: 0;
+}
+
 .sb-slidebar #search-block-form .form-submit,
 .stack-preheader .col-second .form-submit {
     height: 30px;
@@ -96,7 +104,7 @@
     border-radius: 0 6px 6px 0;
     background: url(../images/sprite-search.png)  no-repeat bottom center transparent;
     position: absolute;
-    top: 0;
+    /*top: 0;*/
     right: 0;
 }
 
