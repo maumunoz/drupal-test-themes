@@ -19,6 +19,14 @@
                 });
             }
         }
+        
+        setTimeout(function($) {
+            $(".sb-slidebar").prepend( $("#search-block-form").clone() );
+            $(".sb-slidebar").find("#edit-search-block-form--2").attr('autocomplete','off');
+            $( '.sb-slidebar' ).on( 'touchend click', 'input[type="submit"]', function ( event ) {
+                $( '.sb-slidebar' ).find("form").submit();
+            });
+        },500,jQuery2);
     });
 
 })(jQuery2);

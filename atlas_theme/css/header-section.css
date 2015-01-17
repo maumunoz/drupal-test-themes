@@ -23,7 +23,7 @@
     display: inline-block;
     width: 56px;
     height: 66px;
-    background: url(../images/logo.png) no-repeat top center transparent;
+    background: url(../images/logosmall.png) no-repeat top center transparent;
     background-size: cover;
 }
 
@@ -284,6 +284,7 @@
     .stack-preheader .site-name a {
         width: 118px;
         height: 136px;
+        background: url(../images/logo.png) no-repeat top center transparent;
     }
 
     .toolbar .stack-navigation,

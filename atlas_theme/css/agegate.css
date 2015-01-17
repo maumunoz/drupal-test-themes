@@ -6,7 +6,9 @@
 
 #age_checker_verification_popup {
     top: 35.6% !important;
+    background:url(../images/blank.gif);
     background-color: transparent;
+    border: solid 0px #000;
     border: none;
     color: #fff;
     width: 95% !important;
