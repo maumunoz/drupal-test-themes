@@ -55,8 +55,28 @@
     margin-right: 5px
 }
 
+.sb-slidebar #search-block-form {
+    position: relative;
+    width: 90%;
+    padding-left: 17px;
+    padding-right: 17px;
+}
+
+.sb-slidebar #search-block-form .form-type-textfield {
+    margin: 10px 0;
+}
+
+.sb-slidebar #search-block-form .form-text {
+    width: 100%;
+}
+
 .stack-preheader .col-second .form-text {
     width: 215px;
+}
+
+.sb-slidebar #search-block-form .form-text,
+.stack-preheader .col-second .form-text {
+    /*width: 215px;*/
     height: 30px;
     padding-left: 24px;
     padding-right: 30px;
@@ -67,6 +87,7 @@
     background: #fff url(../images/sprite-search.png) no-repeat top left;
 }
 
+.sb-slidebar #search-block-form .form-submit,
 .stack-preheader .col-second .form-submit {
     height: 30px;
     width: 30px;
@@ -79,6 +100,8 @@
     top: 0;
     right: 0;
 }
+
+
 
 #preheader-second-region .btn-menu-mobile a {
     width: 29px;
