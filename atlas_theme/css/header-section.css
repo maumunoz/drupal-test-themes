@@ -58,8 +58,7 @@
 .sb-slidebar #search-block-form {
     position: relative;
     width: 90%;
-    padding-left: 17px;
-    padding-right: 17px;
+    padding: 17px;
 }
 
 .sb-slidebar #search-block-form .form-type-textfield {
