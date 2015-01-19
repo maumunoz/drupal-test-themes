@@ -329,6 +329,12 @@
     margin: 33px 0 0 12px;
 }
 
+.page-user .field-type-image .messages {
+    position: absolute;
+    left: 0;
+    top: 166px;
+}
+
 .page-user .header-form p,
 .profile h2 {
     font: bold 18px "Open Sans", Helvetica, Arial, sans-serif;
@@ -585,6 +591,11 @@
         clear: both;
         float: right;
         font-size: 24px;
+    }
+
+    .page-user .field-type-image .messages {
+        left: 155px;
+        top: 94px;
     }
 
     .profile h2 {

@@ -46,17 +46,20 @@
             e.preventDefault();
         });
 
+        $("#edit-submit").prop("disabled", "disabled");
+
+        $("#check-therms-conditions").on("click", function(e) {
+            if($(this).is(":checked")) {
+                $("#edit-submit").prop("disabled", false);
+            } else {
+                $("#edit-submit").prop("disabled", "disabled");
+            }
+        });
+
         $("#edit-mail-validation").rules("add", {
             equalTo: "#edit-mail",
             messages: {
                 equalTo: "Los correos electr&oacute;nicos no coinciden"
-            }
-        });
-
-        $("#check-therms-conditions").rules("add", {
-            required: true,
-            messages: {
-                required: "Debe aceptar los terminos y condiciones"
             }
         });
 
