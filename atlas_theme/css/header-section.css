@@ -23,7 +23,9 @@
     display: inline-block;
     width: 56px;
     height: 66px;
-    background: url(../images/logosmall.png) no-repeat top center transparent;
+    background: url(../images/logosmall.png);
+    background-repeat: no-repeat;
+    background-position: top center;
     background-size: cover;
 }
 
