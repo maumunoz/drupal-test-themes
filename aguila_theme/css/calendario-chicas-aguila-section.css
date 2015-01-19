@@ -371,15 +371,22 @@
     padding: 12px 20px;
 }
 
+.chicas-aguila .dzscalendar div.banner{
+    background-size: cover;
+    padding: 10px 12px;
+}
+
 .chicas-aguila .calendar-calendar td .inner div.calendar div.content {
     padding: 15px 20px;
 }
 
+.chicas-aguila .dzscalendar .evento-calendario-overlay .banner,
 .chicas-aguila .calendar-calendar .evento-calendario-overlay .banner {
     color: #fff;
     font-family: 'ITCAvantGardePro', Helvetica, Arial sans-serif;
 }
 
+.chicas-aguila .dzscalendar .evento-calendario-overlay .date,
 .chicas-aguila .calendar-calendar .evento-calendario-overlay .date {
     font-size: 240%;
     font-weight: 300;
@@ -387,37 +394,46 @@
     border-bottom: 1px solid #8cdaf5;
 }
 
+.chicas-aguila .dzscalendar .evento-calendario-overlay .title,
+.chicas-aguila .dzscalendar .evento-calendario-overlay .title p,
 .chicas-aguila .calendar-calendar .evento-calendario-overlay .title,
 .chicas-aguila .calendar-calendar .evento-calendario-overlay .title p {
     margin: 0;
     padding: 0;
 }
 
+.chicas-aguila .dzscalendar .evento-calendario-overlay .title,
 .chicas-aguila .calendar-calendar .evento-calendario-overlay .title {
     padding-top: 15px;
 }
 
+.chicas-aguila .dzscalendar .evento-calendario-overlay em,
 .chicas-aguila .calendar-calendar .evento-calendario-overlay em {
     font-weight: 300;
     font-size: 60%;
     font-style: normal;
 }
 
+.chicas-aguila .dzscalendar .evento-calendario-overlay strong,
 .chicas-aguila .calendar-calendar .evento-calendario-overlay strong {
     font-weight: 700;
     font-size: 83%;
 }
 
+.chicas-aguila .dzscalendar .evento-calendario-overlay .content,
 .chicas-aguila .calendar-calendar .evento-calendario-overlay .content {
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
     color: #000;
 }
 
+.chicas-aguila .dzscalendar .evento-calendario-overlay .description,
+.chicas-aguila .dzscalendar .evento-calendario-overlay .place,
 .chicas-aguila .calendar-calendar .evento-calendario-overlay .description,
 .chicas-aguila .calendar-calendar .evento-calendario-overlay .place {
     font-weight: 700;
 }
 
+.chicas-aguila .dzscalendar .evento-calendario-overlay .description,
 .chicas-aguila .calendar-calendar .evento-calendario-overlay .description {
     font-size: 140%;
     line-height: 1.2;
@@ -436,10 +452,19 @@
     position: relative;
 }
 
+.chicas-aguila .dzscalendar .evento-calendario-overlay .place,
+.chicas-aguila .dzscalendar .evento-calendario-overlay .time{
+    font-size: 120%;
+    padding: 5px 0 0 25px !important;
+    position: relative;
+}
+
 .chicas-aguila #main {
     overflow: visible;
 }
 
+.chicas-aguila .dzscalendar .evento-calendario-overlay .time:before,
+.chicas-aguila .dzscalendar .evento-calendario-overlay .place:before,
 .chicas-aguila .calendar-calendar .evento-calendario-overlay .time:before,
 .chicas-aguila .calendar-calendar .evento-calendario-overlay .place:before {
     content: ' ';
@@ -452,10 +477,12 @@
     left: -11px;
 }
 
+.chicas-aguila .dzscalendar .evento-calendario-overlay .time:before,
 .chicas-aguila .calendar-calendar .evento-calendario-overlay .time:before {
     background-position: 0 -1000px;
 }
 
+.chicas-aguila .dzscalendar .evento-calendario-overlay .place:before,
 .chicas-aguila .calendar-calendar .evento-calendario-overlay .place:before {
     background-position: 0 -1040px;
 }
@@ -465,10 +492,28 @@
     line-height: 30px;
 }
 
-.dzscalendar .calendar-controls,
-.calendar-calendar {
+.chicas-aguila .dzscalendar .calendar-controls {
     display: none;
 }
+
+.chicas-aguila .calendar-calendar {
+    display: none;
+}
+
+.chicas-aguila .dzstooltip {
+    background-color: #ffd800 !important;
+    padding: 0;
+    font-size: 8px;
+}
+
+.chicas-aguila .evento-calendario-overlay .content {
+    padding: 5px 10px;
+}
+
+.chicas-aguila .dzstooltip .evento-calendario-overlay .box-arrow {
+    display: none;
+}
+
 
 /* @end */
 
@@ -527,7 +572,7 @@
         display: none;
     }
     
-    .calendar-calendar {
+    .chicas-aguila .calendar-calendar {
         display: block;
     }
 
