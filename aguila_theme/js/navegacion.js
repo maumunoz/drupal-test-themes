@@ -1,6 +1,9 @@
 /*global jQuery2 */
 (function ($) {
 
+    $('.menu a:contains("Cervezas")').attr("href","#");
+
+        
     function setActive() {
         var menuItems = $('#block-system-main-menu ul.menu > li > a'),
             active = menuItems.filter('.active'),

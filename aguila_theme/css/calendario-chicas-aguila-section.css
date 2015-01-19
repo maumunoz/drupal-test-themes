@@ -20,6 +20,10 @@
     font-weight: 900;
     font-size: 28px;
     text-align: right;
+    display: none;
+}
+.calendario-chicas-aguila .date-nav-wrapper .date-heading h3.formatted {
+    display: block;
 }
 
 #block-views-calendario-chicas-aguila-block .calendario-chicas-aguila .date-nav-wrapper .date-prev {
@@ -461,7 +465,7 @@
     line-height: 30px;
 }
 
-.date-nav-wrapper,
+.dzscalendar .calendar-controls,
 .calendar-calendar {
     display: none;
 }
@@ -523,7 +527,6 @@
         display: none;
     }
     
-    .date-nav-wrapper,
     .calendar-calendar {
         display: block;
     }

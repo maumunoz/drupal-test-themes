@@ -88,6 +88,26 @@
                     event.preventDefault();
                 });
 
+                var fecha = $(".date-heading h3").html().replace(/[A-Za-z\u00C0-\u017F]+, ([A-Za-z\u00C0-\u017F]+) [0-9]+, ([0-9]+)/gi, "$1, $2");
+                $(".date-heading h3").html(fecha).addClass("formatted");
+                
+                
+               $("td.single-day:not(.no-entry):not(.empty)").each(function(i,el){
+                    var evento = $("<div class='event-tobe'></div>");
+                    var partesFecha = $(el).attr("data-date").split("-");
+                    evento.attr("data-date", partesFecha[1]+"-"+partesFecha[2]+"-"+partesFecha[0]);
+                    evento.append($(el).find(".evento-calendario-overlay").clone().removeClass("hidden"));
+                    
+                    jQuery("#mobile-calendar .events").append(evento);
+                });
+
+                var partesFecha = $($("td.single-day")[10]).attr("data-date").split("-");
+                jQuery("#mobile-calendar").dzscalendar({ 
+                    settings_alwaysinclude6rows: "on",
+                    start_month: partesFecha[1],
+                    start_year: partesFecha[0]
+                 });
+
             }
         });
     }
@@ -97,6 +117,5 @@
         jq(document).ajaxComplete(function () {
             setTimeout(transformarCal, 50);
         });
-        jQuery("#mobile-calendar").dzscalendar({ settings_alwaysinclude6rows: "on" });
     });
 }(jQuery2, jQuery));

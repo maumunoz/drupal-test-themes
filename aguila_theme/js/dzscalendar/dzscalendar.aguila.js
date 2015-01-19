@@ -1354,7 +1354,7 @@ function is_ie8(){
                     _theMonths.children().eq(0).removeClass('argTable');
                     _theMonths.children().eq(0).addClass('currTable');
 
-                    console.log(arg1, arg2, currYear, currMon);
+                    //console.log(arg1, arg2, currYear, currMon);
                     if(arg1>currYear){
                         forward=true;
                     }else{
