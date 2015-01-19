@@ -333,6 +333,7 @@
     position: absolute;
     left: 0;
     top: 166px;
+    z-index: 10;
 }
 
 .page-user .header-form p,
