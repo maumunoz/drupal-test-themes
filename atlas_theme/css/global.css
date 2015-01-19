@@ -109,7 +109,7 @@ body {
 .sb-active .stack-navigation,
 .sb-active .stack-breadcrumb,
 .sb-active .stack-preheader .col-second {
-    width: 200%;
+    width: 100%;
 }
 /* @end */
 
