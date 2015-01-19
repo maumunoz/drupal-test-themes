@@ -23,7 +23,7 @@
     display: inline-block;
     width: 56px;
     height: 66px;
-    background: url(../images/logo.png) no-repeat top center transparent;
+    background: url(../images/logosmall.png) no-repeat top center transparent;
     background-size: cover;
 }
 
@@ -55,8 +55,27 @@
     margin-right: 5px
 }
 
+.sb-slidebar #search-block-form {
+    position: relative;
+    width: 90%;
+    padding: 17px;
+}
+
+.sb-slidebar #search-block-form .form-type-textfield {
+    margin: 10px 0;
+}
+
+.sb-slidebar #search-block-form .form-text {
+    width: 100%;
+}
+
 .stack-preheader .col-second .form-text {
     width: 215px;
+}
+
+.sb-slidebar #search-block-form .form-text,
+.stack-preheader .col-second .form-text {
+    /*width: 215px;*/
     height: 30px;
     padding-left: 24px;
     padding-right: 30px;
@@ -67,6 +86,15 @@
     background: #fff url(../images/sprite-search.png) no-repeat top left;
 }
 
+.sb-slidebar #search-block-form .form-submit {
+    top: 17px;
+}
+
+.stack-preheader .col-second .form-submit {
+    top: 0;
+}
+
+.sb-slidebar #search-block-form .form-submit,
 .stack-preheader .col-second .form-submit {
     height: 30px;
     width: 30px;
@@ -76,7 +104,7 @@
     border-radius: 0 6px 6px 0;
     background: url(../images/sprite-search.png)  no-repeat bottom center transparent;
     position: absolute;
-    top: 0;
+    /*top: 0;*/
     right: 0;
 }
 
@@ -254,6 +282,7 @@
     .stack-preheader .site-name a {
         width: 118px;
         height: 136px;
+        background: url(../images/logo.png) no-repeat top center transparent;
     }
 
     .toolbar .stack-navigation,

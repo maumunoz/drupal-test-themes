@@ -1,7 +1,7 @@
 /* @group Breadcrumbs*/
 
 .breadcrumb {
-    vertical-align: bottom;
+    vertical-align: baseline;
 }
 
 .toolbar .stack-breadcrumb {
@@ -37,7 +37,7 @@
 
 .stack-breadcrumb a {
     padding: 0 4px;
-    vertical-align: middle;
+    vertical-align: baseline;
 }
 
 .stack-breadcrumb a:focus {

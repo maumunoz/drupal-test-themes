@@ -42,6 +42,17 @@ function isMobile() {
                             }
                         }, 150);
                     });
+                    
+                    age_checker.lastNext = 0;
+                    age_checker.originalNextbox = age_checker.nextbox;
+                    age_checker.nextbox = function( fldobj, nbox ) {
+                        var time = new Date().getTime();
+                        if( time > age_checker.lastNext + 800) {
+                            age_checker.originalNextbox( fldobj, nbox );
+                            age_checker.lastNext = time;
+                        }
+                        
+                    }
                 }
             }, 150);
         };
