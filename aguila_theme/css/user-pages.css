@@ -379,6 +379,16 @@
     height: 46px;
 }
 
+.page-user-register #check-therms-conditions {
+    float: left;
+    margin: 3px 10px 0 0;
+}
+
+.page-user-register .therms-conditions p {
+    width: 95%;
+    float: left;
+}
+
 /* @end */
 
 /* @group Profile */

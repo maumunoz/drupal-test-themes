@@ -36,7 +36,8 @@
                                             '<input type="text" id="edit-mail-validation" name="mail" value="" size="60" maxlength="254" class="form-text required">' +
                                         '</div>');
 
-        
+        el.find("#edit-actions").after('<div class="therms-conditions"><p>Al hacer clic en crear una cuenta estas aceptando los <a href="/terminos-y-condiciones">terminos y condiciones de cerveza aguila</a></p></div>');
+        el.find(".therms-conditions").prepend('<input id="check-therms-conditions" type="checkbox" />');
 
         $("#user-register-form").validate();
 
@@ -45,12 +46,17 @@
             e.preventDefault();
         });
 
-        $("#edit-mail-validation")
-
         $("#edit-mail-validation").rules("add", {
             equalTo: "#edit-mail",
             messages: {
                 equalTo: "Los correos electr&oacute;nicos no coinciden"
+            }
+        });
+
+        $("#check-therms-conditions").rules("add", {
+            required: true,
+            messages: {
+                required: "Debe aceptar los terminos y condiciones"
             }
         });
 
