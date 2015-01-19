@@ -23,10 +23,10 @@
     display: inline-block;
     width: 56px;
     height: 66px;
-    background: url(../images/logosmall.png);
+    background-image: url(../images/logosmall.png);
     background-repeat: no-repeat;
     background-position: top center;
-    background-size: cover;
+    /*background-size: cover;*/
 }
 
 .stack-preheader .col-second {
@@ -284,7 +284,9 @@
     .stack-preheader .site-name a {
         width: 118px;
         height: 136px;
-        background: url(../images/logo.png) no-repeat top center transparent;
+        background-image: url(../images/logo.png);
+        background-repeat:  no-repeat;
+        background-position: top center;
     }
 
     .toolbar .stack-navigation,
