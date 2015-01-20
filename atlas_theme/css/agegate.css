@@ -5,14 +5,14 @@
 }
 
 #age_checker_overlay #age_checker_verification_popup {
-    top: 35.6% !important;
+    top: 35.6%;
     background:url(../images/blank.gif);
     background-color: transparent !important;
     border: solid 0px #000;
     border: none;
     color: #fff;
     width: 95%;
-    margin-left: -215px !important;
+    margin-left: -215px;
     font-size: 11px;
     max-width: 95%;
     z-index: 2;
@@ -75,11 +75,10 @@
     margin-top: 0;
 }
 
-
 #age_checker_widget .dateselect #age_checker_month,
 #age_checker_widget .dateselect #age_checker_day,
 #age_checker_widget .dateselect #age_checker_year {
-    height: 48px;
+    height: 48px !important;
     font-size: 20px;
     line-height: 48px !important;
     width: 48px;
@@ -102,11 +101,12 @@ margin: 0px 5px 0px 5px;
 #age_checker_widget .dateselect .form-submit {
     /*width: 238px;*/
     width: 100%;
+    max-width: 243px !important;
+    min-width: 50px !important;
     margin-left: 0;
     margin-right: 0;
     margin: 7px auto 23px;
     padding: 0;
-    min-width: 50px;
     border-radius: 30px;
     background-color: #14DE6E;
     background-image: none;
