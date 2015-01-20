@@ -34,6 +34,31 @@
 
     function adjust() {
         var header = $('.site-name-wrapper'),
+            items = $("#block-system-main-menu .content>ul>li"),
+            count = items.length,
+            center = Math.ceil(count/2)-1;
+            
+        $(items[center]).after( header );
+        header.wrap("<li></li>");
+        offset = $("#block-system-main-menu").width()/2-header.width()/2-header.parent().position().left;
+        offset_slice = Math.round(offset/(center+1)/2);
+        for(var i=0; i<=center; i++) {
+            var currentPadding = parseInt( $(items[i]).find("a").css("padding-right") );
+            currentPadding += offset_slice;
+            $(items[i]).find("a").css("padding-left", currentPadding)
+            $(items[i]).find("a").css("padding-right", currentPadding)
+        }
+        for(var i=center+1; i<count; i++) {
+            currentPadding = parseInt( $(items[i]).find("a").css("padding-right") );
+            currentPadding += offset_slice;
+            $(items[i]).find("a").css("padding-left", currentPadding)
+            $(items[i]).find("a").css("padding-right", currentPadding)
+        }
+    }
+    
+    
+    function adjustOld() {
+        var header = $('.site-name-wrapper'),
             headerOffset = header.offset().left,
             headerWidth = header.outerWidth(),
             menu = $('#block-system-main-menu'),
@@ -79,10 +104,18 @@
         }
     }
 
-    adjust();
+    
     setActive();
-    $(document).ready(adjust);
-    $(window).on('load', adjust);
-    $(window).on('resize', adjust);
+    
+    $.ogSlidebars = $.slidebars;
+    $.slidebars = function (options) {
+        jQuery2.ogSlidebars(options);
+        adjust();
+        jQuery2(".sb-slidebar").prepend( jQuery2('.site-name-wrapper').clone() );
+    }
+    
+    //$(document).ready(adjust);
+    //$(window).on('load', adjust);
+    //$(window).on('resize', adjust);
 
 }(jQuery2));
