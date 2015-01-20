@@ -4,6 +4,11 @@
     background-color: #0565be;
 }
 
+.sb-slidebar .site-name-wrapper {
+    text-align: center;
+    margin: 0px;
+}
+
 .sb-slidebar li {
     border-bottom: 1px solid #3381c9;
 }
