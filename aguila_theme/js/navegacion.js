@@ -33,89 +33,50 @@
     }
 
     function adjust() {
-        var header = $('.site-name-wrapper'),
+        var header = $('.site-name-wrapper.center'),
             items = $("#block-system-main-menu .content>ul>li"),
+            menu = $('#block-system-main-menu'),
             count = items.length,
             center = Math.ceil(count/2)-1;
+
+        if ( $("#block-system-main-menu .site-name-wrapper").length==0 ) {
+            $(items[center]).after( header );
+            header.wrap("<li></li>");
+        }
             
-        $(items[center]).after( header );
-        header.wrap("<li></li>");
-        offset = $("#block-system-main-menu").width()/2-header.width()/2-header.parent().position().left;
-        offset_slice = Math.round(offset/(center+1)/2);
-        for(var i=0; i<=center; i++) {
-            var currentPadding = parseInt( $(items[i]).find("a").css("padding-right") );
-            currentPadding += offset_slice;
-            $(items[i]).find("a").css("padding-left", currentPadding)
-            $(items[i]).find("a").css("padding-right", currentPadding)
-        }
-        for(var i=center+1; i<count; i++) {
-            currentPadding = parseInt( $(items[i]).find("a").css("padding-right") );
-            currentPadding += offset_slice;
-            $(items[i]).find("a").css("padding-left", currentPadding)
-            $(items[i]).find("a").css("padding-right", currentPadding)
-        }
-    }
-    
-    
-    function adjustOld() {
-        var header = $('.site-name-wrapper'),
-            headerOffset = header.offset().left,
-            headerWidth = header.outerWidth(),
-            menu = $('#block-system-main-menu'),
-            items = menu.find('ul.menu > li > a'),
-            navOffset = items.first().offset().left,
-            itemPadding,
-            before,
-            beforeWidth = 0,
-            after;
-
-        if (menu.is(':visible')) {
-            // reset items padding
-            items.css('paddingLeft', '').css('paddingRight', '');
-            itemPadding = parseInt(items.first().css('paddingLeft'), 10);
-
-            // find the items before and after the logo
-            items.each(function (index) {
-                if (before === undefined || after === undefined) {
-                    var item = $(this),
-                    offset = item.offset().left,
-                    width = item.outerWidth();
-
-                    if ((offset + width - itemPadding) < headerOffset) {
-                        beforeWidth += width;
-                        before  = index;
-                    } else if (before !== undefined) {
-                        after = index;
-                    }
-                }
-            });
-
-            if (before !== undefined && after !== undefined) {
-                var newItemPadding = (headerOffset - navOffset - (beforeWidth - itemPadding * before * 2 + itemPadding / 2)) / before / 2,
-                    beforeNode = items.eq(before),
-                    beforeAfterPadding;
-
-                items.css('paddingLeft', newItemPadding).css('paddingRight', newItemPadding);
-                beforeAfterPadding = (headerOffset + headerWidth / 2) - (beforeNode.offset().left + beforeNode.outerWidth() - newItemPadding);
-                beforeAfterPadding*=0.91;
-                beforeNode.css('paddingRight', beforeAfterPadding);
-                items.eq(after).css('paddingLeft', beforeAfterPadding);
+        if (menu.is(':visible')) { 
+            offset = $("#block-system-main-menu").width()/2-header.width()/2-header.parent().position().left;
+            offset_slice = Math.round(offset/(center+1)/2);
+            for(var i=0; i<=center; i++) {
+                var currentPadding = parseInt( $(items[i]).find("a").css("padding-right") );
+                currentPadding += offset_slice;
+                $(items[i]).find("a").css("padding-left", currentPadding)
+                $(items[i]).find("a").css("padding-right", currentPadding)
+            }
+            for(var i=center+1; i<count; i++) {
+                currentPadding = parseInt( $(items[i]).find("a").css("padding-right") );
+                currentPadding += offset_slice;
+                $(items[i]).find("a").css("padding-left", currentPadding)
+                $(items[i]).find("a").css("padding-right", currentPadding)
             }
         }
     }
-
     
+   
     setActive();
     
-    $.ogSlidebars = $.slidebars;
-    $.slidebars = function (options) {
-        jQuery2.ogSlidebars(options);
-        adjust();
-        jQuery2(".sb-slidebar").prepend( jQuery2('.site-name-wrapper').clone() );
+    if (typeof $.ogSlidebars == "undefined") {
+        $.ogSlidebars = $.slidebars;
+        $.slidebars = function (options) {
+            jQuery2.ogSlidebars(options);
+            jQuery2(".sb-slidebar").prepend( jQuery2('#header-region .site-name-wrapper').clone() );
+            jQuery2('#header-region .site-name-wrapper').addClass("center");
+            adjust();
+        }
     }
     
-    //$(document).ready(adjust);
-    //$(window).on('load', adjust);
-    //$(window).on('resize', adjust);
+    $(document).ready(adjust);
+    $(window).on('load', adjust);
+    $(window).on('resize', adjust);
 
 }(jQuery2));

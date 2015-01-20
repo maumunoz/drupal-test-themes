@@ -43,7 +43,7 @@
 
 /* @group Aguila en Vivo */
 
-.aguila-en-vivo-contenido {
+.aguila-en-vivo #block-system-main {
     position: relative;
     font-size: 18px;
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
@@ -54,17 +54,17 @@
     padding: 0 30px;
 }
 
-.aguila-en-vivo-contenido h2 {
+.aguila-en-vivo #block-system-main h2 {
     font-family: Dubiel, Georgia, Times, serif;
     font-size: 35px;
     margin-bottom: 5px;
 }
 
-.aguila-en-vivo-contenido .mainText {
+.aguila-en-vivo #block-system-main .field-item {
     width: 100%;
 }
 
-.aguila-en-vivo-contenido .mainText h1 {
+.aguila-en-vivo #block-system-main h1 {
     font-family: 'ITCAvantGardePro', Helvetica, Arial, sans-serif;
     font-weight: 700;
     font-size: 71px;
@@ -74,11 +74,11 @@
     margin-bottom: 40px;
 }
 
-.aguila-en-vivo-contenido .mainText p {
+.aguila-en-vivo #block-system-main p {
     margin-bottom: 40px;
 }
 
-.aguila-en-vivo-contenido .mainText h3 {
+.aguila-en-vivo #block-system-main h3 {
     font-family: 'ITCAvantGardePro', Helvetica, Arial, sans-serif;
     font-size: 24px;
     display: block;
@@ -88,7 +88,7 @@
     width: 100%;
 }
 
-.aguila-en-vivo-contenido .mainText .mostrarMapa a {
+.aguila-en-vivo #block-system-main .mostrarMapa a {
     font-size: 13.8px;
     color: #868686;
     text-decoration: underline;    
@@ -101,7 +101,7 @@
     background-repeat: no-repeat;
 }
 
-.aguila-en-vivo-contenido .calendarBox {
+.aguila-en-vivo .calendarBox {
     position: relative;
     width: 100%;
     top: 0;
@@ -112,7 +112,7 @@
     max-width: 400px;
 }
 
-.aguila-en-vivo-contenido .calendarBox .media-thumbnail-frame img {
+.aguila-en-vivo .calendarBox .media-thumbnail-frame img {
     width: 100%;
 }
 
@@ -128,6 +128,14 @@
     overflow: visible !important;
 }
 
+.aguila-en-vivo .calendar-header {
+    border: none;
+    height: 220px;
+    min-height: 220px;
+    max-height: 220px;
+    background-color: #fff;
+    background-size: cover;
+}
 
 
 /* @end */
@@ -146,11 +154,11 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-    .aguila-en-vivo-contenido .mainText {
+    .aguila-en-vivo #block-system-main .field-item {
         width: 56%;
     }
  
-    .aguila-en-vivo-contenido .calendarBox {
+    .aguila-en-vivo .calendarBox {
         position: absolute;
         width: 38%;
         margin-top: 0;
@@ -159,12 +167,12 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-    .aguila-en-vivo-contenido .mainText h3 {
+    .aguila-en-vivo #block-system-main h3 {
         float: left;
         width: 54%;
     }
 
-    .aguila-en-vivo-contenido .mainText .mostrarMapa {
+    .aguila-en-vivo .mostrarMapa {
         background-position: 77.8% -882px;
     }    
 
