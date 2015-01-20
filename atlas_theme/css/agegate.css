@@ -4,14 +4,14 @@
     background-size: cover;
 }
 
-#age_checker_verification_popup {
+#age_checker_overlay #age_checker_verification_popup {
     top: 35.6% !important;
     background:url(../images/blank.gif);
-    background-color: transparent;
+    background-color: transparent !important;
     border: solid 0px #000;
     border: none;
     color: #fff;
-    width: 95% !important;
+    width: 95%;
     margin-left: -215px !important;
     font-size: 11px;
     max-width: 95%;
@@ -41,6 +41,11 @@
     padding: 0;
     margin: 0;
 }
+
+#age_checker_verification_popup .agegate-label {
+    display: inline;
+}
+
 .age_checker_widget.dateselect {
     background-image: url('../images/agegate_input.png?r=1');
     background-position: 50% 0;
@@ -72,17 +77,18 @@
 
 
 #age_checker_widget .dateselect #age_checker_month,
-#age_checker_day, 
-#age_checker_year {
+#age_checker_widget .dateselect #age_checker_day,
+#age_checker_widget .dateselect #age_checker_year {
     height: 48px;
     font-size: 20px;
-    line-height: 48px;
+    line-height: 48px !important;
     width: 48px;
     background: none;
     border: none;
     color: #fff;
     font-weight: bold;
     text-align: center;
+    vertical-align: middle;
 }
 
 #age_checker_year {
@@ -94,7 +100,10 @@ margin: 0px 5px 0px 5px;
 }
 
 #age_checker_widget .dateselect .form-submit {
-    width: 238px;
+    /*width: 238px;*/
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
     margin: 7px auto 23px;
     padding: 0;
     min-width: 50px;
@@ -202,7 +211,7 @@ margin: 0px 5px 0px 5px;
         top: 35.6% !important;
         margin-left: -120px !important;
         height: 65%;
-        width: 430px !important;
+        width: 470px !important;
 
     }
     .agegate_beer {
@@ -211,7 +220,7 @@ margin: 0px 5px 0px 5px;
     .agegate_footer {
         display: block;
     }
-    
+
     #agegate_logo {
         margin-top: 0px;
     }
