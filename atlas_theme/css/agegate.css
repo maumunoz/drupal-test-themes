@@ -79,9 +79,10 @@
 #age_checker_widget .dateselect #age_checker_day,
 #age_checker_widget .dateselect #age_checker_year {
     height: 48px !important;
+    padding: 0;
     font-size: 20px;
     line-height: 48px !important;
-    width: 48px;
+    /*width: 48px;*/
     background: none;
     border: none;
     color: #fff;
@@ -90,8 +91,13 @@
     vertical-align: middle;
 }
 
-#age_checker_year {
-    width: 65px;
+#age_checker_widget .dateselect #age_checker_month,
+#age_checker_widget .dateselect #age_checker_day {
+    width: 48px;
+}
+
+#age_checker_widget .dateselect #age_checker_year {
+    width: 65px ;
 }
 
 #age_checker_widget .form-type-textfield {

@@ -1,8 +1,9 @@
 /* @group Conocelas*/
 
 .conocelas-2015 #page {
-    background-size: cover;
-    background-attachment: scroll;
+    background-size: auto 100%;
+    height: auto;
+    background-position: 0 0;
 }
 
 .section-conocelas ul {
