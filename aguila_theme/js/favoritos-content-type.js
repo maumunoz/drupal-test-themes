@@ -1,4 +1,4 @@
-/*global jQuery, jQuery2 */
+/*global jQuery, jQuery2 
 (function ($, jq) {
     var destacados = $('.destacados-principal'),
         markup;
@@ -44,4 +44,4 @@
             }
         });
     }
-}(jQuery2, jQuery));
+}(jQuery2, jQuery));*/

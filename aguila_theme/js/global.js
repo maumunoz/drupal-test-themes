@@ -149,3 +149,8 @@ jQuery(window).scroll(function() {
     }
     lastScrollTop = _scrollTop;
 });
+
+(function($){
+    //enable new tab for futbol item in nav
+    $('[href="http://laligaaguila.com/"]').attr("target", "_blank");
+})(jQuery2);

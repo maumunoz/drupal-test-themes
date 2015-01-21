@@ -378,6 +378,10 @@ $black, $dark           = #000    | rgb(0, 0, 0);
     padding-right: 40px;
 }
 
+.btn-symbol.btn-sky-blue {
+    background-image: url(../images/sprite.png), linear-gradient(to right, #FFDC48 50%, #0fc3ff 50%);
+}
+
 .btn-symbol.btn-symbol-geo {
     background-position: 0 -86px;
     padding-left: 40px;

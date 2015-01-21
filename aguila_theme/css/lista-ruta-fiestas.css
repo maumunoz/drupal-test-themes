@@ -225,6 +225,18 @@
         background-position: 100% -116px;
         font-size: 14px;
     }
+
+    .btn.btn-sky-blue.btn-symbol.animation-to-right {
+        background-size: auto, 200% 100%;
+        background-position: -32px -116px, 100% 0; /*the first one to arrow, the other to gradient*/
+        transition: background-position 0.3s;
+    }
+
+    .btn.btn-sky-blue.btn-symbol.animation-to-right:hover {
+        background-position: 100% -116px, 0 0;
+        border-color: #FFDC48; /* override to avoid distinct color in border */
+        border-radius: 0;
+    }
 }
 
 /* Large Devices, Wide Screens */
