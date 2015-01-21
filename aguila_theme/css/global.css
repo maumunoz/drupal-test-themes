@@ -381,6 +381,9 @@ $black, $dark           = #000    | rgb(0, 0, 0);
 .btn-symbol.btn-sky-blue {
     background-image: url(../images/sprite.png), linear-gradient(to right, #FFDC48 50%, #0fc3ff 50%);
 }
+.btn-symbol.btn-sky-blue.btn-symbol-down {
+    background-image: url(../images/sprite.png), linear-gradient(to bottom, #FFDC48 50%, #0fc3ff 50%);
+}
 
 .btn-symbol.btn-symbol-geo {
     background-position: 0 -86px;
@@ -637,6 +640,7 @@ $black, $dark           = #000    | rgb(0, 0, 0);
 
 .btn.btn-sky-blue.btn-symbol.animation-to-bottom:hover {
     background-position: 100% -240px, 0 0;
+    border-color: #FFDC48; /* override to avoid distinct color in border */
 }
 
 .btn-radius-none,
