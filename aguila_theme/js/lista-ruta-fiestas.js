@@ -18,6 +18,7 @@
         jq(document).ajaxComplete(function () {
             setTimeout(transformar, 50);
         });
+        jQuery.cookie("filtrofiesta","Todos",0.05);
     });
 
 }(jQuery2, jQuery));

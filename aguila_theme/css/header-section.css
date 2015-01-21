@@ -10,7 +10,7 @@
     visibility: hidden !important;
 }
 
-.site-name-wrapper {
+.site-name-wrapper-old {
     display: inline-block;
     left: 50%;
     margin-left: -81px;
@@ -41,7 +41,6 @@
     top: 0;
 }
 
-.toolbar  .site-name-wrapper,
 .toolbar  .stack-navigation {
     top: 63px;
 }

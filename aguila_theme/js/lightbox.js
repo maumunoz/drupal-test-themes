@@ -35,6 +35,42 @@ function removeColorBox() {
                     tCounter: '%curr% de %total%'
                 }
         });
+        jQuery2(".popup").magnificPopup({
+                type: 'iframe',
+                tClose: 'Cerrar (Esc)',
+                tLoading: 'Cargando...',
+                    callbacks: {
+                        open: function() {
+                            jQuery(".mfp-prevent-close").insertBefore(".mfp-close");
+                        }
+                    },
+                iframe: {
+                    patterns: {
+                        youtube: {
+                          index: 'youtube.com/', // String that detects type of video (in this case YouTube). Simply via url.indexOf(index).
+
+                          id: 'v=', // String that splits URL in a two parts, second part should be %id%
+                          // Or null - full URL will be returned
+                          // Or a function that should return %id%, for example:
+                          // id: function(url) { return 'parsed id'; } 
+
+                          src: '//www.youtube.com/embed/%id%?autoplay=1' // URL that will be set as a source for iframe. 
+                        },
+                        vimeo: {
+                          index: 'vimeo.com/',
+                          id: '/',
+                          src: '//player.vimeo.com/video/%id%?autoplay=1'
+                        },
+                        gmaps: {
+                          index: '//maps.google.',
+                          src: '%id%&output=embed'
+                        }
+                    // you may add here more sources
+                    },
+
+//                    srcAction: 'iframe_src', // Templating object key. First part defines CSS selector, second attribute. "iframe_src" means: find "iframe" and set attribute "src".
+                }
+        });
         clearInterval(colorBoxKiller);
     }
 }

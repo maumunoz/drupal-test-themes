@@ -125,8 +125,8 @@
 (function($){
     var originalVal = $.fn.val;
     $.fn.val = function(){
-        var ogValue = this[0].value;
-        var result =originalVal.apply(this,arguments);
+        var ogValue = this.value || this[0].value;
+        var result = originalVal.apply(this,arguments);
         if(arguments.length>0 && ogValue!=arguments[0])
             $(this).change();
         return result;
@@ -136,8 +136,8 @@
 (function($){
     var originalVal = $.fn.val;
     $.fn.val = function(){
-        var ogValue = this[0].value;
-        var result =originalVal.apply(this,arguments);
+        var ogValue =  this.value || this[0].value;
+        var result = originalVal.apply(this,arguments);
         if(arguments.length>0 && ogValue!=arguments[0])
             $(this).change();
         return result;

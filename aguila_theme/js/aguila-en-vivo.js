@@ -10,7 +10,10 @@ window.arr_monthnames = [ "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
     });
     
     $.initModule("#tr1", function ($, node) {
-        $(".evento").each(function(i, node) {
+    
+    $("#block-system-main .field-items").append($(".calendarBox"));
+    
+        $(".event-tobe").each(function(i, node) {
             node = $(node).clone();
             node.attr("data-date", node.data("date").replace(/\//g,"-") );
             node.appendTo( $(".aguila-en-vivo .events") );
@@ -20,7 +23,16 @@ window.arr_monthnames = [ "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
             event.preventDefault();
             jQuery("body").scrollTo('.mapa-lugar-detalle',600);
         });
-        jQuery("#tr1").dzscalendar({ settings_alwaysinclude6rows: "on" });
+        jQuery("#tr1").dzscalendar({ settings_alwaysinclude6rows: "on", design_transitionDesc: "showContent" });
+        
+        $(".calendarContainer").on('touchend click', ".week-day.hasEvent", function() {
+            var head = jQuery(".calendar-header");
+            head.html( $(this).find(".the-event-content").clone() );
+            var path = head.find(".event-image img").attr("src");
+            head.find(".event-image").remove();
+            head.css("background-image","url('"+path+"')");
+            
+        });
     });
     
     

@@ -28,8 +28,13 @@
         setTimeout(function ($) {
             $('.sb-slidebar').prepend( $('#search-block-form').clone() );
             $('.sb-slidebar').find('#edit-search-block-form--2').attr('autocomplete','off');
-            $('.sb-slidebar').on( 'touchend click', 'input[type="submit"]', function (event) {
-                $('.sb-slidebar').find("form").submit();
+
+            $('.sb-slidebar').on( 'touchend click', 'input[type="submit"]', function (e) {
+                $('.sb-slidebar form').submit();
+            });
+
+            $('.sb-slidebar').on( 'touchend click', 'input[type="text"]', function (e) {
+                e.stopPropagation();
             });
         }, 500, jQuery2);
     });
