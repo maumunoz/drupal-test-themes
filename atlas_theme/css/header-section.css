@@ -262,6 +262,10 @@
     left: 10px;
 }
 
+.sb-active .stack-preheader .col-first {
+    left: auto;
+}
+
 .toolbar .stack.stack-precontent {
     top: 200px;
 }
