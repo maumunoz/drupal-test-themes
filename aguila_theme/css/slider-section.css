@@ -247,6 +247,21 @@
     display: none;
 }
 
+
+.slide-content-alternative {
+    position: absolute;
+    top: 0;
+    height: 559px;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.slide-content-alternative p {
+    margin: 0;
+    padding: 0;
+}
+
 /* @end */
 
 /* @group Media Query */
@@ -334,6 +349,7 @@
     .chicas-aguila .slick-initialized .slide-content,
     .chicas-aguila .banner-principal .views-row {
         height: 565px;
+        z-index:1;
     }
 
     .banner-principal .views-row,
@@ -350,6 +366,11 @@
         padding: 30px 30px;
     }
 
+    .slide-content-alternative video,
+    .slide-content-alternative {
+        height: 559px;
+    }
+    
     .slide-content p {
         margin: 0 0 10px;
         font-size: 128%;
