@@ -32,6 +32,7 @@
 
 .socialHeader .socialLink1:hover {
     background-color: #7589b9;
+    border-color: #7589b9;
 }
 
 .socialHeader .socialLink2 {
@@ -42,6 +43,7 @@
 
 .socialHeader .socialLink2:hover {
     background-color: #de7168;
+    border-color: #de7168;
 }
 
 .socialHeader .socialLink3 {
@@ -52,6 +54,7 @@
 
 .socialHeader .socialLink3:hover {
     background-color: #8aafd9;
+    border-color: #8aafd9;
 }
 
 .socialHeader .socialLink4 {
@@ -60,8 +63,9 @@
     background-position: -40px -120px;
 }
 
-.socialHeader .socialLink3:hover {
+.socialHeader .socialLink4:hover {
     background-color: #ea7a62;
+    border-color: #ea7a62;
 }
 
 /* @end */

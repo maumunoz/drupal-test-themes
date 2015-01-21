@@ -52,6 +52,16 @@
     text-decoration: none;
 }
 
+.destacados-principal .views-row-2 .views-field-nothing a ,
+.destacados-principal .views-row-3 .views-field-nothing a ,
+.destacados-principal .views-row-4 .views-field-nothing a ,
+.destacados-principal .views-row-5 .views-field-nothing a ,
+.destacados-principal .views-row-7 .views-field-nothing a  {
+    font-size: 10px;
+    text-decoration: underline;
+    font-family: "Open Sans", Arial, sans-serif;
+}
+
 .destacados-principal .views-row.blanco {
     background-color: #FFF;
 }
@@ -377,6 +387,10 @@
     }
 
     .destacados-principal .views-row-1 .categoria {
+        margin: 325px 0 15px;
+        transition: margin 0.3s;
+    }
+    .destacados-principal .views-row-1:hover .categoria {
         margin: 210px 0 15px;
     }
 
@@ -413,11 +427,15 @@
         height: 54px;
     }
 
-    .destacados-principal .views-row-1 .views-field-body p {
+    .destacados-principal .views-row-1 .views-field-body p,
+    .destacados-principal .views-row-6 .views-field-body p {
         overflow: hidden;
         height: 44px;
         font-family: 'Open Sans', Helvetica, Arial, sans-serif;
         font-weight: 400;
+        font-size: 14px;
+        color: #fff;
+
     }
 
     .destacados-principal .views-row-1 .views-field-body,
@@ -485,7 +503,12 @@
     }
 
     .destacados-principal .views-row-6 .categoria {
-        margin: 300px 0 15px;
+        margin: 325px 0 15px;
+        transition: margin 0.3s;
+    }
+
+    .destacados-principal .views-row-6:hover .categoria {
+        margin: 240px 0 15px;
     }
 
     .destacados-principal .views-row-7 > div:first-child {
@@ -704,8 +727,8 @@
         top: 0;
         bottom: 0;
         background: rgba(255, 216, 0, .7);
-        visibility: hidden;
-        transition: visibility .3s;
+        opacity: 0;
+        transition: opacity .3s;
     }
 
 
@@ -714,7 +737,7 @@
     .destacados-principal .views-row.views-row-4:hover .views-field-field-thumbnail:after,
     .destacados-principal .views-row.views-row-5:hover .views-field-field-thumbnail:after,
     .destacados-principal .views-row.views-row-7:hover .views-field-field-thumbnail:after {
-        visibility: visible;
+        opacity: 1;
     }
 
     .destacados-principal .views-row-4 .views-field-field-thumbnail {
