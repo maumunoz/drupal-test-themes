@@ -257,15 +257,6 @@
     top: 154px;
 }
 
-.stack-preheader .col-first {
-    float: none;
-    left: 10px;
-}
-
-.sb-active .stack-preheader .col-first {
-    left: auto;
-}
-
 .toolbar .stack.stack-precontent {
     top: 200px;
 }
