@@ -107,11 +107,11 @@
 .contenido-no-encontrado .stack-content-inner .content {
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
     text-align: center;
-    margin-top: 1.2em;
     
 }
 
 .contenido-no-encontrado .stack-content-inner  h2{
+    margin-top: 1.2em;
     font-family: 'ITCAvantGardePro', Helvetica, Arial sans-serif;
     font-size: 6em;
 }
