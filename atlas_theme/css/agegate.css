@@ -46,6 +46,10 @@
     display: inline;
 }
 
+#age_checker_verification_popup #age-checker-getform {
+    padding-top: 2px;
+}
+
 .age_checker_widget.dateselect {
     background-image: url('../images/agegate_input.png?r=1');
     background-position: 50% 0;
@@ -75,13 +79,18 @@
     margin-top: 0;
 }
 
+#age_checker_widget .dateselect .form-item {
+    margin: 0 5px;
+}
+
 #age_checker_widget .dateselect #age_checker_month,
 #age_checker_widget .dateselect #age_checker_day,
 #age_checker_widget .dateselect #age_checker_year {
-    height: 48px !important;
+    height: 52px !important;
     padding: 0;
+    margin: 0;
     font-size: 20px;
-    line-height: 48px !important;
+    /*line-height: 48px !important;*/
     /*width: 48px;*/
     background: none;
     border: none;
