@@ -101,16 +101,6 @@
 #block-system-main-menu ul.menu li ul.menu li:focus,
 #block-system-main-menu ul.menu li ul.menu li:active {
     background-position: 0 100%;
-}
-
-#block-system-main-menu ul.menu li.active-trail,
-#block-system-main-menu ul.menu li:hover,
-#block-system-main-menu ul.menu li:focus,
-#block-system-main-menu ul.menu li:active,
-#block-system-main-menu ul.menu li ul.menu li.active-trail,
-#block-system-main-menu ul.menu li ul.menu li:hover,
-#block-system-main-menu ul.menu li ul.menu li:focus,
-#block-system-main-menu ul.menu li ul.menu li:active {
     background: #0fc3ff \9;
     background-color: #0fc3ff \9;
     background-size: 100% \9;
@@ -248,10 +238,6 @@
     display: block;
     padding: 0;
     border-top: 1px solid #3381c9;
-}
-
-#block-system-user-menu .menu li:hover {
-    background-color: #0fc3ff;
 }
 
 #block-system-user-menu .menu li.first {

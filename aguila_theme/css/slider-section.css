@@ -323,17 +323,17 @@
     }
 
     .front .banner-principal .views-row {
-        height: 615px;
+        height: 565px;
     }
 
     .front .slick-initialized .slide-content {
-        height: 600px;
+        height: 550px;
         padding: 30px 30px;
     }
 
     .chicas-aguila .slick-initialized .slide-content,
     .chicas-aguila .banner-principal .views-row {
-        height: 615px;
+        height: 565px;
     }
 
     .banner-principal .views-row,
