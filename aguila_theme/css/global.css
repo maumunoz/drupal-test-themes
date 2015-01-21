@@ -617,6 +617,28 @@ $black, $dark           = #000    | rgb(0, 0, 0);
     font-weight: bold;
 }
 
+.btn.btn-sky-blue.btn-symbol.animation-to-right {
+    background-size: auto, 200% 100%;
+    background-position: -32px -116px, 100% 0; /*the first one to arrow, the other to gradient*/
+    transition: background-position 0.3s;
+}
+
+.btn.btn-sky-blue.btn-symbol.animation-to-right:hover {
+    background-position: 100% -116px, 0 0;
+    border-color: #FFDC48; /* override to avoid distinct color in border */
+    border-radius: 0;
+}
+
+.btn.btn-sky-blue.btn-symbol.animation-to-bottom {
+    background-size: auto, 100% 200%;
+    background-position: 100% -240px, 0 100%; /*the first one to arrow, the other to gradient*/
+    transition: background-position 0.3s;
+}
+
+.btn.btn-sky-blue.btn-symbol.animation-to-bottom:hover {
+    background-position: 100% -240px, 0 0;
+}
+
 .btn-radius-none,
 .radius-none {
     -webkit-border-radius: 0;

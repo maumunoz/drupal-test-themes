@@ -35,7 +35,7 @@
         });
         //Add down arrow below the banner
         if(sliderNode.length) {
-            scrollBtn = $('<div class="btn to-scroll btn-md btn-sky-blue btn-radius-none btn-text-no btn-symbol btn-symbol-down hidden"></div>');
+            scrollBtn = $('<div class="btn to-scroll btn-md btn-sky-blue btn-radius-none btn-text-no btn-symbol btn-symbol-down animation-to-bottom hidden"></div>');
             sliderNode.append(scrollBtn);
             win = $(window);
             win.on('scroll', function () {
