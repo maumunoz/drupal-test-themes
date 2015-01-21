@@ -2,7 +2,7 @@
 (function ($) {
 
     $('.menu a:contains("Cervezas")').attr("href","#");
-
+    $('.menu .menu-link-3686 ul li.active-trail ').removeClass("active-trail");
         
     function setActive() {
         var menuItems = $('#block-system-main-menu ul.menu > li > a'),

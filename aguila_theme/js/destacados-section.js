@@ -2,6 +2,8 @@
 (function ($) {
     var viewDestacados = $(".front .destacados-principal");
 
+    $(".destacados-principal .views-row-1 .views-field-nothing a").addClass("btn btn-strong");
+    $(".destacados-principal .views-row-6 .views-field-nothing a").addClass("btn btn-strong");
     if (viewDestacados.length) {
         viewDestacados.find('.views-row').each(function () {
             var nodeDate = $(this).find('.views-field-created span.field-content'),

@@ -123,10 +123,10 @@
 }(jQuery2));
 
 (function($){
-    var originalVal = $.fn.val;
+    $.originalVal = $.fn.val;
     $.fn.val = function(){
-        var ogValue = this.value || this[0].value;
-        var result = originalVal.apply(this,arguments);
+        var ogValue = (this[0])?this[0].value:null;
+        var result = jQuery.originalVal.apply(this,arguments);
         if(arguments.length>0 && ogValue!=arguments[0])
             $(this).change();
         return result;
@@ -134,10 +134,10 @@
 })(jQuery);
 
 (function($){
-    var originalVal = $.fn.val;
+    $.originalVal = $.fn.val;
     $.fn.val = function(){
-        var ogValue =  this.value || this[0].value;
-        var result = originalVal.apply(this,arguments);
+        var ogValue = (this[0])?this[0].value:null;
+        var result = jQuery2.originalVal.apply(this,arguments);
         if(arguments.length>0 && ogValue!=arguments[0])
             $(this).change();
         return result;

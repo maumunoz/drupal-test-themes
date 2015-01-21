@@ -786,7 +786,7 @@ function is_ie8(){
                     hide_tooltips();
                     return;
                 }
-
+                hide_tooltips();
 //                clearTimeout(inter_hidetooltips);
 //                inter_hidetooltips = setTimeout(hide_tooltips, 5000);
 

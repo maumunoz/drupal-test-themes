@@ -30,10 +30,18 @@
     background-position: -40px 0;
 }
 
+.socialHeader .socialLink1:hover {
+    background-color: #7589b9;
+}
+
 .socialHeader .socialLink2 {
     background-color: #d03428;
     border-color: #d03428;
     background-position: -40px -40px;
+}
+
+.socialHeader .socialLink2:hover {
+    background-color: #de7168;
 }
 
 .socialHeader .socialLink3 {
@@ -42,10 +50,18 @@
     background-position: -40px -80px;
 }
 
+.socialHeader .socialLink3:hover {
+    background-color: #8aafd9;
+}
+
 .socialHeader .socialLink4 {
     background-color: #e1411f;
     border-color: #e1411f;
     background-position: -40px -120px;
+}
+
+.socialHeader .socialLink3:hover {
+    background-color: #ea7a62;
 }
 
 /* @end */
@@ -114,8 +130,16 @@
     background-color: #00a0d4;
 }
 
+.socialFooter  .socialTab1:hover {
+    background-color: #4cbce1;
+}
+
 .socialFooter  .socialTab2 {
     background-color: #39589b;
+}
+
+.socialFooter  .socialTab2:hover {
+    background-color: #748ab9;
 }
 
 .socialFooter  .socialTab2:before {
@@ -126,12 +150,20 @@
     background-color: #f6085d;
 }
 
+.socialFooter  .socialTab3:hover {
+    background-color: #f9528d;
+}
+
 .socialFooter  .socialTab3:before {
     background-position: 0 -80px;
 }
 
 .socialFooter  .socialTab4 {
     background-color: #858585;
+}
+
+.socialFooter  .socialTab4:hover {
+    background-color: #a9a9a9;
 }
 
 .socialFooter  .socialTab4:before {
