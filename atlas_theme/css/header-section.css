@@ -253,6 +253,10 @@
     top: 120px;
 }
 
+.toolbar .stack-preheader .col-first {
+    opacity: 0.9;
+}
+
 .toolbar.toolbar-drawer .stack-navigation,
 .toolbar.toolbar-drawer .stack-preheader .col-first,
 .toolbar.toolbar-drawer .stack-preheader .col-second {
@@ -318,6 +322,9 @@
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
     /* @group Header */
+    .toolbar .stack-preheader .col-first {
+        opacity: 1;
+    }
     .stack-preheader {
         background: transparent;
         position: static;
