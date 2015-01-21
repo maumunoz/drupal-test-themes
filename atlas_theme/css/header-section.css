@@ -253,7 +253,7 @@
     top: 120px;
 }
 
-.toolbar .stack-preheader .col-first {
+.stack-preheader .col-first {
     opacity: 0.9;
 }
 
@@ -322,7 +322,7 @@
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
     /* @group Header */
-    .toolbar .stack-preheader .col-first {
+    .stack-preheader .col-first {
         opacity: 1;
     }
     .stack-preheader {
