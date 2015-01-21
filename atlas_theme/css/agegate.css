@@ -87,10 +87,10 @@
 #age_checker_widget .dateselect #age_checker_day,
 #age_checker_widget .dateselect #age_checker_year {
     height: 52px !important;
-    padding: 0;
+    padding: 0 !important;
     margin: 0;
     font-size: 20px;
-    /*line-height: 48px !important;*/
+    line-height: 52px !important;
     /*width: 48px;*/
     background: none;
     border: none;
