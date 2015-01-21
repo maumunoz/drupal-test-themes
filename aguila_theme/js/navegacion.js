@@ -68,6 +68,7 @@
     if (typeof $.ogSlidebars == "undefined") {
         $.ogSlidebars = $.slidebars;
         $.slidebars = function (options) {
+            jQuery2("#navigation").addClass("sb-slide");
             jQuery2.ogSlidebars(options);
             jQuery2(".sb-slidebar").prepend( jQuery2('#header-region .site-name-wrapper').clone() );
             jQuery2('#header-region .site-name-wrapper').addClass("center");

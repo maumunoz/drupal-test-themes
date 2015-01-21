@@ -17,7 +17,6 @@
     position: fixed;
     z-index: 9;
     margin-top: 0px;
-    transition: margin-top 1s;
     top: 0;
 }
 
@@ -37,7 +36,6 @@
     width: 100%;
     z-index: 8;
     margin-top: 0px;
-    transition: margin-top 1s;
     top: 0;
 }
 
@@ -101,9 +99,8 @@
 #block-system-main-menu ul.menu li ul.menu li:focus,
 #block-system-main-menu ul.menu li ul.menu li:active {
     background-position: 0 100%;
-    background: #0fc3ff \9;
-    background-color: #0fc3ff \9;
-    background-size: 100% \9;
+    background-color: #0fc3ff;
+    background-image: linear-gradient(to top, #0fc3ff 50%, #0565BE 50%);
 }
 
 #block-system-main-menu ul.menu li.item-logo a {
