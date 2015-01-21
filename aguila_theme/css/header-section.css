@@ -112,6 +112,8 @@
 #block-system-main-menu ul.menu li ul.menu li:focus,
 #block-system-main-menu ul.menu li ul.menu li:active {
     background: #0fc3ff \9;
+    background-color: #0fc3ff \9;
+    background-size: 100% \9;
 }
 
 #block-system-main-menu ul.menu li.item-logo a {

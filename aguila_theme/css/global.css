@@ -379,13 +379,6 @@ $black, $dark           = #000    | rgb(0, 0, 0);
     padding-right: 40px;
 }
 
-.btn-symbol.btn-sky-blue {
-    background-image: url(../images/sprite.png), linear-gradient(to right, #FFDC48 50%, #0fc3ff 50%);
-}
-.btn-symbol.btn-sky-blue.btn-symbol-down {
-    background-image: url(../images/sprite.png), linear-gradient(to bottom, #FFDC48 50%, #0fc3ff 50%);
-}
-
 .btn-symbol.btn-symbol-geo {
     background-position: 0 -86px;
     padding-left: 40px;
@@ -621,6 +614,44 @@ $black, $dark           = #000    | rgb(0, 0, 0);
     font-weight: bold;
 }
 
+a.btn {
+    transition: background-position 0.3s;
+}
+
+a.btn:hover {
+    background-position: -95% 0;
+}
+a.btn.to-bottom:hover {
+    background-position: 0 -95%;
+}
+
+a.btn {
+    background-image: linear-gradient(to right, #ffd800 49%, #0fc3ff 49%);
+    background-size: 210% 100%;
+}
+a.btn.btn-sky-blue {
+    background-image: linear-gradient(to right, #0fc3ff 49%, #FFDC48 49%);
+    background-size: 210% 100%;
+}
+a.btn.to-bottom {
+    background-image: linear-gradient(to bottom, #ffd800 49%, #0fc3ff 49%);
+    background-size: 100% 210%;
+}
+a.btn.btn-sky-blue.to-bottom {
+    background-image: linear-gradient(to bottom, #0fc3ff 49%, #FFDC48 49%);
+    background-size: 100% 210%;
+}
+
+
+
+.btn.btn-symbol.btn-sky-blue {
+    background-image: url(../images/sprite.png), linear-gradient(to right, #FFDC48 50%, #0fc3ff 50%);
+}
+.btn-symbol.btn-sky-blue.btn-symbol-down {
+    background-image: url(../images/sprite.png), linear-gradient(to bottom, #FFDC48 50%, #0fc3ff 50%);
+}
+
+
 .btn.btn-sky-blue.btn-symbol.animation-to-right {
     background-size: auto, 200% 100%;
     background-position: -32px -116px, 100% 0; /*the first one to arrow, the other to gradient*/
@@ -636,7 +667,6 @@ $black, $dark           = #000    | rgb(0, 0, 0);
 .btn.btn-sky-blue.btn-symbol.animation-to-bottom {
     background-size: auto, 100% 200%;
     background-position: 100% -240px, 0 100%; /*the first one to arrow, the other to gradient*/
-    transition: background-position 0.3s;
 }
 
 .btn.btn-sky-blue.btn-symbol.animation-to-bottom:hover {

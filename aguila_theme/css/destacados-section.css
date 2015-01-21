@@ -115,6 +115,11 @@
     
 }
 
+.destacados-principal .views-row.celeste .views-field-body {
+    color: #000;
+    
+}
+
 
 .destacados-principal .views-row .views-field-nothing {
     
@@ -308,6 +313,9 @@
     .destacados-principal .views-row.views-row-6,
     .destacados-principal .views-row.views-row-6 a {
         color: #FFF;
+    }
+    .destacados-principal .views-row.views-row-6 .views-field-nothing a {
+        color: #000;
     }
 
     .destacados-principal .views-row .views-field-field-thumbnail {
@@ -726,7 +734,10 @@
         right: 0;
         top: 0;
         bottom: 0;
-        background: rgba(255, 216, 0, .7);
+        background-color: rgba(255, 216, 0, .7);
+        background-image: url("../images/hoverplus.png");
+        background-position: center center;
+        background-repeat: no-repeat;
         opacity: 0;
         transition: opacity .3s;
     }
