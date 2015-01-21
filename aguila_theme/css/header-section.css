@@ -85,9 +85,11 @@
 }
 
 
-.horizontal li.expanded.menu-dropdown-hover .menu,
+.horizontal li.menu-dropdown-hover ul.menu,
 .horizontal li.expanded:hover .menu {
     display: block !important;
+    visibility: visible !important;
+    opacity: 1;
 }
 
 #block-system-main-menu ul.menu li.active-trail,
