@@ -154,25 +154,3 @@ jQuery(window).scroll(function() {
     //enable new tab for futbol item in nav
     $('[href="http://laligaaguila.com/"]').attr("target", "_blank");
 })(jQuery2);
-
-function play_alternative_content(id) {
-    $=jQuery;
-    switch(id) {
-        case "chicas":
-            $(".slide-content-alternative.hidden").removeClass("hidden");
-            video = $(".slide-content-alternative video")[0];
-            video.addEventListener('loadedmetadata', function() {
-              this.currentTime = 0.1;
-            }, false);
-            if (video.paused) 
-                video.play(); 
-            else 
-                video.pause(); 
-        break;
-        default:
-            $(".slide-content-alternative.hidden").removeClass("hidden");
-        break;
-            
-    }
-    return void(false);
-}
