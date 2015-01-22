@@ -249,13 +249,14 @@
 
 
 .slide-content-alternative {
+    height: 344px;
     position: absolute;
     top: 0;
-    height: 559px;
     width: 100%;
     overflow: hidden;
     z-index: 1;
     left: 0;
+    background-color: black;
 }
 
 .slide-content-alternative + div {
@@ -302,6 +303,12 @@
         display: table-cell;
         vertical-align: middle;
         padding: 30px 20px;
+    }
+    
+    
+    .slide-content-alternative video,
+    .slide-content-alternative {
+        height: 444px;
     }
 
     .slide-content h3 {

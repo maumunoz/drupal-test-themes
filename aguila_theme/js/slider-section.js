@@ -32,9 +32,13 @@
                     slider.find('.slide-content').width(slickSlider.$slider.width());
                 }
             },
-            onAfterChange: function(slider,index){
+            onBeforeChange: function(slider,index){
+                window.console && console.log(index);
                 hide_alternative_content();
-            }
+            },
+            onAfterChange: function(slider,index){
+                window.console && console.log(index);
+            },
         });
         //Add down arrow below the banner
         if(sliderNode.length) {
