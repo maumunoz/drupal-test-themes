@@ -259,6 +259,10 @@
     background-color: black;
 }
 
+.slide-content-alternative video{
+    height: 344px;
+}
+
 .slide-content-alternative + div {
     position: relative;
     z-index: 2;
