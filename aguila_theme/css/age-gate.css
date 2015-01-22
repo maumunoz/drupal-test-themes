@@ -281,7 +281,7 @@ input.whiteplaceholder:-ms-input-placeholder {
     }
 }
 
-@media only screen and (max-width : 480px) {
+@media only screen and (max-width : 640px) {
     #age_checker_verification_popup.aguila {
         left: 0 !important;
         top: 0 !important;
@@ -316,6 +316,7 @@ input.whiteplaceholder:-ms-input-placeholder {
     #age_checker_verification_popup.aguila {
         top: 36% !important;
         max-height: 465px;
+        margin-top: -20% !important;
     }
         
     #age_checker_verification_popup.aguila .agegate_content {
