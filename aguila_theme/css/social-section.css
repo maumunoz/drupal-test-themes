@@ -36,14 +36,14 @@
 }
 
 .socialHeader .socialLink2 {
-    background-color: #d03428;
-    border-color: #d03428;
+    background-color: #cd201f;
+    border-color: #cd201f;
     background-position: -40px -40px;
 }
 
 .socialHeader .socialLink2:hover {
-    background-color: #de7168;
-    border-color: #de7168;
+    background-color: #DB6261;
+    border-color: #DB6261;
 }
 
 .socialHeader .socialLink3 {
@@ -151,11 +151,11 @@
 }
 
 .socialFooter  .socialTab3 {
-    background-color: #f6085d;
+    background-color: #cd201f;
 }
 
 .socialFooter  .socialTab3:hover {
-    background-color: #f9528d;
+    background-color: #DB6261;
 }
 
 .socialFooter  .socialTab3:before {

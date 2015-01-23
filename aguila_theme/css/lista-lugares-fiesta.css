@@ -102,9 +102,10 @@
     top: 212px;
     left: 210px;
     background-image: url(../images/sprite.png);
-    background-position: 1px -519px;
+    background-position: 0px -546px;
     width: 42px;
     height: 41px;
+    background-size: 100%;
 }
 
 .lista-lugares-fiesta  .view-content ul li .party-icon {

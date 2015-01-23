@@ -71,6 +71,7 @@ function play_alternative_content(id) {
     switch(id) {
         case "chicas":
             $(".slick-active .slide-content-alternative.hidden").removeClass("hidden");
+            $(".slick-active .slide-content").addClass("hidden");
             currentVideoPlaying = video = $(".slick-active .slide-content-alternative video")[0];
             if(($(video).data("initialized")!="true")) {
                 window.console && console.log("initialize video");
@@ -82,7 +83,6 @@ function play_alternative_content(id) {
                     window.console && console.log("ended");
                     video.pause();
                     hide_alternative_content();
-                    toggleContentOnVideo();
                 }, false);
             }
             if (video.paused) {
@@ -113,11 +113,11 @@ function hide_alternative_content() {
 
 function toggleContentOnVideo() {
     if(currentVideoPlaying && !currentVideoPlaying.paused) {
-        jQuery(".visible_on_pause").css("display","none");
-        jQuery(".visible_on_play").css("display","block");
+        $(".slick-active .slide-content").addClass("hidden");
+        $(".slick-active .slide-content-alternative").removeClass("hidden");
     }else{
-        jQuery(".visible_on_pause").css("display","block");
-        jQuery(".visible_on_play").css("display","none");
+        $(".slick-active .slide-content-alternative").addClass("hidden");
+        $(".slick-active .slide-content").removeClass("hidden");
     }
 }
 
