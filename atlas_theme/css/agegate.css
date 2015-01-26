@@ -186,6 +186,22 @@ margin: 0px 5px 0px 5px;
     z-index: 3;
 }
 
+
+input.whiteplaceholder::-webkit-input-placeholder {  
+   color: #fff;  
+}
+
+input.whiteplaceholder:-moz-placeholder {  
+   color: #fff;  
+}
+
+input.whiteplaceholder::-moz-placeholder {  
+   color: #fff;  
+}
+
+input.whiteplaceholder:-ms-input-placeholder {  
+   color: #fff;  
+}
 /* @end */
 
 
