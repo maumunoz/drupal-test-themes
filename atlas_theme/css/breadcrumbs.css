@@ -4,19 +4,6 @@
     vertical-align: baseline;
 }
 
-.toolbar .stack-breadcrumb {
-    top: 185px;
-}
-
-.toolbar-drawer .stack-breadcrumb {
-    top: 215px;
-}
-
-.stack-breadcrumb {
-    position: fixed;
-    top: 75px;
-    z-index: 100;
-}
 
 .stack-breadcrumb,
 .stack-breadcrumb .active,

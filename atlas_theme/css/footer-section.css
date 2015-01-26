@@ -20,7 +20,7 @@
 }
 
 #footer .col-2 .col.col-first {
-    margin: 22px 0 0 0;
+    margin: 15px 0 0 0;
     min-height: 0 !important; /*to override javascript*/
 }
 
@@ -29,7 +29,7 @@
 }
 
 .stack-footer-inner .col-first li:first-child {
-    padding-right: 32px;
+    padding-right: 11px;
 }
 
 /* Font has to be updated to Proxima Nova */
@@ -112,18 +112,18 @@
     }
 
     #footer .col-2 .col.col-first {
-        width: 54%;
+        width: 59%;
         text-align: left;
     }
 
     #footer .col-2 .col.col-second {
-        width: 44%;
+        width: 40%;
         text-align: right;
-        padding: 14px 39px 0 0;
+        padding: 4px 15px 9px 0;
     }
 
     .stack-footer-inner .col-first .block ul {
-        padding-left: 82px;
+        padding-left: 54px;
     }
 
     .stack-footer-inner .col-second .region-footer-second div {
@@ -140,7 +140,7 @@
 
     .stack-footer-inner .col-second .block-menu li {
         float: left;
-        padding: 15px 10px;
+        padding: 17px 7px;
     }
 
     .stack-footer-inner .col-second .block-menu li:last-child {
@@ -157,11 +157,11 @@
 @media only screen and (min-width : 1200px) {
     /* @group Footer */
     #footer .col-2 .col.col-first {
-        width: 44%;
+        width: 40%;
     }
 
     #footer .col-2 .col.col-second {
-        width: 54%;
+        width: 59%;
     }
 
     .stack-footer-inner .col-second .block-menu {
