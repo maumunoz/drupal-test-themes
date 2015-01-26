@@ -1,6 +1,7 @@
 /* @group Carousel*/
 .front .wrapper-content {
     margin-top: 80px;
+    margin-bottom: 0;
 }
 
 .front.toolbar .wrapper-content {
@@ -91,7 +92,6 @@
     /* @group Carousel*/
     .front .wrapper-content{
         margin-top: 80px;
-        margin-bottom: 80px;
     }
 
     .front.toolbar .wrapper-content{
