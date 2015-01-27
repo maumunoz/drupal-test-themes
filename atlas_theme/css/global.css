@@ -27,7 +27,6 @@ $black, $dark           = #000    | rgb(0, 0, 0);
 
 html,
 body,
-#page,
 #page .page-width,
 #page .page-width .lining {
     height: 100%;
@@ -69,7 +68,7 @@ body {
 
 #page {
     background-repeat: repeat;
-    background-position: center center;
+    background-position: center -305px;
     background-size: initial;
 
 }
