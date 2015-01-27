@@ -99,6 +99,14 @@ body {
 .page-search .stack-content-inner .form-type-textfield {
     margin-left: 0;
 }
+
+.search-result .title a {
+font-weight: 700;
+}
+
+.search-info .username {
+    display: none;
+}
 /* @end */
 
 /* @group Fixed Elements */
