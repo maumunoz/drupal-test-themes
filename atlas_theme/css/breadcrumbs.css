@@ -52,17 +52,7 @@
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
     /* @group Breadcrumbs*/
-    .stack-breadcrumb {
-        top: 70px;
-    }
 
-    .toolbar .stack-breadcrumb {
-        top: 125px;
-    }
-
-    .toolbar-drawer .stack-breadcrumb {
-        top: 155px;
-    }
 
     .wrapper-content .stack-breadcrumb.stack {
         padding-top: 0;
@@ -82,9 +72,6 @@
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
     /* @group Breadcrumbs*/
-    .stack-breadcrumb {
-        position: static;
-    }
 
     .toolbar .wrapper-content .stack-breadcrumb.stack {
         padding-bottom: 30px;

@@ -9,7 +9,7 @@
         //Slidebars special class for fixed elements
         $('.stack-breadcrumb').addClass('sb-slide');
         $('.stack-navigation').addClass('sb-slide');
-        $('.stack-preheader .col-first').addClass('sb-slide');
+        //$('.stack-preheader .col-first').addClass('sb-slide');
         $('.stack-preheader .col-second').addClass('sb-slide');
 
         //Add css class to page based on URL
