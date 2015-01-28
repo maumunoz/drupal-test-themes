@@ -30,6 +30,6 @@
                 }
             ]
         };
-        $.getScript('https://maps.googleapis.com/maps/api/js?key=AIzaSyBYt6Hn9ur5OB88AV3XCWv9MZJK5RDLnE8&callback=initMaps');
+        $.getScript('https://maps.googleapis.com/maps/api/js?key=AIzaSyDRgtwDVw1x16aunrX0YIqWJYFgw-jCfYI&callback=initMaps');
     });
 }(jQuery2));

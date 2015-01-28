@@ -112,6 +112,7 @@ function hide_alternative_content() {
 }
 
 function toggleContentOnVideo() {
+    $=jQuery;
     if(currentVideoPlaying && !currentVideoPlaying.paused) {
         $(".slick-active .slide-content").addClass("hidden");
         $(".slick-active .slide-content-alternative").removeClass("hidden");
