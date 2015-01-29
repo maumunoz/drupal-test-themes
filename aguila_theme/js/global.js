@@ -157,9 +157,4 @@ function formatDate($, selector, formatResult) {
     //enable new tab for futbol item in nav
     $('[href="http://laligaaguila.com/"]').attr("target", "_blank");
     
-    $(".banner-principal .btn.to-scroll").bind("click touch", function(event ) {
-        window.console && console.log("click");
-        jQuery("body").scrollTo("#content-inner",800);
-        event.preventDefault();
-    });
 })(jQuery2);

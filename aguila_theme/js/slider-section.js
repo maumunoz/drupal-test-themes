@@ -44,6 +44,10 @@
         if(sliderNode.length) {
             scrollBtn = $('<div class="btn to-scroll btn-md btn-sky-blue btn-radius-none btn-text-no btn-symbol btn-symbol-down animation-to-bottom hidden"></div>');
             sliderNode.append(scrollBtn);
+            scrollBtn.bind("click touch", function(event ) {
+                jQuery("body").scrollTo("#content-inner",800);
+                event.preventDefault();
+            });
             win = $(window);
             win.on('scroll', function () {
                 var position = win.scrollTop();
