@@ -261,6 +261,7 @@
 
 .slide-content-alternative video{
     height: 344px;
+    min-width: 100vw;
 }
 
 .slide-content-alternative + div {

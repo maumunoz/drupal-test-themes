@@ -132,25 +132,34 @@ function formatDate($, selector, formatResult) {
     });
 }
 
-var lastScrollTop=0;
-jQuery(window).scroll(function() {
-    var _scrollTop = jQuery(window).scrollTop();
-    if(_scrollTop<50) {
-        jQuery("#header-inner").removeClass("hiddenHeader");
-        jQuery("#navigation").removeClass("hiddenHeader");
-    }else{
-        if(_scrollTop>lastScrollTop) {
-            jQuery("#header-inner").addClass("hiddenHeader");
-            jQuery("#navigation").addClass("hiddenHeader");
-        }else{
+(function($){
+    var lastScrollTop=0;
+    jQuery(window).scroll(function() {
+        var _scrollTop = jQuery(window).scrollTop();
+        if(_scrollTop<50) {
             jQuery("#header-inner").removeClass("hiddenHeader");
             jQuery("#navigation").removeClass("hiddenHeader");
+        }else{
+            if(_scrollTop>lastScrollTop) {
+                jQuery("#header-inner").addClass("hiddenHeader");
+                jQuery("#navigation").addClass("hiddenHeader");
+            }else{
+                jQuery("#header-inner").removeClass("hiddenHeader");
+                jQuery("#navigation").removeClass("hiddenHeader");
+            }
         }
-    }
-    lastScrollTop = _scrollTop;
-});
+        lastScrollTop = _scrollTop;
+    });
+
+})(jQuery);
 
 (function($){
     //enable new tab for futbol item in nav
     $('[href="http://laligaaguila.com/"]').attr("target", "_blank");
+    
+    $(".banner-principal .btn.to-scroll").bind("click touch", function(event ) {
+        window.console && console.log("click");
+        jQuery("body").scrollTo("#content-inner",800);
+        event.preventDefault();
+    });
 })(jQuery2);
