@@ -6,6 +6,10 @@
     }
 
     $.initModule('.ver-mapa-lugar-detalle a', function ($, node) {
+        node.bind("click", function(event ) {
+                    event.preventDefault();
+                    jQuery("body").scrollTo('.mapa-lugar-detalle',800);
+                });
         if (validGeolocation(node.data('latitude')) && validGeolocation(node.data('longitude'))) {
             $.mapsLoaded.promise().then(function () {
                 var position = new google.maps.LatLng(parseFloat(node.data('latitude')), parseFloat(node.data('longitude'))),

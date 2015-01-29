@@ -73,13 +73,13 @@
                 markers.push({marker:marker, infowindow: infowindow});
                 node.bind("click", function(event ) {
                     event.preventDefault();
+                    jQuery("body").scrollTo('.mapa-lugar-detalle',800);
                     $(markers).each(function(j,alldata) { alldata.infowindow.close(); });
                     var position = $(this).data("position");
                     var marker = $(this).data("marker");
                     map.panTo(position);
                     map.setZoom(16);
                     $(this).data("infowindow").open(map, marker);
-                    jQuery("body").scrollTo('.mapa-lugar-detalle',800);
                 });
                 
                 marker.setMap(map);
