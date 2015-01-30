@@ -39,5 +39,7 @@
             });
         }, 500, jQuery2);
     });
+    
+    $(".menu-link-4691 a").attr("target","_blank");
 
 })(jQuery2);

@@ -107,6 +107,10 @@ font-weight: 700;
 .search-info .username {
     display: none;
 }
+
+.search-results .search-snippet-info {
+    padding-left: 0 !important;
+}
 /* @end */
 
 /* @group Fixed Elements */
