@@ -859,7 +859,9 @@ input.error {
     font-family: "Open Sans";
     font-weight: bold;
     font-size: 17px;
-    opacity: 0.7;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+    opacity: 0.75;
+    
 }
 
 .media-gallery-thumb:hover span.overlay {
