@@ -87,6 +87,15 @@ input.whiteplaceholder:-ms-input-placeholder {
     padding: 0;
 }
 
+#age_checker_verification_popup.aguila #age_checker_message a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+#age_checker_verification_popup.aguila #age_checker_message a:hover {
+    color: #F8E514;
+}
+
 #age_checker_verification_popup.aguila .agegate_country_select {
     height: 40px;
     width: 240px;
