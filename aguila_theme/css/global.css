@@ -847,7 +847,7 @@ input.error {
 
 .media-gallery-thumb span.overlay {
     color: white;
-    background-color: rgba(244, 222, 7);
+    background-color:#F4DE07;
     display: none;
     position: absolute;
     top: 0;
