@@ -861,6 +861,7 @@ input.error {
     font-size: 17px;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
     opacity: 0.75;
+    pointer-events: none;
     
 }
 

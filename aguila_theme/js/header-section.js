@@ -1,5 +1,8 @@
 /*global jQuery2 */
 (function ($) {
+
+    var btn;
+    
     // Transform login Block;
     $.transform("#block-system-user-menu", {
         target: ".btn-login-search .btn-icon-login",
@@ -14,14 +17,15 @@
         globalTarget: true
     });
     
-    $.initModule(".btn-login-search .btn-icon-search", function ($, searchBtn) {
-        btn = $("<input type='button' value='' class='form-submit' />");
+    $.initModule(".btn-login-search .btn-icon-search > a", function ($, searchBtn) {
+        btn = $("<input id='closeSearchBtn' type='button' value='&#57364;' class='form-submit' />");
         btn.click(function() {
-            $("#block-search-form").hide();
+            jQuery("#block-search-form").css("display","none");
         });
         $("#edit-search-block-form--2").before(btn);
         searchBtn.hover(function() {
-            $("#block-search-form").show();
+            jQuery("#closeSearchBtn").val("")
+            jQuery("#block-search-form").css("display","block");
         });
     });
 }(jQuery2));
