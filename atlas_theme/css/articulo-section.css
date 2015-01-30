@@ -23,8 +23,16 @@
 /* @end */
 
 /* @group Contenido Articulo Principal */
+
 .contenido-articulo .principal {
     padding: 0 20px 0 10px;
+}
+
+.privacidad-y-cookies  .contenido-articulo .principal,
+.terminos-y-condiciones .contenido-articulo .principal {
+    padding: 50px 20px 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .layout-2-columnas .principal p {
