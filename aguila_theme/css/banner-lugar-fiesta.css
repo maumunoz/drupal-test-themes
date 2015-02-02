@@ -47,6 +47,10 @@
     margin-top: 10px;
 }
 
+.sin-resultados {
+    text-align: center;
+}
+
 .banner-lugar-fiesta .tipo span {
     display: inline-block;
     line-height: 37px;
@@ -61,16 +65,22 @@
 }
 
 .banner-lugar-fiesta .tipo span.hotel,
+.banner-lugar-fiesta .tipo span.hoteles,
+.banner-lugar-fiesta .tipo span.Hoteles,
 .banner-lugar-fiesta .tipo span.Hotel {
     background-position: -127px -3px;
 }
 
 .banner-lugar-fiesta .tipo span.evento,
+.banner-lugar-fiesta .tipo span.eventos,
+.banner-lugar-fiesta .tipo span.Eventos,
 .banner-lugar-fiesta .tipo span.Evento {
     background-position: -120px -43px;
 }
 
 .banner-lugar-fiesta .tipo span.restaurante,
+.banner-lugar-fiesta .tipo span.restaurantes,
+.banner-lugar-fiesta .tipo span.Restaurantes,
 .banner-lugar-fiesta .tipo span.Restaurante {
     background-position: -130px -83px;
 }
@@ -80,6 +90,8 @@
 }
 
 .banner-lugar-fiesta .tipo span.Bar,
+.banner-lugar-fiesta .tipo span.bares,
+.banner-lugar-fiesta .tipo span.Bares,
 .banner-lugar-fiesta .tipo span.bar {
     background-position: -129px -163px;
 }

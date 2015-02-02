@@ -1450,7 +1450,6 @@ function is_ie8(){
                 //return;
                 the_transition();
 
-                o.onMonthChange();
 
                 //=====hmmm END
 
@@ -1649,7 +1648,7 @@ function is_ie8(){
 
                     //cthis.css('height', '');
                 }
-
+                o.onMonthChange();
                 busy=false;
             }
             return this;

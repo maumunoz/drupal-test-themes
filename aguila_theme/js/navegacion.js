@@ -50,14 +50,14 @@
             for(var i=0; i<=center; i++) {
                 var currentPadding = parseInt( $(items[i]).find("a").css("padding-right") );
                 currentPadding += offset_slice;
-                $(items[i]).find("a").css("padding-left", currentPadding)
-                $(items[i]).find("a").css("padding-right", currentPadding)
+                $(items[i]).children("a").css("padding-left", currentPadding)
+                $(items[i]).children("a").css("padding-right", currentPadding)
             }
             for(var i=center+1; i<count; i++) {
                 currentPadding = parseInt( $(items[i]).find("a").css("padding-right") );
                 currentPadding += offset_slice;
-                $(items[i]).find("a").css("padding-left", currentPadding)
-                $(items[i]).find("a").css("padding-right", currentPadding)
+                $(items[i]).children("a").css("padding-left", currentPadding)
+                $(items[i]).children("a").css("padding-right", currentPadding)
             }
         }
     }

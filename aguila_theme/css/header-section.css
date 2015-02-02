@@ -59,6 +59,7 @@
     background: none;
     font-family: 'Retina Display Condensed', Helvetica, Arial, sans-serif;
     font-weight: 600;
+    width: 100%;
 }
 
 #block-system-main-menu ul.menu li {
@@ -80,8 +81,13 @@
     background-color: #0565BE;
     border-left: 1px solid #0fc3ff; 
     border-right: 1px solid #0fc3ff; 
+    text-align: center;
 }
 
+#block-system-main-menu ul.menu li ul.menu li a{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
 
 .horizontal li.menu-dropdown-hover ul.menu,
 .horizontal li.expanded:hover .menu {

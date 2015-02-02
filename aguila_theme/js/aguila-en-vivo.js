@@ -25,10 +25,10 @@ window.arr_monthnames = [ "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
         });
         
         function onMonthChange () {
-            $(".calendarContainer").attr("style","").empty();
+            window.console && console.log("on Month Change");
+            $(".calendar-header").attr("style","").empty();
             
-            var firstDay = jQuery2(".calendarContainer .week-day.hasEvent");
-            console.log(firstDay);
+            var firstDay = jQuery2(".calendarContainer .week-day.hasEvent")[0];
             if (firstDay) {
                 jQuery2(firstDay).trigger("click");
             }
@@ -44,7 +44,7 @@ window.arr_monthnames = [ "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
         });
         
         jQuery("#tr1").dzscalendar({ settings_alwaysinclude6rows: "on", design_transitionDesc: "showContent", onMonthChange: onMonthChange });
-        
+        setTimeout( onMonthChange, 200 );
     });
     
     
