@@ -23,7 +23,16 @@ window.arr_monthnames = [ "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
             event.preventDefault();
             jQuery("body").scrollTo('.mapa-lugar-detalle',600);
         });
-        jQuery("#tr1").dzscalendar({ settings_alwaysinclude6rows: "on", design_transitionDesc: "showContent" });
+        
+        function onMonthChange () {
+            $(".calendarContainer").attr("style","").empty();
+            
+            var firstDay = jQuery2(".calendarContainer .week-day.hasEvent");
+            console.log(firstDay);
+            if (firstDay) {
+                jQuery2(firstDay).trigger("click");
+            }
+        }
         
         $(".calendarContainer").on('touchend click', ".week-day.hasEvent", function() {
             var head = jQuery(".calendar-header");
@@ -33,6 +42,9 @@ window.arr_monthnames = [ "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
             head.css("background-image","url('"+path+"')");
             
         });
+        
+        jQuery("#tr1").dzscalendar({ settings_alwaysinclude6rows: "on", design_transitionDesc: "showContent", onMonthChange: onMonthChange });
+        
     });
     
     

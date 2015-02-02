@@ -74,6 +74,7 @@ function is_ie8(){
         var defaults = {
             settings_slideshowTime : '5' // --- in seconds
             ,mode: 'normal' // ---- normal or datepicker or blogevents
+            , onMonthChange : function() {}
             , settings_autoHeight : 'on'
             , settings_skin : 'skin-default'
             , start_month : ''
@@ -1449,7 +1450,7 @@ function is_ie8(){
                 //return;
                 the_transition();
 
-
+                o.onMonthChange();
 
                 //=====hmmm END
 
