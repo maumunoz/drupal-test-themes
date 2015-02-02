@@ -57,7 +57,10 @@
 }
 
 #age_checker_widget:before {
-  content: "INGRESA TU FECHA DE NACIMIENTO:";
+    content: "INGRESA TU FECHA DE NACIMIENTO:";
+    text-align: center;
+    width: 100%;
+    display: block;
 }
 
 #age_checker_message1 p span {
@@ -66,6 +69,15 @@
 
 #age_checker_message1 {
     clear: both;
+}
+
+.agegate_message a {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+.agegate_message a:hover {
+    color: #FFFF00;
 }
 
 .agegate_country_select select {
