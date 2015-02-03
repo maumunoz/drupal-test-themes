@@ -157,6 +157,11 @@ function formatDate($, selector, formatResult) {
     //enable new tab for futbol item in nav
     $('[href="http://laligaaguila.com/"]').attr("target", "_blank");
     
-    
-    $("link[rel='shortcut icon']").attr("href","/sites/g/files/ogq351/themes/site/aguila_theme/favicon.ico");
+    var favicon = $("link[rel='shortcut icon']");
+    if(favicon.length>0) {
+        favicon.attr("href","/sites/g/files/ogq351/themes/site/aguila_theme/favicon.ico");
+    }else{
+        favicon = $('<link rel="shortcut icon" href="/sites/g/files/ogq351/themes/site/aguila_theme/favicon.ico" />');
+        $("head").append(favicon);
+    }
 })(jQuery2);

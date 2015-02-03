@@ -99,9 +99,12 @@
         });
         if (markers.length>0) {
             $('.view-map-all').bind("click",function(){
+                event.preventDefault();
                 map.setZoom(6);
                 $(markers).each(function(j,alldata) { alldata.infowindow.close(); });
                 map.panTo(centerLatlng);
+                jQuery("body").scrollTo('.mapa-lugar-detalle',800);
+
             });
             google.maps.event.addListener(map, 'click', function () {
                 map.setOptions({
@@ -124,5 +127,6 @@
             updateMapMarkers();
         });
     });
+    
 
 }(jQuery2, jQuery));

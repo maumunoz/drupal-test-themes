@@ -74,6 +74,13 @@
     -moz-appearance: none;
 }
 
+.password-confirm .error {
+    font-size: 120%;
+    color: #f00;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
 @-moz-document url-prefix() {
     .page-user .content-area .form-type-select {
         overflow: hidden;
@@ -157,6 +164,7 @@
 
 .page-user-register ul.hybridauth-widget {
     padding-left: 10px;
+    display: none;
 } 
 
 .page-user .hybridauth-widget li {
