@@ -38,8 +38,28 @@
         el.find("#edit-actions").after('<div class="therms-conditions"><p>Al hacer clic en crear una cuenta estas aceptando los <a href="/terminos-y-condiciones">terminos y condiciones de cerveza aguila</a></p></div>');
         el.find(".therms-conditions").prepend('<input id="check-therms-conditions" type="checkbox" />');
 
-        $("#user-register-form").validate();
+        $("#user-register-form").validate({
+            messages: {
+                    required: "Este campo es requerido",
+                },
+        });
+        $.extend($.validator.messages, {
+          required: 'El siguiente campo es obligatorio.',
+        });
+        
+        $("#edit-mail").rules( "add", {
+          email: true,
+          messages: {
+            email: "Email inválido",
+          }
+        });
 
+        $("#edit-mail-validation").rules("add", {
+            equalTo: "#edit-mail",
+            messages: {
+                equalTo: "Los correos electr&oacute;nicos no coinciden"
+            }
+        });
         $("#edit-mail-validation").attr("autocomplete", "off");
         $("#edit-mail-validation").on("paste", function(e){
             e.preventDefault();
@@ -55,12 +75,9 @@
             }
         });
 
-        $("#edit-mail-validation").rules("add", {
-            equalTo: "#edit-mail",
-            messages: {
-                equalTo: "Los correos electr&oacute;nicos no coinciden"
-            }
-        });
+
+        
+
 
         jQuery("#edit-field-edad-und-0-value-datepicker-popup-0").addClass("checkAge").change(function(event){
             event.preventDefault();

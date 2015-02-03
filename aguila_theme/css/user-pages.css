@@ -175,6 +175,11 @@
     right: 10px;
 }
 
+
+.page-user-register .hybridauth-widget a[title]:after {
+    left: 56px;
+}
+
 .page-user .hybridauth-widget a[title="Facebook"]:after {
     content: "INICIA SESI\00D3N CON FACEBOOK";
     background: #5F79AF;
@@ -396,6 +401,13 @@
     float: left;
 }
 
+.page-user-register  .therms-conditions {
+    margin: 0 14px;
+}
+
+.page-user-register  .hybridauth-widget-wrapper {
+    margin: 0 3px;
+}
 /* @end */
 
 /* @group Profile */
@@ -451,6 +463,10 @@
 
 .page-user-edit .form-item-timezone #edit-timezone--2 {
     padding-right: 25px;
+}
+
+.page-user-password .form-actions.form-wrapper {
+    margin: 0px 10px;
 }
 
 /* @end */
