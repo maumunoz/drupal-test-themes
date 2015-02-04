@@ -1,15 +1,31 @@
 (function ($) {
 
+    $.initModule(".page-user .profile .user-picture", function ($, el) {
+        var facebookAvatar = $(el).find("img").attr("src");
+        $(".header-form img").attr("src", facebookAvatar);
+        $(el).remove();
+        jQuery.cookie("fbimage",facebookAvatar);
+    });
+    
+    $.initModule(".page-user .image-preview img", function ($, el) {
+        if($(el).attr("src").indexOf("default_images/profile.png")>-1) {
+            if(jQuery.cookie("fbimage")) {
+                $(el).attr("src",jQuery.cookie("fbimage"));
+                $(".header-form .image-widget-data").remove();
+            }
+        }
+    });
+    
     $.initModule(".hybridauth-widget-wrapper", function ($, el) {
         el.find("h3").remove();
         el.appendTo( $(".share-section").empty() );
     });
 
-    $.initModule(".form-wrapper", function ($, el) {
+    $.initModule(".page-user .form-wrapper", function ($, el) {
         el.find("option[value='_none']").attr("label","Seleccione ");
         $("select").find("option[value='_none']").html("Seleccione ");
 
-        el.find("#edit-field-tel-fono-und-0-value").after("<p class='description'>El campo de ¨Tel&eacute;fono¨ solo permite caracteres n&uacute;mericos</p>");
+        el.find("#edit-field-tel-fono-und-0-value").after("<label class='description'>El campo de ¨Tel&eacute;fono¨ solo permite caracteres n&uacute;mericos</label>");
 
         el.find("#edit-field-tel-fono-und-0-value").on("keypress", function(e){
         	var regex = new RegExp("^[0-9]+$");
@@ -35,18 +51,24 @@
                                             '<input type="text" id="edit-mail-validation" name="mail" value="" size="60" maxlength="254" class="form-text required">' +
                                         '</div>');
 
-        el.find("#edit-actions").after('<div class="therms-conditions"><p>Al hacer clic en crear una cuenta estas aceptando los <a href="/terminos-y-condiciones">terminos y condiciones de cerveza aguila</a></p></div>');
-        el.find(".therms-conditions").prepend('<input id="check-therms-conditions" type="checkbox" />');
+        el.find("#edit-actions").before('<div class="therms-conditions" style="clear:both;"><p>Al hacer clic en crear una cuenta estas aceptando los <a href="/terminos-y-condiciones" target="_blank">términos y condiciones de cerveza aguila</a></p></div>');
+        el.find(".therms-conditions").append('<input id="agree" name="agree" type="checkbox" class="required"/>');
 
+        
+        
         $("#user-register-form").validate({
-            messages: {
-                    required: "Este campo es requerido",
-                },
+        rules: {
+            agree: {
+                required: true,
+                messages: {
+                    required: "Es necesario aceptar los términos y condiciones para crear una cuenta";
+                }
+            }
+        },
         });
         $.extend($.validator.messages, {
           required: 'El siguiente campo es obligatorio.',
         });
-        
         $("#edit-mail").rules( "add", {
           email: true,
           messages: {
@@ -60,23 +82,17 @@
                 equalTo: "Los correos electr&oacute;nicos no coinciden"
             }
         });
+/*        
+        $("#check-therms-conditions").rules("add", {
+            required: true,
+            messages: {
+                required: "Es necesario aceptar los términos y condiciones para crear una cuenta."
+            }
+        });/**/
         $("#edit-mail-validation").attr("autocomplete", "off");
         $("#edit-mail-validation").on("paste", function(e){
             e.preventDefault();
-        });
-
-        $("#edit-submit").prop("disabled", "disabled");
-
-        $("#check-therms-conditions").on("click", function(e) {
-            if($(this).is(":checked")) {
-                $("#edit-submit").prop("disabled", false);
-            } else {
-                $("#edit-submit").prop("disabled", "disabled");
-            }
-        });
-
-
-        
+        });        
 
 
         jQuery("#edit-field-edad-und-0-value-datepicker-popup-0").addClass("checkAge").change(function(event){

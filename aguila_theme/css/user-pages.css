@@ -385,6 +385,12 @@
     width: 100%;
 }
 
+.page-user-register #agree-error {
+    color: red;
+    font-weight: bold;
+    clear: both;
+}
+
 .page-user-register .form-item label.error {
     text-align: right;
     color: red;
@@ -406,7 +412,7 @@
 
 .page-user-register .therms-conditions p {
     width: 95%;
-    float: left;
+    float: right;
 }
 
 .page-user-register  .therms-conditions {
