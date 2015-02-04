@@ -59,15 +59,12 @@
         $("#user-register-form").validate({
         rules: {
             agree: {
-                required: true,
-                messages: {
-                    required: "Es necesario aceptar los términos y condiciones para crear una cuenta";
-                }
+                required: true
             }
         },
         });
         $.extend($.validator.messages, {
-          required: 'El siguiente campo es obligatorio.',
+          required: 'Este campo es obligatorio.',
         });
         $("#edit-mail").rules( "add", {
           email: true,
@@ -82,13 +79,7 @@
                 equalTo: "Los correos electr&oacute;nicos no coinciden"
             }
         });
-/*        
-        $("#check-therms-conditions").rules("add", {
-            required: true,
-            messages: {
-                required: "Es necesario aceptar los términos y condiciones para crear una cuenta."
-            }
-        });/**/
+
         $("#edit-mail-validation").attr("autocomplete", "off");
         $("#edit-mail-validation").on("paste", function(e){
             e.preventDefault();
