@@ -78,6 +78,10 @@ moment.locale('es');
         $.mapsLoaded.resolve();
     };
 
+    $.initModule(".messages", function ($, msg) {
+        transformAlerts();
+    }
+    
     //Initialize Page content
     $.initModule(".region-content", function ($, pageContent) {
         //Add css class to page based on URL
@@ -164,4 +168,24 @@ function formatDate($, selector, formatResult) {
         favicon = $('<link rel="shortcut icon" href="/sites/g/files/ogq351/themes/site/aguila_theme/favicon.ico" />');
         $("head").append(favicon);
     }
+    
+    
 })(jQuery2);
+
+function transformAlerts() {
+    var text = "";
+    $("#messages-region .messages").each(function(i,el) {
+        el = jQuery(el);
+        el.find("h2").remove();
+        text += "<p>"+el.html()+"</p>";
+        el.remove();
+    });
+    if (text!="") $.modal("<h3>Cerveza Aguila</h3>"+text);
+    window.console && console.log("Alerts transformados: "+text);
+}
+
+jQuery(document).ajaxComplete(function () {
+        transformAlerts();
+    });
+
+transformAlerts();

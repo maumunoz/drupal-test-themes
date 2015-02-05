@@ -14,7 +14,7 @@
 #simplemodal-overlay {background-color:#000;}
 
 /* Container */
-#simplemodal-container {width:600px; color:#484848; background-color:#fff; padding:0px; font-size:18px; font-family: 'ITCAvantGardePro', Helvetica, Arial sans-serif; }
+#simplemodal-container {min-height:135px; width:600px; color:#484848; background-color:#fff; padding:0px; font-size:18px; font-family: 'ITCAvantGardePro', Helvetica, Arial sans-serif; }
 #simplemodal-container .simplemodal-data {padding:0;}
 #simplemodal-container p {
     padding: 20px;
