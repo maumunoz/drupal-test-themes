@@ -27,9 +27,10 @@
                     var submit = popup.find("input[type='submit']");
                     submit.before( $(".agegate_pre_submit") );
                     $(".agegate_pre_submit").before( $('#age_checker_error_message') );
-                    submit.bind('click', function () {
+                    submit.bind('click touch', function () {
                         var recordarDetalles = popup.find('#rememberme').is(':checked');
                         setTimeout(function () {
+                            jQuery2(document).trigger("closeAgeGate");
                             if (jQuery.cookie('age_checker') === '1') {
                                 jQuery.cookie('age_checker', '1', { path: '/', expires: (recordarDetalles ? parseInt(Drupal.settings.age_checker.cookie_expiration, 10) : undefined) });
                             }

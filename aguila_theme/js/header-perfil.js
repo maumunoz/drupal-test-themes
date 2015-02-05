@@ -15,6 +15,7 @@
 
             $uploadBtn.change(function(){
                 jQuery("#edit-field-thumbnail-und-0-upload-button").addClass("visible");
+                enableSubmit();
             });
         }
     };
@@ -42,6 +43,7 @@
 
         $("#edit-submit").prop("disabled","disabled");
         
+        el.find("#edit-field-edad-und-0-value-datepicker-popup-0").bind("focus",enableSubmit);
         el.find(".form-text").bind("change keyup",enableSubmit);
         el.find(".form-select").bind("change",enableSubmit);
         

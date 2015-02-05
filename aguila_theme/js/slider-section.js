@@ -64,6 +64,21 @@
         $("a[href='#pauseVideo']").click(function(e){ e.preventDefault(); pauseCurrentVideo(); });
         toggleContentOnVideo();
         
+        if ($("body").hasClass("chicas-aguila")) {
+            setTimeout( function() { 
+                if (jQuery2('#age_checker_verification_popup').is(':visible')) {
+                    jQuery2(document).on("closeAgeGate", function() {
+                        //if (!jQuery2('#age_checker_verification_popup').is(':visible')) 
+                        play_alternative_content("chicas");
+                    })
+                }else{
+                    play_alternative_content("chicas");
+                }
+            },1000);
+            
+        }
+        
+        
     });
 }(jQuery2));
 
@@ -71,7 +86,6 @@ var currentVideoPlaying;
 
 function play_alternative_content(id) {
     $=jQuery;
-    window.console && console.log(id);
     switch(id) {
         case "chicas":
             $(".slick-active .slide-content-alternative.hidden").removeClass("hidden");
