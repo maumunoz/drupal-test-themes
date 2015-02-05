@@ -14,7 +14,6 @@
                         $(el).attr("id","age_checker_message"+i);
                         $(el).addClass("agegate_message");
                     });
-                    overlay.append("<div class='agegate_header'></div>");
                     overlay.append("<div class='agegate_beer'></div>");
                     overlay.append($(".agegate_footer"));
                     $(".agegate_footer").find("p").each(function(i,el){
