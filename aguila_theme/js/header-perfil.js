@@ -1,5 +1,8 @@
 (function ($) {
-    var node = "#user-register-form";
+    var enableSubmit = function() {
+        jQuery2("#edit-submit").prop("disabled", false);
+    };
+
 
     var addImageProfile = function() {
         var $el = jQuery(".image-widget-data");
@@ -16,8 +19,7 @@
         }
     };
 
-
-    $.initModule(node, function ($, el) {
+    $.initModule("#user-register-form", function ($, el) {
         el.find("div:first").prepend("<div class='header-form'></div>");
         $("<p>Bienvenido a la tierra de la alegr&iacute;a</p>").appendTo(".header-form");
         el.find("#edit-field-thumbnail").appendTo(".header-form");
@@ -26,6 +28,7 @@
 
         jQuery(document).ajaxComplete(function () {
             addImageProfile();
+            enableSubmit();
         });
     });
 
@@ -36,6 +39,12 @@
         addImageProfile(); //if user do not have photo
         
         $("#edit-actions--2").append($("<a href='/user/logout'>Cerrar Sesi&oacute;n</a>"));
+
+        $("#edit-submit").prop("disabled","disabled");
+        
+        el.find(".form-text").bind("change keyup",enableSubmit);
+        el.find(".form-select").bind("change",enableSubmit);
+        
 
         jQuery(document).ajaxComplete(function () {
             addImageProfile();
