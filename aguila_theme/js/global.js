@@ -80,7 +80,7 @@ moment.locale('es');
 
     $.initModule(".messages", function ($, msg) {
         transformAlerts();
-    }
+    });
     
     //Initialize Page content
     $.initModule(".region-content", function ($, pageContent) {
@@ -173,15 +173,16 @@ function formatDate($, selector, formatResult) {
 })(jQuery2);
 
 function transformAlerts() {
-    var text = "";
-    $("#messages-region .messages").each(function(i,el) {
-        el = jQuery(el);
-        el.find("h2").remove();
-        text += "<p>"+el.html()+"</p>";
-        el.remove();
-    });
-    if (text!="") $.modal("<h3>Cerveza Aguila</h3>"+text);
-    window.console && console.log("Alerts transformados: "+text);
+    if (jQuery.modal) {
+        var text = "";
+        jQuery("#messages-region .messages").each(function(i,el) {
+            el = jQuery(el);
+            el.find("h2").remove();
+            text += "<p>"+el.html()+"</p>";
+            el.remove();
+        });
+        if (text!="") jQuery.modal("<h3>Cerveza Aguila</h3>"+text);
+    }
 }
 
 jQuery(document).ajaxComplete(function () {
