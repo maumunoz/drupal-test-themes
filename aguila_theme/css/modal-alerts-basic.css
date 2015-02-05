@@ -14,9 +14,24 @@
 #simplemodal-overlay {background-color:#000;}
 
 /* Container */
-#simplemodal-container {height:360px; width:600px; color:#484848; background-color:#fff; padding:12px; font-size:18px; font-family: 'ITCAvantGardePro', Helvetica, Arial sans-serif; }
-#simplemodal-container .simplemodal-data {padding:8px;}
+#simplemodal-container {width:600px; color:#484848; background-color:#fff; padding:0px; font-size:18px; font-family: 'ITCAvantGardePro', Helvetica, Arial sans-serif; }
+#simplemodal-container .simplemodal-data {padding:0;}
+#simplemodal-container p {
+    padding: 20px;
+    font-weight: 400;
+    font-size: 17px;
+    text-align: center;
+    line-height: 21px;
+}
 #simplemodal-container code {background:#141414; border-left:3px solid #65B43D; color:#bbb; display:block; font-size:12px; margin-bottom:12px; padding:4px 6px 6px;}
 #simplemodal-container a {color:#484848;}
 #simplemodal-container a.modalCloseImg {background:url(../images/x.png) no-repeat; width:25px; height:29px; display:inline; z-index:3200; position:absolute; top:-15px; right:-16px; cursor:pointer;}
-#simplemodal-container h3 {color:#484848; width: 100%; background-color: #ffd800; }
+#simplemodal-container h3 {
+    color: #484848;
+    width: 100%;
+    background-color: #ffd800;
+    margin: 0;
+    text-align: center;
+    padding: 16px;
+    font-size: 22px;
+}

@@ -42,7 +42,6 @@ stylesheets[all ][] = 'css/user-pages.css'
 stylesheets[all ][] = 'css/contenido-cervezas.css'
 stylesheets[all ][] = 'css/busqueda.css'
 stylesheets[all ][] = 'css/modal-alerts-basic.css'
-stylesheets[all ][] = 'css/modal-alerts-basic_ie.css'
 
 
 
