@@ -27,6 +27,10 @@
             jQuery("#closeSearchBtn").val("")
             jQuery("#block-search-form").css("display","block");
         });
+        
+        if ($(".userdata .userdata-username").html()!="") {
+            $(".btn-login-search .btn-icon-login").addClass("user-logged").children("a").html( $(".userdata .userdata-username").html() );
+        }
     });
 }(jQuery2));
 

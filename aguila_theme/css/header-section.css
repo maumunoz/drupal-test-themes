@@ -182,6 +182,23 @@
     background-position: -9px -42px;
 }
 
+.btn-login-search > ul > li > a {
+    font-size: 10px;
+    display: block;
+    color: #FFD800;
+    font-weight: bold;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+.btn-login-search .btn-icon-login.user-logged > a {
+text-indent: 0 !important;
+background-position: 10px -1120px;
+padding: 12px 12px 0 10px;
+background: none;
+width: initial;
+}
+
 #block-system-user-menu,
 #block-search-form {
     display: none;
