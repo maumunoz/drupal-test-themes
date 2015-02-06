@@ -484,12 +484,12 @@
 }
 
 
-.page-hybridauth-window-twitter input {
+.page-hybridauth-window input {
     clear: both;
     display: block;
 }
 
-.page-hybridauth-window-twitter #main {
+.page-hybridauth-window #main {
     margin: 0px auto;
     padding: 0px 50px;
     max-width: 960px;

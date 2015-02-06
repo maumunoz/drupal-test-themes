@@ -16,19 +16,20 @@
 /* Container */
 #simplemodal-container {
     min-height: 135px;
-    width: 600px;
     color: #484848;
     background-color: #fff;
     padding: 0px;
     font-size: 18px;
     font-family: 'ITCAvantGardePro',Helvetica,Arial sans-serif;
     height: initial !important;
+    width: 70% !important;
+    left: 15% !important;
 }
 #simplemodal-container .simplemodal-data {padding:0;}
 #simplemodal-container p {
+    font-size: 14px;
     padding: 20px;
     font-weight: 400;
-    font-size: 17px;
     text-align: center;
     line-height: 21px;
 }
@@ -36,11 +37,60 @@
 #simplemodal-container a {color:#484848;}
 #simplemodal-container a.modalCloseImg {background:url(../images/x.png) no-repeat; width:25px; height:29px; display:inline; z-index:3200; position:absolute; top:-15px; right:-16px; cursor:pointer;}
 #simplemodal-container h3 {
+    font-size: 16px;
     color: #484848;
     width: 100%;
     background-color: #ffd800;
     margin: 0;
     text-align: center;
     padding: 16px;
-    font-size: 22px;
 }
+
+/* @group Media Query */
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+    #simplemodal-container {
+        width: 60% !important;
+        left: 20% !important;
+    }
+    #simplemodal-container p {
+        font-size: 15px;
+    }
+    #simplemodal-container h3 {
+        font-size: 18px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    #simplemodal-container p {
+        font-size: 16px;
+    }
+    #simplemodal-container h3 {
+        font-size: 20px;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    #simplemodal-container {
+        width: 50% !important;
+        left: 25% !important;
+    }
+    #simplemodal-container p {
+        font-size: 17px;
+    }
+    #simplemodal-container h3 {
+        font-size: 22px;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+}
+/* @end */

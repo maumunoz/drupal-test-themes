@@ -28,8 +28,8 @@
             jQuery("#block-search-form").css("display","block");
         });
         
-        if ($(".userdata .userdata-username").html()!="") {
-            $(".btn-login-search .btn-icon-login").addClass("user-logged").children("a").html( $(".userdata .userdata-username").html() );
+        if ($(".userdata .userdata-username").html()) {
+            $(".btn-login-search .btn-icon-login").addClass("user-logged").children("a").html( $(".userdata .userdata-username").html() ).mouseover(function() { jQuery("#block-search-form").css("display","none"); });
         }
     });
 }(jQuery2));
