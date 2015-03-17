@@ -7,6 +7,7 @@
         jQuery.cookie("fbimage",facebookAvatar);
     });
     
+    if(!$(".userdata .userdata-username").html()) jQuery.cookie("fbimage",null);
     $.initModule(".page-user .image-preview img", function ($, el) {
         if($(el).attr("src").indexOf("default_images/profile.png")>-1 && $(".userdata .userdata-username").html()) {
             if(jQuery.cookie("fbimage")) {
