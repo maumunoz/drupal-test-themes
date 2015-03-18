@@ -3,7 +3,7 @@ description = 'Theme for Suprema'
 version = '1.0'
 core = '7.x'
 engine = 'phptemplate'
-base theme = 'sabmiller_base_theme'
+base theme = 'sabmiller_base_theme_v2'
 
 stylesheets[all ][] = 'css/slick.css'
 stylesheets[all ][] = 'css/global.css'
