@@ -17,6 +17,7 @@ stylesheets[all][] = 'base-defaults.css'
 stylesheets[all][] = 'grid.css'
 stylesheets[all][] = 'forms.css'
 stylesheets[all][] = 'slidebars.css'
+stylesheets[all][] = 'magnific-popup.css'
 
 fonts[] = 'fonts/glyphicons-halflings-regular.eot'
 fonts[] = 'fonts/glyphicons-halflings-regular.svg'
