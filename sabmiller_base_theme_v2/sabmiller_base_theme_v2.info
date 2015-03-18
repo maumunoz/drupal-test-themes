@@ -32,6 +32,7 @@ scripts[] = 'js/base-utils.js'
 scripts[] = 'js/bootstrap.js'
 scripts[] = 'js/respond.js'
 scripts[] = 'js/slidebars.js'
+scripts[] = 'js/slick.js'
 
 regions[page_top] = 'Above page'
 regions[preheader_first] = 'Preheader first'
