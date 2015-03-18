@@ -1,8 +1,10 @@
 /*global jQuery, jQuery2 */
 
 function removeColorBox() {
+    console && console.log('Switching ColorBox with MagnificPopUp');
+    console && console.log('Switching ColorBox with MagnificPopUp');
     if(jQuery(".media-gallery-thumb.cbEnabled").hasClass("cboxElement") && jQuery.colorboxRemoved!=true) {
-        console||console.log('Switching ColorBox with MagnificPopUp');
+        console && console.log('Switching ColorBox with MagnificPopUp');
         jQuery(".media-gallery-thumb.cbEnabled").each(function(i,el){
             // we are gonna remove the ColorBox plugin (jQuery), and use Magnific (jQuery2) instead, but before removing ColorBox, we will use one of its attributes
             jQuery(el).attr("data-mfp-src", jQuery(el).attr("data-src"));
@@ -10,6 +12,7 @@ function removeColorBox() {
         jQuery(".galeryCounter").html( jQuery(".media-gallery-thumb.cbEnabled").length + " FOTOS");
         // now we remove ColorBox
         jQuery.colorbox.remove();
+        jQuery.colorboxRemoved = true;
         // and use Magnific
         jQuery2(".media-gallery-thumb.cbEnabled").magnificPopup({
                 type: 'image',
@@ -75,6 +78,7 @@ function removeColorBox() {
 
 
 var colorBoxKiller;
+console && console.log('MagnificPopUp');
 
 jQuery( document ).ready( function( $ ) {
     if(jQuery('a.cbEnabled').length>0) colorBoxKiller = setInterval(function(){ removeColorBox(); }, 100);
