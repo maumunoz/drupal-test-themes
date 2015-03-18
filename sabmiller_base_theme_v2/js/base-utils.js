@@ -16,6 +16,18 @@
         link: '#mobile-menu-action'
     };
 
+    // Base Configuration for Slick Carousels
+    Drupal.slick = {
+        config: {
+            infinite: true,
+            speed: 500,
+            fade: true,
+            slide: 'li',
+            cssEase: 'linear',
+            autoplay: true,
+            autoplaySpeed: 7000
+        }
+    };
 
     $(document).ready(function () {
         var body = $('body'),
