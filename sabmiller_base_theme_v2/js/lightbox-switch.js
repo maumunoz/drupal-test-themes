@@ -13,7 +13,7 @@ function removeColorBox() {
         jQuery.colorboxRemoved = true;
         // and use Magnific
         jQuery2(".media-gallery-thumb.cbEnabled").magnificPopup({
-                type: 'image',
+                type: 'ajax',
                 tClose: 'Cerrar (Esc)',
                 tLoading: 'Cargando...',
                 callbacks: {
