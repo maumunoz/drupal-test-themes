@@ -5,7 +5,9 @@ function removeColorBox() {
     if(jQuery(".media-gallery-thumb.cbEnabled").hasClass("cboxElement") && jQuery.colorboxRemoved!=true) {
         jQuery(".media-gallery-thumb.cbEnabled").each(function(i,el){
             // we are gonna remove the ColorBox plugin (jQuery), and use Magnific (jQuery2) instead, but before removing ColorBox, we will use one of its attributes
-            jQuery(el).attr("data-mfp-src", jQuery(el).find("img").attr("src").replace("media_gallery_thumbnail","media_gallery_large"));
+            //jQuery(el).attr("data-mfp-src", jQuery(el).attr("data-src"));
+            jQuery(el).attr("data-mfp-src", jQuery(el).attr("href"));
+            //jQuery(el).attr("data-mfp-src", jQuery(el).find("img").attr("src").replace("media_gallery_thumbnail","media_gallery_large"));
         });
         jQuery(".galeryCounter").html( jQuery(".media-gallery-thumb.cbEnabled").length + " FOTOS");
         // now we remove ColorBox
