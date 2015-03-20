@@ -1,0 +1,94 @@
+/* @group Header */
+
+.stack-header-inner, .stack-preheader {
+    background-color: transparent;
+    position: relative;
+}
+
+#site-name {
+    text-align: center;
+    display: block;
+    position: absolute;
+    width: 50%;
+    z-index: 10;
+    top: -16px;
+    margin: 0 25%;
+}
+
+
+
+.stack-header-inner .site-name a {
+    background-image: url('../images/suprema_logo.png');
+    width: 170px;
+    height: 160px;
+    display: block;
+    margin: 0 auto;
+    z-index: 10;
+
+}
+
+
+#preheader {
+    background: rgb(26,26,27);
+    background: -moz-linear-gradient(top,  rgba(26,26,27,1) 2%, rgba(26,26,27,1) 19%, rgba(46,47,48,1) 83%, rgba(143,145,148,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(2%,rgba(26,26,27,1)), color-stop(19%,rgba(26,26,27,1)), color-stop(83%,rgba(46,47,48,1)), color-stop(100%,rgba(143,145,148,1)));
+    background: -webkit-linear-gradient(top,  rgba(26,26,27,1) 2%,rgba(26,26,27,1) 19%,rgba(46,47,48,1) 83%,rgba(143,145,148,1) 100%);
+    background: -o-linear-gradient(top,  rgba(26,26,27,1) 2%,rgba(26,26,27,1) 19%,rgba(46,47,48,1) 83%,rgba(143,145,148,1) 100%);
+    background: -ms-linear-gradient(top,  rgba(26,26,27,1) 2%,rgba(26,26,27,1) 19%,rgba(46,47,48,1) 83%,rgba(143,145,148,1) 100%);
+    background: linear-gradient(to bottom,  rgba(26,26,27,1) 2%,rgba(26,26,27,1) 19%,rgba(46,47,48,1) 83%,rgba(143,145,148,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a1a1b', endColorstr='#8f9194',GradientType=0 );
+    padding: 10px 5px;
+}
+
+.social-header-left,
+.social-header-right {
+    border: none !important;
+    color: #fff;
+}
+
+.social-header-left {
+    float: left;
+}
+.social-header-right {
+    float: right;
+}
+
+#block-system-main-menu ul.menu {
+    background: none;
+    border: none;
+    border-bottom: solid 2px #c4b695;
+    margin-bottom: 0;
+}
+
+#block-system-main-menu ul.menu a {
+    color: #fff;
+    font-size: 18px;
+    font-family: HW-Regular;
+}
+
+
+/* @end */
+
+
+/* @group Media Query */
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+}
+/* @end */

@@ -1,0 +1,62 @@
+/* @group Groupname */
+
+
+@font-face {
+    font-family: 'HW-Regular';
+    src: url("../fonts/HoeflerText-Regular.eot?") format("eot"), 
+        url("../fonts/HoeflerText-Regular.woff") format("woff"), 
+        url("../fonts/HoeflerText-Regular.ttf") format("truetype"), 
+        url("../fonts/HoeflerText-Regular.svg#HoeflerText-Regular") format("svg"); }
+
+#page {
+    background-image: url(../images/site-background.jpg);
+}
+
+.block + .block {
+    margin-top: 0;
+}
+
+p {
+    margin: 0;
+}
+
+#navigation {
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+#content {
+    max-width: 742px;
+    margin: 0 auto;
+    
+}
+
+a:hover {
+    color: #b4a88a;
+}
+
+/* @end */
+
+
+/* @group Media Query */
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+}
+/* @end */
