@@ -1,5 +1,18 @@
-/* @group Groupname */
+/* @group Header */
 
+#site-name {
+    text-align: center;
+    display: block;
+    position: relative;
+}
+
+.stack-header-inner .site-name a {
+    background-image: url('../images/suprema_logo.png');
+    width: 170px;
+    height: 160px;
+    display: block;
+    margin: 0 auto;
+}
 
 /* @end */
 
