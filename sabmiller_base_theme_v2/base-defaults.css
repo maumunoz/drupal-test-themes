@@ -93,6 +93,10 @@
   padding-bottom: 2.7692em;
 }
 
+.container-fluid {
+    max-width: 1170px;
+}
+
 /* @end */
 
 /* @group Grid */

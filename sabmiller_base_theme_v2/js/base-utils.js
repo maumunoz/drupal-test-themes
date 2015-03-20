@@ -16,7 +16,7 @@
         link: '#mobile-menu-action'
     };
 
-    // Base Configuration for Slick Carousels
+    // Base configuration for Slick Carousels
     Drupal.slick = {
         config: {
             infinite: true,
