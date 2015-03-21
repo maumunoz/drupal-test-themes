@@ -18,7 +18,6 @@ stylesheets[all][] = 'grid.css'
 stylesheets[all][] = 'forms.css'
 stylesheets[all][] = 'slidebars.css'
 stylesheets[all][] = 'magnific-popup.css'
-stylesheets[all][] = 'age-checker.css'
 
 fonts[] = 'fonts/glyphicons-halflings-regular.eot'
 fonts[] = 'fonts/glyphicons-halflings-regular.svg'
