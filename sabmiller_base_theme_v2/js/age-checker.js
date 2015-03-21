@@ -88,9 +88,9 @@ All components name must follow this format:
                                 }).remove();
                             }
 
-                            form.find('.form-item').prependTo(config.date.node);
-                            form.find('> div > input').prependTo(config.submit.node);
-                            errors.prependTo(config.errors.node);
+                            form.find('.form-item').appendTo(config.date.node);
+                            form.find('> div > input').appendTo(config.submit.node);
+                            errors.appendTo(config.errors.node);
 
                             form.empty();
                             $('div[id='+msgFieldNode+']').wrapAll(form);
@@ -161,7 +161,7 @@ All components name must follow this format:
 
         if (siblings.length) {
             siblingsSelector = $(siblings).map (function () {return this.toArray(); } );
-            siblingsSelector.wrapAll('<div class="container-fluid"></div>');
+            siblingsSelector.wrapAll('<div class="container-fluid clearfix"></div>');
             siblings = [];
         }
     }

@@ -1,0 +1,106 @@
+/* @group Age Gate */
+
+#age_checker_verification_popup {
+    background: none;
+}
+
+#age_checker_verification_popup .bg-container {
+    background-position: center top;
+    background-repeat: repeat-x;
+    color: #fff;
+}
+
+#age_checker_verification_popup .container-fluid {
+    max-width: 1200px;
+}
+
+#age_checker_overlay,
+.age_checker-footer {
+    background: #000;
+}
+
+.age_checker-country input,
+.age_checker-country select,
+.age_checker-country option,
+.age_checker-date input
+.age_checker-date select
+.age_checker-date option {
+    color: #000;
+}
+
+.age_checker-banner {
+    height: 170px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.age_checker-logo {
+    height: 35px;
+    margin-bottom: 10px;
+}
+
+.age_checker-logo img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -32px;
+    margin-top: -20px;
+    width: 75px;
+}
+
+.age_checker-brief,
+.age_checker-footer {
+    display: none;
+}
+
+@media only screen and (min-width : 480px) {
+    .age_checker-brief {
+        display: block;
+    }
+}
+
+@media only screen and (min-width : 768px) {
+    .age_checker-banner {
+        height: 250px;
+    }
+
+    .age_checker-logo {
+        margin-bottom: 45px;
+    }
+
+    .age_checker-logo img {
+        margin-left: -64px;
+        margin-top: -50px;
+        width: 150px;
+    }
+
+    .age_checker-country,
+    .age_checker-date,
+    .age_checker-submit {
+        width: 33%;
+        float: left;
+    }
+
+    .age_checker-footer {
+        display: block;
+    }
+}
+
+@media only screen and (min-width : 992px) {
+    .age_checker-banner {
+        height: 332px;
+    }
+
+    .age_checker-logo {
+        margin-bottom: 85px;
+    }
+
+    .age_checker-logo img {
+        margin-left: -113px;
+        margin-top: -81px;
+        width: auto;
+    }
+}
+
+/* @end */

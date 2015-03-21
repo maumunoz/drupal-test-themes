@@ -3,9 +3,9 @@
 
 @font-face {
     font-family: 'HW-Regular';
-    src: url("../fonts/HoeflerText-Regular.eot?") format("eot"), 
-        url("../fonts/HoeflerText-Regular.woff") format("woff"), 
-        url("../fonts/HoeflerText-Regular.ttf") format("truetype"), 
+    src: url("../fonts/HoeflerText-Regular.eot?") format("eot"),
+        url("../fonts/HoeflerText-Regular.woff") format("woff"),
+        url("../fonts/HoeflerText-Regular.ttf") format("truetype"),
         url("../fonts/HoeflerText-Regular.svg#HoeflerText-Regular") format("svg"); }
 
 #page {
@@ -28,7 +28,6 @@ p {
 #content {
     max-width: 742px;
     margin: 0 auto;
-    
 }
 
 a:hover {
