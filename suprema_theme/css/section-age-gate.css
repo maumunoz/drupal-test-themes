@@ -11,7 +11,7 @@
 }
 
 #age_checker_verification_popup .container-fluid {
-    max-width: 1200px;
+    max-width: 700px;
 }
 
 #age_checker_overlay,
@@ -22,10 +22,11 @@
 .age_checker-country input,
 .age_checker-country select,
 .age_checker-country option,
-.age_checker-date input
-.age_checker-date select
+.age_checker-date input,
+.age_checker-date select,
 .age_checker-date option {
     color: #000;
+    text-align: left;
 }
 
 .age_checker-banner {
@@ -37,7 +38,7 @@
 
 .age_checker-logo {
     height: 35px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .age_checker-logo img {
@@ -52,6 +53,143 @@
 .age_checker-brief,
 .age_checker-footer {
     display: none;
+}
+
+.age_checker-brief {
+    font-family: 'HW-Regular';
+    padding-bottom: 10px;
+}
+
+.age_checker-brief p {
+    font-size: 140%;
+    line-height: 1;
+}
+
+.age_checker-brief p strong {
+    font-size: 110%;
+    font-weight: 400;
+}
+
+.age_checker-country,
+.age_checker-date,
+.age_checker-submit {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.age_checker-country p,
+.age_checker-date p,
+.age_checker-submit p {
+    font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+    font-size: 157%;
+    text-align: left;
+    line-height: 1;
+    padding-bottom: 6px;
+}
+
+.age_checker-country .agegate_country_select {
+    margin-top: 3px;
+}
+
+.age_checker-country select,
+.age_checker-date input {
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+.age_checker-country select,
+.age_checker-date input {
+    width: 100%;
+    border-color: #f1f1f1;
+    background: #e0e0e0;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2UwZTBlMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjE1JSIgc3RvcC1jb2xvcj0iI2VjZWNlYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ5JSIgc3RvcC1jb2xvcj0iI2YxZjNmNCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijc5JSIgc3RvcC1jb2xvcj0iI2UwZTVlOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjMmNiZDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  #e0e0e0 0%, #ececec 15%, #f1f3f4 49%, #e0e5e8 79%, #c2cbd0 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e0e0e0), color-stop(15%,#ececec), color-stop(49%,#f1f3f4), color-stop(79%,#e0e5e8), color-stop(100%,#c2cbd0));
+    background: -webkit-linear-gradient(top,  #e0e0e0 0%,#ececec 15%,#f1f3f4 49%,#e0e5e8 79%,#c2cbd0 100%);
+    background: -o-linear-gradient(top,  #e0e0e0 0%,#ececec 15%,#f1f3f4 49%,#e0e5e8 79%,#c2cbd0 100%);
+    background: -ms-linear-gradient(top,  #e0e0e0 0%,#ececec 15%,#f1f3f4 49%,#e0e5e8 79%,#c2cbd0 100%);
+    background: linear-gradient(to bottom,  #e0e0e0 0%,#ececec 15%,#f1f3f4 49%,#e0e5e8 79%,#c2cbd0 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e0e0', endColorstr='#c2cbd0',GradientType=0 );
+}
+
+#age_checker_month,
+#age_checker_day,
+#age_checker_year,
+.age_checker-country select {
+    height: 30px;
+    line-height: 30px;
+}
+
+.age_checker-date {
+    padding-top: 20px;
+}
+
+.age_checker-date .form-item {
+    margin: 0;
+}
+
+.age_checker-date .form-item-day {
+    width: 25%;
+}
+
+.age_checker-date .form-item-month {
+    width: 45%;
+    padding: 0 20px;
+}
+
+.age_checker-date .form-item-year {
+    width: 25%;
+}
+
+.age_checker-submit {
+    text-align: left;
+}
+
+.age_checker-submit .form-submit {
+    height: 40px;
+    min-width: 0;
+    width: 100%;
+    margin: 28px 0 0 0;
+    text-align: center;
+    display: inline-block;
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-size: 130%;
+    line-height: 40px;
+    border-color: #84d047;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    background: #00842b;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwODQyYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjglIiBzdG9wLWNvbG9yPSIjMDBhMDM0IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMjAlIiBzdG9wLWNvbG9yPSIjMDBhOTM4IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjMDA4NDJmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iODElIiBzdG9wLWNvbG9yPSIjMDA2ZjJhIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iOTUlIiBzdG9wLWNvbG9yPSIjMDA2YzI5IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwNjAyNCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+    background: -moz-linear-gradient(top,  #00842b 0%, #00a034 8%, #00a938 20%, #00842f 50%, #006f2a 81%, #006c29 95%, #006024 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00842b), color-stop(8%,#00a034), color-stop(20%,#00a938), color-stop(50%,#00842f), color-stop(81%,#006f2a), color-stop(95%,#006c29), color-stop(100%,#006024));
+    background: -webkit-linear-gradient(top,  #00842b 0%,#00a034 8%,#00a938 20%,#00842f 50%,#006f2a 81%,#006c29 95%,#006024 100%);
+    background: -o-linear-gradient(top,  #00842b 0%,#00a034 8%,#00a938 20%,#00842f 50%,#006f2a 81%,#006c29 95%,#006024 100%);
+    background: -ms-linear-gradient(top,  #00842b 0%,#00a034 8%,#00a938 20%,#00842f 50%,#006f2a 81%,#006c29 95%,#006024 100%);
+    background: linear-gradient(to bottom,  #00842b 0%,#00a034 8%,#00a938 20%,#00842f 50%,#006f2a 81%,#006c29 95%,#006024 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00842b', endColorstr='#006024',GradientType=0 );
+}
+
+.age_checker-rememberme {
+    text-align: center;
+    padding: 10px 0 0;
+}
+
+#age_checker_error_message {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0 0 10px 0;
+}
+
+.age_checker-disclaimer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-size: 80%;
+}
+
+.age_checker-disclaimer span {
+    font-size: 100% !important;
 }
 
 @media only screen and (min-width : 480px) {
@@ -70,21 +208,69 @@
     }
 
     .age_checker-logo img {
-        margin-left: -64px;
-        margin-top: -50px;
-        width: 150px;
+        margin-left: -47px;
+        margin-top: -37px;
+        width: 110px;
     }
 
     .age_checker-country,
     .age_checker-date,
     .age_checker-submit {
-        width: 33%;
         float: left;
     }
 
-    .age_checker-footer {
-        display: block;
+    .age_checker-country,
+    .age_checker-date,
+    .age_checker-submit {
+        margin: 0;
+        max-width: none;
     }
+
+    .age_checker-country {
+        width: 24%;
+    }
+
+    .age_checker-date {
+        width: 54%;
+        padding-top: 0;
+    }
+
+    .age_checker-date p {
+        padding-left: 30px;
+    }
+
+    .age_checker-date .form-item-day {
+        padding-left: 20px;
+    }
+
+    .age_checker-date .form-item-year {
+        padding-right: 15px;
+    }
+
+    .age_checker-submit {
+        width: 20%;
+    }
+
+    .age_checker-submit .form-submit {
+        width: auto;
+    }
+
+    .age_checker-brief {
+        padding-bottom: 25px;
+    }
+
+    .age_checker-brief p {
+        font-size: 200%;
+    }
+
+    .age_checker-rememberme {
+        padding: 0;
+        text-align: left;
+    }
+
+/*    .age_checker-footer {
+        display: block;
+    }*/
 }
 
 @media only screen and (min-width : 992px) {
@@ -93,13 +279,17 @@
     }
 
     .age_checker-logo {
-        margin-bottom: 85px;
+        margin-bottom: 80px;
     }
 
     .age_checker-logo img {
-        margin-left: -113px;
-        margin-top: -81px;
-        width: auto;
+        margin-left: -84px;
+        margin-top: -56px;
+        width: 160px;
+    }
+
+    .age_checker-brief p {
+        font-size: 245%;
     }
 }
 
