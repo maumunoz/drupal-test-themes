@@ -9,10 +9,10 @@
     text-align: center;
     display: block;
     position: absolute;
-    width: 50%;
+    width: 30%;
     z-index: 10;
-    top: -16px;
-    margin: 0 25%;
+    top: -18px;
+    margin: 0 35%;
 }
 
 
@@ -29,16 +29,14 @@
 
 
 #preheader {
-    background: rgb(26,26,27);
-    background: -moz-linear-gradient(top,  rgba(26,26,27,1) 2%, rgba(26,26,27,1) 19%, rgba(46,47,48,1) 83%, rgba(143,145,148,1) 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(2%,rgba(26,26,27,1)), color-stop(19%,rgba(26,26,27,1)), color-stop(83%,rgba(46,47,48,1)), color-stop(100%,rgba(143,145,148,1)));
-    background: -webkit-linear-gradient(top,  rgba(26,26,27,1) 2%,rgba(26,26,27,1) 19%,rgba(46,47,48,1) 83%,rgba(143,145,148,1) 100%);
-    background: -o-linear-gradient(top,  rgba(26,26,27,1) 2%,rgba(26,26,27,1) 19%,rgba(46,47,48,1) 83%,rgba(143,145,148,1) 100%);
-    background: -ms-linear-gradient(top,  rgba(26,26,27,1) 2%,rgba(26,26,27,1) 19%,rgba(46,47,48,1) 83%,rgba(143,145,148,1) 100%);
-    background: linear-gradient(to bottom,  rgba(26,26,27,1) 2%,rgba(26,26,27,1) 19%,rgba(46,47,48,1) 83%,rgba(143,145,148,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a1a1b', endColorstr='#8f9194',GradientType=0 );
     height: 48px;
     box-shadow: #000 0px 3px 10px;
+    background-image: url(../images/background-headerbar.png);
+    background-color: #1a1b1b;
+    background-position: bottom center;
+    background-repeat: repeat-x;
+    font-family: HW-Regular;
+    font-size: 15px;
 }
 
 #preheader .block-block {
@@ -53,9 +51,16 @@
 
 .social-header-left {
     float: left;
+    margin-top: 20px;
+    margin-left: 7px;
+    letter-spacing: -0.4px;
 }
 .social-header-right {
     float: right;
+    letter-spacing: -0.4px;
+    margin-top: 16px;
+    margin-right: 104px;
+    margin-left: 12px;
 }
 
 #block-system-main-menu ul.menu {
@@ -69,6 +74,46 @@
     color: #fff;
     font-size: 18px;
     font-family: HW-Regular;
+}
+
+#search-block-form {
+    float: right;
+    background-color: #665c3e;
+    height: 26px;
+    margin-top: 12px;
+    border-radius: 15px;
+}
+
+#search-block-form .form-item, 
+#search-block-form .form-actions {
+    margin: 0;
+}
+
+#search-block-form .form-text {
+    background-color: #000;
+    border: none;
+    height: 20px;
+    vertical-align: top;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 10px;
+    margin-left: 3px;
+    width: 159px;
+}
+
+#search-block-form .form-submit {
+    background: none;
+    border: none;
+    color: #fff;
+    text-shadow: none;
+    height: 25px;
+    padding: 0 15px 0 0px;
+    width: 25px;
+    margin-left: 2px;
+}
+
+#navigation .horizontal .menu li {
+    padding: 29px 27px 3px;
 }
 
 
