@@ -37,7 +37,12 @@
     background: -ms-linear-gradient(top,  rgba(26,26,27,1) 2%,rgba(26,26,27,1) 19%,rgba(46,47,48,1) 83%,rgba(143,145,148,1) 100%);
     background: linear-gradient(to bottom,  rgba(26,26,27,1) 2%,rgba(26,26,27,1) 19%,rgba(46,47,48,1) 83%,rgba(143,145,148,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a1a1b', endColorstr='#8f9194',GradientType=0 );
-    padding: 10px 5px;
+    height: 48px;
+    box-shadow: #000 0px 3px 10px;
+}
+
+#preheader .block-block {
+    display: none;
 }
 
 .social-header-left,
