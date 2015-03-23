@@ -39,6 +39,7 @@
 .age_checker-logo {
     height: 35px;
     margin-bottom: 20px;
+    background: url(../images/age_checker-labelbg.jpg) repeat-x 0 0;
 }
 
 .age_checker-logo img {
@@ -50,8 +51,7 @@
     width: 75px;
 }
 
-.age_checker-brief,
-.age_checker-footer {
+.age_checker-brief {
     display: none;
 }
 
@@ -184,12 +184,83 @@
 .age_checker-disclaimer {
     max-width: 800px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 20px 30px 20px;
     font-size: 80%;
 }
 
 .age_checker-disclaimer span {
     font-size: 100% !important;
+}
+
+.age_checker-footer {
+    padding-top: 10px;
+    padding-bottom: 60px;
+}
+
+.age_checker-footer:after {
+   content: ".";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+.age_checker-footer .logo-sabmiller,
+.age_checker-footer .links-list,
+.age_checker-footer .nomaneje-label {
+    background: none !important;
+    border: none !important;
+    padding: 0 !important;
+}
+
+.age_checker-footer .logo-sabmiller {
+    text-align: left;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 30%;
+    padding-left: 5px !important;
+}
+
+.logo-sabmiller img {
+    display: inline-block;
+    max-width: 72px;
+    width: 100%;
+}
+
+.age_checker-footer .nomaneje-label {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    text-align: right;
+    width: 70%;
+    padding-right: 5px !important;
+}
+
+.nomaneje-label img {
+    display: inline-block;
+    max-width: 243px;
+    width: 100%;
+}
+
+.links-list ul {
+    list-style: none;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-padding-start: 0;
+    -moz-margin-before: 0;
+    -moz-margin-after: 0;
+    -moz-padding-start: 0;
+}
+
+.age_checker-footer .links-list li {
+    font-size: 75%;
+}
+
+.links-list a {
+    text-decoration: underline;
+    color: #fff;
+    padding: 0 10px;
 }
 
 @media only screen and (min-width : 480px) {
@@ -268,9 +339,33 @@
         text-align: left;
     }
 
-/*    .age_checker-footer {
-        display: block;
-    }*/
+    .age_checker-footer {
+        padding-bottom: 0;
+    }
+
+    .age_checker-footer .links-list li {
+        display: inline-block;
+        font-size: 100%;
+    }
+
+    .age_checker-footer .logo-sabmiller {
+        position: static;
+        float: left;
+        width: 20%;
+        padding-left: 20px !important;
+    }
+
+    .age_checker-footer .nomaneje-label {
+        float: right;
+        position: static;
+        width: 20%;
+        padding-right: 20px !important;
+    }
+
+    .age_checker-footer .links-list {
+        float: left;
+        width: 60%;
+    }
 }
 
 @media only screen and (min-width : 992px) {

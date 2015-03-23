@@ -168,7 +168,6 @@
 
             // Extend Drupal global Slick configuration
             config = $.extend({}, Drupal.slick.config, config);
-            // console.log(config);
 
             // Create slick instance and show module
             slick.slick(config);

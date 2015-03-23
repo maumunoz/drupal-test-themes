@@ -30,6 +30,7 @@ All components name must follow this format:
         msgFieldNode = 'age_checker_message',
         ageCheckerPrefix = 'age_checker-',
         expiration = '#age_checker_expiration',
+        cookieName = 'age_checker',
         form,
         mobile,
         siblings = [];
@@ -45,6 +46,9 @@ All components name must follow this format:
             },
             errors: {
                 node: '.age_checker-errors',
+            },
+            footer: {
+                node: '.age_checker-footer'
             }
         }
     };
@@ -71,6 +75,20 @@ All components name must follow this format:
                 mobile = isMobile();
                 config = Drupal.age_checker.config;
 
+                // Responsive Desing presets
+                if (jq.cookie(cookieName) === null) {
+                    alert("test");
+                    $('html').css('overflow', 'hidden');
+                    if ($(overlay).length && $(config.footer.node).length) {
+                        overlay.css('paddingBottom', $(config.footer.node).height()*1.5+'px');
+                        $(window).on('resize', function(){
+                            overlay.css('paddingBottom', $(config.footer.node).height()*1.5+'px');
+                        });
+                    }
+                } else {
+                    $('html').css('overflow', 'auto');
+                }
+
                 // Verify Age Checker content is been loaded
                 if (content.is(':visible')) {
                     content.hide();
@@ -84,7 +102,7 @@ All components name must follow this format:
 
                             if (mobile) {
                                 form.find("input.form-text").each(function(i, el) {
-                                    $("<input type='tel' />").attr({ name: this.name, placeholder: this.value, id: this.id, size: this.size, maxlength: this.maxlength, "class": this["class"] }).attr("maxlength",$(this).attr("maxlength")).data("i",i+1).keyup(function(){ jQuery(this).val( this.value.substr(0,4) ); age_checker.nextbox(this, jQuery(this).data("i") ); }).attr("max","2999").addClass("whiteplaceholder").insertBefore(this);
+                                    $("<input type='tel' />").attr({ name: this.name, placeholder: this.value, id: this.id, size: this.size, maxlength: this.maxlength, "class": this["class"] }).attr("maxlength",$(this).attr("maxlength")).data("i",i+1).keyup(function(){ jq(this).val( this.value.substr(0,4) ); age_checker.nextbox(this, jq(this).data("i") ); }).attr("max","2999").addClass("whiteplaceholder").insertBefore(this);
                                 }).remove();
                             }
 
@@ -107,8 +125,8 @@ All components name must follow this format:
                         }
 
                         setTimeout(function () {
-                            if (jq.cookie('age_checker') === '1') {
-                                jq.cookie('age_checker', '1', { path: '/', expires: (expire ? parseInt(Drupal.settings.age_checker.cookie_expiration, 10) : undefined) });
+                            if (jq.cookie(cookieName) === '1') {
+                                jq.cookie(cookieName, '1', { path: '/', expires: (expire ? parseInt(Drupal.settings.age_checker.cookie_expiration, 10) : undefined) });
                             }
                         }, 150);
                     });
