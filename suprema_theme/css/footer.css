@@ -14,7 +14,7 @@
     }
 
     .footerPage{
-
+        text-align: center;
          color: #fff;
     }
 
@@ -25,6 +25,11 @@
 
     .footerPage a:hover{
          color: #3f8202;
+    }
+
+    .footerUp{
+
+        margin-bottom: 10px;
     }
 
 
