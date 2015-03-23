@@ -20,8 +20,18 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
+    .footerPage{
 
-    background-color: #fff;
+         text-align: center;
+         color: #fff;
+         background-color: #000;
+
+    }
+
+    .footerPage p a{
+         color: #fff;
+    }
+
 }
 
 /* Large Devices, Wide Screens */
