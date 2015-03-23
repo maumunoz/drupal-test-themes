@@ -77,7 +77,6 @@ All components name must follow this format:
 
                 // Responsive Desing presets
                 if (jq.cookie(cookieName) === null) {
-                    alert("test");
                     $('html').css('overflow', 'hidden');
                     if ($(overlay).length && $(config.footer.node).length) {
                         overlay.css('paddingBottom', $(config.footer.node).height()*1.5+'px');
