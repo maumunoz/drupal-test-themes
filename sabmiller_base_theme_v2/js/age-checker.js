@@ -79,10 +79,8 @@ All components name must follow this format:
                 if (jq.cookie(cookieName) === null) {
                     $('html').css('overflow', 'hidden');
                     if ($(overlay).length && $(config.footer.node).length) {
-                        overlay.css('paddingBottom', $(config.footer.node).height()*1.5+'px');
-                        $(window).on('resize', function(){
-                            overlay.css('paddingBottom', $(config.footer.node).height()*1.5+'px');
-                        });
+                        overlayHeight();
+                        $(window).on('resize', overlayHeight);
                     }
                 } else {
                     $('html').css('overflow', 'auto');
@@ -101,7 +99,8 @@ All components name must follow this format:
 
                             if (mobile) {
                                 form.find("input.form-text").each(function(i, el) {
-                                    $("<input type='tel' />").attr({ name: this.name, placeholder: this.value, id: this.id, size: this.size, maxlength: this.maxlength, "class": this["class"] }).attr("maxlength",$(this).attr("maxlength")).data("i",i+1).keyup(function(){ jq(this).val( this.value.substr(0,4) ); age_checker.nextbox(this, jq(this).data("i") ); }).attr("max","2999").addClass("whiteplaceholder").insertBefore(this);
+                                    $("<input type='tel' />").attr({ name: this.name, placeholder: this.value, id: this.id, size: this.size, maxlength: this.maxlength, "class": this["class"] }).attr("maxlength",$(this).attr("maxlength")).data("i",i+1).keyup(function(){ jq(this).val( this.value.substr(0,4) );
+                                    age_checker.nextbox(this, jq(this).data("i") ); }).attr("max","2999").addClass("whiteplaceholder").insertBefore(this);
                                 }).remove();
                             }
 
@@ -116,7 +115,7 @@ All components name must follow this format:
                     });
 
                     // Override form submit
-                    $(config.submit.node+" .form-submit").on('click', function () {
+                    $(config.submit.node+" .form-submit").on('click touch', function () {
                         var expire = false;
 
                         if ($(expiration).length && $(expiration).is(':checked')) {
@@ -163,6 +162,7 @@ All components name must follow this format:
 
                     // Show content after transfomation ends
                     content.show();
+                    overlayHeight();
                 }
 
             }, 150);
@@ -181,6 +181,13 @@ All components name must follow this format:
             siblingsSelector.wrapAll('<div class="container-fluid clearfix"></div>');
             siblings = [];
         }
+    }
+
+    function overlayHeight() {
+        var vSize = $(window).height() - $(config.footer.node).outerHeight()+'px';
+        console.log($(config.footer.node).outerHeight());
+        overlay.css('height', vSize);
+        overlay.css('min-height', vSize);
     }
 
 })(jQuery, jQuery2);
