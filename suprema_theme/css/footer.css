@@ -5,11 +5,13 @@
 
 .stack-copyright{
      background-color: #000;
-}
+     padding-top: 2.7692em;
+     border-top: 2px solid #fff;
+    }
 
 .stack-width .deco-width{
     text-align: center;
-}
+    }
 
     .footerPage{
 
@@ -18,13 +20,14 @@
 
     .footerPage a{
          color: #fff;
+         margin: 10px 20px 0 20px;
     }
 
     .footerPage a:hover{
-         color: #fff;
+         color: #3f8202;
     }
 
-}
+
 
 /* @group Media Query */
 
