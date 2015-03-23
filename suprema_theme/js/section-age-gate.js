@@ -1,4 +1,8 @@
+/* globals jQuery, jQuery2 */
+
 (function (jq, $) {
+    'use strict';
+
     var node = '#age_checker_verification_popup',
         cookieName = 'age_checker',
         overlay,

@@ -1,4 +1,4 @@
-/*global jQuery, Drupal */
+/* global jQuery, jQuery2, Drupal, age_checker */
 
 /*
 To add a new component must use the DIV Special Container via CKEditor.
@@ -31,9 +31,8 @@ All components name must follow this format:
         ageCheckerPrefix = 'age_checker-',
         expiration = '#age_checker_expiration',
         cookieName = 'age_checker',
-        form,
-        mobile,
-        siblings = [];
+        siblings = [],
+        mobile = false;
 
     // Base configuration for Age Checker module
     Drupal.age_checker = {
@@ -61,7 +60,7 @@ All components name must follow this format:
             age_checker.originalNextbox( fldobj, nbox );
             age_checker.lastNext = time;
         }
-    }
+    };
 
     if(typeof Drupal.behaviors.age_checker !== 'undefined') {
         original = Drupal.behaviors.age_checker.attach;
@@ -97,10 +96,26 @@ All components name must follow this format:
                             var form = node.find('form'),
                                 errors = node.find('#age_checker_error_message');
 
+                            // Mobile transformations
                             if (mobile) {
-                                form.find("input.form-text").each(function(i, el) {
-                                    $("<input type='tel' />").attr({ name: this.name, placeholder: this.value, id: this.id, size: this.size, maxlength: this.maxlength, "class": this["class"] }).attr("maxlength",$(this).attr("maxlength")).data("i",i+1).keyup(function(){ jq(this).val( this.value.substr(0,4) );
-                                    age_checker.nextbox(this, jq(this).data("i") ); }).attr("max","2999").addClass("whiteplaceholder").insertBefore(this);
+                                form.find('input.form-text').each(function(i) {
+                                    $('<input type="tel" />')
+                                    .attr({
+                                        name: this.name,
+                                        placeholder: this.value,
+                                        id: this.id, size:
+                                        this.size,
+                                        maxlength:
+                                        this.maxlength,
+                                        max:'2999',
+                                        'class': this['class']
+                                    }).data('i',i+1)
+                                    .keyup(function(){
+                                        jq(this).val( this.value.substr(0,4) );
+                                        age_checker.nextbox(this, jq(this).data('i') );
+                                    })
+                                    .addClass('whiteplaceholder')
+                                    .insertBefore(this);
                                 }).remove();
                             }
 
@@ -115,7 +130,7 @@ All components name must follow this format:
                     });
 
                     // Override form submit
-                    $(config.submit.node+" .form-submit").on('click touch', function () {
+                    $(config.submit.node+' .form-submit').on('click touch', function () {
                         var expire = false;
 
                         if ($(expiration).length && $(expiration).is(':checked')) {
@@ -130,7 +145,7 @@ All components name must follow this format:
                     });
 
                     // Run through each component to add DOM wrappers based on configuration
-                    $('div[id='+msgFieldNode+']').each(function(index, el) {
+                    $('div[id='+msgFieldNode+']').each(function() {
                         $(this).find('div[class^="'+ageCheckerPrefix+'"]').each(function(index, el) {
                             el = $(this);
 
@@ -185,7 +200,7 @@ All components name must follow this format:
 
     function overlayHeight() {
         var vSize = $(window).height() - $(config.footer.node).outerHeight()+'px';
-        console.log($(config.footer.node).outerHeight());
+
         overlay.css('height', vSize);
         overlay.css('min-height', vSize);
     }
