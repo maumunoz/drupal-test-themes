@@ -3,6 +3,20 @@
 
 /* @end */
 
+    .footerPage{
+
+         text-align: center;
+         color: #fff;
+         background-color: #000;
+
+    }
+
+    .footerPage p a{
+         color: #fff;
+         display: inline;
+    }
+
+}
 
 /* @group Media Query */
 
@@ -20,19 +34,7 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-    .footerPage{
 
-         text-align: center;
-         color: #fff;
-         background-color: #000;
-
-    }
-
-    .footerPage p a{
-         color: #fff;
-    }
-
-}
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
