@@ -3,17 +3,25 @@
 
 /* @end */
 
+.stack-copyright{
+     background-color: #000;
+}
+
+.stack-width .deco-width{
+    text-align: center;
+}
+
     .footerPage{
 
-         text-align: center;
          color: #fff;
-
-
     }
 
-    .footerPage p a{
+    .footerPage a{
          color: #fff;
-         display: inline;
+    }
+
+    .footerPage a:hover{
+         color: #fff;
     }
 
 }
