@@ -9,6 +9,7 @@
         width: 100%;
         height: auto;
         padding: 30px;
+        color: #929292;
     }
 
     .cookie-close{
@@ -19,6 +20,7 @@
 
     .wrapperMjs h1{
         color: #038f41;
+        font-size: 23px;
     }
 
 /* @group Media Query */

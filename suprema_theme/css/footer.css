@@ -16,6 +16,8 @@
     .footerPage{
         text-align: center;
          color: #fff;
+         font-family: HW-Regular;
+         font-size: 18px
     }
 
     .footerPage a{
@@ -162,7 +164,7 @@
 
     .stack-copyright{
      background-color: #000;
-     padding-top: 2.7692em;
+     padding-top: 15px;
      border-top: 2px solid #fff;
     }
 
