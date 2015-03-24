@@ -21,7 +21,7 @@ p {
 }
 
 #navigation {
-    max-width: 800px;
+    max-width: 824px;
     margin: 0 auto;
 
 }
@@ -38,6 +38,15 @@ div#messages {
     z-index: 11;
 }
 
+.ulreset {
+    
+}
+.ulhorizontal {
+    display: inline-block;
+}
+.ulhorizontal > li {
+    display: inline-block;
+}
 /* @end */
 
 
