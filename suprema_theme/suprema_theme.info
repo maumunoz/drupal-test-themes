@@ -7,6 +7,7 @@ base theme = 'sabmiller_base_theme_v2'
 
 stylesheets[all ][] = 'css/slick.css'
 stylesheets[all ][] = 'css/global.css'
+stylesheets[all ][] = 'css/preHeader.css'
 stylesheets[all ][] = 'css/header.css'
 stylesheets[all ][] = 'css/footer.css'
 stylesheets[all ][] = 'css/section-age-gate.css'
