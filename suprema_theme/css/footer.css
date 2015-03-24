@@ -25,34 +25,149 @@
 
     .footerPage a:hover{
          color: #3f8202;
+         text-decoration: none;
     }
 
     .footerUp{
 
-        margin-bottom: 0 0 10px 0;
+        margin-bottom: 30px;
+        visibility: visible;
     }
+
+    .footerMiddle{
+        margin-bottom: 10px;
+        visibility: visible;
+    }
+
+
+
+
+
+
 
 
 
 /* @group Media Query */
 
+@media only screen and (min-width : 220px) {
+
+    .footerUp{
+        visibility: hidden;
+        height: 0;
+    }
+    .footerMiddle{
+        visibility: hidden;
+        height: 0;
+    }
+
+    .stack-copyright{
+        padding-top: 0;
+    }
+
+
+}
+
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
+
+    .footerUp{
+        visibility: hidden;
+        height: 0;
+    }
+    .footerMiddle{
+        visibility: hidden;
+        height: 0;
+    }
+
+    .stack-copyright{
+        padding-top: 0;
+    }
+
+
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
+
+    .footerUp{
+        visibility: hidden;
+        height: 0;
+    }
+    .footerMiddle{
+        visibility: hidden;
+        height: 0;
+    }
+
+    .stack-copyright{
+        padding-top: 0;
+    }
+
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
+
+    .footerUp{
+        visibility: hidden;
+        height: 0;
+    }
+    .footerMiddle{
+        visibility: hidden;
+        height: 0;
+    }
+
+    .stack-copyright{
+        padding-top: 0;
+    }
+
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
 
+    .footerUp{
 
+        margin-bottom: 50px;
+        visibility: visible;
+    }
+
+    .footerMiddle{
+        margin-bottom: 10px;
+        visibility: visible;
+    }
+
+    .stack-copyright{
+     background-color: #000;
+     padding-top: 2.7692em;
+     border-top: 2px solid #fff;
+    }
+
+    .footerDown p{
+        padding-top: 15px;
+    }
+}
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
+
+    .footerUp{
+
+        margin-bottom: 50px;
+        visibility: visible;
+    }
+
+    .footerMiddle{
+        margin-bottom: 10px;
+        visibility: visible;
+    }
+
+    .stack-copyright{
+     background-color: #000;
+     padding-top: 2.7692em;
+     border-top: 2px solid #fff;
+    }
+
+    .footerDown p{
+        padding-top: 15px;
+    }
 }
 /* @end */
