@@ -25,12 +25,33 @@
 
     .footerPage a:hover{
          color: #3f8202;
+         text-decoration: none;
     }
 
     .footerUp{
 
-        margin-bottom: 0 0 10px 0;
+        margin-bottom: 10px;
     }
+
+    .footerMiddle{
+        margin-bottom: 10px;
+    }
+
+        .footerDown{
+        margin-top: 10px;
+    }
+
+            .footerDown p{
+        padding-top: 5px;
+    }
+
+    .media-thumbnail-frame{
+        position: absolute;
+        left: 558px;
+
+    }
+
+
 
 
 
