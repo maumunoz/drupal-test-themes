@@ -8,8 +8,18 @@
         color:#424242;
         width: 100%;
         height: auto;
+        padding: 30px;
     }
 
+    .cookie-close{
+        float: right;
+        cursor: pointer;
+        cursor: hand;
+    }
+
+    .wrapperMjs h1{
+        color: #038f41;
+    }
 
 /* @group Media Query */
 
