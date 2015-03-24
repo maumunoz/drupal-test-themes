@@ -5,6 +5,10 @@
     position: relative;
 }
 
+.site-name-wrapper {
+    position: relative;
+}
+
 #site-name {
     text-align: center;
     display: block;
@@ -29,9 +33,16 @@
     pointer-events: all;
 }
 
+#header-inner .box {
+    padding-left: 0;
+    padding-right: 0;
+}
 
 #preheader {
-    height: 48px;
+    background-color: black;
+}
+
+#block-search-form {
     box-shadow: #000 0px 3px 10px;
     background-image: url(../images/background-headerbar.png);
     background-color: #1a1b1b;
@@ -39,10 +50,9 @@
     background-repeat: repeat-x;
     font-family: HW-Regular;
     font-size: 15px;
-}
-
-#preheader .block-block {
-    display: none;
+    height: 48px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .social-header-left,
