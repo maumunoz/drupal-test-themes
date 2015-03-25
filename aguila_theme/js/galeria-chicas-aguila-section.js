@@ -44,7 +44,7 @@
 
                 // Remove the Load More button if all items have been loaded
                 if (limit >= $(galleryItems).length) {
-                    $(this).addClass('hidden');
+                    $(e.delegateTarget).addClass('hidden');
                 }
                 e.preventDefault();
             });
