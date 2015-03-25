@@ -23,13 +23,14 @@
 
 
 .stack-header-inner .site-name a {
+    height: 90px;
+    width: 100%;
     background-image: url('../images/suprema_logo.png');
-    width: 170px;
-    height: 160px;
     display: block;
     margin: 0 auto;
     z-index: 10;
-
+    background-size: contain;
+    background-position: center;
     pointer-events: all;
 }
 
@@ -38,8 +39,10 @@
     padding-right: 0;
 }
 
+
 #preheader {
     background-color: black;
+    display: none;
 }
 
 #block-search-form {
@@ -57,6 +60,7 @@
 
 .social-header-left,
 .social-header-right {
+    display: none;
     border: none !important;
     color: #fff;
 }
@@ -111,6 +115,7 @@
     height: 26px;
     margin-top: 12px;
     border-radius: 15px;
+    display: none;
 }
 
 #search-block-form .form-item, 
@@ -164,14 +169,31 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
+    .stack-header-inner .site-name a {
+        height: 110px;
+    }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
+    .stack-header-inner .site-name a {
+        height: 130px;
+    }
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
+    search-block-form,
+    .social-header-left,
+    .social-header-right {
+        display: block;
+    }
+    .stack-header-inner .site-name a {
+        height: 160px;
+    }
+    #preheader {
+        display: block;
+    }
 }
 
 /* Large Devices, Wide Screens */

@@ -25,6 +25,12 @@ p {
     margin: 0 auto;
 
 }
+
+.btn-menu-mobile a .icon-bar {
+    background-color: white;
+    height: 6px;
+}
+
 #content {
     max-width: 742px;
     margin: 0 auto;
