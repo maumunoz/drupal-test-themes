@@ -2,7 +2,20 @@
 
 .galeria-chicas-aguila {
     padding: 0 20px 20px;
+}
+
+.galeria-chicas-aguila .view-header,
+.galeria-chicas-aguila .view-content {
     max-width: 1180px;
+}
+
+.galeria-chicas-aguila .item-list {
+    clear: both;
+    padding-top: 34px;
+}
+
+.galeria-chicas-aguila .item-list ul.pager {
+    margin-top: 0;
 }
 
 .galeria-chicas-aguila .view-header h3 {
@@ -58,6 +71,10 @@
         font-size: 257%;
         padding-left: 55px;
         padding-bottom: 20px;
+    }
+
+    .galeria-chicas-aguila .item-list ul.pager {
+        margin-top: 58px;
     }
 }
 

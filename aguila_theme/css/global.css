@@ -75,7 +75,8 @@
 .view-futbol-destacados,
 .node-page[about="/chicas-aguila"] .field-items,
 .descripcion-chicas-aguila .views-field-body,
-.galeria-chicas-aguila,
+.galeria-chicas-aguila .view-header,
+.galeria-chicas-aguila .view-content,
 .calendario-chicas-aguila,
 .page-user .content-area {
     position: relative;
@@ -107,7 +108,7 @@
 .contenido-no-encontrado .stack-content-inner .content {
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
     text-align: center;
-    
+
 }
 
 .contenido-no-encontrado .stack-content-inner  h2{
@@ -176,7 +177,7 @@ input[type=radio].form-radio {
 
 input[type=radio].form-radio + label.option {
     padding-left:23px;
-    height:18px; 
+    height:18px;
     display:inline-block;
     line-height:18px;
     background-repeat:no-repeat;
@@ -796,7 +797,7 @@ input.error {
     border-width: 0;
 }
 
-.mfp-image-holder .mfp-close, 
+.mfp-image-holder .mfp-close,
 .mfp-iframe-holder .mfp-close {
     font-size: 60px;
     font-family: "Open Sans";
@@ -829,9 +830,7 @@ input.error {
 
 .galeryCounter {
     text-transform: uppercase;
-    position: absolute;
-    top: 16px;
-    right: 50px;
+    position: static;
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 16px;
 }
@@ -863,7 +862,7 @@ input.error {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
     opacity: 0.75;
     pointer-events: none;
-    
+
 }
 
 .media-gallery-thumb:hover span.overlay {
@@ -894,6 +893,12 @@ input.error {
     .section-main-title h2 em {
         font-family: Dubiel, Georgia, Times, serif;
         font-size: 28px;
+    }
+
+    .galeryCounter {
+        position: absolute;
+        top: 16px;
+        right: 50px;
     }
 }
 
