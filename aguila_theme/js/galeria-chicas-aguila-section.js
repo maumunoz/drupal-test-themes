@@ -5,7 +5,6 @@
     var node = '.galeria-chicas-aguila',
         offset = 6,
         limit = offset,
-        batchItems = [],
         galleryItems = [],
         btnLoad,
         showAllAction = true; // Choose to make items show by batch or to show all items
@@ -29,17 +28,8 @@
 
                 } else {
                     // Show the amount of items in the interval, based on offset size
-                    batchItems = [];
                     limit += offset;
-
-                    $.each(galleryItems, function(i, item) {
-                        if (i+1 >= limit-offset && i+1 <= limit) {
-                            batchItems.push(item);
-                        }
-                    });
-                    if (batchItems.length) {
-                        $(batchItems).fadeIn('fast');
-                    }
+                    galleryItems.filter(':lt('+(limit)+')').fadeIn('fast');
                 }
 
                 // Remove the Load More button if all items have been loaded
