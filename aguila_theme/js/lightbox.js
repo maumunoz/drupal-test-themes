@@ -46,8 +46,8 @@
                 },
             image: {
                 titleSrc: function(item) {
-                    return '<a href="media/'+item.el.attr('href').split('/').pop()+'/download" target="_blank">Descargar</a>' +
-                            '<span> | Compartir </span>'+
+                    return '<a class="download" href="media/'+item.el.attr('href').split('/').pop()+'/download" target="_blank">Descargar</a>' +
+                            '<span>Compartir</span>'+
                             '<ul class="media-gallery-social-share">' +
                                 '<li><a class="fb" href="#">Facebook</a></li>' +
                                 '<li><a class="twitter" href="#">Twitter</a></li>' +
