@@ -96,18 +96,18 @@
 .media-gallery-social-share a {
     display: inline-block;
     text-indent: -9999px;
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     vertical-align: middle;
     padding: 0 10px;
 }
 
 .media-gallery-social-share .fb {
-    background: blue;
+    background: url(../images/social-fb_btn.png) no-repeat 0 0;
 }
 
 .media-gallery-social-share .twitter {
-    background: red;
+    background: url(../images/social-twitter_btn.png) no-repeat 0 0;
 }
 
 /* @end */

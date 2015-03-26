@@ -24,7 +24,7 @@
             });
 
             // Add the total amount of elements in galleries
-            $('.galeryCounter').html($(lightboxElements).length + 'FOTOS');
+            $('.galeryCounter').html($(lightboxElements).length + ' FOTOS');
         }
     });
 
