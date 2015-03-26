@@ -72,11 +72,11 @@
         switch(social) {
             case 'fb':
             window.open( 'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(path),
-                'facebook-share-dialog', 'status=1,width=626,height=436,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no');
+                '', 'status=1,width=626,height=436,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no');
             break;
             case 'twitter':
             window.open( 'http://twitter.com/share?url='+encodeURIComponent(path),
-                'twitter','status=1,width=626,height=436,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no');
+                '','status=1,width=626,height=436,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no');
             break;
         }
     }
