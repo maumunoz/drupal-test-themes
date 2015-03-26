@@ -26,14 +26,23 @@ p {
 
 }
 
-.btn-menu-mobile a .icon-bar {
-    background-color: white;
-    height: 6px;
+#content {
+    max-width: 1024px;
+    margin: 0 auto;
 }
 
-#content {
-    max-width: 742px;
-    margin: 0 auto;
+#content.wrapper-content .stack {
+    padding-top: 0;
+}
+
+#content.clearfix:before,
+#content .clearfix:before {
+    content: "";
+    display: none;
+}
+
+.tabs {
+  margin: 0;
 }
 
 a:hover {
