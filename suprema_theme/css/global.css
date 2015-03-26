@@ -26,6 +26,10 @@ p {
 
 }
 
+slidebar.sb-active {
+    z-index: 10;
+}
+
 #content {
     max-width: 1024px;
     margin: 0 auto;

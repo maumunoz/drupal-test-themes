@@ -21,6 +21,18 @@
         $(searchblock).before( $(".social-header-left").parent().children() );
         $(".social-header-left").find('br').remove();
     });
+    
+    jQuery(window).scroll(function() {
+        var _scrollTop = jQuery(window).scrollTop();
+        if(_scrollTop<20) {
+            jQuery("#site-name").removeClass("hideMe");
+        }else{
+            jQuery("#site-name").addClass("hideMe");
+        }
+    });
+
+    
+    
 
 
 })(jQuery2);

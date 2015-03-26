@@ -18,8 +18,13 @@
     top: -18px;
     margin: 0 35%;
     pointer-events: none;
+    transition: top 0.5s, opacity 0.5s;
 }
 
+#site-name.hideMe {
+    top: -48px;
+    opacity: 0;
+}
 
 
 .stack-header-inner .site-name a {
@@ -43,6 +48,11 @@
 #preheader {
     background-color: black;
     display: none;
+}
+
+.btn-menu-mobile {
+    width: 50%;
+    display: inline-block;
 }
 
 #block-search-form {

@@ -37,18 +37,18 @@
 }
 
 .home_blackarea {
+    font-size: 18px;
     display: block;
     clear: both;
     background-color: black;
     text-align: center;
     padding: 18px 20%;
     color: #fff;
-    font-size: 25px;
 }
 
 .home_blackarea h1 {
+    font-size: 30px;
     color: #54980c;
-    font-size: 43px;
     margin: 0;
     font-weight: normal
 }
@@ -64,7 +64,15 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
+    .home_blackarea h1 {
+        font-size: 43px;
+    }
+
+    .home_blackarea {
+        font-size: 25px;
+    }
 }
+
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
