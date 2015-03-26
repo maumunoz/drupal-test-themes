@@ -19,6 +19,8 @@
         //Initialize Slick slider
         slider.slick({
             dots: true,
+            autoplay: true,
+            autoplaySpeed: 7000,
             arrows: false,
             infinite: true,
             speed: 300,
@@ -60,25 +62,25 @@
                 }
             });
         }
-        
+
         $("a[href='#pauseVideo']").click(function(e){ e.preventDefault(); pauseCurrentVideo(); });
         toggleContentOnVideo();
-        
+
         if ($("body").hasClass("chicas-aguila")) {
-            setTimeout( function() { 
+            setTimeout( function() {
                 if (jQuery2('#age_checker_verification_popup').is(':visible')) {
                     jQuery2(document).on("closeAgeGate", function() {
-                        //if (!jQuery2('#age_checker_verification_popup').is(':visible')) 
+                        //if (!jQuery2('#age_checker_verification_popup').is(':visible'))
                         play_alternative_content("chicas");
                     })
                 }else{
                     play_alternative_content("chicas");
                 }
             },1000);
-            
+
         }
-        
-        
+
+
     });
 }(jQuery2));
 
@@ -107,14 +109,14 @@ function play_alternative_content(id) {
                 video.play();
                 toggleContentOnVideo();
             } else {
-                video.pause(); 
+                video.pause();
                 toggleContentOnVideo();
             }
         break;
         default:
             $(".slide-content-alternative.hidden").removeClass("hidden");
         break;
-            
+
     }
     return void(false);
 }
