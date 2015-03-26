@@ -1,17 +1,56 @@
 /* @group Groupname */
 
+.inicio {
+    background-color: black;
+}
+
 .inicio #page {
-    
+    min-height: initial !important;
+    height: initial;
+}
+
+.inicio .stack .box {
+    padding: 0;
 }
 
 .inicio #content {
-    
+    max-width: 100%;
+}
+
+.inicio .slick-slider {
+    max-height: 445px;
+    overflow: hidden;
+}
+
+.inicio .slick-slider img {
+    width: 100%;
+
+}
+
+.inicio .stack-copyright {
+    border: none;
+}
+
+.inicio .footerUp, 
+.inicio .footerMiddle {
+    display: none;
 }
 
 .home_blackarea {
+    display: block;
+    clear: both;
+    background-color: black;
+    text-align: center;
+    padding: 18px 20%;
+    color: #fff;
+    font-size: 25px;
 }
 
 .home_blackarea h1 {
+    color: #54980c;
+    font-size: 43px;
+    margin: 0;
+    font-weight: normal
 }
 
 /* @end */
