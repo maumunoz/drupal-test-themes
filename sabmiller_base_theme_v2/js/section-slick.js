@@ -94,7 +94,7 @@
                 htmlContent: ['prevArrow', 'nextArrow'],      // Template from DOM elements
                 units: ['centerPadding', 'touchThreshold']    // px, % or 0.*
             },
-            config = {};
+            config = { dots: true };
 
         if (slick.length) {
 
