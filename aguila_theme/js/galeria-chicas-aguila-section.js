@@ -3,7 +3,7 @@
     'use strict';
 
     var node = '.galeria-chicas-aguila',
-        offset = 6,
+        offset = 8,
         limit = offset,
         galleryItems = [],
         btnLoad,
