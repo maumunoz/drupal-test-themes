@@ -26,9 +26,7 @@
     padding-top: 2% !important;
     padding-bottom: 70px !important;
 }
-.age_checker-footer {
-    height: 70px !important;
-}
+
 
 .age_checker-country input,
 .age_checker-country select,
@@ -215,6 +213,8 @@
 .age_checker-footer {
     padding-top: 10px;
     padding-bottom: 60px;
+    height: 70px !important;
+    display: none;
 }
 
 .age_checker-footer:after {
@@ -385,6 +385,10 @@
     .age_checker-footer .links-list {
         float: left;
         width: 60%;
+    }
+    
+    .age_checker-footer {
+        display: block;
     }
 }
 
