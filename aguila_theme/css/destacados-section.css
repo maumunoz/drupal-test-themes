@@ -112,22 +112,22 @@
 .destacados-principal .views-row .views-field-field-descripcion {
     font-size: 10px;
     color: #949494;
-    
+
 }
 
 .destacados-principal .views-row.views-row-1 .views-field-field-descripcion {
     font-size: 11px;
     color: #fff;
-    
+
 }
 .destacados-principal .views-row.celeste .views-field-field-descripcion {
     color: #000;
-    
+
 }
 
 
 .destacados-principal .views-row .views-field-nothing {
-    
+
 }
 
 .destacados-principal .views-row .views-field-field-descripcion,
@@ -135,7 +135,7 @@
     /*display: none; /**/
     opacity: 0;
     transition: opacity 0.3s linear 0;
-    
+
 }
 
 .destacados-principal .views-row:hover .views-field-field-descripcion,
@@ -531,11 +531,11 @@
         margin-top: 240px;
     }
 
-    
+
      .destacados-principal .views-row .views-field-created {
         right: initial;
     }
-    
+
 
 
     .destacados-principal .views-row-7 .views-field-created,
@@ -755,6 +755,7 @@
         background-repeat: no-repeat;
         opacity: 0;
         transition: opacity .3s;
+        pointer-events: none;
     }
 
 
@@ -769,8 +770,8 @@
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
     }
 
-    
-    
+
+
     .destacados-principal .views-row:hover .views-field-field-thumbnail:after {
         opacity: 1;
     }
