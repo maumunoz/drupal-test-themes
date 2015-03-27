@@ -742,25 +742,23 @@
         margin-left: 50%;
     }
 
-    .destacados-principal .views-row .views-field-field-thumbnail:after {
-        content: "";
+    .destacados-principal .views-field-field-thumbnail .views-field-overlay {
+        width: 100%;
+        height: 100%;
         position: absolute;
         left: 0;
-        right: 0;
         top: 0;
-        bottom: 0;
         background-color: rgba(255, 216, 0, .7);
         background-image: url("../images/hoverplus.png");
         background-position: center center;
         background-repeat: no-repeat;
         opacity: 0;
         transition: opacity .3s;
-        pointer-events: none;
+        cursor: pointer;
     }
 
-
-    .destacados-principal .views-row.views-row-1 .views-field-field-thumbnail:after ,
-    .destacados-principal .views-row.views-row-6 .views-field-field-thumbnail:after {
+    .destacados-principal .views-row.views-row-1 .views-field-field-thumbnail .views-field-overlay,
+    .destacados-principal .views-row.views-row-6 .views-field-field-thumbnail .views-field-overlay {
         background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
         background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
         background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
@@ -770,9 +768,7 @@
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
     }
 
-
-
-    .destacados-principal .views-row:hover .views-field-field-thumbnail:after {
+    .destacados-principal .views-row:hover .views-field-field-thumbnail .views-field-overlay {
         opacity: 1;
     }
 

@@ -3,11 +3,11 @@
     'use strict';
 
     var node = '.galeria-chicas-aguila',
-        offset = 8,
+        offset = 4,
         limit = offset,
         galleryItems = [],
         btnLoad,
-        showAllAction = true; // Choose to make items show by batch or to show all items
+        showAllAction = false; // Choose to make items show by batch or to show all items
 
     $.initModule(node, function ($, el) {
         galleryItems = $(el).find('.media-gallery-media .field-item');
