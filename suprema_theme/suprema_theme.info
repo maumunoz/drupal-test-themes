@@ -10,7 +10,7 @@ stylesheets[all ][] = 'css/global.css'
 stylesheets[all ][] = 'css/preHeader.css'
 stylesheets[all ][] = 'css/header.css'
 stylesheets[all ][] = 'css/footer.css'
-stylesheets[all ][] = 'css/autor.css'
+stylesheets[all ][] = 'css/autores.css'
 stylesheets[all ][] = 'css/section-age-gate.css'
 stylesheets[all ][] = 'css/homepage.css'
 
