@@ -62,7 +62,7 @@ div#messages {
 }
 
 .ulreset {
-    
+
 }
 .ulhorizontal {
     display: inline-block;
@@ -75,6 +75,7 @@ div#messages {
     display: none;
 }
 /* @end */
+
 
 
 /* @group Media Query */

@@ -43,12 +43,6 @@
 
 
 
-
-
-
-
-
-
 /* @group Media Query */
 
 @media only screen and (min-width : 220px) {
@@ -65,26 +59,6 @@
     .stack-copyright{
         padding-top: 0;
     }
-
-
-}
-
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px) {
-
-    .footerUp{
-        visibility: hidden;
-        height: 0;
-    }
-    .footerMiddle{
-        visibility: hidden;
-        height: 0;
-    }
-
-    .stack-copyright{
-        padding-top: 0;
-    }
-
 
 }
 
