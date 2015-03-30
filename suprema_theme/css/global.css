@@ -15,9 +15,12 @@ body {
     background-image: url(../images/site-background.jpg);
 }
 
+.node .field + .field,
 .block + .block {
     margin-top: 0;
 }
+
+
 
 p {
     margin: 0;
@@ -25,6 +28,7 @@ p {
 
 #navigation {
     max-width: 824px;
+    max-width: 1024px;
     margin: 0 auto;
 
 }
@@ -34,7 +38,7 @@ p {
 }
 
 #content {
-    max-width: 1024px;
+    max-width: 775px;
     margin: 0 auto;
 }
 
@@ -78,6 +82,22 @@ div#messages {
 #fb-root {
     display: none;
 }
+
+#breadcrumb {
+    display: none;
+}
+
+.field-name-field-imagen-header + .field-name-body {
+    background: white;
+    padding: 32px;
+    -webkit-box-shadow: 2px 2px 15px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 2px 2px 15px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: 2px 2px 15px 0px rgba(50, 50, 50, 0.75);
+    font-size: 18px;
+    color: #3f3f3f;
+    font-stretch: condensed;
+}
+
 /* @end */
 
 

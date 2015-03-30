@@ -4,6 +4,7 @@
     $.initModule(".region-content", function ($, pageContent) {
         //Add css class to page based on URL
         var contentAttr = pageContent.find("*[typeof*='foaf:Document']"),
+            titleAttr = pageContent.find("*[property*='dc:title']"),
             classList;
         if(contentAttr.length) {
             contentAttr = contentAttr.attr('about');
@@ -13,6 +14,10 @@
                     $('body').addClass(val);
                 });
             }
+        }
+        if(titleAttr.length) {
+            titleAttr = "title-"+titleAttr.attr('content');
+            $('body').addClass(titleAttr);
         }
     });
 

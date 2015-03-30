@@ -27,6 +27,10 @@
 
 }
 
+.inicio .field-name-field-imagen-header {
+    display: none;
+}
+
 .slider-cta {
     top: 42%;
     width: 330px;

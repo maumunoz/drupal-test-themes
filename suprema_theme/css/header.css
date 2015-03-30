@@ -137,7 +137,7 @@
     margin-top: 9px;
     border-radius: 15px;
     padding-left: 5px;
-    
+
 }
 
 #search-block-form .form-item, 
@@ -181,7 +181,7 @@
 }
 
 #navigation .menu li:nth-child(2) {
-  margin-right: 190px;
+    margin-right: 360px;
 }
 
 
@@ -219,7 +219,7 @@
 .mobile-main-menu .menu > li:nth-child(2n) {
     background-color: #006a30;
 }
-    
+
 /* @end */
 
 
@@ -257,7 +257,7 @@
     #search-block-form .form-text {
         display: initial;
     }
-    
+
     .stack-header-inner .site-name a {
         height: 160px;
     }
