@@ -62,7 +62,7 @@
     background-position: bottom center;
     background-repeat: repeat-x;
     font-size: 15px;
-    height: 48px;
+    height: 42px;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -80,17 +80,17 @@
 
 .social-header-left {
     float: left;
-    margin-top: 20px;
-    margin-left: 7px;
-    letter-spacing: -0.4px;
+    margin-top: 12px;
+    margin-left: 0;
+    letter-spacing: -0.0px;
 }
 
 .social-header-right-mobile,
 .social-header-right {
     float: right;
     letter-spacing: -0.4px;
-    margin-top: 16px;
-    margin-right: 20px;
+    margin-top: 6px;
+    margin-right: 8px;
     margin-left: 12px;
 }
 
@@ -99,11 +99,11 @@
 }
 
 .social-header-right ul {
-    margin-left: 10px;
+    padding-left: 0px;
 }
 
 .social-header-right li {
-    margin-left: 1px;
+    margin-left: 5px;
 }
 
 #block-system-main-menu ul.menu {
@@ -127,7 +127,7 @@
     float: right;
     background-color: #665c3e;
     height: 26px;
-    margin-top: 12px;
+    margin-top: 9px;
     border-radius: 15px;
     display: none;
 }

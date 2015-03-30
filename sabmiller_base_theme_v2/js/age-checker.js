@@ -138,6 +138,7 @@ All components name must follow this format:
                         }
 
                         setTimeout(function () {
+                            $('html').css('overflow', 'auto');
                             if (jq.cookie(cookieName) === '1') {
                                 jq.cookie(cookieName, '1', { path: '/', expires: (expire ? parseInt(Drupal.settings.age_checker.cookie_expiration, 10) : undefined) });
                             }
