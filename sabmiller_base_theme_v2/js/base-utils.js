@@ -91,6 +91,8 @@
             });
             navSlidebarContainer.insertAfter(page);
             $.slidebars();
+            
+            $.event.trigger( "sidebar-created");
         }
 
 

@@ -1,37 +1,70 @@
 /* @group Footer */
 
 
-
-.stack-copyright{
+#footer {
     background-color: #000;
     padding-top: 26px;
     border-top: 2px solid #fff;
-}
-
-.stack-width .deco-width{
     text-align: center;
 }
 
-.footerPage{
+#footer-inner {
+    padding: 0;
+    background: none;
+    margin: 0;
+}
+
+#footer h2 {
+    display: none;
+}
+
+#footer .content {
     text-align: center;
     color: #fff;
     font-family: Helvetica, Arial, sans-serif;
     font-size: 16px;
 }
 
-.footerPage a{
+#footer a{
     color: #fff;
     margin: 3px 11px 0;
 }
 
-.footerPage a:hover{
+#footer a:hover{
     color: #3f8202;
     text-decoration: none;
 }
 
-.footerMiddle {
-    display: none;
+
+#footer ul.menu {
+    text-align: center;
 }
+
+#footer ul.menu::after,
+#footer ul.menu::before {
+    content: ".";
+    display: inline-block !important;
+    color: white;
+    height: inherit;
+    visibility: visible;
+    clear: none;
+    vertical-align: middle;
+}
+
+#footer ul.menu li {
+    float: none;
+    display: inline-block;
+    padding: 0;
+}
+
+#footer ul.menu li::before {
+    content: "/";
+}
+
+#footer ul.menu li:first-child::before {
+    content: "";
+}
+
 
 .footer_right {
     float: right;
@@ -58,9 +91,15 @@
     margin-left: 14px;
 }
 
+#footer .block-menu,
 .footerDown p{
     display: none;
 }
+
+#copyright .block-menu {
+    display: none;
+}
+
 
 
 /* @end */
@@ -79,7 +118,7 @@
 @media only screen and (min-width : 992px) {
 
     
-    .footerMiddle {
+    #footer .block-menu {
         display: block;
     }
 

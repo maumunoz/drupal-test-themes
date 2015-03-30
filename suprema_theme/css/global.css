@@ -29,7 +29,7 @@ p {
 
 }
 
-.slidebar {
+.sb-slidebar {
     z-index: 10;
 }
 
@@ -65,8 +65,9 @@ div#messages {
 }
 
 .ulreset {
-
+    padding: 0;
 }
+
 .ulhorizontal {
     display: inline-block;
 }

@@ -94,6 +94,11 @@
     margin-left: 12px;
 }
 
+.social-header-right-mobile {
+    float: none;
+    text-align: center;
+}
+
 .social-header-right br {
     display: none;
 }
@@ -129,7 +134,8 @@
     height: 26px;
     margin-top: 9px;
     border-radius: 15px;
-    display: none;
+    padding-left: 5px;
+    
 }
 
 #search-block-form .form-item, 
@@ -138,6 +144,7 @@
 }
 
 #search-block-form .form-text {
+    display: none;
     background-color: #1e1b12;
     border: none;
     height: 20px;
@@ -145,11 +152,14 @@
     font-size: 14px;
     color: #fff;
     border-radius: 10px;
-    margin-left: 3px;
     width: 159px;
     font-family: Arial;
     font-size: 12px;
     font-weight: bold;
+}
+
+#search-block-form.expanded .form-text {
+    display: initial;
 }
 
 #search-block-form .form-submit {
@@ -228,6 +238,9 @@
         display: none;
     }
 
+    #search-block-form .form-text {
+        display: initial;
+    }
     
     .stack-header-inner .site-name a {
         height: 160px;
