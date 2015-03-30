@@ -36,7 +36,7 @@
             clearInterval( slideBarInterval );
             $(".mobile-main-menu ul").append( $("#copyright .menu li").clone() );
             $(".mobile-main-menu ul").append( $("#footer .menu li").clone() );
-            $(".sb-slidebar").append( $(".social-header-right-mobile") );
+            $(".mobile-main-menu ul").append( $("<li></li>").append($(".social-header-right-mobile")) );
             $(".mobile-main-menu").addClass("modified");
         }else{
         }

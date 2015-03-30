@@ -97,6 +97,8 @@
 .social-header-right-mobile {
     float: none;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 .social-header-right br {
@@ -202,8 +204,22 @@
     display: block;
 }
 
+.mobile-main-menu ul {
+    margin: 0;
+    padding: 0;
+}
 
+.mobile-main-menu .menu > li {
+    background-color: #02421f;
+    font-size: 22px;
+    font-family: Helvetica, Arial, sans-serif;
+    border-bottom: solid 1px #a29e33;
+}
 
+.mobile-main-menu .menu > li:nth-child(2n) {
+    background-color: #006a30;
+}
+    
 /* @end */
 
 
