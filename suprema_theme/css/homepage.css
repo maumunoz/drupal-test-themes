@@ -27,15 +27,6 @@
 
 }
 
-.inicio .stack-copyright {
-    border: none;
-}
-
-.inicio .footerUp, 
-.inicio .footerMiddle {
-    display: none;
-}
-
 .home_blackarea {
     font-size: 18px;
     display: block;

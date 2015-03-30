@@ -7,6 +7,9 @@
         url("../fonts/HoeflerText-Regular.woff") format("woff"),
         url("../fonts/HoeflerText-Regular.ttf") format("truetype"),
         url("../fonts/HoeflerText-Regular.svg#HoeflerText-Regular") format("svg"); }
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
 
 #page {
     background-image: url(../images/site-background.jpg);

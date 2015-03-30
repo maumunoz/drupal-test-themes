@@ -1,27 +1,46 @@
 /* @group Groupname */
 
+.wrapperMjs{
+    background-color: #000;
+    color:#424242;
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    color: #929292;
+}
+
+.cookie-close{
+    float: right;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.wrapperMjs h1{
+    color: #038f41;
+    font-size: 23px;
+}
+
+
+#age_checker_message .wrapperMjs {
+    padding: 0 8% 9px 3.1%;
+    text-align: left;
+    font-size: 12.6px;
+}
+
+#age_checker_message .wrapperMjs h1 {
+    margin: 13px 0 0 0;
+    font-size: 28px;
+}
+
+#age_checker_message .wrapperMjs .cookie-close {
+    position: absolute;
+    top: 37px;
+    right: 3px;
+}
 
 /* @end */
 
-    .wrapperMjs{
-        background-color: #000;
-        color:#424242;
-        width: 100%;
-        height: auto;
-        padding: 30px;
-        color: #929292;
-    }
 
-    .cookie-close{
-        float: right;
-        cursor: pointer;
-        cursor: hand;
-    }
-
-    .wrapperMjs h1{
-        color: #038f41;
-        font-size: 23px;
-    }
 
 /* @group Media Query */
 

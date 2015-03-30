@@ -61,7 +61,6 @@
     background-color: #1a1b1b;
     background-position: bottom center;
     background-repeat: repeat-x;
-    font-family: HW-Regular;
     font-size: 15px;
     height: 48px;
     padding-left: 20px;
@@ -118,7 +117,6 @@
 #block-system-main-menu ul.menu a {
     color: #fff;
     font-size: 18px;
-    font-family: HW-Regular;
 }
 
 #block-system-main-menu ul.menu a:hover {
@@ -184,6 +182,17 @@
     background-color: white;
     height: 6px;
 }
+
+
+.wrapperMjs {
+    display: none;
+}
+
+.accept-cookie .wrapperMjs {
+    display: block;
+}
+
+
 
 /* @end */
 

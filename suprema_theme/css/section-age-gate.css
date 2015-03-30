@@ -23,8 +23,7 @@
 
 #age_checker_overlay {
     height: 100% !important;
-    padding-top: 2% !important;
-    padding-bottom: 70px !important;
+    padding: 0 !important;
 }
 
 
@@ -74,7 +73,6 @@
 }
 
 .age_checker-brief {
-    font-family: 'HW-Regular';
     padding-bottom: 10px;
 }
 
@@ -213,16 +211,15 @@
 .age_checker-footer {
     padding-top: 10px;
     padding-bottom: 60px;
-    height: 70px !important;
-    display: none;
+    position: relative;
 }
 
 .age_checker-footer:after {
-   content: ".";
-   visibility: hidden;
-   display: block;
-   height: 0;
-   clear: both;
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
 }
 
 .age_checker-footer .logo-sabmiller,
@@ -386,7 +383,7 @@
         float: left;
         width: 60%;
     }
-    
+
     .age_checker-footer {
         display: block;
     }
