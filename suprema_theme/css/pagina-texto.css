@@ -3,26 +3,56 @@
 
 /* @end */
 
+/*TERMINOS DE USO*/
 
-/* @group Media Query */
 
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px) {
+    .field-items .even{
+         float: right;
+    }
+
+    .terminos-de-uso body {
+         background-color: #000;
+    }
+    .terminos-de-uso .field-item{
+        color: #fff;
+    }
+
+    .terminos-de-uso .field-item p{
+        margin-bottom: 10px;
+        float: left;
+        width: 50%;
+        padding:2% 3%;
+    }
+
+    .terminos-de-uso h1{
+        display: block !important;
+        background-color: #009633;
+        text-align: center;
+        color: #fff;background: #00aa38;
+        background: -moz-linear-gradient(top, #00aa38 38%, #00762b 67%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(38%,#00aa38), color-stop(67%,#00762b));
+        background: -webkit-linear-gradient(top, #00aa38 38%,#00762b 67%);
+        background: -o-linear-gradient(top, #00aa38 38%,#00762b 67%);
+        background: -ms-linear-gradient(top, #00aa38 38%,#00762b 67%);
+        background: linear-gradient(to bottom, #00aa38 38%,#00762b 67%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00aa38', endColorstr='#00762b',GradientType=0 );
+        -webkit-border-top-left-radius: 10px;
+        -webkit-border-top-right-radius: 10px;
+        -moz-border-radius-topleft: 10px;
+        -moz-border-radius-topright: 10px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border: 1px solid #84d047;
+        text-shadow: 2px 2px #006223;
+        font-weight: bold;
+        font-size: 23px;
+        padding: 5px 0;
+    }
+
+@media only screen and (min-width:0px) and (max-width: 480px)  {
+
+        .terminos-de-uso .field-item p{
+            width: 100%;
+        }
 }
 
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px) {
-}
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
-}
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
-}
-/* @end */
