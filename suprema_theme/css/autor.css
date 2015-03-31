@@ -38,7 +38,7 @@
         float: right;
         width: 55%;
         text-align: center;
-        margin-right: 5%;
+        margin-right: 8%;
     }
 
     .page-autores .views-row-odd p{
@@ -46,7 +46,7 @@
         float: left;
         width: 55%;
         text-align: center;
-        margin-left: 5%;
+        margin-left: 8%;
     }
 
     .page-autores .views-row hr{
