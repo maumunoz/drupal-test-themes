@@ -2,7 +2,8 @@
 (function ($) {
     'use strict';
     var node = '.descripcion-ferias-fiestas',
-        social;
+        social,
+        links;
 
     $.initModule(node, function ($, el) {
         el.find('.links-list li:empty').remove();
@@ -18,6 +19,10 @@
             });
         } else {
             $(social).remove();
+        }
+        links = el.find('.links-list');
+        if ($(links).html().trim() === '') {
+            $(links).remove();
         }
     });
 
