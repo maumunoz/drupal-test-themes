@@ -1,422 +1,314 @@
-/* @group Groupname */
 
 
-/* @end*/
 
-    .view-autores {
+    .page-autores .view-autores {
         background-color: #fff;
+        padding: 20px 60px;
     }
 
-    .views-row a{
+    .page-autores .photo{
+        width: 34%;
+    }
+
+    .page-autores .views-row-odd a{
+    clear: both;
+    }
+
+    .page-autores h1{
+        text-align: center;
+    }
+
+
+    .page-autores .views-row,
+    .page-autores .views-row  hr{
+        clear: both;
+    }
+
+    .page-autores .views-row-odd img{
+        float: left;
+        margin-bottom: 15px;
+    }
+    .page-autores .views-row-even img{
+        float: right;
+        margin-bottom: 15px;
+    }
+
+   .page-autores .views-row-even p{
+        width: 50%;
+        float: right;
+        width: 55%;
+        text-align: center;
+        margin-right: 5%;
+    }
+
+    .page-autores .views-row-odd p{
+        width: 50%;
+        float: left;
+        width: 55%;
+        text-align: center;
+        margin-left: 5%;
+    }
+
+    .page-autores .views-row hr{
+        width: 80%;
+        background-color: #ffd43f;
+        height: 5px;
+    }
+
+
+    .page-autores .views-row-even img{
+        float: right;
+    }
+
+    .autorFacebook{
+        width: 5%;
+        margin-right: 40px;
+        float: left;
+        text-align: center;
+        margin-left: 18%;
+        margin-bottom: 2%;
+    }
+    .autorTwitter{
+        width: 5%;
+        margin-right: 40px;
+        float: left;
+    }
+    .autorBlogger{
+        width: 5%;
+        margin-right: 20px;
+        float: left;
+    }
+
+    .autorFacebook a{
+        background-image: url(http://suprema.sabmiller.acsitefactory.com/sites/g/files/ogq836/f/media_crop/121/public/201503/blogSuprema_DSKwsfjw_02.png);
+        background-repeat: no-repeat;
+        text-indent: -9999px;
+        width: 61px;
+        height: 66px;
+        float: left;
+
+    }
+    .autorTwitter a{
+        background-image: url(http://suprema.sabmiller.acsitefactory.com/sites/g/files/ogq836/f/media_crop/126/public/201503/jbae_02.png);
+        background-repeat: no-repeat;
+        text-indent: -9999px;
+        width: 61px;
+        height: 66px;
+        float: left;
+    }
+
+    .autorBlogger a{
+        background-image: url(http://suprema.sabmiller.acsitefactory.com/sites/g/files/ogq836/f/media_crop/131/public/201503/blogSuprema_DSK_01_03_02.png);
+        background-repeat: no-repeat;
+        text-indent: -9999px;
+        width: 61px;
+        height: 66px;
+        float: left;
+    }
+
+    .titulo a{
+        margin-bottom: 20px;
         color: #878787;
         text-decoration: none;
         text-transform: uppercase;
+
     }
+@media only screen and (min-width:0px) and (max-width: 320px)  {
 
-    .node-autor{
-        border-bottom: 4px solid #ffd43f;
-        margin-bottom: 10px;
-    }
-
-/* @group Media Query */
-
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 220px) {
-
-
-    /*SOCIAL LINKS*/
-
-
-    .field-name-field-facebook-link a{
-        background-image: url(http://suprema.sabmiller.acsitefactory.com/sites/g/files/ogq836/f/media_crop/136/public/201503/facebook-mobile.png);
-        background-repeat: no-repeat;
-        float: left;
-        text-indent: -9999px;
-        height: 34px;
-        width: 31px;
-        margin-bottom: 20px;
-        margin-left: 55px;
-        margin-right: 10px;
-    }
-       .field-name-field-twitter-link a{
-
-        background-image: url(http://suprema.sabmiller.acsitefactory.com/sites/g/files/ogq836/f/media_crop/146/public/201503/twitter-mobile.png);
-        background-repeat: no-repeat;
-        float: left;
-        margin-right: 10px;
-        text-indent: -9999px;
-        width: 31px;
-        height: 34px;
-        margin-bottom: 20px;
-    }
-
-
-        .field-name-field-blogger-link a{
-
-        background-image: url(http://suprema.sabmiller.acsitefactory.com/sites/g/files/ogq836/f/media_crop/141/public/201503/blogger-mobile.png);
-        background-repeat: no-repeat;
-        float: left;
-        margin-left: 0px;
-        text-indent: -9999px;
-        width: 31px;
-        height: 34px;
-        margin-bottom: 20px;
-        margin-right: 65px;
-    }
-    /*AUTOR IMAGES*/
-        .views-row-odd img {
-        width: 70%;
-        height:auto;
-        margin-bottom: 20px;
-        margin-left: 28px;
-    }
-
-       .views-row-even img {
-        width: 70%;
-        height: auto;
-        margin-bottom: 20px;
-        margin-left: 33px;
-    }
-/*AUTOR TITTLES*/
-        .views-row-odd h2{
-         width: 100%;
-        text-align: center;
-    }
-
-    .views-row-even h2{
-        width: 100%;
-        text-align: center;
-    }
-    /*AUTOR paragraph*/
-    .views-row-even p{
-        width: 100%;
-    }
-
-        .views-row-odd p{
-        width: 100%;
-    }
-
-    .views-row p{
-        text-align: center;
-        color:#878787;
-        width: 100%;
-        padding: 0px;
-    }
-
-    .node-autor{
-        padding: 10px;
-    }
-
-
-}
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px) {
-
-    .field-name-field-facebook-link a{
-
-        background-image: url(http://suprema.sabmiller.acsitefactory.com/sites/g/files/ogq836/f/media_crop/136/public/201503/facebook-mobile.png);
-        background-repeat: no-repeat;
-        float: left;
-        text-indent: -9999px;
-        height: 34px;
-        width: 31px;
-        margin-bottom: 20px;
-        margin-left: 80px;
-    }
-
-   .field-name-field-twitter-link a{
-
-        background-image: url(http://suprema.sabmiller.acsitefactory.com/sites/g/files/ogq836/f/media_crop/146/public/201503/twitter-mobile.png);
-        background-repeat: no-repeat;
-        float: left;
-        margin-right: 10px;
-        text-indent: -9999px;
-        width: 31px;
-        height: 34px;
-        margin-bottom: 20px;
-    }
-
-
-        .field-name-field-blogger-link a{
-
-        background-image: url(http://suprema.sabmiller.acsitefactory.com/sites/g/files/ogq836/f/media_crop/141/public/201503/blogger-mobile.png);
-        background-repeat: no-repeat;
-        float: left;
-        margin-left: 0px;
-        text-indent: -9999px;
-        width: 31px;
-        height: 34px;
-        margin-bottom: 20px;
-    }
-
-       .node-autor{
-        border-bottom: 4px solid #ffd43f;
-    }
-
-       .views-row p{
-        text-align: center;
-        color:#878787;
-        width: 100%;
-        padding: 50px;
-    }
-
-}
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
-
-
-    .view-autores {
-        background-color: #fff;
-        padding: 20px 35px;
-    }
-
-    .views-row-odd img {
-        float: left;
-        margin-right: 15px;
-        width: 50%;
-        height:auto;
-        margin-left: 0px;
-    }
-
-    .views-row-even img {
-        float: right;
-        margin-left: 15px;
-        width: 50%;
-        height: auto;
-    }
-
-    .autor-header a{
-        color: #878787;
-        text-decoration: none;
-    }
-
-
-    .views-row-odd h2{
-         width: 45%;
-        text-align: center;
-        float: right;
-    }
-
-    .views-row-even h2{
-        width: 45%;
-        text-align: center;
-        float: left;
-    }
-
-    .views-row-even p{
-        width: 40%;
-        float: right;
-    }
-
-    .views-row p{
-        text-align: center;
-        color:#878787;
-        width: 40%;
-        float: right;
+    .page-autores .view-autores {
         padding: 0;
-        margin-right: 6%;
     }
 
-    .views-row-odd p{
-        margin-right: 15px;
+    .page-autores .views-row p{
+        font-size: 10px;
+        width: 40%;
     }
 
-    .node-autor{
-        border-bottom: 4px solid #ffd43f;
-    }
-
-    /*Redes sociales*/
-
-    .views-row-odd .field-name-field-facebook-link a{
-
-        background-image: url(http://suprema.sabmiller.acsitefactory.com/sites/g/files/ogq836/f/media_crop/121/public/201503/blogSuprema_DSKwsfjw_02.png);
-        background-repeat: no-repeat;
-        float: left;
-        margin-left: 80px;
-        text-indent: -9999px;
-        width: 61px;
-        height: 66px;
-        margin-bottom: 20px;
-    }
-
-    .field-name-field-facebook-link a{
-        background-image: url(http://suprema.sabmiller.acsitefactory.com/sites/g/files/ogq836/f/media_crop/121/public/201503/blogSuprema_DSKwsfjw_02.png);
-        background-repeat: no-repeat;
-        float: left;
-        margin-left: 9%;
-        text-indent: -9999px;
-        width: 61px;
-        height: 66px;
-        margin-bottom: 20px;
-    }
-.field-name-field-twitter-link a{
-
-        background-image: url(http://suprema.sabmiller.acsitefactory.com/sites/g/files/ogq836/f/media_crop/126/public/201503/jbae_02.png);
-        background-repeat: no-repeat;
-        float: left;
-        text-indent: -9999px;
-        width: 61px;
-        height: 66px;
-        margin-bottom: 20px;
-    }
-
-
-        .field-name-field-blogger-link a{
-
-        background-image: url(http://suprema.sabmiller.acsitefactory.com/sites/g/files/ogq836/f/media_crop/131/public/201503/blogSuprema_DSK_01_03_02.png);
-        background-repeat: no-repeat;
-        float: left;
-        margin-left: 0px;
-        text-indent: -9999px;
-        width: 61px;
-        height: 66px;
-        margin-bottom: 20px;
-        margin-right: 0;
-    }
-
-
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
-
-        .views-row-odd .field-name-field-facebook-link a{
-
-        background-image: url(http://suprema.sabmiller.acsitefactory.com/sites/g/files/ogq836/f/media_crop/121/public/201503/blogSuprema_DSKwsfjw_02.png);
-        background-repeat: no-repeat;
-        float: left;
-        margin-left: 14.9%;
-        text-indent: -9999px;
-        width: 61px;
-        height: 66px;
-        margin-bottom: 20px;
-    }
-
-    .field-name-field-facebook-link a{
-        background-image: url(http://suprema.sabmiller.acsitefactory.com/sites/g/files/ogq836/f/media_crop/121/public/201503/blogSuprema_DSKwsfjw_02.png);
-        background-repeat: no-repeat;
-        float: left;
-        margin-left: 11.3%;
-        text-indent: -9999px;
-        width: 61px;
-        height: 66px;
-        margin-bottom: 20px;
-    }
-
-}
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
-
-
-    .view-autores {
-        background-color: #fff;
-    }
-
-    .views-row-odd img {
-        float: left;
-        margin-right: 15px;
-        width: 50%;
-        height:auto;
-        margin-left: 1px;
-    }
-
-    .views-row-even img {
-        float: right;
-        margin-left: 15px;
+    .page-autores img{
         width: 50%;
         height: auto;
     }
 
-    .autor-header a{
-        color: #878787;
-        text-decoration: none;
+    .titulo a{
+        font-size: 12px;
+        margin: 0;
+        position: relative;
+
+        font-weight: bold;
     }
 
-
-    .views-row-odd h2{
-         width: 45%;
-        text-align: center;
-        float: right;
+    .autorFacebook{
+        margin-left: 19.4%;
+        margin-right: 32px;
     }
 
-    .views-row-even h2{
-        width: 45%;
-        text-align: center;
-        float: left;
+    .autorFacebook a{
+        background-image: url(http://suprema.sabmiller.acsitefactory.com/sites/g/files/ogq836/f/media_crop/136/public/201503/facebook-mobile.png);
+        height: 34px;
+        width: 31px;
+        position: relative;
+        right: 35px;
+        }
+
+    .autorTwitter a{
+        background-image: url(http://suprema.sabmiller.acsitefactory.com/sites/g/files/ogq836/f/media_crop/146/public/201503/twitter-mobile.png);
+        width: 31px;
+        height: 34px;
+        position: relative;
+        right: 45px;
+        }
+
+    .autorBlogger a{
+        background-image: url(http://suprema.sabmiller.acsitefactory.com/sites/g/files/ogq836/f/media_crop/141/public/201503/blogger-mobile.png);
+        width: 31px;
+        height: 34px;
+        position: relative;
+        right: -79px;
+        top: -40px;
+        }
+
+    .autorTwitter{
+        margin-right: 0px;
     }
 
-    .views-row-even p{
-        width: 40%;
-        float: right;
+    .page-autores .views-row p{
+        position: relative;
+        top: -20px;
     }
 
-    .views-row p{
-        text-align: center;
-        color:#878787;
-        width: 40%;
-        float: right;
+}
+
+
+
+@media only screen and (min-width:320px) and (max-width: 480px)  {
+
+
+    .page-autores .view-autores {
         padding: 0;
-        margin-right: 25px;
     }
 
-    .views-row-odd p{
-        margin-right: 20px;
+    .page-autores .views-row p{
+        font-size: 10px;
+        width: 40%;
     }
 
-    .node-autor{
-        border-bottom: 4px solid #ffd43f;
+    .page-autores img{
+        width: 50%;
+        height: auto;
     }
 
-    /*Redes sociales*/
+    .titulo a{
+        font-size: 12px;
+        margin: 0;
+        position: relative;
 
-    .views-row-odd .field-name-field-facebook-link a{
-        background-image: url(http://suprema.sabmiller.acsitefactory.com/sites/g/files/ogq836/f/media_crop/121/public/201503/blogSuprema_DSKwsfjw_02.png);
-        background-repeat: no-repeat;
-        float: left;
+        font-weight: bold;
+    }
+
+    .autorFacebook{
+        margin-left: 19.4%;
+        margin-right: 32px;
+    }
+
+    .autorFacebook a{
+        background-image: url(http://suprema.sabmiller.acsitefactory.com/sites/g/files/ogq836/f/media_crop/136/public/201503/facebook-mobile.png);
+        height: 34px;
+        width: 31px;
+        position: relative;
+        right: 35px;
+        }
+
+    .autorTwitter a{
+        background-image: url(http://suprema.sabmiller.acsitefactory.com/sites/g/files/ogq836/f/media_crop/146/public/201503/twitter-mobile.png);
+        width: 31px;
+        height: 34px;
+        position: relative;
+        right: 49px;
+        }
+
+    .autorBlogger a{
+        background-image: url(http://suprema.sabmiller.acsitefactory.com/sites/g/files/ogq836/f/media_crop/141/public/201503/blogger-mobile.png);
+        width: 31px;
+        height: 34px;
+        position: relative;
+        right: 32px;
+        }
+
+    .autorTwitter{
+        margin-right: 0px;
+    }
+
+}
+
+@media only screen and (min-width:481px) and (max-width: 640px)  {
+
+    .page-autores .view-autores {
+        padding: 0;
+    }
+
+    .page-autores img{
+        width: 50%;
+        height: auto;
+    }
+
+    .autorFacebook a{
+        position: relative;
+        top: -0px;
+        right: 70px;
+    }
+    .autorTwitter a{
+        position: relative;
+        top: -0px;
+        right: 62px;
+    }
+    .autorBlogger a{
+    position: relative;
+    right: 15px;
+    }
+
+    .titulo a{
+            font-size: 18px;
+        }
+
+    .page-autores .views-row p{
+        font-size: 12px;
+        width: 40%;
+    }
+
+    .autorTwitter{
+        margin-right: 0px;
+    }
+
+}
+
+@media only screen and (min-width:641px) and (max-width: 1024px)  {
+
+    .autorFacebook{
+        margin-bottom: 0%;
         margin-left: 12%;
-        text-indent: -9999px;
-        width: 61px;
-        height: 66px;
-        margin-bottom: 20px;
-    }
-
-    .field-name-field-facebook-link a{
-        background-image: url(http://suprema.sabmiller.acsitefactory.com/sites/g/files/ogq836/f/media_crop/121/public/201503/blogSuprema_DSKwsfjw_02.png);
-        background-repeat: no-repeat;
-        float: left;
-        margin-left: 8%;
-        text-indent: -9999px;
-        width: 61px;
-        height: 66px;
-        margin-bottom: 20px;
-    }
-
-.field-name-field-twitter-link a{
-        background-image: url(http://suprema.sabmiller.acsitefactory.com/sites/g/files/ogq836/f/media_crop/126/public/201503/jbae_02.png);
-        background-repeat: no-repeat;
-        float: left;
-        margin-left: 10px;
-        text-indent: -9999px;
-        width: 61px;
-        height: 66px;
-        margin-bottom: 20px;
-    }
-
-
-        .field-name-field-blogger-link a{
-        background-image: url(http://suprema.sabmiller.acsitefactory.com/sites/g/files/ogq836/f/media_crop/131/public/201503/blogSuprema_DSK_01_03_02.png);
-        background-repeat: no-repeat;
-        float: left;
-        margin-left: 0px;
-        text-indent: -9999px;
-        width: 61px;
-        height: 66px;
-        margin-bottom: 20px;
-    }
-
-
+        margin-right: 72px;
+        text-align: center;
+        width: 0%;
 }
 
-/* @end */
+    .autorBlogger a{
+        position: relative;
+        right: 3px;
+
+    }
+
+    .titulo a{
+            font-size: 22px;
+        }
+
+    .page-autores .view-autores {
+        padding: 0;
+    }
+
+    .page-autores .views-row p{
+        font-size: 12px;
+        width: 40%;
+        margin-top: 10px;
+    }
+
+}
