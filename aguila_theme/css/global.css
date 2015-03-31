@@ -78,7 +78,8 @@
 .galeria-chicas-aguila .view-header,
 .galeria-chicas-aguila .view-content,
 .calendario-chicas-aguila,
-.page-user .content-area {
+.page-user .content-area,
+.descripcion-ferias-fiestas .view-content {
     position: relative;
     margin: 0 auto;
     padding: 0 5px;
@@ -310,6 +311,17 @@ $black, $dark           = #000    | rgb(0, 0, 0);
     color: #fff;
     border-color: transparent;
     background-color: #0565be;
+}
+
+a.btn-blue.btn-anim {
+    background-image: linear-gradient(to right, #0565be 49%, #fff600 49%);
+    background-size: 210% 100%;
+    color: #fff600;
+}
+
+a.btn-blue.btn-anim:hover {
+    color: #0565be;
+    background-color: #fff600;
 }
 
 .btn-dark-cyan,
@@ -911,4 +923,5 @@ input.error {
 @media only screen and (min-width : 1200px) {
 
 }
+
 /* @end */
