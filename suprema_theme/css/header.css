@@ -15,8 +15,8 @@
     position: absolute;
     width: 30%;
     z-index: 10;
-    top: -18px;
-    margin: 0 35%;
+    top: -50px;
+    margin: 0 35%;-50px
     pointer-events: none;
     transition: top 0.5s, opacity 0.5s;
 }
@@ -35,7 +35,7 @@
     margin: 0 auto;
     z-index: 10;
     background-size: contain;
-    background-position: center;
+    background-position: center top;
     pointer-events: all;
 }
 
@@ -264,6 +264,12 @@
     #preheader {
         display: block;
     }
+    
+    #site-name {
+        top: -18px;
+
+    }
+
 }
 
 /* Large Devices, Wide Screens */

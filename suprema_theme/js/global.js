@@ -16,7 +16,7 @@
             }
         }
         if(titleAttr.length) {
-            titleAttr = "title-"+titleAttr.attr('content');
+            titleAttr = "title-"+titleAttr.attr('content').replace(" ","-");
             $('body').addClass(titleAttr);
         }
     });

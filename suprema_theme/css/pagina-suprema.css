@@ -1,11 +1,21 @@
 /* @group Groupname */
 
+
 .title-Suprema .field-name-body {
+    color: #3f3f3f;
+    font-stretch: condensed;
     min-height: 460px;
+    font-size: 29px;
+    line-height: 0.9;
+}
+.title-Suprema .field-name-body .media-thumbnail-frame img {
+    max-width: 100%;
+    height: auto;
 }
 .title-Suprema .field-name-body .media-thumbnail-frame {
     float: right;
-    margin-top: -140px;
+    margin-top: -156px;
+    max-width: 40%;
 }
 
 /* @end */
@@ -27,6 +37,10 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
+    .title-Suprema .field-name-body .media-thumbnail-frame {
+        margin-top: -140px;
+    }
+
 }
 
 /* Large Devices, Wide Screens */

@@ -1,121 +1,122 @@
 
 
 
-    .page-autores .view-autores {
-        background-color: #fff;
-        padding: 20px 60px;
-    }
+.page-autores .view-autores .view-content {
+    background-color: #fff;
+    padding: 12px 60px;
+}
 
-    .page-autores .photo{
-        width: 34%;
-    }
+.page-autores .photo{
+    width: 34%;
+}
 
-    .page-autores .views-row-odd a{
+.page-autores .views-row-odd a{
     clear: both;
-    }
+}
 
-    .page-autores h1{
-        text-align: center;
-    }
-
-
-    .page-autores .views-row,
-    .page-autores .views-row  hr{
-        clear: both;
-    }
-
-    .page-autores .views-row-odd img{
-        float: left;
-        margin-bottom: 15px;
-    }
-    .page-autores .views-row-even img{
-        float: right;
-        margin-bottom: 15px;
-    }
-
-   .page-autores .views-row-even p{
-        width: 50%;
-        float: right;
-        width: 55%;
-        text-align: center;
-        margin-right: 8%;
-    }
-
-    .page-autores .views-row-odd p{
-        width: 50%;
-        float: left;
-        width: 55%;
-        text-align: center;
-        margin-left: 8%;
-    }
-
-    .page-autores .views-row hr{
-        width: 80%;
-        background-color: #ffd43f;
-        height: 5px;
-    }
+.page-autores h1{
+    text-align: center;
+}
 
 
-    .page-autores .views-row-even img{
-        float: right;
-    }
+.page-autores .views-row,
+.page-autores .views-row  hr{
+    clear: both;
+}
 
-    .autorFacebook{
-        width: 5%;
-        margin-right: 40px;
-        float: left;
-        text-align: center;
-        margin-left: 18%;
-        margin-bottom: 2%;
-    }
-    .autorTwitter{
-        width: 5%;
-        margin-right: 40px;
-        float: left;
-    }
-    .autorBlogger{
-        width: 5%;
-        margin-right: 20px;
-        float: left;
-    }
+.page-autores .views-row-odd img{
+    float: left;
+    margin-bottom: 15px;
+}
+.page-autores .views-row-even img{
+    float: right;
+    margin-bottom: 15px;
+}
 
-    .autorFacebook a{
-        background-image: url(http://suprema.sabmiller.acsitefactory.com/sites/g/files/ogq836/f/media_crop/121/public/201503/blogSuprema_DSKwsfjw_02.png);
-        background-repeat: no-repeat;
-        text-indent: -9999px;
-        width: 61px;
-        height: 66px;
-        float: left;
+.page-autores .views-row-even p{
+    width: 50%;
+    float: left;
+    width: 49%;
+    text-align: center;
+    margin-right: 2%;
+}
 
-    }
-    .autorTwitter a{
-        background-image: url(http://suprema.sabmiller.acsitefactory.com/sites/g/files/ogq836/f/media_crop/126/public/201503/jbae_02.png);
-        background-repeat: no-repeat;
-        text-indent: -9999px;
-        width: 61px;
-        height: 66px;
-        float: left;
-    }
+.page-autores .views-row-odd p{
+    width: 50%;
+    float: left;
+    width: 55%;
+    text-align: center;
+    margin-left: 2%;
+}
 
-    .autorBlogger a{
-        background-image: url(http://suprema.sabmiller.acsitefactory.com/sites/g/files/ogq836/f/media_crop/131/public/201503/blogSuprema_DSK_01_03_02.png);
-        background-repeat: no-repeat;
-        text-indent: -9999px;
-        width: 61px;
-        height: 66px;
-        float: left;
-    }
+.page-autores .views-row hr{
+    width: 80%;
+    background-color: #ffd43f;
+    height: 3px;
+}
 
-    .titulo a{
-        margin-bottom: 20px;
-        color: #878787;
-        text-decoration: none;
-        text-transform: uppercase;
 
-    }
+.page-autores .views-row-even img{
+    float: right;
+}
+
+.autorFacebook{
+    width: 5%;
+    margin-right: 40px;
+    float: left;
+    text-align: center;
+    margin-left: 18%;
+    margin-bottom: 2%;
+}
+.autorTwitter{
+    width: 5%;
+    margin-right: 40px;
+    float: left;
+}
+.autorBlogger{
+    width: 5%;
+    margin-right: 20px;
+    float: left;
+}
+
+.autorFacebook a{
+    background-image: url(http://suprema.sabmiller.acsitefactory.com/sites/g/files/ogq836/f/media_crop/121/public/201503/blogSuprema_DSKwsfjw_02.png);
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    width: 61px;
+    height: 66px;
+    float: left;
+
+}
+.autorTwitter a{
+    background-image: url(http://suprema.sabmiller.acsitefactory.com/sites/g/files/ogq836/f/media_crop/126/public/201503/jbae_02.png);
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    width: 61px;
+    height: 66px;
+    float: left;
+}
+
+.autorBlogger a{
+    background-image: url(http://suprema.sabmiller.acsitefactory.com/sites/g/files/ogq836/f/media_crop/131/public/201503/blogSuprema_DSK_01_03_02.png);
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    width: 61px;
+    height: 66px;
+    float: left;
+}
+
+.titulo a{
+    margin-bottom: 20px;
+    color: #878787;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    font-weight: bold;
+}
 @media only screen and (min-width:0px) and (max-width: 320px)  {
 
-    .page-autores .view-autores {
+    .page-autores .view-autores .view-content {
         padding: 0;
     }
 
@@ -148,7 +149,7 @@
         width: 31px;
         position: relative;
         right: 35px;
-        }
+    }
 
     .autorTwitter a{
         background-image: url(http://suprema.sabmiller.acsitefactory.com/sites/g/files/ogq836/f/media_crop/146/public/201503/twitter-mobile.png);
@@ -156,7 +157,7 @@
         height: 34px;
         position: relative;
         right: 45px;
-        }
+    }
 
     .autorBlogger a{
         background-image: url(http://suprema.sabmiller.acsitefactory.com/sites/g/files/ogq836/f/media_crop/141/public/201503/blogger-mobile.png);
@@ -165,7 +166,7 @@
         position: relative;
         right: -79px;
         top: -40px;
-        }
+    }
 
     .autorTwitter{
         margin-right: 0px;
@@ -183,10 +184,6 @@
 @media only screen and (min-width:320px) and (max-width: 480px)  {
 
 
-    .page-autores .view-autores {
-        padding: 0;
-    }
-
     .page-autores .views-row p{
         font-size: 10px;
         width: 40%;
@@ -216,7 +213,7 @@
         width: 31px;
         position: relative;
         right: 35px;
-        }
+    }
 
     .autorTwitter a{
         background-image: url(http://suprema.sabmiller.acsitefactory.com/sites/g/files/ogq836/f/media_crop/146/public/201503/twitter-mobile.png);
@@ -224,7 +221,7 @@
         height: 34px;
         position: relative;
         right: 49px;
-        }
+    }
 
     .autorBlogger a{
         background-image: url(http://suprema.sabmiller.acsitefactory.com/sites/g/files/ogq836/f/media_crop/141/public/201503/blogger-mobile.png);
@@ -232,7 +229,7 @@
         height: 34px;
         position: relative;
         right: 32px;
-        }
+    }
 
     .autorTwitter{
         margin-right: 0px;
@@ -241,10 +238,6 @@
 }
 
 @media only screen and (min-width:481px) and (max-width: 640px)  {
-
-    .page-autores .view-autores {
-        padding: 0;
-    }
 
     .page-autores img{
         width: 50%;
@@ -262,13 +255,13 @@
         right: 62px;
     }
     .autorBlogger a{
-    position: relative;
-    right: 15px;
+        position: relative;
+        right: 15px;
     }
 
     .titulo a{
-            font-size: 18px;
-        }
+        font-size: 18px;
+    }
 
     .page-autores .views-row p{
         font-size: 12px;
@@ -289,7 +282,7 @@
         margin-right: 72px;
         text-align: center;
         width: 0%;
-}
+    }
 
     .autorBlogger a{
         position: relative;
@@ -298,17 +291,20 @@
     }
 
     .titulo a{
-            font-size: 22px;
-        }
+        font-size: 25px;
+    }
 
     .page-autores .view-autores {
         padding: 0;
     }
 
     .page-autores .views-row p{
-        font-size: 12px;
-        width: 40%;
+        font-size: 20px;
+        width: 44%;
         margin-top: 10px;
-    }
+    
+        line-height: 1;
+        color: #3f3f3f;
+}
 
 }
