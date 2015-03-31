@@ -25,6 +25,10 @@ p {
     margin: 0;
 }
 
+.fb_iframe_widget_lift {
+    z-index: 11;
+}
+
 #navigation {
     max-width: 824px;
     max-width: 1024px;

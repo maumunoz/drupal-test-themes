@@ -19,6 +19,7 @@
     margin: 0 35%;-50px
     pointer-events: none;
     transition: top 0.5s, opacity 0.5s;
+    pointer-events: none;
 }
 
 #site-name.hideMe {
@@ -29,7 +30,7 @@
 
 .stack-header-inner .site-name a {
     height: 90px;
-    width: 100%;
+    width: 95px;
     background-image: url('../images/suprema_logo.png');
     display: block;
     margin: 0 auto;
@@ -116,8 +117,14 @@
 #block-system-main-menu ul.menu {
     background: none;
     border: none;
-    border-bottom: solid 2px #c4b695;
     margin-bottom: 0;
+    text-align: center;
+}
+
+#block-system-main-menu .bottom {
+    max-width: 824px;
+    margin: 0 auto; 
+    border-bottom: solid 2px #c4b695;
     box-shadow: 0 5px 4px -2px black;
 }
 
@@ -176,14 +183,20 @@
 }
 
 #navigation .menu li {
-    padding: 30px 25px 3px;
+    padding: 25px 12px 7px;
     letter-spacing: -0.6px;
+    float: none;
+    display: inline-block;
 }
 
-#navigation .menu li:nth-child(2) {
-    margin-right: 360px;
+#navigation .menu li:hover {
+/*    background-color:  rgba(0, 0, 0, 0.1); */
 }
 
+#navigation .menu li a {
+    text-decoration: none !important;
+    transition: color 0.5s;
+}
 
 .btn-menu-mobile a {
     border: none;
@@ -260,6 +273,7 @@
 
     .stack-header-inner .site-name a {
         height: 160px;
+        width: 175px;
     }
     #preheader {
         display: block;
