@@ -27,6 +27,17 @@
         $(".social-header-left").find('br').remove();
     });
     
+    $.initModule("#search-block-form", function ($, searchform) {
+        searchform = $(searchform); 
+        searchform.submit(function(e) {
+            searchform.addClass("expanded");
+            var valid  = false;
+            if (searchform.find(".form-text").val()!="") valid = true;
+            if(!valid) {
+                e.preventDefault();
+            }
+        }); 
+    });
     $.initModule("#block-system-main-menu", function ($, mainmenu) {
         var itemArray = $("#block-system-main-menu .menu > li"),
             sum1 = 0,
