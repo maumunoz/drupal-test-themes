@@ -118,7 +118,21 @@ div#messages {
     margin: 0;
 }
 
+#block-views-vista-de-articulo-block .view-content {
+    padding: 0;
+    background: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
 
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
 
 
 
