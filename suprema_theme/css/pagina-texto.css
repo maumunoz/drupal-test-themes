@@ -5,14 +5,14 @@
 
 /*TERMINOS DE USO*/
 
+    .terminos-de-uso .pane{
+         background-color: #000 !important;
+    }
 
     .terminos-de-uso .field-items .even{
          float: right;
     }
 
-    .terminos-de-uso body{
-         background-color: #000;
-    }
     .terminos-de-uso .field-item{
         color: #fff;
     }
