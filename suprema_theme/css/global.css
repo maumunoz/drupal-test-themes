@@ -111,9 +111,9 @@ div#messages {
 .field-name-field-imagen-header + .field-name-body {
     background: white;
     padding: 32px;
-    -webkit-box-shadow: 2px 2px 15px 0px rgba(50, 50, 50, 0.75);
+/*    -webkit-box-shadow: 2px 2px 15px 0px rgba(50, 50, 50, 0.75);
     -moz-box-shadow: 2px 2px 15px 0px rgba(50, 50, 50, 0.75);
-    box-shadow: 2px 2px 15px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: 2px 2px 15px 0px rgba(50, 50, 50, 0.75); */
     font-size: 18px;
     margin: 0;
 }
