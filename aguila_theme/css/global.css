@@ -314,14 +314,14 @@ $black, $dark           = #000    | rgb(0, 0, 0);
 }
 
 a.btn-blue.btn-anim {
-    background-image: linear-gradient(to right, #0565be 49%, #fff600 49%);
+    background-image: linear-gradient(to right, #0565be 49%, #ffd800 49%);
     background-size: 210% 100%;
-    color: #fff600;
+    color: #ffd800;
 }
 
 a.btn-blue.btn-anim:hover {
     color: #0565be;
-    background-color: #fff600;
+    background-color: #ffd800;
 }
 
 .btn-dark-cyan,
