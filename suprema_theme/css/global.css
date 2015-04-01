@@ -94,6 +94,18 @@ div#messages {
     display: none;
 }
 
+
+/* Header image */
+#block-block-26 img,
+.field-name-field-imagen-header img,
+.field-content img,
+.view-header img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Content after header image */
 .view-header + .view-content,
 #block-block-26 + #block-views-vista-de-articulo-block,
 .field-name-field-imagen-header + .field-name-body {
@@ -105,6 +117,9 @@ div#messages {
     font-size: 18px;
     margin: 0;
 }
+
+
+
 
 
 /* @end */
