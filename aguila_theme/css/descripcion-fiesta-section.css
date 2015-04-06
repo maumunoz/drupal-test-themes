@@ -1,0 +1,120 @@
+/* @group Descripcion Fiesta */
+
+.descripcion-ferias-fiestas {
+    border-top: 17px solid #ffd800;
+    border-bottom: 29px solid #ffd800;
+    padding: 30px 0 35px;
+}
+
+.descripcion-ferias-fiestas .view-content {
+    max-width: 1020px;
+    padding: 0 15px;
+}
+
+.descripcion-fiesta,
+.descripcion-ferias-fiestas .links-list {
+    text-align: center;
+}
+
+.descripcion-ferias-fiestas .links-list li,
+.descripcion-ferias-fiestas .links-list .item-list,
+.descripcion-ferias-fiestas .links-list span {
+    display: inline-block;
+}
+
+.descripcion-ferias-fiestas .links-list,
+.descripcion-ferias-fiestas .links-list ul {
+    list-style: none;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-padding-start: 0;
+    margin-top: 0;
+    padding-left: 0;
+}
+
+.descripcion-fiesta h3 {
+    margin-bottom: 25px;
+}
+
+.descripcion-fiesta,
+.descripcion-fiesta h3,
+.descripcion-fiesta h4,
+.descripcion-fiesta h5,
+.descripcion-ferias-fiestas .links-list,
+.descripcion-ferias-fiestas .links-list a {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+.descripcion-fiesta p {
+    font-size: 100%;
+    padding: 10px 0 0 0;
+    color: #575757;
+}
+
+.descripcion-ferias-fiestas .links-list a,
+.descripcion-ferias-fiestas .links-list span {
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.descripcion-ferias-fiestas .links-list {
+    padding: 41px 0 0 0;
+}
+
+.descripcion-ferias-fiestas .links-list > li {
+    padding: 6px 35px;
+    width: 100%;
+}
+
+.descripcion-ferias-fiestas .links-list > li span {
+    margin-right: 21px;
+}
+
+.links-list .social-share li {
+    margin-left: 6px;
+}
+
+.links-list .social-share a {
+    display: inline-block;
+    width: 38px;
+    height: 36px;
+    text-indent: -9999px;
+    vertical-align: middle;
+    background-image: url(../images/sprite-social.png);
+    background-repeat: no-repeat;
+}
+
+.links-list .social-share .facebook {
+    background-position: -80px -160px;
+}
+
+.links-list .social-share .twitter {
+    background-position: -120px -160px;
+}
+
+/* @end */
+
+
+/* @group Media Query */
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    .descripcion-ferias-fiestas {
+        padding: 60px 0 70px;
+    }
+
+    .descripcion-ferias-fiestas .links-list > li {
+        width: auto;
+    }
+
+    .descripcion-ferias-fiestas .links-list > li + li {
+        border-left: 1px solid #b3b3b3;
+    }
+
+    .descripcion-ferias-fiestas .links-list {
+        padding: 82px 0 0 0;
+    }
+}
+
+/* @end */
