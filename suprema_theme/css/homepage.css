@@ -18,7 +18,7 @@
 }
 
 .inicio .slick-slider {
-    max-height: 445px;
+    max-height: 278px;
     overflow: hidden;
 }
 
@@ -119,7 +119,9 @@
         width: 400px;
         font-size: 15px;
     }
-}
+    .inicio .slick-slider {
+        max-height: 395px;
+    }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
@@ -128,6 +130,9 @@
         width: 465px;
         font-size: 16px;
     }
+    .inicio .slick-slider {
+        max-height: 445px;
+
 }
 
 /* Large Devices, Wide Screens */

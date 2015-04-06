@@ -17,6 +17,7 @@ stylesheets[all ][] = 'css/pagina-suprema.css'
 stylesheets[all ][] = 'css/pagina-blog.css'
 stylesheets[all ][] = 'css/pagina-arte.css'
 stylesheets[all ][] = 'css/pagina-texto.css'
+stylesheets[all ][] = 'css/pagina-sommelier.css'
 
 
 regions[page_top] = 'Above page'

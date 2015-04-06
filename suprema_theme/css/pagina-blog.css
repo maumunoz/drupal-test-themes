@@ -82,6 +82,22 @@
     margin-top: 23px;
     margin-bottom: 36px;
 }
+
+
+.pager {
+    clear: both;
+    text-align: left;
+    background-color: white;
+    margin: 0;
+    padding: 32px;
+}
+
+> a, .pager li > span {
+    border-radius: 0;
+    border: solid 2px #18762d;
+    color: #18762d;
+    font-weight: bold;
+}
 /* @end */
 
 
