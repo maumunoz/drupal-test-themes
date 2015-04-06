@@ -4,59 +4,32 @@
     var map;
     var markers = [];
     var centerLatlng;
-    var node = '.lista-lugares-fiesta',
-        columns = 3;
 
     function transformar() {
-        var list,
-            listIndex = 0,
-            orderedElements,
-            unorderedElements;
+        // no se puede utilizar la referencia a la lista porque el nodo en el DOM cambia
+        $('.lista-lugares-fiesta').find('.view-content > .item-list > ul > li.views-row:not(.transformado)').transform({
+            process: function ($, el) {
+                var rating,
+                    ratingText;
 
-        // Add wrapper loading class
-        $(node).addClass('loading');
+                el.addClass('transformado');
 
-        list = $(node).find('.fiesta-lugares-list');
-        orderedElements = $(list).find('.views-column .views-row');
-        unorderedElements = $(list).find('> .views-row');
-
-        //Set format to publish date.
-        formatDate($, node+' .date-display-single', 'D MMMM YYYY');
-        $(node).find('.date-display-single').removeClass('date-display-single');
-
-        // Attaching social share events
-        $('.widget-bar').on('click touch', '.social-share a', function(e) {
-            socialShare($(this).attr('class'),$(this).attr('href'));
-            e.preventDefault();
-        });
-
-        // Add columns if don't exist
-        if ($(list).find('.views-column').length === 0) {
-            for (var i = columns; i >= 1; i--) {
-                $(list).prepend('<li class="views-row-0"><ul class="views-column views-column-'+i+'"></ul></li>')
-            };
-        }
-
-        // Set the initial index to add items if Load More is clicked
-        if ($(orderedElements).length) {
-            listIndex = orderedElements.length%columns;
-        }
-
-        // Add the items
-        if ($(unorderedElements).length) {
-            unorderedElements.each(function(index, el) {
-                listIndex++;
-                $(list).find('.views-column-'+listIndex).append($(this));
-                if (listIndex >= columns) {
-                    listIndex = 0;
+                if (el.find('.favoritos.logged-in').length === 0) {
+                    el.find('.favoritos.hidden').removeClass('hidden');
                 }
-            });
-        }
+                if (el.find('.favoritos-hover.link')) {
+                    el.find('.favorites-hover.hidden').removeClass('hidden');
+                }
 
-        // Remove wrapper loading class
-        $(node).removeClass('loading');
+                // clean the rating field
+                rating = el.find('.views-field-field-rating .clearfix');
+                ratingParent = rating.parent();
+                rating.remove();
+                ratingParent.prepend('<span>' + rating.text().replace('/5', '') + '</span>');
+            }
+        });
     }
-
+    
     function validGeolocation(value) {
         return value !== undefined && value !== null && value !== '';
     }
@@ -67,12 +40,12 @@
         });
         centerLatlng = latlngbounds.getCenter();
         map.setCenter(centerLatlng);
-        map.fitBounds(latlngbounds);
+        map.fitBounds(latlngbounds); 
     }
-
+    
     function updateMapMarkers() {
-
-
+        
+        
         mapOptions = {
             zoom: 6,
             styles: $.mapStyles.grayscale,
@@ -81,7 +54,7 @@
         },
         map = new google.maps.Map($('.mapa-lugar-detalle')[0], mapOptions);
         $('.mapa-lugar-detalle').removeClass("hidden");
-
+        
         var linksWithCoords = $('.lista-lugares-fiesta').find('.view-map');
         linksWithCoords.each(function(i, node) {
             node = $(node);
@@ -108,18 +81,18 @@
                     map.setZoom(16);
                     $(this).data("infowindow").open(map, marker);
                 });
-
+                
                 marker.setMap(map);
                 google.maps.event.addListener(marker, 'click', function () {
-                    $(markers).each(function(j,alldata) {
+                    $(markers).each(function(j,alldata) { 
                         if(alldata.marker == marker) {
                             alldata.infowindow.open(map, marker);
                         }else{
-                            alldata.infowindow.close();
+                            alldata.infowindow.close(); 
                         }
                     });
                 });
-
+                
             }else{
                 node.addClass("hidden");
             }
@@ -145,20 +118,7 @@
         }
     }
 
-    function socialShare(social, path) {
-        switch(social) {
-            case 'facebook':
-            window.open( 'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(path),
-                '', 'status=1,width=626,height=436,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no');
-            break;
-            case 'twitter':
-            window.open( 'http://twitter.com/share?url='+encodeURIComponent(path),
-                '','status=1,width=626,height=436,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no');
-            break;
-        }
-    }
-
-    $.initModule(node, function (el) {
+    $.initModule('.lista-lugares-fiesta', function () {
         transformar();
         jq(document).ajaxComplete(function () {
             setTimeout(transformar, 50)
@@ -167,6 +127,6 @@
             updateMapMarkers();
         });
     });
-
+    
 
 }(jQuery2, jQuery));

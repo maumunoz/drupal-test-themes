@@ -106,16 +106,14 @@
     height: 25px;
     vertical-align: middle;
     padding: 0 10px;
-    background-image: url(../images/sprite-social.png);
-    background-repeat: no-repeat;
 }
 
 .media-gallery-social-share .fb {
-    background-position: -80px -200px;
+    background: url(../images/social-fb_btn.png) no-repeat 0 0;
 }
 
 .media-gallery-social-share .twitter {
-    background-position: -120px -200px;
+    background: url(../images/social-twitter_btn.png) no-repeat 0 0;
 }
 
 /* @end */

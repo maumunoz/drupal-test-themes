@@ -10,31 +10,20 @@
 
 .lista-lugares-fiesta .view-content ul {
     list-style-type: none;
+    margin: 0 -10px;
     padding: 0;
-}
-
-.lista-lugares-fiesta .view-content .fiesta-lugares-list {
     text-align: center;
 }
 
-.lista-lugares-fiesta .view-content ul .views-row {
-    text-align: left;
+.lista-lugares-fiesta .view-content ul  li {
     margin: 0 5px 15px;
     position: relative;
-    display: block !important; /* IE overrides the display when loading new elements with "Cargar Mas" */
+    display: inline-block !important; /* IE overrides the display when loading new elements with "Cargar Mas" */
 }
 
-.lista-lugares-fiesta .item-list > ul > li {
-    width: 100%;
-    margin: 0;
-    display: inline-block;
-    vertical-align: top;
-}
-
-.lista-lugares-fiesta .views-field-field-thumbnail img {
-    display: inline-block;
-    width: 100%;
-    height: auto;
+.lista-lugares-fiesta  .view-content ul  li {
+    width: 270px;
+    margin: 0 14px 50px;
 }
 
 
@@ -151,7 +140,12 @@
 .lista-lugares-fiesta  .view-content ul li .views-field-title,
 .lista-lugares-fiesta  .view-content ul li .views-field-field-rating {
     text-align: left;
+    margin-left: 40px;
     font-family: "Open Sans", Arial, sans-serif;
+}
+
+.lista-lugares-fiesta  .view-content ul li .views-field-title {
+    margin-top: 14px;
 }
 
 .lista-lugares-fiesta  .view-content ul li .views-field-title a {
@@ -161,16 +155,6 @@
 
 .lista-lugares-fiesta  .view-content ul li .views-field-field-rating {
     font-size: 13px;
-}
-
-.lista-lugares-fiesta .widget-bar li {
-    display: inline-block;
-}
-
-.lista-lugares-fiesta .views-field-field-thumbnail {
-    float: left;
-    max-width: 100px;
-    margin: 0 10px 10px 0;
 }
 
 /* @end */
@@ -185,16 +169,7 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
-    .lista-lugares-fiesta .item-list > ul > li {
-        width: 30%;
-        margin: 0 1.5% 50px;
-    }
 
-    .lista-lugares-fiesta .views-field-field-thumbnail {
-        float: none;
-        max-width: none;
-        margin: 0;
-    }
 }
 
 /* Small Devices, Tablets */
