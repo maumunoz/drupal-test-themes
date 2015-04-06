@@ -123,7 +123,7 @@
 
 #block-system-main-menu .bottom {
     max-width: 824px;
-    margin: 0 auto; 
+    margin: 0 auto;
     border-bottom: solid 2px #c4b695;
     box-shadow: 0 5px 4px -2px black;
 }
@@ -147,7 +147,7 @@
 
 }
 
-#search-block-form .form-item, 
+#search-block-form .form-item,
 #search-block-form .form-actions {
     margin: 0;
 }
@@ -233,19 +233,31 @@
     background-color: #006a30;
 }
 
+
+
 /* @end */
 
 
 /* @group Media Query */
 
 /* Custom, iPhone Retina */
-@media only screen and (min-width : 320px) {
+@media only screen and (min-width:0px) and (max-width: 320px)  {
+
+.mobile-main-menu .menu > li{
+    font-size: 12px;
+    text-align: center;
+    padding: 0;
 }
 
+}
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
     .stack-header-inner .site-name a {
         height: 110px;
+    }
+    .mobile-main-menu .menu > li{
+    text-align: center;
+    padding: 0;
     }
 }
 
@@ -253,6 +265,11 @@
 @media only screen and (min-width : 768px) {
     .stack-header-inner .site-name a {
         height: 130px;
+    }
+
+    .mobile-main-menu .menu > li{
+    text-align: center;
+    padding: 0;
     }
 }
 
@@ -278,7 +295,7 @@
     #preheader {
         display: block;
     }
-    
+
     #site-name {
         top: -18px;
 
