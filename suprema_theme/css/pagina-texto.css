@@ -5,26 +5,26 @@
 
 /*----------TERMINOS DE USO-------------------------------------------------------------------*/
 
-    .terminos-de-uso .pane{
+    .fondo-negro .pane{
          background-color: #000 !important;
     }
 
-    .terminos-de-uso .field-items .even{
+    .fondo-negro .field-items .even{
          float: right;
          width: 50%;
          padding-left: 2% 3%;
     }
 
-    .terminos-de-uso .field-item{
+    .fondo-negro .field-item{
         color: #fff;
     }
 
-    .terminos-de-uso .field-item p{
+    .fondo-negro .field-item p{
         margin-bottom: 10px;
         float: left;
     }
 
-    .terminos-de-uso h1{
+    .fondo-negro h1{
         display: block !important;
         background-color: #009633;
         text-align: center;
@@ -51,17 +51,17 @@
 
 @media only screen and (min-width:0px) and (max-width: 480px)  {
 
-        .terminos-de-uso .field-item p{
+        .fondo-negro .field-item p{
             width: 100%;
         }
 
-        .terminos-de-uso .field-items .even{
+        .fondo-negro .field-items .even{
          width: 100%;
     }
 }
 
 
-/*---------POLITICAS DE PRIVACIDAD-------------------------------------------------------------*/
+/*---------POLITICAS DE PRIVACIDAD-------------------------------------------------------------
 
 
     .politicas-de-privacidad .pane{
@@ -120,8 +120,8 @@
     }
 
 }
-
-/*---------MAPA DEL SITIO-------------------------------------------------------------*/
+*/
+/*---------MAPA DEL SITIO-------------------------------------------------------------
 
 
     .mapa-del-sitio-0 .pane{
@@ -131,7 +131,7 @@
     .mapa-del-sitio-0 .field-items .even{
          float: right;
          width: 50%;
-         padding: 2% 3%
+         padding: 2% 3%;
     }
 
     .mapa-del-sitio-0 .field-item{
@@ -176,4 +176,4 @@
         .mapa-del-sitio-0 .field-item p{
             width: 100%;
         }
-}
+}*/
