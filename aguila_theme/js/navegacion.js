@@ -3,7 +3,7 @@
 
     $('.menu a:contains("Cervezas")').attr("href","#");
     $('.menu .menu-link-3686 ul li.active-trail ').removeClass("active-trail");
-        
+
     function setActive() {
         var menuItems = $('#block-system-main-menu ul.menu > li > a'),
             active = menuItems.filter('.active'),
@@ -43,10 +43,10 @@
             $(items[center]).after( header );
             header.wrap("<li></li>");
         }
-            
-        if (menu.is(':visible')) { 
-            offset = $("#block-system-main-menu").width()/2-header.width()/2-header.parent().position().left;
-            offset_slice = Math.round(offset/(center+1)/2);
+
+        if (menu.is(':visible')) {
+            var offset = $("#block-system-main-menu").width()/2-header.width()/2-header.parent().position().left,
+                offset_slice = Math.round(offset/(center+1)/2);
             for(var i=0; i<=center; i++) {
                 var currentPadding = parseInt( $(items[i]).find("a").css("padding-right") );
                 currentPadding += offset_slice;
@@ -61,10 +61,10 @@
             }
         }
     }
-    
-   
+
+
     setActive();
-    
+
     if (typeof $.ogSlidebars == "undefined") {
         $.ogSlidebars = $.slidebars;
         $.slidebars = function (options) {
@@ -75,7 +75,7 @@
             adjust();
         }
     }
-    
+
     $(document).ready(adjust);
     $(window).on('load', adjust);
     $(window).on('resize', adjust);
