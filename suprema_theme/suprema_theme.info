@@ -18,6 +18,7 @@ stylesheets[all ][] = 'css/pagina-blog.css'
 stylesheets[all ][] = 'css/pagina-arte.css'
 stylesheets[all ][] = 'css/pagina-texto.css'
 stylesheets[all ][] = 'css/pagina-sommelier.css'
+stylesheets[all ][] = 'css/pagina-confirmacion.css'
 stylesheets[all ][] = 'css/arte-suprema.css'
 
 
