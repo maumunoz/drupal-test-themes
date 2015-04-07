@@ -1,0 +1,169 @@
+/* @group Colors */
+
+/*
+$white           : #fff;
+$red             : #990100;
+$red--dark       : #271415;
+$red--logo       : #710404;
+$red--watermark  : #c1666a;
+$orange--logo    : #f2992f;
+$orange--text    : #fdb515;
+$gray--watermark : #acacac;
+*/
+
+/* @end */
+
+/* @group Fonts */
+
+/* font-family:     'Oswald', Arial, sans-serif; */
+/* Oswald Light     | font-weight: 300; */
+/* Oswald Regular   | font-weight: 400; */
+/* Oswald Bold      | font-weight: 700; */
+
+/* @end */
+
+/* @group Layers */
+
+.zindex1 {z-index: 1}
+
+.zindex2 {z-index: 2}
+
+.zindex3 {z-index: 3}
+
+.zindex4 {z-index: 4}
+
+.zindex5 {z-index: 5}
+
+.zindex6 {z-index: 6}
+
+.zindex7 {z-index: 7}
+
+.zindex8 {z-index: 8}
+
+.zindex9 {z-index: 9}
+
+.zindex10 {z-index: 5}
+
+/* @end */
+
+/* @group Utils */
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 5px;
+    max-width: 1228px;
+}
+
+.container2 {
+    max-width: 1000px;
+}
+
+.container3 {
+    max-width: 920px;
+}
+
+.clearfix {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+/* Text Blow Off
+ * The following is for display: block || inline-block elements
+ * If need to blow off inline elements text use:
+ * line-height: 800%;
+ * overflow: hidden;
+*/
+.site-name-wrapper .site-name a,
+.btn-login-search .btn-icon > a,
+.btn-text-no,
+.slick-dots li *,
+.text__blow-off {
+    text-indent: -9999px;
+    text-align: left;
+}
+
+.hidden {
+    display: none;
+}
+
+/* @end */
+
+/* @group Reset */
+
+html,
+body,
+#page .page-width,
+#page .page-width .lining {
+    height: 100%;
+}
+
+/*
+ * When slidebar opens increase width of
+ * fixed elements to avoid missplacing of
+ * elements
+ */
+.sb-active .stack-navigation,
+.sb-active .stack-breadcrumb,
+.sb-active .stack-preheader .col-second {
+    width: 100%;
+}
+
+/* lists reset */
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-start: 0;
+    -moz-margin-before: 0;
+    -moz-margin-after: 0;
+    -moz-margin-start: 0;
+    -moz-margin-end: 0;
+    -moz-padding-start: 0;
+}
+
+.stack .box,
+.wrapper-content .stack {
+    padding: 0;
+}
+
+.wrapper-content .block + .block,
+.block + .block {
+    margin: 0;
+}
+
+/* @end */
+
+/* @group Media Query */
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    /* @group Reset */
+    html,
+    body,
+    #page,
+    #page .page-width,
+    #page .page-width .lining {
+        height: auto;
+    }
+    /* @end */
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
