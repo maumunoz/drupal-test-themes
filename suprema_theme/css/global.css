@@ -109,6 +109,7 @@ div#messages {
 .view-header + .view-content,
 #block-block-26 + #block-views-vista-de-articulo-block,
 #block-block-31 + #block-system-main,
+#block-block-36 + #block-system-main,
 .field-name-field-imagen-header + .field-name-body {
     background: white;
     padding: 32px;
@@ -135,6 +136,9 @@ div#messages {
     float: right;
 }
 
+.field-name-field-disenno {
+    display: none !important;
+}
 
 
 /* @end */

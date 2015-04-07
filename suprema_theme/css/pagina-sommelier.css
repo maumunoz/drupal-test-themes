@@ -1,6 +1,6 @@
 /* @group Groupname */
 #block-block-31 + #block-system-main {
-    padding: 35px 26px;
+    padding: 30px 26px;
     font-size: 13px;
 }
 
@@ -29,6 +29,60 @@
 
 .sommelier .grippie {
     display: none;
+}
+
+.sommelier_text1 {
+    width: 38%;
+    text-align: center;
+    line-height: 15px;
+    margin-bottom: 54px;
+}
+
+.sommelier h2 {
+    margin: 0;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.sommelier form > div {
+    padding-left: 55%;
+}
+
+.sommelier_text2 {
+    text-align: center;
+    width: 49%;
+}
+
+.sommelier .form-item {
+    margin: 0 0 9px;
+}
+
+.sommelier h2.sommelier_title1 {
+    margin-top: -8px;
+    margin-bottom: 5px;
+}
+
+.sommelier #edit-submit {
+    width: 105px;
+    font-size: 19px;
+    background: none;
+    background-color: green;
+    text-shadow: none;
+    color: white;
+    padding: 1px;
+    margin-left: 148px;
+}
+
+.sommelier h2.sommelier_title2 {
+    margin-top: 17px;
+    margin-bottom: 14px;
+    line-height: 26px;
+}
+
+#media_crop_2493125568144 {
+    margin-left: 20px;
+    margin-right: 40px;
 }
 /* @end */
 

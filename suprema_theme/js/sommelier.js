@@ -6,9 +6,9 @@
         sommform.find(".form-item").addClass("input-group").each(function(i,group){
             $(group).find("label").addClass("input-group-addon");
             var span = $("<span class='glyphicon'></span>");
-            span.addClass( $(group).find("label").text() );
+            span.addClass( $(group).find(".description").text() );
+            $(group).find(".form-text").addClass("form-control").removeClass("form-text").attr("placeholder", $(group).find("label").text() );
             $(group).find("label").html( span );
-            $(group).find(".form-text").addClass("form-control").removeClass("form-text").attr("placeholder", $(group).find(".description").text() );
             $(group).find(".description").remove();
         });
         sommform.find("textarea").addClass("form-control");
