@@ -104,7 +104,8 @@
 }
 
 .age_checker-country .agegate_country_select {
-    margin-top: 2px;
+    position: relative;
+    top: 3px;
 }
 
 .age_checker-country select,
