@@ -167,8 +167,12 @@
     font-weight: bold;
 }
 
-#search-block-form.expanded .form-text {
+.searchexpanded #search-block-form .form-text {
     display: initial;
+}
+
+.searchexpanded #site-name {
+    display: none;
 }
 
 #search-block-form .form-submit {
@@ -247,6 +251,10 @@
     .stack-header-inner .site-name a {
         height: 110px;
     }
+    .searchexpanded #site-name {
+        display: block;
+    }
+
 }
 
 /* Small Devices, Tablets */

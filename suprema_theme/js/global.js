@@ -29,7 +29,7 @@
         $(".social-header-left").find('br').remove();
 
         searchform.submit(function(e) {
-            searchform.addClass("expanded");
+            $("body").addClass("searchexpanded");
             var valid  = false;
             if (searchform.find(".form-text").val()!="") valid = true;
             if(!valid) {

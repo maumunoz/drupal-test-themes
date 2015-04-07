@@ -86,18 +86,44 @@
 
 .pager {
     clear: both;
-    text-align: left;
+    text-align: left !important;
     background-color: white;
-    margin: 0;
+    margin: 0 !important;
     padding: 32px;
 }
 
-> a, .pager li > span {
+.pager li > a, .pager li > span {
     border-radius: 0;
     border: solid 2px #18762d;
     color: #18762d;
-    font-weight: bold;
 }
+
+.view-vista-de-articulo-contenido {
+
+}
+
+.view-vista-de-articulo-contenido .views-row {
+    width: 69%;
+    border-right: solid 1px #dacba1;
+    padding-right: 15px;
+}
+
+.view-vista-de-articulo-contenido .share {
+    margin: 38px 0;
+}
+
+.suscribe-big-button {
+    background-color: green;
+    display: block;
+    text-align: left;
+    font-size: 29px;
+    border-radius: 10px;
+    margin: 21px 2%;
+    padding: 14px 0 18px 19%;
+    letter-spacing: -1.5px;
+    text-decoration: none !important;
+}
+
 /* @end */
 
 
