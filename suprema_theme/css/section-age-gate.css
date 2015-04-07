@@ -288,7 +288,7 @@
 
 }
 
-@media only screen and (min-width : 800px) {
+@media only screen and (min-width : 1025px) {
     .age_checker-banner {
         height: 250px;
     }
@@ -392,7 +392,7 @@
 
 }
 
-@media only screen and (min-width : 992px) {
+@media only screen and (min-width : 1366px) {
     .age_checker-banner {
         height: 332px;
     }
