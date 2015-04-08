@@ -20,6 +20,10 @@ $gray--watermark : #acacac;
 /* Oswald Regular   | font-weight: 400; */
 /* Oswald Bold      | font-weight: 700; */
 
+body {
+    font-family: 'Oswald', Arial, sans-serif;
+}
+
 /* @end */
 
 /* @group Layers */
@@ -143,6 +147,12 @@ ol {
 
 /* @end */
 
+
+/* @group Buttons */
+/* TO ADD BUTTON STYLES HERE*/
+/* @end */
+
+
 /* @group Media Query */
 
 /* Small Devices, Tablets */
@@ -167,3 +177,5 @@ ol {
 @media only screen and (min-width : 1200px) {
 
 }
+
+/* @end */
