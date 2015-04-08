@@ -98,14 +98,14 @@
 .age_checker-submit p {
     font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
     font-size: 157%;
-    text-align: left;
+    text-align: center;
     line-height: 1;
     padding-bottom: 6px;
 }
 
 .age_checker-country .agegate_country_select {
     position: relative;
-    top: 1px;
+    top: 2px;
 }
 
 .age_checker-country select,
@@ -288,6 +288,12 @@
 }
 
 @media only screen and (min-width : 1224px) {
+
+    .age_checker-country p,
+    .age_checker-date p,
+    .age_checker-submit p {
+    text-align: left;
+    }
     .age_checker-banner {
         height: 250px;
     }
