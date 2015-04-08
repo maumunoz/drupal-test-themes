@@ -2,16 +2,16 @@
 
 /* @group Media Query */
 
-    .arte-suprema .field .media-thumbnail-frame img{
+.arte-suprema .field .media-thumbnail-frame img{
     float: right;
     width: 33%;
     height: auto;
     margin-bottom: 10px;
-    }
+}
 
-    .arte-suprema .field .field-item .even img{
+.arte-suprema .field .field-item .even img{
     margin-bottom: 20px;
-    }
+}
 
 
 /* Custom, iPhone Retina */
@@ -30,9 +30,7 @@
 @media only screen and (min-width : 992px) {
 
     .arte-suprema .field .media-thumbnail-frame img{
-
-    width: 22%;
-
+        width: 22%;
     }
 }
 

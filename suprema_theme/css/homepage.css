@@ -122,6 +122,7 @@
     .inicio .slick-slider {
         max-height: 395px;
     }
+}
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
@@ -132,7 +133,7 @@
     }
     .inicio .slick-slider {
         max-height: 445px;
-
+    }
 }
 
 /* Large Devices, Wide Screens */
