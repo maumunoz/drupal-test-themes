@@ -67,7 +67,8 @@ body {
     max-width: 920px;
 }
 
-.clearfix {
+.clearfix:before,
+.clearfix:after {
     clear: both;
     content: ".";
     display: block;
