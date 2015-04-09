@@ -38,6 +38,8 @@
 
 .region-header .block-menu {
     width: 62%;
+    height: 76px;
+    overflow: hidden;
 }
 
 .region-header #block-block-1 {
