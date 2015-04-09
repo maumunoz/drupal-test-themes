@@ -86,7 +86,7 @@
             valuePos = 0,
             prefix = {
                 config: 'slick-',
-                elmClass: 'class--',
+                class: 'class--',
                 id: 'id--',
                 value: '--'
             },
@@ -94,7 +94,7 @@
                 htmlContent: ['prevArrow', 'nextArrow'],      // Template from DOM elements
                 units: ['centerPadding', 'touchThreshold']    // px, % or 0.*
             },
-            config = {};
+            config = { dots: true };
 
         if (slick.length) {
 
@@ -138,8 +138,8 @@
                             configVal = configVal.substring(prefix.id.length, configVal.length);
                             configVal = '#'+configVal;
 
-                        } else if(configVal.indexOf(prefix.elmClass) === 0) {
-                            configVal = configVal.substring(prefix.elmClass.length, configVal.length);
+                        } else if(configVal.indexOf(prefix.class) === 0) {
+                            configVal = configVal.substring(prefix.class.length, configVal.length);
                             configVal = '.'+configVal;
                         }
 
@@ -168,10 +168,10 @@
 
             // Extend Drupal global Slick configuration
             config = $.extend({}, Drupal.slick.config, config);
-            // console.log(config);
+            console.log(config);
 
             // Create slick instance and show module
-            slick.slick(config);
+            slick.eq(0).slick(config);
             el.removeClass('hidden');
         }
     });

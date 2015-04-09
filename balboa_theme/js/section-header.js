@@ -5,7 +5,7 @@
         closeSearchBtn,
         openSearchBtn,
         searchField,
-        slidebar;
+        mobileMenu;
 
     // Transform Search Block
     $.transform(searchNode, {
@@ -30,23 +30,24 @@
             e.preventDefault();
         });
         searchField.before(closeSearchBtn);
-
-        // Duplicate search and social bar and place them in mobile menu
-        setTimeout(function ($) {
-            slidebar = $('.sb-slidebar');
-
-            slidebar.append( $(social).clone() );
-            slidebar.find('#edit-search-block-form--2').attr('autocomplete','off');
-            slidebar.find('#closeSearchBtn').remove();
-
-            slidebar.on('touchend click', 'input[type="submit"]', function () {
-                slidebar.find('form').eq(0).submit();
-            });
-
-            $('.sb-slidebar').on( 'touchend click', 'input[type="text"]', function (e) {
-                e.stopPropagation();
-            });
-        }, 500, jQuery2);
     });
+
+    // Duplicate search and social bar and place them in mobile menu
+    $(document).ready(function () {
+        mobileMenu = $('.sb-slidebar');
+
+        mobileMenu.append( $('#header-region .social-bar').clone() );
+        mobileMenu.find('#edit-search-block-form--2').attr('autocomplete','off');
+        mobileMenu.find('#closeSearchBtn').remove();
+
+        mobileMenu.on('touchend click', 'input[type="submit"]', function () {
+            mobileMenu.find('form').eq(0).submit();
+        });
+
+        mobileMenu.on( 'touchend click', 'input[type="text"]', function (e) {
+            e.stopPropagation();
+        });
+    });
+
 }(jQuery2));
 
