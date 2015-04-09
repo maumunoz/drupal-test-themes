@@ -20,6 +20,7 @@
     margin-top: 5px;
     width: 26px;
     height: 27px;
+    float: left;
 }
 
 .sommelier #content .input-group-addon {
@@ -205,11 +206,20 @@ img#media_crop_5761847582180 {
         width: 105px;
         font-size: 19px;
         background: none;
-        background-color: green;
         text-shadow: none;
         color: white;
         padding: 1px;
         margin-left: 148px;
+        
+        border: solid 1px #7ec744;
+        background: rgb(2,134,44);
+        background: -moz-linear-gradient(top, rgba(2,134,44,1) 3%, rgba(0,170,57,1) 29%, rgba(0,144,49,1) 53%, rgba(0,105,38,1) 97%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(3%,rgba(2,134,44,1)), color-stop(29%,rgba(0,170,57,1)), color-stop(53%,rgba(0,144,49,1)), color-stop(97%,rgba(0,105,38,1)));
+        background: -webkit-linear-gradient(top, rgba(2,134,44,1) 3%,rgba(0,170,57,1) 29%,rgba(0,144,49,1) 53%,rgba(0,105,38,1) 97%);
+        background: -o-linear-gradient(top, rgba(2,134,44,1) 3%,rgba(0,170,57,1) 29%,rgba(0,144,49,1) 53%,rgba(0,105,38,1) 97%);
+        background: -ms-linear-gradient(top, rgba(2,134,44,1) 3%,rgba(0,170,57,1) 29%,rgba(0,144,49,1) 53%,rgba(0,105,38,1) 97%);
+        background: linear-gradient(to bottom, rgba(2,134,44,1) 3%,rgba(0,170,57,1) 29%,rgba(0,144,49,1) 53%,rgba(0,105,38,1) 97%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02862c', endColorstr='#006926',GradientType=0 );
     }
 
     .sommelier h2.sommelier_title2 {
