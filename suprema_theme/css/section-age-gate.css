@@ -4,6 +4,11 @@
     background: none;
 }
 
+#age_checker_verification_popup > form {
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
 #age_checker_verification_popup .bg-container {
     background-position: center top;
     background-repeat: repeat-x;
