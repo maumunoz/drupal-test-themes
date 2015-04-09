@@ -21,7 +21,7 @@
         config: {
             infinite: true,
             speed: 500,
-            fade: true,
+            fade: false,
             slide: 'li',
             cssEase: 'linear',
             autoplay: true,
