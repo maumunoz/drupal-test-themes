@@ -3,13 +3,17 @@
 /*
 $white           : #fff;
 $red             : #990100;
-$red--dark       : #271415;
+$red--dark       : #3b0102;
 $red--logo       : #710404;
 $red--watermark  : #c1666a;
 $orange--logo    : #f2992f;
 $orange--text    : #fdb515;
 $gray--watermark : #acacac;
 */
+
+#page.bg-default {
+    background-color: #990100;
+}
 
 /* @end */
 
@@ -56,16 +60,18 @@ body {
 
 /* @group Utils */
 
-.container,
-.region-header {
+.stack-footer-inner,
+.region-header,
+.container {
     position: relative;
     margin: 0 auto;
     padding: 0 5px;
     max-width: 1230px;
 }
 
-.container2,
-.region-header {
+.stack-footer-inner,
+.region-header,
+.container2 {
     max-width: 1045px;
 }
 

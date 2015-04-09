@@ -6,7 +6,7 @@
 
 #header-region {
     background: #990100;
-    border-bottom: 2px solid #271415;
+    border-bottom: 2px solid #3b0102;
 }
 
 .region-header > div {
@@ -134,7 +134,7 @@
 
 #block-search-form {
     background: #fff;
-    border: 4px solid #710404;
+    border: 4px solid #3b0102;
     width: 100%;
     text-align: left;
     overflow: hidden;
@@ -164,7 +164,7 @@
     border: none;
     border-radius: 0;
     box-shadow: none;
-    color: #710404;
+    color: #3b0102;
     -webkit-appearance: none;
     margin: 0;
 }
@@ -178,7 +178,7 @@
     box-shadow: none;
     border-color: transparent;
     font-weight: 600;
-    color: #710404;
+    color: #3b0102;
     outline: none;
     width: 85%;
 }
@@ -192,7 +192,8 @@
 }
 
 .sb-slidebar {
-    background: #710404;
+    background: #3b0102;
+    font-size: 85.7%;
 }
 
 .region-header #block-block-16 {
@@ -277,6 +278,11 @@
         width: 15%;
         min-width: 0;
     }
+
+    .sb-slidebar {
+        font-size: 100%;
+    }
+
 }
 
 /* Medium Devices, Desktops */
