@@ -32,7 +32,7 @@
 }
 
 .slider-cta {
-    top: 42%;
+    top: 38%;
     width: 330px;
     font-size: 13px;
     position: absolute;
@@ -44,7 +44,7 @@
     background: linear-gradient(to right, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.65) 90%,rgba(0,0,0,0) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=1 );
     color: white;
-    padding: 9px 5% 9px 5%;
+    padding: 9px 90px 9px 70px;
     line-height: 16px;
     text-align: center;
     letter-spacing: -0.2px;

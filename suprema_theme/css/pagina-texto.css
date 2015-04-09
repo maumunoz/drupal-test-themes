@@ -9,6 +9,21 @@
 .fondo-negro .pane{
     background-color: #000 !important;
 }
+.grippie {
+    display: none;
+}
+
+.node-type-webform .webform-component {
+    color: white;
+}
+
+.node-type-webform.fondo-negro #content {
+    max-width: 852px;
+}
+
+.node-type-webform.fondo-negro .pane{
+    background-color: rgba(0,0,0,.5) !important;
+}
 
 .fondo-negro .pane > #content-area {
     padding: 0 32px;
@@ -85,12 +100,19 @@
     #block-block-41 {
         display: none !important;
     }
+    
+    
     .fondo-negro #main {
         background-color: rgba(0,0,0,.5);
         padding: 90px 36px 10px;
         margin: 0 -20px;
     }
-    
+    .node-type-webform.fondo-negro #main {
+        background-color: transparent;
+        padding: 90px 36px 10px;
+        margin: 0 -20px;
+    }
+
     .fondo-negro h1{
         -webkit-border-top-left-radius: 10px;
         -webkit-border-top-right-radius: 10px;
