@@ -19,6 +19,7 @@ stylesheets[all][] = 'forms.css'
 stylesheets[all][] = 'slidebars.css'
 stylesheets[all][] = 'magnific-popup.css'
 stylesheets[all][] = 'slick.css'
+stylesheets[all][] = 'slick-theme.css'
 
 fonts[] = 'fonts/glyphicons-halflings-regular.eot'
 fonts[] = 'fonts/glyphicons-halflings-regular.svg'
