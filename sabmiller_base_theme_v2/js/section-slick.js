@@ -94,7 +94,7 @@
                 htmlContent: ['prevArrow', 'nextArrow'],      // Template from DOM elements
                 units: ['centerPadding', 'touchThreshold']    // px, % or 0.*
             },
-            config = { dots: true };
+            config = {};
 
         if (slick.length) {
 
@@ -168,6 +168,7 @@
 
             // Extend Drupal global Slick configuration
             config = $.extend({}, Drupal.slick.config, config);
+            // console.log(config);
 
             // Create slick instance and show module
             slick.slick(config);

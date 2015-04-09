@@ -25,7 +25,11 @@
             slide: 'li',
             cssEase: 'linear',
             autoplay: true,
-            autoplaySpeed: 7000
+            autoplaySpeed: 7000,
+            dots: true,
+            slidesToShow: 1,
+            adaptiveHeight: true,
+            pauseOnHover: false
         }
     };
 
@@ -91,7 +95,7 @@
             });
             navSlidebarContainer.insertAfter(page);
             $.slidebars();
-            
+
             $.event.trigger( "sidebar-created");
         }
 
