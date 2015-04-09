@@ -1,28 +1,228 @@
 /* @group Groupname */
 
+    .fotoarte h1{
+        font-weight: bolder;
+        color: #bb9e51;
+        margin-bottom: 10px;
+    }
+
+    .fotoarte p{
+        text-align: center;
+        }
+
+     .fotoarte hr{
+        color:#bb9e51;
+        height: 3px;
+        background-color:#ddcea8;
+        }
+
+    .fotoarte .media-gallery-item{
+        margin-left: 10px;
+        }
+
+    .mg-col-3 {
+        width: 80% !important;
+    }
+
+    .fotoarte .field-name-media-gallery-media{
+        margin-left: 8.5%;
+    }
+
+
+    .fotoarte .item-list .pager-item {
+        display: none;
+    }
+
+    .fotoarte .item-list .pager-first{
+
+        display: none;
+    }
+
+    .fotoarte .item-list .pager-current{
+        display: none;
+    }
+
+    .fotoarte .item-list .pager-last{
+
+        display: none;
+    }
+
+    .fotoarte .item-list .pager-next a{
+
+        position: relative;
+        top: -205px;
+        left: 520px;
+        width: 31px;
+        height: 40px;
+        border: none;
+        text-indent: -9999px;
+        background-repeat: no-repeat;
+        background-image: url("http://suprema.sabmiller.acsitefactory.com/sites/g/files/ogq836/f/media_crop/281/public/201504/blogSuprema_DSK_07-mobile.png");
+    }
+
+
+
+    .fotoarte .item-list .pager-previous a{
+
+        position: relative;
+        top: -205px;
+        left: -30px;
+        width: 31px;
+        height: 40px;
+        border: none;
+        text-indent: -9999px;
+        background-repeat: no-repeat;
+        background-image: url("http://suprema.sabmiller.acsitefactory.com/sites/g/files/ogq836/f/media_crop/286/public/201504/blogSuprema_DSK_07-mobile-left.png");
+    }
+
+    .fotoarte .media-thumbnail-frame{
+        position: none;
+        float: left;
+    }
+
+
+
+
+
 
 /* @end */
 
 
 /* @group Media Query */
 
+
 /* Custom, iPhone Retina */
-@media only screen and (min-width : 320px) {
+
+@media all and (min-width: 320px) and (max-width: 479px) {
+
+        .fotoarte .item-list .pager-next a{
+            top: -206px;
+            left: 140px;
+        }
+
+        .fotoarte .item-list .pager-previous a{
+            top: -206px;
+            left: -35px;
+        }
+
+
+        .fotoarte .mg-col-3 {
+        width: 90% !important;
+        padding-left: 25px;
+    }
+
+       .fotoarte .field-name-media-gallery-media{
+        margin-left: 0;
+    }
+
+
+      .fotoarte .media-gallery-item{
+        margin-left: 0px;
+        }
+
+        .fotoarte .view-header + .view-content, #block-block-26 + #block-views-vista-de-articulo-block, #block-block-31 + #block-system-main, #block-block-36 + #block-system-main, .field-name-field-imagen-header + .field-name-body{
+            padding:10px;
+        }
+
+        .fotoarte .media-gallery-collection a .media-gallery-thumb, .media-gallery-media a .media-gallery-thumb, .media-gallery-thumb img{
+            margin-left: 0px;
+        }
+
+    .fotoarte .linksBottom{
+        margin-left: 37px;
+    }
+
+        .fotoarte .linksBottom img{
+
+        margin-bottom: 10px;
+        height: 20px;
+        width: auto;
+    }
 }
 
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px) {
+
+
+@media all and (min-width: 480px) and (max-width: 767px) {
+
+        .fotoarte .item-list .pager-next a{
+            top: -265px;
+            left: 245px;
+        }
+
+    .fotoarte .item-list .pager-previous a{
+            top: -265px;
+            left: -16px;
+        }
+
+    .fotoarte .linksBottom{
+        margin-left: 10px;
+    }
 }
 
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
+
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+
+    .fotoarte .item-list .pager-next a{
+
+        position: relative;
+        top: -410px;
+        left: 470px;
+        width: 78px;
+        height: 100px;
+        border: none;
+        text-indent: -9999px;
+        background-repeat: no-repeat;
+        background-image: url("http://suprema.sabmiller.acsitefactory.com/sites/g/files/ogq836/f/media_crop/271/public/201504/blogSuprema_DSK_07.png");
+    }
+
+
+
+    .fotoarte .item-list .pager-previous a{
+
+        position: relative;
+        top: -410px;
+        left: -30px;
+        width: 67px;
+        height: 99px;
+        border: none;
+        text-indent: -9999px;
+        background-repeat: no-repeat;
+        background-image: url("http://suprema.sabmiller.acsitefactory.com/sites/g/files/ogq836/f/media_crop/276/public/201504/imagen2_03.png");
+    }
+
+    .fotoarte .linksBottom{
+        margin-left: 145px;
+    }
+
 }
 
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
-}
+@media all and (min-width: 1025px) and (max-width: 1900px) {
 
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
+        .fotoarte .item-list .pager-next a{
+
+        top: -410px;
+        left: 480px;
+        width: 78px;
+        height: 100px;
+        background-image: url("http://suprema.sabmiller.acsitefactory.com/sites/g/files/ogq836/f/media_crop/271/public/201504/blogSuprema_DSK_07.png");
+    }
+
+
+
+    .fotoarte .item-list .pager-previous a{
+
+        top: -410px;
+        left: -30px;
+        width: 67px;
+        height: 99px;
+        background-repeat: no-repeat;
+        background-image: url("http://suprema.sabmiller.acsitefactory.com/sites/g/files/ogq836/f/media_crop/276/public/201504/imagen2_03.png");
+    }
+
+    .fotoarte .linksBottom{
+        margin-left: 160px;
+    }
+
+
 }
-/* @end */
