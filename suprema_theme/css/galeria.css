@@ -1,53 +1,53 @@
 /* @group Groupname */
 
-    .fotoarte h1{
+    .node-type-media-gallery h1{
         font-weight: bolder;
         color: #bb9e51;
         margin-bottom: 10px;
     }
 
-    .fotoarte p{
+    .node-type-media-gallery p{
         text-align: center;
         }
 
-     .fotoarte hr{
+     .node-type-media-gallery hr{
         color:#bb9e51;
         height: 3px;
         background-color:#ddcea8;
         }
 
-    .fotoarte .media-gallery-item{
+    .node-type-media-gallery .media-gallery-item{
         margin-left: 10px;
         }
 
-    .mg-col-3 {
+    .node-type-media-gallery .mg-col-3 {
         width: 80% !important;
     }
 
-    .fotoarte .field-name-media-gallery-media{
+    .node-type-media-gallery .field-name-media-gallery-media{
         margin-left: 8.5%;
     }
 
 
-    .fotoarte .item-list .pager-item {
+    .node-type-media-gallery .item-list .pager-item {
         display: none;
     }
 
-    .fotoarte .item-list .pager-first{
-
-        display: none;
-    }
-
-    .fotoarte .item-list .pager-current{
-        display: none;
-    }
-
-    .fotoarte .item-list .pager-last{
+    .node-type-media-gallery .item-list .pager-first{
 
         display: none;
     }
 
-    .fotoarte .item-list .pager-next a{
+    .node-type-media-gallery .item-list .pager-current{
+        display: none;
+    }
+
+    .node-type-media-gallery .item-list .pager-last{
+
+        display: none;
+    }
+
+    .node-type-media-gallery .item-list .pager-next a{
 
         position: relative;
         top: -205px;
@@ -62,7 +62,7 @@
 
 
 
-    .fotoarte .item-list .pager-previous a{
+    .node-type-media-gallery .item-list .pager-previous a{
 
         position: relative;
         top: -205px;
@@ -75,7 +75,7 @@
         background-image: url("http://suprema.sabmiller.acsitefactory.com/sites/g/files/ogq836/f/media_crop/286/public/201504/blogSuprema_DSK_07-mobile-left.png");
     }
 
-    .fotoarte .media-thumbnail-frame{
+    .node-type-media-gallery .media-thumbnail-frame{
         position: none;
         float: left;
     }
@@ -95,44 +95,44 @@
 
 @media all and (min-width: 320px) and (max-width: 479px) {
 
-        .fotoarte .item-list .pager-next a{
+        .node-type-media-gallery .item-list .pager-next a{
             top: -206px;
             left: 140px;
         }
 
-        .fotoarte .item-list .pager-previous a{
+        .node-type-media-gallery .item-list .pager-previous a{
             top: -206px;
             left: -35px;
         }
 
 
-        .fotoarte .mg-col-3 {
+        .node-type-media-gallery .mg-col-3 {
         width: 90% !important;
         padding-left: 25px;
     }
 
-       .fotoarte .field-name-media-gallery-media{
+       .node-type-media-gallery .field-name-media-gallery-media{
         margin-left: 0;
     }
 
 
-      .fotoarte .media-gallery-item{
+      .node-type-media-gallery .media-gallery-item{
         margin-left: 0px;
         }
 
-        .fotoarte .view-header + .view-content, #block-block-26 + #block-views-vista-de-articulo-block, #block-block-31 + #block-system-main, #block-block-36 + #block-system-main, .field-name-field-imagen-header + .field-name-body{
+        .node-type-media-gallery .view-header + .view-content, #block-block-26 + #block-views-vista-de-articulo-block, #block-block-31 + #block-system-main, #block-block-36 + #block-system-main, .field-name-field-imagen-header + .field-name-body{
             padding:10px;
         }
 
-        .fotoarte .media-gallery-collection a .media-gallery-thumb, .media-gallery-media a .media-gallery-thumb, .media-gallery-thumb img{
+        .node-type-media-gallery .media-gallery-collection a .media-gallery-thumb, .media-gallery-media a .media-gallery-thumb, .media-gallery-thumb img{
             margin-left: 0px;
         }
 
-    .fotoarte .linksBottom{
+    .node-type-media-gallery .linksBottom{
         margin-left: 37px;
     }
 
-        .fotoarte .linksBottom img{
+        .node-type-media-gallery .linksBottom img{
 
         margin-bottom: 10px;
         height: 20px;
@@ -144,17 +144,17 @@
 
 @media all and (min-width: 480px) and (max-width: 767px) {
 
-        .fotoarte .item-list .pager-next a{
+        .node-type-media-gallery .item-list .pager-next a{
             top: -265px;
             left: 245px;
         }
 
-    .fotoarte .item-list .pager-previous a{
+    .node-type-media-gallery .item-list .pager-previous a{
             top: -265px;
             left: -16px;
         }
 
-    .fotoarte .linksBottom{
+    .node-type-media-gallery .linksBottom{
         margin-left: 10px;
     }
 }
@@ -163,7 +163,7 @@
 
 @media all and (min-width: 768px) and (max-width: 1024px) {
 
-    .fotoarte .item-list .pager-next a{
+    .node-type-media-gallery .item-list .pager-next a{
 
         position: relative;
         top: -410px;
@@ -178,7 +178,7 @@
 
 
 
-    .fotoarte .item-list .pager-previous a{
+    .node-type-media-gallery .item-list .pager-previous a{
 
         position: relative;
         top: -410px;
@@ -191,7 +191,7 @@
         background-image: url("http://suprema.sabmiller.acsitefactory.com/sites/g/files/ogq836/f/media_crop/276/public/201504/imagen2_03.png");
     }
 
-    .fotoarte .linksBottom{
+    .node-type-media-gallery .linksBottom{
         margin-left: 145px;
     }
 
@@ -199,7 +199,7 @@
 
 @media all and (min-width: 1025px) and (max-width: 1900px) {
 
-        .fotoarte .item-list .pager-next a{
+        .node-type-media-gallery .item-list .pager-next a{
 
         top: -410px;
         left: 480px;
@@ -210,7 +210,7 @@
 
 
 
-    .fotoarte .item-list .pager-previous a{
+    .node-type-media-gallery .item-list .pager-previous a{
 
         top: -410px;
         left: -30px;
@@ -220,7 +220,7 @@
         background-image: url("http://suprema.sabmiller.acsitefactory.com/sites/g/files/ogq836/f/media_crop/276/public/201504/imagen2_03.png");
     }
 
-    .fotoarte .linksBottom{
+    .node-type-media-gallery .linksBottom{
         margin-left: 160px;
     }
 
