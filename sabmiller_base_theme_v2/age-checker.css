@@ -1,0 +1,46 @@
+/* @group Age Checker */
+
+#age_checker_overlay #age_checker_verification_popup {
+    background: none;
+}
+
+#age_checker_verification_popup .container-fluid {
+    max-width: 700px;
+}
+
+#age_checker_verification_popup.overlay {
+    width: 100%;
+    position: fixed;
+}
+
+#age_checker_error_message {
+    text-align: center;
+}
+
+#age_checker_overlay,
+.age_checker-footer {
+    background: #eee;
+    min-height: initial !important;
+}
+
+#age_checker_overlay {
+    height: 100% !important;
+    padding: 0 !important;
+}
+
+.age_checker-footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: 10000;  /* The age checker module comes with z-index values of 9998 and 9999 */
+}
+
+.age_checker-footer:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+/* @end */
