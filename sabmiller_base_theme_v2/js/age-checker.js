@@ -221,8 +221,8 @@ All components name must follow this format:
     function overlayHeight() {
         var vSize = $(window).height() - $(config.footer.node).outerHeight()+'px';
 
-        overlay.css('height', vSize);
-        overlay.css('min-height', vSize);
+        $(overlay).css('height', vSize);
+        $(overlay).css('min-height', vSize);
     }
 
 })(jQuery, jQuery2);

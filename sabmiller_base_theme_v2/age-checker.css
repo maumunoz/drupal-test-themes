@@ -20,18 +20,15 @@
 #age_checker_overlay,
 .age_checker-footer {
     background: #eee;
-    min-height: initial !important;
+    min-height: initial;
 }
 
 #age_checker_overlay {
-    height: 100% !important;
+    height: 100%;
     padding: 0 !important;
 }
 
 .age_checker-footer {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
     z-index: 10000;  /* The age checker module comes with z-index values of 9998 and 9999 */
 }
 
