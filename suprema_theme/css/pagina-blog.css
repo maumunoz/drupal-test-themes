@@ -178,7 +178,8 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02862c', endColorstr='#006926',GradientType=0 );
 }
 
-#view-id-navigator {
+#block-views-navigator-block,
+.view-id-navigator {
     display: none;
 }
 
