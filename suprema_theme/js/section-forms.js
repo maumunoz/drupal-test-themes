@@ -18,22 +18,29 @@
         divisor.remove();
     });
     
-    $("#commentForm").validate();
-    $("#edit-submitted-new-1427900283227").rules( "add", {
-        email: true,
-        messages: {
-            email: "Correo inválido",
-        }
-    });
-    $("#edit-submitted-new-1427900286632").rules( "add", {
-        equalTo: "#edit-submitted-new-1427900283227",
-        messages: {
-            email: "No coincide con el correo",
-        }
-    });
+    $("#content .webform-client-form").validate();
+    
     $.extend($.validator.messages, {
         required: 'Este campo es obligatorio.',
     });
+
+    $.initModule("#webform-client-form-61", function ($, formcontact) {
+
+        $("#edit-submitted-new-1427900283227").rules( "add", {
+            email: true,
+            messages: {
+                email: "Correo inválido",
+            }
+        });
+        $("#edit-submitted-new-1427900286632").rules( "add", {
+            equalTo: "#edit-submitted-new-1427900283227",
+            messages: {
+                email: "No coincide con el correo",
+            }
+        });
+    });
+        
+        
 })(jQuery2);
 
 

@@ -73,6 +73,10 @@
     margin-bottom: 20px;
 }
 
+.node-type-webform.fondo-negro .webform-client-form label {
+    max-width: 100%;
+}
+
 .node-type-webform.fondo-negro .webform-client-form input,
 .node-type-webform.fondo-negro .webform-client-form textarea {
     max-width: 100%;
@@ -84,6 +88,11 @@
     background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(211,211,211,1) 100%);
     background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(211,211,211,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d3d3d3',GradientType=0 );
+    color: #000;
+}
+
+.node-type-webform.fondo-negro .error {
+    color: #f00;
 }
 
 
