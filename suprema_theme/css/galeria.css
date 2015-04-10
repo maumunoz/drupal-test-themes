@@ -46,7 +46,7 @@
 
         display: none;
     }
-
+    .node-type-media-gallery .item-list .pager-next{position: absolute;}
     .node-type-media-gallery .item-list .pager-next a{
 
         position: relative;
@@ -60,7 +60,7 @@
         background-image: url("http://suprema.sabmiller.acsitefactory.com/sites/g/files/ogq836/f/media_crop/281/public/201504/blogSuprema_DSK_07-mobile.png");
     }
 
-
+.node-type-media-gallery .item-list .pager-previous{ position: absolute;}
 
     .node-type-media-gallery .item-list .pager-previous a{
 
@@ -96,13 +96,13 @@
 @media all and (min-width: 320px) and (max-width: 479px) {
 
         .node-type-media-gallery .item-list .pager-next a{
-            top: -206px;
+            top: -249px;
             left: 92px;
         }
 
         .node-type-media-gallery .item-list .pager-previous a{
-            top: -206px;
-            left: -93px;
+            top: -249px;
+            left: -143px;
         }
 
 
@@ -145,13 +145,13 @@
 @media all and (min-width: 480px) and (max-width: 767px) {
 
         .node-type-media-gallery .item-list .pager-next a{
-            top: -265px;
+            top: -295px;
             left: 160px;
         }
 
     .node-type-media-gallery .item-list .pager-previous a{
-            top: -265px;
-            left: -146px;
+            top: -295px;
+            left: -205px;
         }
 
     .node-type-media-gallery .linksBottom{
@@ -167,7 +167,7 @@
 
         position: relative;
         top: -410px;
-        left: 470px;
+        left: 270px;
         width: 78px;
         height: 100px;
         border: none;
@@ -182,7 +182,7 @@
 
         position: relative;
         top: -410px;
-        left: -30px;
+        left: -360px;
         width: 67px;
         height: 99px;
         border: none;
@@ -213,7 +213,7 @@
     .node-type-media-gallery .item-list .pager-previous a{
 
         top: -440px;
-        left: -265px;
+        left: -355px;
         width: 67px;
         height: 99px;
         background-repeat: no-repeat;
