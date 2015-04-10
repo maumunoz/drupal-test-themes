@@ -71,6 +71,12 @@
     $.initModule(".field-name-field-disenno", function ($, divdisenno) {
         $("body").addClass( $(".field-name-field-disenno").text().replace(/\s/g,"-").toLowerCase() );
     });
+    
+    $.initModule(".slick-slider", function ($, divdisenno) {
+        $(".slick-slide").each(function(i,e) {
+            $(e).css("background-image", "url("+$(e).find("img").attr("src")+")");
+        });
+    });
 
     
     jQuery(window).scroll(function() {

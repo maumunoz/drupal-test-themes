@@ -16,6 +16,7 @@
     -webkit-tap-highlight-color: transparent; 
     margin: 0 !important;
     padding: 0 !important;
+    
 }
 
 .slick-list {
@@ -61,11 +62,15 @@
     float: left;
     height: 100%;
     min-height: 1px;
-    display: none; }
+    display: none; 
+    background-size: cover;
+}
 [dir="rtl"] .slick-slide {
     float: right; }
 .slick-slide img {
-    display: block; }
+    display: block; 
+    opacity: 0;
+}
 .slick-slide.slick-loading img {
     display: none; }
 .slick-slide.dragging img {
