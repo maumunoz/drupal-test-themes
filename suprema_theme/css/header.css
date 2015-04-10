@@ -74,6 +74,10 @@
     border: none !important;
     color: #fff;
 }
+
+.fb_iframe_widget{
+    margin-left: 8px;
+}
 .social-header-left,
 .social-header-right {
     display: none;
@@ -123,7 +127,7 @@
 
 #block-system-main-menu .bottom {
     max-width: 824px;
-    margin: 0 auto; 
+    margin: 0 auto;
     border-bottom: solid 2px #c4b695;
     box-shadow: 0 5px 4px -2px black;
 }
@@ -147,7 +151,7 @@
 
 }
 
-#search-block-form .form-item, 
+#search-block-form .form-item,
 #search-block-form .form-actions {
     margin: 0;
 }
@@ -286,7 +290,7 @@
     #preheader {
         display: block;
     }
-    
+
     #site-name {
         top: -18px;
 

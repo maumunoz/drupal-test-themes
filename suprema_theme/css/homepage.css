@@ -9,12 +9,16 @@
     height: initial;
 }
 
+.inicio #block-system-main-menu .bottom {
+    max-width: 1024px;
+}
+
 .inicio .stack .box {
     padding: 0;
 }
 
 .inicio #content {
-    max-width: 100%;
+    max-width: 1024px;
 }
 
 .inicio .slick-slider {
@@ -127,7 +131,7 @@
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
     .slider-cta {
-        top: 54%;
+        top: 70%;
         width: 465px;
         font-size: 16px;
     }
