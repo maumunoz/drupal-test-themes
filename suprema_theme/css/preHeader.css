@@ -26,6 +26,7 @@
     text-align: left;
     font-size: 12.6px;
     max-width: 1024px;
+    position: relative;
 }
 
 #age_checker_message .wrapperMjs h1 {
