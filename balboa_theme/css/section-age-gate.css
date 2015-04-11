@@ -1,0 +1,158 @@
+/* @group Header */
+
+.t/* @group Age Gate */
+
+#age_checker_overlay {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.age_checker {
+    padding: 1.5% 0;
+}
+
+.age_checker h2,
+.age_checker h3,
+.age_checker h4 {
+    color: #fdb515;
+    padding: 0 35px;
+    margin: 0 0 5px 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.age_checker p {
+    color: #fdb515;
+    text-align: left;
+    font-size: 157%;
+    padding: 0 6px;
+}
+
+.age_checker input,
+.age_checker select {
+    color: #acacac;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.age_checker .container-fluid {
+    max-width: 405px;
+}
+
+.age_checker-date {
+    padding: 0 0 10px 0;
+}
+
+.age_checker-date .form-item {
+    margin: 0;
+}
+
+.age_checker-date .form-item .form-text {
+    width: 100%;
+}
+
+.age_checker-date .form-item-day {
+    width: 25%;
+    padding-right: 3%;
+}
+
+.age_checker-date .form-item-month {
+    width: 25%;
+    padding-right: 3%;
+}
+
+.age_checker-date .form-item-year {
+    width: 42%;
+}
+
+#age_checker_month,
+#age_checker_day,
+#age_checker_year {
+    line-height: 38px;
+    height: 48px;
+}
+
+.age_checker-submit {
+    padding: 0 0 5px 0;
+}
+
+.age_checker-submit .form-submit {
+    font-size: 157%;
+    width: 100%;
+    line-height: 56px;
+    height: auto;
+    padding: 0;
+    margin: 5px 0 0;
+}
+
+.agegate_country_select {
+    padding: 6px 12px 0 12px;
+}
+
+.agegate_country_select select {
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+}
+
+.agegate_country_select select option {
+    line-height: 1;
+}
+
+.age_checker-errors {
+    font-size: 114%;
+    color: #acacac;
+    padding: 5px 0;
+}
+
+.age_checker-footer {
+    background: #271415;
+    padding: 15px 0 135px 0;
+}
+
+.age_checker .age_checker-footer .container-fluid {
+    max-width: 435px;
+}
+
+.age_checker .age_checker-footer p,
+.age_checker-footer a {
+    color: #acacac;
+    font-weight: 300;
+    text-align: center;
+    font-size: 100%;
+    padding: 0;
+}
+
+.age_checker-footer a {
+    text-decoration: underline;
+}
+
+/* @end */
+
+/* @group Media Query */
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
+/* @end */

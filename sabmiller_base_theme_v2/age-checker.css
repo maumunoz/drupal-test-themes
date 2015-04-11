@@ -1,20 +1,7 @@
 /* @group Age Checker */
 
-#age_checker_overlay #age_checker_verification_popup {
-    background: none;
-}
-
-#age_checker_verification_popup .container-fluid {
-    max-width: 700px;
-}
-
-#age_checker_verification_popup.overlay {
-    width: 100%;
-    position: fixed;
-}
-
-#age_checker_error_message {
-    text-align: center;
+#age_checker_overlay {
+    height: 100%;
 }
 
 #age_checker_overlay,
@@ -23,13 +10,75 @@
     min-height: initial;
 }
 
-#age_checker_overlay {
+#age_checker_overlay #age_checker_verification_popup {
+    background: none;
+}
+
+#age_checker_verification_popup {
+    width: auto;
+    position: relative;
+    left: 0;
+    top: 0;
+    border: 0;
+    background: #eee;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    z-index: 9996;
+    overflow: auto;
     height: 100%;
-    padding: 0 !important;
+}
+
+#age_checker_verification_popup.overlay {
+    width: 100%;
+    position: fixed;
+}
+
+.age_checker .container-fluid {
+    max-width: 700px;
+}
+
+.age_checker p {
+    margin: 0;
+}
+
+#age_checker_message,
+[id=age_checker_message] {
+    padding: 0;
+    text-align: center;
+}
+
+#age_checker_month,
+#age_checker_day,
+#age_checker_year {
+    display: inline-block;
+    padding: 4px;
+    font-weight: normal;
+    height: 22px;
+    line-height: 22px;
+}
+
+#age_checker_error_message {
+    text-align: center;
+}
+
+.age_checker-submit .form-submit {
+    height: 38px;
+    min-width: 265px;
+    margin: 10px 10px 0px 10px;
+    text-align: center;
+    display: inline-block;
+    padding: 4px;
 }
 
 .age_checker-footer {
-    z-index: 10000;  /* The age checker module comes with z-index values of 9998 and 9999 */
+    width: 100%;
+    height: auto;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #eee;
+    z-index: 9999;  /* The age checker module comes with z-index values of 9998 and 9999 */
 }
 
 .age_checker-footer:after {

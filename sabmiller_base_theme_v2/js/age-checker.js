@@ -90,6 +90,7 @@ All components name must follow this format:
                 // Verify Age Checker content is been loaded
                 if (content.is(':visible')) {
                     content.hide();
+                    content.addClass('age_checker');
                     content.removeAttr('style');
 
                     // Add basic styles when overlay is not present
@@ -194,7 +195,9 @@ All components name must follow this format:
 
                     //Set Overlay height if footer (sticky by default) is present
                     if ($(overlay).length && $(config.footer.node).length) {
-                        overlayHeight();
+                        setTimeout(function () {
+                            overlayHeight();
+                        }, 1000);
                     }
                 }
 

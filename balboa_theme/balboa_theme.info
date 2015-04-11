@@ -8,6 +8,7 @@ base theme = 'sabmiller_base_theme_v2'
 stylesheets[all ][] = 'css/global.css'
 stylesheets[all ][] = 'css/section-header.css'
 stylesheets[all ][] = 'css/section-footer.css'
+stylesheets[all ][] = 'css/section-age-gate.css'
 
 regions[page_top] = 'Above page'
 regions[preheader_first] = 'Preheader first'
