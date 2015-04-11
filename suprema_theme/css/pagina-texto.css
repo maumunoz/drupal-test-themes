@@ -1,5 +1,13 @@
-/* @group TERMINOS DE USO */
+/* @group Página estática */
 
+#block-block-41 {
+    display: none;
+}
+
+.fondo-negro #block-block-41 {
+    display: block;
+}
+    
 #block-block-41 img {
     width: 100%;
     max-width: 100%;
@@ -123,10 +131,11 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-    #block-block-41 {
-        display: none !important;
-    }
+
     
+    .fondo-negro #block-block-41 {
+        display: none;
+    }
     
     .fondo-negro #main {
         background-color: rgba(0,0,0,.5);

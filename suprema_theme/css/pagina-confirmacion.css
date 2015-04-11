@@ -10,12 +10,16 @@
     padding-bottom: 62px;
 }
 
+.webform-confirmation p {
+    padding: 0 16px;
+}
+
 .webform-confirmation {
     padding-bottom: 18px;
 }
 
-.webform-confirmation img {
-    width: 100%;
+.webform-confirmation  img {
+    max-width: 100%;
 }
 .webform-confirmation h2{
     padding: 0 50px;
