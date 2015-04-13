@@ -6,6 +6,10 @@
     background-position: center center;
 }
 
+.age_checker {
+    font-size: 80%;
+}
+
 .age_checker form {
     padding: 20px 0;
 }
@@ -19,6 +23,7 @@
     text-transform: uppercase;
     font-weight: 700;
     line-height: 1.2;
+    font-size: 214%;
 }
 
 .age_checker p {
@@ -41,7 +46,7 @@
 }
 
 .age_checker-date {
-    padding: 0 0 10px 0;
+    padding: 0 0 5px 0;
 }
 
 .age_checker-date .form-item {
@@ -71,10 +76,11 @@
 #age_checker_year {
     line-height: 38px;
     height: 48px;
+    font-size: 125%;
 }
 
 .age_checker-submit {
-    padding: 0 0 5px 0;
+    padding: 6px 12px 0 12px;
 }
 
 .age_checker-submit .form-submit {
@@ -94,6 +100,7 @@
     width: 100%;
     height: 36px;
     line-height: 36px;
+    font-size: 125%;
 }
 
 .agegate_country_select select option {
@@ -108,7 +115,8 @@
 
 .age_checker-footer {
     background: #271415;
-    padding: 15px 0 135px 0;
+    padding: 15px 0;
+    font-size: 115%;
 }
 
 .age_checker .age_checker-footer .container-fluid {
@@ -128,6 +136,17 @@
     text-decoration: underline;
 }
 
+.age_checker-logo {
+    padding: 0 115px;
+}
+
+.age_checker-logo img {
+    display: inline-block;
+    width: 100%;
+    max-width: 248px;
+    height: auto;
+}
+
 /* @end */
 
 /* @group Media Query */
@@ -140,6 +159,24 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
+
+.age_checker {
+    font-size: 100%;
+}
+
+.age_checker h2,
+.age_checker h3,
+.age_checker h4 {
+    padding: 0 15px;
+}
+
+.age_checker-footer {
+    padding: 15px 0 130px 0;
+}
+
+.age_checker-submit {
+    padding: 0 0 5px 0;
+}
 
 }
 
