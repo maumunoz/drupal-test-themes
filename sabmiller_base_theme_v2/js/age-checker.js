@@ -31,6 +31,7 @@ All components name must follow this format:
         ageCheckerPrefix = 'age_checker-',
         expiration = '#age_checker_expiration',
         cookieName = 'age_checker',
+        form = '#age-checker-getform',
         siblings = [],
         mobile = false;
 
@@ -79,9 +80,9 @@ All components name must follow this format:
                     $('html').css('overflow', 'hidden');
 
                     //Set Overlay height if footer (sticky by default) is present
-                    if ($(overlay).length && $(config.footer.node).length) {
-                        overlayHeight();
+                    if ($(config.footer.node).length) {
                         $(window).on('resize', overlayHeight);
+                        overlayHeight();
                     }
                 } else {
                     $('html').css('overflow', 'auto');
@@ -193,8 +194,8 @@ All components name must follow this format:
                     // Show content after transfomation ends
                     content.show();
 
-                    //Set Overlay height if footer (sticky by default) is present
-                    if ($(overlay).length && $(config.footer.node).length) {
+                    //Set Form height if footer (sticky by default) is present
+                    if ($(config.footer.node).length) {
                         setTimeout(function () {
                             overlayHeight();
                         }, 1000);
@@ -220,12 +221,14 @@ All components name must follow this format:
         }
     }
 
-    // Set Overlay height if footer (sticky by default) is present
+    // Set Form height if footer (sticky by default) is present
     function overlayHeight() {
         var vSize = $(window).height() - $(config.footer.node).outerHeight()+'px';
-
-        $(overlay).css('height', vSize);
-        $(overlay).css('min-height', vSize);
+        $(form).css({
+            'height': vSize,
+            'min-height': vSize,
+            'overflow': 'auto'
+        });
     }
 
 })(jQuery, jQuery2);

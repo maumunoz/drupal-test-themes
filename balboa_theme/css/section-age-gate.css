@@ -6,8 +6,8 @@
     background-position: center center;
 }
 
-.age_checker {
-    padding: 1.5% 0;
+.age_checker form {
+    padding: 20px 0;
 }
 
 .age_checker h2,
