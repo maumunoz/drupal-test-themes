@@ -205,32 +205,32 @@
     .blog-sidebar {
         display: block;
     }
-    
+
     .view-momentos-suprema > .view-content .views-row {
         margin-bottom: 20px;
         border: none;
         padding-bottom: 0;
 
     }
-    
+
     .view-vista-de-articulo-contenido > .view-content .views-row {
         width: 69%;
         border-right: solid 1px #dacba1;
         padding-right: 15px;
     }
-    
+
     .view-vista-de-articulo {
         text-align: left;
     }
-    
+
     .view-vista-de-articulo .share {
         display: block;
     }
-    
+
     .view-vista-de-articulo .views-field-field-imagen{
         margin: 0;
     }
-    
+
     .view-vista-de-articulo .views-field-nothing {
         margin-bottom: 0;
         margin-top: 10px;
