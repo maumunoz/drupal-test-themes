@@ -7,6 +7,8 @@
 #age_checker_verification_popup > form {
     margin: 0 auto;
     max-width: 1024px;
+    height: 100% !important;
+    overflow: initial !important;
 }
 
 #age_checker_verification_popup .bg-container {
