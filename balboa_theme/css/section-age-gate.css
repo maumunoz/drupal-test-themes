@@ -120,7 +120,7 @@
 }
 
 .age_checker .age_checker-footer .container-fluid {
-    max-width: 435px;
+    max-width: 445px;
 }
 
 .age_checker .age_checker-footer p,
@@ -128,8 +128,11 @@
     color: #acacac;
     font-weight: 300;
     text-align: center;
-    font-size: 100%;
     padding: 0;
+}
+
+.age_checker-footer p {
+    font-size: 100%;
 }
 
 .age_checker-footer a {
@@ -172,6 +175,10 @@
 
 .age_checker-footer {
     padding: 15px 0 130px 0;
+}
+
+.age_checker-footer p {
+    font-size: 87.5%;
 }
 
 .age_checker-submit {
