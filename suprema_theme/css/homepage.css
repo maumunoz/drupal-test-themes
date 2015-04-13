@@ -82,7 +82,6 @@
     font-size: 18px;
     display: block;
     clear: both;
-    background-color: black;
     text-align: center;
     padding: 18px 20%;
     color: #fff;
@@ -137,6 +136,9 @@
     }
     .inicio .slick-slider {
         max-height: 445px;
+    }
+    .home_blackarea {
+        background-color: black;
     }
 }
 

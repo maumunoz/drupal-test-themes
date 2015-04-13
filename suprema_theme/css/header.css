@@ -52,7 +52,7 @@
 }
 
 .btn-menu-mobile {
-    width: 50%;
+    width: 18%;
     display: inline-block;
 }
 
@@ -157,7 +157,6 @@
 }
 
 #search-block-form .form-text {
-    display: none;
     background-color: #1e1b12;
     border: none;
     height: 20px;
@@ -165,14 +164,17 @@
     font-size: 14px;
     color: #fff;
     border-radius: 10px;
-    width: 159px;
+    width: 0;
+    padding: 0;
+    transition: width 0.3s;
     font-family: Arial;
     font-size: 12px;
     font-weight: bold;
 }
 
 .searchexpanded #search-block-form .form-text {
-    display: initial;
+    width: 159px;
+    padding: 6px 12px;
 }
 
 .searchexpanded #site-name {

@@ -36,6 +36,10 @@
                 e.preventDefault();
             }
         }); 
+        
+        $("#content").bind("click",function(e) {
+            if($("#search-block-form .form-text").val()=="") $("body").removeClass("searchexpanded");
+        })
     });
     
     $.initModule("#block-system-main-menu", function ($, mainmenu) {
