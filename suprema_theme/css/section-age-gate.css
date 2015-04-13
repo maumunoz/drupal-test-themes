@@ -297,7 +297,7 @@
     .age_checker-country p,
     .age_checker-date p,
     .age_checker-submit p {
-    text-align: left;
+        text-align: left;
     }
     .age_checker-banner {
         height: 250px;

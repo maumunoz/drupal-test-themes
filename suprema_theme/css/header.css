@@ -52,7 +52,7 @@
 }
 
 .btn-menu-mobile {
-    width: 50%;
+    width: 18%;
     display: inline-block;
 }
 
@@ -94,7 +94,7 @@
 .social-header-right {
     float: right;
     letter-spacing: -0.4px;
-    margin-top: 6px;
+    margin-top: 10px;
     margin-right: 8px;
     margin-left: 12px;
 }
@@ -157,7 +157,6 @@
 }
 
 #search-block-form .form-text {
-    display: none;
     background-color: #1e1b12;
     border: none;
     height: 20px;
@@ -165,14 +164,17 @@
     font-size: 14px;
     color: #fff;
     border-radius: 10px;
-    width: 159px;
+    width: 0;
+    padding: 0;
+    transition: width 0.3s;
     font-family: Arial;
     font-size: 12px;
     font-weight: bold;
 }
 
 .searchexpanded #search-block-form .form-text {
-    display: initial;
+    width: 159px;
+    padding: 6px 12px;
 }
 
 .searchexpanded #site-name {
@@ -198,7 +200,7 @@
 }
 
 #navigation .menu li:hover {
-/*    background-color:  rgba(0, 0, 0, 0.1); */
+    /*    background-color:  rgba(0, 0, 0, 0.1); */
 }
 
 #navigation .menu li a {
@@ -252,7 +254,7 @@
 @media only screen and (min-width : 320px) {
 
     .sb-slidebar {
-    width: 42%;
+        width: 42%;
     }
 }
 
@@ -268,8 +270,8 @@
 
     .sb-slidebar {
 
-    width: 35%;
-}
+        width: 35%;
+    }
 
 }
 
@@ -285,7 +287,7 @@
     }
 
     .sb-slidebar {
-    width: 26%;
+        width: 26%;
     }
 }
 

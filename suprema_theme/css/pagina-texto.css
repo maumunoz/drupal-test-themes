@@ -7,7 +7,7 @@
 .fondo-negro #block-block-41 {
     display: block;
 }
-    
+
 #block-block-41 img {
     width: 100%;
     max-width: 100%;
@@ -48,7 +48,7 @@
 }
 
 
-.fondo-negro h1{
+.fondo-negro #content h1{
     display: block !important;
     background-color: #009633;
     text-align: center;
@@ -100,9 +100,36 @@
     color: #000;
 }
 
+.node-type-webform.fondo-negro .webform-client-form .form-actions {
+    text-align: center;
+}
+
+.node-type-webform.fondo-negro .webform-client-form .form-submit {
+    width: 105px;
+    font-size: 19px;
+    background: none;
+    text-shadow: none;
+    color: white;
+    padding: 1px;
+    margin-left: 148px;
+
+    border: solid 1px #7ec744;
+    background: rgb(2,134,44);
+    background: -moz-linear-gradient(top, rgba(2,134,44,1) 3%, rgba(0,170,57,1) 29%, rgba(0,144,49,1) 53%, rgba(0,105,38,1) 97%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(3%,rgba(2,134,44,1)), color-stop(29%,rgba(0,170,57,1)), color-stop(53%,rgba(0,144,49,1)), color-stop(97%,rgba(0,105,38,1)));
+    background: -webkit-linear-gradient(top, rgba(2,134,44,1) 3%,rgba(0,170,57,1) 29%,rgba(0,144,49,1) 53%,rgba(0,105,38,1) 97%);
+    background: -o-linear-gradient(top, rgba(2,134,44,1) 3%,rgba(0,170,57,1) 29%,rgba(0,144,49,1) 53%,rgba(0,105,38,1) 97%);
+    background: -ms-linear-gradient(top, rgba(2,134,44,1) 3%,rgba(0,170,57,1) 29%,rgba(0,144,49,1) 53%,rgba(0,105,38,1) 97%);
+    background: linear-gradient(to bottom, rgba(2,134,44,1) 3%,rgba(0,170,57,1) 29%,rgba(0,144,49,1) 53%,rgba(0,105,38,1) 97%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02862c', endColorstr='#006926',GradientType=0 );
+
+}
+
 .node-type-webform.fondo-negro .error {
     color: #f00;
 }
+
+.mapa-del-sitio .field field-name-body ul li {}
 
 
 /* @end */
@@ -132,11 +159,11 @@
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
 
-    
+
     .fondo-negro #block-block-41 {
         display: none;
     }
-    
+
     .fondo-negro #main {
         background-color: rgba(0,0,0,.5);
         padding: 90px 36px 10px;
@@ -158,6 +185,11 @@
         margin: 0 0 10px;
         border: 1px solid #84d047;
     }
+
+    .node-type-webform.fondo-negro .webform-client-form .form-actions form-wrapper {
+        text-align: right;
+    }
+
 
 }
 
