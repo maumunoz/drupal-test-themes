@@ -129,7 +129,20 @@
     color: #f00;
 }
 
-.mapa-del-sitio .field field-name-body ul li {}
+.mapa-del-sitio .field-name-body ul ul li {
+    font-weight: normal;
+    font-size: 14px;
+}
+.mapa-del-sitio .field-name-body ul li {
+    font-size: 16px;
+    font-weight: bold;
+}
+.mapa-del-sitio .field-name-body ul ul li:before {
+    content: "> ";
+}
+.mapa-del-sitio .field-name-body ul {
+    list-style: none;
+}
 
 
 /* @end */

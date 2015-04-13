@@ -303,7 +303,8 @@
     }
 
     #search-block-form .form-text {
-        display: initial;
+        width: 159px;
+        padding: 6px 12px;
     }
 
     .stack-header-inner .site-name a {
