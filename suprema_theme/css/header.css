@@ -260,6 +260,7 @@
 @media only screen and (min-width : 480px) {
     .stack-header-inner .site-name a {
         height: 110px;
+        margin-top:13px;
     }
     .searchexpanded #site-name {
         display: block;
@@ -276,10 +277,10 @@
 @media only screen and (min-width : 768px) {
     .stack-header-inner .site-name a {
         height: 130px;
+        margin-top: 13px;
     }
 
     .mobile-main-menu .menu > li {
-
         font-size: 17px;
     }
 
