@@ -46,11 +46,13 @@
     text-align: center;
     margin-bottom: 10px;
 }
+
 .page-autores .views-row hr{
     width: 80%;
     background-color: #ffd43f;
     height: 3px;
 }
+
 .page-autores .views-row-even img{
     float: right;
 }
@@ -103,6 +105,8 @@
     text-transform: uppercase;
     font-weight: bold;
 }
+
+
 @media only screen and (min-width:0px) and (max-width: 320px) {
 
 
