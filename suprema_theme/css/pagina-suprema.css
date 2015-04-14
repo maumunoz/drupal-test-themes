@@ -5,13 +5,14 @@
     color: #3f3f3f;
     font-stretch: condensed;
     min-height: 460px;
-    font-size: 29px;
+    font-size: 20px;
     line-height: 0.9;
     padding: 42px 32px;
 }
 .title-Suprema .field-name-body .media-thumbnail-frame img {
     max-width: 100%;
     height: auto;
+    margin-top: 76px;
 }
 .title-Suprema .field-name-body .media-thumbnail-frame {
     float: right;
@@ -26,10 +27,14 @@
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
+
+
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
+
+
 }
 
 /* Small Devices, Tablets */

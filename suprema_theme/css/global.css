@@ -9,11 +9,13 @@
         url("../fonts/HoeflerText-Regular.svg#HoeflerText-Regular") format("svg"); }
 body {
     font-family: Helvetica, Arial, sans-serif;
+    background-color: black;
 }
 
 #page {
     background-image: url(../images/site-background.jpg);
     background-size: cover;
+    min-height: initial;
 }
 
 .node .field + .field,
