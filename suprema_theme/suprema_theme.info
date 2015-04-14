@@ -21,6 +21,7 @@ stylesheets[all ][] = 'css/pagina-sommelier.css'
 stylesheets[all ][] = 'css/pagina-confirmacion.css'
 stylesheets[all ][] = 'css/arte-suprema.css'
 stylesheets[all ][] = 'css/galeria.css'
+stylesheets[all ][] = 'css/busqueda.css'
 
 
 regions[page_top] = 'Above page'
