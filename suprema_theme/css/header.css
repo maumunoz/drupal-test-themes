@@ -38,6 +38,7 @@
     background-size: contain;
     background-position: center top;
     pointer-events: all;
+
 }
 
 #header-inner .box {
@@ -255,6 +256,11 @@
 
     .sb-slidebar {
         width: 42%;
+    }
+
+     .stack-header-inner .site-name a {
+        height: 110px;
+        margin-top:13px;
     }
 }
 
