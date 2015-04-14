@@ -16,6 +16,7 @@
 
 .fondo-negro .pane{
     background-color: #000 !important;
+    padding-bottom: 50px;
 }
 .grippie {
     display: none;
