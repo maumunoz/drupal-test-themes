@@ -1,0 +1,79 @@
+/* @group Homepage Slider Promociones */
+
+.homepage-promos .item-list {
+    padding: 15px;
+    background: #000;
+    background: rgba(0, 0, 0, .7);
+    text-align: center;
+}
+
+.homepage-promos .item-list li {
+    display: inline-block;
+    max-width: 115px;
+}
+
+.homepage-promos a {
+    display: block;
+    text-align: center;
+    color: #fff;
+    line-height: 1.2;
+    padding: 5px 0;
+}
+
+.homepage-promos img {
+    display: inline-block;
+    width: 100%;
+    max-width: 93px;
+    height: auto;
+    padding: 5px;
+    background: #990100;
+    border: 1px solid #fdb515;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+/* @end */
+
+/* @group Media Query */
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .homepage-promos {
+        position: absolute;
+        top: 0;
+        right: 8%;
+    }
+
+    .homepage-promos .item-list {
+        padding: 62px 15px 15px 15px;
+        max-width: 125px;
+    }
+
+    .homepage-promos .item-list li {
+        display: block;
+        max-width: none;
+    }
+
+    .homepage-promos img {
+        max-width: none;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
+/* @end */

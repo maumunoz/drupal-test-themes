@@ -14,6 +14,9 @@
     });
     $(document).ready(function () {
         $(window).resize();
+        setTimeout(function () {
+            $(window).resize();
+        }, 1000);
     });
 
 }(jQuery2));

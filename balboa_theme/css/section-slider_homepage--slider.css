@@ -1,0 +1,53 @@
+/* @group Homepage Slider Slider */
+
+.homepage-slider .slick-slider img,
+.homepage-slider .slick-slider a {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+
+.homepage-slider .slick-prev,
+.homepage-slider .slick-next {
+    width: 40px;
+    height: 80px;
+    margin-top: -30px;
+    background: url(../images/sprite.png) no-repeat 0 0;
+}
+
+.homepage-slider .slick-prev {
+    left: 3%;
+    background-position: center 0;
+}
+
+.homepage-slider .slick-next {
+    right: 3%;
+    background-position: center -40px;
+}
+
+/* @end */
+
+/* @group Media Query */
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
+/* @end */

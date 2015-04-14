@@ -9,7 +9,7 @@
 
 .wrapper-footer .stack-footer-inner {
     background-color: transparent;
-    padding: 20px 5% 20px 2%;
+    padding: 15px 2%;
     padding-top: 20px;
 }
 
@@ -18,7 +18,7 @@
 }
 
 #footer .col-2 .col {
-    width: 98%;
+    width: 100%;
     min-height: 0 !important;
 }
 
@@ -69,6 +69,12 @@
 
     #footer .col-2 .col.col-first {
         width: 50%;
+    }
+
+    .wrapper-footer .stack-footer-inner {
+        background-color: transparent;
+        padding: 20px 5% 20px 2%;
+        padding-top: 20px;
     }
 }
 
