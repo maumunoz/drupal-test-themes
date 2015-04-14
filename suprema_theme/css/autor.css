@@ -1,9 +1,17 @@
+
+
+
 .page-autores .view-autores .view-content {
     background-color: #fff;
 }
 
 .page-autores .photo{
     width: 34%;
+}
+
+.fotoEncabezado .media-thumbnail-frame img{
+    width: 100%;
+    height: auto;
 }
 .page-autores .views-row-odd a{
     clear: both;
@@ -131,15 +139,15 @@
         width: 31px;
         height: 34px;
         position: relative;
-        right: -79px;
-        top: -40px;
+        right: 10px;
+        top: -36px;
     }
     .autorTwitter{
         margin-right: 0px;
     }
     .page-autores .views-row p{
         position: relative;
-        top: -20px;
+        top: -40px;
         font-size: 10px;
         width: 40%;
     }
@@ -157,12 +165,17 @@
     }
     .page-autores .view-autores .view-content {
         padding: 0 !important;
+        position: relative;
+        top: -20px;
     }
+
 }
-@media only screen and (min-width:320px) and (max-width: 480px) {
+@media only screen and (min-width:321px) and (max-width: 480px) {
     .page-autores .views-row p{
         font-size: 12px;
         width: 40%;
+        position: relative;
+        top: -20px;
     }
 
     .page-autores img{
@@ -185,26 +198,31 @@
         width: 31px;
         position: relative;
         right: 35px;
+        top: -7px;
     }
     .autorTwitter a{
         background-image: url(http://suprema.sabmiller.acsitefactory.com/sites/g/files/ogq836/f/media_crop/146/public/201503/twitter-mobile.png);
         width: 31px;
         height: 34px;
         position: relative;
-        right: 49px;
+        right: 45px;
+        top:-6px;
     }
     .autorBlogger a{
         background-image: url(http://suprema.sabmiller.acsitefactory.com/sites/g/files/ogq836/f/media_crop/141/public/201503/blogger-mobile.png);
         width: 31px;
         height: 34px;
         position: relative;
-        right: 32px;
+        right: 25px;
+        top: -7px;
     }
     .autorTwitter{
         margin-right: 0px;
     }
     .page-autores .view-autores .view-content {
         padding: 0 !important;
+        position: relative;
+        top: -20px;
     }
     .page-autores .views-row-odd p{
         margin-left: 15px;
@@ -251,6 +269,8 @@
     }
     .page-autores .view-autores .view-content {
         padding: 0 !important;
+        position: relative;
+        top: -20px;
     }
 }
 @media only screen and (min-width:769px) and (max-width: 2048px) {
