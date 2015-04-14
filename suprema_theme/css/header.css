@@ -102,7 +102,6 @@
 
 .social-header-right-mobile {
     float: none;
-    text-align: center;
     margin: 0;
     padding: 0;
 }
@@ -262,10 +261,19 @@
         height: 110px;
         margin-top:13px;
     }
+
+    .social-header-right-mobile {
+        margin-left: 17px;
+    }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
+
+    .social-header-right-mobile {
+        margin-left: 25px;
+    }
+
     .stack-header-inner .site-name a {
         height: 110px;
         margin-top:13px;
@@ -283,6 +291,10 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
+
+    .social-header-right-mobile {
+        margin-left: 42px;
+    }
     .stack-header-inner .site-name a {
         height: 130px;
         margin-top: 13px;
@@ -299,6 +311,8 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
+
+
     #search-block-form,
     .social-header-left,
     .social-header-right {
@@ -330,5 +344,6 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
+
 }
 /* @end */
