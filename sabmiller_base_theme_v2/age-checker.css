@@ -15,7 +15,8 @@
 }
 
 #age_checker_verification_popup {
-    width: auto;
+    width: 100% !important;
+    opacity: 1 !important;
     position: relative;
     left: 0;
     top: 0;

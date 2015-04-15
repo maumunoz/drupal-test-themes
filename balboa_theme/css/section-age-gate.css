@@ -74,9 +74,10 @@
 #age_checker_month,
 #age_checker_day,
 #age_checker_year {
-    line-height: 38px;
-    height: 48px;
+    line-height: 38px !important;
+    height: 48px !important;
     font-size: 125%;
+    margin-top: 0 !important;
 }
 
 .age_checker-submit {
@@ -141,6 +142,7 @@
 
 .age_checker-logo {
     padding: 0 115px;
+    text-align: center !important;
 }
 
 .age_checker-logo img {
@@ -148,6 +150,15 @@
     width: 100%;
     max-width: 248px;
     height: auto;
+}
+
+.age_checker-nomaneje_label {
+    text-align: center;
+}
+
+.age_checker-nomaneje_label a,
+.age_checker-nomaneje_label img {
+    display: inline-block;
 }
 
 /* @end */
