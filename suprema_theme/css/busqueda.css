@@ -15,7 +15,6 @@
     background: none;
     text-shadow: none;
     color: white;
-    padding: 1px;
 
     border: solid 1px #7ec744;
     background: rgb(2,134,44);
@@ -28,6 +27,10 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02862c', endColorstr='#006926',GradientType=0 );
 }
 
+.page-search #main a {
+    color: #007537;
+    font-weight: bold;
+}
 /* @end */
 
 
