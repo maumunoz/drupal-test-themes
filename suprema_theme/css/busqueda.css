@@ -4,7 +4,7 @@
 
 .page-search #main {
     background-color: white;
-    padding: 96px 32px 64px;
+    padding: 50px 32px 64px;
 }
 
 .page-search h1 {
@@ -31,6 +31,14 @@
     color: #007537;
     font-weight: bold;
 }
+
+.page-search input.form-text {
+    max-width: 90%;
+}
+
+.page-search .username {
+    display: none;
+}
 /* @end */
 
 
@@ -50,6 +58,9 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
+    .page-search #main {
+        padding: 96px 32px 64px;
+    }
 }
 
 /* Large Devices, Wide Screens */
