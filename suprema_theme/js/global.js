@@ -76,6 +76,10 @@
         $("body").addClass( $(".field-name-field-disenno").text().replace(/\s/g,"-").toLowerCase() );
     });
     
+    $.initModule(".node-type-media-gallery .pager", function ($, galery) {
+        $(".pager").parent().insertBefore($(".mg-col-3"));
+    });
+    
     $.initModule(".slick-slider", function ($, divdisenno) {
         $(".slick-slide").each(function(i,e) {
             $(e).css("background-image", "url("+$(e).find("img").attr("src")+")");
