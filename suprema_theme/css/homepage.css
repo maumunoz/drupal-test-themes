@@ -9,6 +9,10 @@
     height: initial;
 }
 
+.inicio .slider-cta a{
+    text-decoration: none;
+}
+
 .inicio #block-system-main-menu .bottom {
     max-width: 1024px;
 }

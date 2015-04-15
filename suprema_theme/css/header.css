@@ -294,6 +294,11 @@
         width: 35%;
     }
 
+    .searchexpanded #search-block-form .form-text{
+        width: 119px;
+
+    }
+
 }
 
 /* Small Devices, Tablets */
