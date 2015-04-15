@@ -22,13 +22,19 @@
     min-height: 0 !important;
 }
 
+#footer .col-2 .col.col-second {
+    margin-left: 0;
+    padding-left: 0;
+}
+
 .region-footer-second,
 .region-footer-first,
 .region-footer-second .menu {
     text-align: center;
 }
 
-.region-footer-second .menu li {
+.region-footer-second .menu li,
+.region-footer-second .menu li.first {
     padding: 7px 10px;
     float: none;
 }
@@ -69,6 +75,11 @@
 
     #footer .col-2 .col.col-first {
         width: 50%;
+    }
+
+    #footer .col-2 .col.col-second {
+        margin-left: 1%;
+        padding-left: 1%;
     }
 
     .wrapper-footer .stack-footer-inner {
