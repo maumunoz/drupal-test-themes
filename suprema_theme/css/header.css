@@ -98,6 +98,14 @@
     margin-top: 10px;
     margin-right: 8px;
     margin-left: 12px;
+    padding-top: 2px;
+}
+
+
+
+.social-header-right .media-thumbnail-frame img{
+    position: relative;
+    top: -2px;
 }
 
 .social-header-right-mobile {
@@ -242,7 +250,6 @@
 .mobile-main-menu .menu > li:nth-child(2n) {
     background-color: #006a30;
 }
-
 
 
 /* @end */

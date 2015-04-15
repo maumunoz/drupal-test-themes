@@ -17,6 +17,8 @@
 .fondo-negro .pane{
     background-color: #000 !important;
     padding-bottom: 50px;
+    border-top-left-radius:7px;
+    border-top-right-radius:7px;
 }
 .grippie {
     display: none;
@@ -24,6 +26,7 @@
 
 .node-type-webform .webform-component {
     color: white;
+    text-align: center;
 }
 
 .node-type-webform.fondo-negro #content {
@@ -66,7 +69,8 @@
     font-weight: bold;
     font-size: 23px;
     padding: 8px 0;
-    margin: 0 -14px 10px;
+    position: relative;
+
 }
 
 
@@ -112,7 +116,7 @@
     text-shadow: none;
     color: white;
     padding: 1px;
-    margin-left: 148px;
+    margin-left: 0px;
 
     border: solid 1px #7ec744;
     background: rgb(2,134,44);
@@ -167,7 +171,8 @@
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
-}
+
+
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
@@ -207,7 +212,6 @@
         text-align: right;
     }
 
-
 }
 
 /* Medium Devices, Desktops */
@@ -215,6 +219,9 @@
 
     .arte-suprema .field .media-thumbnail-frame img{
         width: 22%;
+    }
+        .node-type-webform.fondo-negro .webform-client-form .form-submit {
+        margin-left: 148px;
     }
 }
 
