@@ -40,7 +40,7 @@
 }
 
 .slider-cta {
-    top: 38%;
+    top: 23%;
     width: 330px;
     font-size: 13px;
     position: absolute;
@@ -54,10 +54,16 @@
     color: white;
     padding: 9px 90px 9px 70px;
     line-height: 16px;
-    text-align: center;
+    text-align: left;
     letter-spacing: -0.2px;
 
 }
+
+.slider-cta p{
+    position: relative;
+    left: -50px;
+}
+
 
 
 .slider-cta a {
