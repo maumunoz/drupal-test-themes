@@ -243,6 +243,9 @@ button.mfp-close {
     }
 }
 
+.node-type-media-gallery .view-header + .view-content, #block-block-26 + #block-views-vista-de-articulo-block, #block-block-31 + #block-system-main, #block-block-36 + #block-system-main, .field-name-field-imagen-header + .field-name-body{
+    padding: none !important;
+}
 
 
 @media all and (min-width: 768px) {
