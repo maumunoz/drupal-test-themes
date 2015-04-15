@@ -135,6 +135,10 @@
     .inicio .slick-slider {
         max-height: 395px;
     }
+
+    .slider-cta {
+        text-align: center !important;
+    }
 }
 
 /* Medium Devices, Desktops */
