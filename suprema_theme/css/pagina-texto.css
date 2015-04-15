@@ -223,6 +223,10 @@
         .node-type-webform.fondo-negro .webform-client-form .form-submit {
         margin-left: 148px;
     }
+
+    .node-type-webform .webform-component{
+        text-align: left !important;
+    }
 }
 
 /* Large Devices, Wide Screens */
