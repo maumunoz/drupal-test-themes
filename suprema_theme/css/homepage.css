@@ -40,7 +40,8 @@
 }
 
 .slider-cta {
-    top: 23%;
+    top: 33%;
+    height: 150px;
     width: 330px;
     font-size: 13px;
     position: absolute;
