@@ -20,6 +20,10 @@
     max-width: 40%;
 }
 
+    .page-momentos-suprema .item-list .pager li{
+         padding: 0 !important;
+    }
+
 /* @end */
 
 
