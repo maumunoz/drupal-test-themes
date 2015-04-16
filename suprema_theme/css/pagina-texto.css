@@ -110,7 +110,7 @@
 }
 
 .node-type-webform.fondo-negro .webform-client-form .form-submit {
-    width: 105px;
+    width: 135px;
     font-size: 19px;
     background: none;
     text-shadow: none;
@@ -206,12 +206,12 @@
 
     .fondo-negro #main {
         background-color: rgba(0,0,0,.5);
-        padding: 90px 36px 10px;
+        padding: 95px 36px 10px;
         margin: 0 -40px;
     }
     .node-type-webform.fondo-negro #main {
         background-color: transparent;
-        padding: 90px 36px 10px;
+        padding: 105px 36px 10px;
         margin: 0 -20px;
     }
 
