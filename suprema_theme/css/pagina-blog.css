@@ -218,6 +218,18 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
+
+
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .title-Suscríbete-al-Blog .capcha-container{
+        position: relative;
+        left: 0px !important;
+    }
+    
     .view-momentos-suprema > .view-content .views-row {
         width: 70%;
         text-align: left;
@@ -260,16 +272,6 @@
     .title-Suscríbete-al-Blog .capcha-container{
         position: relative;
         left: 220px;
-    }
-
-
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
-    .title-Suscríbete-al-Blog .capcha-container{
-        position: relative;
-        left: 0px !important;
     }
 }
 
