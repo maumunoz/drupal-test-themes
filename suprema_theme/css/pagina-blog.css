@@ -183,6 +183,10 @@
     display: none;
 }
 
+    .title-Suscríbete-al-Blog .capcha-container{
+        position: relative;
+        left: 0px;
+    }
 /* @end */
 
 
@@ -199,10 +203,17 @@
     .page-momentos-suprema .pager{
         padding: 0 0 15px 0 !important;
     }
+        .title-Suscríbete-al-Blog .capcha-container{
+        left: 17px;
+    }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
+
+    .title-Suscríbete-al-Blog .capcha-container{
+        left: 95px;
+    }
 }
 
 /* Small Devices, Tablets */
@@ -256,9 +267,14 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
+    .title-Suscríbete-al-Blog .capcha-container{
+        position: relative;
+        left: 0px !important;
+    }
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
+
 }
 /* @end */
