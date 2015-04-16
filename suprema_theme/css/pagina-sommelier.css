@@ -106,7 +106,7 @@
 #media_crop_63651164527 {
     width: 100%;
     margin-bottom: 10px;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 img#media_crop_5761847582180 {
@@ -127,10 +127,7 @@ img#media_crop_5761847582180 {
 
     }
 
-    .sommelier_text1{
 
-        padding-top: 10px;
-    }
 
     .sommelier #content form > div{
         padding-left: 0 ;
@@ -144,7 +141,13 @@ img#media_crop_5761847582180 {
 
         margin-bottom: 10px;
     }
-
+    .sommelier .form-control{
+        width: 199px;
+    }
+    .sommelier #edit-submit{
+        margin-left: none;
+        float: right;
+    }
 
 }
 
@@ -195,11 +198,18 @@ img#media_crop_5761847582180 {
     img#media_crop_5761847582180 {
         width: 51%;
     }
+
+    .sommelier .form-control{
+        width: 135px;
+    }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
 
+    .sommelier .form-control{
+        width: 270px;
+    }
 
 }
 
