@@ -33,6 +33,11 @@
     margin: 10px 0;
 }
 
+    .page-search .container-inline div, .container-inline label{
+        position: relative;
+        left: -4px;
+    }
+
 .page-search #main a {
     color: #007537;
     font-weight: bold;
