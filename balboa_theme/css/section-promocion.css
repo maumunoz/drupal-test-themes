@@ -22,19 +22,19 @@
 }
 
 .node-type-promocion .pane > .content-area {
-  background: #171717;
+    background: #171717;
 }
 
 .node-type-promocion .pane > .content-area h1 {
-  width: 42%;
-  float: left;
-  margin-right: 4%;
-
-  font-size: 60px;
-  margin: 10px 0 0 36px;
-  text-transform: uppercase;
-  word-wrap: break-word;
-  font-weight: bold;
+    width: 42%;
+    float: left;
+    margin-right: 4%;
+    font-size: 60px;
+    margin: 10px 0 0 36px;
+    text-transform: uppercase;
+    word-wrap: break-word;
+    font-weight: bold;
+    line-height: 85px;
 }
 
 .node-type-promocion .pane > .content-area h2 {
@@ -59,7 +59,9 @@
 .node-type-promocion .pane > .content-area .contenido img {
     width: 150px;
 }
-.node-type-promocion .pane > .content-area h1 {
+
+.node-type-promocion .media_gallery-header {
+    display: none;
 }
 
 /* @end */
@@ -82,7 +84,7 @@
         float: left;
         width: 50%;
     }
-    
+
 }
 
 /* Medium Devices, Desktops */
