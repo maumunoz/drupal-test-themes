@@ -6,7 +6,7 @@
     width: 100%;
 }
 
-.node-type-lista-de-promociones .item-list ul
+.node-type-lista-de-promociones .item-list ul,
 .node-type-lista-de-promociones .item-list ul li {
     margin: 0 !important;
 }
