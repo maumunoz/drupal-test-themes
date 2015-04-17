@@ -27,7 +27,7 @@
 
 .view-vista-de-articulo a,
 .view-momentos-suprema a {
-    color: #333 !important;
+    color: #333;
 }
 
 .view-vista-de-articulo .views-field-field-imagen{
@@ -118,14 +118,18 @@
     padding: 5px !important;
 }
 
-.pager li > a, .pager li > span {
+.page-momentos-suprema .pager li > a, .pager li > span {
     border-radius: 0;
     border: solid 2px #18762d;
     color: #18762d;
-    float: left;
+    margin-bottom: 20px;
 }
 
-.pager .link-to-blog {
+.page-momentos-suprema .field-content p{
+    margin-bottom: 10px;
+}
+
+.page-momentos-suprema .pager .link-to-blog {
     border: solid 2px #d39a00;
     color: #d39a00;
 }
@@ -201,9 +205,7 @@
          padding: 0 !important;
     }
 
-    .page-momentos-suprema .pager{
-        padding: 0 0 15px 0 !important;
-    }
+
         .title-Suscríbete-al-Blog .capcha-container{
         left: none;
     }
@@ -214,20 +216,13 @@
     }
 
 
-    .pager li > a, .pager li > span{
-        width: 203px;
-        margin-bottom: 15px;
-        font-size: 18px;
-    }
 
-    .fb_iframe_widget{
+    .page-momentos-suprema .fb_iframe_widget{
         margin:0;
     }
 
-    .twitter-share-button{
-        position: relative;
-        top: -28px;
-        left: 125px;
+    .page-momentos-suprema .item-list ul li{
+        margin-bottom: 20px;
     }
 
 
@@ -240,27 +235,20 @@
         left: 37px;
     }
 
+    .page-momentos-suprema .item-list ul li{
+        margin-bottom: 20px;
+    }
 
-        .pager li > a, .pager li > span{
-            width: 119px;
-            height: 70px;
-        }
-
-            .twitter-share-button{
-                position: relative;
-                top: 0;
-                left: 0;
-            }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
 
-            .pager li > a, .pager li > span{
+        .page-momentos-suprema .pager li > a, .pager li > span{
             width: auto;
             height: auto;
         }
-        .pager li > a, .pager li > span{
+        .page-momentos-suprema .pager li > a, .pager li > span{
             width: auto !important;
         }
 
