@@ -2,8 +2,11 @@
 (function ($) {
     'use strict';
     var node = '.lista-promos',
+        now = moment(),
         offset = 4,
         items = 0,
+        finalDate,
+        dueDate,
         list,
         i;
 
@@ -20,6 +23,17 @@
         $(list).on('click touch', '.placeholder a', function(e) {
             e.preventDefault();
             e.stopPropagation();
+        });
+
+        $(list).find('li:not(.placeholder)').each(function() {
+            finalDate = $(this).find('.final-date');
+            if (finalDate.length) {
+                dueDate = moment($.trim(finalDate.text()));
+                if (dueDate.isValid() && dueDate.isBefore(now)) {
+                    finalDate.text("Finalizada");
+                    finalDate.removeClass('hidden');
+                }
+            }
         });
 
     });

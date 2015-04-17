@@ -22,6 +22,7 @@
     width: 50%;
     background-image: url(../images/promo-placeholder_bg.jpg);
     background-size: cover;
+    position: relative;
 }
 
 .node-type-lista-de-promociones .placeholder img {
@@ -31,6 +32,21 @@
 
 .node-type-lista-de-promociones .placeholder a {
     cursor: default;
+}
+
+.node-type-lista-de-promociones .final-date {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    font-size: 128.6%;
+    text-transform: uppercase;
+    padding: 0 13px;
+    line-height: 31px;
+    background: #000;
+    background: rgba(0, 0, 0, .8);
+    color: #fdb515;
 }
 
 /* @end */

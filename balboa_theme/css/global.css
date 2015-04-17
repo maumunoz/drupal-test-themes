@@ -33,6 +33,7 @@ body {
 
 /* @group Layers */
 
+.node-type-lista-de-promociones .final-date,
 .view-homepage-slider-promociones,
 .zindex1 {
     z-index: 1
