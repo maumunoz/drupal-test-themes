@@ -6,6 +6,11 @@
     width: 100%;
 }
 
+.node-type-lista-de-promociones .item-list ul
+.node-type-lista-de-promociones .item-list ul li {
+    margin: 0 !important;
+}
+
 .node-type-lista-de-promociones .help img,
 .node-type-lista-de-promociones .content-area img {
     width: 100%;
