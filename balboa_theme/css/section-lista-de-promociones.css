@@ -11,7 +11,6 @@
 
 .node-type-lista-de-promociones .pane > .help,
 .node-type-lista-de-promociones .pane > .content-area {
-
     float: none;
     width: 100%;
 }
@@ -22,6 +21,12 @@
     height: auto;
 }
 
+.node-type-lista-de-promociones .pane > .content-area {
+    min-height: 50%;
+    min-height: 49vw;
+    background-image: url(../images/fondo-promociones.jpg);
+    background-size: 100%;
+}
 .node-type-lista-de-promociones .pane > .content-area .views-row {
     float: left;
     width: 50%;

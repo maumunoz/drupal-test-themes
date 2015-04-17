@@ -27,7 +27,7 @@
 
 .view-vista-de-articulo a,
 .view-momentos-suprema a {
-    color: #333;
+    color: #333 !important;
 }
 
 .view-vista-de-articulo .views-field-field-imagen{
@@ -212,9 +212,7 @@
     .suscribe-big-button{
         font-size: 13px;
     }
-.content-area{
-    background-color: #fff;
-    }
+
 
     .pager li > a, .pager li > span{
         width: 203px;
