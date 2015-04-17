@@ -192,6 +192,10 @@
         position: relative;
         left: -5px;
     }
+
+    .page-momentos-suprema .view-content img{
+        margin: 20px 0;
+    }
 /* @end */
 
 
@@ -219,6 +223,14 @@
 
     .page-momentos-suprema .fb_iframe_widget{
         margin:0;
+        position: relative;
+        left: -55px;
+    }
+
+    .page-momentos-suprema .twitter-share-button{
+        position: relative;
+        top: -27px;
+        left: 80px;
     }
 
     .page-momentos-suprema .item-list ul li{
@@ -237,6 +249,19 @@
 
     .page-momentos-suprema .item-list ul li{
         margin-bottom: 20px;
+    }
+
+
+    .page-momentos-suprema .fb_iframe_widget{
+        margin:0;
+        position: relative;
+        left: 0px;
+    }
+
+    .page-momentos-suprema .twitter-share-button{
+        position: relative;
+        top: 0px;
+        left:0px;
     }
 
 }
