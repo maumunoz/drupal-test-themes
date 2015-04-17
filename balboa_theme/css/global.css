@@ -81,6 +81,8 @@ body {
 }
 
 /* Clearfix */
+.node-type-lista-de-promociones .item-list:before,
+.node-type-lista-de-promociones .item-list:after,
 .node-type-redes-sociales .region-content:before,
 .node-type-redes-sociales .region-content:after,
 .region-header:before,
