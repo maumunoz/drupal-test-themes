@@ -15,11 +15,52 @@
     width: 100%;
 }
 
+
 .node-type-promocion .pane > .help img {
     width: 100%;
     height: auto;
 }
 
+.node-type-promocion .pane > .content-area {
+  background: #171717;
+}
+
+.node-type-promocion .pane > .content-area h1 {
+  width: 42%;
+  float: left;
+  margin-right: 4%;
+
+  font-size: 60px;
+  margin: 10px 0 0 36px;
+  text-transform: uppercase;
+  word-wrap: break-word;
+  font-weight: bold;
+}
+
+.node-type-promocion .pane > .content-area h2 {
+    color: #fab513;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-left: 2%;
+    font-weight: bold;
+}
+
+.node-type-promocion .pane > .content-area .contenido {
+    width: 50%;
+    float: left;
+    padding: 16px 0;
+    font-size: 16px;
+}
+
+.node-type-promocion .pane > .content-area .contenido .media-thumbnail-frame {
+    display: inline-block;
+}
+
+.node-type-promocion .pane > .content-area .contenido img {
+    width: 150px;
+}
+.node-type-promocion .pane > .content-area h1 {
+}
 
 /* @end */
 
@@ -41,6 +82,7 @@
         float: left;
         width: 50%;
     }
+    
 }
 
 /* Medium Devices, Desktops */

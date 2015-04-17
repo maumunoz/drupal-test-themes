@@ -20,8 +20,8 @@
 }
 
 .node-type-lista-de-promociones .placeholder img {
-    visibility: hidden;
-    opacity: 0;
+    visibility: hidden !important;
+    opacity: 0 !important;
 }
 
 .node-type-lista-de-promociones .placeholder a {
