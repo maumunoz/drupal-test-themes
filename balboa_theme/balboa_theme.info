@@ -13,6 +13,8 @@ stylesheets[all ][] = 'css/section-slider_homepage--slider.css'
 stylesheets[all ][] = 'css/section-slider_homepage--promos.css'
 stylesheets[all ][] = 'css/section-redes-sociales.css'
 stylesheets[all ][] = 'css/section-lista-de-promociones.css'
+stylesheets[all ][] = 'css/section-promocion.css'
+stylesheets[all ][] = 'css/section-galeria.css'
 
 regions[page_top] = 'Above page'
 regions[preheader_first] = 'Preheader first'
