@@ -12,6 +12,10 @@
 .arte-suprema .field .field-item .even img{
     margin-bottom: 20px;
 }
+.arte-suprema .parrafo_dos p{
+    font-size: 16px;
+    width: 28%;
+}
 
 
 /* Custom, iPhone Retina */
