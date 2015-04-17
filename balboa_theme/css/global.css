@@ -62,6 +62,7 @@ body {
 /* @group Utils */
 
 /* Global Container (responsive) */
+.node-type-redes-sociales #content-area,
 .stack-footer-inner,
 .region-header,
 .container {
@@ -72,6 +73,7 @@ body {
 }
 
 /* Global Container (smaller) */
+.node-type-redes-sociales #content-area,
 .stack-footer-inner,
 .region-header,
 .container2 {
@@ -79,6 +81,8 @@ body {
 }
 
 /* Clearfix */
+.node-type-redes-sociales .region-content:before,
+.node-type-redes-sociales .region-content:after,
 .region-header:before,
 .region-header:after,
 .clearfix:before,
@@ -111,6 +115,7 @@ body {
 }
 
 /* Hidden Elements */
+.node-type-redes-sociales .node-redes-sociales,
 #page .tabs,
 #breadcrumb,
 .hidden {

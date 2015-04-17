@@ -11,6 +11,7 @@ stylesheets[all ][] = 'css/section-footer.css'
 stylesheets[all ][] = 'css/section-age-gate.css'
 stylesheets[all ][] = 'css/section-slider_homepage--slider.css'
 stylesheets[all ][] = 'css/section-slider_homepage--promos.css'
+stylesheets[all ][] = 'css/section-redes-sociales.css'
 
 regions[page_top] = 'Above page'
 regions[preheader_first] = 'Preheader first'
