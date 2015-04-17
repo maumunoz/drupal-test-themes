@@ -199,7 +199,7 @@
     .node-type-webform .webform-component{
         text-align: left !important;
     }
-    
+
     .fondo-negro #block-block-41 {
         display: none;
     }
@@ -225,6 +225,7 @@
         margin: 0 0 10px;
         border: 1px solid #84d047;
     }
+
 
     .node-type-webform.fondo-negro .webform-client-form .form-actions form-wrapper {
         text-align: right;
