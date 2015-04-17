@@ -40,7 +40,7 @@
 }
 
 .sommelier_text1 {
-    width: 37%;
+    width: 100%;
     text-align: left;
     line-height: 12px;
     margin-bottom: 3px;
@@ -57,12 +57,12 @@
 
 
 .sommelier #content form > div {
-    padding-left: 55%;
+    padding-left: 0%;
 }
 
 .sommelier_text2 {
     text-align: center;
-    width: 47%;
+    width: 100%;
 }
 
 .sommelier .form-item,
@@ -71,7 +71,7 @@
 }
 
 .sommelier h2.sommelier_title1 {
-    margin-top: -1px;
+    margin-top: 5px;
     margin-bottom: 11px;
 }
 
@@ -99,15 +99,20 @@
 #media_crop_2493125568144 {
     margin-left: 0px;
     margin-right: 10px;
-    width: 47%;
+    width:100%;
+    margin-bottom:10px ;
 }
 
 #media_crop_63651164527 {
-    width: 63%;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-left: 20px;
 }
 
 img#media_crop_5761847582180 {
-    width: 51%;
+    width: 100%;
+    margin-bottom:10px ;
+    margin-left: 10px;
 }
 /* @end */
 
@@ -116,15 +121,53 @@ img#media_crop_5761847582180 {
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
+
+    img#media_crop_63651164527{
+        width: 100% ;
+
+    }
+
+
+
+    .sommelier #content form > div{
+        padding-left: 0 ;
+    }
+
+    img#media_crop_2493125568144{
+
+        margin-bottom:10px ;
+    }
+    img#media_crop_5761847582180{
+
+        margin-bottom: 10px;
+    }
+    .sommelier .form-control{
+        width: 199px;
+    }
+    .sommelier #edit-submit{
+        margin-left: none;
+        float: right;
+    }
+
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
-}
 
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
-    #block-block-31 + #block-system-main {
+
+        .sommelier_text1 {
+            width: 100%;
+        }
+
+        .sommelier #content form > div{
+            padding-left: 55% ;
+        }
+
+        .sommelier_text2 {
+            text-align: center;
+            width: 47%;
+        }
+        #block-block-31 + #block-system-main {
         padding: 33px 27px;
         font-size: 13px;
     }
@@ -141,6 +184,31 @@ img#media_crop_5761847582180 {
         margin: 0;
         font-size: 25px;
         line-height: 1;
+    }
+
+    #media_crop_2493125568144 {
+    width: 47%;
+    }
+
+    img#media_crop_63651164527 {
+        width: 63%;
+    }
+
+
+    img#media_crop_5761847582180 {
+        width: 51%;
+    }
+
+    .sommelier .form-control{
+        width: 135px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+    .sommelier .form-control{
+        width: 270px;
     }
 
 }

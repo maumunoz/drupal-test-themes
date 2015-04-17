@@ -9,6 +9,10 @@
     height: initial;
 }
 
+.inicio .slider-cta a{
+    text-decoration: none;
+}
+
 .inicio #block-system-main-menu .bottom {
     max-width: 1024px;
 }
@@ -36,7 +40,8 @@
 }
 
 .slider-cta {
-    top: 38%;
+    top: 33%;
+    height: 150px;
     width: 330px;
     font-size: 13px;
     position: absolute;
@@ -50,10 +55,16 @@
     color: white;
     padding: 9px 90px 9px 70px;
     line-height: 16px;
-    text-align: center;
+    text-align: left;
     letter-spacing: -0.2px;
 
 }
+
+.slider-cta p{
+    position: relative;
+    left: -50px;
+}
+
 
 
 .slider-cta a {
@@ -124,6 +135,10 @@
     }
     .inicio .slick-slider {
         max-height: 395px;
+    }
+
+    .slider-cta {
+        text-align: center !important;
     }
 }
 

@@ -11,7 +11,7 @@
 
 .fotoEncabezado .media-thumbnail-frame img{
     width: 100%;
-    height: auto;
+
 }
 .page-autores .views-row-odd a{
     clear: both;
@@ -106,8 +106,11 @@
     font-weight: bold;
 }
 
+.fotoEncabezado .media-thumbnail-frame img{
+    height: 110px !important;
+}
 
-@media only screen and (min-width:0px) and (max-width: 320px) {
+@media only screen and (min-width:0px) and (max-width: 383.9px) {
 
 
     .page-autores img{
@@ -174,7 +177,7 @@
     }
 
 }
-@media only screen and (min-width:321px) and (max-width: 480px) {
+@media only screen and (min-width:384px) and (max-width: 480px) {
     .page-autores .views-row p{
         font-size: 12px;
         width: 40%;

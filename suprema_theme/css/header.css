@@ -98,6 +98,14 @@
     margin-top: 10px;
     margin-right: 8px;
     margin-left: 12px;
+    padding-top: 2px;
+}
+
+
+
+.social-header-right .media-thumbnail-frame img{
+    position: relative;
+    top: -2px;
 }
 
 .social-header-right-mobile {
@@ -244,7 +252,6 @@
 }
 
 
-
 /* @end */
 
 
@@ -283,8 +290,12 @@
     }
 
     .sb-slidebar {
-
         width: 35%;
+    }
+
+    .searchexpanded #search-block-form .form-text{
+        width: 119px;
+
     }
 
 }

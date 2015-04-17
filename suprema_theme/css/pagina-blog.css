@@ -45,7 +45,7 @@
     font-weight: bold;
 }
 
-.view-vista-de-articulo .views-field-nothing, 
+.view-vista-de-articulo .views-field-nothing,
 .view-momentos-suprema .views-field-nothing {
     margin-top: 10px;
     font-size: 14px;
@@ -110,7 +110,7 @@
     text-align: left;
     background-color: white;
     margin: 0 !important;
-    padding: 32px !important;
+    padding: 32px;
 }
 
 .view-vista-de-articulo-contenido .pager {
@@ -126,7 +126,7 @@
 
 .pager .link-to-blog {
     border: solid 2px #d39a00;
-    color: #d39a00;    
+    color: #d39a00;
 }
 
 .view-vista-de-articulo-contenido {
@@ -161,7 +161,7 @@
     display: block;
     text-align: left;
     text-align: center;
-    font-size: 29px;
+    font-size: 24px;
     border-radius: 10px;
     margin: 15px 7px;
     padding: 12px 0 19px;
@@ -183,6 +183,10 @@
     display: none;
 }
 
+    .title-Suscríbete-al-Blog .capcha-container{
+        position: relative;
+        left: -5px;
+    }
 /* @end */
 
 
@@ -190,14 +194,48 @@
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
+
+
+    .page-momentos-suprema .item-list .pager li{
+         padding: 0 !important;
+    }
+
+    .page-momentos-suprema .pager{
+        padding: 0 0 15px 0 !important;
+    }
+        .title-Suscríbete-al-Blog .capcha-container{
+        left: none;
+    }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
+
+    .title-Suscríbete-al-Blog .capcha-container{
+        left: 37px;
+    }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
+
+    .suscribe-big-button {
+        font-size: 29px;
+    }
+
+    .title-Suscríbete-al-Blog .capcha-container{
+        left: 180px;
+    }
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .title-Suscríbete-al-Blog .capcha-container{
+        position: relative;
+        left: 0px !important;
+    }
+
     .view-momentos-suprema > .view-content .views-row {
         width: 70%;
         text-align: left;
@@ -237,16 +275,14 @@
         font-size: 14px;
     }
 
-
-
-
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
+    .title-Suscríbete-al-Blog .capcha-container{
+        position: relative;
+        left: 175px;
+    }
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
+
 }
 /* @end */

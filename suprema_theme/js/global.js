@@ -23,7 +23,7 @@
 
     $.initModule("#search-block-form", function ($, searchform) {
         searchform = $(searchform); 
-        
+        searchform.find(".form-text").val("");
         searchform.after( $(".btn-menu-mobile") );
         searchform.before( $(".social-header-left").parent().children() );
         $(".social-header-left").find('br').remove();

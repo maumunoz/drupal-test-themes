@@ -17,6 +17,8 @@
 .fondo-negro .pane{
     background-color: #000 !important;
     padding-bottom: 50px;
+    border-top-left-radius:7px;
+    border-top-right-radius:7px;
 }
 .grippie {
     display: none;
@@ -24,6 +26,7 @@
 
 .node-type-webform .webform-component {
     color: white;
+    text-align: center;
 }
 
 .node-type-webform.fondo-negro #content {
@@ -66,7 +69,8 @@
     font-weight: bold;
     font-size: 23px;
     padding: 8px 0;
-    margin: 0 -14px 10px;
+    position: relative;
+
 }
 
 
@@ -106,13 +110,13 @@
 }
 
 .node-type-webform.fondo-negro .webform-client-form .form-submit {
-    width: 105px;
+    width: 135px;
     font-size: 19px;
     background: none;
     text-shadow: none;
     color: white;
     padding: 1px;
-    margin-left: 148px;
+    margin-left: 0px;
 
     border: solid 1px #7ec744;
     background: rgb(2,134,44);
@@ -167,7 +171,8 @@
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
-}
+
+
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
@@ -177,22 +182,40 @@
 @media only screen and (min-width : 768px) {
 
 
+
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+    .arte-suprema .field .media-thumbnail-frame img{
+        width: 22%;
+    }
+        .node-type-webform.fondo-negro .webform-client-form .form-submit {
+        margin-left: 148px;
+    }
+
+    .node-type-webform .webform-component{
+        text-align: left !important;
+    }
+    
     .fondo-negro #block-block-41 {
         display: none;
     }
 
     .fondo-negro #main {
         background-color: rgba(0,0,0,.5);
-        padding: 90px 36px 10px;
-        margin: 0 -20px;
+        padding: 95px 36px 10px;
+        margin: 0 -40px;
     }
     .node-type-webform.fondo-negro #main {
         background-color: transparent;
-        padding: 90px 36px 10px;
+        padding: 105px 36px 10px;
         margin: 0 -20px;
     }
 
-    .fondo-negro h1{
+    .fondo-negro #main h1{
         -webkit-border-top-left-radius: 10px;
         -webkit-border-top-right-radius: 10px;
         -moz-border-radius-topleft: 10px;
@@ -205,16 +228,6 @@
 
     .node-type-webform.fondo-negro .webform-client-form .form-actions form-wrapper {
         text-align: right;
-    }
-
-
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
-
-    .arte-suprema .field .media-thumbnail-frame img{
-        width: 22%;
     }
 }
 
