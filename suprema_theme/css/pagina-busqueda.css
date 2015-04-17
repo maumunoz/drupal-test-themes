@@ -10,6 +10,9 @@
 .page-search h1 {
     display: block !important;
 }
+.page-search .tabs ul.primary{
+    margin-bottom: 10px;
+}
 
 .page-search .form-submit {
     background: none;
@@ -25,6 +28,8 @@
     background: -ms-linear-gradient(top, rgba(2,134,44,1) 3%,rgba(0,170,57,1) 29%,rgba(0,144,49,1) 53%,rgba(0,105,38,1) 97%);
     background: linear-gradient(to bottom, rgba(2,134,44,1) 3%,rgba(0,170,57,1) 29%,rgba(0,144,49,1) 53%,rgba(0,105,38,1) 97%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02862c', endColorstr='#006926',GradientType=0 );
+    position: relative;
+    top: -2px;
 }
 
 .page-search #main a {
