@@ -129,6 +129,7 @@ body {
 }
 
 /* Lists indentation Reset */
+.node-type-lista-de-promociones .item-list ul,
 .homepage-promos .item-list ul,
 .homepage-slider ul,
 .list-indent--reset {
