@@ -1,0 +1,61 @@
+/* @group Lista de Promociones */
+
+.node-type-lista-de-promociones {
+
+}
+
+.node-type-lista-de-promociones .item-list ul {
+    padding: 0;
+    margin: 0;
+}
+
+.node-type-lista-de-promociones .pane > .help,
+.node-type-lista-de-promociones .pane > .content-area {
+
+    float: none;
+    width: 100%;
+}
+
+.node-type-lista-de-promociones .pane > .help img,
+.node-type-lista-de-promociones .pane > .content-area img {
+    width: 100%;
+    height: auto;
+}
+
+.node-type-lista-de-promociones .pane > .content-area .views-row {
+    float: left;
+    width: 50%;
+}
+
+
+
+/* @end */
+
+
+/* @group Media Query */
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    .node-type-lista-de-promociones .pane > .help,
+    .node-type-lista-de-promociones .pane > .content-area {
+        float: left;
+        width: 50%;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+}
+/* @end */
