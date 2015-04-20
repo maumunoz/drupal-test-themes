@@ -4,7 +4,12 @@
     text-align: center !important;
 }
 
-
+.mfp-close-btn-in .mfp-close {
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
 /* @end */
 
 

@@ -13,6 +13,7 @@
 .node-type-promocion .pane > .content-area {
     float: none;
     width: 100%;
+    overflow-y: auto;
 }
 
 
@@ -26,7 +27,7 @@
 }
 
 .node-type-promocion .pane > .content-area h1 {
-    width: 42%;
+    width: 100%;
     float: left;
     margin-right: 4%;
     font-size: 60px;
@@ -46,9 +47,9 @@
 }
 
 .node-type-promocion .pane > .content-area .contenido {
-    width: 50%;
+    width: 100%;
     float: left;
-    padding: 16px 0;
+    padding: 16px 10px;
     font-size: 16px;
 }
 
@@ -89,6 +90,12 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
+    .node-type-promocion .pane > .content-area h1 {
+        width: 42%;
+    }
+    .node-type-promocion .pane > .content-area .contenido {
+        width: 50%;
+    }
 }
 
 /* Large Devices, Wide Screens */
