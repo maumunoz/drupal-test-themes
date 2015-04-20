@@ -96,7 +96,24 @@
     text-align: center !important;
 }
 
-.mfp-content gallery-thumb-inner img {
+.mfp-close-btn-in .mfp-close {
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.mfp-figure:after {
+    box-shadow: none;
+    background-color: transparent;
+
+}
+
+.mfp-content .gallery-thumb-inner {
+    pointer-events: none;
+}
+
+.mfp-content .gallery-thumb-inner img {
     max-width: 100%;
     height: auto;
     max-height: 100%;
