@@ -143,7 +143,7 @@ img#media_crop_5761847582180 {
         margin-bottom: 10px;
     }
     .sommelier .form-control{
-        width: 199px;
+        width: 213px;
     }
     .sommelier #edit-submit{
         margin-left: none;
@@ -201,7 +201,7 @@ img#media_crop_5761847582180 {
     }
 
     .sommelier .form-control{
-        width: 142px;
+        width: 150px;
     }
 
 }
@@ -210,7 +210,7 @@ img#media_crop_5761847582180 {
 @media only screen and (min-width : 768px) {
 
     .sommelier .form-control{
-        width: 270px;
+        width: 289px;
     }
 
 }
@@ -256,7 +256,7 @@ img#media_crop_5761847582180 {
 
 
     .sommelier .form-control {
-        width: 210px;
+        width: 275px;
     }
     .sommelier input.form-control {
         height: auto;

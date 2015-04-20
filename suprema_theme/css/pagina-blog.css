@@ -90,6 +90,8 @@
     text-align: right;
     margin-top: -12px;
     margin-bottom: 30px;
+    position: relative;
+    right: -31px;
 }
 
 .blog-sidebar {
@@ -316,7 +318,7 @@
     }
 
          .momentos-suprema .pager li > a, .pager li > span{
-        width: 115px;
+        width: 121px;
         font-size: 15px
      }
 
@@ -351,7 +353,7 @@
 
     .momentos-suprema .pager li > a, .pager li > span{
 
-        width: 213px;
+        width: 223px;
         font-size: 19px;
     }
 
@@ -413,7 +415,7 @@
     }
 
         .momentos-suprema .pager li > a, .pager li > span{
-        width: 140px;
+        width: 143px;
     }
 }
 
