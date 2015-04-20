@@ -244,15 +244,11 @@
 
 
     .page-momentos-suprema .fb_iframe_widget{
-        margin:0;
-        position: relative;
-        left: -55px;
+
     }
 
     .page-momentos-suprema .twitter-share-button{
-        position: relative;
-        top: -27px;
-        left: 80px;
+
     }
 
     .page-momentos-suprema .item-list ul li{
@@ -272,6 +268,12 @@
 
         padding:  0 8px 0 15px !important;
     }
+
+    .view-momentos-suprema > .view-content{
+        padding: 12px !important;
+    }
+
+
 }
 
 /* Extra Small Devices, Phones */
