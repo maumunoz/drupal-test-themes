@@ -15,6 +15,8 @@
         setTimeout(function () {
             $(window).resize();
         }, 1000);
+        
+        $("#content-area").mCustomScrollbar();
     });
     
     //Content images, with link inside image
