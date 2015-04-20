@@ -90,7 +90,9 @@
 }
 
 
-
+.lightbox-stack {
+    pointer-events: none;
+}
 
 .mfp-content {
     text-align: center !important;
