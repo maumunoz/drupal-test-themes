@@ -118,6 +118,20 @@
     padding: 5px !important;
 }
 
+ .momentos-suprema .pager li > a, .pager li > span{
+    background-color:#fff;
+    border:2px solid #18762d;
+    display: inline-block;
+    padding: 5px 14px;
+    border-radius: 0;
+    color:#18762d;
+     }
+
+      .momentos-suprema .pager li a:hover{
+        background-color: #18762d;
+        color: #fff;
+      }
+
 .page-momentos-suprema .pager li > a, .pager li > span {
     border-radius: 0;
     border: solid 2px #18762d;
@@ -198,7 +212,6 @@
     }
 /* @end */
 
-
 /* @group Media Query */
 
 /* Custom, iPhone Retina */
@@ -238,6 +251,13 @@
     }
 
 
+     .momentos-suprema .pager li > a, .pager li > span{
+        width: 150px;
+     }
+
+    .view-vista-de-articulo-contenido .view-header + .view-content {
+        padding: 0px 22px;
+    }
 }
 
 /* Extra Small Devices, Phones */
@@ -308,6 +328,14 @@
         padding-bottom: 0;
 
     }
+
+     .momentos-suprema .pager li > a, .pager li > span{
+    width: 135px;
+     }
+
+     .momentos-suprema .twitter-share-button{
+
+     }
 
     .view-vista-de-articulo-contenido > .view-content .views-row {
         width: 69%;
