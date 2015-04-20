@@ -10,6 +10,21 @@
     top: 0;
     right: 0;
 }
+
+.mfp-figure:after {
+    box-shadow: none;
+    background-color: transparent;
+    
+}
+
+.gallery-thumb-inner img {
+    max-width: 100%;
+    height: auto;
+}
+
+.gallery-thumb-inner a {
+    pointer-events: none;
+}
 /* @end */
 
 

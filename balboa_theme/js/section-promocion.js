@@ -1,22 +1,22 @@
 /*global jQuery2 */
 (function ($) {
-    
-    
-    // Set Footer as a Sticky Footer
-    $(window).on('resize', function() {
-        if ($(window).width()>768) {
-            $('#content-area').css('height', $('#content-area').width() );
-        }else{
-            $('#content-area').css('height', 'initial' );
+    'use strict';
+
+    // Split content
+    function onResizeSplit() {
+        if ($(window).width() > 768) {
+            $('#content-area').css('height', $('#content-area').width());
+        } else {
+            $('#content-area').css('height', 'initial');
         }
-    });
+    }
+    $(window).on('resize', onResizeSplit);
     $(document).ready(function () {
-        $(window).resize();
+        onResizeSplit();
         setTimeout(function () {
             $(window).resize();
         }, 1000);
-        
-        $("#content-area").mCustomScrollbar();
+        jQuery("#content-area").mCustomScrollbar();
     });
     
     //Content images, with link inside image
@@ -27,7 +27,7 @@
             tClose: 'Cerrar (Esc)',
             tLoading: 'Cargando...',
             callbacks: {
-                open: function() {
+                open: function () {
                     if (Drupal.initMediaGalleryLightboxPhoto) Drupal.MediaGalleryLightboxOpen(this);
                 }
             },
