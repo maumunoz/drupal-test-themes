@@ -1,7 +1,7 @@
 /* @group Groupname */
 
-#block-block-26 + #block-views-vista-de-articulo-block {
-    padding-bottom: 22px;
+.momentos-suprema #block-block-26 + #block-views-vista-de-articulo-block {
+    padding: 42px 42px 22px 42px;
 }
 
 .view-momentos-suprema > .view-content {
@@ -271,7 +271,7 @@
      }
 
     .view-vista-de-articulo-contenido .view-header + .view-content {
-        padding: 0px 22px 20px;
+        padding: 0px 12px 20px;
     }
 
     .title-Suscríbete-al-Blog .fondo-negro .pane > #content-area{
@@ -320,8 +320,8 @@
         font-size: 15px
      }
 
-     .view-vista-de-articulo-contenido .pager{
-        padding: 0;
+     .momentos-suprema .view-vista-de-articulo-contenido .pager{
+        padding: 2px;
      }
 
      .momentos-suprema .pager li{
