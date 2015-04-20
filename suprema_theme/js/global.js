@@ -1,5 +1,15 @@
 (function ($) {
     
+    
+    // Set Viewport according to width
+    $(window).load(function() {
+        if ($(window).width()<640) {
+            $("head").append('<meta id="myViewport" name="viewport" content="width = 640px">');
+        }else{
+            $("head").append('<meta id="myViewport" name="viewport" content="width = device-width">');
+        }
+    });
+    
     //Initialize Page content
     $.initModule(".region-content", function ($, pageContent) {
         //Add css class to page based on URL
