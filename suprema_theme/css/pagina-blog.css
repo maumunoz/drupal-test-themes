@@ -124,14 +124,6 @@
     display: inline-block;
 }
 
-     .momentos-suprema .pager li > a, .pager li > span{
-        background-color:#fff;
-        border:2px solid #18762d;
-        display: inline-block;
-        padding: 5px 14px;
-        border-radius: 0;
-        color:#18762d;
-         }
 .momentos-suprema .pager li > a, .pager li > span{
     background-color:#fff;
     border:2px solid #18762d;
