@@ -281,7 +281,7 @@
 
     .momentos-suprema .pager li > a, .pager li > span{
         width: 71px;
-        font-size: 12px
+        font-size: 15px
     }
 
     .view-vista-de-articulo-contenido .view-header + .view-content {
@@ -367,7 +367,11 @@
     }
 
     .momentos-suprema .pager li{
-        margin: 7px;
+        margin: 6px;
+    }
+
+    .suscribe-big-button{
+        font-size: 22px;
     }
 
 }
@@ -395,6 +399,10 @@
 
         width: 223px;
         font-size: 19px;
+    }
+
+        .momentos-suprema .pager li{
+        margin: 1px;
     }
 
 }
@@ -456,6 +464,9 @@
 
     .momentos-suprema .pager li > a, .pager li > span{
         width: 143px;
+    }
+        .momentos-suprema .pager li{
+        margin:  7px;
     }
 }
 
