@@ -120,6 +120,13 @@
     height: auto;
     max-height: 100%;
 }
+.mfp-auto-cursor .mfp-content {
+    position: initial;
+}
+
+.mfp-close {
+    font-size: 65px;
+}
 
 
 .mfp-arrow:before,
