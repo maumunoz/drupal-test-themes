@@ -115,6 +115,8 @@ img#media_crop_5761847582180 {
     margin-bottom:10px ;
     margin-left: 10px;
 }
+
+
 /* @end */
 
 
@@ -143,7 +145,7 @@ img#media_crop_5761847582180 {
         margin-bottom: 10px;
     }
     .sommelier .form-control{
-        width: 213px;
+        width: 205px;
     }
     .sommelier #edit-submit{
         margin-left: none;
@@ -204,13 +206,18 @@ img#media_crop_5761847582180 {
         width: 150px;
     }
 
+
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
 
     .sommelier .form-control{
-        width: 289px;
+        width: 271px;
+    }
+
+    .sommelier #edit-submit{
+        margin-right: 18px;
     }
 
 }
