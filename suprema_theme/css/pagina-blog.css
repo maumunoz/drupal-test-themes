@@ -249,12 +249,12 @@
 
 
         .title-Suscríbete-al-Blog .capcha-container{
-        left: none;
+        left: 5%;
     }
 
 
     .suscribe-big-button{
-        font-size: 13px;
+        font-size: 10px;
     }
 
 
@@ -285,7 +285,17 @@
         .momentos-suprema .view-vista-de-articulo-contenido .pager{
         padding: 0 !important;
     }
+        .title-Suscríbete-al-Blog .capcha-container{
+            left: 0%;
+    }
 
+    .capcha-container .rc-anchor-logo{
+        position: relative;
+        left: -40px;
+    }
+     .capcha-container .rc-anchor-privacy{
+        left: -20px;
+    }
 
 }
 
@@ -300,6 +310,11 @@
         width: 75px;
      }
 
+        .title-Suscríbete-al-Blog .capcha-container{
+            left: 16%;
+    }
+
+
 
 }
 
@@ -307,7 +322,7 @@
 @media only screen and (min-width : 480px) {
 
     .title-Suscríbete-al-Blog .capcha-container{
-        left: 37px;
+        left: 25%;
     }
 
     .page-momentos-suprema .item-list ul li{
@@ -358,7 +373,7 @@
     }
 
     .title-Suscríbete-al-Blog .capcha-container{
-        left: 190px;
+        left: 30%;
     }
 
     .momentos-suprema .pager li > a, .pager li > span{
