@@ -364,7 +364,6 @@
     }
 
     .momentos-suprema .pager li{
-        margin: 1%;
     }
 
     .suscribe-big-button{
@@ -397,11 +396,6 @@
         width: 223px;
         font-size: 19px;
     }
-
-        .momentos-suprema .pager li{
-        margin: 0px;
-    }
-
 }
 
 /* Medium Devices, Desktops */
