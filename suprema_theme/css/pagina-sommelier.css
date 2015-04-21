@@ -145,11 +145,15 @@ img#media_crop_5761847582180 {
         margin-bottom: 10px;
     }
     .sommelier .form-control{
-        width: 205px;
+        width: 100%;
     }
     .sommelier #edit-submit{
         margin-left: none;
         float: right;
+    }
+
+        .sommelier .webform-component-textarea{
+        width: 92%;
     }
 
 }
@@ -203,7 +207,11 @@ img#media_crop_5761847582180 {
     }
 
     .sommelier .form-control{
-        width: 150px;
+        width: 100%;
+    }
+
+    .sommelier .webform-component-textarea{
+        width: 85%;
     }
 
 
@@ -216,9 +224,7 @@ img#media_crop_5761847582180 {
         width: 271px;
     }
 
-    .sommelier #edit-submit{
-        margin-right: 18px;
-    }
+
 
 }
 
