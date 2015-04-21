@@ -211,7 +211,7 @@ img#media_crop_5761847582180 {
     }
 
     .sommelier .webform-component-textarea{
-        width: 85%;
+        width: 89%;
     }
 
 
@@ -224,6 +224,9 @@ img#media_crop_5761847582180 {
         width: 271px;
     }
 
+    .sommelier #edit-submit{
+        margin-right: 10px;
+    }
 
 
 }
