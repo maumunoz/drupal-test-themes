@@ -134,8 +134,9 @@
 }
 
 .momentos-suprema .pager li a:hover{
-    background-color: #18762d;
-    color: #fff;
+    background-color: #fff;
+    color: #d39a00;
+    border:2px solid #d39a00;
 }
 
 .page-momentos-suprema .pager li > a, .pager li > span {
@@ -152,10 +153,6 @@
 .page-momentos-suprema .pager .link-to-blog {
     border: solid 2px #d39a00;
     color: #d39a00;
-}
-
-.view-vista-de-articulo-contenido {
-
 }
 
 .view-vista-de-articulo-contenido .blog-sidebar .views-row {
@@ -249,9 +246,9 @@
     margin: 0 auto;
 }
 
-.fb_ltr { 
-    height: 400px !important; 
-    overflow-y: scroll !important; 
+.fb_ltr {
+    height: 400px !important;
+    overflow-y: scroll !important;
 }
 
 /* @end */
@@ -358,7 +355,7 @@
     }
 
     .momentos-suprema .pager li > a, .pager li > span{
-        width: 121px;
+        width: 127px;
         font-size: 15px
     }
 
@@ -367,7 +364,7 @@
     }
 
     .momentos-suprema .pager li{
-        margin: 6px;
+        margin: 1%;
     }
 
     .suscribe-big-button{
@@ -402,7 +399,7 @@
     }
 
         .momentos-suprema .pager li{
-        margin: 1px;
+        margin: 0px;
     }
 
 }
