@@ -1,0 +1,56 @@
+/* @group Groupname */
+
+.node-type-cerveza {
+}
+
+.node-type-cerveza .field-name-field-imagen,
+.node-type-cerveza .field-collection-container{
+    width: 50%;
+    float: left;
+    background: #171717;
+}
+
+.node-type-cerveza .field-name-field-t-tulo-bot-n {
+    position: absolute;
+}
+
+.node-type-cerveza .field-name-field-link-bot-n {
+    display: none;
+}
+
+.node-type-cerveza .field-name-field-propiedades > .field-items > .field-item {
+    float: left;
+    width: 50%;
+    height: 182px;
+    border-bottom: solid 1px;
+    border-right: solid 1px;
+}
+
+
+
+
+/* @end */
+
+
+/* @group Media Query */
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+}
+/* @end */
