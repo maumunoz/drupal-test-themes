@@ -115,6 +115,8 @@ img#media_crop_5761847582180 {
     margin-bottom:10px ;
     margin-left: 10px;
 }
+
+
 /* @end */
 
 
@@ -143,11 +145,15 @@ img#media_crop_5761847582180 {
         margin-bottom: 10px;
     }
     .sommelier .form-control{
-        width: 199px;
+        width: 100%;
     }
     .sommelier #edit-submit{
         margin-left: none;
         float: right;
+    }
+
+        .sommelier .webform-component-textarea{
+        width: 92%;
     }
 
 }
@@ -201,8 +207,13 @@ img#media_crop_5761847582180 {
     }
 
     .sommelier .form-control{
-        width: 142px;
+        width: 100%;
     }
+
+    .sommelier .webform-component-textarea{
+        width: 89%;
+    }
+
 
 }
 
@@ -210,8 +221,13 @@ img#media_crop_5761847582180 {
 @media only screen and (min-width : 768px) {
 
     .sommelier .form-control{
-        width: 270px;
+        width: 271px;
     }
+
+    .sommelier #edit-submit{
+        margin-right: 10px;
+    }
+
 
 }
 
@@ -256,7 +272,7 @@ img#media_crop_5761847582180 {
 
 
     .sommelier .form-control {
-        width: 210px;
+        width: 275px;
     }
     .sommelier input.form-control {
         height: auto;

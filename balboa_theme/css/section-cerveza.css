@@ -1,30 +1,31 @@
 /* @group Groupname */
 
-.mfp-content {
-    text-align: center !important;
+.node-type-cerveza {
 }
 
-.mfp-close-btn-in .mfp-close {
-    color: white;
+.node-type-cerveza .field-name-field-imagen,
+.node-type-cerveza .field-collection-container{
+    width: 50%;
+    float: left;
+    background: #171717;
+}
+
+.node-type-cerveza .field-name-field-t-tulo-bot-n {
     position: absolute;
-    top: 0;
-    right: 0;
 }
 
-.mfp-figure:after {
-    box-shadow: none;
-    background-color: transparent;
-    
+.node-type-cerveza .field-name-field-link-bot-n {
+    display: none;
 }
 
-.gallery-thumb-inner img {
-    max-width: 100%;
-    height: auto;
+.node-type-cerveza .field-collection-container .entity-field-collection-item {
+    width: 50%;
+    float: left;
 }
 
-.gallery-thumb-inner a {
-    pointer-events: none;
-}
+
+
+
 /* @end */
 
 

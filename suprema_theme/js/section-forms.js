@@ -18,12 +18,30 @@
         divisor.remove();
     });
     
-    $("#content .webform-client-form").validate();
+    if ($("body").hasClass("sommelier")) {
+        $("#content .webform-client-form").validate({
+            errorPlacement: function(error, element) {
+                error.insertAfter(element.parent());
+            }
+        });
+    }else{
+        $("#content .webform-client-form").validate();
+    }
     
     $.extend($.validator.messages, {
         required: 'Este campo es obligatorio.',
     });
 
+    //form sommelier
+    $.initModule("#webform-client-form-71", function ($, formcontact) {
+        $("#edit-submitted-new-1428351158684").rules( "add", {
+            email: true,
+            messages: {
+                email: "Correo inválido",
+            }
+        });
+    });
+    //form contactenos
     $.initModule("#webform-client-form-61", function ($, formcontact) {
 
         $("#edit-submitted-new-1427900283227").rules( "add", {
@@ -34,6 +52,22 @@
         });
         $("#edit-submitted-new-1427900286632").rules( "add", {
             equalTo: "#edit-submitted-new-1427900283227",
+            messages: {
+                email: "No coincide con el correo",
+            }
+        });
+    }); 
+    //form suscribete
+    $.initModule("#webform-client-form-121", function ($, formcontact) {
+
+        $("#edit-submitted-new-1428600719667").rules( "add", {
+            email: true,
+            messages: {
+                email: "Correo inválido",
+            }
+        });
+        $("#edit-submitted-new-1428600726345").rules( "add", {
+            equalTo: "#edit-submitted-new-1428600719667",
             messages: {
                 email: "No coincide con el correo",
             }

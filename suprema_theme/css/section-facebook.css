@@ -25,3 +25,8 @@
         width: 100% !important;
     }
 }
+
+.fb_ltr {
+    height: 200px !important;
+    overflow-y: scroll !important;
+}

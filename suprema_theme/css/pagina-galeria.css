@@ -57,15 +57,13 @@
 .node-type-media-gallery .item-list .pager-previous,
 .node-type-media-gallery .item-list .pager-next{
     position: absolute;
-    top: 220px;
-    top: 38vw;
+    top: 35px;
+    margin: -10px;
 }
 .node-type-media-gallery .item-list .pager-previous a,
 .node-type-media-gallery .item-list .pager-next a{
     width: 31px;
     height: 40px;
-    width: 5vw;
-    height: 10vw;
     border: none;
     text-indent: -9999px;
     background-repeat: no-repeat;
@@ -92,16 +90,42 @@
 }
 
 
-
+.lightbox-stack {
+    pointer-events: none;
+}
 
 .mfp-content {
     text-align: center !important;
 }
 
-.mfp-content gallery-thumb-inner img {
+.mfp-close-btn-in .mfp-close {
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.mfp-figure:after {
+    box-shadow: none;
+    background-color: transparent;
+
+}
+
+.mfp-content .gallery-thumb-inner {
+    pointer-events: none;
+}
+
+.mfp-content .gallery-thumb-inner img {
     max-width: 100%;
     height: auto;
     max-height: 100%;
+}
+.mfp-auto-cursor .mfp-content {
+    position: initial;
+}
+
+.mfp-close {
+    font-size: 65px;
 }
 
 
@@ -165,6 +189,10 @@ button.mfp-close {
     background-color: #007537;
     color: white;
 }
+
+.node-type-media-gallery .view-header + .view-content, #block-block-26 + #block-views-vista-de-articulo-block, #block-block-31 + #block-system-main, #block-block-36 + #block-system-main, .field-name-field-imagen-header + .field-name-body{
+    padding: 22px;
+}
 /* @end */
 
 
@@ -207,6 +235,10 @@ button.mfp-close {
         height: 20px;
         width: auto;
     }
+    .node-type-media-gallery .item-list .pager-previous,
+    .node-type-media-gallery .item-list .pager-next{
+    top: 10px;
+    }
 }
 
 
@@ -218,8 +250,7 @@ button.mfp-close {
     }
     .node-type-media-gallery .item-list .pager-previous a,
     .node-type-media-gallery .item-list .pager-next a{
-        width: 7vw;
-        height: 14vw;
+
     }
 
     .menu-galerias a {
@@ -241,11 +272,16 @@ button.mfp-close {
         border-top-left-radius:10px;
         border-bottom-left-radius:10px;
     }
+
+    .node-type-media-gallery .item-list .pager-previous,
+.node-type-media-gallery .item-list .pager-next{
+
+    top: 30px;
+
+}
 }
 
-.node-type-media-gallery .view-header + .view-content, #block-block-26 + #block-views-vista-de-articulo-block, #block-block-31 + #block-system-main, #block-block-36 + #block-system-main, .field-name-field-imagen-header + .field-name-body{
-    padding: none !important;
-}
+
 
 
 @media all and (min-width: 768px) {
@@ -257,7 +293,7 @@ button.mfp-close {
 
     .node-type-media-gallery .item-list .pager-previous,
     .node-type-media-gallery .item-list .pager-next{
-        top: 295px;
+
     }
     .node-type-media-gallery .item-list .pager-previous a,
     .node-type-media-gallery .item-list .pager-next a{

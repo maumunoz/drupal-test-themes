@@ -88,6 +88,7 @@
 .node-type-webform.fondo-negro .webform-client-form label {
     max-width: 100%;
     width: 100%;
+    color: #fff;
 }
 
 .node-type-webform.fondo-negro .webform-client-form input,
@@ -156,6 +157,17 @@
 
 /* @group Media Query */
 
+
+
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+    .fondo-negro .pane > #content-area {
+    padding: 0 22px;
+        }
+    }
+
 @media only screen and (max-width: 480px)  {
 
     .fondo-negro .field-item p{
@@ -165,16 +177,6 @@
     .fondo-negro .field-items .even{
         width: 100%;
     }
-}
-
-
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px) {
-
-
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px) {
 }
 
 /* Small Devices, Tablets */
