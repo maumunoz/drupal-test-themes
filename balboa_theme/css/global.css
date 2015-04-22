@@ -39,11 +39,14 @@ body {
     z-index: 1
 }
 
+.field-name-field-contenido-previo .media-thumbnail-frame,
 .region-header #block-search-form,
 .zindex2 {z-index: 2}
 
+.field-name-field-contenido-previo p,
 .zindex3 {z-index: 3}
 
+.region-header #block-search-form,
 .zindex4 {z-index: 4}
 
 .zindex5 {z-index: 5}
@@ -82,6 +85,8 @@ body {
 }
 
 /* Clearfix */
+.node-type-webform .content:before,
+.node-type-webform .content:after,
 .node-type-lista-de-promociones .item-list:before,
 .node-type-lista-de-promociones .item-list:after,
 .node-type-redes-sociales .region-content:before,
@@ -118,6 +123,7 @@ body {
 }
 
 /* Hidden Elements */
+.field-name-field-contenido-previo .field-label,
 .node-type-redes-sociales .node-redes-sociales,
 #page .tabs,
 #breadcrumb,
@@ -208,6 +214,7 @@ ol {
 
 /* @group Buttons */
 
+.webform-client-form .form-submit,
 .age_checker .age_checker-submit input,
 .btn-default,
 .btn {
@@ -227,6 +234,16 @@ ol {
     text-transform: uppercase;
     text-shadow: #c17806 0 2px 0;
     color: #fff;
+}
+
+.field-name-field-contenido-previo a,
+.btn-banner,
+.btn-red--dark {
+    border: 2px solid #fdb515;
+    background: #6b0103;
+    border-radius: 4px;
+    text-transform: uppercase;
+    color: #fdb515;
 }
 
 /* @end */

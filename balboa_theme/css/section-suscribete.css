@@ -1,0 +1,79 @@
+/* @group Suscribete */
+
+.node-type-webform #page {
+    background: #171717;
+}
+
+.field-name-field-contenido-previo {
+    text-align: center;
+}
+
+.field-name-field-contenido-previo img {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+
+.field-name-field-contenido-previo a {
+    display: inline-block;
+    width: 100%;
+    max-width: 406px;
+    text-decoration: none;
+}
+
+.field-name-field-contenido-previo p {
+    margin-top: -70px;
+    position: relative;
+}
+
+.node-type-webform .webform-client-form {
+    padding: 40px 5%;
+}
+
+.webform-client-form h2 {
+    color: #fdb515;
+    padding: 0 35% 0 0;
+}
+
+.webform-client-form .form-item label,
+.webform-client-form .form-item input,
+.webform-client-form .form-item h3,
+.webform-client-form .form-item h2 {
+    text-transform: uppercase;
+}
+
+.webform-client-form .form-item label {
+    display: block;
+}
+
+/* @end */
+
+
+/* @group Media Query */
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    .node-type-webform .field-name-field-contenido-previo,
+    .node-type-webform .webform-client-form {
+        display: block;
+        float: left;
+        width: 50%;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+}
+/* @end */

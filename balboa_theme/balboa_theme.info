@@ -15,6 +15,7 @@ stylesheets[all ][] = 'css/section-redes-sociales.css'
 stylesheets[all ][] = 'css/section-lista-de-promociones.css'
 stylesheets[all ][] = 'css/section-promocion.css'
 stylesheets[all ][] = 'css/section-galeria.css'
+stylesheets[all ][] = 'css/section-suscribete.css'
 
 regions[page_top] = 'Above page'
 regions[preheader_first] = 'Preheader first'
