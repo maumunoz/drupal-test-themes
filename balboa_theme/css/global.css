@@ -123,7 +123,9 @@ body {
 }
 
 /* Hidden Elements */
+.webform-client-form .form-item br,
 .field-name-field-contenido-previo .field-label,
+.field-name-field-contenido-posterior .field-label,
 .node-type-redes-sociales .node-redes-sociales,
 #page .tabs,
 #breadcrumb,

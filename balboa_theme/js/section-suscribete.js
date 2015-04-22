@@ -17,7 +17,6 @@
             });
         }
         if (form.length) {
-            console.log('form exists');
         }
     });
 

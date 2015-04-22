@@ -12,27 +12,39 @@
     display: inline-block;
     width: 100%;
     height: auto;
+    max-width: 200px;
 }
 
 .field-name-field-contenido-previo a {
     display: inline-block;
     width: 100%;
-    max-width: 406px;
+    max-width: 300px;
     text-decoration: none;
+    line-height: 2;
 }
 
 .field-name-field-contenido-previo p {
-    margin-top: -70px;
+    margin-top: 0;
     position: relative;
 }
 
 .node-type-webform .webform-client-form {
-    padding: 40px 5%;
+    padding: 10px;
+}
+
+.webform-client-form .form-item,
+.webform-client-form .form-actions {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0 0 5px 0;
 }
 
 .webform-client-form h2 {
     color: #fdb515;
-    padding: 0 35% 0 0;
+    font-size: 150%;
+    line-height: 1.2;
+    margin-top: 0;
+    max-width: 620px;
 }
 
 .webform-client-form .form-item label,
@@ -40,10 +52,67 @@
 .webform-client-form .form-item h3,
 .webform-client-form .form-item h2 {
     text-transform: uppercase;
+    font-weight: 400;
 }
 
-.webform-client-form .form-item label {
+.webform-client-form .form-item label,
+.webform-client-form h3 {
     display: block;
+    font-size: 135%;
+    margin: 0;
+}
+
+.webform-client-form .form-item input {
+    font-size: 121%;
+    color: #acacac;
+}
+
+.webform-client-form input.form-text {
+    width: 100%;
+}
+
+.webform-client-form h3 {
+    margin-bottom: 5px;
+}
+
+.webform-client-form .newsletter-date .form-item {
+    width: 31.8%;
+    margin: 0;
+    padding: 0;
+}
+
+.webform-client-form .newsletter-date .form-item-month {
+    margin: 0 1% 0 1%;
+}
+
+.webform-client-form .newsletter-date {
+    max-width: 620px;
+}
+
+.webform-client-form span.form-required {
+    display: none;
+}
+
+.webform-client-form .form-submit {
+    margin: 18px 0;
+    height: 60px;
+    width: 100%;
+    font-size: 155%;
+    line-height: 50px;
+    max-width: 610px;
+}
+
+.field-name-field-contenido-posterior {
+    float: right;
+    width: 50%;
+}
+
+.field-name-field-contenido-posterior .form-errors {
+    background: none !important;
+    border: none !important;
+    padding: 0 !important;
+    text-align: center;
+    color: #fdb515;
 }
 
 /* @end */
@@ -57,10 +126,29 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
+    .node-type-webform .webform-client-form {
+        padding: 20px;
+    }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
+
+    .field-name-field-contenido-previo img {
+        max-width: none;
+    }
+
+    .field-name-field-contenido-previo a {
+        max-width: 406px;
+        margin-top: 0;
+        font-size: 140%;
+    }
+
+    .field-name-field-contenido-previo p {
+        margin-top: -70px;
+        padding: 0 20px;
+    }
+
     .node-type-webform .field-name-field-contenido-previo,
     .node-type-webform .webform-client-form {
         display: block;
@@ -71,9 +159,20 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
+    .field-name-field-contenido-previo a {
+        font-size: 170%;
+    }
+
+    .node-type-webform .webform-client-form {
+        padding: 65px 9% 0 9%;
+    }
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
+    .webform-client-form h2 {
+        padding: 0 10% 0 0;
+        margin-top: 20px;
+    }
 }
 /* @end */
