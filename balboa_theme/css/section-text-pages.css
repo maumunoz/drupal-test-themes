@@ -1,0 +1,56 @@
+/* @group Groupname */
+
+.node-type-page .content .field-items{
+    padding: 0px 10%;
+}
+
+.node-type-page .content .field-items p{
+    padding: 0px 15px;
+}
+
+.node-type-page .content .field-items a{
+    color: #fdb915;
+}
+
+.node-type-page .field-items h3{
+    color: #fdb915;
+    padding: 15px 15px 0 15px;
+    text-transform: uppercase;
+}
+
+.node-type-page .content .field-items hr{
+    width: 100%;
+    border: 1px solid #6b0103;
+}
+
+.node-type-page .content .image-bottom {
+    float: right;
+    margin-top: 5%;
+    margin-bottom: 15px;
+}
+
+/* @end */
+
+
+/* @group Media Query */
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+}
+/* @end */
