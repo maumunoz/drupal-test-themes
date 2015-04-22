@@ -50,7 +50,7 @@
     margin-top: 10px;
     font-size: 14px;
     font-weight: bold;
-    margin-bottom: 14px;
+    margin-bottom: 0px;
     color: #747473;
 }
 
@@ -80,6 +80,7 @@
     font-size: 15px;
     font-weight: bold;
     margin-right: 12px;
+    vertical-align: bottom;
 }
 
 .share iframe {
@@ -124,19 +125,19 @@
 
 .momentos-suprema .pager li {
     display: inline-block;
+    width: 30%;
 }
 
 .last-post-cont {
     float: left;
-    margin-left: 10px;
 }
 
 .next-post-cont {
     float: right;
-    margin-right: 10px;
 }
 
-.momentos-suprema .pager li > a, .pager li > span{
+.momentos-suprema .pager li > a,
+.pager li > span{
     background-color:#fff;
     border:2px solid #18762d;
     display: inline-block;
@@ -181,7 +182,7 @@
 }
 
 .view-vista-de-articulo-contenido .share {
-    margin: 38px 0;
+    margin: 38px 3px;
 }
 
 .suscribe-big-button img{
@@ -198,7 +199,7 @@
     text-align: center;
     font-size: 24px;
     border-radius: 10px;
-    margin: 15px 0;
+    margin: 15px 10px;
     padding: 12px 0 19px;
     letter-spacing: -1.5px;
     text-decoration: none !important;
@@ -224,7 +225,7 @@
 }
 
 .page-momentos-suprema .view-content img{
-    margin: 20px 0;
+    margin: 14px 0;
 }
 
 .momentos-suprema .view-content{
@@ -232,7 +233,7 @@
 }
 
 .view-momentos-suprema > .view-content{
-    padding: 12px !important;
+    padding: 12px;
 }
 
 .page-momentos-suprema .item-list .pager li{
@@ -240,11 +241,7 @@
 }
 
 .momentos-suprema .view-vista-de-articulo-contenido .pager{
-    padding: 0 !important;
-}
-
-.momentos-suprema .pager li{
-    margin:  0 10px;
+    padding: 0 10px !important;
 }
 
 .momentos-suprema .field-content p{
@@ -279,8 +276,9 @@
     }
 
 
-    .momentos-suprema .pager li > a, .pager li > span{
-        width: 71px;
+    .momentos-suprema .pager li > a,
+    .pager li > span{
+        width: 100%;
         font-size: 15px
     }
 
@@ -293,13 +291,7 @@
         padding:  0 8px 0 15px !important;
     }
 
-    .momentos-suprema .pager li{
-        margin:  2px;
-    }
 
-    .momentos-suprema .view-vista-de-articulo-contenido .pager{
-        padding: 0 !important;
-    }
     .title-Suscríbete-al-Blog .capcha-container{
         left: 0%;
     }
@@ -316,20 +308,9 @@
 
 @media only screen and (min-width : 320px) {
 
-
-    .momentos-suprema .pager li{
-        margin:  0px;
-    }
-
-    .momentos-suprema .pager li > a, .pager li > span{
-        width: 115px;
-    }
-
     .title-Suscríbete-al-Blog .capcha-container{
         left: 16%;
     }
-
-
 
 }
 
@@ -357,17 +338,11 @@
         left:0px;
     }
 
-    .momentos-suprema .pager li > a, .pager li > span{
-        width: 127px;
+    .momentos-suprema .pager li > a,
+    .pager li > span{
         font-size: 15px
     }
 
-    .momentos-suprema .view-vista-de-articulo-contenido .pager{
-        padding: 2px;
-    }
-
-    .momentos-suprema .pager li{
-    }
 
     .suscribe-big-button{
         font-size: 22px;
@@ -394,10 +369,9 @@
         left: 30%;
     }
 
-    .momentos-suprema .pager li > a, .pager li > span{
-
-        width: 210px;
-        font-size: 19px;
+    .momentos-suprema .pager li > a,
+    .pager li > span{
+        font-size: 18px;
     }
 }
 
@@ -408,23 +382,21 @@
         left: 0px !important;
     }
 
+    .view-momentos-suprema > .view-content{
+        padding: 32px;
+    }
+
+
     .view-momentos-suprema > .view-content .views-row {
         width: 70%;
         text-align: left;
-    }
-    .blog-sidebar {
-        display: block;
-    }
-
-    .view-momentos-suprema > .view-content .views-row {
         margin-bottom: 20px;
         border: none;
         padding-bottom: 0;
-
     }
 
-    .momentos-suprema .pager li > a, .pager li > span{
-        width: 135px;
+    .blog-sidebar {
+        display: block;
     }
 
     .view-vista-de-articulo-contenido > .view-content .views-row {
@@ -456,14 +428,13 @@
         left: 175px;
     }
 
-    .momentos-suprema .pager li > a, .pager li > span{
-        width: 143px;
-    }
-    .momentos-suprema .pager li{
-        margin:  7px;
-    }
     .suscribe-big-button {
         margin: 15px 7px;
+    }
+    
+    .momentos-suprema .pager li > a,
+    .pager li > span{
+        font-size: 17px;
     }
 
 }

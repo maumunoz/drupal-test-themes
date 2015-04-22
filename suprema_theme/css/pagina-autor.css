@@ -75,7 +75,7 @@
     float: left;
 }
 .autorFacebook a{
-    background-image: url(http://suprema.sabmiller.acsitefactory.com/sites/g/files/ogq836/f/media_crop/121/public/201503/blogSuprema_DSKwsfjw_02.png);
+    background-image: url(/sites/g/files/ogq836/f/media_crop/121/public/201503/blogSuprema_DSKwsfjw_02.png);
     background-repeat: no-repeat;
     text-indent: -9999px;
     width: 61px;
@@ -83,7 +83,7 @@
     float: left;
 }
 .autorTwitter a{
-    background-image: url(http://suprema.sabmiller.acsitefactory.com/sites/g/files/ogq836/f/media_crop/126/public/201503/jbae_02.png);
+    background-image: url(/sites/g/files/ogq836/f/media_crop/126/public/201503/jbae_02.png);
     background-repeat: no-repeat;
     text-indent: -9999px;
     width: 61px;
@@ -91,7 +91,7 @@
     float: left;
 }
 .autorBlogger a{
-    background-image: url(http://suprema.sabmiller.acsitefactory.com/sites/g/files/ogq836/f/media_crop/131/public/201503/blogSuprema_DSK_01_03_02.png);
+    background-image: url(/sites/g/files/ogq836/f/media_crop/131/public/201503/blogSuprema_DSK_01_03_02.png);
     background-repeat: no-repeat;
     text-indent: -9999px;
     width: 61px;
@@ -104,10 +104,6 @@
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
-}
-
-.fotoEncabezado .media-thumbnail-frame img{
-    height: 110px !important;
 }
 
 @media only screen and (min-width:0px) and (max-width: 383.9px) {
@@ -128,21 +124,21 @@
         margin-right: 32px;
     }
     .autorFacebook a{
-        background-image: url(http://suprema.sabmiller.acsitefactory.com/sites/g/files/ogq836/f/media_crop/136/public/201503/facebook-mobile.png);
+        background-image: url(/sites/g/files/ogq836/f/media_crop/136/public/201503/facebook-mobile.png);
         height: 34px;
         width: 31px;
         position: relative;
         right: 35px;
     }
     .autorTwitter a{
-        background-image: url(http://suprema.sabmiller.acsitefactory.com/sites/g/files/ogq836/f/media_crop/146/public/201503/twitter-mobile.png);
+        background-image: url(/sites/g/files/ogq836/f/media_crop/146/public/201503/twitter-mobile.png);
         width: 31px;
         height: 34px;
         position: relative;
         right: 45px;
     }
     .autorBlogger a{
-        background-image: url(http://suprema.sabmiller.acsitefactory.com/sites/g/files/ogq836/f/media_crop/141/public/201503/blogger-mobile.png);
+        background-image: url(/sites/g/files/ogq836/f/media_crop/141/public/201503/blogger-mobile.png);
         width: 31px;
         height: 34px;
         position: relative;
@@ -200,7 +196,7 @@
         margin-right: 32px;
     }
     .autorFacebook a{
-        background-image: url(http://suprema.sabmiller.acsitefactory.com/sites/g/files/ogq836/f/media_crop/136/public/201503/facebook-mobile.png);
+        background-image: url(/sites/g/files/ogq836/f/media_crop/136/public/201503/facebook-mobile.png);
         height: 34px;
         width: 31px;
         position: relative;
@@ -208,7 +204,7 @@
         top: -7px;
     }
     .autorTwitter a{
-        background-image: url(http://suprema.sabmiller.acsitefactory.com/sites/g/files/ogq836/f/media_crop/146/public/201503/twitter-mobile.png);
+        background-image: url(/sites/g/files/ogq836/f/media_crop/146/public/201503/twitter-mobile.png);
         width: 31px;
         height: 34px;
         position: relative;
@@ -216,7 +212,7 @@
         top:-6px;
     }
     .autorBlogger a{
-        background-image: url(http://suprema.sabmiller.acsitefactory.com/sites/g/files/ogq836/f/media_crop/141/public/201503/blogger-mobile.png);
+        background-image: url(/sites/g/files/ogq836/f/media_crop/141/public/201503/blogger-mobile.png);
         width: 31px;
         height: 34px;
         position: relative;

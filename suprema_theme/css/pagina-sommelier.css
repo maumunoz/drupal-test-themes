@@ -10,7 +10,7 @@
 
 .sommelier .webform-component-textarea .form-textarea-wrapper {
     display: block;
-    width: 100%;
+    width: 99%;
     margin-left: 26px;
 }
 
@@ -84,7 +84,8 @@
     text-shadow: none;
     color: darkgray;
     padding: 0px;
-    margin-left: 119px;
+    margin-left: 88px;
+    
 }
 
 .sommelier h2.sommelier_title2 {
@@ -147,10 +148,6 @@ img#media_crop_5761847582180 {
     .sommelier .form-control{
         width: 100%;
     }
-    .sommelier #edit-submit{
-        margin-left: none;
-        float: right;
-    }
 
         .sommelier .webform-component-textarea{
         width: 92%;
@@ -207,7 +204,7 @@ img#media_crop_5761847582180 {
     }
 
     .sommelier .form-control{
-        width: 100%;
+        width: 140px;
     }
 
     .sommelier .webform-component-textarea{
@@ -218,14 +215,33 @@ img#media_crop_5761847582180 {
 }
 
 /* Small Devices, Tablets */
+@media only screen and (min-width : 600px) {
+    .sommelier .form-control{
+        width: 200px;
+    }
+    .sommelier #edit-submit{
+        margin-left: 148px;
+    }
+
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width : 710px) {
+    .sommelier .form-control{
+        width: 198px;
+    }
+
+}
+
+/* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
 
     .sommelier .form-control{
         width: 271px;
     }
 
-    .sommelier #edit-submit{
-        margin-right: 10px;
+    
+    .sommelier #edit-submit {
+        margin-left: 220px;
     }
 
 
@@ -295,7 +311,7 @@ img#media_crop_5761847582180 {
         text-shadow: none;
         color: white;
         padding: 1px;
-        margin-left: 148px;
+        margin-left: 210px;
 
         border: solid 1px #7ec744;
         background: rgb(2,134,44);

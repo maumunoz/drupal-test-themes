@@ -98,6 +98,12 @@ div#messages {
     display: none;
 }
 
+img.image-width-100,
+.image-width-100 img {
+    width: 100%;
+    height: auto;
+}
+
 
 /* Header image */
 #block-block-26 img,
