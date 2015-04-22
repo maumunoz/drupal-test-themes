@@ -18,9 +18,12 @@
     display: none;
 }
 
-.node-type-cerveza .field-collection-container .entity-field-collection-item {
-    width: 50%;
+.node-type-cerveza .field-name-field-propiedades > .field-items > .field-item {
     float: left;
+    width: 50%;
+    height: 182px;
+    border-bottom: solid 1px;
+    border-right: solid 1px;
 }
 
 
