@@ -1,14 +1,28 @@
 /* @group Groupname */
 
-.node-type-page .terms-body{
-    padding: 0 15%;
-}
-.node-type-page .terms-body h3{
-    color:#fdb915;
+.node-type-page .content .field-items{
+    padding: 1px 10%;
 }
 
-.node-type-page .terms-body p{
-    margin: 15px 0;
+.node-type-page .content .field-items a{
+    color: #fdb915;
+}
+
+.node-type-page .field-items h3{
+    color: #fdb915;
+    padding: 15px 15px 0 15px;
+    text-transform: uppercase;
+}
+
+.node-type-page .content .field-items hr{
+    width: 100%;
+    border: 1px solid #6b0103;
+}
+
+.node-type-page .content .image-bottom {
+    float: right;
+    margin-top: 5%;
+    margin-bottom: 15px;
 }
 
 /* @end */
