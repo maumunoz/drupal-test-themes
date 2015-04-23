@@ -50,7 +50,7 @@
     float: left;
 }
 
-
+.encabezado-autores-mobile h1,
 .page-node-done #content-area h1,
 .fondo-negro #content h1{
     display: block !important;
@@ -70,6 +70,7 @@
     font-size: 23px;
     padding: 8px 0;
     position: relative;
+    margin: 0;
 
 }
 
