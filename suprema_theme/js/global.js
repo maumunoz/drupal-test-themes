@@ -2,10 +2,19 @@
 
 
     // Set Viewport according to width
-    if ($(window).width()<420) {
-        $("meta[name=viewport]").remove();
-        $("head").append('<meta id="myViewport" name="viewport" content="width=420, initial-scale=0.5,  minimum-scale=0.5, maximum-scale=1.0, user-scalable=yes">');
-    }
+    
+    var checkAgeGateInterval = 0;
+    setTimeout( function() {
+        checkAgeGateInterval = setInterval(function() {
+            if (!$("#age_checker_verification_popup").is(':visible')) {
+                if ($(window).width()<420) {
+                    $("meta[name=viewport]").remove();
+                    $("head").append('<meta id="myViewport" name="viewport" content="width=420, initial-scale=0.5,  minimum-scale=0.5, maximum-scale=1.0, user-scalable=yes">');
+                }
+                clearInterval(checkAgeGateInterval);
+            }
+        },100);
+    },500);
 
     //Initialize Page content
     $.initModule(".region-content", function ($, pageContent) {
