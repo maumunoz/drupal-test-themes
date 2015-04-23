@@ -138,7 +138,8 @@ body {
 /* Shown Elements */
 
 .logged-in #page .tabs {
-    display: block;
+    display: block !important;
+    visibility: visible !important;
 }
 
 /* Lists indentation Reset */
