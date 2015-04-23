@@ -2,9 +2,9 @@
 
 
     // Set Viewport according to width
-    if ($(window).width()<=480) {
+    if ($(window).width()<360) {
         $("meta[name=viewport]").remove();
-        $("head").append('<meta id="myViewport" name="viewport" content="width=480, initial-scale=0.5,  minimum-scale=0.5, maximum-scale=1.0, user-scalable=yes">');
+        $("head").append('<meta id="myViewport" name="viewport" content="width=360, initial-scale=0.5,  minimum-scale=0.5, maximum-scale=1.0, user-scalable=yes">');
     }
 
     //Initialize Page content

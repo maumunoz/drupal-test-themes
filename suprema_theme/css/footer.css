@@ -4,7 +4,6 @@
 #footer {
     background-color: #000;
     padding-top: 26px;
-    border-top: 2px solid #fff;
     text-align: center;
 }
 
@@ -130,7 +129,10 @@
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
 
-
+    #footer {
+        border-top: 2px solid #fff;
+    }
+    
     #footer .block-menu {
         display: block;
     }
