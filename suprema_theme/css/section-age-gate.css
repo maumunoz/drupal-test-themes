@@ -286,6 +286,10 @@
     padding: 0 10px;
 }
 
+.agegate-label {
+    display: inline-block !important;
+}
+
 @media only screen and (min-width : 480px) {
     .age_checker-brief {
         display: block;

@@ -34,7 +34,7 @@
     padding: 10px;
 }
 
-.footerMiddle a,
+.footerMiddle a:hover,
 #footer a:hover{
     color: #3f8202;
     text-decoration: none;
@@ -111,6 +111,7 @@
 
 .footerMiddle {
     text-align: center;
+    color: white;
 }
 
 
