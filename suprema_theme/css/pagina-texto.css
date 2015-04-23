@@ -73,19 +73,6 @@
 
 }
 
-
-
-.arte-suprema .field .media-thumbnail-frame img{
-    float: right;
-    width: 33%;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-.arte-suprema .field .field-item .even img{
-    margin-bottom: 20px;
-}
-
 .node-type-webform.fondo-negro .webform-client-form label {
     max-width: 100%;
     width: 100%;

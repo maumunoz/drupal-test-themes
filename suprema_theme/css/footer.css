@@ -27,12 +27,14 @@
 
 }
 
+.footerMiddle a,
 #footer a{
     color: #fff;
     margin: -8px 11px 0;
     padding: 10px;
 }
 
+.footerMiddle a,
 #footer a:hover{
     color: #3f8202;
     text-decoration: none;
@@ -107,24 +109,8 @@
     padding-bottom: 0;
 }
 
-/*FOTO ARTE*/
-.fotoarte h1{
-    font-weight: bolder;
-    color: #bb9e51;
-    margin-bottom: 10px;
-}
-
-.fotoarte p{
+.footerMiddle {
     text-align: center;
-}
-
-.fotoarte hr{
-    color:#bb9e51;
-    height: 3px;
-}
-
-.fotoarte .media-gallery-collection a .media-gallery-thumb, .media-gallery-media a .media-gallery-thumb, .media-gallery-thumb img{
-    margin-left: 10px;
 }
 
 

@@ -4,9 +4,9 @@
 
 .arte-suprema .field .media-thumbnail-frame img{
     float: right;
-    width: 33%;
+    width: 31%;
     height: auto;
-    margin-bottom: 10px;
+    margin-bottom: 0 1% 10px;
 }
 
 .arte-suprema .field .field-item .even img{
@@ -19,6 +19,26 @@
     margin-bottom: 30px;
 }
 
+
+/*FOTO ARTE*/
+.fotoarte h1{
+    font-weight: bolder;
+    color: #bb9e51;
+    margin-bottom: 10px;
+}
+
+.fotoarte p{
+    text-align: center;
+}
+
+.fotoarte hr{
+    color:#bb9e51;
+    height: 3px;
+}
+
+.fotoarte .media-gallery-collection a .media-gallery-thumb, .media-gallery-media a .media-gallery-thumb, .media-gallery-thumb img{
+    margin-left: 10px;
+}
 
 
 /* Custom, iPhone Retina */

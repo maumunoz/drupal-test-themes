@@ -77,9 +77,7 @@
 
 .age_checker-brief {
     display: none;
-}
-
-.age_checker-brief {
+    text-align: center;
     padding: 10px;
 }
 
@@ -141,8 +139,8 @@
 #age_checker_day,
 #age_checker_year,
 .age_checker-country select {
-    height: 30px;
-    line-height: 30px;
+    height: 30px !important;
+    line-height: 22px !important;
 }
 
 .age_checker-date {
@@ -372,6 +370,7 @@
 
     .age_checker-footer {
         padding-bottom: 0;
+        border-top: solid 2px #E6D398;
     }
 
     .age_checker-footer .links-list li {
