@@ -131,7 +131,8 @@ body {
 #page .tabs,
 #breadcrumb,
 .hidden {
-    display: none;
+    display: none !important;
+    visibility: hidden !important;
 }
 
 /* Shown Elements */
