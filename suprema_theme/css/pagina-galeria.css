@@ -190,7 +190,11 @@ button.mfp-close {
     color: white;
 }
 
-.node-type-media-gallery .view-header + .view-content, #block-block-26 + #block-views-vista-de-articulo-block, #block-block-31 + #block-system-main, #block-block-36 + #block-system-main, .field-name-field-imagen-header + .field-name-body{
+.node-type-media-gallery .view-header + .view-content, 
+#block-block-26 + #block-views-vista-de-articulo-block, 
+#block-block-31 + #block-system-main, 
+#block-block-36 + #block-system-main, 
+.field-name-field-imagen-header + .field-name-body{
     padding: 22px;
 }
 /* @end */
@@ -237,7 +241,7 @@ button.mfp-close {
     }
     .node-type-media-gallery .item-list .pager-previous,
     .node-type-media-gallery .item-list .pager-next{
-    top: 10px;
+        top: 10px;
     }
 }
 
@@ -274,11 +278,11 @@ button.mfp-close {
     }
 
     .node-type-media-gallery .item-list .pager-previous,
-.node-type-media-gallery .item-list .pager-next{
+    .node-type-media-gallery .item-list .pager-next{
 
-    top: 30px;
+        top: 30px;
 
-}
+    }
 }
 
 

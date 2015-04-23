@@ -109,7 +109,7 @@
 @media only screen and (min-width:0px) and (max-width: 383.9px) {
 
 
-    .page-autores img{
+    .page-autores .view-content img{
         width: 50%;
         height: auto;
     }
@@ -181,7 +181,7 @@
         top: -20px;
     }
 
-    .page-autores img{
+    .page-autores .view-content img{
         width: 50%;
         height: auto;
     }
@@ -235,7 +235,7 @@
     }
 }
 @media only screen and (min-width:481px) and (max-width: 768px) {
-    .page-autores img{
+    .page-autores .view-content img{
         width: 50%;
         height: auto;
     }

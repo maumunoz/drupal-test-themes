@@ -50,7 +50,7 @@
     float: left;
 }
 
-
+.encabezado-autores-mobile h1,
 .page-node-done #content-area h1,
 .fondo-negro #content h1{
     display: block !important;
@@ -70,20 +70,8 @@
     font-size: 23px;
     padding: 8px 0;
     position: relative;
+    margin: 0;
 
-}
-
-
-
-.arte-suprema .field .media-thumbnail-frame img{
-    float: right;
-    width: 33%;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-.arte-suprema .field .field-item .even img{
-    margin-bottom: 20px;
 }
 
 .node-type-webform.fondo-negro .webform-client-form label {
