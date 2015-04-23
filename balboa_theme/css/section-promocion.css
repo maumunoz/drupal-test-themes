@@ -65,6 +65,35 @@
     display: none;
 }
 
+
+.node-type-promocion .bar {
+    display: block;
+    height: 8px;
+    width: 30px;
+    background: #fab513;
+    position: relative;
+    top: 30px;
+}
+
+.node-type-promocion .return {
+    color: #fff;
+    font-family: 'oswaldbold';
+    font-size: 16px;
+    font-size: 1rem;
+    text-decoration: none;
+    display: block;
+    margin-top: 30%;
+    margin-left: 10%;
+}
+
+.node-type-promocion .icon_regreso {
+    background: url(../images/btn_regreso.png) no-repeat;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
 /* @end */
 
 

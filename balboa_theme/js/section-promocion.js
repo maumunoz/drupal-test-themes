@@ -16,7 +16,6 @@
         setTimeout(function () {
             $(window).resize();
         }, 1000);
-        jQuery(".node-type-promocion #content-area").mCustomScrollbar();
     });
     
     //Content images, with link inside image
