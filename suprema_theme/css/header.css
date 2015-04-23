@@ -49,7 +49,6 @@
 
 #preheader {
     background-color: black;
-    display: none;
 }
 
 .btn-menu-mobile {
@@ -245,6 +244,7 @@
     font-size: 12px;
     font-family: Helvetica, Arial, sans-serif;
     border-bottom: solid 1px #a29e33;
+    text-align: center;
 }
 
 .mobile-main-menu .menu > li:nth-child(2n) {
@@ -252,6 +252,10 @@
 }
 
 
+
+.toolbar-drawer .sb-slidebar {
+    padding-top: 104px;
+}
 
 /* @end */
 
@@ -270,17 +274,11 @@
         margin-top:13px;
     }
 
-    .social-header-right-mobile {
-        margin-left: 27px;
-    }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
 
-    .social-header-right-mobile {
-        margin-left: 25px;
-    }
 
     .stack-header-inner .site-name a {
         height: 110px;
@@ -304,16 +302,13 @@
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
 
-    .social-header-right-mobile {
-        margin-left: 42px;
-    }
     .stack-header-inner .site-name a {
         height: 130px;
         margin-top: 13px;
     }
 
     .mobile-main-menu .menu > li {
-        font-size: 17px;
+        font-size: 16px;
     }
 
     .sb-slidebar {
@@ -342,9 +337,6 @@
     .stack-header-inner .site-name a {
         height: 160px;
         width: 175px;
-    }
-    #preheader {
-        display: block;
     }
 
     #site-name {
