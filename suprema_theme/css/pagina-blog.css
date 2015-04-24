@@ -126,6 +126,7 @@
 .momentos-suprema .pager li {
     display: inline-block;
     width: 30%;
+    float: left;
 }
 
 .last-post-cont {
@@ -133,7 +134,7 @@
 }
 
 .next-post-cont {
-    float: right;
+    float: right !important;
 }
 
 .momentos-suprema .pager li > a,
@@ -372,6 +373,10 @@
     .momentos-suprema .pager li > a,
     .pager li > span{
         font-size: 18px;
+    }
+    
+    .momentos-suprema .pager li {
+        float: none;
     }
 }
 
