@@ -4,15 +4,17 @@
 
     // Split content
     function onResizeSplit() {
-        if ($(window).width() > 768) {
             var props = $(".node-type-cerveza .field-name-field-propiedades > .field-items > .field-item"),
                 h = $(".field-name-field-imagen .field-item img").height()/3;
             props.each(function(i,el) {
                 $(el).css('height', h);
                 
-                if (i>=props.length-2) $(el).addClass("noborder");
+                if ($(window).width() > 480) {
+                    if (i>=props.length-2) $(el).addClass("noborder");
+                }else{
+                    if (i>=props.length-1) $(el).addClass("noborder");
+                }
             });
-        }
     }
     $(window).on('resize', onResizeSplit);
     $(document).ready(function () {

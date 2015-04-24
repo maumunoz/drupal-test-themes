@@ -4,7 +4,8 @@
     border-bottom: none !important;
 }
 
-.node-type-cerveza {
+.node-type-cerveza #page.bg-default {
+    background: #171717;
 }
 
 .node-type-cerveza .field-name-field-imagen,
@@ -21,7 +22,7 @@
 }
 
 .node-type-cerveza .field-name-field-propiedades > .field-items > .field-item {
-    min-height: 162px;
+    min-height: 180px;
     width: 100%;
     border-bottom: solid 1px #525252;
     margin: 0;
