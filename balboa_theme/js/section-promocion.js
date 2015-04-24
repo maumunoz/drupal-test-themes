@@ -19,6 +19,12 @@
     });
     
     //Content images, with link inside image
+    $.initModule(".node-type-promocion .return", function ($, returnbtn) {
+        returnbtn.bind("touch click", function() {
+            window.history.back();
+        });
+    });
+    //Content images, with link inside image
     $.initModule(".node-type-promocion .contenido .media-thumbnail-frame a", function ($, images) {
 
         images.magnificPopup({

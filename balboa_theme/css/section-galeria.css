@@ -17,12 +17,12 @@
     
 }
 
-.gallery-thumb-inner img {
+.mfp-content .gallery-thumb-inner img {
     max-width: 100%;
     height: auto;
 }
 
-.gallery-thumb-inner a {
+.mfp-content .lightbox-stack {
     pointer-events: none;
 }
 /* @end */
