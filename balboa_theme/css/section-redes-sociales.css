@@ -38,6 +38,10 @@
     background-color: #000;
 }
 
+.age-gate-visible .yt-video {
+    display: none;
+}
+
 .yt-video iframe.video {
     width: 100%    !important;
     height: 345px   !important;
