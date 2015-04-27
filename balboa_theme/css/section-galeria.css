@@ -2,19 +2,38 @@
 
 .mfp-content {
     text-align: center !important;
+    /* position: initial; */
 }
+
+.mfp-image-holder .mfp-content {
+    position: initial;
+}
+
+.mfp-ajax-holder .mfp-content,
+.mfp-image-holder .mfp-content {
+    position: initial;
+}
+
 
 .mfp-close-btn-in .mfp-close {
     color: white;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 10px;
+    right: 10px;
+    background-color: #FCAF16;
+    opacity: 1;
+    border-radius: 15px;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    padding: 0;
 }
 
 .mfp-figure:after {
     box-shadow: none;
     background-color: transparent;
-    
+
 }
 
 .mfp-content .gallery-thumb-inner img {
@@ -25,6 +44,27 @@
 .mfp-content .lightbox-stack {
     pointer-events: none;
 }
+
+.mfp-arrow {
+    opacity: 1;
+}
+
+.mfp-arrow-left:after, .mfp-arrow-left .mfp-a, 
+.mfp-arrow-right:after, .mfp-arrow-right .mfp-a,
+.mfp-arrow-left:before, .mfp-arrow-left .mfp-b, 
+.mfp-arrow-right::before, .mfp-arrow-right .mfp-b {
+    opacity: 1;
+}
+
+.mfp-arrow-left:before, .mfp-arrow-left .mfp-b {
+    border-right: 27px solid #000000;
+}
+
+.mfp-arrow-right:before, .mfp-arrow-right .mfp-b {
+    border-left: 27px solid #000000;
+}
+
+
 /* @end */
 
 
