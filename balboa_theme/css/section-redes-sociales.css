@@ -9,6 +9,9 @@
     text-align: center;
 }
 
+
+
+
 .node-type-redes-sociales #content-area .region-content > .block-views {
     clear: none;
 }
@@ -47,7 +50,7 @@
 .twitter-share-button {
     display: inline-block !important;
     vertical-align: top;
-    margin: 5px 5px 5px 0;
+    margin: 0px 5px 5px 0;
 }
 
 .fb_edge_widget_with_comment span.fb_edge_comment_widget iframe.fb_ltr {
@@ -59,29 +62,48 @@
     overflow: hidden;
 }
 
+
 /* @end */
 
 /* @group Media Query */
 
 
 /* Extra Small Devices, Phones */
+@media only screen and (min-width : 320px) {
+    #block-views-redes-facebook-plugin-block .middle{
+    width: 280px;
+}
+
+#block-views-redes-twitter-plugin-block .content {
+    width: 280px;
+}
+
+#block-views-redes-youtube-videos-block {
+    width: 280px;
+    position: relative;
+    left: -10px;
+}
+
+}
+
 @media only screen and (min-width : 480px) {
 
 }
 
 /* Special Breakpoint */
 @media only screen and (min-width : 690px) {
-    #block-views-redes-facebook-plugin-block {
-        width: 300px;
+    #block-views-redes-facebook-plugin-block .middle{
+        width: 280px;
     }
 
-    #block-views-redes-twitter-plugin-block {
-        min-width: 360px;
-        max-width: 360px;
+    #block-views-redes-twitter-plugin-block .content {
+        min-width: 280px;
+        max-width: 280px;
     }
 
     #block-views-redes-youtube-videos-block {
-        width: 355px;
+        width: 280px;
+        left: 0px;
     }
 }
 
