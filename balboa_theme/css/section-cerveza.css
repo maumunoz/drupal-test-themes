@@ -1,34 +1,111 @@
 /* @group Groupname */
 
-.node-type-cerveza {
+.node-type-cerveza .noborder {
+    border-bottom: none !important;
+}
+
+.node-type-cerveza #page.bg-default {
+    background: #171717;
 }
 
 .node-type-cerveza .field-name-field-imagen,
 .node-type-cerveza .field-collection-container{
-    width: 50%;
-    float: left;
+    width: 100%;
+    float: none;
     background: #171717;
+    border: none;
 }
 
-.node-type-cerveza .field-name-field-t-tulo-bot-n {
-    position: absolute;
-}
-
+.node-type-cerveza .field-name-field-t-tulo-bot-n,
 .node-type-cerveza .field-name-field-link-bot-n {
     display: none;
 }
 
 .node-type-cerveza .field-name-field-propiedades > .field-items > .field-item {
+    min-height: 180px;
+    width: 100%;
+    border-bottom: solid 1px #525252;
+    margin: 0;
+    position: relative;
     float: left;
-    width: 50%;
-    height: 182px;
-    border-bottom: solid 1px;
-    border-right: solid 1px;
+    height: 200px;
+}
+.node-type-cerveza .field-name-field-propiedades > .field-items > .field-item.even {
+    border-right: solid 1px #525252;
+}
+
+.node-type-cerveza .field-collection-view {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.node-type-cerveza .field-name-field-imagen img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.node-type-cerveza .action-links {
+    display: none;
+}
+
+.node-type-cerveza .field-collection-view-links {
+    display: block;
+    position: absolute;
+    right: 0;
 }
 
 
+.node-type-cerveza .field-collection-view,
+.node-type-cerveza .field-collection-view .entity {
+    height: 100%;
+}
 
+.node-type-cerveza .field-collection-view .entity {
+    display: table;
+}
+.node-type-cerveza .field-collection-view .content {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
 
+.node-type-cerveza .field-collection-view .field-name-field-titulo {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.node-type-cerveza .field-collection-view .field-name-field-contenido {
+    color: #fdb515;
+    margin: 0;
+}
+
+.node-type-cerveza .field-collection-view .field-name-field-contenido h3 {
+    margin: 0 0 20px;
+    color: #fff;
+    font-size: 18px;
+    
+}
+
+.node-type-cerveza .field-name-field-imagen {
+    text-align: center;
+}
+
+.node-type-cerveza .field-name-field-imagen a {
+    display: inline-block;
+    width: 100%;
+    max-width: 300px;
+    text-decoration: none;
+    line-height: 2;
+}
+
+.node-type-cerveza .field-name-field-imagen p {
+    margin-top: -40px;
+    margin-bottom: 0;
+    position: relative;
+}
 /* @end */
 
 
@@ -40,17 +117,53 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
+    .node-type-cerveza .field-name-field-propiedades > .field-items > .field-item {
+        width: 50%;
+    }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
+    
+    .node-type-cerveza .field-name-field-imagen a {
+        max-width: 406px;
+        margin-top: 0;
+        font-size: 140%;
+    }
+
+    .node-type-cerveza .field-name-field-imagen p {
+        margin-top: -70px;
+        padding: 0 20px;
+    }
+
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
+    .node-type-cerveza .field-name-field-imagen,
+    .node-type-cerveza .field-collection-container{
+        width: 50%;
+        float: left;
+    }
+    
+    .node-type-cerveza .field-name-field-imagen a {
+        font-size: 170%;
+    }
+    .node-type-cerveza .field-name-field-imagen img {
+        max-width: none;
+
+    }
 }
 
 /* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
+@media only screen and (min-width : 1100px) {
+    .node-type-cerveza .field-collection-view .field-name-field-titulo {
+        font-size: 18px;
+    }
+
+    .node-type-cerveza .field-collection-view .field-name-field-contenido h3 {
+        font-size: 24px;
+
+    }
 }
 /* @end */

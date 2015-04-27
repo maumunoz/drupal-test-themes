@@ -26,31 +26,35 @@
     background: #171717;
 }
 
-.node-type-promocion .pane > .content-area h1 {
+.node-type-promocion .c_tp {
     width: 100%;
     float: left;
     margin-right: 4%;
+}
+
+.node-type-promocion #post_t {
     font-size: 60px;
-    margin: 10px 0 0 36px;
+    margin: 41px 12px 0 56px;
     text-transform: uppercase;
     word-wrap: break-word;
     font-weight: bold;
-    line-height: 85px;
+    line-height: 67px;
+    letter-spacing: -1.8px;
 }
 
 .node-type-promocion .pane > .content-area h2 {
     color: #fab513;
-    font-size: 24px;
+    font-size: 23px;
     text-transform: uppercase;
-    margin-left: 2%;
     font-weight: bold;
 }
 
 .node-type-promocion .pane > .content-area .contenido {
     width: 100%;
     float: left;
-    padding: 16px 10px;
+    padding: 43px 10px;
     font-size: 16px;
+    line-height: 20px;
 }
 
 .node-type-promocion .pane > .content-area .contenido .media-thumbnail-frame {
@@ -59,10 +63,55 @@
 
 .node-type-promocion .pane > .content-area .contenido img {
     width: 150px;
+    margin-right: 5px;
+    margin-bottom: 5px;
 }
 
 .node-type-promocion .media_gallery-header {
     display: none;
+}
+
+.node-type-promocion .return { 
+    cursor: pointer; 
+    cursor: hand; 
+}
+
+.node-type-promocion .bar {
+    display: block;
+    height: 6px;
+    width: 28px;
+    background: #fab513;
+    position: relative;
+    top: 32px;
+}
+
+.node-type-promocion .return {
+    color: #fff;
+    font-size: 19px;
+    text-decoration: none;
+    display: block;
+    margin-top: 117px;
+    margin-left: 10%;
+}
+
+.node-type-promocion .icon_regreso {
+    background: url(../images/btn_regreso.png) no-repeat;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    vertical-align: middle;
+    margin-top: -8px;
+}
+
+.node-type-promocion #block-views-promoci-n-galeria-block,
+.node-type-promocion #block-views-promoci-n-videos-block {
+    margin: 0 16px 43px 26px;
+}
+
+.view-promoci-n-videos img {
+    width: 47%;
+    
 }
 
 /* @end */
@@ -90,8 +139,8 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-    .node-type-promocion .pane > .content-area h1 {
-        width: 42%;
+    .node-type-promocion .c_tp {
+        width: 46%;
     }
     .node-type-promocion .pane > .content-area .contenido {
         width: 50%;

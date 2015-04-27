@@ -123,6 +123,7 @@ body {
 }
 
 /* Hidden Elements */
+.description.mollom-privacy,
 .webform-client-form .form-item label.error,
 .webform-client-form .form-item br,
 .field-name-field-contenido-previo .field-label,

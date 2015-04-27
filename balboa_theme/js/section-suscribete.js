@@ -70,7 +70,7 @@
 
             // Letters only validation
             $.validator.addMethod('lettersonly', function(value) {
-                return /^[a-z]+$/i.test(value);
+                return /^[ñáéíóúÁÉÍÓÚa-zA-Z\s]+$/i.test(value);
             }, 'Letters only please');
 
             $(form).validate({

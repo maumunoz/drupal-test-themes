@@ -93,6 +93,7 @@ All components name must follow this format:
                     content.hide();
                     content.addClass('age_checker');
                     content.removeAttr('style');
+                    $("body").removeClass("age-gate-visible");
 
                     // Add basic styles when overlay is not present
                     if ($(overlay).length == 0) {
@@ -176,23 +177,33 @@ All components name must follow this format:
                     }
 
                     // Override form submit
-                    $(config.submit.node+ ' .form-submit, #age_checker_widget .form-submit').on('click touch', function () {
-                        var expire = false;
+                    age_checker.og_verify = age_checker.verify;
+                    age_checker.verify = function() {
+                        var correct_age = age_checker.og_verify();
+                        
+                        if (correct_age) {
+                            var expire = false;
 
-                        if ($(expiration).length && $(expiration).is(':checked')) {
-                            expire = true;
-                        }
-
-                        setTimeout(function () {
-                            if (jq.cookie(cookieName) === '1') {
-                                $('html').css('overflow', 'auto');
-                                jq.cookie(cookieName, '1', { path: '/', expires: (expire ? parseInt(Drupal.settings.age_checker.cookie_expiration, 10) : undefined) });
+                            if ($(expiration).length && $(expiration).is(':checked')) {
+                                expire = true;
                             }
-                        }, 150);
-                    });
+
+                            setTimeout(function () {
+                                if (jq.cookie(cookieName) === '1') {
+                                    $('html').css('overflow', 'auto');
+                                    jq.cookie(cookieName, '1', { path: '/', expires: (expire ? parseInt(Drupal.settings.age_checker.cookie_expiration, 10) : undefined) });
+                                }
+                            }, 150);
+                            
+                            $("body").removeClass("age-gate-visible");
+                        }else{
+                        }
+                        return correct_age;
+                    }
 
                     // Show content after transfomation ends
                     content.show();
+                    $("body").addClass("age-gate-visible");
 
                     //Set Form height if footer (sticky by default) is present
                     if ($(config.footer.node).length) {
