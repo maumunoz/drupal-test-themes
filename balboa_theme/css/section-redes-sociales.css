@@ -86,6 +86,7 @@
     width: 280px;
     position: relative;
     left: -10px;
+    overflow: scroll;
 }
 
 }
