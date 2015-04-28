@@ -21,7 +21,7 @@
         openSearchBtn = social.find('.search > a').eq(0);
         closeSearchBtn = $('<a id="closeSearchBtn" class="form-submit glyphicon glyphicon-remove"></a>');
 
-        $(openSearchBtn).on('mouseenter', function() {
+        $(openSearchBtn).on('click', function() {
             $(searchNode).css('display','block');
         });
         closeSearchBtn.on('click', function(e) {
