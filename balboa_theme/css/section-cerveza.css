@@ -75,6 +75,7 @@
     text-transform: uppercase;
     font-weight: 300;
     font-size: 14px;
+    color: #8c8c8c;
 }
 
 .node-type-cerveza .field-collection-view .field-name-field-contenido {
@@ -86,6 +87,7 @@
     margin: 0 0 20px;
     color: #fff;
     font-size: 18px;
+    font-weight: bold;
     
 }
 

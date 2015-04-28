@@ -70,11 +70,11 @@
     }
 
     #footer .col-2 .col {
-        width: 45%;
+        width: 50%;
     }
 
     #footer .col-2 .col.col-first {
-        width: 50%;
+        width: 45%;
     }
 
     #footer .col-2 .col.col-second {
