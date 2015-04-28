@@ -126,6 +126,7 @@
 .momentos-suprema .pager li {
     display: inline-block;
     width: 30%;
+    vertical-align: super;
 }
 
 .last-post-cont {
@@ -133,7 +134,7 @@
 }
 
 .next-post-cont {
-    float: right;
+    float: right !important;
 }
 
 .momentos-suprema .pager li > a,
@@ -373,6 +374,7 @@
     .pager li > span{
         font-size: 18px;
     }
+
 }
 
 /* Medium Devices, Desktops */

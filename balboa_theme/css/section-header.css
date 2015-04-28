@@ -68,7 +68,8 @@
     text-align: center;
 }
 
-.region-header .block-menu a:hover {
+.region-header .block-menu a:hover,
+.region-header .block-menu .active-trail a {
     background: #710404;
     text-decoration: none;
 }

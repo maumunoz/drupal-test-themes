@@ -79,6 +79,7 @@
     height: 48px !important;
     font-size: 125%;
     margin-top: 0 !important;
+    width: 100%;
 }
 
 .age_checker-submit {
@@ -186,7 +187,7 @@
 }
 
 .age_checker-footer {
-    padding: 15px 0 130px 0;
+    padding: 15px 0;
 }
 
 .age_checker-footer p {

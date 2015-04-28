@@ -20,6 +20,10 @@
     padding: 5px 0;
 }
 
+.homepage-promos a:hover {
+    text-decoration: none;
+}
+
 .homepage-promos img {
     display: inline-block;
     width: 100%;
@@ -31,6 +35,10 @@
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
+}
+
+.homepage-promos img:hover {
+    background: #fdb515;
 }
 
 /* @end */
