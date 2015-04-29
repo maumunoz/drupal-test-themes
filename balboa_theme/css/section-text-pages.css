@@ -6,6 +6,7 @@
 
 .node-type-page .content .field-items p{
     padding: 0px 15px;
+    font-weight: bolder;
 }
 
 .node-type-page .content .field-items a{
@@ -16,11 +17,13 @@
     color: #fdb915;
     padding: 15px 15px 0 15px;
     text-transform: uppercase;
+    font-weight: bolder;
+    text-transform: uppercase;
 }
 
 .node-type-page .content .field-items hr{
     width: 100%;
-    border: 1px solid #6b0103;
+    border: 0.5px solid #6b0103;
 }
 
 .node-type-page .content .image-bottom {
