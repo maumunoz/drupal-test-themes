@@ -72,7 +72,7 @@
 
 /* Results */
 
-.contactenos .node-type-webform .field-name-field-contenido-previo {
+.contactenos.node-type-webform .field-name-field-contenido-previo {
     display: none;
 }
 
@@ -113,13 +113,13 @@
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
     
-    .contactenos .node-type-webform .field-name-field-contenido-previo {
+    .contactenos.node-type-webform .field-name-field-contenido-previo {
         display: block;
         float: left;
         width: 39%;
         padding: 34px 6px 0 60px;
     }
-    .contactenos .node-type-webform .webform-client-form {
+    .contactenos.node-type-webform .webform-client-form {
         display: block;
         float: left;
         width: 50%;
