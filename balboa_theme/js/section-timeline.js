@@ -6,7 +6,7 @@
         sidebarB = '.node-type-l-nea-de-tiempo #sidebar-b',
         elements ='.view-content > .views-row',
         contentPane = $('<div class="timeline-content-pane"></div>'),
-        altNav = $('<ul class="timeline-alt-nav"></ul>'),
+        altNav = $('<div class="nav-container"><span class="bg-line"></span><ul class="timeline-alt-nav"></ul><span class="bg-line"></span></div>'),
         selectedYear = $('<ul class="timeline-selected-year"></ul>'),
         track = $('<input class="timeline-slide-track" type="range" data-rangeslider min=0 max=100 />'),
         years = [];
@@ -49,7 +49,7 @@
                 node.find('.view-content').prepend(altNav);
                 node.find('.view-content').append(selectedYear);
                 $.each(years, function(i, val) {
-                    altNav.append('<li class="timeline-year-'+val+'"><a href="#year-'+val+'">'+val+'</a></li>');
+                    altNav.find('ul').append('<li class="timeline-year-'+val+'"><a href="#year-'+val+'">'+val+'</a></li>');
                     selectedYear.append('<li class="timeline-year-'+val+'">'+val+'</li>');
                 });
 

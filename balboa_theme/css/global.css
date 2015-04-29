@@ -90,6 +90,10 @@ body {
 }
 
 /* Clearfix */
+.view-timelin .timeline-slide-track:before,
+.view-timelin .timeline-slide-track:after,
+.view-timeline:before,
+.view-timeline:after,
 .node-type-webform .content:before,
 .node-type-webform .content:after,
 .node-type-lista-de-promociones .item-list:before,
@@ -114,6 +118,8 @@ body {
  * line-height: 800%;
  * overflow: hidden;
 */
+.view-timeline .rangeslider__handle:after,
+.view-timeline .rangeslider__handle:before,
 .homepage-slider .slick-prev,
 .homepage-slider .slick-next,
 .region-header .social-bar li a,
@@ -149,6 +155,8 @@ body {
 }
 
 /* Lists indentation Reset */
+.view-timeline .timeline-alt-nav,
+.view-timeline .timeline-selected-year,
 .node-type-lista-de-promociones .item-list ul,
 .homepage-promos .item-list ul,
 .homepage-slider ul,

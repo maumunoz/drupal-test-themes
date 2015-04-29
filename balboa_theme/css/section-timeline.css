@@ -1,13 +1,154 @@
 /* @group Timeline */
 
 .node-type-l-nea-de-tiempo #block-block-21 {
-    padding: 0;
+    padding: 0 10px;
     margin: 0;
     float: none;
     min-height: 0 !important;
     width: auto;
     display: block;
     text-align: right;
+}
+
+.view-timeline .view-content {
+    padding: 20px 10px 0 10px;
+    text-align: center;
+}
+
+.view-timeline .nav-container {
+    margin-bottom: 45px;
+}
+
+.view-timeline .bg-line {
+    display: none;
+    min-width: 30px;
+    background: url(../images/timeline-tabs_bg-line.jpg) 0 0 repeat-x;
+    height: 5px;
+    vertical-align: middle;
+}
+
+.view-timeline .timeline-alt-nav {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 0 20px 0 0;
+    background: #750106;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    -webkit-box-shadow: #3b0003 1px 1px 1px 0 inset, #b02b30 1px 1px 1px 0;
+    -moz-box-shadow: #3b0003 1px 1px 1px 0 inset, #b02b30 1px 1px 1px 0;
+    box-shadow: #3b0003 1px 1px 1px 0 inset, #b02b30 1px 1px 1px 0;
+}
+
+.timeline-alt-nav li {
+    display: inline-block;
+    padding: 0 0 0 20px;
+    background: url(../images/timeline-tabs_bg-dot.jpg) 9px 16px no-repeat;
+}
+
+.timeline-alt-nav li:first-child {
+    background: none;
+}
+
+.timeline-alt-nav a {
+    line-height: 2.1;
+    font-size: 121.5%;
+    font-weight: 300;
+    color: #b37072;
+    text-decoration: none;
+}
+
+.timeline-alt-nav .selected a {
+    font-weight: 700;
+    color: #fff;
+}
+
+.view-timeline .views-row {
+    display: inline-block;
+    vertical-align: bottom;
+    margin: 0 1%;
+    width: 17%;
+}
+
+.view-timeline .views-row img {
+    display: inline-block;
+    width: 100%;
+    max-width: 125px;
+    height: auto;
+}
+
+.view-timeline .rangeslider,
+.view-timeline .rangeslider__fill,
+.view-timeline .rangeslider__handle {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background: none;
+    border: none;
+}
+
+.view-timeline .rangeslider {
+    margin-top: 15px;
+    background: url(../images/timeline_bg-arrow-track.png) 0 7px repeat-x;
+}
+
+.view-timeline .rangeslider__handle {
+    background: url(../images/timeline_bg-arrow.png) 0 0 no-repeat;
+    width: 44px;
+    height: 44px;
+}
+
+.view-timeline .rangeslider:after {
+    content: '';
+    display: block;
+    background: url(../images/timeline_bg-bottom-line.jpg) 0 0 repeat-x;
+    height: 10px;
+    width: 96%;
+    margin: 0 2%;
+    position: absolute;
+    bottom: -21px;
+}
+
+.view-timeline .timeline-selected-year {
+    padding: 25px 0 0 0;
+}
+
+.timeline-selected-year li {
+    display: inline-block;
+    color: #b37072;
+    margin: 0 1%;
+    width: 17%;
+    font-size: 128.5%;
+    font-weight: 700;
+}
+
+.timeline-selected-year .selected {
+    color: #fcb514;
+}
+
+.view-timeline .timeline-content-pane {
+    padding: 10px;
+}
+
+.timeline-content-pane .timeline-content {
+    padding: 12px 0;
+}
+
+.timeline-content-pane .timeline-year {
+    font-size: 300%;
+    line-height: 1;
+    font-weight: 700;
+    padding: 0 10px;
+}
+
+.timeline-content-pane .timeline-content p {
+    font-weight: 300;
+    font-size: 121.5%;
+    line-height: 1.4;
+    padding: 12px 10px;
 }
 
 /* @end */
@@ -21,14 +162,63 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
+    .view-timeline .bg-line {
+        display: inline-block;
+    }
+
+    .view-timeline .timeline-content-pane {
+        padding: 10px 20px;
+    }
+
+    .view-timeline .view-content {
+        padding: 20px 20px 0 20px;
+    }
+
+    .node-type-l-nea-de-tiempo #block-block-21 {
+        padding: 0 20px;
+    }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
+
+.view-timeline .view-content,
+.view-timeline .timeline-content-pane {
+    float: left;
+}
+
+.view-timeline .view-content {
+    padding: 62px 1% 0 8%;
+    width: 70%
+}
+
+.view-timeline .timeline-selected-year {
+    padding: 45px 0 0 0;
+}
+
+.view-timeline .timeline-content-pane {
+    width: 30%;
+    padding: 60px 1% 0 0;
+}
+
+.timeline-content-pane .timeline-year {
+    font-size: 535.8%;
+    padding: 0;
+}
+
+.timeline-content-pane .timeline-content p {
+    font-size: 121.5%;
+}
+
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
+
+.view-timeline .timeline-content-pane {
+    padding: 60px 6% 0 0;
+}
+
 }
 
 /* Large Devices, Wide Screens */
