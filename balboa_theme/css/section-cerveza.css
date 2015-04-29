@@ -133,11 +133,6 @@
         font-size: 140%;
     }
 
-    .node-type-cerveza .field-name-field-imagen p {
-        margin-top: -70px;
-        padding: 0 20px;
-    }
-
 }
 
 /* Medium Devices, Desktops */
@@ -148,9 +143,15 @@
         float: left;
     }
     
+    .node-type-cerveza .field-name-field-imagen p {
+        margin-top: -70px;
+        padding: 0 20px;
+    }
+
     .node-type-cerveza .field-name-field-imagen a {
         font-size: 170%;
     }
+    
     .node-type-cerveza .field-name-field-imagen img {
         max-width: none;
 
