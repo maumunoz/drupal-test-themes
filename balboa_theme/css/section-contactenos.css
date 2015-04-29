@@ -23,6 +23,9 @@
     border-bottom: solid 1px #B47667;
     border-radius: 1px;
     height: 49px;
+    color: #fff;
+    text-transform: none;
+    max-width: none;
 }
 
 .contactenos .form-textarea-wrapper textarea {
@@ -31,13 +34,14 @@
     border: none;
     border-bottom: solid 1px #B47667;
     border-radius: 1px;
+    padding: 6px 12px;
 }
 
 .contactenos .webform-client-form .form-item, 
 .contactenos .webform-client-form .form-actions {
     margin-top: 0;
     margin-bottom: 0;
-    padding: 0 0 21px 0;
+    padding: 0 0 22px 0;
 }
 
 .contactenos .webform-client-form .form-submit {
@@ -51,6 +55,9 @@
     margin: 17px 0 0;
     letter-spacing: 13px;
     padding: 0 0 0 16px;
+    text-shadow: none;
+    border: none;
+    font-weight: bold;
 }
 
 .grippie {
