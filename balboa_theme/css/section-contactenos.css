@@ -1,0 +1,101 @@
+/* @group Groupname */
+
+
+.contactenos.node-type-webform #page {
+    background: #990100;
+    
+}
+
+.contactenos #main {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.contactenos .webform-client-form .form-item label, 
+.contactenos .webform-client-form h3 {
+    font-size: 120%;
+    color: #FFEA0D;
+}
+
+.contactenos .webform-client-form input.form-text {
+    background-color: #810005;
+    border: none;
+    border-bottom: solid 1px #B47667;
+    border-radius: 1px;
+    height: 49px;
+}
+
+.contactenos .form-textarea-wrapper textarea {
+    min-height: 151px;
+    background-color: #810005;
+    border: none;
+    border-bottom: solid 1px #B47667;
+    border-radius: 1px;
+}
+
+.contactenos .webform-client-form .form-item, 
+.contactenos .webform-client-form .form-actions {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0 0 21px 0;
+}
+
+.contactenos .webform-client-form .form-submit {
+    width: 51%;
+    color: #E91E18;
+    background: none;
+    background-color: #FCAD1D;
+    border-radius: 2px;
+    font-size: 200%;
+    height: 49px;
+    margin: 17px 0 0;
+    letter-spacing: 13px;
+    padding: 0 0 0 16px;
+}
+
+.grippie {
+    display: none;
+}
+
+.node-type-webform .field-name-field-contenido-previo {
+    display: none;
+}
+
+/* @end */
+
+
+/* @group Media Query */
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    
+    .node-type-webform .field-name-field-contenido-previo {
+        display: block;
+        float: left;
+        width: 39%;
+        padding: 34px 6px 0 60px;
+    }
+    .node-type-webform .webform-client-form {
+        display: block;
+        float: left;
+        width: 50%;
+        padding: 78px 0 0;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+}
+/* @end */
