@@ -15,6 +15,11 @@ $gray--watermark : #acacac;
     background-color: #990100;
 }
 
+.node-type-l-nea-de-tiempo #page.bg-default {
+    background-color: transparent;
+    background: url(../images/timeline_bg.jpg) repeat 0 0 transparent;
+}
+
 /* @end */
 
 /* @group Fonts */
@@ -59,7 +64,7 @@ body {
 
 .zindex9 {z-index: 9}
 
-.zindex10 {z-index: 5}
+.zindex10 {z-index: 10}
 
 /* @end */
 
