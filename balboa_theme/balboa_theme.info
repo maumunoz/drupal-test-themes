@@ -22,6 +22,7 @@ stylesheets[all ][] = 'css/section-text-pages.css'
 stylesheets[all ][] = 'css/section-site-map.css'
 stylesheets[all ][] = 'css/section-contactenos.css'
 stylesheets[all ][] = 'css/section-timeline.css'
+stylesheets[all ][] = 'css/section-search-results.css'
 
 regions[page_top] = 'Above page'
 regions[preheader_first] = 'Preheader first'
