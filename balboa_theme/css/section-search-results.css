@@ -1,0 +1,73 @@
+/* @group Groupname */
+
+.page-search #edit-basic{
+    float: right;
+}
+
+.page-search label{
+    color: #fdb915;
+    margin: 10px 10px;
+}
+/* @end */
+.page-search .content-area{
+    padding: 0 10%;
+}
+
+.page-search .content-area h2{
+    color: #fdb915;
+    font-weight: bolder;
+    border-bottom: 1px solid #6b0103;
+    padding: 0 10px 20px 10px;
+}
+
+.page-search .content-area a{
+    color: #fdb915;
+}
+.page-search .content-area p{
+    padding: 0 10px 0px 10px;
+}
+.page-search .content-area h3{
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding: 0 10px 0px 10px;
+}
+
+.page-search .content-area .search-info{
+    font-style: italic;
+    border-bottom: 1px solid #c5666a;
+    padding: 0 10px 10px 10px;
+}
+
+.page-search .form-submit{
+    position: relative;
+    top: -3px;
+    color: #000;
+    margin: 10px 0 10px 10px;
+}
+
+
+/* @end */
+
+
+/* @group Media Query */
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+}
+/* @end */
