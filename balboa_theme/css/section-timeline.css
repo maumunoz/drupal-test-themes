@@ -91,14 +91,17 @@
 }
 
 .view-timeline .rangeslider {
-    margin-top: 15px;
+    width: 80%;
+    margin: 15px 0 0 10%;
     background: url(../images/timeline_bg-arrow-track.png) 0 7px repeat-x;
 }
 
 .view-timeline .rangeslider__handle {
     background: url(../images/timeline_bg-arrow.png) 0 0 no-repeat;
-    width: 44px;
-    height: 44px;
+    width: 30px;
+    height: 35px;
+    background-size: 100%;
+    top: -5px;
 }
 
 .view-timeline .rangeslider:after {
@@ -109,7 +112,7 @@
     width: 96%;
     margin: 0 2%;
     position: absolute;
-    bottom: -21px;
+    bottom: -26px;
 }
 
 .view-timeline .timeline-selected-year {
@@ -208,6 +211,13 @@
 
 .timeline-content-pane .timeline-content p {
     font-size: 121.5%;
+}
+
+.view-timeline .rangeslider__handle {
+    width: 37px;
+    height: 44px;
+    background-size: auto;
+    top: -10px;
 }
 
 }
