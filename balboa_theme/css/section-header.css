@@ -118,9 +118,19 @@
     background-position: -3px -3px;
 }
 
+.region-header .social-bar .search > a,
+.sb-slidebar .social-bar .search > a {
+    background-position: -3px -43px;
+}
+
 .region-header .social-bar .facebook a,
 .sb-slidebar .social-bar .facebook a {
     background-position: -43px -3px;
+}
+
+.region-header .social-bar .facebook a,
+.sb-slidebar .social-bar .facebook a {
+    background-position: -43px -43px;
 }
 
 .region-header .social-bar .twitter a,
@@ -128,9 +138,19 @@
     background-position: -83px -3px;
 }
 
+.region-header .social-bar .twitter a,
+.sb-slidebar .social-bar .twitter a {
+    background-position: -83px -43px;
+}
+
 .region-header .social-bar .youtube a,
 .sb-slidebar .social-bar .youtube a {
     background-position: -123px -3px;
+}
+
+.region-header .social-bar .youtube a,
+.sb-slidebar .social-bar .youtube a {
+    background-position: -123px -43px;
 }
 
 #block-search-form {
