@@ -76,6 +76,10 @@
 
 @media only screen and (min-width : 480px) {
 
+.node-type-redes-sociales #content-area {
+    margin-right: auto;
+}
+
 }
 
 /* Special Breakpoint */
