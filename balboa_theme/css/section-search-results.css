@@ -6,7 +6,6 @@
 
 .page-search label{
     color: #fdb915;
-    margin: 10px 10px;
 }
 /* @end */
 .page-search .content-area{
@@ -18,6 +17,7 @@
     font-weight: bolder;
     border-bottom: 1px solid #6b0103;
     padding: 0 10px 20px 10px;
+    font-size: 17px;
 }
 
 .page-search .content-area a{
@@ -39,10 +39,20 @@
 }
 
 .page-search .form-submit{
-    position: relative;
-    top: -3px;
     color: #000;
-    margin: 10px 0 10px 10px;
+    float: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.page-search ul{
+    padding: 10px;
+}
+
+.page-search .form-text {
+    padding: 0 0px 0 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 
@@ -53,21 +63,59 @@
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
+.page-search label{
+        margin: 0;
+    }
+.page-search .form-submit{
+    float: right;
+    }
+.page-search h2{
+        font-size: 19px;
+    }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
+
+.page-search .form-submit {
+    float: right;
+    margin:10px 0 10px 0px;
+    }
+
+.page-search h2{
+        font-size: 29px;
+    }
+
+
+
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
+    .page-search #edit-basic{
+        float: none;
+    }
+.page-search .form-submit{
+    float: none;
+    margin-top: 6px;
+    }
+
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
+.page-search .form-submit{
+
+    }
+.page-search input.form-text{
+
+    }
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
+    .page-search input.form-text{
+
+    }
 }
 /* @end */
