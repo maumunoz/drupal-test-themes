@@ -55,6 +55,10 @@
     margin-top: 10px;
 }
 
+.page-search .username{
+    display: none;
+}
+
 
 /* @end */
 
@@ -82,7 +86,7 @@
     margin:10px 0 10px 0px;
     }
 
-.page-search h2{
+.page-search .content-area h2{
         font-size: 29px;
     }
 
