@@ -34,6 +34,11 @@
             node: '#edit-submitted-new-1429654452284',
             placeholder: 'Correo electrónico',
             css: 'required email'
+        },
+        {
+            node: '#edit-submitted-new-1430260801686',
+            placeholder: '',
+            css: 'required lettersonly'
         }];
 
     // Detect page type
@@ -66,12 +71,12 @@
                     year = parseInt($(params[2]).val(), 10),
                     dob = new Date(year, month-1, day);
                 return ((!day && !month && !year) || (!isNaN(dob.getTime())));
-            }, 'You should enter a valid date');
+            }, 'Debe ingresar una fecha válida');
 
             // Letters only validation
             $.validator.addMethod('lettersonly', function(value) {
                 return /^[ñáéíóúÁÉÍÓÚa-zA-Z\s]+$/i.test(value);
-            }, 'Letters only please');
+            }, 'Solo use letras por favor');
 
             $(form).validate({
                 rules: {
@@ -93,6 +98,12 @@
                         validate: ['#newsletter_day', '#newsletter_month', '#newsletter_year']
                     }
                 }
+            });
+            
+            $.extend($.validator.messages, {
+                required: 'Este campo es obligatorio.',
+                email: "Correo inválido",
+                equalTo: "Por favor introduzca nuevamente el mismo valor",
             });
 
             $(form).on('click touch', '.form-submit', function(e) {

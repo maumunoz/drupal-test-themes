@@ -45,14 +45,14 @@
 }
 
 .contactenos .webform-client-form .form-submit {
-    width: 51%;
+    width: 70%;
+    margin: 0 15%;
     color: #E91E18;
     background: none;
     background-color: #FCAD1D;
     border-radius: 2px;
     font-size: 200%;
     height: 49px;
-    margin: 17px 0 0;
     letter-spacing: 13px;
     padding: 0 0 0 16px;
     text-shadow: none;
@@ -66,15 +66,32 @@
     border: 2px solid red !important;
 }
 
-.grippie {
+.contactenos .grippie {
     display: none;
+}
+
+.contactenos.node-type-webform  .field-name-field-contenido-previo img {
+    width: 20%;    
+}
+
+.contactenos .label_nomaneje {
+    float: right;
+    margin-top: 81px;
+    margin-bottom: 10px;
+}
+
+.contactenos .webform-client-form .form-item label.error {
+    font-size: 10px;
+    display: block !important;
+    visibility: visible !important;
+    color: #FCAD1D;
+}
+
+.contactenos .label_nomaneje img {
+    width: 154px;
 }
 
 /* Results */
-
-.contactenos.node-type-webform .field-name-field-contenido-previo {
-    display: none;
-}
 
 .page-node-done #main {
     max-width: 1024px;
@@ -93,6 +110,7 @@
     display: inline-block;
 }
 
+
 /* @end */
 
 
@@ -108,17 +126,23 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
+    .contactenos.node-type-webform  .field-name-field-contenido-previo img {
+        width: 100%;    
+    }
+    .contactenos.node-type-webform .field-name-field-contenido-previo {
+        float: left;
+        width: 39%;
+        padding: 34px 6px 0 60px;
+    }
+    .contactenos .webform-client-form .form-submit {
+        width: 51%;
+        margin: 17px 0 0;
+    }
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
     
-    .contactenos.node-type-webform .field-name-field-contenido-previo {
-        display: block;
-        float: left;
-        width: 39%;
-        padding: 34px 6px 0 60px;
-    }
     .contactenos.node-type-webform .webform-client-form {
         display: block;
         float: left;
