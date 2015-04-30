@@ -18,12 +18,24 @@
         }, 1000);
     });
     
-    //Content images, with link inside image
-    $.initModule(".node-type-promocion .return", function ($, returnbtn) {
-        returnbtn.bind("touch click", function() {
-            window.history.back();
-        });
+    //Find parent section
+    
+    $.initModule(".view-promocion-padre", function ($, parentinfo) {
+        var returnFixed = false;
+        $(".view-promocion-padre .field-name-field-link .field-item").each(function(i,el) {
+            if(document.location.toString().indexOf( $(el).text() )>-1) {
+                $(".node-type-promocion .return").attr("href", $(el).closest(".views-field-field-promociones").prev().find("a").attr("href") );
+                returnFixed = true;
+            }
+        } );
+        if (!returnFixed) {
+            $(".node-type-promocion .return").bind("touch click", function() {
+                window.history.back();
+            });
+        }
     });
+    
+    
     //Content images, with link inside image
     $.initModule(".node-type-promocion .contenido .media-thumbnail-frame a", function ($, images) {
 

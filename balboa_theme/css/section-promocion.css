@@ -44,7 +44,7 @@
 
 .node-type-promocion .pane > .content-area h2 {
     color: #fab513;
-    font-size: 23px;
+    font-size: 24px;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -71,11 +71,6 @@
     display: none;
 }
 
-.node-type-promocion .return { 
-    cursor: pointer; 
-    cursor: hand; 
-}
-
 .node-type-promocion .bar {
     display: block;
     height: 6px;
@@ -91,7 +86,9 @@
     text-decoration: none;
     display: block;
     margin-top: 117px;
-    margin-left: 10%;
+    margin-left: 26px;
+    cursor: pointer; 
+    cursor: hand; 
 }
 
 .node-type-promocion .icon_regreso {
@@ -109,11 +106,34 @@
     margin: 0 16px 43px 26px;
 }
 
+.view-promoci-n-videos a {
+    position: relative;
+}
 .view-promoci-n-videos img {
     width: 47%;
     
 }
 
+.view-promoci-n-videos .play_icon {
+    background-image: url(../images/icon_play_video.png);
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -20px;
+    margin-top: -20px;
+    
+}
+
+#block-views-promoci-n-contenido-block {
+    margin-bottom: 11px;
+}
+
+.node-type-promocion .view-promoci-n-imagen .item-list ul li {
+    margin: 0 !important;
+}
 /* @end */
 
 
