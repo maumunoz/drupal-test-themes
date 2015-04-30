@@ -63,12 +63,12 @@
 }
 
 .webform-client-form .form-item input {
-    font-size: 121%;
+    font-size: 100%;
     color: #acacac;
 }
 
 .webform-client-form input.form-text {
-    width: 100%;
+    width: 98%;
 }
 
 .webform-client-form h3 {
@@ -96,7 +96,7 @@
 .webform-client-form .form-submit {
     margin: 18px 0;
     height: 60px;
-    width: 100%;
+    width: 98%;
     font-size: 155%;
     line-height: 50px;
     max-width: 610px;
@@ -129,6 +129,11 @@
     .node-type-webform .webform-client-form {
         padding: 20px;
     }
+
+    .webform-client-form .form-item input {
+        font-size: 121%;
+    }
+
 }
 
 /* Small Devices, Tablets */
