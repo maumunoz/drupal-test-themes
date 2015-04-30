@@ -135,12 +135,12 @@
 
 .region-header .social-bar .twitter a,
 .sb-slidebar .social-bar .twitter a {
-    background-position: -83px -43px;
+    background-position: -83px -3px;
 }
 
 .region-header .social-bar .twitter a:hover,
 .sb-slidebar .social-bar .twitter a:hover {
-    background-position: -83px -3px;
+    background-position: -83px -43px;
 }
 
 .region-header .social-bar .youtube a,
