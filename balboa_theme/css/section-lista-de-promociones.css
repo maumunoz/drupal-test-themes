@@ -35,19 +35,28 @@
     cursor: default;
 }
 
+.node-type-promocion .final-date,
 .node-type-lista-de-promociones .final-date {
     position: absolute;
     bottom: 0;
     left: 0;
     display: block;
     width: 100%;
-    font-size: 128.6%;
-    text-transform: uppercase;
     padding: 0 13px;
     line-height: 31px;
     background: #000;
     background: rgba(0, 0, 0, .5);
+}
+
+.node-type-promocion .final-date b,
+.node-type-lista-de-promociones .final-date b {
     color: #fdb515;
+    font-size: 128.6%;
+    text-transform: uppercase;
+}
+
+.node-type-lista-de-promociones .placeholder .final-date {
+    display: none;
 }
 
 /* @end */
