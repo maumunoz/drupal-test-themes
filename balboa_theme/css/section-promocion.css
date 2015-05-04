@@ -106,11 +106,19 @@
     margin: 0 16px 43px 26px;
 }
 
+.view-promoci-n-videos li.views-row {
+    float: left;
+    width: 48%;
+    margin-right: 2%;
+    margin-bottom: 6px;
+}
+
 .view-promoci-n-videos a {
     position: relative;
 }
+
 .view-promoci-n-videos img {
-    width: 47%;
+    width: 100%;
     
 }
 
