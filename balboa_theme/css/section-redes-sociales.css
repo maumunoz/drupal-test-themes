@@ -83,9 +83,9 @@
 
 @media only screen and (min-width : 480px) {
 
-.node-type-redes-sociales #content-area {
-    margin-right: auto;
-}
+    .node-type-redes-sociales #content-area {
+        margin-right: auto;
+    }
 
 }
 
@@ -104,6 +104,7 @@
         width: 280px;
         left: 0px;
     }
+
 }
 
 /* Small Devices, Tablets */
@@ -111,6 +112,9 @@
     #block-views-redes-youtube-videos-block {
         padding-left: 0 !important;
         padding-right: 0 !important;
+    }
+    .yt-video {
+        overflow-y: auto;
     }
 }
 
