@@ -1,8 +1,6 @@
 /* @group Groupname */
 
-.page-search #edit-basic{
-    float: right;
-}
+
 
 .page-search label{
     color: #fdb915;
@@ -53,6 +51,7 @@
     padding: 0 0px 0 10px;
     margin-bottom: 10px;
     margin-top: 10px;
+    margin-left: 10px;
 }
 
 .page-search .username{
@@ -89,16 +88,11 @@
 .page-search .content-area h2{
         font-size: 29px;
     }
-
-
-
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-    .page-search #edit-basic{
-        float: none;
-    }
+
 .page-search .form-submit{
     float: none;
     margin-top: 6px;
@@ -108,18 +102,13 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-.page-search .form-submit{
-
-    }
-.page-search input.form-text{
-
-    }
+.page-search #edit-basic{
+    float: right;
+}
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
-    .page-search input.form-text{
 
-    }
 }
 /* @end */
