@@ -59,6 +59,7 @@
 
 .node-type-promocion .pane > .content-area .contenido .media-thumbnail-frame {
     display: inline-block;
+    max-width: 100%;
 }
 
 .node-type-promocion .pane > .content-area .contenido img {
