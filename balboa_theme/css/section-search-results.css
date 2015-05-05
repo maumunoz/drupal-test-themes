@@ -59,7 +59,9 @@
     margin-bottom: 20px;
 }
 /* @end */
-
+.search-form input{
+    vertical-align: baseline;
+}
 
 /* @group Media Query */
 
