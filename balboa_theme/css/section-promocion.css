@@ -157,13 +157,18 @@
 @media only screen and (min-width : 480px) {
 }
 
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
+
+/* Styles for Landscape screen */
+@media all and (orientation:landscape) {
     .node-type-promocion .pane > .help,
     .node-type-promocion .pane > .content-area {
         float: left;
         width: 50%;
     }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
 
 }
 

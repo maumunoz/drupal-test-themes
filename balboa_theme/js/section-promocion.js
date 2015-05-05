@@ -4,10 +4,10 @@
 
     // Split content
     function onResizeSplit() {
-        if ($(window).width() > 768) {
+        if ($(window).width() > $(window).height()) {
             $('.node-type-promocion #content-area').css('height', $('#content-area').width());
         } else {
-            $('.node-type-promocion #content-area').css('height', 'initial');
+            $('.node-type-promocion #content-area').css('height', $("#content-area .region").height() );
         }
     }
     $(window).on('resize', onResizeSplit);
@@ -29,7 +29,8 @@
             }
         } );
         if (!returnFixed) {
-            $(".node-type-promocion .return").bind("touch click", function() {
+            $(".node-type-promocion .return").bind("touch click", function(e) {
+                e.preventDefault();
                 window.history.back();
             });
         }

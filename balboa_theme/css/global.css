@@ -34,6 +34,10 @@ body {
     color: #fff;
 }
 
+.item-list ul li { 
+    margin: 0 !important;
+}
+
 /* @end */
 
 /* @group Layers */
