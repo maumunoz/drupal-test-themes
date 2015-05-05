@@ -142,6 +142,7 @@
 
 .node-type-promocion .view-promoci-n-imagen .item-list ul li {
     margin: 0 !important;
+    position: relative;
 }
 /* @end */
 
