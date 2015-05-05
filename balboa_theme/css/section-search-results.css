@@ -62,15 +62,14 @@
 .page-search .search-form input{
     vertical-align: baseline;
 }
+.page-search .form-text{
+    width: 200px;
+}
 
 /* @group Media Query */
 
 /* Custom, iPhone Retina */
-@media only screen and (min-width : 280px) {
-.page-search .input .form-text{
-    width: 200px;
-}
-}
+
 @media only screen and (min-width : 320px) {
 .page-search h2{
         font-size: 19px;
