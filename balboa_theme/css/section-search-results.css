@@ -1,9 +1,9 @@
 /* @group Groupname */
 
-
-
 .page-search label{
     color: #fdb915;
+    display: block;
+    margin-right: 10px;
 }
 /* @end */
 .page-search .content-area{
@@ -14,7 +14,7 @@
     color: #fdb915;
     font-weight: bolder;
     border-bottom: 1px solid #6b0103;
-    padding: 0 10px 20px 10px;
+    padding: 0 0px 20px;
     font-size: 17px;
 }
 
@@ -38,40 +38,35 @@
 
 .page-search .form-submit{
     color: #000;
-    float: right;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.page-search ul{
-    padding: 10px;
 }
 
 .page-search .form-text {
-    padding: 0 0px 0 10px;
+    padding: 0 0 0 10px;
     margin-bottom: 10px;
     margin-top: 10px;
-    margin-left: 10px;
 }
 
 .page-search .username{
     display: none;
 }
 
+.page-search .search-form{
+    margin-top: 20px;
 
+}
+
+.page-search .region-content{
+    margin-bottom: 20px;
+}
 /* @end */
-
+.search-form input{
+    vertical-align: baseline;
+}
 
 /* @group Media Query */
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
-.page-search label{
-        margin: 0;
-    }
-.page-search .form-submit{
-    float: right;
-    }
 .page-search h2{
         font-size: 19px;
     }
@@ -79,12 +74,6 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
-
-.page-search .form-submit {
-    float: right;
-    margin:10px 0 10px 0px;
-    }
-
 .page-search .content-area h2{
         font-size: 29px;
     }
@@ -93,10 +82,9 @@
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
 
-.page-search .form-submit{
-    float: none;
-    margin-top: 6px;
-    }
+.page-search label{
+    display: inline;
+}
 
 }
 
