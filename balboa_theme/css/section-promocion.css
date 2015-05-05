@@ -59,10 +59,11 @@
 
 .node-type-promocion .pane > .content-area .contenido .media-thumbnail-frame {
     display: inline-block;
+    max-width: 100%;
 }
 
 .node-type-promocion .pane > .content-area .contenido img {
-    width: 150px;
+    max-width: 100%;
     margin-right: 5px;
     margin-bottom: 5px;
 }
@@ -141,6 +142,7 @@
 
 .node-type-promocion .view-promoci-n-imagen .item-list ul li {
     margin: 0 !important;
+    position: relative;
 }
 /* @end */
 
