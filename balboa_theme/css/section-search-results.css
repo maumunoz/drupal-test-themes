@@ -59,7 +59,7 @@
     margin-bottom: 20px;
 }
 /* @end */
-.search-form input{
+.page-search .search-form input{
     vertical-align: baseline;
 }
 
@@ -67,7 +67,7 @@
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 280px) {
-.input .form-text{
+.page-search .input .form-text{
     width: 200px;
 }
 }
