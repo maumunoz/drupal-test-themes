@@ -12,6 +12,8 @@
 
 .age_checker form {
     padding: 20px 0;
+    height: initial !important;
+    min-height: initial !important;
 }
 
 .age_checker h2,
@@ -122,6 +124,8 @@
     background: #271415;
     padding: 15px 0;
     font-size: 115%;
+    position: relative;
+    margin-top: 10px;
 }
 
 .age_checker .age_checker-footer .container-fluid {

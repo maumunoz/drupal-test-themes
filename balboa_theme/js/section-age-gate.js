@@ -10,13 +10,13 @@
 
     $.initModule(node, function ($, ageGate) {
         // Reset default values
-        $(ageGate).find('.form-item-day input').removeAttr('onblur').removeAttr('onfocus').val(dateTxt.day).keyup(function() {
+        $(ageGate).find('.form-item-day input').removeAttr('onblur').removeAttr('onfocus').val(dateTxt.day).bind("keyup change blur input",function() {
             this.value=this.value.replace(/[\D]+/g,'');
         });
-        $(ageGate).find('.form-item-month input').removeAttr('onblur').removeAttr('onfocus').val(dateTxt.month).keyup(function() {
+        $(ageGate).find('.form-item-month input').removeAttr('onblur').removeAttr('onfocus').val(dateTxt.month).bind("keyup change blur input",function() {
             this.value=this.value.replace(/[\D]+/g,'');
         });
-        $(ageGate).find('.form-item-year input').removeAttr('onblur').removeAttr('onfocus').val(dateTxt.year).keyup(function() {
+        $(ageGate).find('.form-item-year input').removeAttr('onblur').removeAttr('onfocus').val(dateTxt.year).bind("keyup change blur input",function() {
             this.value=this.value.replace(/[\D]+/g,'');
         });
 
