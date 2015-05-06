@@ -113,7 +113,8 @@ All components name must follow this format:
 
                                 // Mobile transformations
                                 if (mobile) {
-                                    form.find('input.form-text').each(function(i) {
+                                    form.find('input.form-text').each(function(i,elem) {
+                                        var limit = ($(this).attr("name")=="year")?2999:99;
                                         $('<input type="tel" />')
                                         .attr({
                                             name: this.name,
@@ -123,7 +124,8 @@ All components name must follow this format:
                                             maxlength:
                                             this.maxlength,
                                             max:'2999',
-                                            'class': this['class']
+                                            'class': this['class'],
+                                            pattern: "[0-9]+"
                                         }).data('i',i+1)
                                         .keyup(function(){
                                             jq(this).val( this.value.substr(0,4) );
