@@ -7,7 +7,7 @@
 .node-type-redes-sociales #content-area {
     min-height: 500px;
     text-align: center;
-    margin-right: 50px;
+    margin-right: 30px;
 }
 
 .node-type-redes-sociales #content-area .region-content > .block-views {
@@ -46,7 +46,6 @@
 
 .yt-video iframe.video {
     width: 100%    !important;
-    height: 345px   !important;
 }
 
 .fb_iframe_widget,
@@ -65,6 +64,9 @@
     overflow: hidden;
 }
 
+.yt-video {
+    margin-bottom: 25px;
+}
 
 /* @end */
 
@@ -78,6 +80,10 @@
 
     .node-type-redes-sociales #content-area {
         margin-right: auto;
+    }
+
+    .yt-video iframe.video {
+        height: 230px;
     }
 
 }
@@ -97,6 +103,9 @@
         left: 0px;
     }
 
+    .yt-video iframe.video {
+        height: 250px;
+    }
 }
 
 /* Small Devices, Tablets */
@@ -114,6 +123,10 @@
         width: 280px;
         max-height: 580px;
     }
+    .yt-video iframe.video {
+        height: 345px   !important;
+    }
+
 }
 
 /* Medium Devices, Desktops */
