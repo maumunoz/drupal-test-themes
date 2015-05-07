@@ -112,6 +112,8 @@
     width: 48%;
     margin-right: 2%;
     margin-bottom: 6px;
+    margin-left: 0 !important;
+    margin-top: 0 !important;
 }
 
 .view-promoci-n-videos a {

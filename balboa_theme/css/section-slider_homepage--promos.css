@@ -10,6 +10,7 @@
 .homepage-promos .item-list li {
     display: inline-block;
     max-width: 115px;
+    margin: 0 !important;
 }
 
 .homepage-promos a {
