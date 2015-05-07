@@ -128,7 +128,8 @@ All components name must follow this format:
                                             pattern: "[0-9]+"
                                         }).data('i',i+1)
                                         .keyup(function(){
-                                            jq(this).val( this.value.substr(0,4) );
+                                            var limit = (jq(this).attr("name")=="year")?4:2;
+                                            jq(this).val( this.value.substr(0,limit) );
                                             age_checker.nextbox(this, jq(this).data('i') );
                                         })
                                         .addClass('whiteplaceholder')
