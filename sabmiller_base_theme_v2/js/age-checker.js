@@ -123,7 +123,7 @@ All components name must follow this format:
                                             this.size,
                                             maxlength:
                                             this.maxlength,
-                                            max:'2999',
+                                            max:limit,
                                             'class': this['class'],
                                             pattern: "[0-9]+"
                                         }).data('i',i+1)
