@@ -10,13 +10,13 @@
 
     $.initModule(node, function ($, ageGate) {
         // Reset default values
-        $(ageGate).find('.form-item-day input').removeAttr('onblur').removeAttr('onfocus').val(dateTxt.day).bind("keyup change blur input",function() {
+        $(ageGate).find('.form-item-day input').removeAttr('onblur').removeAttr('onfocus').val(dateTxt.day).attr("pattern","[0-9]*").attr("max","99").attr("maxlength","2").bind("keyup change input",function() {
             this.value=this.value.replace(/[\D]+/g,'');
         });
-        $(ageGate).find('.form-item-month input').removeAttr('onblur').removeAttr('onfocus').val(dateTxt.month).bind("keyup change blur input",function() {
+        $(ageGate).find('.form-item-month input').removeAttr('onblur').removeAttr('onfocus').val(dateTxt.month).attr("pattern","[0-9]*").attr("max","99").attr("maxlength","2").bind("keyup change input",function() {
             this.value=this.value.replace(/[\D]+/g,'');
         });
-        $(ageGate).find('.form-item-year input').removeAttr('onblur').removeAttr('onfocus').val(dateTxt.year).bind("keyup change blur input",function() {
+        $(ageGate).find('.form-item-year input').removeAttr('onblur').removeAttr('onfocus').val(dateTxt.year).attr("pattern","[0-9]*").attr("max","2999").attr("maxlength","4").bind("keyup change input",function() {
             this.value=this.value.replace(/[\D]+/g,'');
         });
 

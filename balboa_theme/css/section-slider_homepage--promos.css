@@ -64,8 +64,8 @@
     }
 
     .homepage-promos .item-list {
-        padding: 62px 15px 15px 15px;
-        max-width: 125px;
+        padding: 62px 15px 15px;
+        width: 125px;
     }
 
     .homepage-promos .item-list li {
