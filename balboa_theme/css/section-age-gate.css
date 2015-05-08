@@ -6,12 +6,16 @@
     background-position: center center;
 }
 
+#age_checker_message {
+    padding: 0 !important;
+}
+
 .age_checker {
     font-size: 80%;
 }
 
 .age_checker form {
-    padding: 20px 0;
+    padding: 20px 0 0;
     height: initial !important;
     min-height: initial !important;
 }
