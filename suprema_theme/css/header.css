@@ -213,6 +213,7 @@
 #navigation .menu li a {
     text-decoration: none !important;
     transition: color 0.5s;
+    font-family: 'Crimson';
 }
 
 .btn-menu-mobile a {

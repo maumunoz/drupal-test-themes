@@ -225,6 +225,11 @@
     left: -5px;
 }
 
+.inputfecha {
+    width: 20% !important; 
+    margin-top:0px !important;
+    margin-right:5px !important;
+}
 .page-momentos-suprema .view-content img{
     margin: 14px 0;
 }

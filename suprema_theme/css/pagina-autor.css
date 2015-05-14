@@ -3,10 +3,12 @@
 
 .page-autores .view-autores .view-content {
     background-color: #fff;
+    padding: 0;
 }
 
-.page-autores .photo{
-    width: 34%;
+.page-autores .autorPhoto img{
+    width: 50%;
+    height: auto;
 }
 
 .fotoEncabezado .media-thumbnail-frame img{
@@ -16,12 +18,19 @@
 .page-autores .views-row-odd a{
     clear: both;
 }
-.page-autores h1{
-    text-align: center;
-}
+
 .page-autores .views-row,
 .page-autores .views-row hr{
     clear: both;
+    text-align: center;
+}
+.page-autores .autorBody{
+    width: 50%;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 8px;
+    padding: 0 5px;
+    line-height: 1;
 }
 .page-autores .views-row-odd img{
     float: left;
@@ -31,20 +40,11 @@
     float: right;
     margin-bottom: 15px;
 }
-.page-autores .views-row-even p{
-    width: 50%;
+.page-autores .views-row-even .autorBody{
     float: left;
-    width: 49%;
-    margin-bottom: 10px;
-    text-align: center;
-
 }
-.page-autores .views-row-odd p{
-    width: 50%;
-    float: left;
-    width: 55%;
-    text-align: center;
-    margin-bottom: 10px;
+.page-autores .views-row-odd .autorBody{
+    float: right;
 }
 
 .page-autores .views-row hr{
@@ -53,263 +53,130 @@
     height: 3px;
 }
 
-.page-autores .views-row-even img{
-    float: right;
-}
-.autorFacebook{
-    width: 5%;
-    margin-right: 40px;
-    float: left;
-    text-align: center;
-    margin-left: 18%;
-    margin-bottom: 2%;
-}
-.autorTwitter{
-    width: 5%;
-    margin-right: 40px;
-    float: left;
-}
-.autorBlogger{
-    width: 5%;
-    margin-right: 20px;
-    float: left;
-}
-.autorFacebook a{
-    background-image: url(/sites/g/files/ogq836/f/media_crop/121/public/201503/blogSuprema_DSKwsfjw_02.png);
-    background-repeat: no-repeat;
-    text-indent: -9999px;
-    width: 61px;
-    height: 66px;
-    float: left;
-}
-.autorTwitter a{
-    background-image: url(/sites/g/files/ogq836/f/media_crop/126/public/201503/jbae_02.png);
-    background-repeat: no-repeat;
-    text-indent: -9999px;
-    width: 61px;
-    height: 66px;
-    float: left;
-}
-.autorBlogger a{
-    background-image: url(/sites/g/files/ogq836/f/media_crop/131/public/201503/blogSuprema_DSK_01_03_02.png);
-    background-repeat: no-repeat;
-    text-indent: -9999px;
-    width: 61px;
-    height: 66px;
-    float: left;
-}
-.titulo a{
-    margin-bottom: 20px;
+.page-autores .titulo {
     color: #878787;
-    text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
+    margin: 0 0 0px;
+    font-size: 12px;
+    padding-top: 7px;
 }
 
-@media only screen and (min-width:0px) and (max-width: 383.9px) {
-
-
-    .page-autores .view-content img{
-        width: 50%;
-        height: auto;
-    }
-    .titulo a{
-        font-size: 12px;
-        margin: 0;
-        position: relative;
-        font-weight: bold;
-    }
-    .autorFacebook{
-        margin-left: 19.4%;
-        margin-right: 32px;
-    }
-    .autorFacebook a{
-        background-image: url(/sites/g/files/ogq836/f/media_crop/136/public/201503/facebook-mobile.png);
-        height: 34px;
-        width: 31px;
-        position: relative;
-        right: 35px;
-    }
-    .autorTwitter a{
-        background-image: url(/sites/g/files/ogq836/f/media_crop/146/public/201503/twitter-mobile.png);
-        width: 31px;
-        height: 34px;
-        position: relative;
-        right: 45px;
-    }
-    .autorBlogger a{
-        background-image: url(/sites/g/files/ogq836/f/media_crop/141/public/201503/blogger-mobile.png);
-        width: 31px;
-        height: 34px;
-        position: relative;
-        right: 10px;
-        top: -36px;
-    }
-    .autorTwitter{
-        margin-right: 0px;
-    }
-    .page-autores .views-row p{
-        position: relative;
-        top: -40px;
-        font-size: 10px;
-        width: 40%;
-    }
-    .page-autores .views-row-odd p{
-        margin-left: 10px;
-        position: relative;
-        top: -25px;
-        margin-bottom:0;
-    }
-    .page-autores .views-row-even p{
-        margin-left: 10px;
-        position: relative;
-        top: -25px;
-        margin-bottom: 0;
-    }
-    .page-autores .view-autores .view-content {
-        padding: 0 !important;
-        position: relative;
-        top: -20px;
-    }
-
+.autorFacebook,
+.autorTwitter,
+.autorBlogger,
+.autorInstagram {
+    display: inline-block;
+    text-align: center;
 }
-@media only screen and (min-width:384px) and (max-width: 480px) {
-    .page-autores .views-row p{
-        font-size: 12px;
-        width: 40%;
-        position: relative;
-        top: -20px;
-    }
 
-    .page-autores .view-content img{
-        width: 50%;
-        height: auto;
-    }
-    .titulo a{
-        font-size: 12px;
-        margin: 0;
-        position: relative;
-        font-weight: bold;
-    }
-    .autorFacebook{
-        margin-left: 19.4%;
-        margin-right: 32px;
-    }
-    .autorFacebook a{
-        background-image: url(/sites/g/files/ogq836/f/media_crop/136/public/201503/facebook-mobile.png);
-        height: 34px;
-        width: 31px;
-        position: relative;
-        right: 35px;
-        top: -7px;
-    }
-    .autorTwitter a{
-        background-image: url(/sites/g/files/ogq836/f/media_crop/146/public/201503/twitter-mobile.png);
-        width: 31px;
-        height: 34px;
-        position: relative;
-        right: 45px;
-        top:-6px;
-    }
-    .autorBlogger a{
-        background-image: url(/sites/g/files/ogq836/f/media_crop/141/public/201503/blogger-mobile.png);
-        width: 31px;
-        height: 34px;
-        position: relative;
-        right: 25px;
-        top: -7px;
-    }
-    .autorTwitter{
-        margin-right: 0px;
-    }
-    .page-autores .view-autores .view-content {
-        padding: 0 !important;
-        position: relative;
-        top: -20px;
-    }
-    .page-autores .views-row-odd p{
-        margin-left: 15px;
-    }
-    .page-autores .views-row-even p{
-        margin-left: 15px;
-    }
+.autorFacebook a,
+.autorTwitter a,
+.autorBlogger a,
+.autorInstagram a{
+    height: 28px;
+    width: 28px;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    background-size: contain;
+    display: block;
 }
-@media only screen and (min-width:481px) and (max-width: 768px) {
-    .page-autores .view-content img{
-        width: 50%;
-        height: auto;
-    }
-    .autorFacebook a{
-        position: relative;
-        top: -0px;
-        right: 70px;
-    }
-    .autorTwitter a{
-        position: relative;
-        top: -0px;
-        right: 62px;
-    }
-    .autorBlogger a{
-        position: relative;
-        right: 15px;
-    }
-    .titulo a{
-        font-size: 18px;
-    }
-    .page-autores .views-row p{
-        font-size: 12px;
-        width: 40%;
-    }
-
-    .page-autores .views-row-odd p{
-        margin-left: 30px;
-    }
-    .page-autores .views-row-even p{
-        margin-left: 30px;
-    }
-    .autorTwitter{
-        margin-right: 0px;
-    }
-    .page-autores .view-autores .view-content {
-        padding: 0 !important;
-        position: relative;
-        top: -20px;
-    }
+.autorFacebook a{
+    background-image: url(../images/facebook.png);
 }
-@media only screen and (min-width:769px) and (max-width: 2048px) {
-    .autorFacebook{
-        margin-bottom: 0%;
-        margin-left: 50px;
-        margin-right: 72px;
-        text-align: center;
-        width: 0%;
-    }
-    .autorBlogger a{
-        position: relative;
-        right: 3px;
-    }
-    .titulo a{
-        font-size: 25px;
-    }
+.autorTwitter a{
+    background-image: url(../images/twitter.png);
+}
+.autorBlogger a{
+    background-image: url(../images/blogger.png);
+}
+.autorInstagram a{
+    background-image: url(../images/instagram.png);
+}
 
-    .page-autores .views-row p{
+/* @group Media Query */
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+    .page-autores .titulo {
+        margin: 0 0 5px;
         font-size: 20px;
-        width: 44%;
-        margin-top: 10px;
-        line-height: 1;
-        color: #3f3f3f;
+        padding-top: 9px;
     }
-
-    .page-autores .views-row-odd p{
-        margin-left: 16px;
+    .autorFacebook a,
+    .autorTwitter a,
+    .autorBlogger a,
+    .autorInstagram a{
+        height: 45px;
+        width: 45px;
     }
-    .page-autores .views-row-even p{
-        margin-left: 16px;
+    .page-autores .autorBody{
+        font-size: 13px;
+        padding: 0 10px;
     }
-
-    .page-autores .view-autores .view-content {
-        padding: 12px 60px;
-    }
-
-
 }
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 640px) {
+    .page-autores .titulo {
+        margin: 0 0 10px;
+        font-size: 25px;
+        padding-top: 10px;
+    }
+    
+    .autorFacebook a, 
+    .autorTwitter a, 
+    .autorBlogger a, 
+    .autorInstagram a {
+        height: 55px;
+        width: 55px;
+    }
+    
+    .page-autores .autorBody {
+        font-size: 17px;
+        padding: 5px 10px;
+        line-height: 1.1;
+    }
+    
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .page-autores .view-autores .view-content {
+        padding: 32px 36px 32px 60px;
+    }
+    
+    .page-autores .titulo {
+        margin: 0 0 5px;
+        font-size: 30px;
+        padding-top: 13px;
+    }
+    
+    .autorFacebook a, 
+    .autorTwitter a, 
+    .autorBlogger a, 
+    .autorInstagram a {
+        height: 62px;
+        width: 62px;
+    }
+    
+    .page-autores .autorBody {
+        font-size: 19px;
+        padding: 6px 12px;
+        line-height: 1.1;
+    }
+    
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+}
+/* @end */
