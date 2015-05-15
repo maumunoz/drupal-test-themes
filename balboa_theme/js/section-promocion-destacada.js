@@ -13,12 +13,11 @@
         items = (list.find('li').length) ? list.find('li').length : 0;
 
         $(list).find('li:not(.placeholder)').each(function() {
-            finalDate = $(this).find('.final-date');
+            finalDate = $(this).find('.dueDate');
             if (finalDate.length) {
                 dueDate = moment($.trim(finalDate.text()));
                 if (dueDate.isValid() && dueDate.isBefore(now)) {
-                    finalDate.text("Finalizada");
-                    finalDate.removeClass('hidden');
+                    $(this).find('.final-date').removeClass('hidden');
                 }
             }
         });

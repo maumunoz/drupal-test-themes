@@ -115,6 +115,10 @@
     color: #fdb515;
 }
 
+.node-type-webform .form-checkboxes label {
+    display: inline;
+    font-size: 80%;
+}
 /* @end */
 
 

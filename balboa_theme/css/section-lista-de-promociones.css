@@ -55,6 +55,7 @@
     text-transform: uppercase;
 }
 
+.node-type-lista-de-promociones .placeholder .date-display-single,
 .node-type-lista-de-promociones .placeholder .final-date {
     display: none;
 }

@@ -36,6 +36,10 @@
             css: 'required email'
         },
         {
+            node: '#edit-submitted-new-1431728644561-1',
+            css: 'required'
+        },
+        {
             node: '#edit-submitted-new-1430260801686',
             placeholder: '',
             css: 'required lettersonly'

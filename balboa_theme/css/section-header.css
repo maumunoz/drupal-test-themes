@@ -37,14 +37,15 @@
 }
 
 .region-header .block-menu {
-    width: 62%;
+    width: 75%;
     height: 76px;
     overflow: hidden;
 }
 
 .region-header #block-block-1 {
     width: 18%;
-    float: right;
+    position: absolute;
+    right: -8%;
 }
 
 #block-system-main-menu ul.menu {

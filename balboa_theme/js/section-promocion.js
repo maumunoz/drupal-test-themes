@@ -36,6 +36,17 @@
         }
     });
     
+    $.initModule(".node-type-promocion .final-date", function ($, finalLabel) {
+        var dueDateCont = $('.dueDate'),
+            now = moment();
+        if (dueDateCont.length) {
+            var dueDate = moment($.trim(dueDateCont.text()));
+            if (dueDate.isValid() && dueDate.isBefore( now )) {
+                finalLabel.removeClass('hidden');
+            }
+        }
+    });
+    
     
     //Content images, with link inside image
     $.initModule(".node-type-promocion .contenido .media-thumbnail-frame a", function ($, images) {
@@ -88,10 +99,12 @@
             callbacks: {
                 open: function() {
                     if (Drupal.initMediaGalleryLightboxPhoto) Drupal.MediaGalleryLightboxOpen(this);
+                    var close = $(".mfp-close");
+                    close.parent().parent().append(close);
                 }
             },
             iframe: {
-                markup: '<div class="mfp-iframe-scaler">'+
+                markup: '<div class="mfp-close">×</div>  <div class="mfp-iframe-scaler">'+
                 '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
                 '</div>', // HTML markup of popup, `mfp-close` will be replaced by the close button
 

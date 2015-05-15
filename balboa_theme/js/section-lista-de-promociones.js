@@ -25,6 +25,16 @@
             e.stopPropagation();
         });
 
+        $(list).find('li:not(.placeholder)').each(function() {
+            finalDate = $(this).find('.dueDate');
+            if (finalDate.length) {
+                dueDate = moment($.trim(finalDate.text()));
+                if (dueDate.isValid() && dueDate.isBefore(now)) {
+                    console.log(">",$(this).find('.final-date'));
+                    $(this).find('.final-date').removeClass('hidden');
+                }
+            }
+        });
 
     });
 
