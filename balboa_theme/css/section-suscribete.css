@@ -117,7 +117,7 @@
 
 .node-type-webform .form-checkboxes label {
     display: inline;
-    font-size: 80%;
+    vertical-align: sub;
 }
 /* @end */
 
