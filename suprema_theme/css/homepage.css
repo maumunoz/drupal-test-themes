@@ -40,9 +40,9 @@
 }
 
 .slider-cta {
+    width: 250px;
+    padding: 9px 30px 9px 25px;
     top: 23%;
-    height: 150px;
-    width: 330px;
     font-size: 13px;
     position: absolute;
     background: -moz-linear-gradient(left, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.65) 90%, rgba(0,0,0,0) 100%);
@@ -53,18 +53,11 @@
     background: linear-gradient(to right, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.65) 90%,rgba(0,0,0,0) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=1 );
     color: white;
-    padding: 9px 90px 9px 70px;
-    line-height: 16px;
-    text-align: left;
+    line-height: 12px;
+    text-align: center;
     letter-spacing: -0.2px;
 
 }
-
-.slider-cta p{
-    position: relative;
-    left: -50px;
-}
-
 
 
 .slider-cta a {
@@ -117,6 +110,11 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
+    .slider-cta {
+        width: 330px;
+        padding: 9px 90px 9px 70px;
+        line-height: 14px;
+    }
     .home_blackarea h1 {
         font-size: 43px;
     }
