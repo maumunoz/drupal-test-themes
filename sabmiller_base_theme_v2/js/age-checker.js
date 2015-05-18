@@ -128,9 +128,9 @@ All components name must follow this format:
                                             pattern: "[0-9]+"
                                         }).data('i',i+1)
                                         .keyup(function(){
-                                            var limit = (jq(this).attr("name")=="year")?4:2;
-                                            jq(this).val( this.value.substr(0,limit) );
-                                            age_checker.nextbox(this, jq(this).data('i') );
+                                            var limit = ($(this).attr("name")=="year")?4:2;
+                                            $(this).val( this.value.substr(0,limit) );
+                                            age_checker.nextbox(this, $(this).data('i') );
                                         })
                                         .addClass('whiteplaceholder')
                                         .insertBefore(this);

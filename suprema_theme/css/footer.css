@@ -21,7 +21,6 @@
 #footer .content {
     text-align: center;
     color: #fff;
-    font-family: Helvetica, Arial, sans-serif;
     font-size: 16px;
 
 }
@@ -89,7 +88,7 @@
 }
 
 .footerDown .media-thumbnail-frame+a {
-    font-size: 21px;
+    font-size: 16px;
     display: inline-block;
     margin-top: 10px;
     margin-left: 14px;
@@ -123,7 +122,9 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-
+    .footerDown .media-thumbnail-frame+a {
+        font-size: 21px;
+    }
 }
 
 /* Medium Devices, Desktops */

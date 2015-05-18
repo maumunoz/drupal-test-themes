@@ -1,4 +1,4 @@
-/* @group Página estática */
+/* @group PÃ¡gina estÃ¡tica */
 
 #block-block-41 {
     display: none;
@@ -78,6 +78,9 @@
     max-width: 100%;
     width: 100%;
     color: #fff;
+    padding-left: 13px;
+    font-size: 105%;
+    margin-bottom: 0px;
 }
 
 .node-type-webform.fondo-negro .webform-client-form input,

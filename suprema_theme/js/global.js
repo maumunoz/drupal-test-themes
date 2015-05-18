@@ -3,7 +3,7 @@
 
     // Set Viewport according to width
     
-    var checkAgeGateInterval = 0;
+   /* var checkAgeGateInterval = 0;
     setTimeout( function() {
         checkAgeGateInterval = setInterval(function() {
             if (!$("#age_checker_verification_popup").is(':visible')) {
@@ -14,7 +14,15 @@
                 clearInterval(checkAgeGateInterval);
             }
         },100);
-    },500);
+    },500); /**/
+    
+    function resizeContent() {
+        $("#content").attr("style","");
+        var diff=$(window).height()-$("#content").parent().height();
+        if(diff>0) {
+            $("#content").height( $("#content").height()+diff );
+        }
+    }
 
     //Initialize Page content
     $.initModule(".region-content", function ($, pageContent) {
@@ -35,6 +43,12 @@
             titleAttr = "title-"+titleAttr.attr('content').replace(/\s/g,"-");
             $('body').addClass(titleAttr);
         }
+        
+        $(window).on('resize', resizeContent);
+        resizeContent();
+        setTimeout(function () {
+            $(window).resize();
+        }, 1000);
     });
 
     $.initModule("#search-block-form", function ($, searchform) {

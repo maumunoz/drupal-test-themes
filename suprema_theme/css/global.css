@@ -90,7 +90,7 @@ body {
 
 #page {
     background-color: #174a18;
-    min-height: initial;
+    min-height: initial !important;
 }
 
 .node .field + .field,
@@ -105,7 +105,7 @@ p {
 }
 
 h1, h2, h3 {
-    font-family: 'Crimson';
+    font-family: 'Crimson', Helvetica, Arial, sans-serif;
 }
 
 .fb_iframe_widget_lift {
