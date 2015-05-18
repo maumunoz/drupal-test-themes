@@ -45,7 +45,7 @@
 .region-header #block-block-1 {
     width: 18%;
     position: absolute;
-    right: -8%;
+    right: 0;
 }
 
 #block-system-main-menu ul.menu {
@@ -316,6 +316,9 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
+    .region-header #block-block-1 {
+        right: -8%;
+    }
 
 }
 

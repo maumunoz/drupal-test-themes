@@ -20,6 +20,9 @@ $.initModule('.region-content', function ($, pageContent) {
         titleAttr = 'title-'+titleAttr.attr('content').replace(/\s/g,'-');
         $('body').addClass(titleAttr);
     }
+    $( window ).on( "orientationchange", function( event ) {
+        jQuery2.slidebars.close();
+    });
 });
 
 })(jQuery2);
