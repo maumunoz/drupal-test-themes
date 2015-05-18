@@ -221,10 +221,12 @@
     display: none;
 }
 
-.title-Suscríbete-al-Blog .capcha-container,
-.title-Suscr_bete-al-Blog .capcha-container{
+.title-Suscríbete-al-Blog .capcha-container{
     position: relative;
-    /* left: -5px; */
+    width: 130%;
+}
+
+.title-Suscríbete-al-Blog .capcha-container > div > div > div{
     margin: 0 auto;
 }
 
@@ -269,13 +271,6 @@
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 280px) {
 
-
-
-    .title-Suscríbete-al-Blog .capcha-container{
-        /* left: 5%; */
-    }
-
-
     .suscribe-big-button{
         font-size: 10px;
     }
@@ -303,10 +298,6 @@
     }
 
 
-    .title-Suscríbete-al-Blog .capcha-container{
-        /* left: 0%; */
-    }
-
     .capcha-container .rc-anchor-logo{
         position: relative;
         left: -40px;
@@ -317,25 +308,17 @@
 
 }
 
-@media only screen and (min-width : 320px) {
-
-    .title-Suscríbete-al-Blog .capcha-container{
-        /* left: 16%; */
-    }
-
-}
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
-
-    .title-Suscríbete-al-Blog .capcha-container{
-        left: 25%;
-    }
 
     .page-momentos-suprema .item-list ul li{
         margin-bottom: 20px;
     }
 
+    .title-Suscríbete-al-Blog .capcha-container{
+        width: 100%;
+    }
 
     .page-momentos-suprema .fb_iframe_widget{
         margin:0;
@@ -376,10 +359,6 @@
         font-size: 29px;
     }
 
-    .title-Suscríbete-al-Blog .capcha-container{
-        left: 30%;
-    }
-
     .momentos-suprema .pager li > a,
     .pager li > span{
         font-size: 18px;
@@ -392,6 +371,10 @@
     .title-Suscríbete-al-Blog .capcha-container{
         position: relative;
         left: 0px !important;
+    }
+
+    .title-Suscríbete-al-Blog .capcha-container > div > div > div{
+        margin: 0;
     }
 
     .view-momentos-suprema > .view-content{
@@ -435,10 +418,6 @@
         font-size: 14px;
     }
 
-    .title-Suscríbete-al-Blog .capcha-container{
-        position: relative;
-        left: 175px;
-    }
 
     .suscribe-big-button {
         margin: 15px 7px;

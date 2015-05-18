@@ -17,10 +17,10 @@
     },500); /**/
     
     function resizeContent() {
-        $("#content").attr("style","");
+        $("#main").attr("style","");
         var diff=$(window).height()-$("#content").parent().height();
         if(diff>0) {
-            $("#content").height( $("#content").height()+diff );
+            $("#main").height( $("#main").height()+diff );
         }
     }
 
