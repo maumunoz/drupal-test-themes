@@ -65,10 +65,10 @@
 }
 @font-face {
     font-family: 'Crimson';
-    src: url('crimson-bold-webfont.eot');
-    src: url('crimson-bold-webfont.eot?#iefix') format('embedded-opentype'),
-        url('crimson-bold-webfont.woff') format('woff'),
-        url('crimson-bold-webfont.ttf') format('truetype');
+    src: url('../fonts/crimson-bold-webfont.eot');
+    src: url('../fonts/crimson-bold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/crimson-bold-webfont.woff') format('woff'),
+        url('../fonts/crimson-bold-webfont.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
