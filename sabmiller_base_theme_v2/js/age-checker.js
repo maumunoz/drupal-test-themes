@@ -56,13 +56,10 @@ All components name must follow this format:
     if(typeof Drupal.behaviors.age_checker !== 'undefined') {
         original = Drupal.behaviors.age_checker.attach;
 
-        age_checker.lastNext = 0;
         age_checker.originalNextbox = age_checker.nextbox;
         age_checker.nextbox = function( fldobj, nbox ) {
-            var time = new Date().getTime();
-            if( time > age_checker.lastNext + 800) {
+            if(!isNaN(parseInt(String.fromCharCode(event.keyCode)))) {
                 age_checker.originalNextbox( fldobj, nbox );
-                age_checker.lastNext = time;
             }
         };
 

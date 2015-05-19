@@ -3,8 +3,7 @@
 (function (jq, $) {
     'use strict';
     
-    
-    age_checker.nextbox = function( fldobj, nbox )
+    age_checker.originalNextbox = function( fldobj, nbox )
     {
         var language_selectvalue = jQuery('#languagecode').val();
         if( language_selectvalue === undefined || language_selectvalue == null || language_selectvalue.length <= 0 )
