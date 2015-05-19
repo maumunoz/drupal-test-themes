@@ -240,6 +240,10 @@
     padding: 0;
 }
 
+.mobile-main-menu .menu {
+    margin-top: 42px;
+}
+
 .mobile-main-menu .menu > li {
     background-color: #02421f;
     font-size: 12px;
