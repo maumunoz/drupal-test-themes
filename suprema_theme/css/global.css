@@ -264,6 +264,9 @@ img.image-width-100,
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
+    .inicio #page {
+        background-color: #174a18;
+    }
 }
 
 /* Large Devices, Wide Screens */
