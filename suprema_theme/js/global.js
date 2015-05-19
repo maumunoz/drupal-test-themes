@@ -20,7 +20,7 @@
         $("#main").attr("style","");
         var diff=$(window).height()-$("#content").parent().height();
         if(diff>0) {
-            $("#main").height( $("#main").height()+diff );
+            $("#main").css( "min-height", $("#main").height()+diff );
         }
     }
 

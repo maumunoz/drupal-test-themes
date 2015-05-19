@@ -247,8 +247,8 @@
 .mobile-main-menu .menu > li {
     background-color: #02421f;
     font-size: 12px;
-    font-family: Helvetica, Arial, sans-serif;
-    border-bottom: solid 1px #a29e33;
+    font-family: "Crimson", Helvetica, Arial, sans-serif;
+    border-top: solid 2px #a29e33;
     text-align: center;
 }
 
@@ -256,10 +256,28 @@
     background-color: #006a30;
 }
 
+.mobile-main-menu .menu > li:last-child {
+    height: 35px;
+    border-radius: 0 0 10px 0;
+}
 
+.sb-slidebar {
+    z-index: 10;
+    background-color: transparent;
+}
+
+.sb-slidebar a {
+    color: #ccc;
+    padding: 0;
+    line-height: 2.45;
+}
 
 .toolbar-drawer .sb-slidebar {
     padding-top: 104px;
+}
+
+.social-header-right-mobile li {
+    margin-top: 1px !important;
 }
 
 /* @end */

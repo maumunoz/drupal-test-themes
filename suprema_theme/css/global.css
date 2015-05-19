@@ -91,6 +91,11 @@ body {
 #page {
     background-color: #174a18;
     min-height: initial !important;
+    transform: translate(0) !important; 
+}
+
+.inicio #page {
+    background-color: #000;
 }
 
 .node .field + .field,
@@ -117,10 +122,6 @@ h1, h2, h3 {
     max-width: 1024px;
     margin: 0 auto;
 
-}
-
-.sb-slidebar {
-    z-index: 10;
 }
 
 #content {
