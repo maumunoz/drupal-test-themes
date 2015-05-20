@@ -91,6 +91,7 @@ body {
 #page {
     background-color: #174a18;
     min-height: initial !important;
+    -webkit-transform: translate(0) !important; 
     transform: translate(0) !important; 
 }
 
@@ -236,7 +237,8 @@ img.image-width-100,
 .capcha-container {
     -webkit-transform:scale(0.77);
     transform:scale(0.77);
-    transform-origin:0 0
+    -webkit-transform-origin:0 0;
+    transform-origin:0 0;
 }
 
 
@@ -255,7 +257,8 @@ img.image-width-100,
     .capcha-container {
         -webkit-transform:scale(1);
         transform:scale(1);
-        transform-origin:0 0
+        -webkit-transform-origin:0 0;
+        transform-origin:0 0;
     }
 
 }
