@@ -264,6 +264,7 @@
 .sb-slidebar {
     z-index: 10;
     background-color: transparent;
+    position: absolute !important;
 }
 
 .sb-slidebar a {

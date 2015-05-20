@@ -23,6 +23,10 @@
             $("#main").css( "min-height", $("#main").height()+diff );
         }
     }
+    
+    $( window ).on( "orientationchange", function( event ) {
+        jQuery2.slidebars.close();
+    });
 
     //Initialize Page content
     $.initModule(".region-content", function ($, pageContent) {
