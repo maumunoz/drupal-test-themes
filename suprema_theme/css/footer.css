@@ -28,7 +28,7 @@
 .footerMiddle a,
 #footer a{
     color: #fff;
-    margin: -8px 11px 0;
+    margin: -8px 6px 0;
     padding: 10px;
 }
 
@@ -88,7 +88,7 @@
 }
 
 .footerDown .media-thumbnail-frame+a {
-    font-size: 16px;
+    font-size: 14px;
     display: inline-block;
     margin-top: 10px;
     margin-left: 14px;
@@ -121,7 +121,11 @@
         height: 35px;
     }
     .footerDown .media-thumbnail-frame+a {
-        font-size: 18px;
+        font-size: 17px;
+    }
+    .footerMiddle a,
+    #footer a{
+        margin: -8px 11px 0;
     }
 
 }
