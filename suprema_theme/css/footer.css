@@ -84,7 +84,7 @@
 }
 
 .footerDown .media-thumbnail-frame img {
-    height: 35px;
+    height: 25px;
 }
 
 .footerDown .media-thumbnail-frame+a {
@@ -117,6 +117,12 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
+    .footerDown .media-thumbnail-frame img {
+        height: 35px;
+    }
+    .footerDown .media-thumbnail-frame+a {
+        font-size: 18px;
+    }
 
 }
 
