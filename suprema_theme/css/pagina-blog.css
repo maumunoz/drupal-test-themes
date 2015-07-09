@@ -187,6 +187,10 @@
     margin: 38px 3px;
 }
 
+.view-vista-de-articulo-contenido a {
+    color: #333;
+}
+
 .suscribe-big-button img{
     vertical-align: middle;
     margin-right: 15px;
