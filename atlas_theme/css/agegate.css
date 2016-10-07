@@ -4,7 +4,7 @@ body.page-node-96{
 }
 #age_checker_overlay {
     background-size: cover;
-    position: absolute;
+    position: fixed;
 }
 
 #age_checker_overlay #age_checker_verification_popup {
@@ -298,7 +298,8 @@ input.whiteplaceholder:-ms-input-placeholder {
             left: 50%!important;
             margin-top: -160px!important;
             position: absolute;           
-            margin-left: -102px !important;           
+            margin-left: -102px !important;
+            top: 35.6%!important;           
     } 
     #age_checker_verification_popup p{
         text-align: left;
