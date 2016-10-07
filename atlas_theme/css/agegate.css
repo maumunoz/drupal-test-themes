@@ -2,9 +2,12 @@
 body.page-node-96{
     height: 100%;
 }
+body.footer_site #footer{
+        display: none;
+}
 #age_checker_overlay {
     background-size: cover;
-    position: fixed;
+    position: absolute;
 }
 
 #age_checker_overlay #age_checker_verification_popup {
