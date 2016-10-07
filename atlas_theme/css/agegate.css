@@ -1,7 +1,10 @@
-/* @group Groupname */
-
+ /*@group Groupname */
+body.page-node-96{
+    height: 100%;
+}
 #age_checker_overlay {
     background-size: cover;
+    position: absolute;
 }
 
 #age_checker_overlay #age_checker_verification_popup {
@@ -10,36 +13,47 @@
     background-color: transparent !important;
     border: solid 0px #000;
     border: none;
-    color: #fff;
-    width: 95%;
-    margin-left: -215px;
+    color: #fff;        
     font-size: 11px;
     max-width: 95%;
     z-index: 2;
     height: 100%;
     overflow-x: hidden;
     overflow-y: auto;
+    margin: 50px auto!important;
+    position: relative;
+    left: 0!important;
+    width: 255px;
 }
 
 #age_checker_verification_popup p {
-    margin: 0px;
+    margin: 15px 0;
+    text-align: center;
+}
+#age_checker_verification_popup p input.agegate_checkbox {
+    vertical-align: top;
 }
 
 #age_checker_verification_popup option,
 #age_checker_verification_popup select {
     color: #000;
+    margin: 0;
 }
 
 #age_checker_message0 {
     float: none;
-    width: 80%;
+    width: 100%;
+    
+}
+#age_checker_message0 .media-thumbnail-frame{
+    text-align: center;
 }
 
 #age_checker_widget {
     float: none;
-    width: 80%;
+    width: 100%;
     padding: 0;
-    margin: 0;
+    margin: 0;    
 }
 
 #age_checker_verification_popup .agegate-label {
@@ -69,6 +83,7 @@
 
 #age_checker_message1 {
     clear: both;
+    margin-bottom: 184px;
 }
 
 .agegate_message a {
@@ -81,7 +96,7 @@
 }
 
 .agegate_country_select select {
-    width: 90%;
+    width: 100%;
     margin-bottom: 12px;
     margin-top: 8px;
 }
@@ -144,7 +159,7 @@ margin: 0px 5px 0px 5px;
 
 .agegate_beer {
     background-image: url('../images/agegate_beer.png?r=1');
-    background-position: 50% 100%;
+    // background-position: inherit!important;
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
@@ -153,6 +168,8 @@ margin: 0px 5px 0px 5px;
     height: 65%;
     min-height: 500px;
     display: none;
+    left: 50%;
+    margin-left: -408px;
 }
 
 #agegate_logo {
@@ -166,8 +183,7 @@ margin: 0px 5px 0px 5px;
 }
 
 .agegate_header {
-    background-image: url('../images/agegate_header.png');
-    background-position: 50% 0;
+    background-image: url('../images/agegate_header.png');    
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
@@ -194,7 +210,7 @@ margin: 0px 5px 0px 5px;
     bottom: 21px;
     width: 100%;
     padding: 12px 12px 9px 18px !important;
-    display: none;
+    display: block;
     z-index: 3;
 }
 
@@ -236,6 +252,9 @@ input.whiteplaceholder:-ms-input-placeholder {
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
+    #age_checker_verification_popup{
+        width: 365px!important;
+    }
     #age_checker_message0 {
         float: left;
         width: 41%;
@@ -244,34 +263,26 @@ input.whiteplaceholder:-ms-input-placeholder {
     #age_checker_widget {
         float: right;
         width: 56%;
+        margin-top: 240px;
     }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 640px) {
     #age_checker_verification_popup {
-        left: 0 !important;
-        margin-left: 4% !important;
-        top: 0 !important;
-        margin-top: 0 !important;
+        
     }
 
 }
 @media only screen and (min-width : 641px) {
 
     #age_checker_verification_popup {
-        top: 35.6% !important;
-        margin-left: -120px !important;
-        height: 65%;
-        width: 470px !important;
+        
 
     }
-    .agegate_beer {
-        display: block;
-    }
-    .agegate_footer {
-        display: block;
-    }
+    //  .agegate_footer {
+    //     display: block;
+    // }
 
     #agegate_logo {
         margin-top: 0px;
@@ -280,13 +291,36 @@ input.whiteplaceholder:-ms-input-placeholder {
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
+    #age_checker_overlay {    
+    position: fixed;
+    }
+    #age_checker_overlay #age_checker_verification_popup{
+            left: 50%!important;
+            margin-top: -160px!important;
+            position: absolute;           
+            margin-left: -102px !important;           
+    } 
+    #age_checker_verification_popup p{
+        text-align: left;
+    } 
+    .agegate_beer {
+        display: block;        
+        margin-left: -409px;
+    }
+
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
+@media only screen and (min-width : 992px) {  
+    body,html{
+        height: 100%!important;
+    }  
+    .agegate_beer {             
+        margin-left: -440px;
+    }    
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
 }
-/* @end */
+/* @end 
